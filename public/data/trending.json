@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T16:41:23.025Z",
+  "generated_at": "2026-07-01T19:13:19.114Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "947 recent"
+      "detail": "964 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "984 scored"
+      "detail": "985 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3496 mapped"
+      "detail": "3499 mapped"
     },
     {
       "name": "Reddit",
@@ -86,7 +86,7 @@
       "hype": 70,
       "rising": 0,
       "repos": {
-        "count": 15,
+        "count": 16,
         "stars": 67,
         "top": [
           {
@@ -147,7 +147,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 11,
         "stars": 16,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 58,
+      "rising": 54,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -277,7 +277,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 5,
         "stars": 14,
@@ -585,10 +585,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 56,
+      "hype": 57,
       "rising": 0,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 19,
         "top": [
           {
@@ -2158,7 +2158,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 30,
-      "rising": 48,
+      "rising": 47,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -2201,6 +2201,102 @@
       "rank": 41
     },
     {
+      "cve_id": "CVE-2026-50548",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00637,
+      "epss_pct": 0.46005,
+      "cwe": "CWE-22",
+      "published": "2026-06-25T19:16:39.660",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 28,
+      "rising": 37,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-50549",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.46082,
+      "cwe": "CWE-59",
+      "published": "2026-06-25T19:16:39.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 28,
+      "rising": 37,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 43
+    },
+    {
       "cve_id": "CVE-2026-55200",
       "title": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read(…",
       "vendor": null,
@@ -2217,8 +2313,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 29,
-      "rising": 8,
+      "hype": 28,
+      "rising": 7,
       "repos": {
         "count": 2,
         "stars": 12,
@@ -2255,102 +2351,6 @@
         },
         {
           "date": "2026-06-29",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-50548",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00637,
-      "epss_pct": 0.46005,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:39.660",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 28,
-      "rising": 39,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-50549",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.46082,
-      "cwe": "CWE-59",
-      "published": "2026-06-25T19:16:39.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 28,
-      "rising": 39,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -2480,7 +2480,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 60,
+      "rising": 57,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2540,12 +2540,12 @@
       "rising": 0,
       "repos": {
         "count": 9,
-        "stars": 141,
+        "stars": 142,
         "top": [
           {
             "full_name": "sgkdev/packet_edit_meme",
             "html_url": "https://github.com/sgkdev/packet_edit_meme",
-            "stars": 119
+            "stars": 120
           },
           {
             "full_name": "0xBlackash/CVE-2026-46331",
@@ -2579,67 +2579,6 @@
         }
       ],
       "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-43503",
-      "title": "CVE-2026-43503",
-      "vendor": null,
-      "product": null,
-      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()->flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never touches skb_shinfo()->flags; skb_shift() moves frag\ndescriptors directly and leaves flags untouched.  As a result, the\ndestination skb keeps a reference to the same externally-owned or\npage-cache-backed pages while reporting skb_has_shared_frag() as\nfalse.\n\nThe mismatch is harmful in any in-place writer that uses\nskb_has_shared_frag() to decide whether shared pages must be detoured\nthrough skb_cow_data().  ESP input is one such writer (esp4.c,\nesp6.c), and a single nft 'dup to <local>' rule -- or any other\nnf_dup_ipv4() / xt_TEE caller -- is enough to land a pskb_copy()'d\nskb in esp_input() with the marker stripped, letting an unprivileged\nuser write into the page cache of a root-owned read-only file via\nauthencesn-ESN stray writes.\n\nSet SKBFL_SHARED_FRAG on the destination whenever frag descriptors\nwere actually moved from the source.  skb_copy() and skb_copy_expand()\nshare skb_copy_header() too but linearize all paged data into freshly\nallocated head storage and emerge with nr_frags == 0, so\nskb_has_shared_frag() returns false on its own; they need no change.\n\nThe same omission exists in skb_gro_receive() and skb_gro_receive_list().\nThe former moves the incoming skb's frag descriptors into the\naccumulator's last sub-skb via two paths (a direct frag-move loop and\nthe head_frag + memcpy path); the latter chains the incoming skb whole\nonto p's frag_list.  Downstream skb_segment() reads only\nskb_shinfo(p)->flags, and skb_segment_list() reuses each sub-skb's\nshinfo as the nskb -- both p and lp must carry the marker.\n\nThe same omission also exists in tcp_clone_payload(), which builds an\nMTU probe skb by moving frag descriptors from skbs on sk_write_queue\ninto a freshly allocated nskb.  The helper falls into the same family\nand warrants the same fix for consistency; no TCP TX-side in-place\nwriter is currently known to reach a user page through this gap, but\na future consumer depending on the marker would regress silently.\n\nThe same omission exists in skb_segment(): the per-iteration flag\nmerge takes only head_skb's flag, and the inner switch that rebinds\nfrag_skb to list_skb on head_skb-frags exhaustion does not fold the\nnew frag_skb's flag into nskb.  Fold frag_skb's flag at both sites\nso segments drawing frags from frag_list members carry the marker.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.0013,
-      "epss_pct": 0.02957,
-      "cwe": "CWE-664",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 46,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-43503",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-43503",
-            "stars": 15
-          },
-          {
-            "full_name": "entra1337/DirtyClone",
-            "html_url": "https://github.com/entra1337/DirtyClone",
-            "stars": 14
-          },
-          {
-            "full_name": "mooder1/dirtyclone-CVE-2026-43503",
-            "html_url": "https://github.com/mooder1/dirtyclone-CVE-2026-43503",
-            "stars": 12
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
-          "url": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
-          "date": "2026-06-26T11:51:35.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-26",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2682,7 +2621,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2725,6 +2664,67 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-43503",
+      "title": "CVE-2026-43503",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()->flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never touches skb_shinfo()->flags; skb_shift() moves frag\ndescriptors directly and leaves flags untouched.  As a result, the\ndestination skb keeps a reference to the same externally-owned or\npage-cache-backed pages while reporting skb_has_shared_frag() as\nfalse.\n\nThe mismatch is harmful in any in-place writer that uses\nskb_has_shared_frag() to decide whether shared pages must be detoured\nthrough skb_cow_data().  ESP input is one such writer (esp4.c,\nesp6.c), and a single nft 'dup to <local>' rule -- or any other\nnf_dup_ipv4() / xt_TEE caller -- is enough to land a pskb_copy()'d\nskb in esp_input() with the marker stripped, letting an unprivileged\nuser write into the page cache of a root-owned read-only file via\nauthencesn-ESN stray writes.\n\nSet SKBFL_SHARED_FRAG on the destination whenever frag descriptors\nwere actually moved from the source.  skb_copy() and skb_copy_expand()\nshare skb_copy_header() too but linearize all paged data into freshly\nallocated head storage and emerge with nr_frags == 0, so\nskb_has_shared_frag() returns false on its own; they need no change.\n\nThe same omission exists in skb_gro_receive() and skb_gro_receive_list().\nThe former moves the incoming skb's frag descriptors into the\naccumulator's last sub-skb via two paths (a direct frag-move loop and\nthe head_frag + memcpy path); the latter chains the incoming skb whole\nonto p's frag_list.  Downstream skb_segment() reads only\nskb_shinfo(p)->flags, and skb_segment_list() reuses each sub-skb's\nshinfo as the nskb -- both p and lp must carry the marker.\n\nThe same omission also exists in tcp_clone_payload(), which builds an\nMTU probe skb by moving frag descriptors from skbs on sk_write_queue\ninto a freshly allocated nskb.  The helper falls into the same family\nand warrants the same fix for consistency; no TCP TX-side in-place\nwriter is currently known to reach a user page through this gap, but\na future consumer depending on the marker would regress silently.\n\nThe same omission exists in skb_segment(): the per-iteration flag\nmerge takes only head_skb's flag, and the inner switch that rebinds\nfrag_skb to list_skb on head_skb-frags exhaustion does not fold the\nnew frag_skb's flag into nskb.  Fold frag_skb's flag at both sites\nso segments drawing frags from frag_list members carry the marker.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.0013,
+      "epss_pct": 0.02957,
+      "cwe": "CWE-664",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 0,
+      "repos": {
+        "count": 8,
+        "stars": 46,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-43503",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-43503",
+            "stars": 15
+          },
+          {
+            "full_name": "entra1337/DirtyClone",
+            "html_url": "https://github.com/entra1337/DirtyClone",
+            "stars": 14
+          },
+          {
+            "full_name": "mooder1/dirtyclone-CVE-2026-43503",
+            "html_url": "https://github.com/mooder1/dirtyclone-CVE-2026-43503",
+            "stars": 12
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
+          "url": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
+          "date": "2026-06-26T11:51:35.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-26",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 51
     },
     {
@@ -2745,7 +2745,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2761,41 +2761,6 @@
         }
       ],
       "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-48286",
-      "title": "Adobe Campaign Classic (ACC) versions 7.4.3 build 9396 and earlier are affected by an Incorrect Authorization vulnera…",
-      "vendor": null,
-      "product": null,
-      "description": "Adobe Campaign Classic (ACC) versions 7.4.3 build 9396 and earlier are affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00712,
-      "epss_pct": 0.49038,
-      "cwe": "CWE-863",
-      "published": "2026-06-30T16:16:54.870",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
     },
     {
       "cve_id": "CVE-2026-13775",
@@ -2830,7 +2795,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-13776",
@@ -2865,20 +2830,55 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-13782",
+      "title": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the r…",
+      "vendor": null,
+      "product": null,
+      "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00208,
+      "epss_pct": 0.10946,
+      "cwe": "CWE-416",
+      "published": "2026-06-30T23:16:53.063",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-57517",
-      "title": "Control Web Panel before 0.9.8.1225 contains a blind SQL injection vulnerability that allows unauthenticated remote a…",
+      "cve_id": "CVE-2026-34099",
+      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in job_info.php (line 16)…",
       "vendor": null,
       "product": null,
-      "description": "Control Web Panel before 0.9.8.1225 contains a blind SQL injection vulnerability that allows unauthenticated remote attackers to execute arbitrary SQL queries by submitting unsanitized input through the userRes POST parameter at the user endpoint. Attackers can exploit MySQL root privileges obtained via the injection to write arbitrary files using INTO DUMPFILE, enabling deployment of a PHP webshell to the web-accessible roundcube logs directory and achieving remote code execution as the cwpsvc account.",
+      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in job_info.php (line 16): SELECT * FROM jobs where id = '\\\".$_GET['id'].\\\"'. No authentication is required. An unauthenticated attacker can perform error-based SQL injection to extract the database version, current user, schema names, and table contents.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
       "cwe": "CWE-89",
-      "published": "2026-07-01T16:16:49.070",
+      "published": "2026-07-01T17:16:32.820",
       "kev": {
         "in_kev": false
       },
@@ -2903,17 +2903,17 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-58126",
-      "title": "PACSgear PACS Scan 5.2.1 contains an unauthenticated remote code execution vulnerability that allows remote attackers…",
+      "cve_id": "CVE-2026-34100",
+      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): S…",
       "vendor": null,
       "product": null,
-      "description": "PACSgear PACS Scan 5.2.1 contains an unauthenticated remote code execution vulnerability that allows remote attackers to read and write arbitrary files by exploiting an exposed .NET Remoting TCP service on port 22222 via PGImageExchQueue.exe without any authentication requirement. Attackers can chain the arbitrary file write primitive with DLL hijacking in PGImageExchangeQueueSvc.exe, which loads missing DLLs such as CRYPTSP.DLL from the application directory, to achieve remote code execution as NT Authority\\SYSTEM upon service restart.",
+      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-07-01T16:16:51.283",
+      "cwe": "CWE-89",
+      "published": "2026-07-01T17:16:32.940",
       "kev": {
         "in_kev": false
       },
@@ -2938,17 +2938,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-58127",
-      "title": "PACSgear MediaWriter 5.2.1 exposes a .NET Remoting TCP service on port 9000 via PacsgearMediaServerEngine.dll, regist…",
+      "cve_id": "CVE-2026-34101",
+      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in text_file.php (line 17…",
       "vendor": null,
       "product": null,
-      "description": "PACSgear MediaWriter 5.2.1 exposes a .NET Remoting TCP service on port 9000 via PacsgearMediaServerEngine.dll, registered with ObjectURIs RemoteObj and UIRemoteObj, without any authentication requirement. By exploiting the MarshalByRefObject object unmarshalling technique and implementing .NET WebClient class methods, an unauthenticated remote attacker can read and write arbitrary files on the host filesystem. The ObjectURIs are identical across all installations by default. Chaining the arbitrary file write primitive with DLL hijacking opportunities in the MediaWriter service (which runs as NT Authority\\\\SYSTEM and loads missing DLLs such as CRYPTBASE.DLL from the application directory) enables unauthenticated remote code execution as SYSTEM upon service restart.",
+      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in text_file.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-07-01T16:16:51.417",
+      "cwe": "CWE-89",
+      "published": "2026-07-01T17:16:33.067",
       "kev": {
         "in_kev": false
       },
@@ -2973,86 +2973,70 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-44789",
-      "title": "n8n is an open source workflow automation platform.",
+      "cve_id": "CVE-2026-34102",
+      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in job_info_get.php (line…",
       "vendor": null,
       "product": null,
-      "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via an unvalidated pagination parameter in the HTTP Request node. Combined with other techniques this could lead to RCE on the instance. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.",
-      "cvss": 9.9,
+      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in job_info_get.php (line 16): SELECT * FROM jobs where input1 = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00632,
-      "epss_pct": 0.45794,
-      "cwe": "CWE-1321",
-      "published": "2026-06-23T17:16:59.290",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-01T17:16:33.180",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 0,
+      "hype": 18,
+      "rising": 20,
       "repos": {
-        "count": 1,
+        "count": 0,
         "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "stars": 0
-          }
-        ]
+        "top": []
       },
       "media": [],
       "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
+      "tags": [],
       "timeline": [
         {
-          "date": "2026-06-23",
+          "date": "2026-07-01",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "cve_id": "CVE-2026-34104",
+      "title": "Guardian language-system passes the name GET parameter directly into an unsanitized SQL query in designer.php (line 1…",
       "vendor": null,
       "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
+      "description": "Guardian language-system passes the name GET parameter directly into an unsanitized SQL query in designer.php (line 124): SELECT * FROM complex WHERE name='\\\".$_GET['name'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.35983,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-01T17:16:33.420",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 0,
+      "hype": 18,
+      "rising": 20,
       "repos": {
-        "count": 1,
+        "count": 0,
         "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          }
-        ]
+        "top": []
       },
       "media": [],
       "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
+      "tags": [],
       "timeline": [
         {
-          "date": "2026-06-23",
+          "date": "2026-07-01",
           "label": "Published to NVD"
         }
       ],
