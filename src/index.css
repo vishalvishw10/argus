@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #26262e transparent;
+}
+
+body {
+  @apply bg-base text-paper-muted font-sans antialiased;
+  background-image:
+    radial-gradient(1200px 620px at 14% -12%, rgba(214, 177, 95, 0.06), transparent 60%),
+    radial-gradient(1000px 520px at 100% -10%, rgba(214, 177, 95, 0.03), transparent 55%);
+  background-attachment: fixed;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'ss01', 'tnum';
+}
+
+/* fine warm hairline grid */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(196, 184, 158, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196, 184, 158, 0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse 100% 65% at 50% 0%, black, transparent 78%);
+  pointer-events: none;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply text-paper tracking-tight;
+  }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-xl border border-line bg-base-850/70 shadow-card backdrop-blur-sm;
+  }
+  .surface-hover {
+    @apply transition-colors hover:border-line2 hover:bg-base-800/70;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-md border border-line bg-white/[0.025]
+      px-2 py-0.5 text-[11px] font-medium text-paper-muted;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-white/[0.025]
+      px-3 py-2 text-sm font-medium text-paper transition hover:border-brand-400/45
+      hover:bg-brand-400/[0.08] hover:text-paper focus:outline-none focus-visible:ring-2
+      focus-visible:ring-brand-400/35 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply border-brand-400/50 bg-brand-500/15 text-brand-50 hover:bg-brand-500/25;
+  }
+  .field {
+    @apply rounded-lg border border-line bg-base-900/80 px-3 py-2 text-sm text-paper
+      outline-none transition placeholder:text-paper-dim focus:border-brand-400/50
+      focus:ring-2 focus:ring-brand-400/15;
+  }
+  .grad-text {
+    @apply bg-gradient-to-r from-brand-200 via-brand-300 to-brand-500 bg-clip-text text-transparent;
+  }
+  .seg {
+    @apply inline-flex items-center gap-0.5 rounded-lg border border-line bg-base-900/70 p-0.5;
+  }
+  .seg button {
+    @apply inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-semibold
+      text-paper-dim transition hover:text-paper;
+  }
+  .seg button[data-active='true'] {
+    @apply bg-brand-400/[0.14] text-brand-200 shadow-sm;
+  }
+  .kbd {
+    @apply rounded border border-line bg-base-800 px-1.5 py-0.5 font-mono text-[10px] text-paper-dim;
+  }
+  .label {
+    @apply text-[10px] font-semibold uppercase tracking-[0.14em] text-paper-dim;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+select.field option {
+  background-color: #0d0d10;
+  color: #ece8e1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262e;
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #33333d;
+  background-clip: content-box;
+}

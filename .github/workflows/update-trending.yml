@@ -1,0 +1,49 @@
+name: Update Trending Intelligence
+
+# Aggregates CISA KEV + NVD + EPSS + security RSS + (optional) Reddit + our
+# GitHub PoC map into public/data/trending.json. Lightweight vs the yearly
+# exploit scrape, so it runs far more often.
+on:
+  schedule:
+    # Hourly, 20 min after the exploit-map scrape so it correlates fresh data.
+    - cron: '20 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-trending
+  cancel-in-progress: true
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Aggregate trending intelligence
+        env:
+          # Optional but recommended — lifts NVD rate limit from 5/30s to 50/30s.
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          # Optional — enables the Reddit source.
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: node scripts/trending.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/data/trending.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "trending: refresh intelligence ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
