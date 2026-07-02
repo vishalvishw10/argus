@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-02T15:34:09.132Z",
+  "generated_at": "2026-07-02T18:03:22.492Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 40,
     "kev_total": 1631,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "552 recent"
+      "detail": "960 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "593 scored"
+      "detail": "997 scored"
     },
     {
       "name": "BleepingComputer",
@@ -38,8 +38,8 @@
     },
     {
       "name": "Dark Reading",
-      "status": "error",
-      "detail": "0 mentions"
+      "status": "ok",
+      "detail": "1 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3506 mapped"
+      "detail": "3507 mapped"
     },
     {
       "name": "Reddit",
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 16,
-        "stars": 73,
+        "stars": 74,
         "top": [
           {
             "full_name": "gh1mau/masta-cve-2026-48907",
             "html_url": "https://github.com/gh1mau/masta-cve-2026-48907",
-            "stars": 54
+            "stars": 55
           },
           {
             "full_name": "ywh-jfellus/CVE-2026-48907",
@@ -132,11 +132,11 @@
       "vendor": "Langflow",
       "product": "Langflow",
       "description": "Langflow contains a code injection vulnerability that could allow building public flows without requiring authentication.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.98412,
       "epss_pct": 0.99912,
-      "cwe": null,
+      "cwe": "CWE-94",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -147,10 +147,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 12,
-        "stars": 16,
+        "stars": 17,
         "top": [
           {
             "full_name": "MaxMnMl/langflow-CVE-2026-33017-poc",
@@ -203,11 +203,11 @@
       "vendor": "Microsoft",
       "product": "SharePoint Server",
       "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "epss": 0.03021,
       "epss_pct": 0.85821,
-      "cwe": null,
+      "cwe": "CWE-502",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 99,
+      "rising": 95,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -274,16 +274,82 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63254,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 21,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+          "date": "2026-06-30T11:18:47.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-30",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-35273",
       "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
       "vendor": "Oracle",
       "product": " PeopleSoft Enterprise PeopleTools",
       "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.9233,
       "epss_pct": 0.99811,
-      "cwe": null,
+      "cwe": "CWE-306",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -331,7 +397,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -339,11 +405,11 @@
       "vendor": "Check Point",
       "product": "Security Gateway",
       "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
       "epss": 0.70099,
       "epss_pct": 0.99297,
-      "cwe": null,
+      "cwe": "CWE-287",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -391,7 +457,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -450,7 +516,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-9082",
@@ -509,7 +575,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -568,7 +634,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -576,11 +642,11 @@
       "vendor": "Splunk",
       "product": "Enterprise",
       "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.88171,
       "epss_pct": 0.99748,
-      "cwe": null,
+      "cwe": "CWE-306",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -627,7 +693,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -672,7 +738,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-45321",
@@ -680,11 +746,11 @@
       "vendor": "TanStack",
       "product": "TanStack",
       "description": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
       "epss": 0.02342,
       "epss_pct": 0.81556,
-      "cwe": null,
+      "cwe": "CWE-506",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -729,59 +795,6 @@
         {
           "date": "2026-05-27",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.0116,
-      "epss_pct": 0.63254,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 22,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
-          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-          "date": "2026-06-30T11:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 12
@@ -876,11 +889,11 @@
       "vendor": "Microsoft",
       "product": "Internet Explorer",
       "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "epss": 0.91885,
       "epss_pct": 0.99805,
-      "cwe": null,
+      "cwe": "CWE-416",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -918,11 +931,11 @@
       "vendor": "Cisco",
       "product": "Unified Communications Manager",
       "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauthenticated, remote attacker to write files to the underlying operating system that could be used later to elevate to root.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.6,
+      "severity": "HIGH",
       "epss": 0.41694,
       "epss_pct": 0.98511,
-      "cwe": null,
+      "cwe": "CWE-918",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -976,11 +989,11 @@
       "vendor": "BerriAI",
       "product": "LiteLLM",
       "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "epss": 0.80188,
       "epss_pct": 0.99569,
-      "cwe": null,
+      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1257,11 +1270,11 @@
       "vendor": "Microsoft",
       "product": "Defender",
       "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.63076,
       "epss_pct": 0.99099,
-      "cwe": null,
+      "cwe": "CWE-400",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1311,11 +1324,11 @@
       "vendor": "Cisco",
       "product": "Catalyst SD-WAN Manager",
       "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.8,
+      "severity": "HIGH",
       "epss": 0.25323,
       "epss_pct": 0.97681,
-      "cwe": null,
+      "cwe": "CWE-116",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1453,11 +1466,11 @@
       "vendor": "Microsoft",
       "product": "Defender",
       "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.8,
+      "severity": "HIGH",
       "epss": 0.08371,
       "epss_pct": 0.94285,
-      "cwe": null,
+      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1511,11 +1524,11 @@
       "vendor": "SolarWinds",
       "product": "Serv-U",
       "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.10659,
       "epss_pct": 0.95254,
-      "cwe": null,
+      "cwe": "CWE-400",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1738,11 +1751,11 @@
       "vendor": "LiteSpeed",
       "product": "cPanel Plugin",
       "description": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.5,
+      "severity": "HIGH",
       "epss": 0.01261,
       "epss_pct": 0.66038,
-      "cwe": null,
+      "cwe": "CWE-61",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1878,11 +1891,11 @@
       "vendor": "Cisco",
       "product": "Catalyst SD-WAN Manager",
       "description": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
       "epss": 0.07683,
       "epss_pct": 0.93859,
-      "cwe": null,
+      "cwe": "CWE-22",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1931,11 +1944,11 @@
       "vendor": "Arista",
       "product": "Extensible Operating System",
       "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with a destination IP matching its configured decapsulation IP.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 5.8,
+      "severity": "MEDIUM",
       "epss": 0.00836,
       "epss_pct": 0.53235,
-      "cwe": null,
+      "cwe": "CWE-1023",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1979,11 +1992,11 @@
       "vendor": "Trend Micro",
       "product": "Apex One",
       "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
       "epss": 0.12682,
       "epss_pct": 0.95772,
-      "cwe": null,
+      "cwe": "CWE-23",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2027,11 +2040,11 @@
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.8,
+      "severity": "HIGH",
       "epss": 0.05528,
       "epss_pct": 0.91853,
-      "cwe": null,
+      "cwe": "CWE-287",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2068,11 +2081,11 @@
       "vendor": "Android",
       "product": "Framework",
       "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.4,
+      "severity": "HIGH",
       "epss": 0.01714,
       "epss_pct": 0.74598,
-      "cwe": null,
+      "cwe": "CWE-190",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2161,16 +2174,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 30,
-      "rising": 32,
+      "hype": 31,
+      "rising": 30,
       "repos": {
         "count": 3,
-        "stars": 8,
+        "stars": 10,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
-            "stars": 7
+            "stars": 9
           },
           {
             "full_name": "derekpreston81/CVE_ADC_IOC_2026",
@@ -2292,7 +2305,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2340,7 +2353,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2441,7 +2454,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 35,
+      "rising": 32,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2551,7 +2564,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2594,7 +2607,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2777,7 +2790,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2793,6 +2806,111 @@
         }
       ],
       "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-58455",
+      "title": "Dockwatch through 0.6.567 contains an unauthenticated OS command injection vulnerability that allows remote attackers…",
+      "vendor": null,
+      "product": null,
+      "description": "Dockwatch through 0.6.567 contains an unauthenticated OS command injection vulnerability that allows remote attackers to execute arbitrary shell commands by exploiting a missing exit() after an authentication redirect in loader.php combined with unsanitized input passed to shell_exec() in ajax/compose.php. Attackers can seed the required session flag through the incomplete auth check, then inject arbitrary commands via the composePath POST parameter in the composePull action to achieve full host compromise, facilitated by the standard deployment mounting of the Docker socket.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-07-02T16:16:35.287",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2022-50973",
+      "title": "Yonyou KSOA 9.0 contains an unauthenticated arbitrary file upload vulnerability in the com.sksoft.bill.ImageUpload se…",
+      "vendor": null,
+      "product": null,
+      "description": "Yonyou KSOA 9.0 contains an unauthenticated arbitrary file upload vulnerability in the com.sksoft.bill.ImageUpload servlet that allows unauthenticated attackers to upload arbitrary files by submitting a POST request with attacker-controlled filepath and filename parameters without any authentication, file type, extension, or content validation. Attackers can upload a JSP webshell by specifying a malicious filename and root filepath, with the uploaded file stored under the pictures directory and directly executed by the web server, resulting in unauthenticated remote code execution. Exploitation evidence was first observed by the Shadowserver Foundation on 2023-11-07 (UTC).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-02T17:16:56.947",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2024-14037",
+      "title": "Redsea Cloud eHR contains an arbitrary file upload vulnerability that allows unauthenticated attackers to achieve rem…",
+      "vendor": null,
+      "product": null,
+      "description": "Redsea Cloud eHR contains an arbitrary file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading malicious files through the PtFjk.mob servlet endpoint. Attackers can submit a multipart POST request with a JSP webshell disguised using a spoofed image/jpeg Content-Type to bypass the absence of extension and MIME type validation, with the uploaded file stored at a predictable path under the uploadfile directory and executed directly by the web server. Exploitation evidence was first observed by the Shadowserver Foundation on 2024-11-03 (UTC).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-02T17:16:57.360",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-44789",
@@ -2835,7 +2953,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-53753",
@@ -2883,7 +3001,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-48020",
@@ -2923,119 +3041,6 @@
       "timeline": [
         {
           "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-56121",
-      "title": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized atta…",
-      "vendor": null,
-      "product": null,
-      "description": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized attackers to achieve remote code execution by sending a crafted gRPC request to the registry server. The user_defined_function.body field of an OnDemandFeatureView spec is decoded from base64 and passed to dill.loads() before any authorization check is performed, enabling attackers to embed a malicious serialized Python object with an arbitrary __reduce__ method to execute OS commands as the feast service account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00862,
-      "epss_pct": 0.54105,
-      "cwe": "CWE-502",
-      "published": "2026-06-24T16:16:33.193",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-54917",
-      "title": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables.",
-      "vendor": null,
-      "product": null,
-      "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables. Prior to 4.30, the S3 API gateway and the Iceberg REST catalog gateway construct their routers with mux.NewRouter().SkipClean(true). With path cleaning disabled, a .. segment inside the URL survives routing, so a request such as `GET /bucket-A/../evil-bucket/key`, is matched as bucket=bucket-A, object=../evil-bucket/key. The captured object key is then joined into a filer path with util.JoinPath (S3) / path.Join (Iceberg), which collapse the .. server-side, so the actual read or write lands in evil-bucket. This vulnerability is fixed in 4.30.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00345,
-      "epss_pct": 0.2644,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:42.230",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2025-71333",
-      "title": "Flowise through 2.2.4 contains an unauthenticated arbitrary file upload vulnerability in the /api/v1/attachments endp…",
-      "vendor": null,
-      "product": null,
-      "description": "Flowise through 2.2.4 contains an unauthenticated arbitrary file upload vulnerability in the /api/v1/attachments endpoint when storageType is set to local. Attackers can exploit path traversal in the chatId and chatflowId parameters to upload malicious files to arbitrary directories, potentially enabling remote code execution and server compromise.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00611,
-      "epss_pct": 0.44901,
-      "cwe": "CWE-73",
-      "published": "2026-06-25T22:16:59.010",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-25",
           "label": "Published to NVD"
         }
       ],
