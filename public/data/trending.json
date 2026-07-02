@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T01:26:29.850Z",
+  "generated_at": "2026-07-02T06:11:45.443Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "943 recent"
+      "detail": "942 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "975 scored"
+      "detail": "974 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3499 mapped"
+      "detail": "3501 mapped"
     },
     {
       "name": "Reddit",
@@ -147,7 +147,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 11,
         "stars": 16,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 20,
+      "rising": 18,
       "repos": {
         "count": 5,
         "stars": 14,
@@ -289,7 +289,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 45,
+      "rising": 39,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1272,8 +1272,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 44,
-      "rising": 32,
+      "hype": 43,
+      "rising": 30,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -2216,7 +2216,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 30,
-      "rising": 42,
+      "rising": 39,
       "repos": {
         "count": 2,
         "stars": 6,
@@ -2275,10 +2275,10 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 28,
-      "rising": 3,
+      "hype": 29,
+      "rising": 1,
       "repos": {
-        "count": 2,
+        "count": 3,
         "stars": 12,
         "top": [
           {
@@ -2290,6 +2290,11 @@
             "full_name": "xd20111/CVE-2026-55200",
             "html_url": "https://github.com/xd20111/CVE-2026-55200",
             "stars": 2
+          },
+          {
+            "full_name": "kaleth4/CVE-2026-55200",
+            "html_url": "https://github.com/kaleth4/CVE-2026-55200",
+            "stars": 0
           }
         ]
       },
@@ -2319,6 +2324,102 @@
       "rank": 43
     },
     {
+      "cve_id": "CVE-2026-50548",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00637,
+      "epss_pct": 0.46005,
+      "cwe": "CWE-22",
+      "published": "2026-06-25T19:16:39.660",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 27,
+      "rising": 31,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-50549",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.46082,
+      "cwe": "CWE-59",
+      "published": "2026-06-25T19:16:39.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 27,
+      "rising": 31,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 45
+    },
+    {
       "cve_id": "CVE-2026-10523",
       "title": "An Authentication Bypass vulnerability (CWE-288) in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions al…",
       "vendor": null,
@@ -2335,7 +2436,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 27,
+      "hype": 26,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -2367,102 +2468,6 @@
         {
           "date": "2026-06-09",
           "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-50548",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00637,
-      "epss_pct": 0.46005,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:39.660",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 27,
-      "rising": 34,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-50549",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.46082,
-      "cwe": "CWE-59",
-      "published": "2026-06-25T19:16:39.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 27,
-      "rising": 34,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 46
@@ -2538,7 +2543,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 50,
+      "rising": 45,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2656,7 +2661,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2699,7 +2704,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2745,12 +2750,12 @@
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 47,
+        "stars": 48,
         "top": [
           {
             "full_name": "entra1337/DirtyClone",
             "html_url": "https://github.com/entra1337/DirtyClone",
-            "stars": 15
+            "stars": 16
           },
           {
             "full_name": "0xBlackash/CVE-2026-43503",
@@ -2786,6 +2791,54 @@
       "rank": 52
     },
     {
+      "cve_id": "CVE-2026-53753",
+      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "vendor": null,
+      "product": null,
+      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0045,
+      "epss_pct": 0.35983,
+      "cwe": "CWE-94",
+      "published": "2026-06-23T19:17:07.107",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "stars": 0
+          },
+          {
+            "full_name": "0xEnc0der/CVE-2026-53753",
+            "html_url": "https://github.com/0xEnc0der/CVE-2026-53753",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
       "cve_id": "CVE-2026-13775",
       "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
       "vendor": null,
@@ -2803,7 +2856,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2818,7 +2871,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-13776",
@@ -2838,7 +2891,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2853,7 +2906,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2873,7 +2926,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2888,7 +2941,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-34099",
@@ -2908,7 +2961,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2923,7 +2976,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2943,7 +2996,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2958,7 +3011,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-34105",
@@ -2978,7 +3031,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2993,7 +3046,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -3013,42 +3066,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-34108",
-      "title": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in text.php (line 15) without sa…",
-      "vendor": null,
-      "product": null,
-      "description": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in text.php (line 15) without sanitization: exec(\\\"php jobs/text.php \\\".$login_session.\\\" \\\".$_GET['id'].\\\" ...\\\"). No authentication is required. An unauthenticated remote attacker can append shell metacharacters to execute arbitrary OS commands on the server.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-07-01T17:16:33.970",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
