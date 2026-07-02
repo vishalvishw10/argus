@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-02T18:03:22.492Z",
+  "generated_at": "2026-07-02T19:54:28.819Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 12,
     "reddit_upvotes": 0,
-    "kev_count": 40,
+    "kev_count": 41,
     "kev_total": 1631,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "960 recent"
+      "detail": "991 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "997 scored"
+      "detail": "1029 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "12 mentions"
     },
     {
       "name": "Dark Reading",
@@ -63,6 +63,78 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2025-5777",
+      "title": "Citrix NetScaler ADC and Gateway Out-of-Bounds Read Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler ADC and Gateway",
+      "description": "Citrix NetScaler ADC and Gateway contain an out-of-bounds read vulnerability due to insufficient input validation. This vulnerability can lead to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.99897,
+      "epss_pct": 0.99964,
+      "cwe": "CWE-125",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2025-07-10",
+        "due_date": "2025-07-11",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 79,
+      "rising": 39,
+      "repos": {
+        "count": 22,
+        "stars": 120,
+        "top": [
+          {
+            "full_name": "win3zz/CVE-2025-5777",
+            "html_url": "https://github.com/win3zz/CVE-2025-5777",
+            "stars": 47
+          },
+          {
+            "full_name": "bughuntar/CVE-2025-5777",
+            "html_url": "https://github.com/bughuntar/CVE-2025-5777",
+            "stars": 30
+          },
+          {
+            "full_name": "mingshenhk/CitrixBleed-2-CVE-2025-5777-PoC-",
+            "html_url": "https://github.com/mingshenhk/CitrixBleed-2-CVE-2025-5777-PoC-",
+            "stars": 17
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Ransomware Groups Turn to Citrix Bleed 2, BYOVD, and Supply Chain Credentials",
+          "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+          "date": "2026-07-02T18:30:33.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2025-07-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-02",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-48907",
       "title": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
@@ -124,7 +196,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-33017",
@@ -147,7 +219,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 12,
         "stars": 17,
@@ -195,7 +267,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -218,7 +290,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 95,
+      "rising": 92,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -271,7 +343,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -294,7 +366,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -337,7 +409,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -397,7 +469,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -457,7 +529,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -516,7 +588,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-9082",
@@ -575,7 +647,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -634,7 +706,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -690,51 +762,6 @@
       "timeline": [
         {
           "date": "2026-06-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 10
-    },
-    {
-      "cve_id": "CVE-2026-12569",
-      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-      "vendor": "PTC",
-      "product": "Windchill and FlexPLM",
-      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01106,
-      "epss_pct": 0.61809,
-      "cwe": "CWE-20",
-      "published": "2026-06-18T01:18:12.040",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 53,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-18",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-06-25",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -800,6 +827,51 @@
       "rank": 12
     },
     {
+      "cve_id": "CVE-2026-12569",
+      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "vendor": "PTC",
+      "product": "Windchill and FlexPLM",
+      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01106,
+      "epss_pct": 0.61809,
+      "cwe": "CWE-20",
+      "published": "2026-06-18T01:18:12.040",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-18",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-06-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2008-4250",
       "title": "Microsoft Windows Buffer Overflow Vulnerability",
       "vendor": "Microsoft",
@@ -839,7 +911,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -881,7 +953,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2010-0249",
@@ -923,7 +995,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -981,7 +1053,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-42271",
@@ -1035,7 +1107,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2009-3459",
@@ -1077,7 +1149,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2010-0806",
@@ -1116,54 +1188,6 @@
       "timeline": [
         {
           "date": "2026-05-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 19
-    },
-    {
-      "cve_id": "CVE-2026-34908",
-      "title": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
-      "vendor": "Ubiquiti",
-      "product": "UniFi OS",
-      "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02452,
-      "epss_pct": 0.82411,
-      "cwe": "CWE-284",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 60,
-        "top": [
-          {
-            "full_name": "BishopFox/CVE-2026-34908-check",
-            "html_url": "https://github.com/BishopFox/CVE-2026-34908-check",
-            "stars": 60
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1265,6 +1289,54 @@
       "rank": 22
     },
     {
+      "cve_id": "CVE-2026-34908",
+      "title": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
+      "vendor": "Ubiquiti",
+      "product": "UniFi OS",
+      "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02452,
+      "epss_pct": 0.82411,
+      "cwe": "CWE-284",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-23",
+        "due_date": "2026-06-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 60,
+        "top": [
+          {
+            "full_name": "BishopFox/CVE-2026-34908-check",
+            "html_url": "https://github.com/BishopFox/CVE-2026-34908-check",
+            "stars": 60
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 23
+    },
+    {
       "cve_id": "CVE-2026-45498",
       "title": "Microsoft Defender Denial of Service Vulnerability",
       "vendor": "Microsoft",
@@ -1316,7 +1388,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1374,7 +1446,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48027",
@@ -1416,7 +1488,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2009-1537",
@@ -1458,7 +1530,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-41091",
@@ -1516,7 +1588,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-28318",
@@ -1574,7 +1646,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-48172",
@@ -1632,7 +1704,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-11645",
@@ -1690,7 +1762,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-45247",
@@ -1743,7 +1815,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1801,7 +1873,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1842,7 +1914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1883,7 +1955,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1936,7 +2008,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-7473",
@@ -1984,7 +2056,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-34926",
@@ -2032,7 +2104,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2022-0492",
@@ -2073,7 +2145,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-48595",
@@ -2114,7 +2186,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8398",
@@ -2155,7 +2227,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2175,7 +2247,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 31,
-      "rising": 30,
+      "rising": 29,
       "repos": {
         "count": 3,
         "stars": 10,
@@ -2220,7 +2292,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2285,7 +2357,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-50548",
@@ -2305,55 +2377,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 25,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-50549",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.46123,
-      "cwe": "CWE-59",
-      "published": "2026-06-25T19:16:39.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 27,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2382,6 +2406,54 @@
         }
       ],
       "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-50549",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.46123,
+      "cwe": "CWE-59",
+      "published": "2026-06-25T19:16:39.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 27,
+      "rising": 24,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-10523",
@@ -2434,7 +2506,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -2454,7 +2526,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 32,
+      "rising": 30,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2491,7 +2563,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -2544,7 +2616,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2587,7 +2659,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2630,7 +2702,77 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-13772",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class …",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class names via Class.forName() and invokes their constructors with no allow-list at three distinct sinks (SELECT NEW, enum literals, and reflection-based comparators); an authenticated remote attacker who can influence an application-built OQL query string can execute arbitrary constructors on the WAS JVM, and a SELECT DISTINCT variant using planted grid values fires the same gadget post-readObject in a manner that survives JEP-290 serialization filters across grid node boundaries",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00266,
+      "epss_pct": 0.18247,
+      "cwe": "CWE-470",
+      "published": "2026-06-30T20:17:29.080",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-13773",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.03013,
+      "epss_pct": 0.8578,
+      "cwe": "CWE-918",
+      "published": "2026-06-30T20:17:29.227",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2665,7 +2807,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2700,7 +2842,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -2735,7 +2877,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58453",
@@ -2770,7 +2912,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-50195",
+      "title": "containerd is an open-source container runtime.",
+      "vendor": null,
+      "product": null,
+      "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00316,
+      "epss_pct": 0.2344,
+      "cwe": "CWE-345",
+      "published": "2026-07-01T19:16:53.333",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-58457",
@@ -2805,7 +2982,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58455",
@@ -2825,7 +3002,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2840,7 +3017,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 59
     },
     {
       "cve_id": "CVE-2022-50973",
@@ -2872,175 +3049,6 @@
       "timeline": [
         {
           "date": "2026-07-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2024-14037",
-      "title": "Redsea Cloud eHR contains an arbitrary file upload vulnerability that allows unauthenticated attackers to achieve rem…",
-      "vendor": null,
-      "product": null,
-      "description": "Redsea Cloud eHR contains an arbitrary file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading malicious files through the PtFjk.mob servlet endpoint. Attackers can submit a multipart POST request with a JSP webshell disguised using a spoofed image/jpeg Content-Type to bypass the absence of extension and MIME type validation, with the uploaded file stored at a predictable path under the uploadfile directory and executed directly by the web server. Exploitation evidence was first observed by the Shadowserver Foundation on 2024-11-03 (UTC).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-434",
-      "published": "2026-07-02T17:16:57.360",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-44789",
-      "title": "n8n is an open source workflow automation platform.",
-      "vendor": null,
-      "product": null,
-      "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via an unvalidated pagination parameter in the HTTP Request node. Combined with other techniques this could lead to RCE on the instance. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00632,
-      "epss_pct": 0.45834,
-      "cwe": "CWE-1321",
-      "published": "2026-06-23T17:16:59.290",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
-      "vendor": null,
-      "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36013,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "0xEnc0der/CVE-2026-53753",
-            "html_url": "https://github.com/0xEnc0der/CVE-2026-53753",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-48020",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00591,
-      "epss_pct": 0.43967,
-      "cwe": "CWE-288",
-      "published": "2026-06-23T20:16:47.993",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "html_url": "https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
           "label": "Published to NVD"
         }
       ],
