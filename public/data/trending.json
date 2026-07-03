@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T13:13:59.493Z",
+  "generated_at": "2026-07-03T15:27:13.560Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1039 recent"
+      "detail": "1035 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1030 scored"
+      "detail": "1044 scored"
     },
     {
       "name": "BleepingComputer",
@@ -83,8 +83,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 79,
-      "rising": 30,
+      "hype": 78,
+      "rising": 28,
       "repos": {
         "count": 22,
         "stars": 120,
@@ -219,7 +219,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 12,
         "stars": 18,
@@ -268,72 +268,6 @@
         }
       ],
       "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0116,
-      "epss_pct": 0.63254,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 4,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
-            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
-          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-          "date": "2026-06-30T11:18:47.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
-          "date": "2026-06-29T21:29:15.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 4
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -393,7 +327,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -404,7 +338,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.70099,
-      "epss_pct": 0.99297,
+      "epss_pct": 0.99298,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -451,6 +385,72 @@
         {
           "date": "2026-06-08",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63264,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 3,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+          "date": "2026-06-30T11:18:47.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-30",
+          "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
       "rank": 6
@@ -699,8 +699,8 @@
       "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.03021,
-      "epss_pct": 0.85821,
+      "epss": 0.03219,
+      "epss_pct": 0.86673,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -712,7 +712,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 42,
+      "rising": 40,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -770,7 +770,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.02342,
-      "epss_pct": 0.81556,
+      "epss_pct": 0.81564,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -829,7 +829,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01106,
-      "epss_pct": 0.61809,
+      "epss_pct": 0.61823,
       "cwe": "CWE-20",
       "published": "2026-06-18T01:18:12.040",
       "kev": {
@@ -1000,7 +1000,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98511,
+      "epss_pct": 0.98512,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1154,7 +1154,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.82172,
-      "epss_pct": 0.99615,
+      "epss_pct": 0.99616,
       "cwe": "CWE-399",
       "published": null,
       "kev": {
@@ -1291,7 +1291,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.82411,
+      "epss_pct": 0.82418,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1393,7 +1393,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.97681,
+      "epss_pct": 0.97682,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1451,7 +1451,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0185,
-      "epss_pct": 0.76511,
+      "epss_pct": 0.76522,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -1493,7 +1493,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.50926,
-      "epss_pct": 0.98793,
+      "epss_pct": 0.98794,
       "cwe": "CWE-158",
       "published": null,
       "kev": {
@@ -1535,7 +1535,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08371,
-      "epss_pct": 0.94285,
+      "epss_pct": 0.94286,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -1593,7 +1593,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.10659,
-      "epss_pct": 0.95254,
+      "epss_pct": 0.95256,
       "cwe": "CWE-400",
       "published": null,
       "kev": {
@@ -1651,7 +1651,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18914,
-      "epss_pct": 0.96949,
+      "epss_pct": 0.9695,
       "cwe": "CWE-266",
       "published": null,
       "kev": {
@@ -1709,7 +1709,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73689,
+      "epss_pct": 0.73701,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1767,7 +1767,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.27546,
-      "epss_pct": 0.97833,
+      "epss_pct": 0.97834,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1820,7 +1820,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66038,
+      "epss_pct": 0.66049,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1878,7 +1878,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93859,
+      "epss_pct": 0.93861,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1931,7 +1931,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01131,
-      "epss_pct": 0.62478,
+      "epss_pct": 0.6249,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1972,7 +1972,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02269,
-      "epss_pct": 0.80909,
+      "epss_pct": 0.80917,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2013,7 +2013,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.53235,
+      "epss_pct": 0.53255,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -2061,7 +2061,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.12682,
-      "epss_pct": 0.95772,
+      "epss_pct": 0.95773,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2109,7 +2109,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.05528,
-      "epss_pct": 0.91853,
+      "epss_pct": 0.91856,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2150,7 +2150,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.01714,
-      "epss_pct": 0.74598,
+      "epss_pct": 0.7461,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -2191,7 +2191,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01456,
-      "epss_pct": 0.70297,
+      "epss_pct": 0.70311,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -2232,7 +2232,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00502,
-      "epss_pct": 0.39231,
+      "epss_pct": 0.39251,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -2241,7 +2241,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 30,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 3,
         "stars": 11,
@@ -2297,7 +2297,7 @@
       "cvss": 8.3,
       "severity": "HIGH",
       "epss": 0.00732,
-      "epss_pct": 0.49825,
+      "epss_pct": 0.49838,
       "cwe": "CWE-680",
       "published": "2026-06-17T20:17:28.667",
       "kev": {
@@ -2362,7 +2362,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.4719,
-      "epss_pct": 0.98693,
+      "epss_pct": 0.98694,
       "cwe": "CWE-288",
       "published": "2026-06-09T16:16:35.837",
       "kev": {
@@ -2415,7 +2415,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00637,
-      "epss_pct": 0.46046,
+      "epss_pct": 0.46064,
       "cwe": "CWE-22",
       "published": "2026-06-25T19:16:39.660",
       "kev": {
@@ -2424,7 +2424,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2463,7 +2463,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00638,
-      "epss_pct": 0.46123,
+      "epss_pct": 0.4614,
       "cwe": "CWE-59",
       "published": "2026-06-25T19:16:39.793",
       "kev": {
@@ -2472,7 +2472,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2511,7 +2511,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.29641,
-      "epss_pct": 0.97964,
+      "epss_pct": 0.97965,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2520,7 +2520,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 14,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2568,7 +2568,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00734,
-      "epss_pct": 0.49901,
+      "epss_pct": 0.49913,
       "cwe": "CWE-284",
       "published": "2026-06-20T13:16:42.080",
       "kev": {
@@ -2621,7 +2621,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.38326,
+      "epss_pct": 0.38348,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:33.450",
       "kev": {
@@ -2664,7 +2664,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0046,
-      "epss_pct": 0.36649,
+      "epss_pct": 0.36664,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:34.083",
       "kev": {
@@ -2706,8 +2706,8 @@
       "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.03013,
-      "epss_pct": 0.8578,
+      "epss": 0.03415,
+      "epss_pct": 0.87438,
       "cwe": "CWE-918",
       "published": "2026-06-30T20:17:29.227",
       "kev": {
@@ -2742,7 +2742,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00293,
-      "epss_pct": 0.21035,
+      "epss_pct": 0.21036,
       "cwe": "CWE-416",
       "published": "2026-06-30T23:16:53.063",
       "kev": {
@@ -2751,7 +2751,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2777,7 +2777,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0169,
-      "epss_pct": 0.74266,
+      "epss_pct": 0.74277,
       "cwe": "CWE-1392",
       "published": "2026-07-01T17:16:40.517",
       "kev": {
@@ -2786,7 +2786,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2811,8 +2811,8 @@
       "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00316,
-      "epss_pct": 0.2344,
+      "epss": 0.00354,
+      "epss_pct": 0.27475,
       "cwe": "CWE-345",
       "published": "2026-07-01T19:16:53.333",
       "kev": {
@@ -2847,7 +2847,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01671,
-      "epss_pct": 0.73967,
+      "epss_pct": 0.73978,
       "cwe": "CWE-78",
       "published": "2026-07-01T20:17:11.427",
       "kev": {
@@ -2881,8 +2881,8 @@
       "description": "Dockwatch through 0.6.567 contains an unauthenticated OS command injection vulnerability that allows remote attackers to execute arbitrary shell commands by exploiting a missing exit() after an authentication redirect in loader.php combined with unsanitized input passed to shell_exec() in ajax/compose.php. Attackers can seed the required session flag through the incomplete auth check, then inject arbitrary commands via the composePath POST parameter in the composePull action to achieve full host compromise, facilitated by the standard deployment mounting of the Docker socket.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0119,
+      "epss_pct": 0.64172,
       "cwe": "CWE-78",
       "published": "2026-07-02T16:16:35.287",
       "kev": {
@@ -2891,7 +2891,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2916,8 +2916,8 @@
       "description": "AutoBangumi before 3.2.8 contains a hard-coded default credentials vulnerability that allows unauthenticated attackers to authenticate as the administrator by using the publicly known default credentials seeded at startup via add_default_user() in the database user module when the users table is empty. Attackers can submit the default credentials to the authentication login endpoint to gain full control of the application, including RSS feed configuration, downloader configuration, and all authenticated API endpoints.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00505,
+      "epss_pct": 0.39462,
       "cwe": "CWE-1392",
       "published": "2026-07-02T20:17:06.593",
       "kev": {
@@ -2961,7 +2961,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2996,7 +2996,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
