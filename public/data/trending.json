@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T23:31:47.666Z",
+  "generated_at": "2026-07-03T04:11:52.434Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1015 recent"
+      "detail": "1020 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3514 mapped"
+      "detail": "3515 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 79,
-      "rising": 37,
+      "rising": 35,
       "repos": {
         "count": 22,
         "stars": 120,
@@ -219,7 +219,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 9,
+      "rising": 6,
       "repos": {
         "count": 12,
         "stars": 18,
@@ -290,7 +290,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 87,
+      "rising": 80,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -344,6 +344,72 @@
         }
       ],
       "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63254,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 11,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+          "date": "2026-06-30T11:18:47.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-30",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -403,7 +469,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -461,72 +527,6 @@
         {
           "date": "2026-06-08",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0116,
-      "epss_pct": 0.63254,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 15,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
-            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
-          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-          "date": "2026-06-30T11:18:47.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
-          "date": "2026-06-29T21:29:15.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
       "rank": 7
@@ -613,7 +613,7 @@
       "hype": 58,
       "rising": 0,
       "repos": {
-        "count": 13,
+        "count": 12,
         "stars": 41,
         "top": [
           {
@@ -2246,8 +2246,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 31,
-      "rising": 26,
+      "hype": 30,
+      "rising": 23,
       "repos": {
         "count": 3,
         "stars": 10,
@@ -2360,102 +2360,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-50548",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00637,
-      "epss_pct": 0.46046,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:39.660",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 27,
-      "rising": 22,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-50549",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.46123,
-      "cwe": "CWE-59",
-      "published": "2026-06-25T19:16:39.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 27,
-      "rising": 22,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 45
-    },
-    {
       "cve_id": "CVE-2026-10523",
       "title": "An Authentication Bypass vulnerability (CWE-288) in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions al…",
       "vendor": null,
@@ -2506,6 +2410,102 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-50548",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00637,
+      "epss_pct": 0.46046,
+      "cwe": "CWE-22",
+      "published": "2026-06-25T19:16:39.660",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 26,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-50549",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.46123,
+      "cwe": "CWE-59",
+      "published": "2026-06-25T19:16:39.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 26,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 46
     },
     {
@@ -2526,7 +2526,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 26,
+      "rising": 21,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2757,7 +2757,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2792,7 +2792,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2827,7 +2827,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2862,7 +2862,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2967,7 +2967,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3037,7 +3037,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
