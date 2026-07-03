@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-03T21:34:09.342Z",
+  "generated_at": "2026-07-03T23:29:26.962Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 41,
     "kev_total": 1631,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1066 recent"
+      "detail": "1063 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1021 scored"
+      "detail": "1017 scored"
     },
     {
       "name": "BleepingComputer",
@@ -38,8 +38,8 @@
     },
     {
       "name": "Dark Reading",
-      "status": "error",
-      "detail": "0 mentions"
+      "status": "ok",
+      "detail": "1 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 78,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 22,
         "stars": 120,
@@ -390,6 +390,72 @@
       "rank": 5
     },
     {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63264,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+          "date": "2026-06-30T11:18:47.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-30",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 6
+    },
+    {
       "cve_id": "CVE-2026-0257",
       "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
       "vendor": "Palo Alto Networks",
@@ -446,7 +512,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-9082",
@@ -505,7 +571,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -564,7 +630,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -623,7 +689,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -646,7 +712,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -693,7 +759,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-45321",
@@ -752,7 +818,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -795,66 +861,6 @@
         {
           "date": "2026-06-25",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0116,
-      "epss_pct": 0.63264,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 1,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
-            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
-          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-          "date": "2026-06-30T11:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 13
@@ -2234,8 +2240,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 31,
-      "rising": 10,
+      "hype": 30,
+      "rising": 9,
       "repos": {
         "count": 4,
         "stars": 11,
@@ -2353,7 +2359,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 10,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2401,7 +2407,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 10,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2502,7 +2508,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2559,7 +2565,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2602,7 +2608,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2698,7 +2704,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2751,41 +2757,6 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-50195",
-      "title": "containerd is an open-source container runtime.",
-      "vendor": null,
-      "product": null,
-      "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00354,
-      "epss_pct": 0.27475,
-      "cwe": "CWE-345",
-      "published": "2026-07-01T19:16:53.333",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
       "cve_id": "CVE-2026-58457",
       "title": "Shenzhen Aitemi M300 Wi-Fi Repeater (hardware model MT02) contains an unauthenticated OS command injection vulnerabil…",
       "vendor": null,
@@ -2803,7 +2774,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2818,7 +2789,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-58455",
@@ -2853,7 +2824,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58466",
@@ -2873,7 +2844,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2888,7 +2859,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-45499",
@@ -2923,7 +2894,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-57100",
@@ -2958,7 +2929,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-14544",
@@ -2978,7 +2949,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2993,7 +2964,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-4321",
@@ -3025,6 +2996,49 @@
       "timeline": [
         {
           "date": "2026-07-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-44789",
+      "title": "n8n is an open source workflow automation platform.",
+      "vendor": null,
+      "product": null,
+      "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via an unvalidated pagination parameter in the HTTP Request node. Combined with other techniques this could lead to RCE on the instance. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00632,
+      "epss_pct": 0.45852,
+      "cwe": "CWE-1321",
+      "published": "2026-06-23T17:16:59.290",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
           "label": "Published to NVD"
         }
       ],
