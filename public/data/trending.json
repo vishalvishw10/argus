@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T17:29:19.950Z",
+  "generated_at": "2026-07-04T19:39:45.799Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1050 recent"
+      "detail": "1053 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1075 scored"
+      "detail": "1071 scored"
     },
     {
       "name": "BleepingComputer",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 78,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 22,
         "stars": 120,
@@ -771,7 +771,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 17,
+      "rising": 15,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -1922,7 +1922,7 @@
       "rising": 3,
       "repos": {
         "count": 4,
-        "stars": 11,
+        "stars": 12,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
@@ -1937,7 +1937,7 @@
           {
             "full_name": "0xBlackash/CVE-2026-8451",
             "html_url": "https://github.com/0xBlackash/CVE-2026-8451",
-            "stars": 0
+            "stars": 1
           }
         ]
       },
@@ -2448,41 +2448,6 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-58455",
-      "title": "Dockwatch through 0.6.567 contains an unauthenticated OS command injection vulnerability that allows remote attackers…",
-      "vendor": null,
-      "product": null,
-      "description": "Dockwatch through 0.6.567 contains an unauthenticated OS command injection vulnerability that allows remote attackers to execute arbitrary shell commands by exploiting a missing exit() after an authentication redirect in loader.php combined with unsanitized input passed to shell_exec() in ajax/compose.php. Attackers can seed the required session flag through the incomplete auth check, then inject arbitrary commands via the composePath POST parameter in the composePull action to achieve full host compromise, facilitated by the standard deployment mounting of the Docker socket.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0119,
-      "epss_pct": 0.64187,
-      "cwe": "CWE-78",
-      "published": "2026-07-02T16:16:35.287",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-45499",
       "title": "Server-side request forgery (ssrf) in Azure OpenAI allows an authorized attacker to elevate privileges over a network.",
       "vendor": null,
@@ -2515,7 +2480,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-57100",
@@ -2550,7 +2515,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-14544",
@@ -2585,7 +2550,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-4321",
@@ -2605,7 +2570,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2620,7 +2585,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-53753",
@@ -2668,50 +2633,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-48020",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00591,
-      "epss_pct": 0.44006,
-      "cwe": "CWE-288",
-      "published": "2026-06-23T20:16:47.993",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "html_url": "https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-13751",
@@ -2746,7 +2668,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-14241",
@@ -2781,7 +2703,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-11546",
@@ -2816,7 +2738,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-11714",
@@ -2851,7 +2773,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-13772",
@@ -2886,7 +2808,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-7663",
@@ -2921,7 +2843,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-11541",
@@ -2935,6 +2857,76 @@
       "epss_pct": 0.33597,
       "cwe": "CWE-444",
       "published": "2026-06-30T22:16:46.317",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 4,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-13775",
+      "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
+      "vendor": null,
+      "product": null,
+      "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00314,
+      "epss_pct": 0.23245,
+      "cwe": "CWE-416",
+      "published": "2026-06-30T23:16:52.397",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 5,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-13776",
+      "title": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rend…",
+      "vendor": null,
+      "product": null,
+      "description": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00343,
+      "epss_pct": 0.2626,
+      "cwe": "CWE-843",
+      "published": "2026-06-30T23:16:52.490",
       "kev": {
         "in_kev": false
       },
@@ -2959,17 +2951,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-13775",
-      "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
+      "cve_id": "CVE-2026-13780",
+      "title": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 150.0.7871.47 allowed a remote attacker…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-      "cvss": 9.8,
+      "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.00314,
       "epss_pct": 0.23245,
-      "cwe": "CWE-416",
-      "published": "2026-06-30T23:16:52.397",
+      "cwe": "CWE-20",
+      "published": "2026-06-30T23:16:52.873",
       "kev": {
         "in_kev": false
       },
