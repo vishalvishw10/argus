@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-06T09:12:03.048Z",
+  "generated_at": "2026-07-06T13:00:04.472Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1631,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1076 recent"
+      "detail": "1066 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1061 scored"
+      "detail": "1049 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
@@ -155,7 +155,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 68,
+      "hype": 67,
       "rising": 0,
       "repos": {
         "count": 14,
@@ -1544,47 +1544,6 @@
       "rank": 26
     },
     {
-      "cve_id": "CVE-2025-67038",
-      "title": "Lantronix EDS5000 Code Injection Vulnerability",
-      "vendor": "Lantronix",
-      "product": "EDS5000",
-      "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01094,
-      "epss_pct": 0.61505,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 27
-    },
-    {
       "cve_id": "CVE-2026-34909",
       "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
       "vendor": "Ubiquiti",
@@ -1623,7 +1582,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2022-0492",
@@ -1661,6 +1620,47 @@
       "timeline": [
         {
           "date": "2026-06-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2025-67038",
+      "title": "Lantronix EDS5000 Code Injection Vulnerability",
+      "vendor": "Lantronix",
+      "product": "EDS5000",
+      "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01094,
+      "epss_pct": 0.61505,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-23",
+        "due_date": "2026-06-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2016,63 +2016,6 @@
       "rank": 36
     },
     {
-      "cve_id": "CVE-2026-8037",
-      "title": "CVE-2026-8037",
-      "vendor": null,
-      "product": null,
-      "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": 0.29641,
-      "epss_pct": 0.97965,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-8037",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-8037",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
-          "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
-          "date": "2026-07-01T13:56:18.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Progress Kemp LoadMaster Flaw Could Let Attackers Run Root Commands Pre-Auth",
-          "url": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html",
-          "date": "2026-06-30T07:38:07.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 37
-    },
-    {
       "cve_id": "CVE-2026-56290",
       "title": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading …",
       "vendor": null,
@@ -2118,7 +2061,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2171,7 +2114,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-54998",
@@ -2214,7 +2157,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2257,7 +2200,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2300,7 +2243,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-14807",
@@ -2320,7 +2263,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2335,7 +2278,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-14808",
@@ -2355,7 +2298,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2370,7 +2313,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-6509",
@@ -2390,7 +2333,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -2413,7 +2356,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-53753",
@@ -2461,7 +2404,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-14241",
@@ -2496,7 +2439,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-11546",
@@ -2531,7 +2474,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-11714",
@@ -2566,7 +2509,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-13772",
@@ -2601,7 +2544,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2636,7 +2579,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-7663",
@@ -2671,7 +2614,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-11541",
@@ -2706,7 +2649,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-13775",
@@ -2741,7 +2684,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-13776",
@@ -2776,7 +2719,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2811,7 +2754,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-14104",
@@ -2846,7 +2789,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2881,7 +2824,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -2916,7 +2859,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58453",
@@ -2930,6 +2873,41 @@
       "epss_pct": 0.74294,
       "cwe": "CWE-1392",
       "published": "2026-07-01T17:16:40.517",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-50195",
+      "title": "containerd is an open-source container runtime.",
+      "vendor": null,
+      "product": null,
+      "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00354,
+      "epss_pct": 0.27504,
+      "cwe": "CWE-345",
+      "published": "2026-07-01T19:16:53.333",
       "kev": {
         "in_kev": false
       },
