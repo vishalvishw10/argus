@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-06T16:31:24.289Z",
+  "generated_at": "2026-07-06T19:07:52.187Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1631,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1003 recent"
+      "detail": "944 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1035 scored"
+      "detail": "977 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "10 mentions"
     },
     {
       "name": "Dark Reading",
@@ -350,12 +350,12 @@
       "rising": 0,
       "repos": {
         "count": 9,
-        "stars": 35,
+        "stars": 36,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-0257",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-0257",
-            "stars": 25
+            "stars": 26
           },
           {
             "full_name": "0xBlackash/CVE-2026-0257",
@@ -504,72 +504,6 @@
       "rank": 7
     },
     {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0116,
-      "epss_pct": 0.63292,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
-            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
-          "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-          "date": "2026-06-30T11:18:47.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
-          "date": "2026-06-29T21:29:15.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 8
-    },
-    {
       "cve_id": "CVE-2026-20253",
       "title": "Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
       "vendor": "Splunk",
@@ -626,7 +560,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-45321",
@@ -685,52 +619,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
-    },
-    {
-      "cve_id": "CVE-2026-12569",
-      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-      "vendor": "PTC",
-      "product": "Windchill and FlexPLM",
-      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01247,
-      "epss_pct": 0.65746,
-      "cwe": "CWE-20",
-      "published": "2026-06-18T01:18:12.040",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-18",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-06-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -798,6 +687,111 @@
         {
           "date": "2026-07-02",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-12569",
+      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "vendor": "PTC",
+      "product": "Windchill and FlexPLM",
+      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01247,
+      "epss_pct": 0.65746,
+      "cwe": "CWE-20",
+      "published": "2026-06-18T01:18:12.040",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-18",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-06-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63292,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-29",
+          "label": "Covered by Dark Reading"
         }
       ],
       "rank": 12
@@ -2036,16 +2030,16 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 2,
+        "stars": 3,
         "top": [
-          {
-            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "stars": 1
-          },
           {
             "full_name": "shinthink/pbck-exploit",
             "html_url": "https://github.com/shinthink/pbck-exploit",
+            "stars": 2
+          },
+          {
+            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
+            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
             "stars": 1
           }
         ]
@@ -2117,49 +2111,6 @@
       "rank": 38
     },
     {
-      "cve_id": "CVE-2026-54998",
-      "title": "Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00644,
-      "epss_pct": 0.46439,
-      "cwe": "CWE-863",
-      "published": "2026-07-02T23:16:51.137",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 5,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "sentinel-aidefense/CVE-2026-54998-exp",
-            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-54998-exp",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 39
-    },
-    {
       "cve_id": "CVE-2026-8452",
       "title": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and …",
       "vendor": null,
@@ -2200,7 +2151,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2243,42 +2194,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-14807",
-      "title": "ERP App developed by PROG MIS has a Use of Hard-coded Credentials vulnerability, allowing unauthenticated remote atta…",
-      "vendor": null,
-      "product": null,
-      "description": "ERP App developed by PROG MIS has a Use of Hard-coded Credentials vulnerability, allowing unauthenticated remote attackers to log in to view application code and obtain the database account and password.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00463,
-      "epss_pct": 0.36927,
-      "cwe": "CWE-798",
-      "published": "2026-07-06T08:16:36.070",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-14808",
@@ -2298,7 +2214,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2310,6 +2226,89 @@
       "timeline": [
         {
           "date": "2026-07-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-48316",
+      "title": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-20",
+      "published": "2026-07-06T17:16:32.010",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-48939",
+      "title": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feat…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00564,
+      "epss_pct": 0.4277,
+      "cwe": "CWE-434",
+      "published": "2026-06-20T13:16:42.433",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-48939",
+            "html_url": "https://github.com/shinthink/CVE-2026-48939",
+            "stars": 1
+          },
+          {
+            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
+            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
           "label": "Published to NVD"
         }
       ],
