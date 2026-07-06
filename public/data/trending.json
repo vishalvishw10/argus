@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T13:00:04.472Z",
+  "generated_at": "2026-07-06T16:31:24.289Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1631,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1066 recent"
+      "detail": "1003 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1049 scored"
+      "detail": "1035 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Hacker News",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3547 mapped"
+      "detail": "3553 mapped"
     },
     {
       "name": "Reddit",
@@ -144,7 +144,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.98412,
-      "epss_pct": 0.99912,
+      "epss_pct": 0.99913,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -350,12 +350,12 @@
       "rising": 0,
       "repos": {
         "count": 9,
-        "stars": 34,
+        "stars": 35,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-0257",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-0257",
-            "stars": 24
+            "stars": 25
           },
           {
             "full_name": "0xBlackash/CVE-2026-0257",
@@ -409,7 +409,7 @@
       "rising": 0,
       "repos": {
         "count": 17,
-        "stars": 76,
+        "stars": 77,
         "top": [
           {
             "full_name": "gh1mau/masta-cve-2026-48907",
@@ -453,7 +453,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.99041,
-      "epss_pct": 0.99925,
+      "epss_pct": 0.99926,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -512,7 +512,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0116,
-      "epss_pct": 0.63287,
+      "epss_pct": 0.63292,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -523,7 +523,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 56,
+      "hype": 55,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -637,7 +637,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.02342,
-      "epss_pct": 0.81578,
+      "epss_pct": 0.81581,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -688,6 +688,51 @@
       "rank": 10
     },
     {
+      "cve_id": "CVE-2026-12569",
+      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "vendor": "PTC",
+      "product": "Windchill and FlexPLM",
+      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01247,
+      "epss_pct": 0.65746,
+      "cwe": "CWE-20",
+      "published": "2026-06-18T01:18:12.040",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-18",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-06-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
       "cve_id": "CVE-2026-45659",
       "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
       "vendor": "Microsoft",
@@ -696,7 +741,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03219,
-      "epss_pct": 0.86681,
+      "epss_pct": 0.86685,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -707,7 +752,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 50,
+      "hype": 49,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -753,51 +798,6 @@
         {
           "date": "2026-07-02",
           "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-12569",
-      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-      "vendor": "PTC",
-      "product": "Windchill and FlexPLM",
-      "description": "A critical remote code execution (RCE) vulnerability has been reported in PTC Windchill PDMlink and PTC FlexPLM. The vulnerability may be exploited through the deserialization of untrusted data.   *  This advisory also applies to all CPS versions\n  *  The identified vulnerability also impacts Windchill and FlexPLM releases prior to 11.0 M030",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01106,
-      "epss_pct": 0.61851,
-      "cwe": "CWE-20",
-      "published": "2026-06-18T01:18:12.040",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-18",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-06-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 12
@@ -865,7 +865,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.78555,
-      "epss_pct": 0.99535,
+      "epss_pct": 0.99536,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -960,7 +960,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98513,
+      "epss_pct": 0.98514,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1018,7 +1018,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.8243,
+      "epss_pct": 0.82435,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1066,7 +1066,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.97683,
+      "epss_pct": 0.97684,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1124,7 +1124,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0185,
-      "epss_pct": 0.76539,
+      "epss_pct": 0.76543,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -1166,7 +1166,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.10659,
-      "epss_pct": 0.95258,
+      "epss_pct": 0.9526,
       "cwe": "CWE-400",
       "published": null,
       "kev": {
@@ -1224,7 +1224,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18914,
-      "epss_pct": 0.96951,
+      "epss_pct": 0.96952,
       "cwe": "CWE-266",
       "published": null,
       "kev": {
@@ -1282,7 +1282,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73719,
+      "epss_pct": 0.73723,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1340,7 +1340,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.27546,
-      "epss_pct": 0.97834,
+      "epss_pct": 0.97836,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1393,7 +1393,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66072,
+      "epss_pct": 0.66078,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1451,7 +1451,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93866,
+      "epss_pct": 0.93868,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1504,7 +1504,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.5329,
+      "epss_pct": 0.53302,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -1544,47 +1544,6 @@
       "rank": 26
     },
     {
-      "cve_id": "CVE-2026-34909",
-      "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
-      "vendor": "Ubiquiti",
-      "product": "UniFi OS",
-      "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02269,
-      "epss_pct": 0.8093,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 27
-    },
-    {
       "cve_id": "CVE-2022-0492",
       "title": "Linux Kernel Improper Authentication Vulnerability",
       "vendor": "Linux",
@@ -1593,7 +1552,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.05528,
-      "epss_pct": 0.91863,
+      "epss_pct": 0.91865,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1623,7 +1582,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1633,9 +1592,50 @@
       "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01094,
-      "epss_pct": 0.61505,
+      "epss": 0.00889,
+      "epss_pct": 0.54978,
       "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-23",
+        "due_date": "2026-06-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2026-34909",
+      "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
+      "vendor": "Ubiquiti",
+      "product": "UniFi OS",
+      "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02269,
+      "epss_pct": 0.80933,
+      "cwe": "CWE-22",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1675,7 +1675,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.01714,
-      "epss_pct": 0.74628,
+      "epss_pct": 0.74635,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -1716,7 +1716,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01456,
-      "epss_pct": 0.70335,
+      "epss_pct": 0.70338,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -1757,7 +1757,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00502,
-      "epss_pct": 0.39291,
+      "epss_pct": 0.39296,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -1822,7 +1822,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.4719,
-      "epss_pct": 0.98694,
+      "epss_pct": 0.98693,
       "cwe": "CWE-288",
       "published": "2026-06-09T16:16:35.837",
       "kev": {
@@ -1875,7 +1875,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00637,
-      "epss_pct": 0.461,
+      "epss_pct": 0.4611,
       "cwe": "CWE-22",
       "published": "2026-06-25T19:16:39.660",
       "kev": {
@@ -1923,7 +1923,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00638,
-      "epss_pct": 0.46178,
+      "epss_pct": 0.46188,
       "cwe": "CWE-59",
       "published": "2026-06-25T19:16:39.793",
       "kev": {
@@ -1970,8 +1970,8 @@
       "description": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00734,
-      "epss_pct": 0.49943,
+      "epss": 0.00803,
+      "epss_pct": 0.52261,
       "cwe": "CWE-434",
       "published": "2026-06-20T13:16:42.080",
       "kev": {
@@ -2023,8 +2023,8 @@
       "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00329,
-      "epss_pct": 0.24824,
+      "epss": 0.00356,
+      "epss_pct": 0.27626,
       "cwe": "CWE-434",
       "published": "2026-06-29T15:16:42.360",
       "kev": {
@@ -2072,7 +2072,7 @@
       "cvss": 8.3,
       "severity": "HIGH",
       "epss": 0.00732,
-      "epss_pct": 0.49869,
+      "epss_pct": 0.49877,
       "cwe": "CWE-680",
       "published": "2026-06-17T20:17:28.667",
       "kev": {
@@ -2125,7 +2125,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00644,
-      "epss_pct": 0.46427,
+      "epss_pct": 0.46439,
       "cwe": "CWE-863",
       "published": "2026-07-02T23:16:51.137",
       "kev": {
@@ -2134,7 +2134,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -2168,7 +2168,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.38378,
+      "epss_pct": 0.38379,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:33.450",
       "kev": {
@@ -2211,7 +2211,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0046,
-      "epss_pct": 0.36698,
+      "epss_pct": 0.36709,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:34.083",
       "kev": {
@@ -2253,8 +2253,8 @@
       "description": "ERP App developed by PROG MIS has a Use of Hard-coded Credentials vulnerability, allowing unauthenticated remote attackers to log in to view application code and obtain the database account and password.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00463,
+      "epss_pct": 0.36927,
       "cwe": "CWE-798",
       "published": "2026-07-06T08:16:36.070",
       "kev": {
@@ -2288,8 +2288,8 @@
       "description": "Prog\n  Management System developed by PROG MIS has a Exposure of Sensitive\n  Information vulnerability, allowing unauthenticated remote attackers to view\n  a specific page and obtain the database account and password.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00507,
+      "epss_pct": 0.39594,
       "cwe": "CWE-497",
       "published": "2026-07-06T08:16:36.213",
       "kev": {
@@ -2316,49 +2316,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-6509",
-      "title": "Missing Authorization vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Update allows P…",
-      "vendor": null,
-      "product": null,
-      "description": "Missing Authorization vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Update allows Privilege Escalation.\n\nThis issue affects Pardus Update: from <=0.6.3 before 0.6.6.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-07-05T15:16:57.687",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "jackalkarlos/EvilAhenk",
-            "html_url": "https://github.com/jackalkarlos/EvilAhenk",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-53753",
       "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
       "vendor": null,
@@ -2367,7 +2324,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0045,
-      "epss_pct": 0.36067,
+      "epss_pct": 0.36077,
       "cwe": "CWE-94",
       "published": "2026-06-23T19:17:07.107",
       "kev": {
@@ -2404,7 +2361,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-14241",
@@ -2415,9 +2372,44 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00303,
-      "epss_pct": 0.2204,
+      "epss_pct": 0.22054,
       "cwe": "CWE-787",
       "published": "2026-06-30T14:16:26.087",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-11546",
+      "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vul…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vulnerability with the adminCenter-1.0 feature enabled.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00222,
+      "epss_pct": 0.12764,
+      "cwe": "CWE-918",
+      "published": "2026-06-30T20:17:27.507",
       "kev": {
         "in_kev": false
       },
@@ -2442,17 +2434,17 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-11546",
+      "cve_id": "CVE-2026-11714",
       "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vul…",
       "vendor": null,
       "product": null,
-      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vulnerability with the adminCenter-1.0 feature enabled.",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vulnerability with the apiDiscovery-1.0 feature enabled.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00222,
-      "epss_pct": 0.12759,
+      "epss": 0.00203,
+      "epss_pct": 0.10349,
       "cwe": "CWE-918",
-      "published": "2026-06-30T20:17:27.507",
+      "published": "2026-06-30T20:17:28.033",
       "kev": {
         "in_kev": false
       },
@@ -2477,17 +2469,17 @@
       "rank": 47
     },
     {
-      "cve_id": "CVE-2026-11714",
-      "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vul…",
+      "cve_id": "CVE-2026-13772",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class …",
       "vendor": null,
       "product": null,
-      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is affected by a server-side request forgery vulnerability with the apiDiscovery-1.0 feature enabled.",
-      "cvss": 9.8,
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class names via Class.forName() and invokes their constructors with no allow-list at three distinct sinks (SELECT NEW, enum literals, and reflection-based comparators); an authenticated remote attacker who can influence an application-built OQL query string can execute arbitrary constructors on the WAS JVM, and a SELECT DISTINCT variant using planted grid values fires the same gadget post-readObject in a manner that survives JEP-290 serialization filters across grid node boundaries",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00203,
-      "epss_pct": 0.10343,
-      "cwe": "CWE-918",
-      "published": "2026-06-30T20:17:28.033",
+      "epss": 0.00283,
+      "epss_pct": 0.2017,
+      "cwe": "CWE-470",
+      "published": "2026-06-30T20:17:29.080",
       "kev": {
         "in_kev": false
       },
@@ -2512,17 +2504,17 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-13772",
-      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class …",
+      "cve_id": "CVE-2026-13773",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
       "vendor": null,
       "product": null,
-      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class names via Class.forName() and invokes their constructors with no allow-list at three distinct sinks (SELECT NEW, enum literals, and reflection-based comparators); an authenticated remote attacker who can influence an application-built OQL query string can execute arbitrary constructors on the WAS JVM, and a SELECT DISTINCT variant using planted grid values fires the same gadget post-readObject in a manner that survives JEP-290 serialization filters across grid node boundaries",
-      "cvss": 9.9,
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00283,
-      "epss_pct": 0.20159,
-      "cwe": "CWE-470",
-      "published": "2026-06-30T20:17:29.080",
+      "epss": 0.03415,
+      "epss_pct": 0.87453,
+      "cwe": "CWE-918",
+      "published": "2026-06-30T20:17:29.227",
       "kev": {
         "in_kev": false
       },
@@ -2547,17 +2539,17 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2026-13773",
-      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
+      "cve_id": "CVE-2026-7663",
+      "title": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources …",
       "vendor": null,
       "product": null,
-      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
-      "cvss": 10,
+      "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.03415,
-      "epss_pct": 0.87449,
-      "cwe": "CWE-918",
-      "published": "2026-06-30T20:17:29.227",
+      "epss": 0.00259,
+      "epss_pct": 0.17212,
+      "cwe": "CWE-285",
+      "published": "2026-06-30T20:17:31.280",
       "kev": {
         "in_kev": false
       },
@@ -2582,17 +2574,17 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2026-7663",
-      "title": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources …",
+      "cve_id": "CVE-2026-11541",
+      "title": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.…",
       "vendor": null,
       "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streamable MCP transport endpoint.",
+      "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.6 are affected by an HTTP request smuggling vulnerability.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00259,
-      "epss_pct": 0.17209,
-      "cwe": "CWE-285",
-      "published": "2026-06-30T20:17:31.280",
+      "epss": 0.00418,
+      "epss_pct": 0.33616,
+      "cwe": "CWE-444",
+      "published": "2026-06-30T22:16:46.317",
       "kev": {
         "in_kev": false
       },
@@ -2617,17 +2609,17 @@
       "rank": 51
     },
     {
-      "cve_id": "CVE-2026-11541",
-      "title": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.…",
+      "cve_id": "CVE-2026-13775",
+      "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
       "vendor": null,
       "product": null,
-      "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.6 are affected by an HTTP request smuggling vulnerability.",
+      "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00418,
-      "epss_pct": 0.33612,
-      "cwe": "CWE-444",
-      "published": "2026-06-30T22:16:46.317",
+      "epss": 0.00314,
+      "epss_pct": 0.23266,
+      "cwe": "CWE-416",
+      "published": "2026-06-30T23:16:52.397",
       "kev": {
         "in_kev": false
       },
@@ -2652,17 +2644,17 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-13775",
-      "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
+      "cve_id": "CVE-2026-13776",
+      "title": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rend…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "description": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00314,
-      "epss_pct": 0.23254,
-      "cwe": "CWE-416",
-      "published": "2026-06-30T23:16:52.397",
+      "epss": 0.00343,
+      "epss_pct": 0.26271,
+      "cwe": "CWE-843",
+      "published": "2026-06-30T23:16:52.490",
       "kev": {
         "in_kev": false
       },
@@ -2687,17 +2679,17 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-13776",
-      "title": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rend…",
+      "cve_id": "CVE-2026-13782",
+      "title": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the r…",
       "vendor": null,
       "product": null,
-      "description": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-      "cvss": 9.8,
+      "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00343,
-      "epss_pct": 0.26269,
-      "cwe": "CWE-843",
-      "published": "2026-06-30T23:16:52.490",
+      "epss": 0.00293,
+      "epss_pct": 0.21073,
+      "cwe": "CWE-416",
+      "published": "2026-06-30T23:16:53.063",
       "kev": {
         "in_kev": false
       },
@@ -2722,17 +2714,17 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-13782",
-      "title": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the r…",
+      "cve_id": "CVE-2026-14104",
+      "title": "Insufficient validation of untrusted input in WebAppInstalls in Google Chrome prior to 150.0.7871.47 allowed a remote…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-      "cvss": 10,
+      "description": "Insufficient validation of untrusted input in WebAppInstalls in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00293,
-      "epss_pct": 0.21059,
-      "cwe": "CWE-416",
-      "published": "2026-06-30T23:16:53.063",
+      "epss": 0.00383,
+      "epss_pct": 0.30259,
+      "cwe": "CWE-20",
+      "published": "2026-06-30T23:17:22.300",
       "kev": {
         "in_kev": false
       },
@@ -2757,17 +2749,17 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-14104",
-      "title": "Insufficient validation of untrusted input in WebAppInstalls in Google Chrome prior to 150.0.7871.47 allowed a remote…",
+      "cve_id": "CVE-2026-34100",
+      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): S…",
       "vendor": null,
       "product": null,
-      "description": "Insufficient validation of untrusted input in WebAppInstalls in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
+      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00383,
-      "epss_pct": 0.30254,
-      "cwe": "CWE-20",
-      "published": "2026-06-30T23:17:22.300",
+      "epss": 0.00373,
+      "epss_pct": 0.29279,
+      "cwe": "CWE-89",
+      "published": "2026-07-01T17:16:32.940",
       "kev": {
         "in_kev": false
       },
@@ -2785,31 +2777,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "label": "Published to NVD"
         }
       ],
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-34100",
-      "title": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): S…",
+      "cve_id": "CVE-2026-34106",
+      "title": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in subtitles.php (line 19) witho…",
       "vendor": null,
       "product": null,
-      "description": "Guardian language-system passes the id GET parameter directly into an unsanitized SQL query in media.php (line 17): SELECT id, filename, extension, type, duration, owner, private FROM files where id = '\\\".$_GET['id'].\\\"'. An authenticated attacker can perform error-based SQL injection to extract database contents.",
+      "description": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in subtitles.php (line 19) without sanitization: exec(\\\"php jobs/subtitle_rendering.php \\\".$login_session.\\\" \\\".$_GET['id'].\\\" ...\\\"). No authentication is required. An unauthenticated remote attacker can append shell metacharacters to the id parameter to execute arbitrary OS commands on the server.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00373,
-      "epss_pct": 0.29268,
-      "cwe": "CWE-89",
-      "published": "2026-07-01T17:16:32.940",
+      "epss": 0.0068,
+      "epss_pct": 0.47917,
+      "cwe": "CWE-78",
+      "published": "2026-07-01T17:16:33.657",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2827,24 +2819,24 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-34106",
-      "title": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in subtitles.php (line 19) witho…",
+      "cve_id": "CVE-2026-58453",
+      "title": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability t…",
       "vendor": null,
       "product": null,
-      "description": "Guardian language-system passes the id GET parameter directly into a PHP exec() call in subtitles.php (line 19) without sanitization: exec(\\\"php jobs/subtitle_rendering.php \\\".$login_session.\\\" \\\".$_GET['id'].\\\" ...\\\"). No authentication is required. An unauthenticated remote attacker can append shell metacharacters to the id parameter to execute arbitrary OS commands on the server.",
+      "description": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability that allows network-adjacent attackers to gain unauthorized access by using the default admin username with an empty password accepted by the anyka_ipc HTTP service on port 80. Attackers can authenticate with these hardcoded credentials to access camera snapshots, video streams, network configuration, and factory-level API endpoints including the SetMAC command injection surface.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0068,
-      "epss_pct": 0.47907,
-      "cwe": "CWE-78",
-      "published": "2026-07-01T17:16:33.657",
+      "epss": 0.0169,
+      "epss_pct": 0.74301,
+      "cwe": "CWE-1392",
+      "published": "2026-07-01T17:16:40.517",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2862,24 +2854,24 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-58453",
-      "title": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability t…",
+      "cve_id": "CVE-2026-50195",
+      "title": "containerd is an open-source container runtime.",
       "vendor": null,
       "product": null,
-      "description": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability that allows network-adjacent attackers to gain unauthorized access by using the default admin username with an empty password accepted by the anyka_ipc HTTP service on port 80. Attackers can authenticate with these hardcoded credentials to access camera snapshots, video streams, network configuration, and factory-level API endpoints including the SetMAC command injection surface.",
-      "cvss": 9.8,
+      "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.0169,
-      "epss_pct": 0.74294,
-      "cwe": "CWE-1392",
-      "published": "2026-07-01T17:16:40.517",
+      "epss": 0.00354,
+      "epss_pct": 0.27507,
+      "cwe": "CWE-345",
+      "published": "2026-07-01T19:16:53.333",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2897,24 +2889,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-50195",
+      "cve_id": "CVE-2026-53492",
       "title": "containerd is an open-source container runtime.",
       "vendor": null,
       "product": null,
-      "description": "containerd is an open-source container runtime. Versions prior to 2.3.2, 2.2.5 and 2.1.9 contain a vulnerability in the CRI checkpoint import process where it fails to validate the image references specified within a checkpoint image's configuration. An attacker with permissions to create pods can use a crafted checkpoint image to force containerd to pull a malicious image and assign it an arbitrary local tag, thereby poisoning the node's local image cache. Subsequently, if other pods on the same node attempt to use the poisoned tag with an IfNotPresent (or Never) pull policy, they will unknowingly execute the attacker's malicious image instead of the legitimate one. This can lead to a compromise of the affected pods, allowing the attacker to execute arbitrary code under the victim pod's identity. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
-      "cvss": 9.9,
+      "description": "containerd is an open-source container runtime. In Versions prior to 2.3.2, 2.2.5 and 2.1.9, the CRI implementation improperly trusts Container Device Interface (CDI) annotations found within untrusted checkpoint image metadata during container restoration. When restoring a container from a checkpoint, containerd preserves CDI-related annotations from the checkpoint archive rather than relying solely on the pod's create-time specification. This allows a user with pod creation permissions to bypass standard Kubernetes resource allocation and device plugin enforcement, injecting arbitrary CDI edits (such as device nodes and host mounts) into the restored container. Successful exploitation requires that the node has CDI enabled and contains a matching host CDI specification for the requested device; environments where CDI is disabled or lacking sensitive device specifications are not affected. This issue has been fixed in versions 2.3.2, 2.2.5 and 2.1.9.",
+      "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.00354,
-      "epss_pct": 0.27504,
-      "cwe": "CWE-345",
-      "published": "2026-07-01T19:16:53.333",
+      "epss": 0.00412,
+      "epss_pct": 0.33102,
+      "cwe": "CWE-20",
+      "published": "2026-07-01T19:16:54.510",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
