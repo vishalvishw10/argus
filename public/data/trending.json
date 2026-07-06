@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T21:02:51.261Z",
+  "generated_at": "2026-07-06T22:40:28.463Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1631,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "961 recent"
+      "detail": "974 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "994 scored"
+      "detail": "992 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
@@ -2058,59 +2058,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-55200",
-      "title": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read(…",
-      "vendor": null,
-      "product": null,
-      "description": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read() that fails to enforce upper bounds on packet_length field. Remote attackers can send crafted SSH packets with excessively large packet_length values to corrupt heap memory and achieve remote code execution.",
-      "cvss": 8.3,
-      "severity": "HIGH",
-      "epss": 0.00732,
-      "epss_pct": 0.49877,
-      "cwe": "CWE-680",
-      "published": "2026-06-17T20:17:28.667",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-55200",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-55200",
-            "stars": 10
-          },
-          {
-            "full_name": "xd20111/CVE-2026-55200",
-            "html_url": "https://github.com/xd20111/CVE-2026-55200",
-            "stars": 2
-          },
-          {
-            "full_name": "kaleth4/CVE-2026-55200",
-            "html_url": "https://github.com/kaleth4/CVE-2026-55200",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
       "cve_id": "CVE-2026-8452",
       "title": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and …",
       "vendor": null,
@@ -2151,7 +2098,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2191,6 +2138,59 @@
       "timeline": [
         {
           "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-55200",
+      "title": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read(…",
+      "vendor": null,
+      "product": null,
+      "description": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read() that fails to enforce upper bounds on packet_length field. Remote attackers can send crafted SSH packets with excessively large packet_length values to corrupt heap memory and achieve remote code execution.",
+      "cvss": 8.3,
+      "severity": "HIGH",
+      "epss": 0.00732,
+      "epss_pct": 0.49877,
+      "cwe": "CWE-680",
+      "published": "2026-06-17T20:17:28.667",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-55200",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-55200",
+            "stars": 10
+          },
+          {
+            "full_name": "xd20111/CVE-2026-55200",
+            "html_url": "https://github.com/xd20111/CVE-2026-55200",
+            "stars": 2
+          },
+          {
+            "full_name": "kaleth4/CVE-2026-55200",
+            "html_url": "https://github.com/kaleth4/CVE-2026-55200",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-17",
           "label": "Published to NVD"
         }
       ],
@@ -2888,43 +2888,35 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-49468",
-      "title": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format.",
+      "cve_id": "CVE-2026-25268",
+      "title": "Memory Corruption when processing invalid HT40 channel layouts during dynamic channel switching operations.",
       "vendor": null,
       "product": null,
-      "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.84.0,  This vulnerability is fixed in 1.84.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00559,
-      "epss_pct": 0.42461,
-      "cwe": "CWE-290",
-      "published": "2026-06-22T21:16:25.190",
+      "description": "Memory Corruption when processing invalid HT40 channel layouts during dynamic channel switching operations.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-121",
+      "published": "2026-07-06T21:16:54.730",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 16,
-      "rising": 0,
+      "hype": 17,
+      "rising": 20,
       "repos": {
-        "count": 1,
+        "count": 0,
         "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass",
-            "html_url": "https://github.com/BiiTts/CVE-2026-49468-LiteLLM-Auth-Bypass",
-            "stars": 0
-          }
-        ]
+        "top": []
       },
       "media": [],
       "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
+      "tags": [],
       "timeline": [
         {
-          "date": "2026-06-22",
+          "date": "2026-07-06",
           "label": "Published to NVD"
         }
       ],
