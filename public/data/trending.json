@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07T08:45:30.639Z",
+  "generated_at": "2026-07-07T12:11:12.317Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1631,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "947 recent"
+      "detail": "952 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -38,8 +38,8 @@
     },
     {
       "name": "Dark Reading",
-      "status": "error",
-      "detail": "0 mentions"
+      "status": "ok",
+      "detail": "1 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3559 mapped"
+      "detail": "3560 mapped"
     },
     {
       "name": "Reddit",
@@ -136,77 +136,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-33017",
-      "title": "Langflow Code Injection Vulnerability",
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "description": "Langflow contains a code injection vulnerability that could allow building public flows without requiring authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.98412,
-      "epss_pct": 0.99913,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-03-25",
-        "due_date": "2026-04-08",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 67,
-      "rising": 0,
-      "repos": {
-        "count": 14,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "MaxMnMl/langflow-CVE-2026-33017-poc",
-            "html_url": "https://github.com/MaxMnMl/langflow-CVE-2026-33017-poc",
-            "stars": 9
-          },
-          {
-            "full_name": "EQSTLab/CVE-2026-33017",
-            "html_url": "https://github.com/EQSTLab/CVE-2026-33017",
-            "stars": 3
-          },
-          {
-            "full_name": "z4yd3/PoC-CVE-2026-33017",
-            "html_url": "https://github.com/z4yd3/PoC-CVE-2026-33017",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints",
-          "url": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
-          "date": "2026-06-30T15:47:20.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-03-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-06-30",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "cve_id": "CVE-2026-35273",
       "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
       "vendor": "Oracle",
@@ -264,7 +193,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -324,7 +253,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -383,7 +312,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -442,7 +371,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -468,7 +397,7 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 20,
+        "stars": 19,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523",
@@ -483,7 +412,7 @@
           {
             "full_name": "gagaltotal/CVE-2026-10523-Ivanti-sentry",
             "html_url": "https://github.com/gagaltotal/CVE-2026-10523-Ivanti-sentry",
-            "stars": 2
+            "stars": 1
           }
         ]
       },
@@ -499,6 +428,60 @@
         {
           "date": "2026-06-11",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2024-42009",
+      "title": "RoundCube Webmail Cross-Site Scripting Vulnerability",
+      "vendor": "Roundcube",
+      "product": "Webmail",
+      "description": "RoundCube Webmail contains a cross-site scripting vulnerability. This vulnerability could allow a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.82853,
+      "epss_pct": 0.99631,
+      "cwe": "CWE-79",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2025-06-09",
+        "due_date": "2025-06-30",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 38,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+          "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+          "date": "2026-07-07T09:10:51.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2025-06-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 7
@@ -737,6 +720,66 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Authentication Bypass Vulnerability",
+      "vendor": "SimpleHelp ",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0116,
+      "epss_pct": 0.63292,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
+            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
+            "stars": 5
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+          "date": "2026-06-29T21:29:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-06-29",
+          "label": "Covered by Dark Reading"
+        }
+      ],
+      "rank": 12
+    },
+    {
       "cve_id": "CVE-2026-42271",
       "title": "BerriAI LiteLLM Command Injection Vulnerability",
       "vendor": "BerriAI",
@@ -788,7 +831,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -830,7 +873,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2024-21182",
@@ -883,7 +926,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -941,7 +984,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -989,7 +1032,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1047,7 +1090,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-48027",
@@ -1086,54 +1129,6 @@
       "timeline": [
         {
           "date": "2026-05-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 18
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0116,
-      "epss_pct": 0.63292,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "J4ck3LSyN-Gen2/CVE-2026-48558",
-            "html_url": "https://github.com/J4ck3LSyN-Gen2/CVE-2026-48558",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1386,17 +1381,12 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 38,
+      "hype": 37,
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 1,
+        "stars": 0,
         "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-54420",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-54420",
-            "stars": 1
-          },
           {
             "full_name": "fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit",
             "html_url": "https://github.com/fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit",
@@ -1405,6 +1395,11 @@
           {
             "full_name": "mahfuzreham/litespeed-cpanel-cve-2026-54420-fix",
             "html_url": "https://github.com/mahfuzreham/litespeed-cpanel-cve-2026-54420-fix",
+            "stars": 0
+          },
+          {
+            "full_name": "Resellnom/litespeed-cpanel-cve-2026-54420-fix",
+            "html_url": "https://github.com/Resellnom/litespeed-cpanel-cve-2026-54420-fix",
             "stars": 0
           }
         ]
@@ -1812,11 +1807,11 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 26,
+      "hype": 25,
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 16,
+        "stars": 15,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Ivanti-Sentry-RCE-CVE-2026-10520-CVE-2026-10523",
@@ -1826,7 +1821,7 @@
           {
             "full_name": "gagaltotal/CVE-2026-10523-Ivanti-sentry",
             "html_url": "https://github.com/gagaltotal/CVE-2026-10523-Ivanti-sentry",
-            "stars": 2
+            "stars": 1
           },
           {
             "full_name": "HORKimhab/CVE-2026-10520-10523",
@@ -2149,7 +2144,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2421,41 +2416,6 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-13775",
-      "title": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rende…",
-      "vendor": null,
-      "product": null,
-      "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00314,
-      "epss_pct": 0.23266,
-      "cwe": "CWE-416",
-      "published": "2026-06-30T23:16:52.397",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
       "cve_id": "CVE-2026-13776",
       "title": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the rend…",
       "vendor": null,
@@ -2488,7 +2448,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2523,7 +2483,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-14104",
@@ -2558,7 +2518,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2593,7 +2553,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -2628,7 +2588,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58453",
@@ -2663,7 +2623,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58521",
@@ -2698,7 +2658,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-50195",
@@ -2733,7 +2693,77 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-11610",
+      "title": "A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server\n(389-ds-base).",
+      "vendor": null,
+      "product": null,
+      "description": "A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server\n(389-ds-base). After a successful SASL bind with integrity protection (SSF > 0),\nan authenticated attacker can send a specially crafted oversized LDAP UNBIND packet\nthat is copied into a 512-byte heap receive buffer without a bounds check in\nsasl_io_recv() in sasl_io.c. This allows up to approximately 2 megabytes of\nattacker-controlled data to overflow the buffer, causing a denial of service (server\ncrash). In FreeIPA and Red Hat Identity Management deployments, any domain user with\na valid Kerberos ticket, any enrolled host, or any service account can trigger this\nvulnerability over the network after authenticating via GSSAPI.\nThe vulnerable code path has existed since approximately 2013 (389-ds-base 1.3.2) and\nwas not addressed by the CVE-2025-14905 fix, which patched a separate heap overflow\nin schema.c only.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-07-07T10:16:39.690",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-14474",
+      "title": "A flaw was found in SSSD's LDAP sudo provider.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD searches the entire LDAP directory tree for sudoRole objects. An authenticated attacker with write access to any subtree can inject a sudoRole object granting root-level sudo privileges on all SSSD-enrolled hosts.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-1188",
+      "published": "2026-07-07T10:16:39.870",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-49468",
@@ -2776,7 +2806,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-44789",
@@ -2819,7 +2849,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-48020",
@@ -2862,7 +2892,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-56121",
@@ -2902,41 +2932,6 @@
       "timeline": [
         {
           "date": "2026-06-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-54917",
-      "title": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables.",
-      "vendor": null,
-      "product": null,
-      "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables. Prior to 4.30, the S3 API gateway and the Iceberg REST catalog gateway construct their routers with mux.NewRouter().SkipClean(true). With path cleaning disabled, a .. segment inside the URL survives routing, so a request such as `GET /bucket-A/../evil-bucket/key`, is matched as bucket=bucket-A, object=../evil-bucket/key. The captured object key is then joined into a filer path with util.JoinPath (S3) / path.Join (Iceberg), which collapse the .. server-side, so the actual read or write lands in evil-bucket. This vulnerability is fixed in 4.30.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00345,
-      "epss_pct": 0.26472,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:42.230",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-25",
           "label": "Published to NVD"
         }
       ],
