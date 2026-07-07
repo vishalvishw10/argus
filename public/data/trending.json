@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T22:40:28.463Z",
+  "generated_at": "2026-07-07T01:09:43.414Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -1861,102 +1861,6 @@
       "rank": 33
     },
     {
-      "cve_id": "CVE-2026-50548",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00637,
-      "epss_pct": 0.4611,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:39.660",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 24,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-50549",
-      "title": "Cursor is a code editor built for programming with AI.",
-      "vendor": null,
-      "product": null,
-      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.46188,
-      "cwe": "CWE-59",
-      "published": "2026-06-25T19:16:39.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 24,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
-          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-          "date": "2026-07-01T14:42:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 35
-    },
-    {
       "cve_id": "CVE-2026-48908",
       "title": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resu…",
       "vendor": null,
@@ -2005,6 +1909,102 @@
         {
           "date": "2026-06-20",
           "label": "Published to NVD"
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-50548",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory. A flaw was identified in how the agent could modify the working_directory parameter, which could cause the sandbox to include writable paths outside the intended workspace. A malicious agent could set working_directory to a sensitive location and write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00637,
+      "epss_pct": 0.4611,
+      "cwe": "CWE-22",
+      "published": "2026-06-25T19:16:39.660",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 23,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "cve_id": "CVE-2026-50549",
+      "title": "Cursor is a code editor built for programming with AI.",
+      "vendor": null,
+      "product": null,
+      "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it stays inside the workspace, but when canonicalization fails it falls back to the original path and writes without approval. A malicious agent can create an in-workspace symlink that points outside the workspace and force canonicalization to fail — either because the target does not exist or because read permission is removed from the path — so the agent writes through the symlink to an arbitrary location without approval. A malicious agent could write arbitrary files outside the workspace under the user's privileges. This enables non-sandboxed Remote Code Execution — for example by overwriting the cursorsandbox helper so later commands run unsandboxed — with no user interaction beyond a benign prompt. This vulnerability is fixed in 3.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.46188,
+      "cwe": "CWE-59",
+      "published": "2026-06-25T19:16:39.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 23,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+          "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+          "date": "2026-07-01T14:42:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-01",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 36
@@ -2905,7 +2905,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
