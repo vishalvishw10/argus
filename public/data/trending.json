@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T15:18:18.621Z",
+  "generated_at": "2026-07-07T17:28:31.389Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
-    "kev_count": 31,
-    "kev_total": 1631,
+    "kev_count": 34,
+    "kev_total": 1634,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1631 entries"
+      "detail": "1634 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "951 recent"
+      "detail": "980 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "986 scored"
+      "detail": "1010 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3562 mapped"
+      "detail": "3564 mapped"
     },
     {
       "name": "Reddit",
@@ -136,6 +136,125 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-48908",
+      "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "JoomShaper",
+      "product": "SP Page Builder",
+      "description": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00803,
+      "epss_pct": 0.52274,
+      "cwe": "CWE-434",
+      "published": "2026-06-20T13:16:42.080",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 65,
+      "rising": 34,
+      "repos": {
+        "count": 7,
+        "stars": 13,
+        "top": [
+          {
+            "full_name": "papageo75/CVE-2026-48908-PoC",
+            "html_url": "https://github.com/papageo75/CVE-2026-48908-PoC",
+            "stars": 12
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-48908",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-48908",
+            "stars": 1
+          },
+          {
+            "full_name": "ayiezola/CVE-2026-48908",
+            "html_url": "https://github.com/ayiezola/CVE-2026-48908",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-56290",
+      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
+      "vendor": "Joomlack",
+      "product": "Page Builder",
+      "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00356,
+      "epss_pct": 0.27626,
+      "cwe": "CWE-434",
+      "published": "2026-06-29T15:16:42.360",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "shinthink/pbck-exploit",
+            "html_url": "https://github.com/shinthink/pbck-exploit",
+            "stars": 2
+          },
+          {
+            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
+            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 3
+    },
+    {
       "cve_id": "CVE-2026-35273",
       "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
       "vendor": "Oracle",
@@ -193,7 +312,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -253,7 +372,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -312,7 +431,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -371,7 +490,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -430,7 +549,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 8
     },
     {
       "cve_id": "CVE-2024-42009",
@@ -452,8 +571,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 57,
-      "rising": 37,
+      "hype": 56,
+      "rising": 35,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -484,7 +603,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -543,7 +662,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-45321",
@@ -602,7 +721,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -647,7 +766,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -717,7 +836,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -777,7 +896,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-42271",
@@ -831,7 +950,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -873,7 +992,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2024-21182",
@@ -926,7 +1045,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -984,7 +1103,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-55255",
+      "title": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
+      "vendor": "Langflow",
+      "product": "Langflow",
+      "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00233,
+      "epss_pct": 0.14148,
+      "cwe": "CWE-639",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "rootdirective-sec/CVE-2026-55255-Lab",
+            "html_url": "https://github.com/rootdirective-sec/CVE-2026-55255-Lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -1032,7 +1199,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1090,7 +1257,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-48027",
@@ -1132,7 +1299,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-28318",
@@ -1190,7 +1357,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-48172",
@@ -1248,7 +1415,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-11645",
@@ -1306,7 +1473,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-45247",
@@ -1359,7 +1526,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1417,7 +1584,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1470,7 +1637,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-7473",
@@ -1518,7 +1685,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 29
     },
     {
       "cve_id": "CVE-2022-0492",
@@ -1559,7 +1726,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1600,7 +1767,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1641,7 +1808,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 32
     },
     {
       "cve_id": "CVE-2025-48595",
@@ -1682,7 +1849,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-8398",
@@ -1723,7 +1890,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-40138",
+      "title": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support and …",
+      "vendor": null,
+      "product": null,
+      "description": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support and Privileged Remote Access. Improper validation of authentication data may allow a network-positioned attacker to bypass access controls and gain unauthorized access to the appliance, including accounts with elevated privileges. Exploitation requires a specific authentication configuration to be enabled",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.0042,
+      "epss_pct": 0.33801,
+      "cwe": "CWE-287",
+      "published": "2026-07-06T17:16:30.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 26,
+      "rising": 49,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+          "url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+          "date": "2026-07-07T05:16:51.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-06",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-10523",
@@ -1776,60 +1991,69 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 32
+      "rank": 36
     },
     {
-      "cve_id": "CVE-2026-48908",
-      "title": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resu…",
+      "cve_id": "CVE-2026-20896",
+      "title": "CVE-2026-20896",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
+      "description": "Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00803,
-      "epss_pct": 0.52274,
-      "cwe": "CWE-434",
-      "published": "2026-06-20T13:16:42.080",
+      "epss": 0.00783,
+      "epss_pct": 0.51611,
+      "cwe": "CWE-284",
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
-      "rising": 0,
+      "hype": 25,
+      "rising": 66,
       "repos": {
-        "count": 7,
-        "stars": 13,
+        "count": 2,
+        "stars": 2,
         "top": [
           {
-            "full_name": "papageo75/CVE-2026-48908-PoC",
-            "html_url": "https://github.com/papageo75/CVE-2026-48908-PoC",
-            "stars": 12
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-48908",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-48908",
+            "full_name": "rz1027/CVE-2026-20896",
+            "html_url": "https://github.com/rz1027/CVE-2026-20896",
             "stars": 1
           },
           {
-            "full_name": "ayiezola/CVE-2026-48908",
-            "html_url": "https://github.com/ayiezola/CVE-2026-48908",
-            "stars": 0
+            "full_name": "kaleth4/CVE-2026-20896",
+            "html_url": "https://github.com/kaleth4/CVE-2026-20896",
+            "stars": 1
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Critical Gitea Flaw Under Active Exploitation, Researchers Warn",
+          "url": "https://www.securityweek.com/critical-gitea-flaw-under-active-exploitation-researchers-warn/",
+          "date": "2026-07-07T17:17:19.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
+          "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+          "date": "2026-07-06T16:28:59.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-06-20",
-          "label": "Published to NVD"
+          "date": "2026-07-06",
+          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 33
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-50548",
@@ -1877,7 +2101,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 34
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-50549",
@@ -1925,7 +2149,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 35
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -1945,7 +2169,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 64,
+      "rising": 62,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1982,7 +2206,7 @@
           "label": "Covered by BleepingComputer, SecurityWeek"
         }
       ],
-      "rank": 36
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2035,55 +2259,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-56290",
-      "title": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading …",
-      "vendor": null,
-      "product": null,
-      "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00356,
-      "epss_pct": 0.27626,
-      "cwe": "CWE-434",
-      "published": "2026-06-29T15:16:42.360",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "shinthink/pbck-exploit",
-            "html_url": "https://github.com/shinthink/pbck-exploit",
-            "stars": 2
-          },
-          {
-            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2126,7 +2302,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2169,7 +2345,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-14345",
@@ -2204,7 +2380,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-13019",
+      "title": "Esri Portal for ArcGIS versions 12.1 and earlier on Windows, Linux and Kubernetes have a missing authentication for c…",
+      "vendor": null,
+      "product": null,
+      "description": "Esri Portal for ArcGIS versions 12.1 and earlier on Windows, Linux and Kubernetes have a missing authentication for critical function vulnerability allows a remote, unauthenticated attacker to access an unprotected API.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-640",
+      "published": "2026-07-07T17:16:35.400",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2257,7 +2468,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -2305,7 +2516,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-13772",
@@ -2340,7 +2551,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2375,7 +2586,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2410,7 +2621,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2445,7 +2656,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -2480,7 +2691,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58453",
@@ -2515,7 +2726,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-58521",
@@ -2550,7 +2761,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-50195",
@@ -2585,7 +2796,77 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-54408",
+      "title": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi Pr…",
+      "vendor": null,
+      "product": null,
+      "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi Protect Application to bypass authentication for data streaming.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00273,
+      "epss_pct": 0.19097,
+      "cwe": "CWE-284",
+      "published": "2026-07-02T15:17:04.523",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-55115",
+      "title": "A malicious actor with access to the network and low privileges could exploit a Server-Side Request Forgery (SSRF) in…",
+      "vendor": null,
+      "product": null,
+      "description": "A malicious actor with access to the network and low privileges could exploit a Server-Side Request Forgery (SSRF) in UniFi Protect Application to escalate privileges on the host device.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00232,
+      "epss_pct": 0.13986,
+      "cwe": "CWE-918",
+      "published": "2026-07-02T15:17:05.513",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-26145",
@@ -2620,7 +2901,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2655,285 +2936,46 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-44789",
-      "title": "n8n is an open source workflow automation platform.",
-      "vendor": null,
-      "product": null,
-      "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via an unvalidated pagination parameter in the HTTP Request node. Combined with other techniques this could lead to RCE on the instance. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00632,
-      "epss_pct": 0.45906,
-      "cwe": "CWE-1321",
-      "published": "2026-06-23T17:16:59.290",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
-      "vendor": null,
-      "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36082,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-48020",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00591,
-      "epss_pct": 0.44038,
-      "cwe": "CWE-288",
-      "published": "2026-06-23T20:16:47.993",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "html_url": "https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-56121",
-      "title": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized atta…",
-      "vendor": null,
-      "product": null,
-      "description": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized attackers to achieve remote code execution by sending a crafted gRPC request to the registry server. The user_defined_function.body field of an OnDemandFeatureView spec is decoded from base64 and passed to dill.loads() before any authorization check is performed, enabling attackers to embed a malicious serialized Python object with an arbitrary __reduce__ method to execute OS commands as the feast service account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00862,
-      "epss_pct": 0.5418,
-      "cwe": "CWE-502",
-      "published": "2026-06-24T16:16:33.193",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-54917",
-      "title": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables.",
-      "vendor": null,
-      "product": null,
-      "description": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables. Prior to 4.30, the S3 API gateway and the Iceberg REST catalog gateway construct their routers with mux.NewRouter().SkipClean(true). With path cleaning disabled, a .. segment inside the URL survives routing, so a request such as `GET /bucket-A/../evil-bucket/key`, is matched as bucket=bucket-A, object=../evil-bucket/key. The captured object key is then joined into a filer path with util.JoinPath (S3) / path.Join (Iceberg), which collapse the .. server-side, so the actual read or write lands in evil-bucket. This vulnerability is fixed in 4.30.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00345,
-      "epss_pct": 0.26471,
-      "cwe": "CWE-22",
-      "published": "2026-06-25T19:16:42.230",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2025-71333",
-      "title": "Flowise through 2.2.4 contains an unauthenticated arbitrary file upload vulnerability in the /api/v1/attachments endp…",
-      "vendor": null,
-      "product": null,
-      "description": "Flowise through 2.2.4 contains an unauthenticated arbitrary file upload vulnerability in the /api/v1/attachments endpoint when storageType is set to local. Attackers can exploit path traversal in the chatId and chatflowId parameters to upload malicious files to arbitrary directories, potentially enabling remote code execution and server compromise.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00611,
-      "epss_pct": 0.44968,
-      "cwe": "CWE-73",
-      "published": "2026-06-25T22:16:59.010",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2025-71338",
-      "title": "Flowise contains a path traversal vulnerability in the /api/v1/document-store/loader/process endpoint that allows una…",
+      "cve_id": "CVE-2026-23697",
+      "title": "Vtiger CRM before 8.4.0 contains an authenticated file upload vulnerability that allows low-privileged users to achie…",
       "vendor": null,
       "product": null,
-      "description": "Flowise contains a path traversal vulnerability in the /api/v1/document-store/loader/process endpoint that allows unauthenticated attackers to write arbitrary files to the filesystem. Attackers can exploit unsanitized fileName parameters with ../ sequences to overwrite critical files like package.json and achieve remote code execution when the application restarts.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00639,
-      "epss_pct": 0.46196,
-      "cwe": "CWE-73",
-      "published": "2026-06-25T22:16:59.520",
+      "description": "Vtiger CRM before 8.4.0 contains an authenticated file upload vulnerability that allows low-privileged users to achieve remote code execution by uploading a .phar file containing arbitrary PHP code through the Documents module, bypassing the extension denylist in config.inc.php which omits the .phar extension. The uploaded file is stored with its original .phar extension under the web-accessible storage directory, and a misconfigured .htaccess using Apache 2.2 syntax is silently ignored on Apache 2.4 deployments, allowing unauthenticated HTTP requests to directly execute the uploaded PHP payload.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-07T17:16:35.977",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 16,
-      "rising": 0,
+      "hype": 17,
+      "rising": 20,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "JivaSecurity/VTIGER-CRM-RCE-CVE-2026-23697",
+            "html_url": "https://github.com/JivaSecurity/VTIGER-CRM-RCE-CVE-2026-23697",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-06-25",
+          "date": "2026-07-07",
           "label": "Published to NVD"
         }
       ],
