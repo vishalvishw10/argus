@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T18:49:22.783Z",
+  "generated_at": "2026-07-08T20:38:39.558Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1043 recent"
+      "detail": "1064 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1070 scored"
+      "detail": "1085 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3575 mapped"
+      "detail": "3576 mapped"
     },
     {
       "name": "Reddit",
@@ -156,7 +156,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 68,
-      "rising": 82,
+      "rising": 79,
       "repos": {
         "count": 2,
         "stars": 11,
@@ -227,7 +227,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 7,
         "stars": 13,
@@ -289,7 +289,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 3,
         "stars": 3,
@@ -648,7 +648,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1207,7 +1207,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2044,7 +2044,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2092,7 +2092,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 38,
+      "rising": 36,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -2298,7 +2298,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2456,15 +2456,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 2,
-        "stars": 42,
+        "stars": 43,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
             "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 42
+            "stars": 43
           },
           {
             "full_name": "HORKimhab/CVE-2026-43499",
@@ -2875,7 +2875,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2893,24 +2893,59 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-60102",
-      "title": "Horde Virtual File System (VFS) API before 3.0.1 contains an OS command injection vulnerability in the Horde_Vfs_Smb …",
+      "cve_id": "CVE-2026-44454",
+      "title": "Coder allows organizations to provision remote development environments via Terraform.",
       "vendor": null,
       "product": null,
-      "description": "Horde Virtual File System (VFS) API before 3.0.1 contains an OS command injection vulnerability in the Horde_Vfs_Smb driver where the _escapeShellCommand() method fails to sanitize command substitution sequences, allowing authenticated attackers to inject arbitrary shell commands through user-controlled filenames. Attackers can supply malicious filenames containing unescaped command substitution payloads through operations such as file upload, folder creation, rename, or deletion, which are interpolated into a double-quoted shell context and executed via proc_open() through /bin/sh -c before smbclient runs, resulting in arbitrary command execution on the underlying system.",
+      "description": "Coder allows organizations to provision remote development environments via Terraform. Prior to versions 2.29.7 and 2.30.2, the `dotfiles` registry module passed unsanitized user input to shell commands, allowing arbitrary code execution inside a provisioned workspace. Any user who supplied a crafted `dotfiles_uri` value (for example, one containing shell command substitution such as `$(...)`) could achieve command execution in their own workspace. The Create Workspace page's `mode=auto` deep links amplified this into a one-click attack: an attacker could craft a URL that prefilled `param.dotfiles_uri` and silently provisioned a workspace with the attacker-controlled value, with no explicit user confirmation. In versions 2.29.7 and 2.30.2, input validation was added to the dotfiles module to reject URIs and usernames containing special characters, and the unsafe `eval`/`sh -c` usage was removed. This eliminated the command injection at its source.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0228,
+      "epss_pct": 0.8105,
       "cwe": "CWE-78",
-      "published": "2026-07-08T17:17:28.997",
+      "published": "2026-07-07T21:17:25.180",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-59257",
+      "title": "n8n before 1.123.61, 2.x before 2.27.4, and 2.28.x before 2.28.1 contains a SQL injection vulnerability in the legacy…",
+      "vendor": null,
+      "product": null,
+      "description": "n8n before 1.123.61, 2.x before 2.27.4, and 2.28.x before 2.28.1 contains a SQL injection vulnerability in the legacy MySQL v1 node's executeQuery operation. The operation substitutes evaluated {{ ... }} expression values directly into the raw SQL string without parameterization. When a workflow uses this operation with expression-sourced values and is connected to an externally-reachable trigger (such as a Webhook node), attacker-controlled input reaching those expressions results in SQL injection, allowing execution of arbitrary SQL with the configured MySQL credentials' privileges. The MySQL v2 node, which uses parameterized queries, is not affected.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-08T14:17:20.807",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2925,7 +2960,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-44789",
@@ -2953,54 +2988,6 @@
           {
             "full_name": "BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
             "html_url": "https://github.com/BiiTts/CVE-2026-44789-n8n-PrototypePollution-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
-      "vendor": null,
-      "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36091,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
             "stars": 0
           }
         ]
