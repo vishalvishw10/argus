@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T03:48:10.202Z",
+  "generated_at": "2026-07-08T06:40:18.878Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 12,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1635,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1014 recent"
+      "detail": "1051 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1039 scored"
+      "detail": "1061 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "13 mentions"
     },
     {
       "name": "Dark Reading",
@@ -63,6 +63,83 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-48282",
+      "title": "Adobe ColdFusion Path Traversal Vulnerability",
+      "vendor": "Adobe",
+      "product": "ColdFusion",
+      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01021,
+      "epss_pct": 0.59239,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 76,
+      "rising": 100,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "imbas007/CVE-2026-48282",
+            "html_url": "https://github.com/imbas007/CVE-2026-48282",
+            "stars": 2
+          },
+          {
+            "full_name": "g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
+            "html_url": "https://github.com/g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+          "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+          "date": "2026-07-08T05:33:12.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Critical Adobe ColdFusion Vulnerability Exploited in Attacks",
+          "url": "https://www.securityweek.com/critical-adobe-coldfusion-vulnerability-exploited-in-attacks/",
+          "date": "2026-07-07T12:38:34.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Max severity Adobe ColdFusion flaw now exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/",
+          "date": "2026-07-06T13:18:37.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-06",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2025-5777",
       "title": "Citrix NetScaler ADC and Gateway Out-of-Bounds Read Vulnerability",
@@ -133,77 +210,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-48282",
-      "title": "Adobe ColdFusion Path Traversal Vulnerability",
-      "vendor": "Adobe",
-      "product": "ColdFusion",
-      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01021,
-      "epss_pct": 0.59239,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 65,
-      "rising": 81,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "imbas007/CVE-2026-48282",
-            "html_url": "https://github.com/imbas007/CVE-2026-48282",
-            "stars": 2
-          },
-          {
-            "full_name": "g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
-            "html_url": "https://github.com/g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Critical Adobe ColdFusion Vulnerability Exploited in Attacks",
-          "url": "https://www.securityweek.com/critical-adobe-coldfusion-vulnerability-exploited-in-attacks/",
-          "date": "2026-07-07T12:38:34.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "Max severity Adobe ColdFusion flaw now exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/",
-          "date": "2026-07-06T13:18:37.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Covered by BleepingComputer, SecurityWeek"
-        },
-        {
-          "date": "2026-07-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 2
     },
     {
@@ -227,7 +233,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 7,
         "stars": 13,
@@ -289,7 +295,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -643,7 +649,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1202,7 +1208,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1986,7 +1992,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 42,
+      "rising": 40,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2087,7 +2093,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 55,
+      "rising": 51,
       "repos": {
         "count": 3,
         "stars": 3,
@@ -2442,41 +2448,6 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-9182",
-      "title": "ArcGIS Server contains an unrestricted file upload vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "ArcGIS Server contains an unrestricted file upload vulnerability. An unauthenticated attacker could exploit this issue by uploading a crafted file to the affected endpoint. Successful exploitation could allow arbitrary file upload.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00225,
-      "epss_pct": 0.13152,
-      "cwe": "CWE-434",
-      "published": "2026-07-06T19:17:09.680",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-54763",
       "title": "Traefik is an HTTP reverse proxy and load balancer.",
       "vendor": null,
@@ -2494,7 +2465,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2509,7 +2480,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-14345",
@@ -2544,7 +2515,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-59705",
@@ -2579,7 +2550,77 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-9701",
+      "title": "The Eventer plugin for WordPress is vulnerable to an insecure password reset mechanism in all versions up to, and inc…",
+      "vendor": null,
+      "product": null,
+      "description": "The Eventer plugin for WordPress is vulnerable to an insecure password reset mechanism in all versions up to, and including, 4.4.2. The plugin stores a plaintext copy of the password reset key in the `eventer_verification_code` user meta field when a user requests a password reset. The plaintext key stored in `wp_usermeta` can be used with the plugin's custom reset action to set a new password for any user. Combined with another vulnerability such as SQL Injection (CVE-2026-9700), this makes it possible for unauthenticated attackers to extract the plaintext reset key and take over any user account, including administrators. Note: The password reset function only works up to PHP version 7.4.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-289",
+      "published": "2026-07-08T05:16:28.977",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-12153",
+      "title": "The WP Learn Manager plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including,…",
+      "vendor": null,
+      "product": null,
+      "description": "The WP Learn Manager plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.1.8. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins from the WordPress.org repository on the vulnerable site.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-862",
+      "published": "2026-07-08T06:16:22.157",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2632,7 +2673,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -2680,7 +2721,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2715,7 +2756,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-13782",
@@ -2750,7 +2791,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-34100",
@@ -2785,7 +2826,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-34106",
@@ -2820,7 +2861,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58453",
@@ -2834,41 +2875,6 @@
       "epss_pct": 0.7431,
       "cwe": "CWE-1392",
       "published": "2026-07-01T17:16:40.517",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-58521",
-      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in The Wikimedia F…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in The Wikimedia Foundation Mediawiki - Cargo Extension allows SQL Injection.\n\nThis issue affects Mediawiki - Cargo Extension: from * before 1.43.9,1.44.6,1.45.4.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00283,
-      "epss_pct": 0.2016,
-      "cwe": "CWE-89",
-      "published": "2026-07-01T18:16:36.107",
       "kev": {
         "in_kev": false
       },
