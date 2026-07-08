@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T14:42:48.142Z",
+  "generated_at": "2026-07-08T16:51:42.260Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1635,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1070 recent"
+      "detail": "1074 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1073 scored"
+      "detail": "1088 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3570 mapped"
+      "detail": "3573 mapped"
     },
     {
       "name": "Reddit",
@@ -156,7 +156,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 68,
-      "rising": 88,
+      "rising": 84,
       "repos": {
         "count": 2,
         "stars": 11,
@@ -227,7 +227,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 7,
         "stars": 13,
@@ -289,7 +289,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 3,
         "stars": 3,
@@ -648,7 +648,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1207,7 +1207,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1258,12 +1258,12 @@
       "rising": 0,
       "repos": {
         "count": 1,
-        "stars": 60,
+        "stars": 61,
         "top": [
           {
             "full_name": "BishopFox/CVE-2026-34908-check",
             "html_url": "https://github.com/BishopFox/CVE-2026-34908-check",
-            "stars": 60
+            "stars": 61
           }
         ]
       },
@@ -1991,7 +1991,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 34,
+      "rising": 32,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2092,11 +2092,16 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 42,
+      "rising": 40,
       "repos": {
         "count": 3,
-        "stars": 3,
+        "stars": 5,
         "top": [
+          {
+            "full_name": "szybnev/cve-2026-20896-gitea-poc",
+            "html_url": "https://github.com/szybnev/cve-2026-20896-gitea-poc",
+            "stars": 2
+          },
           {
             "full_name": "rz1027/CVE-2026-20896",
             "html_url": "https://github.com/rz1027/CVE-2026-20896",
@@ -2106,11 +2111,6 @@
             "full_name": "kaleth4/CVE-2026-20896",
             "html_url": "https://github.com/kaleth4/CVE-2026-20896",
             "stars": 1
-          },
-          {
-            "full_name": "szybnev/cve-2026-20896-gitea-poc",
-            "html_url": "https://github.com/szybnev/cve-2026-20896-gitea-poc",
-            "stars": 0
           }
         ]
       },
@@ -2368,7 +2368,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2438,7 +2438,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2473,7 +2473,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2579,6 +2579,62 @@
       "rank": 49
     },
     {
+      "cve_id": "CVE-2026-43499",
+      "title": "CVE-2026-43499",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00125,
+      "epss_pct": 0.02578,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 30,
+        "top": [
+          {
+            "full_name": "MobiusM/CVE-2026-43499",
+            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
+            "stars": 30
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-43499",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-43499",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+          "date": "2026-07-08T06:16:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 50
+    },
+    {
       "cve_id": "CVE-2026-48939",
       "title": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feat…",
       "vendor": null,
@@ -2624,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2638,41 +2694,6 @@
       "epss_pct": 0.87461,
       "cwe": "CWE-918",
       "published": "2026-06-30T20:17:29.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-13782",
-      "title": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the r…",
-      "vendor": null,
-      "product": null,
-      "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00293,
-      "epss_pct": 0.21064,
-      "cwe": "CWE-416",
-      "published": "2026-06-30T23:16:53.063",
       "kev": {
         "in_kev": false
       },
@@ -2872,6 +2893,41 @@
       "rank": 57
     },
     {
+      "cve_id": "CVE-2026-12481",
+      "title": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of de…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of deserialization in the `Lambda` layer. Specifically, the `_raise_for_lambda_deserialization()` function fails to enforce the safe-mode guard when `safe_mode` is set to `None`, which is the default value when `from_config()` is called outside of a `SafeModeScope` context. This logic error conflates `None` (unset/default-deny) with `False` (explicitly disabled), bypassing the guard and allowing attacker-controlled `marshal` bytecode to be deserialized. Affected call sites include `keras.layers.deserialize(config)`, `keras.models.clone_model(model)`, and any direct invocation of `Lambda.from_config(config)` without an enclosing `SafeModeScope(True)`. This vulnerability can be exploited to achieve arbitrary OS-level code execution in the context of the server or user process.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00402,
+      "epss_pct": 0.32163,
+      "cwe": "CWE-502",
+      "published": "2026-07-03T21:16:54.737",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
       "cve_id": "CVE-2026-57983",
       "title": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security featur…",
       "vendor": null,
@@ -2904,7 +2960,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2925,41 +2981,6 @@
       "no_patch": false,
       "hype": 17,
       "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-9182",
-      "title": "ArcGIS Server contains an unrestricted file upload vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "ArcGIS Server contains an unrestricted file upload vulnerability. An unauthenticated attacker could exploit this issue by uploading a crafted file to the affected endpoint. Successful exploitation could allow arbitrary file upload.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00269,
-      "epss_pct": 0.18567,
-      "cwe": "CWE-434",
-      "published": "2026-07-06T19:17:09.680",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
