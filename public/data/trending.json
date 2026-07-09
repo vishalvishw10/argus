@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T08:04:30.720Z",
+  "generated_at": "2026-07-09T11:25:47.552Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1635,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1060 recent"
+      "detail": "1091 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1073 scored"
+      "detail": "1065 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3582 mapped"
+      "detail": "3585 mapped"
     },
     {
       "name": "Reddit",
@@ -156,7 +156,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 7,
         "stars": 13,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 3,
         "stars": 3,
@@ -459,15 +459,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 47,
+      "rising": 44,
       "repos": {
         "count": 2,
-        "stars": 12,
+        "stars": 13,
         "top": [
           {
             "full_name": "imbas007/CVE-2026-48282",
             "html_url": "https://github.com/imbas007/CVE-2026-48282",
-            "stars": 12
+            "stars": 13
           },
           {
             "full_name": "g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
@@ -527,12 +527,12 @@
       "rising": 0,
       "repos": {
         "count": 17,
-        "stars": 77,
+        "stars": 78,
         "top": [
           {
             "full_name": "gh1mau/masta-cve-2026-48907",
             "html_url": "https://github.com/gh1mau/masta-cve-2026-48907",
-            "stars": 55
+            "stars": 56
           },
           {
             "full_name": "ywh-jfellus/CVE-2026-48907",
@@ -641,8 +641,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 56,
-      "rising": 14,
+      "hype": 55,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -794,6 +794,65 @@
       "rank": 12
     },
     {
+      "cve_id": "CVE-2026-42271",
+      "title": "BerriAI LiteLLM Command Injection Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.80188,
+      "epss_pct": 0.99571,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-08",
+        "due_date": "2026-06-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "amnsecurity/CVE-2026-42271-LiteLLM-RCE",
+            "html_url": "https://github.com/amnsecurity/CVE-2026-42271-LiteLLM-RCE",
+            "stars": 2
+          },
+          {
+            "full_name": "learner202649/CVE-2026-42271-PoC",
+            "html_url": "https://github.com/learner202649/CVE-2026-42271-PoC",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-42271",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-42271",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-12569",
       "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
       "vendor": "PTC",
@@ -836,7 +895,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -894,65 +953,6 @@
         {
           "date": "2026-06-29",
           "label": "Covered by Dark Reading"
-        }
-      ],
-      "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-42271",
-      "title": "BerriAI LiteLLM Command Injection Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.80188,
-      "epss_pct": 0.99571,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-08",
-        "due_date": "2026-06-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "learner202649/CVE-2026-42271-PoC",
-            "html_url": "https://github.com/learner202649/CVE-2026-42271-PoC",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-42271",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-42271",
-            "stars": 0
-          },
-          {
-            "full_name": "amnsecurity/CVE-2026-42271-LiteLLM-RCE",
-            "html_url": "https://github.com/amnsecurity/CVE-2026-42271-LiteLLM-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 15
@@ -1279,7 +1279,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1751,6 +1751,67 @@
       "rank": 30
     },
     {
+      "cve_id": "CVE-2026-50656",
+      "title": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publ…",
+      "vendor": null,
+      "product": null,
+      "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.03391,
+      "epss_pct": 0.87378,
+      "cwe": "CWE-59",
+      "published": "2026-06-16T19:16:59.683",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 36,
+      "rising": 78,
+      "repos": {
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-50656",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-50656",
+            "stars": 5
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Microsoft Patches Defender &#8216;RoguePlanet&#8217; Vulnerability",
+          "url": "https://www.securityweek.com/microsoft-patches-defender-rogueplanet-vulnerability/",
+          "date": "2026-07-09T10:28:35.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges",
+          "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+          "date": "2026-07-09T08:48:48.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-16",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-09",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 31
+    },
+    {
       "cve_id": "CVE-2022-0492",
       "title": "Linux Kernel Improper Authentication Vulnerability",
       "vendor": "Linux",
@@ -1789,7 +1850,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1830,7 +1891,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1871,7 +1932,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-48595",
@@ -1912,7 +1973,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-8398",
@@ -1953,7 +2014,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-10523",
@@ -2006,7 +2067,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-40138",
@@ -2026,7 +2087,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2054,7 +2115,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2107,7 +2168,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-11405",
@@ -2127,7 +2188,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 21,
-      "rising": 51,
+      "rising": 47,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2164,7 +2225,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-43499",
@@ -2184,24 +2245,24 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 26,
+      "rising": 24,
       "repos": {
         "count": 4,
-        "stars": 49,
+        "stars": 67,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
             "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 49
-          },
-          {
-            "full_name": "tc3650/CVE-2026-43499-armv7",
-            "html_url": "https://github.com/tc3650/CVE-2026-43499-armv7",
-            "stars": 0
+            "stars": 64
           },
           {
             "full_name": "0xBlackash/CVE-2026-43499",
             "html_url": "https://github.com/0xBlackash/CVE-2026-43499",
+            "stars": 3
+          },
+          {
+            "full_name": "tc3650/CVE-2026-43499-armv7",
+            "html_url": "https://github.com/tc3650/CVE-2026-43499-armv7",
             "stars": 0
           }
         ]
@@ -2225,7 +2286,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2268,7 +2329,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2311,7 +2372,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2346,7 +2407,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2366,7 +2427,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2381,7 +2442,112 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-14245",
+      "title": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Byp…",
+      "vendor": null,
+      "product": null,
+      "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 5.5.1. This is due to the `um_reset_password_process_hook()` function performing no server-side verification that the OTP validation step was completed, and relying solely on a public `form_nonce` nonce that the plugin itself emits to unauthenticated visitors via the `moumprvar` JavaScript object on the Ultimate Member password reset page, while still accepting the attacker-controlled `username_b` parameter to target any WordPress user without role restriction or any binding to a previously validated OTP session. This makes it possible for unauthenticated attackers to obtain a freshly generated password-reset URL for an arbitrary Administrator account — returned in a 302 `Location` header — and use it to take full control of that account. Exploitation requires the Ultimate Member Password Reset Form integration to be active and the plugin to not be configured for phone-only reset.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-862",
+      "published": "2026-07-09T08:16:46.933",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-15158",
+      "title": "The Blocksy Companion plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and includin…",
+      "vendor": null,
+      "product": null,
+      "description": "The Blocksy Companion plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.1.46 via the save_attachments function. This is due to the Custom Fonts extension registering a wp_check_filetype_and_ext filter that approves any filename containing .woff2 or .ttf as a substring via strpos() rather than validating that those strings appear as the final extension via PATHINFO_EXTENSION — allowing double-extension filenames such as shell.woff2.php to pass MIME validation and be handled as permitted font files. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible. This vulnerability is only exploitable when the premium version of the plugin (blocksy-companion-pro) is installed with both the WooCommerce Extra (Advanced Reviews) and Custom Fonts extensions active; the free blocksy-companion plugin does not contain the vulnerable code paths.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-09T10:16:25.370",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-5955",
+      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Inrove Software…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Inrove Software and Internet Services BiEticaret allows SQL Injection.\n\nThis issue affects BiEticaret: before v3.3.57.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-09T10:16:27.427",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2434,7 +2600,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2469,7 +2635,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-55115",
@@ -2504,7 +2670,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-26145",
@@ -2539,7 +2705,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-47898",
@@ -2574,7 +2740,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-12481",
@@ -2609,7 +2775,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2644,7 +2810,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2664,7 +2830,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2679,7 +2845,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2699,7 +2865,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2714,7 +2880,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-47646",
@@ -2734,7 +2900,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2749,7 +2915,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-2342",
+      "title": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OceanicSoft Inf…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OceanicSoft Informatics Systems Ltd. ValeApp allows Stored XSS.\n\nThis issue affects ValeApp: through 09072026. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-79",
+      "published": "2026-07-09T10:16:25.833",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-44454",
@@ -2781,223 +2982,6 @@
       "timeline": [
         {
           "date": "2026-07-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-5523",
-      "title": "The Divi Form Builder plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 5…",
-      "vendor": null,
-      "product": null,
-      "description": "The Divi Form Builder plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 5.1.8. This is due to the update_user() function accepting a user ID parameter from form submissions without verifying that the authenticated user has permission to edit that specific user account, and the handle_register_submission() function only checking if any user is logged in rather than validating permissions for the target user. This makes it possible for authenticated attackers, with subscriber-level access and above, to change the email address and password of any user account, including administrators, resulting in complete account takeover.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-639",
-      "published": "2026-07-09T06:16:21.300",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-48939",
-      "title": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feat…",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00564,
-      "epss_pct": 0.42792,
-      "cwe": "CWE-434",
-      "published": "2026-06-20T13:16:42.433",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-48939",
-            "html_url": "https://github.com/shinthink/CVE-2026-48939",
-            "stars": 1
-          },
-          {
-            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
-            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
-      "vendor": null,
-      "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36091,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-48020",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00591,
-      "epss_pct": 0.4405,
-      "cwe": "CWE-288",
-      "published": "2026-06-23T20:16:47.993",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "html_url": "https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-56121",
-      "title": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized atta…",
-      "vendor": null,
-      "product": null,
-      "description": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized attackers to achieve remote code execution by sending a crafted gRPC request to the registry server. The user_defined_function.body field of an OnDemandFeatureView spec is decoded from base64 and passed to dill.loads() before any authorization check is performed, enabling attackers to embed a malicious serialized Python object with an arbitrary __reduce__ method to execute OS commands as the feast service account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00862,
-      "epss_pct": 0.54191,
-      "cwe": "CWE-502",
-      "published": "2026-06-24T16:16:33.193",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-56121-Feast-Unauth-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-24",
           "label": "Published to NVD"
         }
       ],
