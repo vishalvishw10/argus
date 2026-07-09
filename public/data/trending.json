@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T11:25:47.552Z",
+  "generated_at": "2026-07-09T15:35:55.656Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1635,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1091 recent"
+      "detail": "1080 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1065 scored"
+      "detail": "1101 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -143,8 +143,8 @@
       "description": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01431,
-      "epss_pct": 0.69835,
+      "epss": 0.01569,
+      "epss_pct": 0.72418,
       "cwe": "CWE-434",
       "published": "2026-06-20T13:16:42.080",
       "kev": {
@@ -155,8 +155,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 64,
-      "rising": 20,
+      "hype": 63,
+      "rising": 19,
       "repos": {
         "count": 7,
         "stars": 13,
@@ -205,8 +205,8 @@
       "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00738,
-      "epss_pct": 0.50086,
+      "epss": 0.02912,
+      "epss_pct": 0.85351,
       "cwe": "CWE-434",
       "published": "2026-06-29T15:16:42.360",
       "kev": {
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 3,
         "stars": 3,
@@ -258,6 +258,71 @@
         }
       ],
       "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-48282",
+      "title": "Adobe ColdFusion Path Traversal Vulnerability",
+      "vendor": "Adobe",
+      "product": "ColdFusion",
+      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.28583,
+      "epss_pct": 0.97904,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 40,
+      "repos": {
+        "count": 2,
+        "stars": 13,
+        "top": [
+          {
+            "full_name": "imbas007/CVE-2026-48282",
+            "html_url": "https://github.com/imbas007/CVE-2026-48282",
+            "stars": 13
+          },
+          {
+            "full_name": "g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
+            "html_url": "https://github.com/g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+          "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+          "date": "2026-07-08T05:33:12.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-08",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -317,7 +382,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -328,7 +393,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.70099,
-      "epss_pct": 0.99298,
+      "epss_pct": 0.993,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -377,7 +442,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -436,71 +501,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-48282",
-      "title": "Adobe ColdFusion Path Traversal Vulnerability",
-      "vendor": "Adobe",
-      "product": "ColdFusion",
-      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03199,
-      "epss_pct": 0.86593,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 44,
-      "repos": {
-        "count": 2,
-        "stars": 13,
-        "top": [
-          {
-            "full_name": "imbas007/CVE-2026-48282",
-            "html_url": "https://github.com/imbas007/CVE-2026-48282",
-            "stars": 13
-          },
-          {
-            "full_name": "g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
-            "html_url": "https://github.com/g0thamRabb1t/cve-2026-48282-coldfusion-rds-detection",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
-          "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
-          "date": "2026-07-08T05:33:12.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-08",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 7
     },
     {
@@ -512,7 +512,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.80425,
-      "epss_pct": 0.99574,
+      "epss_pct": 0.99575,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -630,7 +630,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.83387,
-      "epss_pct": 0.99645,
+      "epss_pct": 0.99646,
       "cwe": "CWE-79",
       "published": null,
       "kev": {
@@ -642,7 +642,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 12,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -743,7 +743,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.02342,
-      "epss_pct": 0.81594,
+      "epss_pct": 0.81616,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -861,7 +861,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01247,
-      "epss_pct": 0.65759,
+      "epss_pct": 0.65788,
       "cwe": "CWE-20",
       "published": "2026-06-18T01:18:12.040",
       "kev": {
@@ -906,7 +906,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0116,
-      "epss_pct": 0.63297,
+      "epss_pct": 0.63348,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -966,7 +966,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.78555,
-      "epss_pct": 0.99536,
+      "epss_pct": 0.99537,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1008,7 +1008,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.49689,
-      "epss_pct": 0.98756,
+      "epss_pct": 0.98758,
       "cwe": null,
       "published": null,
       "kev": {
@@ -1061,7 +1061,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98514,
+      "epss_pct": 0.98517,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1119,7 +1119,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.82444,
+      "epss_pct": 0.82466,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1167,7 +1167,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.97686,
+      "epss_pct": 0.97687,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1225,7 +1225,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0185,
-      "epss_pct": 0.76558,
+      "epss_pct": 0.76583,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -1266,8 +1266,8 @@
       "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.",
       "cvss": 8.4,
       "severity": "HIGH",
-      "epss": 0.00438,
-      "epss_pct": 0.35202,
+      "epss": 0.00467,
+      "epss_pct": 0.37242,
       "cwe": "CWE-639",
       "published": null,
       "kev": {
@@ -1279,7 +1279,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1315,7 +1315,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03219,
-      "epss_pct": 0.86697,
+      "epss_pct": 0.86713,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1373,7 +1373,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.10659,
-      "epss_pct": 0.95263,
+      "epss_pct": 0.95268,
       "cwe": "CWE-400",
       "published": null,
       "kev": {
@@ -1431,7 +1431,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18914,
-      "epss_pct": 0.96955,
+      "epss_pct": 0.96958,
       "cwe": "CWE-266",
       "published": null,
       "kev": {
@@ -1489,7 +1489,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73745,
+      "epss_pct": 0.73776,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1547,7 +1547,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.27546,
-      "epss_pct": 0.97837,
+      "epss_pct": 0.97838,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1600,7 +1600,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66092,
+      "epss_pct": 0.6613,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1658,7 +1658,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93873,
+      "epss_pct": 0.93879,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1711,7 +1711,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.5333,
+      "epss_pct": 0.53392,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -1759,7 +1759,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.03391,
-      "epss_pct": 0.87378,
+      "epss_pct": 0.87393,
       "cwe": "CWE-59",
       "published": "2026-06-16T19:16:59.683",
       "kev": {
@@ -1768,7 +1768,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 36,
-      "rising": 78,
+      "rising": 73,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -1820,7 +1820,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.05528,
-      "epss_pct": 0.91869,
+      "epss_pct": 0.91877,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1861,7 +1861,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00889,
-      "epss_pct": 0.55003,
+      "epss_pct": 0.55064,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1902,7 +1902,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02269,
-      "epss_pct": 0.80947,
+      "epss_pct": 0.80973,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1943,7 +1943,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.01714,
-      "epss_pct": 0.74651,
+      "epss_pct": 0.74677,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -1984,7 +1984,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01456,
-      "epss_pct": 0.70346,
+      "epss_pct": 0.70385,
       "cwe": "CWE-506",
       "published": null,
       "kev": {
@@ -2025,7 +2025,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.4719,
-      "epss_pct": 0.98694,
+      "epss_pct": 0.98695,
       "cwe": "CWE-288",
       "published": "2026-06-09T16:16:35.837",
       "kev": {
@@ -2078,7 +2078,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.00417,
-      "epss_pct": 0.33606,
+      "epss_pct": 0.33654,
       "cwe": "CWE-287",
       "published": "2026-07-06T17:16:30.793",
       "kev": {
@@ -2087,7 +2087,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 19,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2126,7 +2126,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00502,
-      "epss_pct": 0.39306,
+      "epss_pct": 0.39356,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -2171,63 +2171,6 @@
       "rank": 39
     },
     {
-      "cve_id": "CVE-2026-11405",
-      "title": "CVE-2026-11405",
-      "vendor": null,
-      "product": null,
-      "description": "The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(\"sys.rzadmin.password\") to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value and the user-supplied password.\r\n\r\nA successful match grants role=2 (admin-level access) and creates a valid session. The rzadmin username is never checked — any username works with the backdoor",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00243,
-      "epss_pct": 0.15392,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 21,
-      "rising": 47,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-11405",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-11405",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Unpatched Backdoor in Tenda Firmware Grants Admin Access to Devices",
-          "url": "https://www.securityweek.com/unpatched-backdoor-in-tenda-firmware-grants-admin-access-to-devices/",
-          "date": "2026-07-09T05:00:41.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
-          "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
-          "date": "2026-07-07T06:40:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-07",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 40
-    },
-    {
       "cve_id": "CVE-2026-43499",
       "title": "CVE-2026-43499",
       "vendor": null,
@@ -2236,7 +2179,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00125,
-      "epss_pct": 0.02578,
+      "epss_pct": 0.02591,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2245,7 +2188,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 24,
+      "rising": 21,
       "repos": {
         "count": 4,
         "stars": 67,
@@ -2286,7 +2229,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2297,9 +2240,52 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.3839,
+      "epss_pct": 0.3844,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:33.450",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
+            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-8655",
+      "title": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous…",
+      "vendor": null,
+      "product": null,
+      "description": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if NetScaler ADC is configured as an LB of type Oracle OR NetScaler ADC is configured as a DNS Proxy OR NetScaler ADC is configured as a DNS recursive resolver deployment",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0046,
+      "epss_pct": 0.36771,
+      "cwe": "CWE-119",
+      "published": "2026-06-30T13:19:34.083",
       "kev": {
         "in_kev": false
       },
@@ -2332,84 +2318,6 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-8655",
-      "title": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous…",
-      "vendor": null,
-      "product": null,
-      "description": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if NetScaler ADC is configured as an LB of type Oracle OR NetScaler ADC is configured as a DNS Proxy OR NetScaler ADC is configured as a DNS recursive resolver deployment",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0046,
-      "epss_pct": 0.36722,
-      "cwe": "CWE-119",
-      "published": "2026-06-30T13:19:34.083",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
-            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-54763",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to v2.11.51, v3.6.22, and v3.7.6, Traefik's BasicAuth, DigestAuth, and ForwardAuth middlewares strip canonical-cased spoofed identity headers before writing Traefik's own value, but do not account for underscore-variant header names, which many backends normalize identically to dashed forms. An attacker able to reach a protected route can inject an underscore-variant header that survives Traefik's stripping and reaches the backend alongside, or on the unauthenticated ForwardAuth authResponseHeaders path instead of, the value Traefik intended to set, spoofing identity or authorization context. This issue is fixed in versions v2.11.51, v3.6.22, and v3.7.6.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00256,
-      "epss_pct": 0.16908,
-      "cwe": "CWE-178",
-      "published": "2026-07-06T21:16:56.787",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 10,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-58480",
       "title": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerabil…",
       "vendor": null,
@@ -2417,8 +2325,8 @@
       "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validation in the save_attachments function exposed through the Advanced Reviews feature. Attackers can exploit the Custom Fonts extension's flawed strpos() substring check by uploading double-extension filenames such as shell.woff2.php, causing the validation to pass on the substring match while the web server executes the file as PHP, achieving remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00605,
+      "epss_pct": 0.44729,
       "cwe": "CWE-434",
       "published": "2026-07-08T14:17:19.977",
       "kev": {
@@ -2442,112 +2350,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-14245",
-      "title": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Byp…",
-      "vendor": null,
-      "product": null,
-      "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 5.5.1. This is due to the `um_reset_password_process_hook()` function performing no server-side verification that the OTP validation step was completed, and relying solely on a public `form_nonce` nonce that the plugin itself emits to unauthenticated visitors via the `moumprvar` JavaScript object on the Ultimate Member password reset page, while still accepting the attacker-controlled `username_b` parameter to target any WordPress user without role restriction or any binding to a previously validated OTP session. This makes it possible for unauthenticated attackers to obtain a freshly generated password-reset URL for an arbitrary Administrator account — returned in a 302 `Location` header — and use it to take full control of that account. Exploitation requires the Ultimate Member Password Reset Form integration to be active and the plugin to not be configured for phone-only reset.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-07-09T08:16:46.933",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-15158",
-      "title": "The Blocksy Companion plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and includin…",
-      "vendor": null,
-      "product": null,
-      "description": "The Blocksy Companion plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.1.46 via the save_attachments function. This is due to the Custom Fonts extension registering a wp_check_filetype_and_ext filter that approves any filename containing .woff2 or .ttf as a substring via strpos() rather than validating that those strings appear as the final extension via PATHINFO_EXTENSION — allowing double-extension filenames such as shell.woff2.php to pass MIME validation and be handled as permitted font files. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible. This vulnerability is only exploitable when the premium version of the plugin (blocksy-companion-pro) is installed with both the WooCommerce Extra (Advanced Reviews) and Custom Fonts extensions active; the free blocksy-companion plugin does not contain the vulnerable code paths.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-434",
-      "published": "2026-07-09T10:16:25.370",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-5955",
-      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Inrove Software…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Inrove Software and Internet Services BiEticaret allows SQL Injection.\n\nThis issue affects BiEticaret: before v3.3.57.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-07-09T10:16:27.427",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2558,7 +2361,7 @@
       "cvss": 8.3,
       "severity": "HIGH",
       "epss": 0.00732,
-      "epss_pct": 0.49899,
+      "epss_pct": 0.49965,
       "cwe": "CWE-680",
       "published": "2026-06-17T20:17:28.667",
       "kev": {
@@ -2600,7 +2403,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2611,7 +2414,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03415,
-      "epss_pct": 0.87461,
+      "epss_pct": 0.87476,
       "cwe": "CWE-918",
       "published": "2026-06-30T20:17:29.227",
       "kev": {
@@ -2635,7 +2438,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-55115",
@@ -2646,7 +2449,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00232,
-      "epss_pct": 0.13978,
+      "epss_pct": 0.1399,
       "cwe": "CWE-918",
       "published": "2026-07-02T15:17:05.513",
       "kev": {
@@ -2670,42 +2473,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-26145",
-      "title": "Improper access control in Azure Synapse allows an authorized attacker to elevate privileges over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Improper access control in Azure Synapse allows an authorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00359,
-      "epss_pct": 0.27908,
-      "cwe": "CWE-284",
-      "published": "2026-07-02T23:16:49.813",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-47898",
@@ -2715,8 +2483,8 @@
       "description": "Improper Restriction of XML External Entity Reference vulnerability in Apache Lucene.Net (Lucene.Net.Analysis.Common library).\n\nThis issue affects Apache Lucene.Net.Analysis.Common: from 4.8.0-beta00005 before 4.8.0-beta00018.\n\nUsers are recommended to upgrade to version 4.8.0-beta00018, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00134,
-      "epss_pct": 0.03292,
+      "epss": 0.00328,
+      "epss_pct": 0.24774,
       "cwe": "CWE-611",
       "published": "2026-07-03T08:16:24.977",
       "kev": {
@@ -2740,7 +2508,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-12481",
@@ -2750,8 +2518,8 @@
       "description": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of deserialization in the `Lambda` layer. Specifically, the `_raise_for_lambda_deserialization()` function fails to enforce the safe-mode guard when `safe_mode` is set to `None`, which is the default value when `from_config()` is called outside of a `SafeModeScope` context. This logic error conflates `None` (unset/default-deny) with `False` (explicitly disabled), bypassing the guard and allowing attacker-controlled `marshal` bytecode to be deserialized. Affected call sites include `keras.layers.deserialize(config)`, `keras.models.clone_model(model)`, and any direct invocation of `Lambda.from_config(config)` without an enclosing `SafeModeScope(True)`. This vulnerability can be exploited to achieve arbitrary OS-level code execution in the context of the server or user process.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00402,
-      "epss_pct": 0.32163,
+      "epss": 0.00397,
+      "epss_pct": 0.31736,
       "cwe": "CWE-502",
       "published": "2026-07-03T21:16:54.737",
       "kev": {
@@ -2775,7 +2543,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2786,7 +2554,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00463,
-      "epss_pct": 0.36906,
+      "epss_pct": 0.36958,
       "cwe": "CWE-285",
       "published": "2026-07-03T21:17:01.433",
       "kev": {
@@ -2810,7 +2578,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2821,7 +2589,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00653,
-      "epss_pct": 0.46834,
+      "epss_pct": 0.46898,
       "cwe": "CWE-287",
       "published": "2026-07-06T17:16:30.920",
       "kev": {
@@ -2830,7 +2598,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2845,7 +2613,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2856,9 +2624,44 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00478,
-      "epss_pct": 0.37897,
+      "epss_pct": 0.37949,
       "cwe": "CWE-943",
       "published": "2026-07-06T17:16:31.143",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-54763",
+      "title": "Traefik is an HTTP reverse proxy and load balancer.",
+      "vendor": null,
+      "product": null,
+      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to v2.11.51, v3.6.22, and v3.7.6, Traefik's BasicAuth, DigestAuth, and ForwardAuth middlewares strip canonical-cased spoofed identity headers before writing Traefik's own value, but do not account for underscore-variant header names, which many backends normalize identically to dashed forms. An attacker able to reach a protected route can inject an underscore-variant header that survives Traefik's stripping and reaches the backend alongside, or on the unauthenticated ForwardAuth authResponseHeaders path instead of, the value Traefik intended to set, spoofing identity or authorization context. This issue is fixed in versions v2.11.51, v3.6.22, and v3.7.6.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00256,
+      "epss_pct": 0.16928,
+      "cwe": "CWE-178",
+      "published": "2026-07-06T21:16:56.787",
       "kev": {
         "in_kev": false
       },
@@ -2880,97 +2683,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 52
     },
     {
-      "cve_id": "CVE-2026-47646",
-      "title": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice a…",
+      "cve_id": "CVE-2026-13020",
+      "title": "A Weak Password Recovery Mechanism for Forgotten Password exists in Esri Portal for ArcGIS versions 12.1 and earlier …",
       "vendor": null,
       "product": null,
-      "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice allows an unauthorized attacker to perform spoofing over a network.",
-      "cvss": 9.3,
+      "description": "A Weak Password Recovery Mechanism for Forgotten Password exists in Esri Portal for ArcGIS versions 12.1 and earlier on Windows, Linux and Kubernetes. A remote, unauthorized attacker may assume ownership of a user’s account by manipulating this mechanism. ArcGIS Administrators should configure an email server with ArcGIS Enterprise to facilitate user self-service password recovery. The ability for an administrator to reset a user’s password remains unchanged.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-79",
-      "published": "2026-07-09T00:17:23.160",
+      "epss": 0.00225,
+      "epss_pct": 0.13058,
+      "cwe": "CWE-640",
+      "published": "2026-07-07T17:16:35.510",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-2342",
-      "title": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OceanicSoft Inf…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in OceanicSoft Informatics Systems Ltd. ValeApp allows Stored XSS.\n\nThis issue affects ValeApp: through 09072026. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-79",
-      "published": "2026-07-09T10:16:25.833",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-44454",
-      "title": "Coder allows organizations to provision remote development environments via Terraform.",
-      "vendor": null,
-      "product": null,
-      "description": "Coder allows organizations to provision remote development environments via Terraform. Prior to versions 2.29.7 and 2.30.2, the `dotfiles` registry module passed unsanitized user input to shell commands, allowing arbitrary code execution inside a provisioned workspace. Any user who supplied a crafted `dotfiles_uri` value (for example, one containing shell command substitution such as `$(...)`) could achieve command execution in their own workspace. The Create Workspace page's `mode=auto` deep links amplified this into a one-click attack: an attacker could craft a URL that prefilled `param.dotfiles_uri` and silently provisioned a workspace with the attacker-controlled value, with no explicit user confirmation. In versions 2.29.7 and 2.30.2, input validation was added to the dotfiles module to reject URIs and usernames containing special characters, and the unsafe `eval`/`sh -c` usage was removed. This eliminated the command injection at its source.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.0228,
-      "epss_pct": 0.8105,
-      "cwe": "CWE-78",
-      "published": "2026-07-07T21:17:25.180",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 14,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2982,6 +2715,293 @@
       "timeline": [
         {
           "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-47646",
+      "title": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice a…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Dynamics 365 Customer Voice allows an unauthorized attacker to perform spoofing over a network.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.00454,
+      "epss_pct": 0.36395,
+      "cwe": "CWE-79",
+      "published": "2026-07-09T00:17:23.160",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-44454",
+      "title": "Coder allows organizations to provision remote development environments via Terraform.",
+      "vendor": null,
+      "product": null,
+      "description": "Coder allows organizations to provision remote development environments via Terraform. Prior to versions 2.29.7 and 2.30.2, the `dotfiles` registry module passed unsanitized user input to shell commands, allowing arbitrary code execution inside a provisioned workspace. Any user who supplied a crafted `dotfiles_uri` value (for example, one containing shell command substitution such as `$(...)`) could achieve command execution in their own workspace. The Create Workspace page's `mode=auto` deep links amplified this into a one-click attack: an attacker could craft a URL that prefilled `param.dotfiles_uri` and silently provisioned a workspace with the attacker-controlled value, with no explicit user confirmation. In versions 2.29.7 and 2.30.2, input validation was added to the dotfiles module to reject URIs and usernames containing special characters, and the unsafe `eval`/`sh -c` usage was removed. This eliminated the command injection at its source.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.02642,
+      "epss_pct": 0.83783,
+      "cwe": "CWE-78",
+      "published": "2026-07-07T21:17:25.180",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 13,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-4275",
+      "title": "The Divi Torque Lite – Divi Theme, Divi Builder & Extra Theme plugin for WordPress is vulnerable to Cross-Site Reques…",
+      "vendor": null,
+      "product": null,
+      "description": "The Divi Torque Lite – Divi Theme, Divi Builder & Extra Theme plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.2.3. This is due to the use of '__return_true' as the permission_callback for the /install_plugin and /activate_plugin REST API endpoints, which bypasses WordPress's built-in REST API nonce verification. Although the endpoint callbacks contain internal current_user_can() checks, the absence of nonce verification means that a forged cross-site request from a logged-in administrator's browser will pass the capability check via the admin's session cookies. This makes it possible for unauthenticated attackers to install arbitrary plugins from WordPress.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-352",
+      "published": "2026-07-09T11:16:39.630",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-48939",
+      "title": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feat…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00564,
+      "epss_pct": 0.42852,
+      "cwe": "CWE-434",
+      "published": "2026-06-20T13:16:42.433",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-48939",
+            "html_url": "https://github.com/shinthink/CVE-2026-48939",
+            "stars": 1
+          },
+          {
+            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
+            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-53753",
+      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "vendor": null,
+      "product": null,
+      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0045,
+      "epss_pct": 0.36133,
+      "cwe": "CWE-94",
+      "published": "2026-06-23T19:17:07.107",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "stars": 0
+          },
+          {
+            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
+            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-48020",
+      "title": "Traefik is an HTTP reverse proxy and load balancer.",
+      "vendor": null,
+      "product": null,
+      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to 2.11.48, 3.6.19, and 3.7.3, there is a high severity vulnerability in Traefik's StripPrefix middleware that allows an unauthenticated attacker to bypass route-level authentication and authorization. When a public router matches on a PathPrefix rule and applies the StripPrefix middleware, a request path containing .. or its percent-encoded form %2e%2e can match the public route at routing time and then, after the prefix is stripped and the path is normalized, resolve to a path served by a separate, authenticated router. As a result, an attacker can reach protected backend paths — such as admin or internal configuration endpoints — without satisfying the authentication middleware attached to the protected router. This vulnerability is fixed in 2.11.48, 3.6.19, and 3.7.3.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00591,
+      "epss_pct": 0.4411,
+      "cwe": "CWE-288",
+      "published": "2026-06-23T20:16:47.993",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
+            "html_url": "https://github.com/Hunt-Benito/traefik-stripprefix-auth-bypass-cve-2026-48020-path-normalization",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-54350",
+      "title": "Budibase is an open-source low-code platform.",
+      "vendor": null,
+      "product": null,
+      "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-PartiQL, or REST-with-JSON-body collection and, where the builder has published a PUBLIC write query, modifies every document of that collection with one HTTP request. enrichContext at packages/server/src/sdk/workspace/queries/queries.ts:121-138 substitutes parameter values into the raw JSON body of a query, then JSON.parses the result. The validator validateQueryInputs at packages/server/src/api/controllers/query/index.ts:61-71 rejects only Handlebars markers ({{, }}) in user input and does not escape JSON metacharacters (\", \\, }). A parameter value containing a closing quote and additional keys lifts attacker-controlled fields into the parsed filter object. For Mongo find, the parsed filter passes directly to collection.find() (packages/server/src/integrations/mongodb.ts:506-510). Duplicate-key JSON parsing overrides the builder's {name: \"...\"} with {name: {$exists: true}} and returns every document. The same primitive against an updateMany query (mongodb.ts:577-585) widens the filter scope to the full collection while the builder-controlled $set body runs against every matched document. The authorized middleware at packages/server/src/middleware/authorized.ts:141-148 short-circuits when the query's role is PUBLIC. CSRF is not enforced on this path. POST /api/v2/queries/:queryId (packages/server/src/api/routes/query.ts:63) accepts the call with no session, only an x-budibase-app-id header that is public from the published-app URL. This vulnerability is fixed in 3.39.12.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00538,
+      "epss_pct": 0.41444,
+      "cwe": "CWE-89",
+      "published": "2026-06-26T21:16:35.040",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
+            "html_url": "https://github.com/BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-26",
           "label": "Published to NVD"
         }
       ],
