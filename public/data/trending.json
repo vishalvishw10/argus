@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T20:44:50.079Z",
+  "generated_at": "2026-07-10T22:18:50.877Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1127 recent"
+      "detail": "1113 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1137 scored"
+      "detail": "1124 scored"
     },
     {
       "name": "BleepingComputer",
@@ -208,7 +208,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -393,7 +393,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 48,
+      "rising": 47,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1946,7 +1946,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -2107,9 +2107,9 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 5,
+      "rising": 4,
       "repos": {
-        "count": 6,
+        "count": 7,
         "stars": 117,
         "top": [
           {
@@ -2324,7 +2324,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2340,6 +2340,41 @@
         }
       ],
       "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-12761",
+      "title": "The miniOrange Social Login and Register (Discord, Google, Twitter, LinkedIn) plugin for WordPress is vulnerable to a…",
+      "vendor": null,
+      "product": null,
+      "description": "The miniOrange Social Login and Register (Discord, Google, Twitter, LinkedIn) plugin for WordPress is vulnerable to authentication bypass leading to account takeover in versions up to and including 7.7.0. This is due to the Profile Completion flow accepting an arbitrary email address via the 'email_field' POST parameter without verifying that the email belongs to the identity returned by the OAuth provider, combined with send_otp_token() returning the SHA-512(customer_key || otp) transaction hash to the client where the OTP space is only 99,000 values (wp_rand(1000, 99999)) and the customer_key is a static option (empty on unregistered installs). This makes it possible for unauthenticated attackers to trigger an OTP email to an arbitrary admin's address, crack the OTP offline from the leaked hash in under a second, and submit the cracked OTP to mo_openid_social_login_validate_otp(), which logs the attacker in as the user whose email was supplied — granting full administrator access.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-287",
+      "published": "2026-07-10T21:16:53.160",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2392,7 +2427,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2427,7 +2462,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-14535",
@@ -2462,7 +2497,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2497,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2532,7 +2567,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2567,7 +2602,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-13020",
@@ -2602,7 +2637,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-60002",
@@ -2622,7 +2657,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2637,7 +2672,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2672,7 +2707,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2707,7 +2742,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2742,7 +2777,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-8649",
@@ -2777,7 +2812,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2812,7 +2847,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-59214",
@@ -2833,41 +2868,6 @@
       "no_patch": false,
       "hype": 17,
       "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-58122",
-      "title": "Hermes WebUI before 0.51.307 contains an authentication bypass vulnerability that allows unauthenticated remote attac…",
-      "vendor": null,
-      "product": null,
-      "description": "Hermes WebUI before 0.51.307 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to circumvent local-origin IP restrictions on onboarding endpoints by supplying a spoofed X-Forwarded-For header with a loopback address. Attackers can exploit this bypass to perform server-side request forgery against internal services including cloud metadata endpoints, overwrite LLM provider configuration and API keys with attacker-controlled values, or initiate OAuth device-code flows to obtain persistent access tokens stored in auth.json.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00293,
-      "epss_pct": 0.2111,
-      "cwe": "CWE-348",
-      "published": "2026-07-09T22:17:09.363",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
