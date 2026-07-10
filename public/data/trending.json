@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:11:26.364Z",
+  "generated_at": "2026-07-10T18:47:58.106Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1110 recent"
+      "detail": "1104 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1129 scored"
+      "detail": "1127 scored"
     },
     {
       "name": "BleepingComputer",
@@ -208,7 +208,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -393,7 +393,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 49,
+      "rising": 48,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -558,7 +558,7 @@
       "rising": 0,
       "repos": {
         "count": 17,
-        "stars": 78,
+        "stars": 79,
         "top": [
           {
             "full_name": "gh1mau/masta-cve-2026-48907",
@@ -1946,7 +1946,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -2107,10 +2107,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 6,
-        "stars": 114,
+        "stars": 115,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
@@ -2237,41 +2237,6 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-58123",
-      "title": "Hermes WebUI before 0.51.788 contains an unauthenticated remote code execution vulnerability that allows remote attac…",
-      "vendor": null,
-      "product": null,
-      "description": "Hermes WebUI before 0.51.788 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary shell commands by accessing the embedded terminal API endpoints without credentials. Attackers can create a session, attach a PTY shell, and write arbitrary commands through the terminal input endpoint to achieve full command execution as the server process user via four sequential unauthenticated HTTP requests.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00928,
-      "epss_pct": 0.56314,
-      "cwe": "CWE-306",
-      "published": "2026-07-09T22:17:09.517",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
       "cve_id": "CVE-2026-15282",
       "title": "The Instant Appointment plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validat…",
       "vendor": null,
@@ -2304,20 +2269,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
-      "cve_id": "CVE-2026-56765",
-      "title": "Vikunja before 2.2.1 contains an authorization flaw where the LinkSharing.ReadAll endpoint exposes share hashes to us…",
+      "cve_id": "CVE-2026-2397",
+      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Adam Retail Aut…",
       "vendor": null,
       "product": null,
-      "description": "Vikunja before 2.2.1 contains an authorization flaw where the LinkSharing.ReadAll endpoint exposes share hashes to users with read access, enabling permission escalation to admin-level shares. The GetTaskAttachment endpoint performs permission checks against user-supplied task IDs but fetches attachments by sequential ID without verifying ownership, allowing attackers to download and delete all file attachments across all projects instance-wide.",
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Adam Retail Automation Ltd. MobilMen 20T allows SQL Injection.\n\nThis issue affects MobilMen 20T: from v3 through 10072026. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-639",
-      "published": "2026-07-10T15:16:43.727",
+      "cwe": "CWE-89",
+      "published": "2026-07-10T18:16:20.613",
       "kev": {
         "in_kev": false
       },
@@ -2339,7 +2304,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2392,42 +2357,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-13773",
-      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03415,
-      "epss_pct": 0.87486,
-      "cwe": "CWE-918",
-      "published": "2026-06-30T20:17:29.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2462,7 +2392,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-14535",
@@ -2497,7 +2427,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2532,7 +2462,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2567,7 +2497,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2587,7 +2517,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2602,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-13020",
@@ -2637,7 +2567,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-60002",
@@ -2672,7 +2602,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2692,7 +2622,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2707,7 +2637,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2742,7 +2672,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2777,7 +2707,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2797,7 +2727,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2812,7 +2742,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58122",
@@ -2847,7 +2777,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-15378",
@@ -2882,7 +2812,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-61444",
@@ -2902,7 +2832,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2914,6 +2844,97 @@
       "timeline": [
         {
           "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-53753",
+      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "vendor": null,
+      "product": null,
+      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0045,
+      "epss_pct": 0.36161,
+      "cwe": "CWE-94",
+      "published": "2026-06-23T19:17:07.107",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "stars": 0
+          },
+          {
+            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
+            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-54350",
+      "title": "Budibase is an open-source low-code platform.",
+      "vendor": null,
+      "product": null,
+      "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-PartiQL, or REST-with-JSON-body collection and, where the builder has published a PUBLIC write query, modifies every document of that collection with one HTTP request. enrichContext at packages/server/src/sdk/workspace/queries/queries.ts:121-138 substitutes parameter values into the raw JSON body of a query, then JSON.parses the result. The validator validateQueryInputs at packages/server/src/api/controllers/query/index.ts:61-71 rejects only Handlebars markers ({{, }}) in user input and does not escape JSON metacharacters (\", \\, }). A parameter value containing a closing quote and additional keys lifts attacker-controlled fields into the parsed filter object. For Mongo find, the parsed filter passes directly to collection.find() (packages/server/src/integrations/mongodb.ts:506-510). Duplicate-key JSON parsing overrides the builder's {name: \"...\"} with {name: {$exists: true}} and returns every document. The same primitive against an updateMany query (mongodb.ts:577-585) widens the filter scope to the full collection while the builder-controlled $set body runs against every matched document. The authorized middleware at packages/server/src/middleware/authorized.ts:141-148 short-circuits when the query's role is PUBLIC. CSRF is not enforced on this path. POST /api/v2/queries/:queryId (packages/server/src/api/routes/query.ts:63) accepts the call with no session, only an x-budibase-app-id header that is public from the published-app URL. This vulnerability is fixed in 3.39.12.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00538,
+      "epss_pct": 0.41479,
+      "cwe": "CWE-89",
+      "published": "2026-06-26T21:16:35.040",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
+            "html_url": "https://github.com/BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-26",
           "label": "Published to NVD"
         }
       ],
