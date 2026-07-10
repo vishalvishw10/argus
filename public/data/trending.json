@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T18:47:58.106Z",
+  "generated_at": "2026-07-10T20:44:50.079Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1104 recent"
+      "detail": "1127 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1127 scored"
+      "detail": "1137 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3596 mapped"
+      "detail": "3595 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 9,
         "stars": 15,
@@ -146,7 +146,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -208,7 +208,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -439,7 +439,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1309,8 +1309,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 41,
-      "rising": 10,
+      "hype": 40,
+      "rising": 9,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1946,7 +1946,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -2006,7 +2006,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2107,20 +2107,20 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 6,
-        "stars": 115,
+        "stars": 117,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
             "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 85
+            "stars": 86
           },
           {
             "full_name": "pubglite55/oppo-ghostlock",
             "html_url": "https://github.com/pubglite55/oppo-ghostlock",
-            "stars": 23
+            "stars": 24
           },
           {
             "full_name": "0xBlackash/CVE-2026-43499",
@@ -2254,7 +2254,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2272,17 +2272,52 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-2397",
-      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Adam Retail Aut…",
+      "cve_id": "CVE-2026-59792",
+      "title": "In JetBrains IntelliJ IDEA before 2026.1.4, \n2026.2 code execution via path traversal in project workspace ID handlin…",
       "vendor": null,
       "product": null,
-      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Adam Retail Automation Ltd. MobilMen 20T allows SQL Injection.\n\nThis issue affects MobilMen 20T: from v3 through 10072026. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+      "description": "In JetBrains IntelliJ IDEA before 2026.1.4, \n2026.2 code execution via path traversal in project workspace ID handling was possible",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-07-10T18:16:20.613",
+      "cwe": "CWE-23",
+      "published": "2026-07-10T15:16:48.240",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-61459",
+      "title": "MCP Server Kubernetes before 3.9.0 contains an argument injection vulnerability in structured tools (kubectl_get, kub…",
+      "vendor": null,
+      "product": null,
+      "description": "MCP Server Kubernetes before 3.9.0 contains an argument injection vulnerability in structured tools (kubectl_get, kubectl_describe, kubectl_delete) that allows attackers to bypass the assertNoDangerousFlags security check by supplying resourceType and name parameters with leading dashes. Attackers can inject the --server flag to redirect kubectl commands to an attacker-controlled API server, causing the operator's bearer token to be transmitted externally and enabling full cluster compromise.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-88",
+      "published": "2026-07-10T19:17:27.450",
       "kev": {
         "in_kev": false
       },
@@ -2304,7 +2339,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2357,7 +2392,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2392,7 +2427,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-14535",
@@ -2427,7 +2462,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2447,7 +2482,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2462,7 +2497,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2482,7 +2517,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2497,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2532,7 +2567,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-13020",
@@ -2552,7 +2587,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2567,7 +2602,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-60002",
@@ -2602,7 +2637,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2637,7 +2672,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2657,7 +2692,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2672,7 +2707,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2686,6 +2721,41 @@
       "epss_pct": 0.35177,
       "cwe": "CWE-89",
       "published": "2026-07-08T16:16:35.050",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 11,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-8649",
+      "title": "Improper Neutralization of Special Elements in Data Query Logic vulnerability in Progress MOVEit Transfer (Custom Rep…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Neutralization of Special Elements in Data Query Logic vulnerability in Progress MOVEit Transfer (Custom Reports modules).\n\nThis issue affects MOVEit Transfer: before 2025.0.7, from 2025.1.0 before 2025.1.3.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00225,
+      "epss_pct": 0.13063,
+      "cwe": "CWE-943",
+      "published": "2026-07-08T20:17:00.557",
       "kev": {
         "in_kev": false
       },
@@ -2707,7 +2777,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2742,7 +2812,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-59214",
+      "title": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform.",
+      "vendor": null,
+      "product": null,
+      "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, Open WebUI runs client-side Python with Pyodide in a same-origin web worker, allowing stored chat payloads that use pyodide.http.pyfetch or the js module fetch and XMLHttpRequest APIs to issue authenticated same-origin requests when a victim clicks Run, which can reach admin-only endpoints and execute server-side code through configured tools. This issue is fixed in version 0.10.0.",
+      "cvss": 9,
+      "severity": "CRITICAL",
+      "epss": 0.00246,
+      "epss_pct": 0.15721,
+      "cwe": "CWE-79",
+      "published": "2026-07-09T17:17:02.177",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 15,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58122",
@@ -2762,7 +2867,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2777,7 +2882,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-15378",
@@ -2797,7 +2902,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2809,132 +2914,6 @@
       "timeline": [
         {
           "date": "2026-07-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-61444",
-      "title": "PraisonAI versions before 4.6.78 contain a code injection vulnerability in deploy/api.py where the agents_file parame…",
-      "vendor": null,
-      "product": null,
-      "description": "PraisonAI versions before 4.6.78 contain a code injection vulnerability in deploy/api.py where the agents_file parameter is directly interpolated into an f-string without sanitization. Attackers can inject arbitrary Python code that executes when the generated server code runs via subprocess.Popen().",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-94",
-      "published": "2026-07-10T15:16:50.610",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
-      "vendor": null,
-      "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36161,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-54350",
-      "title": "Budibase is an open-source low-code platform.",
-      "vendor": null,
-      "product": null,
-      "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-PartiQL, or REST-with-JSON-body collection and, where the builder has published a PUBLIC write query, modifies every document of that collection with one HTTP request. enrichContext at packages/server/src/sdk/workspace/queries/queries.ts:121-138 substitutes parameter values into the raw JSON body of a query, then JSON.parses the result. The validator validateQueryInputs at packages/server/src/api/controllers/query/index.ts:61-71 rejects only Handlebars markers ({{, }}) in user input and does not escape JSON metacharacters (\", \\, }). A parameter value containing a closing quote and additional keys lifts attacker-controlled fields into the parsed filter object. For Mongo find, the parsed filter passes directly to collection.find() (packages/server/src/integrations/mongodb.ts:506-510). Duplicate-key JSON parsing overrides the builder's {name: \"...\"} with {name: {$exists: true}} and returns every document. The same primitive against an updateMany query (mongodb.ts:577-585) widens the filter scope to the full collection while the builder-controlled $set body runs against every matched document. The authorized middleware at packages/server/src/middleware/authorized.ts:141-148 short-circuits when the query's role is PUBLIC. CSRF is not enforced on this path. POST /api/v2/queries/:queryId (packages/server/src/api/routes/query.ts:63) accepts the call with no session, only an x-budibase-app-id header that is public from the published-app URL. This vulnerability is fixed in 3.39.12.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00538,
-      "epss_pct": 0.41479,
-      "cwe": "CWE-89",
-      "published": "2026-06-26T21:16:35.040",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
-            "html_url": "https://github.com/BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-26",
           "label": "Published to NVD"
         }
       ],
