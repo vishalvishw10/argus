@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T03:45:23.309Z",
+  "generated_at": "2026-07-11T06:28:14.557Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 32,
     "kev_total": 1637,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1114 recent"
+      "detail": "1145 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3595 mapped"
+      "detail": "3598 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 9,
         "stars": 15,
@@ -146,7 +146,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -328,7 +328,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 44,
+      "rising": 43,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -374,7 +374,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 59,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -498,7 +498,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -653,60 +653,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2024-42009",
-      "title": "RoundCube Webmail Cross-Site Scripting Vulnerability",
-      "vendor": "Roundcube",
-      "product": "Webmail",
-      "description": "RoundCube Webmail contains a cross-site scripting vulnerability. This vulnerability could allow a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "epss": 0.83387,
-      "epss_pct": 0.99646,
-      "cwe": "CWE-79",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2025-06-09",
-        "due_date": "2025-06-30",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
-          "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
-          "date": "2026-07-07T09:10:51.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss"
-      ],
-      "timeline": [
-        {
-          "date": "2025-06-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-07",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-20253",
       "title": "Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
       "vendor": "Splunk",
@@ -761,6 +707,60 @@
         {
           "date": "2026-06-18",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2024-42009",
+      "title": "RoundCube Webmail Cross-Site Scripting Vulnerability",
+      "vendor": "Roundcube",
+      "product": "Webmail",
+      "description": "RoundCube Webmail contains a cross-site scripting vulnerability. This vulnerability could allow a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.83387,
+      "epss_pct": 0.99646,
+      "cwe": "CWE-79",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2025-06-09",
+        "due_date": "2025-06-30",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+          "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+          "date": "2026-07-07T09:10:51.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2025-06-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-07",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 12
@@ -1209,7 +1209,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -1965,15 +1965,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 120,
+        "stars": 119,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
             "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 87
+            "stars": 86
           },
           {
             "full_name": "pubglite55/oppo-ghostlock",
@@ -2147,7 +2147,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2182,7 +2182,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2217,7 +2217,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2410,7 +2410,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2480,7 +2480,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2515,7 +2515,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2620,7 +2620,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2655,7 +2655,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2760,7 +2760,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2778,115 +2778,24 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "cve_id": "CVE-2026-13353",
+      "title": "The WP Ultimate CSV Importer – WordPress Import & Export for CSV, XML & Excel plugin for WordPress is vulnerable to R…",
       "vendor": null,
       "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36161,
+      "description": "The WP Ultimate CSV Importer – WordPress Import & Export for CSV, XML & Excel plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.0.1 via the 'MappedFields' parameter. This is due to missing capability checks on the AJAX handlers for install_addon, saveMappedFields, and StartImport, combined with the plugin nonce being exposed to any authenticated user who can load an admin page, allowing a Subscriber to install the Import WooCommerce add-on, persist attacker-controlled PHP expressions in the MappedFields parameter, and trigger evaluation via eval() in ImportHelpers::get_meta_values(). This makes it possible for authenticated attackers, with subscriber-level access and above, to execute code on the server.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
       "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
+      "published": "2026-07-11T04:17:16.937",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-54350",
-      "title": "Budibase is an open-source low-code platform.",
-      "vendor": null,
-      "product": null,
-      "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-PartiQL, or REST-with-JSON-body collection and, where the builder has published a PUBLIC write query, modifies every document of that collection with one HTTP request. enrichContext at packages/server/src/sdk/workspace/queries/queries.ts:121-138 substitutes parameter values into the raw JSON body of a query, then JSON.parses the result. The validator validateQueryInputs at packages/server/src/api/controllers/query/index.ts:61-71 rejects only Handlebars markers ({{, }}) in user input and does not escape JSON metacharacters (\", \\, }). A parameter value containing a closing quote and additional keys lifts attacker-controlled fields into the parsed filter object. For Mongo find, the parsed filter passes directly to collection.find() (packages/server/src/integrations/mongodb.ts:506-510). Duplicate-key JSON parsing overrides the builder's {name: \"...\"} with {name: {$exists: true}} and returns every document. The same primitive against an updateMany query (mongodb.ts:577-585) widens the filter scope to the full collection while the builder-controlled $set body runs against every matched document. The authorized middleware at packages/server/src/middleware/authorized.ts:141-148 short-circuits when the query's role is PUBLIC. CSRF is not enforced on this path. POST /api/v2/queries/:queryId (packages/server/src/api/routes/query.ts:63) accepts the call with no session, only an x-budibase-app-id header that is public from the published-app URL. This vulnerability is fixed in 3.39.12.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00538,
-      "epss_pct": 0.41479,
-      "cwe": "CWE-89",
-      "published": "2026-06-26T21:16:35.040",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
-            "html_url": "https://github.com/BiiTts/CVE-2026-54350-Budibase-NoSQL-Injection",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-14241",
-      "title": "Memory safety bugs present in Firefox 152.0.3.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 152.0.4.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00232,
-      "epss_pct": 0.14047,
-      "cwe": "CWE-787",
-      "published": "2026-06-30T14:16:26.087",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
+      "hype": 17,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2897,7 +2806,77 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-06-30",
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-14262",
+      "title": "The Simple JWT Login – Allows you to use JWT on REST endpoints.",
+      "vendor": null,
+      "product": null,
+      "description": "The Simple JWT Login – Allows you to use JWT on REST endpoints. plugin for WordPress is vulnerable to Authentication Bypass to Privilege Escalation in all versions up to, and including, 3.6.6 via the `payload` parameter. The vulnerability exists because `AuthenticateService::generatePayload()` only overwrites JWT payload keys whose names appear in the admin-configured `jwt_payload` list — leaving any attacker-supplied identity claims such as `email`, `id`, or `username` intact and signed into the JWT with the site's HS256 secret. This makes it possible for authenticated attackers, with subscriber-level access and above, to escalate their privileges to that of an Administrator by injecting a target administrator's email address into the `payload` parameter at the `/wp-json/simple-jwt-login/v1/auth` endpoint, then redeeming the resulting JWT at the `/autologin` endpoint to obtain a fully authenticated session as that administrator.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-269",
+      "published": "2026-07-11T05:16:32.367",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-2354",
+      "title": "The Swiss Toolkit For WP plugin for WordPress is vulnerable to arbitrary file upload due to a flawed file type valida…",
+      "vendor": null,
+      "product": null,
+      "description": "The Swiss Toolkit For WP plugin for WordPress is vulnerable to arbitrary file upload due to a flawed file type validation bypass in the `upload_extension_files()` function in all versions up to, and including, 1.4.6. The `upload_extension_files()` function hooks into WordPress's `wp_check_filetype_and_ext` filter and uses `strpos()` to check if a filename contains a configured extension string, rather than verifying the actual file extension. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files (including PHP) on the affected site's server which may make remote code execution possible, granted the \"Enhanced Multi-Format Image Support\" feature is enabled with at least one extension (e.g., avif) in the allowed formats.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-11T05:16:33.777",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
           "label": "Published to NVD"
         }
       ],
