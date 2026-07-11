@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T13:57:12.953Z",
+  "generated_at": "2026-07-11T15:18:17.916Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 32,
     "kev_total": 1637,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1161 recent"
+      "detail": "1175 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3603 mapped"
+      "detail": "3604 mapped"
     },
     {
       "name": "Reddit",
@@ -328,7 +328,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 39,
+      "rising": 38,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1864,7 +1864,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1968,7 +1968,7 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 121,
+        "stars": 123,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
@@ -1978,7 +1978,7 @@
           {
             "full_name": "pubglite55/oppo-ghostlock",
             "html_url": "https://github.com/pubglite55/oppo-ghostlock",
-            "stars": 27
+            "stars": 29
           },
           {
             "full_name": "0xBlackash/CVE-2026-43499",
@@ -2112,7 +2112,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2243,6 +2243,111 @@
       "rank": 42
     },
     {
+      "cve_id": "CVE-2026-60090",
+      "title": "PraisonAI before 4.6.78 fails to validate the caller-controlled dimension argument in the PGVector and Cassandra know…",
+      "vendor": null,
+      "product": null,
+      "description": "PraisonAI before 4.6.78 fails to validate the caller-controlled dimension argument in the PGVector and Cassandra knowledge-store create_collection() backends. Although schema, keyspace, and collection-name identifiers are validated, the dimension value (declared as int but not enforced at runtime) is interpolated directly into the vector column of the generated CREATE TABLE DDL. A caller able to influence collection-creation dimensions can pass a string such as '3); DROP TABLE tenant_secrets; --' to inject SQL/CQL tokens into the statement executed by the database driver.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-11T14:16:22.353",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-61445",
+      "title": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component …",
+      "vendor": null,
+      "product": null,
+      "description": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component due to missing path validation and command sanitization in LLM tool calls. Attackers can inject malicious prompts through the chat interface to write files to arbitrary filesystem locations and execute arbitrary shell commands with root privileges.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-07-11T14:16:23.240",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-61447",
+      "title": "PraisonAI before 1.6.78 contains a remote code execution vulnerability in CodeAgent._execute_python() that executes L…",
+      "vendor": null,
+      "product": null,
+      "description": "PraisonAI before 1.6.78 contains a remote code execution vulnerability in CodeAgent._execute_python() that executes LLM-generated Python code without AST validation, import restrictions, or sandbox enforcement. Attackers can influence LLM output through prompt injection to exfiltrate all environment secrets and execute arbitrary code on the host system.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-07-11T14:16:23.377",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
       "cve_id": "CVE-2026-55200",
       "title": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read(…",
       "vendor": null,
@@ -2293,7 +2398,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-57983",
@@ -2328,7 +2433,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-40139",
@@ -2348,7 +2453,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2363,7 +2468,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2383,7 +2488,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2398,7 +2503,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2433,7 +2538,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-13020",
@@ -2453,7 +2558,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2468,7 +2573,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-60002",
@@ -2503,7 +2608,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2538,7 +2643,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2573,7 +2678,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2608,7 +2713,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-8649",
@@ -2643,7 +2748,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2678,7 +2783,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-15378",
@@ -2713,7 +2818,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 58
     },
     {
       "cve_id": "CVE-2025-30007",
@@ -2748,42 +2853,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-13756",
-      "title": "The WP Grid Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, …",
-      "vendor": null,
-      "product": null,
-      "description": "The WP Grid Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.3.3. This is due to missing authorization and meta key validation in the `update()` handler for the `/wp-json/wpgb/v2/metadata` REST endpoint. This makes it possible for authenticated attackers, with Subscriber-level access and above, to elevate their privileges to Administrator by updating their own `wp_capabilities` user meta with a crafted nested array payload.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00309,
-      "epss_pct": 0.22808,
-      "cwe": "CWE-269",
-      "published": "2026-07-11T02:16:17.457",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-13353",
@@ -2804,76 +2874,6 @@
       "no_patch": false,
       "hype": 17,
       "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-14262",
-      "title": "The Simple JWT Login – Allows you to use JWT on REST endpoints.",
-      "vendor": null,
-      "product": null,
-      "description": "The Simple JWT Login – Allows you to use JWT on REST endpoints. plugin for WordPress is vulnerable to Authentication Bypass to Privilege Escalation in all versions up to, and including, 3.6.6 via the `payload` parameter. The vulnerability exists because `AuthenticateService::generatePayload()` only overwrites JWT payload keys whose names appear in the admin-configured `jwt_payload` list — leaving any attacker-supplied identity claims such as `email`, `id`, or `username` intact and signed into the JWT with the site's HS256 secret. This makes it possible for authenticated attackers, with subscriber-level access and above, to escalate their privileges to that of an Administrator by injecting a target administrator's email address into the `payload` parameter at the `/wp-json/simple-jwt-login/v1/auth` endpoint, then redeeming the resulting JWT at the `/autologin` endpoint to obtain a fully authenticated session as that administrator.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00308,
-      "epss_pct": 0.22672,
-      "cwe": "CWE-269",
-      "published": "2026-07-11T05:16:32.367",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-2354",
-      "title": "The Swiss Toolkit For WP plugin for WordPress is vulnerable to arbitrary file upload due to a flawed file type valida…",
-      "vendor": null,
-      "product": null,
-      "description": "The Swiss Toolkit For WP plugin for WordPress is vulnerable to arbitrary file upload due to a flawed file type validation bypass in the `upload_extension_files()` function in all versions up to, and including, 1.4.6. The `upload_extension_files()` function hooks into WordPress's `wp_check_filetype_and_ext` filter and uses `strpos()` to check if a filename contains a configured extension string, rather than verifying the actual file extension. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files (including PHP) on the affected site's server which may make remote code execution possible, granted the \"Enhanced Multi-Format Image Support\" feature is enabled with at least one extension (e.g., avif) in the allowed formats.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00332,
-      "epss_pct": 0.25239,
-      "cwe": "CWE-434",
-      "published": "2026-07-11T05:16:33.777",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
