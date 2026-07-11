@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T00:12:57.722Z",
+  "generated_at": "2026-07-11T03:45:23.309Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1112 recent"
+      "detail": "1114 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 9,
         "stars": 15,
@@ -146,7 +146,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -328,7 +328,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 46,
+      "rising": 44,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -374,7 +374,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 59,
-      "rising": 11,
+      "rising": 8,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -417,63 +417,6 @@
         }
       ],
       "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-48939",
-      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "iCagenda",
-      "product": "iCagenda",
-      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00564,
-      "epss_pct": 0.42883,
-      "cwe": "CWE-434",
-      "published": "2026-06-20T13:16:42.433",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-10",
-        "due_date": "2026-07-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 32,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-48939",
-            "html_url": "https://github.com/shinthink/CVE-2026-48939",
-            "stars": 1
-          },
-          {
-            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
-            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-20",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
     },
     {
       "cve_id": "CVE-2026-0257",
@@ -529,6 +472,63 @@
       "timeline": [
         {
           "date": "2026-05-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-48939",
+      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "iCagenda",
+      "product": "iCagenda",
+      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00564,
+      "epss_pct": 0.42883,
+      "cwe": "CWE-434",
+      "published": "2026-06-20T13:16:42.433",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-10",
+        "due_date": "2026-07-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 31,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-48939",
+            "html_url": "https://github.com/shinthink/CVE-2026-48939",
+            "stars": 1
+          },
+          {
+            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
+            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -658,11 +658,11 @@
       "vendor": "Roundcube",
       "product": "Webmail",
       "description": "RoundCube Webmail contains a cross-site scripting vulnerability. This vulnerability could allow a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
       "epss": 0.83387,
       "epss_pct": 0.99646,
-      "cwe": null,
+      "cwe": "CWE-79",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -712,11 +712,11 @@
       "vendor": "Splunk",
       "product": "Enterprise",
       "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.88171,
       "epss_pct": 0.99749,
-      "cwe": null,
+      "cwe": "CWE-306",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -771,11 +771,11 @@
       "vendor": "BerriAI",
       "product": "LiteLLM",
       "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "epss": 0.80188,
       "epss_pct": 0.99571,
-      "cwe": null,
+      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -875,11 +875,11 @@
       "vendor": "SimpleHelp ",
       "product": "SimpleHelp",
       "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 10,
+      "severity": "CRITICAL",
       "epss": 0.0116,
       "epss_pct": 0.63372,
-      "cwe": null,
+      "cwe": "CWE-347",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -935,11 +935,11 @@
       "vendor": "Ubiquiti",
       "product": "UniFi OS",
       "description": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 10,
+      "severity": "CRITICAL",
       "epss": 0.78555,
       "epss_pct": 0.99537,
-      "cwe": null,
+      "cwe": "CWE-20",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -977,8 +977,8 @@
       "vendor": "Oracle",
       "product": "WebLogic Server",
       "description": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.49689,
       "epss_pct": 0.98759,
       "cwe": null,
@@ -1209,7 +1209,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 18,
+      "rising": 16,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -1864,7 +1864,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1965,7 +1965,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 7,
         "stars": 120,
@@ -2112,7 +2112,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2147,7 +2147,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2217,7 +2217,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2323,41 +2323,6 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-14535",
-      "title": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally call…",
-      "vendor": null,
-      "product": null,
-      "description": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally calls AnalysisContext.shorten_code(node) on every import node it inspects, regardless of whether the import is flagged as unsafe. This call registers the shortened code representation in the shared AnalysisContext.reported_shortened_code set. When the MLAllowlist analysis pass subsequently runs, it calls the same shorten_code() method, receives already_reported=True for every import, and executes a continue statement that skips its allowlist check entirely. This renders MLAllowlist dead code for all imports — it never evaluates whether an import is in the ML allowlist or not. The MLAllowlist pass was designed to catch imports of modules outside the known-safe ML ecosystem (torch, numpy, transformers, etc.) that slip past the UnsafeImports denylist. With MLAllowlist inoperative, any standard library module not in the UNSAFE_IMPORTS denylist can be invoked via pickle deserialization while fickling's check_safety() returns LIKELY_SAFE. The fickling.load() API chains check_safety() into pickle.loads() as an explicit security gate, meaning a LIKELY_SAFE verdict causes the payload to be deserialized and executed. The root cause is shared mutable state between independently-correct analysis passes — UnsafeImportsML works as designed in isolation, MLAllowlist works as designed in isolation, but the shared reported_shortened_code set causes UnsafeImportsML to poison MLAllowlist's deduplication logic.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00304,
-      "epss_pct": 0.22236,
-      "cwe": "CWE-693",
-      "published": "2026-07-04T14:16:29.063",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
       "cve_id": "CVE-2026-40139",
       "title": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support.",
       "vendor": null,
@@ -2375,7 +2340,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-40141",
+      "title": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remo…",
+      "vendor": null,
+      "product": null,
+      "description": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remote Access related to the processing of certain input parameters. Insufficient validation of user-supplied input may allow an authenticated attacker with limited privileges to access unintended resources or data beyond their authorization scope. Exploitation is restricted to accounts with specific permissions.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00478,
+      "epss_pct": 0.37981,
+      "cwe": "CWE-943",
+      "published": "2026-07-06T17:16:31.143",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2393,17 +2393,17 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-40141",
-      "title": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remo…",
+      "cve_id": "CVE-2026-54763",
+      "title": "Traefik is an HTTP reverse proxy and load balancer.",
       "vendor": null,
       "product": null,
-      "description": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remote Access related to the processing of certain input parameters. Insufficient validation of user-supplied input may allow an authenticated attacker with limited privileges to access unintended resources or data beyond their authorization scope. Exploitation is restricted to accounts with specific permissions.",
-      "cvss": 9.9,
+      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to v2.11.51, v3.6.22, and v3.7.6, Traefik's BasicAuth, DigestAuth, and ForwardAuth middlewares strip canonical-cased spoofed identity headers before writing Traefik's own value, but do not account for underscore-variant header names, which many backends normalize identically to dashed forms. An attacker able to reach a protected route can inject an underscore-variant header that survives Traefik's stripping and reaches the backend alongside, or on the unauthenticated ForwardAuth authResponseHeaders path instead of, the value Traefik intended to set, spoofing identity or authorization context. This issue is fixed in versions v2.11.51, v3.6.22, and v3.7.6.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00478,
-      "epss_pct": 0.37981,
-      "cwe": "CWE-943",
-      "published": "2026-07-06T17:16:31.143",
+      "epss": 0.00256,
+      "epss_pct": 0.16939,
+      "cwe": "CWE-178",
+      "published": "2026-07-06T21:16:56.787",
       "kev": {
         "in_kev": false
       },
@@ -2428,41 +2428,6 @@
       "rank": 47
     },
     {
-      "cve_id": "CVE-2026-54763",
-      "title": "Traefik is an HTTP reverse proxy and load balancer.",
-      "vendor": null,
-      "product": null,
-      "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to v2.11.51, v3.6.22, and v3.7.6, Traefik's BasicAuth, DigestAuth, and ForwardAuth middlewares strip canonical-cased spoofed identity headers before writing Traefik's own value, but do not account for underscore-variant header names, which many backends normalize identically to dashed forms. An attacker able to reach a protected route can inject an underscore-variant header that survives Traefik's stripping and reaches the backend alongside, or on the unauthenticated ForwardAuth authResponseHeaders path instead of, the value Traefik intended to set, spoofing identity or authorization context. This issue is fixed in versions v2.11.51, v3.6.22, and v3.7.6.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00256,
-      "epss_pct": 0.16939,
-      "cwe": "CWE-178",
-      "published": "2026-07-06T21:16:56.787",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 4,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
-    },
-    {
       "cve_id": "CVE-2026-13020",
       "title": "A Weak Password Recovery Mechanism for Forgotten Password exists in Esri Portal for ArcGIS versions 12.1 and earlier …",
       "vendor": null,
@@ -2480,7 +2445,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2495,7 +2460,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-60002",
@@ -2530,7 +2495,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2565,7 +2530,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2585,7 +2550,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2600,7 +2565,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2620,7 +2585,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2635,7 +2600,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-8649",
@@ -2670,7 +2635,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2705,7 +2670,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-59214",
@@ -2725,7 +2690,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2740,7 +2705,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-15378",
@@ -2760,7 +2725,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2775,27 +2740,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
-      "cve_id": "CVE-2025-30007",
-      "title": "HestiaCP before 1.9.5 contains an authenticated OS command injection vulnerability that allows low-privilege authenti…",
+      "cve_id": "CVE-2026-13756",
+      "title": "The WP Grid Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, …",
       "vendor": null,
       "product": null,
-      "description": "HestiaCP before 1.9.5 contains an authenticated OS command injection vulnerability that allows low-privilege authenticated users to execute arbitrary commands as root by injecting a single-quote character into unvalidated DNS record types. Attackers can exploit insufficient input validation in is_dns_record_format_valid() combined with unsafe eval-based parsing in update_domain_zone() to prematurely close a variable assignment string and achieve full root code execution on the underlying host in a single DNS record creation step.",
+      "description": "The WP Grid Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.3.3. This is due to missing authorization and meta key validation in the `update()` handler for the `/wp-json/wpgb/v2/metadata` REST endpoint. This makes it possible for authenticated attackers, with Subscriber-level access and above, to elevate their privileges to Administrator by updating their own `wp_capabilities` user meta with a crafted nested array payload.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-07-10T19:17:18.130",
+      "cwe": "CWE-269",
+      "published": "2026-07-11T02:16:17.457",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2806,11 +2771,11 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-10",
+          "date": "2026-07-11",
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-53753",
@@ -2858,7 +2823,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-54350",
@@ -2898,6 +2863,41 @@
       "timeline": [
         {
           "date": "2026-06-26",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-14241",
+      "title": "Memory safety bugs present in Firefox 152.0.3.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 152.0.4.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00232,
+      "epss_pct": 0.14047,
+      "cwe": "CWE-787",
+      "published": "2026-06-30T14:16:26.087",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
