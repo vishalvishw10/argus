@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:34:36.326Z",
+  "generated_at": "2026-07-11T21:09:01.660Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1158 recent"
+      "detail": "1157 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1173 scored"
+      "detail": "1172 scored"
     },
     {
       "name": "BleepingComputer",
@@ -393,7 +393,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 58,
-      "rising": 36,
+      "rising": 35,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -2112,7 +2112,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2523,7 +2523,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2821,59 +2821,72 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2025-6784",
-      "title": "The Code Engine plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 0.3…",
+      "cve_id": "CVE-2026-53753",
+      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
       "vendor": null,
       "product": null,
-      "description": "The Code Engine plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 0.3.5 via the 'code-engine' shortcode. This is due to the plugin not restricting access to the code injecting functionality of the plugin. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00312,
-      "epss_pct": 0.23057,
-      "cwe": "CWE-77",
-      "published": "2026-07-11T07:16:44.637",
+      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0045,
+      "epss_pct": 0.36199,
+      "cwe": "CWE-94",
+      "published": "2026-06-23T19:17:07.107",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 18,
+      "hype": 16,
+      "rising": 0,
       "repos": {
-        "count": 0,
+        "count": 2,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
+            "stars": 0
+          },
+          {
+            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
+            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-07-11",
+          "date": "2026-06-23",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-15155",
-      "title": "The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Auth…",
+      "cve_id": "CVE-2026-14241",
+      "title": "Memory safety bugs present in Firefox 152.0.3.",
       "vendor": null,
       "product": null,
-      "description": "The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Authenticated Account Takeover via Email Header Injection in all versions up to, and including, 6.6.10 This is due to insufficient server-side validation of a Login/Register widget setting used to construct outgoing email headers — the allowed-values restriction is enforced only in the client-side editor UI and not on the server, and the applied sanitization does not strip or encode CR/LF characters, allowing CRLF sequences stored in that setting to survive into raw mail headers. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject an additional Bcc header into the WordPress administrator's password-reset notification email, receive a copy of a valid administrator password-reset link, and achieve full administrator account takeover.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00367,
-      "epss_pct": 0.28779,
-      "cwe": "CWE-640",
-      "published": "2026-07-11T07:16:46.170",
+      "description": "Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 152.0.4.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00232,
+      "epss_pct": 0.14051,
+      "cwe": "CWE-787",
+      "published": "2026-06-30T14:16:26.087",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 18,
+      "hype": 16,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2884,7 +2897,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-11",
+          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
