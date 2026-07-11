@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T17:17:47.371Z",
+  "generated_at": "2026-07-11T18:10:36.966Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3604 mapped"
+      "detail": "3606 mapped"
     },
     {
       "name": "Reddit",
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -1968,17 +1968,17 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 125,
+        "stars": 127,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
             "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 89
+            "stars": 90
           },
           {
             "full_name": "pubglite55/oppo-ghostlock",
             "html_url": "https://github.com/pubglite55/oppo-ghostlock",
-            "stars": 29
+            "stars": 30
           },
           {
             "full_name": "0xBlackash/CVE-2026-43499",
@@ -2821,17 +2821,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-13353",
-      "title": "The WP Ultimate CSV Importer – WordPress Import & Export for CSV, XML & Excel plugin for WordPress is vulnerable to R…",
+      "cve_id": "CVE-2025-6784",
+      "title": "The Code Engine plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 0.3…",
       "vendor": null,
       "product": null,
-      "description": "The WP Ultimate CSV Importer – WordPress Import & Export for CSV, XML & Excel plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.0.1 via the 'MappedFields' parameter. This is due to missing capability checks on the AJAX handlers for install_addon, saveMappedFields, and StartImport, combined with the plugin nonce being exposed to any authenticated user who can load an admin page, allowing a Subscriber to install the Import WooCommerce add-on, persist attacker-controlled PHP expressions in the MappedFields parameter, and trigger evaluation via eval() in ImportHelpers::get_meta_values(). This makes it possible for authenticated attackers, with subscriber-level access and above, to execute code on the server.",
+      "description": "The Code Engine plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 0.3.5 via the 'code-engine' shortcode. This is due to the plugin not restricting access to the code injecting functionality of the plugin. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00383,
-      "epss_pct": 0.30362,
-      "cwe": "CWE-94",
-      "published": "2026-07-11T04:17:16.937",
+      "epss": 0.00312,
+      "epss_pct": 0.23057,
+      "cwe": "CWE-77",
+      "published": "2026-07-11T07:16:44.637",
       "kev": {
         "in_kev": false
       },
@@ -2856,17 +2856,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-14262",
-      "title": "The Simple JWT Login – Allows you to use JWT on REST endpoints.",
+      "cve_id": "CVE-2026-15155",
+      "title": "The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Auth…",
       "vendor": null,
       "product": null,
-      "description": "The Simple JWT Login – Allows you to use JWT on REST endpoints. plugin for WordPress is vulnerable to Authentication Bypass to Privilege Escalation in all versions up to, and including, 3.6.6 via the `payload` parameter. The vulnerability exists because `AuthenticateService::generatePayload()` only overwrites JWT payload keys whose names appear in the admin-configured `jwt_payload` list — leaving any attacker-supplied identity claims such as `email`, `id`, or `username` intact and signed into the JWT with the site's HS256 secret. This makes it possible for authenticated attackers, with subscriber-level access and above, to escalate their privileges to that of an Administrator by injecting a target administrator's email address into the `payload` parameter at the `/wp-json/simple-jwt-login/v1/auth` endpoint, then redeeming the resulting JWT at the `/autologin` endpoint to obtain a fully authenticated session as that administrator.",
+      "description": "The Essential Addons for Elementor – Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Authenticated Account Takeover via Email Header Injection in all versions up to, and including, 6.6.10 This is due to insufficient server-side validation of a Login/Register widget setting used to construct outgoing email headers — the allowed-values restriction is enforced only in the client-side editor UI and not on the server, and the applied sanitization does not strip or encode CR/LF characters, allowing CRLF sequences stored in that setting to survive into raw mail headers. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject an additional Bcc header into the WordPress administrator's password-reset notification email, receive a copy of a valid administrator password-reset link, and achieve full administrator account takeover.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00308,
-      "epss_pct": 0.22672,
-      "cwe": "CWE-269",
-      "published": "2026-07-11T05:16:32.367",
+      "epss": 0.00367,
+      "epss_pct": 0.28779,
+      "cwe": "CWE-640",
+      "published": "2026-07-11T07:16:46.170",
       "kev": {
         "in_kev": false
       },
