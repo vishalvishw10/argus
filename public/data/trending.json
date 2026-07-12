@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:48:00.177Z",
+  "generated_at": "2026-07-12T09:18:14.319Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 32,
     "kev_total": 1637,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1160 recent"
+      "detail": "1168 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3607 mapped"
+      "detail": "3608 mapped"
     },
     {
       "name": "Reddit",
@@ -328,7 +328,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 58,
-      "rising": 30,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -498,7 +498,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -889,7 +889,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 46,
+      "hype": 45,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -2112,7 +2112,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2435,7 +2435,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2505,7 +2505,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2540,7 +2540,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2645,7 +2645,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2803,7 +2803,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2838,7 +2838,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2856,48 +2856,35 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-53753",
-      "title": "Crawl4AI is an open-source LLM friendly web crawler & scraper.",
+      "cve_id": "CVE-2026-15483",
+      "title": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01.",
       "vendor": null,
       "product": null,
-      "description": "Crawl4AI is an open-source LLM friendly web crawler & scraper. Prior to 0.8.7, the _safe_eval_expression() function in the computed fields feature uses an AST validator that only blocks attributes starting with underscore. Python generator and frame object attributes (gi_frame, f_back, f_builtins) do NOT start with underscore, enabling a complete sandbox escape to achieve arbitrary code execution. The attack requires no authentication (JWT disabled by default) and is triggered via POST /crawl with a crafted extraction schema. This vulnerability is fixed in 0.8.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0045,
-      "epss_pct": 0.36199,
-      "cwe": "CWE-94",
-      "published": "2026-06-23T19:17:07.107",
+      "description": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function sub_41EC14 of the file /goform/tools_nslookup of the component ssi. The manipulation of the argument nslookup_target leads to buffer overflow. It is possible to initiate the attack remotely. The vendor explains: \"We are unable to confirm the existence of the vulnerabilities for (...) TEW-821DAP (v1.0R) as these items have been EOL. \" This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-07-12T07:16:24.927",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 16,
-      "rising": 0,
+      "hype": 17,
+      "rising": 20,
       "repos": {
-        "count": 2,
+        "count": 0,
         "stars": 0,
-        "top": [
-          {
-            "full_name": "BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-53753-Crawl4AI-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "thecodeb0ss/Advanced-CVE-2026-53753",
-            "html_url": "https://github.com/thecodeb0ss/Advanced-CVE-2026-53753",
-            "stars": 0
-          }
-        ]
+        "top": []
       },
       "media": [],
       "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
+      "tags": [],
       "timeline": [
         {
-          "date": "2026-06-23",
+          "date": "2026-07-12",
           "label": "Published to NVD"
         }
       ],
