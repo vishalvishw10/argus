@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T10:46:47.447Z",
+  "generated_at": "2026-07-12T12:08:48.931Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1166 recent"
+      "detail": "1170 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -1895,6 +1895,67 @@
       "rank": 34
     },
     {
+      "cve_id": "CVE-2026-43499",
+      "title": "CVE-2026-43499",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00125,
+      "epss_pct": 0.02591,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 21,
+      "rising": 0,
+      "repos": {
+        "count": 8,
+        "stars": 138,
+        "top": [
+          {
+            "full_name": "MobiusM/CVE-2026-43499",
+            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
+            "stars": 94
+          },
+          {
+            "full_name": "pubglite55/oppo-ghostlock",
+            "html_url": "https://github.com/pubglite55/oppo-ghostlock",
+            "stars": 31
+          },
+          {
+            "full_name": "x-spy/CVE-2026-43499-popsicle",
+            "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
+            "stars": 6
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+          "date": "2026-07-08T06:16:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 35
+    },
+    {
       "cve_id": "CVE-2026-8451",
       "title": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or N…",
       "vendor": null,
@@ -1911,7 +1972,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 21,
+      "hype": 20,
       "rising": 0,
       "repos": {
         "count": 5,
@@ -1943,67 +2004,6 @@
         {
           "date": "2026-06-30",
           "label": "Published to NVD"
-        }
-      ],
-      "rank": 35
-    },
-    {
-      "cve_id": "CVE-2026-43499",
-      "title": "CVE-2026-43499",
-      "vendor": null,
-      "product": null,
-      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00125,
-      "epss_pct": 0.02591,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 131,
-        "top": [
-          {
-            "full_name": "MobiusM/CVE-2026-43499",
-            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 93
-          },
-          {
-            "full_name": "pubglite55/oppo-ghostlock",
-            "html_url": "https://github.com/pubglite55/oppo-ghostlock",
-            "stars": 31
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-43499",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-43499",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
-          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
-          "date": "2026-07-08T06:16:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-08",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 36
@@ -2190,7 +2190,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2225,7 +2225,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2260,7 +2260,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2435,7 +2435,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2540,7 +2540,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2575,7 +2575,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
