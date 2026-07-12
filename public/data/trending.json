@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T21:08:20.220Z",
+  "generated_at": "2026-07-12T22:10:22.690Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 32,
     "kev_total": 1637,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1150 recent"
+      "detail": "1148 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1157 scored"
+      "detail": "1155 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
@@ -1968,7 +1968,7 @@
       "rising": 0,
       "repos": {
         "count": 9,
-        "stars": 158,
+        "stars": 160,
         "top": [
           {
             "full_name": "MobiusM/CVE-2026-43499",
@@ -1983,7 +1983,7 @@
           {
             "full_name": "x-spy/CVE-2026-43499-popsicle",
             "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
-            "stars": 24
+            "stars": 26
           }
         ]
       },
@@ -2260,7 +2260,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2750,7 +2750,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2821,24 +2821,24 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-15483",
-      "title": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01.",
+      "cve_id": "CVE-2026-13772",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class …",
       "vendor": null,
       "product": null,
-      "description": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function sub_41EC14 of the file /goform/tools_nslookup of the component ssi. The manipulation of the argument nslookup_target leads to buffer overflow. It is possible to initiate the attack remotely. The vendor explains: \"We are unable to confirm the existence of the vulnerabilities for (...) TEW-821DAP (v1.0R) as these items have been EOL. \" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00419,
-      "epss_pct": 0.33837,
-      "cwe": "CWE-119",
-      "published": "2026-07-12T07:16:24.927",
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 's Object Query Language engine resolves attacker-supplied class names via Class.forName() and invokes their constructors with no allow-list at three distinct sinks (SELECT NEW, enum literals, and reflection-based comparators); an authenticated remote attacker who can influence an application-built OQL query string can execute arbitrary constructors on the WAS JVM, and a SELECT DISTINCT variant using planted grid values fires the same gadget post-readObject in a manner that survives JEP-290 serialization filters across grid node boundaries",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00283,
+      "epss_pct": 0.20219,
+      "cwe": "CWE-470",
+      "published": "2026-06-30T20:17:29.080",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 18,
+      "hype": 16,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2849,31 +2849,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-12",
+          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-15484",
-      "title": "A vulnerability was detected in TRENDnet TEW-821DAP 1.12B01.",
+      "cve_id": "CVE-2026-13773",
+      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was detected in TRENDnet TEW-821DAP 1.12B01. The affected element is the function sub_41EC14 of the file /goform/tools_nslookup of the component ssi. The manipulation results in buffer overflow. It is possible to launch the attack remotely. The vendor explains: \"We are unable to confirm the existence of the vulnerabilities for (...) TEW-821DAP (v1.0R) as these items have been EOL. \" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00419,
-      "epss_pct": 0.33837,
-      "cwe": "CWE-119",
-      "published": "2026-07-12T07:16:25.107",
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.03415,
+      "epss_pct": 0.87496,
+      "cwe": "CWE-918",
+      "published": "2026-06-30T20:17:29.227",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 18,
+      "hype": 16,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2884,7 +2884,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-12",
+          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
