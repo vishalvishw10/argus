@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T15:18:16.121Z",
+  "generated_at": "2026-07-12T16:15:22.058Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -126,68 +126,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-56290",
-      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
-      "vendor": "Joomlack",
-      "product": "Page Builder",
-      "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02912,
-      "epss_pct": 0.85374,
-      "cwe": "CWE-434",
-      "published": "2026-06-29T15:16:42.360",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "shinthink/pbck-exploit",
-            "html_url": "https://github.com/shinthink/pbck-exploit",
-            "stars": 3
-          },
-          {
-            "full_name": "Jenderal92/CVE-2026-56290",
-            "html_url": "https://github.com/Jenderal92/CVE-2026-56290",
-            "stars": 2
-          },
-          {
-            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-29",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "cve_id": "CVE-2026-35273",
       "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
       "vendor": "Oracle",
@@ -245,7 +183,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -302,6 +240,68 @@
       "timeline": [
         {
           "date": "2026-06-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-56290",
+      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
+      "vendor": "Joomlack",
+      "product": "Page Builder",
+      "description": "The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02912,
+      "epss_pct": 0.85374,
+      "cwe": "CWE-434",
+      "published": "2026-06-29T15:16:42.360",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "shinthink/pbck-exploit",
+            "html_url": "https://github.com/shinthink/pbck-exploit",
+            "stars": 3
+          },
+          {
+            "full_name": "Jenderal92/CVE-2026-56290",
+            "html_url": "https://github.com/Jenderal92/CVE-2026-56290",
+            "stars": 2
+          },
+          {
+            "full_name": "sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
+            "html_url": "https://github.com/sagsooz/PageBuilderCK-CVE-2026-56290-Exploit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-29",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-07",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1895,67 +1895,6 @@
       "rank": 34
     },
     {
-      "cve_id": "CVE-2026-43499",
-      "title": "CVE-2026-43499",
-      "vendor": null,
-      "product": null,
-      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00125,
-      "epss_pct": 0.02587,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 0,
-      "repos": {
-        "count": 9,
-        "stars": 143,
-        "top": [
-          {
-            "full_name": "MobiusM/CVE-2026-43499",
-            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 94
-          },
-          {
-            "full_name": "pubglite55/oppo-ghostlock",
-            "html_url": "https://github.com/pubglite55/oppo-ghostlock",
-            "stars": 31
-          },
-          {
-            "full_name": "x-spy/CVE-2026-43499-popsicle",
-            "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
-            "stars": 11
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
-          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
-          "date": "2026-07-08T06:16:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-08",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 35
-    },
-    {
       "cve_id": "CVE-2026-8451",
       "title": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or N…",
       "vendor": null,
@@ -2004,6 +1943,67 @@
         {
           "date": "2026-06-30",
           "label": "Published to NVD"
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "cve_id": "CVE-2026-43499",
+      "title": "CVE-2026-43499",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00125,
+      "epss_pct": 0.02587,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 9,
+        "stars": 145,
+        "top": [
+          {
+            "full_name": "MobiusM/CVE-2026-43499",
+            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
+            "stars": 94
+          },
+          {
+            "full_name": "pubglite55/oppo-ghostlock",
+            "html_url": "https://github.com/pubglite55/oppo-ghostlock",
+            "stars": 32
+          },
+          {
+            "full_name": "x-spy/CVE-2026-43499-popsicle",
+            "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
+            "stars": 12
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+          "date": "2026-07-08T06:16:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-08",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 36
