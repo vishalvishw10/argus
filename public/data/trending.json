@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T22:13:04.267Z",
+  "generated_at": "2026-07-13T23:15:18.399Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1138 recent"
+      "detail": "1172 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1150 scored"
+      "detail": "1157 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3620 mapped"
+      "detail": "3621 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 66,
-      "rising": 39,
+      "rising": 38,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -336,7 +336,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -962,7 +962,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1873,12 +1873,12 @@
       "rising": 0,
       "repos": {
         "count": 14,
-        "stars": 295,
+        "stars": 301,
         "top": [
           {
             "full_name": "x-spy/CVE-2026-43499-popsicle",
             "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
-            "stars": 107
+            "stars": 110
           },
           {
             "full_name": "MobiusM/CVE-2026-43499",
@@ -1888,7 +1888,7 @@
           {
             "full_name": "Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499",
             "html_url": "https://github.com/Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499",
-            "stars": 41
+            "stars": 44
           }
         ]
       },
@@ -2148,24 +2148,24 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-40141",
-      "title": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remo…",
+      "cve_id": "CVE-2026-59801",
+      "title": "9Router through version 0.4.41 contains an unauthenticated access vulnerability that allows remote attackers to inter…",
       "vendor": null,
       "product": null,
-      "description": "A high-severity vulnerability exists in a web application component of BeyondTrust Remote Support and Privileged Remote Access related to the processing of certain input parameters. Insufficient validation of user-supplied input may allow an authenticated attacker with limited privileges to access unintended resources or data beyond their authorization scope. Exploitation is restricted to accounts with specific permissions.",
-      "cvss": 9.9,
+      "description": "9Router through version 0.4.41 contains an unauthenticated access vulnerability that allows remote attackers to interact with provider management API endpoints by sending requests without any credentials due to missing authentication middleware in the Next.js API routes under src/app/api/providers/*. Attackers can enumerate, create, modify, or delete provider connections to expose partial credentials, OAuth tokens, and API keys, redirect AI traffic to attacker-controlled servers, or cause complete denial of service by deleting all provider connections.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00478,
-      "epss_pct": 0.38024,
-      "cwe": "CWE-943",
-      "published": "2026-07-06T17:16:31.143",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-07-13T22:16:48.840",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 0,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2176,7 +2176,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-06",
+          "date": "2026-07-13",
           "label": "Published to NVD"
         }
       ],
@@ -2480,7 +2480,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2568,6 +2568,41 @@
       "rank": 52
     },
     {
+      "cve_id": "CVE-2026-57211",
+      "title": "RabbitMQ is a messaging and streaming broker.",
+      "vendor": null,
+      "product": null,
+      "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.1.11 and 4.2.6 on Windows, the RabbitMQ management plugin static file handler rabbit_mgmt_wm_static can pass URL-encoded backslashes to erl_prim_loader:read_file_info before path validation when multiple management extension plugins are enabled, causing outbound DNS and SMB requests to attacker-controlled UNC paths. This issue is fixed in versions 4.1.11 and 4.2.6.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00278,
+      "epss_pct": 0.19646,
+      "cwe": "CWE-36",
+      "published": "2026-07-10T21:16:58.007",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
       "cve_id": "CVE-2026-57216",
       "title": "RabbitMQ is a messaging and streaming broker.",
       "vendor": null,
@@ -2600,7 +2635,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60090",
@@ -2635,7 +2670,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-61445",
@@ -2670,7 +2705,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-62327",
+      "title": "9Router through version 0.4.41 contain an unauthenticated information disclosure vulnerability that allows remote att…",
+      "vendor": null,
+      "product": null,
+      "description": "9Router through version 0.4.41 contain an unauthenticated information disclosure vulnerability that allows remote attackers to retrieve plaintext API keys for all connected AI provider accounts by sending a single unauthenticated request to the /api/usage/stats endpoint. Attackers can exploit the missing authentication middleware on the Next.js API route to obtain full API key strings alongside token counts, cost breakdowns, and request metadata, enabling unauthorized use of connected AI provider accounts, billing fraud, and quota exhaustion.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-07-13T22:16:52.403",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2723,7 +2793,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-15548",
@@ -2758,7 +2828,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-49970",
@@ -2778,7 +2848,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2790,76 +2860,6 @@
       "timeline": [
         {
           "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-49972",
-      "title": "Laravel-Mediable before 7.0.0 contains a file upload vulnerability that allows unauthenticated attackers to achieve r…",
-      "vendor": null,
-      "product": null,
-      "description": "Laravel-Mediable before 7.0.0 contains a file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading a file with an embedded PHP extension disguised within a double extension such as shell.php.jpg. The PATHINFO_FILENAME extraction preserves the inner .php extension in the base name, and on misconfigured Apache or nginx servers that execute any filename containing .php as PHP, the stored file is interpreted as executable code while all MIME type, extension, and aggregate type validation checks pass due to the outer .jpg extension.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-434",
-      "published": "2026-07-13T19:17:10.447",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-13773",
-      "title": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtrem…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.1.6 Approximately 50 generated CORBA stub classes in WebSphere eXtreme Scale's ogclient.jar call ORB.string_to_object() on an attacker-controlled IOR string during Java deserialization, turning any unfiltered ObjectInputStream sink in WAS into outbound IIOP SSRF to an attacker-chosen host; when chained with the IBM ORB's getUserException class-instantiation flaw (WAS-26), this SSRF escalates to remote code execution on the calling JVM.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03415,
-      "epss_pct": 0.87505,
-      "cwe": "CWE-918",
-      "published": "2026-06-30T20:17:29.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
