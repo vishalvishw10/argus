@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T19:52:17.808Z",
+  "generated_at": "2026-07-13T21:14:11.327Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1121 recent"
+      "detail": "1127 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1138 scored"
+      "detail": "1142 scored"
     },
     {
       "name": "BleepingComputer",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 66,
-      "rising": 41,
+      "rising": 40,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -316,6 +316,69 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-56291",
+      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Balbooa",
+      "product": "Forms",
+      "description": "The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00836,
+      "epss_pct": 0.5349,
+      "cwe": "CWE-434",
+      "published": "2026-07-09T11:16:40.990",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-10",
+        "due_date": "2026-07-13",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 11,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "0xdenis77/CVE-2026-56291.yaml",
+            "html_url": "https://github.com/0xdenis77/CVE-2026-56291.yaml",
+            "stars": 0
+          },
+          {
+            "full_name": "rimbadirgantara/CVE-2026-56291.yaml",
+            "html_url": "https://github.com/rimbadirgantara/CVE-2026-56291.yaml",
+            "stars": 0
+          },
+          {
+            "full_name": "shinthink/CVE-2026-56291",
+            "html_url": "https://github.com/shinthink/CVE-2026-56291",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-09",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-56290",
       "title": "Joomlack Page Builder Improper Access Control Vulnerability",
       "vendor": "Joomlack",
@@ -372,64 +435,6 @@
         },
         {
           "date": "2026-07-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-56291",
-      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Balbooa",
-      "product": "Forms",
-      "description": "The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00836,
-      "epss_pct": 0.5349,
-      "cwe": "CWE-434",
-      "published": "2026-07-09T11:16:40.990",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-10",
-        "due_date": "2026-07-13",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 12,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "rimbadirgantara/CVE-2026-56291.yaml",
-            "html_url": "https://github.com/rimbadirgantara/CVE-2026-56291.yaml",
-            "stars": 0
-          },
-          {
-            "full_name": "shinthink/CVE-2026-56291",
-            "html_url": "https://github.com/shinthink/CVE-2026-56291",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-09",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2012,7 +2017,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2038,41 +2043,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-61445",
-      "title": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component …",
-      "vendor": null,
-      "product": null,
-      "description": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component due to missing path validation and command sanitization in LLM tool calls. Attackers can inject malicious prompts through the chat interface to write files to arbitrary filesystem locations and execute arbitrary shell commands with root privileges.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00538,
-      "epss_pct": 0.41538,
-      "cwe": "CWE-22",
-      "published": "2026-07-11T14:16:23.240",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
       "cve_id": "CVE-2026-15511",
       "title": "A vulnerability was determined in Comfast CF-WR631AX V3 up to 2.7.0.8.",
       "vendor": null,
@@ -2090,7 +2060,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2105,7 +2075,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-61498",
@@ -2140,7 +2110,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-61500",
@@ -2175,7 +2145,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-40141",
@@ -2210,7 +2180,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-54763",
@@ -2245,7 +2215,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-13020",
@@ -2280,7 +2250,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2315,7 +2285,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2350,7 +2320,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2385,7 +2355,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-8649",
@@ -2420,7 +2390,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2455,7 +2425,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58459",
@@ -2475,7 +2445,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2490,7 +2460,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-0284",
@@ -2525,7 +2495,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-15378",
@@ -2560,7 +2530,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2581,6 +2551,41 @@
       "no_patch": false,
       "hype": 17,
       "rising": 7,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "cve_id": "CVE-2026-57216",
+      "title": "RabbitMQ is a messaging and streaming broker.",
+      "vendor": null,
+      "product": null,
+      "description": "RabbitMQ is a messaging and streaming broker. Prior to 3.13.15, 4.0.20, 4.1.11, and 4.2.6, AMQP 0-9-1, AMQP 1.0, and Stream Protocol authentication can allow a loopback-restricted user such as guest to connect remotely when traffic is accepted through a trusted PROXY-protocol path and the backend listener is loopback-bound because the loopback check uses the listener-side socket address instead of the real client source. This issue is fixed in versions 3.13.15, 4.0.20, 4.1.11, and 4.2.6.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00341,
+      "epss_pct": 0.26173,
+      "cwe": "CWE-287",
+      "published": "2026-07-10T21:16:58.677",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2633,6 +2638,41 @@
       "rank": 54
     },
     {
+      "cve_id": "CVE-2026-61445",
+      "title": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component …",
+      "vendor": null,
+      "product": null,
+      "description": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component due to missing path validation and command sanitization in LLM tool calls. Attackers can inject malicious prompts through the chat interface to write files to arbitrary filesystem locations and execute arbitrary shell commands with root privileges.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00538,
+      "epss_pct": 0.41538,
+      "cwe": "CWE-22",
+      "published": "2026-07-11T14:16:23.240",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 11,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
       "cve_id": "CVE-2026-55200",
       "title": "libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read(…",
       "vendor": null,
@@ -2683,7 +2723,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-15548",
@@ -2718,7 +2758,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-49970",
@@ -2753,7 +2793,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-49972",
@@ -2788,7 +2828,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2820,41 +2860,6 @@
       "timeline": [
         {
           "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-58453",
-      "title": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability t…",
-      "vendor": null,
-      "product": null,
-      "description": "JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain a hard-coded credentials vulnerability that allows network-adjacent attackers to gain unauthorized access by using the default admin username with an empty password accepted by the anyka_ipc HTTP service on port 80. Attackers can authenticate with these hardcoded credentials to access camera snapshots, video streams, network configuration, and factory-level API endpoints including the SetMAC command injection surface.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0169,
-      "epss_pct": 0.74402,
-      "cwe": "CWE-1392",
-      "published": "2026-07-01T17:16:40.517",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-01",
           "label": "Published to NVD"
         }
       ],
