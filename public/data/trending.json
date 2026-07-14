@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T15:04:03.150Z",
+  "generated_at": "2026-07-14T16:40:04.467Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1164 recent"
+      "detail": "1136 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1188 scored"
+      "detail": "1151 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3623 mapped"
+      "detail": "3624 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 65,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -153,10 +153,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 62,
+      "hype": 61,
       "rising": 0,
       "repos": {
-        "count": 10,
+        "count": 9,
         "stars": 16,
         "top": [
           {
@@ -336,7 +336,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 58,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -950,7 +950,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1927,52 +1927,17 @@
       "rank": 35
     },
     {
-      "cve_id": "CVE-2026-15511",
-      "title": "A vulnerability was determined in Comfast CF-WR631AX V3 up to 2.7.0.8.",
+      "cve_id": "CVE-2026-61500",
+      "title": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() gener…",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was determined in Comfast CF-WR631AX V3 up to 2.7.0.8. Affected by this vulnerability is the function system_wl_upload_pic_file of the file /usr/bin/webmgnt of the component FastCGI Backend. This manipulation of the argument filename causes os command injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0269,
-      "epss_pct": 0.84134,
-      "cwe": "CWE-77",
-      "published": "2026-07-12T23:16:38.137",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-61498",
-      "title": "Vitec Flamingo 4.12.2 contains an unauthenticated OS command injection vulnerability in the admin/ajax/gen_graphs.php…",
-      "vendor": null,
-      "product": null,
-      "description": "Vitec Flamingo 4.12.2 contains an unauthenticated OS command injection vulnerability in the admin/ajax/gen_graphs.php endpoint that allows remote unauthenticated attackers to execute arbitrary commands by supplying shell metacharacters in the start, end, key, or format HTTP GET parameters. Attackers can exploit the lack of input sanitization in the graph generation script, which passes user-supplied values directly to shell commands via passthru(), to execute arbitrary OS commands with root privileges due to the web server context having passwordless sudo access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02165,
-      "epss_pct": 0.80132,
-      "cwe": "CWE-78",
-      "published": "2026-07-13T14:16:32.213",
+      "epss": 0.00747,
+      "epss_pct": 0.50575,
+      "cwe": "CWE-338",
+      "published": "2026-07-13T18:16:29.903",
       "kev": {
         "in_kev": false
       },
@@ -1994,77 +1959,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-61500",
-      "title": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() gener…",
-      "vendor": null,
-      "product": null,
-      "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00747,
-      "epss_pct": 0.50575,
-      "cwe": "CWE-338",
-      "published": "2026-07-13T18:16:29.903",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-56451",
-      "title": "A vulnerability has been identified in Opcenter X (All versions < V2604).",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability has been identified in Opcenter X (All versions < V2604). Affected applications do not properly validate the algorithm specified in the JSON Web Token (JWT) header.\r\nThis could allow an unauthenticated remote attacker to forge arbitrary JWT, bypass authentication mechanisms and impersonate any user including administrative accounts, potentially gaining full unauthorized access to the application.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00384,
-      "epss_pct": 0.30482,
-      "cwe": "CWE-347",
-      "published": "2026-07-14T10:16:33.287",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 39
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2099,7 +1994,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-3144",
@@ -2134,7 +2029,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-9074",
@@ -2169,7 +2064,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-8649",
@@ -2204,7 +2099,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8801",
@@ -2239,7 +2134,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-58459",
@@ -2274,7 +2169,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-0284",
@@ -2294,7 +2189,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2309,7 +2204,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2344,7 +2239,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-57156",
@@ -2379,7 +2274,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-57211",
@@ -2414,7 +2309,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-57216",
@@ -2449,77 +2344,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-60090",
-      "title": "PraisonAI before 4.6.78 fails to validate the caller-controlled dimension argument in the PGVector and Cassandra know…",
-      "vendor": null,
-      "product": null,
-      "description": "PraisonAI before 4.6.78 fails to validate the caller-controlled dimension argument in the PGVector and Cassandra knowledge-store create_collection() backends. Although schema, keyspace, and collection-name identifiers are validated, the dimension value (declared as int but not enforced at runtime) is interpolated directly into the vector column of the generated CREATE TABLE DDL. A caller able to influence collection-creation dimensions can pass a string such as '3); DROP TABLE tenant_secrets; --' to inject SQL/CQL tokens into the statement executed by the database driver.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0041,
-      "epss_pct": 0.33097,
-      "cwe": "CWE-89",
-      "published": "2026-07-11T14:16:22.353",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 8,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-61445",
-      "title": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component …",
-      "vendor": null,
-      "product": null,
-      "description": "PraisonAI before 4.6.78 contains arbitrary file write and command execution vulnerabilities in the AICoder component due to missing path validation and command sanitization in LLM tool calls. Attackers can inject malicious prompts through the chat interface to write files to arbitrary filesystem locations and execute arbitrary shell commands with root privileges.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00538,
-      "epss_pct": 0.41548,
-      "cwe": "CWE-22",
-      "published": "2026-07-11T14:16:23.240",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 8,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-40468",
@@ -2539,7 +2364,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2554,7 +2379,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-40469",
@@ -2574,7 +2399,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2589,7 +2414,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-55200",
@@ -2642,42 +2467,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-49972",
-      "title": "Laravel-Mediable before 7.0.0 contains a file upload vulnerability that allows unauthenticated attackers to achieve r…",
-      "vendor": null,
-      "product": null,
-      "description": "Laravel-Mediable before 7.0.0 contains a file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading a file with an embedded PHP extension disguised within a double extension such as shell.php.jpg. The PATHINFO_FILENAME extraction preserves the inner .php extension in the base name, and on misconfigured Apache or nginx servers that execute any filename containing .php as PHP, the stored file is interpreted as executable code while all MIME type, extension, and aggregate type validation checks pass due to the outer .jpg extension.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00777,
-      "epss_pct": 0.51563,
-      "cwe": "CWE-434",
-      "published": "2026-07-13T19:17:10.447",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-15691",
@@ -2697,7 +2487,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2712,20 +2502,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 51
     },
     {
-      "cve_id": "CVE-2026-15692",
-      "title": "A weakness has been identified in Tenda BE12 Pro 16.03.66.23.",
+      "cve_id": "CVE-2026-15694",
+      "title": "A vulnerability was detected in Tenda BE12 Pro 16.03.66.23.",
       "vendor": null,
       "product": null,
-      "description": "A weakness has been identified in Tenda BE12 Pro 16.03.66.23. This vulnerability affects the function fromSafeUrlFilter of the file /goform/SafeUrlFilter. Executing a manipulation of the argument page can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks.",
+      "description": "A vulnerability was detected in Tenda BE12 Pro 16.03.66.23. Impacted is the function fromSetIpBind of the file /goform/SetIpBind. The manipulation of the argument page results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit is now public and may be used.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
       "cwe": "CWE-119",
-      "published": "2026-07-14T13:18:20.133",
+      "published": "2026-07-14T15:17:00.583",
       "kev": {
         "in_kev": false
       },
@@ -2747,20 +2537,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 52
     },
     {
-      "cve_id": "CVE-2026-15693",
-      "title": "A security vulnerability has been detected in Tenda BE12 Pro 16.03.66.23.",
+      "cve_id": "CVE-2026-15695",
+      "title": "A flaw has been found in Tenda BE12 Pro 16.03.66.23.",
       "vendor": null,
       "product": null,
-      "description": "A security vulnerability has been detected in Tenda BE12 Pro 16.03.66.23. This issue affects the function fromSafeMacFilter of the file /goform/SafeMacFilter. The manipulation of the argument page leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.",
+      "description": "A flaw has been found in Tenda BE12 Pro 16.03.66.23. The affected element is the function fromDhcpListClient of the file /goform/DhcpListClient. This manipulation of the argument page causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been published and may be used.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
       "cwe": "CWE-119",
-      "published": "2026-07-14T14:16:33.130",
+      "published": "2026-07-14T15:17:00.753",
       "kev": {
         "in_kev": false
       },
@@ -2782,7 +2572,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-13773",
@@ -2814,6 +2604,216 @@
       "timeline": [
         {
           "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-55115",
+      "title": "A malicious actor with access to the network and low privileges could exploit a Server-Side Request Forgery (SSRF) in…",
+      "vendor": null,
+      "product": null,
+      "description": "A malicious actor with access to the network and low privileges could exploit a Server-Side Request Forgery (SSRF) in UniFi Protect Application to escalate privileges on the host device.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00232,
+      "epss_pct": 0.14012,
+      "cwe": "CWE-918",
+      "published": "2026-07-02T15:17:05.513",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-47898",
+      "title": "Improper Restriction of XML External Entity Reference vulnerability in Apache Lucene.Net (Lucene.Net.Analysis.Common …",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Restriction of XML External Entity Reference vulnerability in Apache Lucene.Net (Lucene.Net.Analysis.Common library).\n\nThis issue affects Apache Lucene.Net.Analysis.Common: from 4.8.0-beta00005 before 4.8.0-beta00018.\n\nUsers are recommended to upgrade to version 4.8.0-beta00018, which fixes the issue.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00328,
+      "epss_pct": 0.24848,
+      "cwe": "CWE-611",
+      "published": "2026-07-03T08:16:24.977",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-12481",
+      "title": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of de…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of deserialization in the `Lambda` layer. Specifically, the `_raise_for_lambda_deserialization()` function fails to enforce the safe-mode guard when `safe_mode` is set to `None`, which is the default value when `from_config()` is called outside of a `SafeModeScope` context. This logic error conflates `None` (unset/default-deny) with `False` (explicitly disabled), bypassing the guard and allowing attacker-controlled `marshal` bytecode to be deserialized. Affected call sites include `keras.layers.deserialize(config)`, `keras.models.clone_model(model)`, and any direct invocation of `Lambda.from_config(config)` without an enclosing `SafeModeScope(True)`. This vulnerability can be exploited to achieve arbitrary OS-level code execution in the context of the server or user process.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00397,
+      "epss_pct": 0.31831,
+      "cwe": "CWE-502",
+      "published": "2026-07-03T21:16:54.737",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-57983",
+      "title": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security featur…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00463,
+      "epss_pct": 0.37063,
+      "cwe": "CWE-285",
+      "published": "2026-07-03T21:17:01.433",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-14535",
+      "title": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally call…",
+      "vendor": null,
+      "product": null,
+      "description": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally calls AnalysisContext.shorten_code(node) on every import node it inspects, regardless of whether the import is flagged as unsafe. This call registers the shortened code representation in the shared AnalysisContext.reported_shortened_code set. When the MLAllowlist analysis pass subsequently runs, it calls the same shorten_code() method, receives already_reported=True for every import, and executes a continue statement that skips its allowlist check entirely. This renders MLAllowlist dead code for all imports — it never evaluates whether an import is in the ML allowlist or not. The MLAllowlist pass was designed to catch imports of modules outside the known-safe ML ecosystem (torch, numpy, transformers, etc.) that slip past the UnsafeImports denylist. With MLAllowlist inoperative, any standard library module not in the UNSAFE_IMPORTS denylist can be invoked via pickle deserialization while fickling's check_safety() returns LIKELY_SAFE. The fickling.load() API chains check_safety() into pickle.loads() as an explicit security gate, meaning a LIKELY_SAFE verdict causes the payload to be deserialized and executed. The root cause is shared mutable state between independently-correct analysis passes — UnsafeImportsML works as designed in isolation, MLAllowlist works as designed in isolation, but the shared reported_shortened_code set causes UnsafeImportsML to poison MLAllowlist's deduplication logic.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00321,
+      "epss_pct": 0.24045,
+      "cwe": "CWE-693",
+      "published": "2026-07-04T14:16:29.063",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-04",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-40139",
+      "title": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support.",
+      "vendor": null,
+      "product": null,
+      "description": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support. Improper processing of authentication requests may allow an unauthenticated remote attacker to bypass access controls and gain unauthorized access to the appliance, including accounts with elevated privileges. Exploitation requires a specific authentication configuration to be enabled.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00653,
+      "epss_pct": 0.47013,
+      "cwe": "CWE-287",
+      "published": "2026-07-06T17:16:30.920",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-06",
           "label": "Published to NVD"
         }
       ],
