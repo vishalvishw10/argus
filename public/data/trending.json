@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-14T09:19:00.506Z",
+  "generated_at": "2026-07-14T10:58:28.318Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 4,
+    "media_mentions": 3,
     "reddit_upvotes": 0,
     "kev_count": 31,
     "kev_total": 1638,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1202 recent"
+      "detail": "1205 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1144 scored"
+      "detail": "1143 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "4 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3623 mapped"
+      "detail": "3622 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 65,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -157,7 +157,7 @@
       "rising": 0,
       "repos": {
         "count": 9,
-        "stars": 15,
+        "stars": 16,
         "top": [
           {
             "full_name": "papageo75/CVE-2026-48908-PoC",
@@ -165,13 +165,13 @@
             "stars": 13
           },
           {
-            "full_name": "0xBlackash/CVE-2026-48908",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-48908",
-            "stars": 1
-          },
-          {
             "full_name": "Jenderal92/CVE-2026-48908",
             "html_url": "https://github.com/Jenderal92/CVE-2026-48908",
+            "stars": 2
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-48908",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-48908",
             "stars": 1
           }
         ]
@@ -336,7 +336,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 58,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -950,7 +950,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1744,7 +1744,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
+      "hype": 22,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -1841,67 +1841,6 @@
       "rank": 33
     },
     {
-      "cve_id": "CVE-2026-43499",
-      "title": "CVE-2026-43499",
-      "vendor": null,
-      "product": null,
-      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrtmutex: Use waiter::task instead of current in remove_waiter()\n\nremove_waiter() is used by the slowlock paths, but it is also used for\nproxy-lock rollback in rt_mutex_start_proxy_lock() when invoked from\nfutex_requeue().\n\nIn the latter case waiter::task is not current, but remove_waiter()\noperates on current for the dequeue operation. That results in several\nproblems:\n\n  1) the rbtree dequeue happens without waiter::task::pi_lock being held\n\n  2) the waiter task's pi_blocked_on state is not cleared, which leaves a\n     dangling pointer primed for UAF around.\n\n  3) rt_mutex_adjust_prio_chain() operates on the wrong top priority waiter\n     task\n\nUse waiter::task instead of current in all related operations in\nremove_waiter() to cure those problems.\n\n[ tglx: Fixup rt_mutex_adjust_prio_chain(), add a comment and amend the\n  \tchangelog ]",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00125,
-      "epss_pct": 0.02581,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 15,
-        "stars": 327,
-        "top": [
-          {
-            "full_name": "x-spy/CVE-2026-43499-popsicle",
-            "html_url": "https://github.com/x-spy/CVE-2026-43499-popsicle",
-            "stars": 121
-          },
-          {
-            "full_name": "MobiusM/CVE-2026-43499",
-            "html_url": "https://github.com/MobiusM/CVE-2026-43499",
-            "stars": 101
-          },
-          {
-            "full_name": "Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499",
-            "html_url": "https://github.com/Linuxoid-cn/Mi8E5-Unlocker-by-CVE-2026-43499",
-            "stars": 51
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
-          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
-          "date": "2026-07-08T06:16:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-08",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 34
-    },
-    {
       "cve_id": "CVE-2026-8452",
       "title": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and …",
       "vendor": null,
@@ -1942,7 +1881,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -1985,7 +1924,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-15511",
@@ -2020,7 +1959,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-61498",
@@ -2055,7 +1994,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-61500",
@@ -2090,7 +2029,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-59801",
@@ -2125,7 +2064,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-44747",
@@ -2145,7 +2084,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2026-56451",
+      "title": "A vulnerability has been identified in Opcenter X (All versions < V2604).",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability has been identified in Opcenter X (All versions < V2604). Affected applications do not properly validate the algorithm specified in the JSON Web Token (JWT) header.\r\nThis could allow an unauthenticated remote attacker to forge arbitrary JWT, bypass authentication mechanisms and impersonate any user including administrative accounts, potentially gaining full unauthorized access to the application.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-347",
+      "published": "2026-07-14T10:16:33.287",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2425,7 +2399,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2670,7 +2644,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2705,7 +2679,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2775,7 +2749,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2810,7 +2784,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
