@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-15T15:53:09.393Z",
+  "generated_at": "2026-07-15T17:40:35.779Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 4,
     "reddit_upvotes": 0,
-    "kev_count": 35,
-    "kev_total": 1642,
+    "kev_count": 37,
+    "kev_total": 1644,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1642 entries"
+      "detail": "1644 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1314 recent"
+      "detail": "1277 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1330 scored"
+      "detail": "1293 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3648 mapped"
+      "detail": "3650 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 65,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -153,12 +153,22 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 63,
-      "rising": 91,
+      "hype": 64,
+      "rising": 88,
       "repos": {
-        "count": 1,
+        "count": 3,
         "stars": 0,
         "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 0
+          },
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 0
+          },
           {
             "full_name": "HORKimhab/CVE-2026-15409",
             "html_url": "https://github.com/HORKimhab/CVE-2026-15409",
@@ -221,7 +231,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 60,
-      "rising": 43,
+      "rising": 42,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -758,7 +768,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 52,
-      "rising": 56,
+      "rising": 55,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1056,6 +1066,59 @@
       "rank": 17
     },
     {
+      "cve_id": "CVE-2026-46817",
+      "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+      "vendor": "Oracle",
+      "product": "E-Business Suite",
+      "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00677,
+      "epss_pct": 0.48111,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-15",
+        "due_date": "2026-07-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-46817",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-46817",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-46817",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-46817",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
       "cve_id": "CVE-2008-4128",
       "title": "Cisco IOS Cross-Site Request Forgery Vulnerability",
       "vendor": "Cisco",
@@ -1076,7 +1139,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1094,7 +1157,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1152,7 +1215,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
+    },
+    {
+      "cve_id": "CVE-2023-4346",
+      "title": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
+      "vendor": "KNX Association",
+      "product": "KNX Protocol Connection Authorization Option 1",
+      "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device. ",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00483,
+      "epss_pct": 0.38438,
+      "cwe": "CWE-645",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-15",
+        "due_date": "2026-07-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -1200,7 +1304,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1258,7 +1362,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1281,7 +1385,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1299,7 +1403,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-11645",
@@ -1357,7 +1461,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-28318",
@@ -1410,7 +1514,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-45247",
@@ -1463,7 +1567,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1511,7 +1615,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1559,7 +1663,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1617,7 +1721,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1675,7 +1779,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1728,7 +1832,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-7473",
@@ -1776,7 +1880,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2022-0492",
@@ -1817,7 +1921,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1858,7 +1962,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1899,7 +2003,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 36
     },
     {
       "cve_id": "CVE-2025-48595",
@@ -1940,7 +2044,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -1960,7 +2064,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1975,7 +2079,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2028,7 +2132,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2048,7 +2152,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -2071,7 +2175,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-62390",
@@ -2091,7 +2195,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2106,7 +2210,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-62392",
@@ -2126,7 +2230,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2141,7 +2245,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-59836",
@@ -2176,42 +2280,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-15701",
-      "title": "A weakness has been identified in Totolink NR1800X 9.1.0u.6279_B20210910.",
-      "vendor": null,
-      "product": null,
-      "description": "A weakness has been identified in Totolink NR1800X 9.1.0u.6279_B20210910. Affected by this issue is the function Form_Logout of the file /formLogout.htm of the component lighttpd. This manipulation of the argument Host causes stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00785,
-      "epss_pct": 0.5191,
-      "cwe": "CWE-119",
-      "published": "2026-07-14T17:16:45.477",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -2246,7 +2315,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-47767",
@@ -2266,7 +2335,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2281,7 +2350,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-48358",
@@ -2301,7 +2370,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2316,7 +2385,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2359,7 +2428,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2402,7 +2471,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58459",
@@ -2437,7 +2506,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-0284",
@@ -2472,7 +2541,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2507,7 +2576,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-57156",
@@ -2527,7 +2596,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2542,7 +2611,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-57211",
@@ -2577,7 +2646,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-57216",
@@ -2612,7 +2681,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-57827",
@@ -2647,7 +2716,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-40468",
@@ -2667,7 +2736,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2682,7 +2751,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-40469",
@@ -2702,7 +2771,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2717,7 +2786,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-13221",
@@ -2752,7 +2821,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58319",
@@ -2787,7 +2856,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-45063",
@@ -2807,42 +2876,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-45069",
-      "title": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components.",
-      "vendor": null,
-      "product": null,
-      "description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 6.4.40, 7.4.12, and 8.0.12, OidcTokenHandler::verifyClaims() registered audience (aud), issuer (iss), and expiry (exp) checkers but did not pass the mandatory claims list to ClaimCheckerManager::check(), so a validly signed JWT that omitted those claims could pass verification. This issue is fixed in versions 6.4.40, 7.4.12, and 8.0.12.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00242,
-      "epss_pct": 0.15293,
-      "cwe": "CWE-345",
-      "published": "2026-07-14T19:17:06.017",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
