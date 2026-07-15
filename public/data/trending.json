@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:38:23.413Z",
+  "generated_at": "2026-07-15T21:16:36.538Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1267 recent"
+      "detail": "1266 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1292 scored"
+      "detail": "1290 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3584 mapped"
+      "detail": "3653 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 65,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -154,7 +154,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 64,
-      "rising": 85,
+      "rising": 83,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -231,7 +231,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 60,
-      "rising": 41,
+      "rising": 40,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -768,7 +768,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 52,
-      "rising": 53,
+      "rising": 52,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2300,7 +2300,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2598,6 +2598,76 @@
       "rank": 52
     },
     {
+      "cve_id": "CVE-2026-46633",
+      "title": "Twig is a template language for PHP.",
+      "vendor": null,
+      "product": null,
+      "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, allowing a crafted template name to terminate the string and inject arbitrary PHP expressions into the compiled cache file. This issue is fixed in version 3.26.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0052,
+      "epss_pct": 0.40629,
+      "cwe": "CWE-94",
+      "published": "2026-07-14T22:16:55.997",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-46634",
+      "title": "Twig is a template language for PHP.",
+      "vendor": null,
+      "product": null,
+      "description": "Twig is a template language for PHP. From 3.9.0 until 3.26.0, template_from_string() compiles an inner template under a synthesized __string_template__<hash> name that can fall outside a SourcePolicyInterface sandbox decision, allowing a sandboxed template that can call template_from_string and include to render an inner template without security policy enforcement. This issue is fixed in version 3.26.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00331,
+      "epss_pct": 0.25167,
+      "cwe": "CWE-693",
+      "published": "2026-07-14T22:16:56.130",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
       "cve_id": "CVE-2026-8452",
       "title": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and …",
       "vendor": null,
@@ -2638,7 +2708,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2681,7 +2751,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58459",
@@ -2716,7 +2786,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-0284",
@@ -2751,7 +2821,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2786,7 +2856,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-57156",
@@ -2800,76 +2870,6 @@
       "epss_pct": 0.48914,
       "cwe": "CWE-122",
       "published": "2026-07-10T20:16:48.257",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-57211",
-      "title": "RabbitMQ is a messaging and streaming broker.",
-      "vendor": null,
-      "product": null,
-      "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.1.11 and 4.2.6 on Windows, the RabbitMQ management plugin static file handler rabbit_mgmt_wm_static can pass URL-encoded backslashes to erl_prim_loader:read_file_info before path validation when multiple management extension plugins are enabled, causing outbound DNS and SMB requests to attacker-controlled UNC paths. This issue is fixed in versions 4.1.11 and 4.2.6.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00404,
-      "epss_pct": 0.32653,
-      "cwe": "CWE-36",
-      "published": "2026-07-10T21:16:58.007",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-57216",
-      "title": "RabbitMQ is a messaging and streaming broker.",
-      "vendor": null,
-      "product": null,
-      "description": "RabbitMQ is a messaging and streaming broker. Prior to 3.13.15, 4.0.20, 4.1.11, and 4.2.6, AMQP 0-9-1, AMQP 1.0, and Stream Protocol authentication can allow a loopback-restricted user such as guest to connect remotely when traffic is accepted through a trusted PROXY-protocol path and the backend listener is loopback-bound because the loopback check uses the listener-side socket address instead of the real client source. This issue is fixed in versions 3.13.15, 4.0.20, 4.1.11, and 4.2.6.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00468,
-      "epss_pct": 0.37442,
-      "cwe": "CWE-287",
-      "published": "2026-07-10T21:16:58.677",
       "kev": {
         "in_kev": false
       },
