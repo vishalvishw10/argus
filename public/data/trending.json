@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T11:55:20.592Z",
+  "generated_at": "2026-07-16T14:25:50.104Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 4,
+    "media_mentions": 2,
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1644,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1309 recent"
+      "detail": "1293 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1290 scored"
+      "detail": "1320 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Hacker News",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3664 mapped"
+      "detail": "3667 mapped"
     },
     {
       "name": "Reddit",
@@ -64,83 +64,6 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01404,
-      "epss_pct": 0.69483,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 66,
-      "rising": 62,
-      "repos": {
-        "count": 4,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 3
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 1
-          },
-          {
-            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
-          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
-          "date": "2026-07-15T05:30:21.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "SonicWall warns of SMA1000 flaws exploited in zero-day attacks, patch now",
-          "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/",
-          "date": "2026-07-14T21:23:24.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
-    {
       "cve_id": "CVE-2026-48939",
       "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
       "vendor": "iCagenda",
@@ -149,7 +72,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01505,
-      "epss_pct": 0.71451,
+      "epss_pct": 0.71471,
       "cwe": "CWE-434",
       "published": "2026-06-20T13:16:42.433",
       "kev": {
@@ -208,60 +131,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-56164",
-      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.07047,
-      "epss_pct": 0.93465,
-      "cwe": "CWE-306",
-      "published": "2026-07-14T17:17:09.907",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 33,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
-            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 3
+      "rank": 1
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -272,7 +142,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01569,
-      "epss_pct": 0.72547,
+      "epss_pct": 0.72567,
       "cwe": "CWE-434",
       "published": "2026-06-20T13:16:42.080",
       "kev": {
@@ -323,7 +193,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -383,7 +253,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -443,7 +313,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-56164",
+      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.05601,
+      "epss_pct": 0.92028,
+      "cwe": "CWE-306",
+      "published": "2026-07-14T17:17:09.907",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 32,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
+            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -454,7 +377,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00836,
-      "epss_pct": 0.53597,
+      "epss_pct": 0.53629,
       "cwe": "CWE-434",
       "published": "2026-07-09T11:16:40.990",
       "kev": {
@@ -506,7 +429,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -517,7 +440,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02912,
-      "epss_pct": 0.85426,
+      "epss_pct": 0.85434,
       "cwe": "CWE-434",
       "published": "2026-06-29T15:16:42.360",
       "kev": {
@@ -568,7 +491,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -579,7 +502,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.80425,
-      "epss_pct": 0.99577,
+      "epss_pct": 0.99578,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -593,8 +516,8 @@
       "hype": 57,
       "rising": 0,
       "repos": {
-        "count": 18,
-        "stars": 82,
+        "count": 17,
+        "stars": 81,
         "top": [
           {
             "full_name": "gh1mau/masta-cve-2026-48907",
@@ -627,7 +550,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -684,6 +607,77 @@
         {
           "date": "2026-06-11",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01266,
+      "epss_pct": 0.66447,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 56,
+      "rising": 41,
+      "repos": {
+        "count": 4,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 4
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 1
+          },
+          {
+            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
+          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+          "date": "2026-07-15T05:30:21.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-15",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 10
@@ -748,131 +742,6 @@
       "rank": 11
     },
     {
-      "cve_id": "CVE-2026-15410",
-      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.01647,
-      "epss_pct": 0.73801,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 52,
-      "rising": 39,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-15410",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "SonicWall warns of SMA1000 flaws exploited in zero-day attacks, patch now",
-          "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/",
-          "date": "2026-07-14T21:23:24.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Covered by BleepingComputer"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-42271",
-      "title": "BerriAI LiteLLM Command Injection Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.80188,
-      "epss_pct": 0.99574,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-08",
-        "due_date": "2026-06-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "amnsecurity/CVE-2026-42271-LiteLLM-RCE",
-            "html_url": "https://github.com/amnsecurity/CVE-2026-42271-LiteLLM-RCE",
-            "stars": 3
-          },
-          {
-            "full_name": "learner202649/CVE-2026-42271-PoC",
-            "html_url": "https://github.com/learner202649/CVE-2026-42271-PoC",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-42271",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-42271",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-48282",
       "title": "Adobe ColdFusion Path Traversal Vulnerability",
       "vendor": "Adobe",
@@ -881,7 +750,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.28583,
-      "epss_pct": 0.97916,
+      "epss_pct": 0.97917,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -928,7 +797,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -939,7 +808,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01247,
-      "epss_pct": 0.65934,
+      "epss_pct": 0.65955,
       "cwe": "CWE-20",
       "published": "2026-06-18T01:18:12.040",
       "kev": {
@@ -973,7 +842,61 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-42271",
+      "title": "BerriAI LiteLLM Command Injection Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.80188,
+      "epss_pct": 0.99574,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-08",
+        "due_date": "2026-06-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "learner202649/CVE-2026-42271-PoC",
+            "html_url": "https://github.com/learner202649/CVE-2026-42271-PoC",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-42271",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-42271",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -984,7 +907,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.78555,
-      "epss_pct": 0.99539,
+      "epss_pct": 0.9954,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1015,7 +938,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1025,8 +948,8 @@
       "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00677,
-      "epss_pct": 0.48111,
+      "epss": 0.01045,
+      "epss_pct": 0.60266,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -1038,7 +961,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 28,
+      "rising": 27,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1068,7 +991,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1079,7 +1002,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98528,
+      "epss_pct": 0.98529,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1126,7 +1049,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1137,7 +1060,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.23857,
-      "epss_pct": 0.97571,
+      "epss_pct": 0.97573,
       "cwe": "CWE-352",
       "published": null,
       "kev": {
@@ -1149,7 +1072,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1167,6 +1090,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-15410",
+      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.01486,
+      "epss_pct": 0.71117,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 19,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-15410",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 19
     },
     {
@@ -1178,7 +1154,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.82555,
+      "epss_pct": 0.82561,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1226,7 +1202,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.977,
+      "epss_pct": 0.97702,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1283,8 +1259,8 @@
       "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device. ",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.00483,
-      "epss_pct": 0.38438,
+      "epss": 0.00855,
+      "epss_pct": 0.54241,
       "cwe": "CWE-645",
       "published": null,
       "kev": {
@@ -1296,7 +1272,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 28,
+      "rising": 27,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1325,7 +1301,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00379,
-      "epss_pct": 0.30119,
+      "epss_pct": 0.30157,
       "cwe": "CWE-1220",
       "published": null,
       "kev": {
@@ -1337,7 +1313,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1366,7 +1342,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73896,
+      "epss_pct": 0.73916,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1424,7 +1400,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.10659,
-      "epss_pct": 0.95295,
+      "epss_pct": 0.95298,
       "cwe": "CWE-400",
       "published": null,
       "kev": {
@@ -1477,7 +1453,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.27546,
-      "epss_pct": 0.97852,
+      "epss_pct": 0.97853,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1530,7 +1506,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0116,
-      "epss_pct": 0.63517,
+      "epss_pct": 0.6354,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1578,7 +1554,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66287,
+      "epss_pct": 0.66311,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1636,7 +1612,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.0056,
-      "epss_pct": 0.42783,
+      "epss_pct": 0.42817,
       "cwe": "CWE-639",
       "published": null,
       "kev": {
@@ -1676,64 +1652,6 @@
       "rank": 29
     },
     {
-      "cve_id": "CVE-2026-45659",
-      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.03219,
-      "epss_pct": 0.86777,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-01",
-        "due_date": "2026-07-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "amnsecurity/CVE-2026-45659-SharePoint-RCE",
-            "html_url": "https://github.com/amnsecurity/CVE-2026-45659-SharePoint-RCE",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-45659",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-45659",
-            "stars": 0
-          },
-          {
-            "full_name": "mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
-            "html_url": "https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
-    },
-    {
       "cve_id": "CVE-2026-20262",
       "title": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
       "vendor": "Cisco",
@@ -1742,7 +1660,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93911,
+      "epss_pct": 0.93915,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1784,6 +1702,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 30
+    },
+    {
+      "cve_id": "CVE-2026-45659",
+      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.03219,
+      "epss_pct": 0.86785,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-01",
+        "due_date": "2026-07-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-45659",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-45659",
+            "stars": 0
+          },
+          {
+            "full_name": "mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
+            "html_url": "https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-01",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 31
     },
     {
@@ -1795,7 +1766,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.53574,
+      "epss_pct": 0.53606,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -1843,7 +1814,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.05528,
-      "epss_pct": 0.91916,
+      "epss_pct": 0.91923,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1884,7 +1855,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00889,
-      "epss_pct": 0.55243,
+      "epss_pct": 0.55273,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1925,7 +1896,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02269,
-      "epss_pct": 0.81067,
+      "epss_pct": 0.81078,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1966,7 +1937,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.01714,
-      "epss_pct": 0.748,
+      "epss_pct": 0.74818,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -2006,8 +1977,8 @@
       "description": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
       "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.28315,
-      "epss_pct": 0.979,
+      "epss": 0.17903,
+      "epss_pct": 0.9684,
       "cwe": "CWE-434",
       "published": "2026-07-14T20:17:08.437",
       "kev": {
@@ -2015,7 +1986,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 21,
+      "hype": 20,
       "rising": 13,
       "repos": {
         "count": 0,
@@ -2034,59 +2005,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-8451",
-      "title": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or N…",
-      "vendor": null,
-      "product": null,
-      "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.00502,
-      "epss_pct": 0.39535,
-      "cwe": "CWE-125",
-      "published": "2026-06-30T13:19:33.347",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 17,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
-            "stars": 11
-          },
-          {
-            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
-            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
-            "stars": 2
-          },
-          {
-            "full_name": "amnsecurity/CVE-2026-8451-CitrixBleed",
-            "html_url": "https://github.com/amnsecurity/CVE-2026-8451-CitrixBleed",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
       "cve_id": "CVE-2026-57830",
       "title": "The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
       "vendor": null,
@@ -2095,7 +2013,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.00243,
-      "epss_pct": 0.15403,
+      "epss_pct": 0.1542,
       "cwe": "CWE-862",
       "published": "2026-07-13T08:16:21.713",
       "kev": {
@@ -2127,7 +2045,95 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-48284",
+      "title": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.0794,
+      "epss_pct": 0.94078,
+      "cwe": "CWE-20",
+      "published": "2026-07-14T21:16:58.043",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 13,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-8451",
+      "title": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or N…",
+      "vendor": null,
+      "product": null,
+      "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00502,
+      "epss_pct": 0.39571,
+      "cwe": "CWE-125",
+      "published": "2026-06-30T13:19:33.347",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 15,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
+            "stars": 11
+          },
+          {
+            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
+            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
+            "stars": 2
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-8451",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-8451",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-62392",
@@ -2138,7 +2144,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01828,
-      "epss_pct": 0.76393,
+      "epss_pct": 0.76409,
       "cwe": "CWE-78",
       "published": "2026-07-14T13:19:08.447",
       "kev": {
@@ -2162,7 +2168,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -2172,8 +2178,8 @@
       "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01324,
-      "epss_pct": 0.67697,
+      "epss": 0.01296,
+      "epss_pct": 0.67106,
       "cwe": "CWE-502",
       "published": "2026-07-14T17:17:14.257",
       "kev": {
@@ -2182,42 +2188,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-48358",
-      "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
-      "vendor": null,
-      "product": null,
-      "description": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00903,
-      "epss_pct": 0.55665,
-      "cwe": "CWE-116",
-      "published": "2026-07-14T20:17:08.653",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2235,24 +2206,24 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-48284",
-      "title": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in…",
+      "cve_id": "CVE-2026-48358",
+      "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
       "vendor": null,
       "product": null,
-      "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.9,
+      "description": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.02174,
-      "epss_pct": 0.80261,
-      "cwe": "CWE-20",
-      "published": "2026-07-14T21:16:58.043",
+      "epss": 0.00912,
+      "epss_pct": 0.55997,
+      "cwe": "CWE-116",
+      "published": "2026-07-14T20:17:08.653",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2277,8 +2248,8 @@
       "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00932,
-      "epss_pct": 0.56655,
+      "epss": 0.00884,
+      "epss_pct": 0.55136,
       "cwe": "CWE-22",
       "published": "2026-07-14T21:16:58.600",
       "kev": {
@@ -2287,7 +2258,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2312,8 +2283,8 @@
       "description": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
       "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.0375,
-      "epss_pct": 0.88643,
+      "epss": 0.09358,
+      "epss_pct": 0.94834,
       "cwe": "CWE-79",
       "published": "2026-07-14T21:16:58.703",
       "kev": {
@@ -2322,7 +2293,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2347,8 +2318,8 @@
       "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain unauthorized read and write access. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00239,
-      "epss_pct": 0.14949,
+      "epss": 0.00516,
+      "epss_pct": 0.40461,
       "cwe": "CWE-863",
       "published": "2026-07-14T21:16:58.813",
       "kev": {
@@ -2357,7 +2328,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2382,8 +2353,8 @@
       "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00427,
-      "epss_pct": 0.34563,
+      "epss": 0.00495,
+      "epss_pct": 0.39171,
       "cwe": "CWE-94",
       "published": "2026-07-14T21:16:58.920",
       "kev": {
@@ -2392,7 +2363,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2417,8 +2388,8 @@
       "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00695,
-      "epss_pct": 0.48802,
+      "epss": 0.00659,
+      "epss_pct": 0.47398,
       "cwe": "CWE-89",
       "published": "2026-07-14T21:16:59.023",
       "kev": {
@@ -2427,7 +2398,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2452,8 +2423,8 @@
       "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, allowing a crafted template name to terminate the string and inject arbitrary PHP expressions into the compiled cache file. This issue is fixed in version 3.26.0.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0052,
-      "epss_pct": 0.40629,
+      "epss": 0.00642,
+      "epss_pct": 0.46652,
       "cwe": "CWE-94",
       "published": "2026-07-14T22:16:55.997",
       "kev": {
@@ -2462,7 +2433,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2480,17 +2451,17 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2026-15013",
-      "title": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass via SAML Signature Al…",
+      "cve_id": "CVE-2023-49899",
+      "title": "An unauthenticated remote attacker can execute any command on the affected device due to not correctly verifying the …",
       "vendor": null,
       "product": null,
-      "description": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass via SAML Signature Algorithm Confusion in all versions up to, and including, 5.4.3. The vulnerability exists because `Mo_SAML_Utilities::mo_saml_cast_key()` reads the `SignatureMethod` Algorithm attribute directly from the attacker-controlled `SAMLResponse` parameter rather than enforcing the locally configured algorithm, causing the plugin to recast the IdP's RSA public key as an HMAC-SHA1 shared secret and validate the forged signature against it. This makes it possible for unauthenticated attackers to forge a SAML assertion targeting any WordPress account — including administrators — obtain valid WordPress authentication cookies, and achieve full administrator-level account takeover.",
+      "description": "An unauthenticated remote attacker can execute any command on the affected device due to not correctly verifying the origin of a communication channel.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-347",
-      "published": "2026-07-16T05:16:18.043",
+      "cwe": "CWE-346",
+      "published": "2026-07-16T11:16:35.597",
       "kev": {
         "in_kev": false
       },
@@ -2515,41 +2486,6 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2023-49899",
-      "title": "An unauthenticated remote attacker can execute any command on the affected device due to not correctly verifying the …",
-      "vendor": null,
-      "product": null,
-      "description": "An unauthenticated remote attacker can execute any command on the affected device due to not correctly verifying the origin of a communication channel.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-346",
-      "published": "2026-07-16T11:16:35.597",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
       "cve_id": "CVE-2023-49900",
       "title": "An unauthenticated remote attacker is able to perform remote code execution due to incorrectly sanitized user input i…",
       "vendor": null,
@@ -2567,7 +2503,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2582,7 +2518,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2593,9 +2529,52 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.38626,
+      "epss_pct": 0.38657,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:33.450",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
+            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "cve_id": "CVE-2026-8655",
+      "title": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous…",
+      "vendor": null,
+      "product": null,
+      "description": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if NetScaler ADC is configured as an LB of type Oracle OR NetScaler ADC is configured as a DNS Proxy OR NetScaler ADC is configured as a DNS recursive resolver deployment",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0046,
+      "epss_pct": 0.36995,
+      "cwe": "CWE-119",
+      "published": "2026-06-30T13:19:34.083",
       "kev": {
         "in_kev": false
       },
@@ -2628,49 +2607,6 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-8655",
-      "title": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous…",
-      "vendor": null,
-      "product": null,
-      "description": "Multiple Memory overflow vulnerabilities in NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if NetScaler ADC is configured as an LB of type Oracle OR NetScaler ADC is configured as a DNS Proxy OR NetScaler ADC is configured as a DNS recursive resolver deployment",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0046,
-      "epss_pct": 0.36961,
-      "cwe": "CWE-119",
-      "published": "2026-06-30T13:19:34.083",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
-            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
       "cve_id": "CVE-2026-0284",
       "title": "An XML injection vulnerability in the Large Scale VPN (LSVPN) functionality of Palo Alto Networks PAN-OS® software en…",
       "vendor": null,
@@ -2679,7 +2615,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00448,
-      "epss_pct": 0.36166,
+      "epss_pct": 0.362,
       "cwe": "CWE-74",
       "published": "2026-07-09T19:17:01.140",
       "kev": {
@@ -2703,7 +2639,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2714,9 +2650,44 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00424,
-      "epss_pct": 0.34384,
+      "epss_pct": 0.34418,
       "cwe": "CWE-23",
       "published": "2026-07-10T15:16:48.240",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-57156",
+      "title": "FreeRDP is a free implementation of the Remote Desktop Protocol.",
+      "vendor": null,
+      "product": null,
+      "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.28.0 on 32-bit builds, FreeRDP clients contain an integer overflow in update_read_delta_points in libfreerdp/core/orders.c when multiplying an attacker-controlled point count by sizeof(DELTA_POINT), allowing a malicious RDP peer to allocate an undersized heap buffer and then write beyond it during initialization. This issue is fixed in version 3.28.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00698,
+      "epss_pct": 0.48944,
+      "cwe": "CWE-122",
+      "published": "2026-07-10T20:16:48.257",
       "kev": {
         "in_kev": false
       },
@@ -2741,17 +2712,17 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-57156",
-      "title": "FreeRDP is a free implementation of the Remote Desktop Protocol.",
+      "cve_id": "CVE-2026-57211",
+      "title": "RabbitMQ is a messaging and streaming broker.",
       "vendor": null,
       "product": null,
-      "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.28.0 on 32-bit builds, FreeRDP clients contain an integer overflow in update_read_delta_points in libfreerdp/core/orders.c when multiplying an attacker-controlled point count by sizeof(DELTA_POINT), allowing a malicious RDP peer to allocate an undersized heap buffer and then write beyond it during initialization. This issue is fixed in version 3.28.0.",
-      "cvss": 9.8,
+      "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.1.11 and 4.2.6 on Windows, the RabbitMQ management plugin static file handler rabbit_mgmt_wm_static can pass URL-encoded backslashes to erl_prim_loader:read_file_info before path validation when multiple management extension plugins are enabled, causing outbound DNS and SMB requests to attacker-controlled UNC paths. This issue is fixed in versions 4.1.11 and 4.2.6.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00698,
-      "epss_pct": 0.48914,
-      "cwe": "CWE-122",
-      "published": "2026-07-10T20:16:48.257",
+      "epss": 0.00404,
+      "epss_pct": 0.32688,
+      "cwe": "CWE-36",
+      "published": "2026-07-10T21:16:58.007",
       "kev": {
         "in_kev": false
       },
@@ -2776,17 +2747,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-57211",
+      "cve_id": "CVE-2026-57216",
       "title": "RabbitMQ is a messaging and streaming broker.",
       "vendor": null,
       "product": null,
-      "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.1.11 and 4.2.6 on Windows, the RabbitMQ management plugin static file handler rabbit_mgmt_wm_static can pass URL-encoded backslashes to erl_prim_loader:read_file_info before path validation when multiple management extension plugins are enabled, causing outbound DNS and SMB requests to attacker-controlled UNC paths. This issue is fixed in versions 4.1.11 and 4.2.6.",
+      "description": "RabbitMQ is a messaging and streaming broker. Prior to 3.13.15, 4.0.20, 4.1.11, and 4.2.6, AMQP 0-9-1, AMQP 1.0, and Stream Protocol authentication can allow a loopback-restricted user such as guest to connect remotely when traffic is accepted through a trusted PROXY-protocol path and the backend listener is loopback-bound because the loopback check uses the listener-side socket address instead of the real client source. This issue is fixed in versions 3.13.15, 4.0.20, 4.1.11, and 4.2.6.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00404,
-      "epss_pct": 0.32653,
-      "cwe": "CWE-36",
-      "published": "2026-07-10T21:16:58.007",
+      "epss": 0.00468,
+      "epss_pct": 0.37473,
+      "cwe": "CWE-287",
+      "published": "2026-07-10T21:16:58.677",
       "kev": {
         "in_kev": false
       },
@@ -2811,41 +2782,6 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-57216",
-      "title": "RabbitMQ is a messaging and streaming broker.",
-      "vendor": null,
-      "product": null,
-      "description": "RabbitMQ is a messaging and streaming broker. Prior to 3.13.15, 4.0.20, 4.1.11, and 4.2.6, AMQP 0-9-1, AMQP 1.0, and Stream Protocol authentication can allow a loopback-restricted user such as guest to connect remotely when traffic is accepted through a trusted PROXY-protocol path and the backend listener is loopback-bound because the loopback check uses the listener-side socket address instead of the real client source. This issue is fixed in versions 3.13.15, 4.0.20, 4.1.11, and 4.2.6.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00468,
-      "epss_pct": 0.37442,
-      "cwe": "CWE-287",
-      "published": "2026-07-10T21:16:58.677",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
       "cve_id": "CVE-2026-57827",
       "title": "The Joomla extension RSFiles is vulnerable to an unauthenticated arbitrary file upload that allows uploading executab…",
       "vendor": null,
@@ -2854,7 +2790,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00332,
-      "epss_pct": 0.25284,
+      "epss_pct": 0.25317,
       "cwe": "CWE-434",
       "published": "2026-07-11T10:16:34.057",
       "kev": {
@@ -2875,6 +2811,41 @@
       "timeline": [
         {
           "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-58319",
+      "title": "Certain Apache Doris FE HTTP REST administrative APIs were accessible without proper authentication.",
+      "vendor": null,
+      "product": null,
+      "description": "Certain Apache Doris FE HTTP REST administrative APIs were accessible without proper authentication. An unauthenticated attacker with network access to the FE HTTP service could perform unauthorized administrative operations, potentially affecting cluster integrity and availability and leading to cluster instability or denial of service. \n\nThis issue affects Apache Doris versions prior to 3.1.0. Users are advised to upgrade to Apache Doris 3.1.0 or later.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00614,
+      "epss_pct": 0.45417,
+      "cwe": "CWE-306",
+      "published": "2026-07-14T10:16:33.430",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 11,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
           "label": "Published to NVD"
         }
       ],
