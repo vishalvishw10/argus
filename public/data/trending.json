@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T14:25:50.104Z",
+  "generated_at": "2026-07-16T16:43:55.629Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1644,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1293 recent"
+      "detail": "1260 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1320 scored"
+      "detail": "1287 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3667 mapped"
+      "detail": "3668 mapped"
     },
     {
       "name": "Reddit",
@@ -336,7 +336,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 32,
+      "rising": 31,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -432,6 +432,77 @@
       "rank": 6
     },
     {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01266,
+      "epss_pct": 0.66447,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 39,
+      "repos": {
+        "count": 4,
+        "stars": 9,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 8
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 1
+          },
+          {
+            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
+          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+          "date": "2026-07-15T05:30:21.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-15",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 7
+    },
+    {
       "cve_id": "CVE-2026-56290",
       "title": "Joomlack Page Builder Improper Access Control Vulnerability",
       "vendor": "Joomlack",
@@ -491,7 +562,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -550,7 +621,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -607,77 +678,6 @@
         {
           "date": "2026-06-11",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01266,
-      "epss_pct": 0.66447,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 41,
-      "repos": {
-        "count": 4,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 4
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 1
-          },
-          {
-            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
-          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
-          "date": "2026-07-15T05:30:21.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-15",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 10
@@ -961,7 +961,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1072,7 +1072,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1113,7 +1113,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1272,7 +1272,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1313,7 +1313,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2153,7 +2153,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2169,41 +2169,6 @@
         }
       ],
       "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-58644",
-      "title": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over…",
-      "vendor": null,
-      "product": null,
-      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01296,
-      "epss_pct": 0.67106,
-      "cwe": "CWE-502",
-      "published": "2026-07-14T17:17:14.257",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
     },
     {
       "cve_id": "CVE-2026-48358",
@@ -2238,7 +2203,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2273,7 +2238,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2308,7 +2273,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-48321",
@@ -2343,7 +2308,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-48322",
@@ -2378,7 +2343,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-48324",
@@ -2413,42 +2378,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-46633",
-      "title": "Twig is a template language for PHP.",
-      "vendor": null,
-      "product": null,
-      "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, allowing a crafted template name to terminate the string and inject arbitrary PHP expressions into the compiled cache file. This issue is fixed in version 3.26.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00642,
-      "epss_pct": 0.46652,
-      "cwe": "CWE-94",
-      "published": "2026-07-14T22:16:55.997",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2023-49899",
@@ -2483,42 +2413,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2023-49900",
-      "title": "An unauthenticated remote attacker is able to perform remote code execution due to incorrectly sanitized user input i…",
-      "vendor": null,
-      "product": null,
-      "description": "An unauthenticated remote attacker is able to perform remote code execution due to incorrectly sanitized user input in the SetParameter command.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-07-16T11:16:36.597",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2561,7 +2456,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2604,7 +2499,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-0284",
@@ -2639,7 +2534,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-59792",
@@ -2674,7 +2569,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-57156",
@@ -2709,7 +2604,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-57211",
@@ -2744,7 +2639,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-57216",
@@ -2779,7 +2674,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-57827",
@@ -2814,7 +2709,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58319",
@@ -2835,6 +2730,111 @@
       "no_patch": false,
       "hype": 17,
       "rising": 11,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-62390",
+      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin.",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00681,
+      "epss_pct": 0.48299,
+      "cwe": "CWE-89",
+      "published": "2026-07-14T13:19:08.307",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 11,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-59836",
+      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
+      "vendor": null,
+      "product": null,
+      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00126,
+      "epss_pct": 0.02641,
+      "cwe": "CWE-295",
+      "published": "2026-07-14T16:17:02.727",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-49164",
+      "title": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a…",
+      "vendor": null,
+      "product": null,
+      "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00614,
+      "epss_pct": 0.45393,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T17:16:51.033",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
