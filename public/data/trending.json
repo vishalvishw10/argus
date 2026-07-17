@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T11:42:52.649Z",
+  "generated_at": "2026-07-17T14:05:36.430Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 3,
+    "media_mentions": 2,
     "reddit_upvotes": 0,
     "kev_count": 37,
     "kev_total": 1647,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1333 recent"
+      "detail": "1301 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1306 scored"
+      "detail": "1330 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "7 mentions"
+      "detail": "6 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3674 mapped"
+      "detail": "3677 mapped"
     },
     {
       "name": "Reddit",
@@ -64,74 +64,116 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-48939",
-      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "iCagenda",
-      "product": "iCagenda",
-      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "cve_id": "CVE-2026-39808",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01505,
-      "epss_pct": 0.71471,
-      "cwe": "CWE-434",
-      "published": "2026-06-20T13:16:42.433",
+      "epss": 0.84158,
+      "epss_pct": 0.99666,
+      "cwe": "CWE-78",
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-07-10",
-        "due_date": "2026-07-13",
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
         "ransomware": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": true,
-      "hype": 62,
-      "rising": 0,
+      "hype": 63,
+      "rising": 27,
       "repos": {
-        "count": 2,
-        "stars": 3,
+        "count": 6,
+        "stars": 34,
         "top": [
           {
-            "full_name": "shinthink/CVE-2026-48939",
-            "html_url": "https://github.com/shinthink/CVE-2026-48939",
-            "stars": 2
+            "full_name": "ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
+            "html_url": "https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
+            "stars": 26
           },
           {
-            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
-            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
+            "full_name": "samu-delucas/CVE-2026-39808",
+            "html_url": "https://github.com/samu-delucas/CVE-2026-39808",
+            "stars": 7
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-39808",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-39808",
             "stars": 1
           }
         ]
       },
-      "media": [
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
         {
-          "source": "The Hacker News",
-          "title": "iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days",
-          "url": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html",
-          "date": "2026-07-13T05:36:02.000Z"
+          "date": "2026-07-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-56164",
+      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.05601,
+      "epss_pct": 0.92033,
+      "cwe": "CWE-306",
+      "published": "2026-07-14T17:17:09.907",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 20,
+      "repos": {
+        "count": 1,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
+            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
         "zero-day",
-        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-06-20",
+          "date": "2026-07-14",
           "label": "Published to NVD"
         },
         {
-          "date": "2026-07-10",
+          "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-13",
-          "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -191,7 +233,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -251,59 +293,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-56164",
-      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.05601,
-      "epss_pct": 0.92028,
-      "cwe": "CWE-306",
-      "published": "2026-07-14T17:17:09.907",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 21,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
-            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 4
     },
     {
@@ -315,7 +304,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01569,
-      "epss_pct": 0.72567,
+      "epss_pct": 0.7258,
       "cwe": "CWE-434",
       "published": "2026-06-20T13:16:42.080",
       "kev": {
@@ -369,64 +358,6 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-39808",
-      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.48668,
-      "epss_pct": 0.9874,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 28,
-      "repos": {
-        "count": 6,
-        "stars": 34,
-        "top": [
-          {
-            "full_name": "ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
-            "html_url": "https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
-            "stars": 26
-          },
-          {
-            "full_name": "samu-delucas/CVE-2026-39808",
-            "html_url": "https://github.com/samu-delucas/CVE-2026-39808",
-            "stars": 7
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-39808",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-39808",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-15409",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
       "vendor": "SonicWall",
@@ -435,7 +366,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01266,
-      "epss_pct": 0.66447,
+      "epss_pct": 0.66462,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -447,7 +378,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 57,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 4,
         "stars": 17,
@@ -495,7 +426,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -506,7 +437,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00836,
-      "epss_pct": 0.53629,
+      "epss_pct": 0.53651,
       "cwe": "CWE-434",
       "published": "2026-07-09T11:16:40.990",
       "kev": {
@@ -558,7 +489,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -569,7 +500,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.80425,
-      "epss_pct": 0.99578,
+      "epss_pct": 0.99577,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -617,7 +548,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -676,7 +607,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -687,7 +618,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02912,
-      "epss_pct": 0.85434,
+      "epss_pct": 0.85443,
       "cwe": "CWE-434",
       "published": "2026-06-29T15:16:42.360",
       "kev": {
@@ -735,6 +666,63 @@
         },
         {
           "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-48939",
+      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "iCagenda",
+      "product": "iCagenda",
+      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01505,
+      "epss_pct": 0.71484,
+      "cwe": "CWE-434",
+      "published": "2026-06-20T13:16:42.433",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-10",
+        "due_date": "2026-07-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-48939",
+            "html_url": "https://github.com/shinthink/CVE-2026-48939",
+            "stars": 2
+          },
+          {
+            "full_name": "Polosss/By-Poloss..-..CVE-2026-48939",
+            "html_url": "https://github.com/Polosss/By-Poloss..-..CVE-2026-48939",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -807,8 +795,8 @@
       "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01296,
-      "epss_pct": 0.67106,
+      "epss": 0.01465,
+      "epss_pct": 0.70721,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -820,7 +808,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 65,
+      "rising": 63,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -861,8 +849,8 @@
       "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.23393,
-      "epss_pct": 0.97528,
+      "epss": 0.36135,
+      "epss_pct": 0.98302,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -873,8 +861,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 49,
-      "rising": 28,
+      "hype": 51,
+      "rising": 27,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -915,7 +903,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.28583,
-      "epss_pct": 0.97917,
+      "epss_pct": 0.97918,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -973,7 +961,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01247,
-      "epss_pct": 0.65955,
+      "epss_pct": 0.65974,
       "cwe": "CWE-20",
       "published": "2026-06-18T01:18:12.040",
       "kev": {
@@ -1114,7 +1102,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98529,
+      "epss_pct": 0.9853,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1172,7 +1160,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01045,
-      "epss_pct": 0.60266,
+      "epss_pct": 0.60283,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -1184,7 +1172,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1225,7 +1213,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.23857,
-      "epss_pct": 0.97573,
+      "epss_pct": 0.97574,
       "cwe": "CWE-352",
       "published": null,
       "kev": {
@@ -1237,7 +1225,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1266,7 +1254,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.82561,
+      "epss_pct": 0.8257,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1314,7 +1302,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.97702,
+      "epss_pct": 0.97703,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1372,7 +1360,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00855,
-      "epss_pct": 0.54241,
+      "epss_pct": 0.54259,
       "cwe": "CWE-645",
       "published": null,
       "kev": {
@@ -1384,7 +1372,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1413,7 +1401,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01486,
-      "epss_pct": 0.71117,
+      "epss_pct": 0.7113,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1425,7 +1413,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1466,7 +1454,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00379,
-      "epss_pct": 0.30157,
+      "epss_pct": 0.30187,
       "cwe": "CWE-1220",
       "published": null,
       "kev": {
@@ -1478,7 +1466,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1507,7 +1495,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73916,
+      "epss_pct": 0.73933,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1565,7 +1553,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.10659,
-      "epss_pct": 0.95298,
+      "epss_pct": 0.95301,
       "cwe": "CWE-400",
       "published": null,
       "kev": {
@@ -1618,7 +1606,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.27546,
-      "epss_pct": 0.97853,
+      "epss_pct": 0.97855,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1671,7 +1659,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0116,
-      "epss_pct": 0.6354,
+      "epss_pct": 0.63559,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1719,7 +1707,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66311,
+      "epss_pct": 0.66328,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1777,7 +1765,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.0056,
-      "epss_pct": 0.42817,
+      "epss_pct": 0.42831,
       "cwe": "CWE-639",
       "published": null,
       "kev": {
@@ -1825,7 +1813,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93915,
+      "epss_pct": 0.9392,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1870,59 +1858,6 @@
       "rank": 33
     },
     {
-      "cve_id": "CVE-2026-45659",
-      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.03219,
-      "epss_pct": 0.86785,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-01",
-        "due_date": "2026-07-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-45659",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-45659",
-            "stars": 0
-          },
-          {
-            "full_name": "mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
-            "html_url": "https://github.com/mistbarbarianspot/CVE-2026-45659-SharePoint-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
-    },
-    {
       "cve_id": "CVE-2026-7473",
       "title": "Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
       "vendor": "Arista",
@@ -1931,7 +1866,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.53606,
+      "epss_pct": 0.53628,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -1968,6 +1903,54 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-45659",
+      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.03219,
+      "epss_pct": 0.86791,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-01",
+        "due_date": "2026-07-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-45659",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-45659",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-01",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 35
     },
     {
@@ -1979,7 +1962,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00889,
-      "epss_pct": 0.55273,
+      "epss_pct": 0.55291,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2020,7 +2003,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02269,
-      "epss_pct": 0.81078,
+      "epss_pct": 0.81086,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2061,7 +2044,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.00243,
-      "epss_pct": 0.1542,
+      "epss_pct": 0.15432,
       "cwe": "CWE-862",
       "published": "2026-07-13T08:16:21.713",
       "kev": {
@@ -2104,7 +2087,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.17903,
-      "epss_pct": 0.9684,
+      "epss_pct": 0.96843,
       "cwe": "CWE-434",
       "published": "2026-07-14T20:17:08.437",
       "kev": {
@@ -2139,7 +2122,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00502,
-      "epss_pct": 0.39571,
+      "epss_pct": 0.39595,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -2192,7 +2175,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00912,
-      "epss_pct": 0.55997,
+      "epss_pct": 0.56019,
       "cwe": "CWE-116",
       "published": "2026-07-14T20:17:08.653",
       "kev": {
@@ -2227,7 +2210,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.0794,
-      "epss_pct": 0.94078,
+      "epss_pct": 0.94083,
       "cwe": "CWE-20",
       "published": "2026-07-14T21:16:58.043",
       "kev": {
@@ -2236,7 +2219,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2262,7 +2245,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.09358,
-      "epss_pct": 0.94834,
+      "epss_pct": 0.94837,
       "cwe": "CWE-79",
       "published": "2026-07-14T21:16:58.703",
       "kev": {
@@ -2271,7 +2254,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2297,7 +2280,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00516,
-      "epss_pct": 0.40461,
+      "epss_pct": 0.40485,
       "cwe": "CWE-863",
       "published": "2026-07-14T21:16:58.813",
       "kev": {
@@ -2306,7 +2289,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2331,8 +2314,8 @@
       "description": "An unauthenticated remote attacker can execute any command on the affected device due to not correctly verifying the origin of a communication channel.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0021,
+      "epss_pct": 0.11286,
       "cwe": "CWE-346",
       "published": "2026-07-16T11:16:35.597",
       "kev": {
@@ -2366,8 +2349,8 @@
       "description": "Grafana OnCall through 1.16.11 contains an unauthenticated access vulnerability that allows remote attackers to obtain a valid PluginAuthToken by sending a POST request to the internal plugin install endpoint using hardcoded default stack_id and org_id values present in the public source tree. Attackers can leverage the acquired token to authenticate against all internal API endpoints, create arbitrary Admin users via the user-context header bootstrap path, revoke the legitimate plugin token, and redirect OnCall-to-Grafana API calls to an attacker-controlled host by overwriting the organization's grafana_url and api_token.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00427,
+      "epss_pct": 0.34629,
       "cwe": "CWE-306",
       "published": "2026-07-16T17:16:58.703",
       "kev": {
@@ -2401,8 +2384,8 @@
       "description": "The Bricksforge plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.8.6. This is due to improper validation of the fieldIds parameter in the Pro Forms registration action, which allows attacker-supplied field IDs to be added to the trusted form-field whitelist. This makes it possible for unauthenticated attackers to register a new administrator account by submitting a crafted request to a publicly accessible Bricksforge Pro Forms registration form. Successful exploitation requires that the site has a public Bricksforge Pro Forms element configured with the User Registration action.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00351,
+      "epss_pct": 0.27414,
       "cwe": "CWE-269",
       "published": "2026-07-17T02:18:03.870",
       "kev": {
@@ -2437,7 +2420,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.38657,
+      "epss_pct": 0.3868,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:33.450",
       "kev": {
@@ -2480,7 +2463,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0046,
-      "epss_pct": 0.36995,
+      "epss_pct": 0.3701,
       "cwe": "CWE-119",
       "published": "2026-06-30T13:19:34.083",
       "kev": {
@@ -2523,7 +2506,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00698,
-      "epss_pct": 0.48944,
+      "epss_pct": 0.48964,
       "cwe": "CWE-122",
       "published": "2026-07-10T20:16:48.257",
       "kev": {
@@ -2558,7 +2541,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00404,
-      "epss_pct": 0.32688,
+      "epss_pct": 0.3271,
       "cwe": "CWE-36",
       "published": "2026-07-10T21:16:58.007",
       "kev": {
@@ -2593,7 +2576,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00468,
-      "epss_pct": 0.37473,
+      "epss_pct": 0.37499,
       "cwe": "CWE-287",
       "published": "2026-07-10T21:16:58.677",
       "kev": {
@@ -2628,7 +2611,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00332,
-      "epss_pct": 0.25317,
+      "epss_pct": 0.25336,
       "cwe": "CWE-434",
       "published": "2026-07-11T10:16:34.057",
       "kev": {
@@ -2655,24 +2638,24 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-62390",
-      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin.",
+      "cve_id": "CVE-2026-10666",
+      "title": "parse_ipv4() in subsys/net/ip/utils.c (reached via net_ipaddr_parse() for strings of the form \"a.b.c.d:port\") copies …",
       "vendor": null,
       "product": null,
-      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "description": "parse_ipv4() in subsys/net/ip/utils.c (reached via net_ipaddr_parse() for strings of the form \"a.b.c.d:port\") copies the port substring into a fixed 17-byte stack buffer (char ipaddr[NET_IPV4_ADDR_LEN + 1]) using a length of str_len - end - 1, where str_len is the full, unbounded input length and end is only the (<=15-byte) offset of the ':' delimiter. Because the destination size is never consulted, a crafted address string with a long suffix after the colon (e.g. \"1.2.3.4:\" followed by hundreds of bytes) causes an out-of-bounds stack write whose length and contents are fully attacker-controlled (memcpy of the suffix plus a trailing NUL), enabling memory corruption and at minimum a denial of service, and potentially control-flow hijack. The parser is reached from the standard socket API (zsock_getaddrinfo / literal-address resolution), DNS server-string configuration, and the eswifi Wi-Fi co-processor DNS-response path, so an application that resolves a network-influenced address string is exposed. The bug was introduced when the parser was added (Zephyr v1.9.0) and shipped in all releases through v4.4.0. The fix removes the unbounded copy and validates the port length before copying into a small dedicated buffer. Note: the equivalent IPv6 \"[addr]:port\" path in parse_ipv6() retains the same unbounded copy at this commit and remains a separate, still-reachable instance of the defect.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00681,
-      "epss_pct": 0.48299,
-      "cwe": "CWE-89",
-      "published": "2026-07-14T13:19:08.307",
+      "epss": 0.00346,
+      "epss_pct": 0.26847,
+      "cwe": "CWE-121",
+      "published": "2026-07-12T17:16:24.550",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2683,24 +2666,24 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-14",
+          "date": "2026-07-12",
           "label": "Published to NVD"
         }
       ],
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-62392",
-      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
+      "cve_id": "CVE-2026-62390",
+      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin.",
       "vendor": null,
       "product": null,
-      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01828,
-      "epss_pct": 0.76409,
-      "cwe": "CWE-78",
-      "published": "2026-07-14T13:19:08.447",
+      "epss": 0.00681,
+      "epss_pct": 0.48314,
+      "cwe": "CWE-89",
+      "published": "2026-07-14T13:19:08.307",
       "kev": {
         "in_kev": false
       },
@@ -2725,24 +2708,24 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-59836",
-      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
+      "cve_id": "CVE-2026-62392",
+      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
       "vendor": null,
       "product": null,
-      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
+      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00126,
-      "epss_pct": 0.02641,
-      "cwe": "CWE-295",
-      "published": "2026-07-14T16:17:02.727",
+      "epss": 0.01828,
+      "epss_pct": 0.76423,
+      "cwe": "CWE-78",
+      "published": "2026-07-14T13:19:08.447",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2760,24 +2743,24 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-49164",
-      "title": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a…",
+      "cve_id": "CVE-2026-59836",
+      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
       "vendor": null,
       "product": null,
-      "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
+      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00614,
-      "epss_pct": 0.45393,
-      "cwe": "CWE-122",
-      "published": "2026-07-14T17:16:51.033",
+      "epss": 0.00126,
+      "epss_pct": 0.02642,
+      "cwe": "CWE-295",
+      "published": "2026-07-14T16:17:02.727",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2795,17 +2778,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-50694",
-      "title": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code ove…",
+      "cve_id": "CVE-2026-49164",
+      "title": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code over a network.",
+      "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00614,
-      "epss_pct": 0.45394,
-      "cwe": "CWE-416",
-      "published": "2026-07-14T17:17:02.327",
+      "epss": 0.00649,
+      "epss_pct": 0.46975,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T17:16:51.033",
       "kev": {
         "in_kev": false
       },
@@ -2830,17 +2813,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-58594",
-      "title": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
+      "cve_id": "CVE-2026-50694",
+      "title": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code ove…",
       "vendor": null,
       "product": null,
-      "description": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
+      "description": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00784,
-      "epss_pct": 0.51917,
-      "cwe": "CWE-190",
-      "published": "2026-07-14T18:18:43.067",
+      "epss": 0.00649,
+      "epss_pct": 0.46975,
+      "cwe": "CWE-416",
+      "published": "2026-07-14T17:17:02.327",
       "kev": {
         "in_kev": false
       },
@@ -2865,17 +2848,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-58617",
-      "title": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a…",
+      "cve_id": "CVE-2026-58594",
+      "title": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
       "vendor": null,
       "product": null,
-      "description": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a network.",
+      "description": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00671,
-      "epss_pct": 0.47881,
-      "cwe": "CWE-284",
-      "published": "2026-07-14T18:18:44.260",
+      "epss": 0.00767,
+      "epss_pct": 0.51409,
+      "cwe": "CWE-190",
+      "published": "2026-07-14T18:18:43.067",
       "kev": {
         "in_kev": false
       },
