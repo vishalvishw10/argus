@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T03:36:02.338Z",
+  "generated_at": "2026-07-18T06:21:00.107Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1647,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1297 recent"
+      "detail": "1294 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1284 scored"
+      "detail": "1279 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3678 mapped"
+      "detail": "3679 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 6,
         "stars": 35,
@@ -143,7 +143,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 4,
@@ -296,77 +296,6 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01266,
-      "epss_pct": 0.66462,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 8,
-      "repos": {
-        "count": 5,
-        "stars": 21,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 19
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
-            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
-            "stars": 1
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
-          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
-          "date": "2026-07-15T05:30:21.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 5
-    },
-    {
       "cve_id": "CVE-2026-48908",
       "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
       "vendor": "JoomShaper",
@@ -424,6 +353,77 @@
         {
           "date": "2026-07-07",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01266,
+      "epss_pct": 0.66462,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 6,
+      "repos": {
+        "count": 5,
+        "stars": 21,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 19
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
+            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
+            "stars": 1
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
+          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+          "date": "2026-07-15T05:30:21.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-15",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 6
@@ -808,7 +808,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 51,
+      "rising": 49,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -862,7 +862,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -1127,7 +1127,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1327,7 +1327,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1380,7 +1380,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1421,7 +1421,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1996,7 +1996,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -2039,7 +2039,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2127,7 +2127,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2162,7 +2162,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2240,7 +2240,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2328,17 +2328,17 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-9198",
-      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER t…",
+      "cve_id": "CVE-2026-9103",
+      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authe…",
       "vendor": null,
       "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/validate/code (executes user code via exec()) to achieve full RCE on default Langflow deployments",
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authentication in the /api/v1/login/auto_login endpoint. The endpoint issues long-lived superuser bearer tokens without requiring authentication when the AUTO_LOGIN configuration is enabled (enabled by default), which may allow an unauthenticated network attacker to obtain full administrative access. Additionally, permissive cross-origin resource sharing (CORS) settings may allow tokens to be exposed to unintended origins, increasing the risk of unauthorized access.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-94",
-      "published": "2026-07-17T18:17:17.340",
+      "cwe": "CWE-306",
+      "published": "2026-07-17T19:17:19.277",
       "kev": {
         "in_kev": false
       },
@@ -2363,41 +2363,6 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-9103",
-      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authe…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authentication in the /api/v1/login/auto_login endpoint. The endpoint issues long-lived superuser bearer tokens without requiring authentication when the AUTO_LOGIN configuration is enabled (enabled by default), which may allow an unauthenticated network attacker to obtain full administrative access. Additionally, permissive cross-origin resource sharing (CORS) settings may allow tokens to be exposed to unintended origins, increasing the risk of unauthorized access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-07-17T19:17:19.277",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
       "cve_id": "CVE-2026-9135",
       "title": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d)…",
       "vendor": null,
@@ -2415,7 +2380,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2430,7 +2395,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-8476",
@@ -2450,7 +2415,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2465,7 +2430,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-8481",
@@ -2485,7 +2450,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2500,7 +2465,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8635",
@@ -2520,7 +2485,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2535,7 +2500,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-8859",
@@ -2555,7 +2520,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2570,7 +2535,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-13446",
@@ -2590,7 +2555,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2605,7 +2570,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2648,7 +2613,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2691,7 +2656,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-57211",
@@ -2726,7 +2691,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-57216",
@@ -2761,7 +2726,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-10666",
@@ -2796,7 +2761,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62390",
@@ -2816,7 +2781,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-62392",
+      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01828,
+      "epss_pct": 0.76423,
+      "cwe": "CWE-78",
+      "published": "2026-07-14T13:19:08.447",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2834,17 +2834,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-62392",
-      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
+      "cve_id": "CVE-2026-59836",
+      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
       "vendor": null,
       "product": null,
-      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01828,
-      "epss_pct": 0.76423,
-      "cwe": "CWE-78",
-      "published": "2026-07-14T13:19:08.447",
+      "epss": 0.00126,
+      "epss_pct": 0.02642,
+      "cwe": "CWE-295",
+      "published": "2026-07-14T16:17:02.727",
       "kev": {
         "in_kev": false
       },
