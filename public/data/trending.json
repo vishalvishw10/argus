@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T03:58:19.958Z",
+  "generated_at": "2026-07-19T06:44:20.435Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1329 recent"
+      "detail": "1336 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1312 scored"
+      "detail": "1311 scored"
     },
     {
       "name": "BleepingComputer",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 6,
         "stars": 35,
@@ -381,12 +381,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 24,
+        "stars": 25,
         "top": [
           {
             "full_name": "remmons-r7/rapid7-CVE-2026-15409",
             "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 21
+            "stars": 22
           },
           {
             "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
@@ -813,7 +813,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 30,
+      "rising": 27,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -867,7 +867,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -1132,7 +1132,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1332,7 +1332,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2044,7 +2044,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2132,7 +2132,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2167,7 +2167,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2228,17 +2228,17 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-12692",
-      "title": "Unverified password change vulnerability in Vimesoft Inc.",
+      "cve_id": "CVE-2026-9103",
+      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authe…",
       "vendor": null,
       "product": null,
-      "description": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authentication in the /api/v1/login/auto_login endpoint. The endpoint issues long-lived superuser bearer tokens without requiring authentication when the AUTO_LOGIN configuration is enabled (enabled by default), which may allow an unauthenticated network attacker to obtain full administrative access. Additionally, permissive cross-origin resource sharing (CORS) settings may allow tokens to be exposed to unintended origins, increasing the risk of unauthorized access.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00346,
-      "epss_pct": 0.26835,
-      "cwe": "CWE-620",
-      "published": "2026-07-17T17:17:13.303",
+      "epss": 0.00411,
+      "epss_pct": 0.33296,
+      "cwe": "CWE-306",
+      "published": "2026-07-17T19:17:19.277",
       "kev": {
         "in_kev": false
       },
@@ -2263,17 +2263,17 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-8297",
-      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics…",
+      "cve_id": "CVE-2026-9135",
+      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d)…",
       "vendor": null,
       "product": null,
-      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisLab Laboratory Management System: from 1.4.03 through 08072026.",
-      "cvss": 9.8,
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d) contain a code injection vulnerability in the Policies component's ToolGuard integration that bypasses the allow_custom_components=false security control. The vulnerability exists because the validation mechanism only checks the main component source code in node_template[\"code\"][\"value\"] but fails to validate dynamic CodeInput fields that store generated ToolGuard Python files. Attackers can embed malicious Python code in these unvalidated dynamic fields, which are persisted in Flow.data and later executed server-side when a guarded tool is invoked through the ToolGuard runtime. This allows authenticated users with flow creation privileges to achieve arbitrary Python code execution on the backend despite custom component restrictions. The vulnerability can be escalated through cross-tenant flow manipulation via the agentic MCP update_flow_component_field tool, which accepts attacker-controlled user_id parameters, enabling attackers to inject malicious code into victim users' flows. When combined with publicly accessible flows and specific misconfigurations (AUTO_LOGIN=true, NEW_USER_IS_ACTIVE=true), the attack can be conducted with reduced authentication requirements.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.0026,
-      "epss_pct": 0.17542,
-      "cwe": "CWE-89",
-      "published": "2026-07-17T17:17:17.860",
+      "epss": 0.00798,
+      "epss_pct": 0.52424,
+      "cwe": "CWE-94",
+      "published": "2026-07-17T19:17:19.390",
       "kev": {
         "in_kev": false
       },
@@ -2298,76 +2298,6 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-9103",
-      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authe…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authentication in the /api/v1/login/auto_login endpoint. The endpoint issues long-lived superuser bearer tokens without requiring authentication when the AUTO_LOGIN configuration is enabled (enabled by default), which may allow an unauthenticated network attacker to obtain full administrative access. Additionally, permissive cross-origin resource sharing (CORS) settings may allow tokens to be exposed to unintended origins, increasing the risk of unauthorized access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00411,
-      "epss_pct": 0.33296,
-      "cwe": "CWE-306",
-      "published": "2026-07-17T19:17:19.277",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-9135",
-      "title": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d)…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d) contain a code injection vulnerability in the Policies component's ToolGuard integration that bypasses the allow_custom_components=false security control. The vulnerability exists because the validation mechanism only checks the main component source code in node_template[\"code\"][\"value\"] but fails to validate dynamic CodeInput fields that store generated ToolGuard Python files. Attackers can embed malicious Python code in these unvalidated dynamic fields, which are persisted in Flow.data and later executed server-side when a guarded tool is invoked through the ToolGuard runtime. This allows authenticated users with flow creation privileges to achieve arbitrary Python code execution on the backend despite custom component restrictions. The vulnerability can be escalated through cross-tenant flow manipulation via the agentic MCP update_flow_component_field tool, which accepts attacker-controlled user_id parameters, enabling attackers to inject malicious code into victim users' flows. When combined with publicly accessible flows and specific misconfigurations (AUTO_LOGIN=true, NEW_USER_IS_ACTIVE=true), the attack can be conducted with reduced authentication requirements.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00798,
-      "epss_pct": 0.52424,
-      "cwe": "CWE-94",
-      "published": "2026-07-17T19:17:19.390",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-8476",
       "title": "IBM Langflow OSS 1.0.0 through 1.10.0 contain a critical remote code execution vulnerability in the disk-based cachin…",
       "vendor": null,
@@ -2385,7 +2315,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2400,7 +2330,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-8481",
@@ -2420,7 +2350,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2435,7 +2365,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-8635",
@@ -2455,7 +2385,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2470,7 +2400,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-8859",
@@ -2490,7 +2420,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2505,7 +2435,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-13446",
@@ -2525,7 +2455,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2540,7 +2470,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -2583,7 +2513,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-8655",
@@ -2626,7 +2556,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-10666",
@@ -2661,7 +2591,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-62390",
@@ -2681,7 +2611,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2696,7 +2626,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-62392",
@@ -2716,7 +2646,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2731,7 +2661,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-59836",
@@ -2766,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-49164",
@@ -2801,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-50694",
@@ -2836,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-54433",
@@ -2850,6 +2780,76 @@
       "epss_pct": 0.23187,
       "cwe": "CWE-79",
       "published": "2026-07-14T17:17:05.530",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 2,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-57089",
+      "title": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute…",
+      "vendor": null,
+      "product": null,
+      "description": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0061,
+      "epss_pct": 0.45203,
+      "cwe": "CWE-416",
+      "published": "2026-07-14T18:18:33.237",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 2,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-57090",
+      "title": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over…",
+      "vendor": null,
+      "product": null,
+      "description": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00812,
+      "epss_pct": 0.52899,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T18:18:33.430",
       "kev": {
         "in_kev": false
       },
