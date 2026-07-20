@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:22:08.274Z",
+  "generated_at": "2026-07-20T20:43:14.749Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1338 recent"
+      "detail": "1321 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1354 scored"
+      "detail": "1336 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3700 mapped"
+      "detail": "3702 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 66,
-      "rising": 38,
+      "rising": 36,
       "repos": {
         "count": 5,
         "stars": 29,
@@ -161,7 +161,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 6,
         "stars": 35,
@@ -695,7 +695,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 50,
-      "rising": 38,
+      "rising": 36,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -761,7 +761,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -814,7 +814,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 48,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1959,15 +1959,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 24,
-      "rising": 33,
+      "rising": 31,
       "repos": {
-        "count": 54,
-        "stars": 604,
+        "count": 55,
+        "stars": 607,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 406
+            "stars": 407
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2021,15 +2021,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 23,
-      "rising": 33,
+      "rising": 31,
       "repos": {
         "count": 29,
-        "stars": 559,
+        "stars": 561,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 406
+            "stars": 407
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2231,7 +2231,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2257,24 +2257,24 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-64620",
-      "title": "FreeRDP before 3.28.0 (affected <=3.27.1) contains a heap-based buffer overflow in crypto_rsa_common() (libfreerdp/cr…",
+      "cve_id": "CVE-2026-63766",
+      "title": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise…",
       "vendor": null,
       "product": null,
-      "description": "FreeRDP before 3.28.0 (affected <=3.27.1) contains a heap-based buffer overflow in crypto_rsa_common() (libfreerdp/crypto/crypto.c). The function writes the modular-exponentiation result into the caller's output buffer via BN_bn2bin() and only afterward checks output_length > out_length, so out-of-bounds bytes are written before the bounds check. On the server side, when a client selects RDP Standard Security, the encrypted client random is decrypted into a fixed 32-byte buffer. Because the server publishes its RSA public key, an unauthenticated attacker can forge a ciphertext whose decrypted value is up to the full modulus length (e.g. 256 bytes for RSA-2048), overflowing the 32-byte heap buffer by up to ~224 attacker-controlled bytes pre-authentication, resulting in denial of service.",
+      "description": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into shell commands executed with shell=True. Attackers can inject shell metacharacters through path parameters to execute arbitrary OS commands as the server process user without authentication.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-122",
-      "published": "2026-07-20T12:19:46.760",
+      "cwe": "CWE-78",
+      "published": "2026-07-20T20:16:46.170",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2290,6 +2290,41 @@
         }
       ],
       "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-63767",
+      "title": "ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerabilit…",
+      "vendor": null,
+      "product": null,
+      "description": "ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerability that allows remote attackers to execute arbitrary commands by sending crafted pickle payloads to the SchedulerServer ZMQ ROUTER socket bound to all interfaces. Attackers can exploit malicious __reduce__ methods embedded in crafted pickle payloads to execute arbitrary shell commands as the server process.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-502",
+      "published": "2026-07-20T20:16:46.323",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2342,7 +2377,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2385,7 +2420,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-62390",
@@ -2420,7 +2455,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-62392",
@@ -2455,7 +2490,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-59836",
@@ -2490,7 +2525,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-62643",
@@ -2525,7 +2560,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-62644",
@@ -2560,7 +2595,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-49164",
@@ -2595,7 +2630,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-49181",
@@ -2630,7 +2665,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-50694",
@@ -2665,7 +2700,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-54433",
@@ -2700,7 +2735,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-54995",
@@ -2735,7 +2770,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-50330",
@@ -2770,7 +2805,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-57089",
@@ -2805,7 +2840,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-57090",
@@ -2840,7 +2875,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-58594",
@@ -2854,41 +2889,6 @@
       "epss_pct": 0.51489,
       "cwe": "CWE-190",
       "published": "2026-07-14T18:18:43.067",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-58617",
-      "title": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00721,
-      "epss_pct": 0.4989,
-      "cwe": "CWE-284",
-      "published": "2026-07-14T18:18:44.260",
       "kev": {
         "in_kev": false
       },
