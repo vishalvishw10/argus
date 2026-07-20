@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T20:43:14.749Z",
+  "generated_at": "2026-07-20T22:14:55.071Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1647,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1321 recent"
+      "detail": "1319 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -39,7 +39,7 @@
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -1819,6 +1819,74 @@
       "rank": 32
     },
     {
+      "cve_id": "CVE-2026-63030",
+      "title": "CVE-2026-63030",
+      "vendor": null,
+      "product": null,
+      "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.08946,
+      "epss_pct": 0.94675,
+      "cwe": "CWE-436",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 35,
+      "rising": 70,
+      "repos": {
+        "count": 55,
+        "stars": 613,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 413
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 46
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 34
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "WP2Shell WordPress Vulnerabilities Exploited in the Wild",
+          "url": "https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/",
+          "date": "2026-07-20T05:21:29.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading, SecurityWeek"
+        }
+      ],
+      "rank": 33
+    },
+    {
       "cve_id": "CVE-2026-12569",
       "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
       "vendor": "PTC",
@@ -1857,7 +1925,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1898,7 +1966,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1939,68 +2007,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
-    },
-    {
-      "cve_id": "CVE-2026-63030",
-      "title": "CVE-2026-63030",
-      "vendor": null,
-      "product": null,
-      "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.08946,
-      "epss_pct": 0.94675,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 24,
-      "rising": 31,
-      "repos": {
-        "count": 55,
-        "stars": 607,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 407
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 46
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 34
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "WP2Shell WordPress Vulnerabilities Exploited in the Wild",
-          "url": "https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/",
-          "date": "2026-07-20T05:21:29.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Covered by SecurityWeek"
-        }
-      ],
       "rank": 36
     },
     {
@@ -2020,16 +2026,16 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 23,
-      "rising": 31,
+      "hype": 34,
+      "rising": 70,
       "repos": {
         "count": 29,
-        "stars": 561,
+        "stars": 567,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 407
+            "stars": 413
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2044,6 +2050,12 @@
         ]
       },
       "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        },
         {
           "source": "SecurityWeek",
           "title": "WP2Shell WordPress Vulnerabilities Exploited in the Wild",
@@ -2060,7 +2072,7 @@
       "timeline": [
         {
           "date": "2026-07-20",
-          "label": "Covered by SecurityWeek"
+          "label": "Covered by Dark Reading, SecurityWeek"
         }
       ],
       "rank": 37
