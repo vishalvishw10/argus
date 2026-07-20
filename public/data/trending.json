@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T13:18:37.227Z",
+  "generated_at": "2026-07-20T15:23:35.727Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 4,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1647,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1358 recent"
+      "detail": "1340 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1364 scored"
+      "detail": "1352 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "4 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3693 mapped"
+      "detail": "3696 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,83 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01266,
+      "epss_pct": 0.66521,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 66,
+      "rising": 39,
+      "repos": {
+        "count": 5,
+        "stars": 29,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 26
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
+            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
+            "stars": 2
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "SonicWall Zero-Days Exploited to Deliver Custom Malware for Weeks Before Patch",
+          "url": "https://www.securityweek.com/sonicwall-zero-days-exploited-to-deliver-custom-malware-for-weeks-before-patch/",
+          "date": "2026-07-20T14:11:05.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
+          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+          "date": "2026-07-15T05:30:21.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-15",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-39808",
       "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
@@ -84,7 +161,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 6,
         "stars": 35,
@@ -120,7 +197,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -131,7 +208,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05601,
-      "epss_pct": 0.92039,
+      "epss_pct": 0.92051,
       "cwe": "CWE-306",
       "published": "2026-07-14T17:17:09.907",
       "kev": {
@@ -173,7 +250,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -233,7 +310,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -244,7 +321,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.70099,
-      "epss_pct": 0.99305,
+      "epss_pct": 0.99307,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -293,7 +370,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -304,7 +381,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.08635,
-      "epss_pct": 0.94503,
+      "epss_pct": 0.9451,
       "cwe": "CWE-434",
       "published": "2026-07-09T11:16:40.990",
       "kev": {
@@ -356,7 +433,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -367,7 +444,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.80425,
-      "epss_pct": 0.99578,
+      "epss_pct": 0.99579,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -415,7 +492,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -474,77 +551,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01266,
-      "epss_pct": 0.66481,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 28,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 25
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
-            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
-            "stars": 2
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
-          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
-          "date": "2026-07-15T05:30:21.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 8
     },
     {
@@ -556,7 +562,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.88171,
-      "epss_pct": 0.99751,
+      "epss_pct": 0.99752,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -615,7 +621,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02912,
-      "epss_pct": 0.85455,
+      "epss_pct": 0.85474,
       "cwe": "CWE-434",
       "published": "2026-06-29T15:16:42.360",
       "kev": {
@@ -669,6 +675,72 @@
       "rank": 10
     },
     {
+      "cve_id": "CVE-2026-15410",
+      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.01486,
+      "epss_pct": 0.71182,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 39,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-15410",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "SonicWall Zero-Days Exploited to Deliver Custom Malware for Weeks Before Patch",
+          "url": "https://www.securityweek.com/sonicwall-zero-days-exploited-to-deliver-custom-malware-for-weeks-before-patch/",
+          "date": "2026-07-20T14:11:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-20",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 11
+    },
+    {
       "cve_id": "CVE-2026-58644",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
       "vendor": "Microsoft",
@@ -677,7 +749,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01465,
-      "epss_pct": 0.70737,
+      "epss_pct": 0.70774,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -689,7 +761,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 49,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -720,7 +792,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -731,7 +803,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.36135,
-      "epss_pct": 0.98303,
+      "epss_pct": 0.98309,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -743,15 +815,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 2,
-        "stars": 7,
+        "stars": 8,
         "top": [
           {
             "full_name": "HORKimhab/CVE-2026-25089",
             "html_url": "https://github.com/HORKimhab/CVE-2026-25089",
-            "stars": 5
+            "stars": 6
           },
           {
             "full_name": "0xBlackash/CVE-2026-25089",
@@ -773,64 +845,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-48282",
-      "title": "Adobe ColdFusion Path Traversal Vulnerability",
-      "vendor": "Adobe",
-      "product": "ColdFusion",
-      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.28583,
-      "epss_pct": 0.97919,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 22,
-        "top": [
-          {
-            "full_name": "imbas007/CVE-2026-48282",
-            "html_url": "https://github.com/imbas007/CVE-2026-48282",
-            "stars": 22
-          },
-          {
-            "full_name": "arpit-bansal15/cve-2026-48282-pentest-lab",
-            "html_url": "https://github.com/arpit-bansal15/cve-2026-48282-pentest-lab",
-            "stars": 0
-          },
-          {
-            "full_name": "g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection",
-            "html_url": "https://github.com/g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 13
     },
     {
@@ -842,7 +856,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.80188,
-      "epss_pct": 0.99574,
+      "epss_pct": 0.99576,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -896,7 +910,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01569,
-      "epss_pct": 0.72596,
+      "epss_pct": 0.72629,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -946,6 +960,64 @@
       "rank": 15
     },
     {
+      "cve_id": "CVE-2026-48282",
+      "title": "Adobe ColdFusion Path Traversal Vulnerability",
+      "vendor": "Adobe",
+      "product": "ColdFusion",
+      "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.28583,
+      "epss_pct": 0.97926,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 22,
+        "top": [
+          {
+            "full_name": "imbas007/CVE-2026-48282",
+            "html_url": "https://github.com/imbas007/CVE-2026-48282",
+            "stars": 22
+          },
+          {
+            "full_name": "arpit-bansal15/cve-2026-48282-pentest-lab",
+            "html_url": "https://github.com/arpit-bansal15/cve-2026-48282-pentest-lab",
+            "stars": 0
+          },
+          {
+            "full_name": "g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection",
+            "html_url": "https://github.com/g0thamRabb1t/CVE-2026-48282-coldfusion-rds-detection",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
       "cve_id": "CVE-2026-34910",
       "title": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
       "vendor": "Ubiquiti",
@@ -985,7 +1057,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -996,7 +1068,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.41694,
-      "epss_pct": 0.98532,
+      "epss_pct": 0.98536,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1043,7 +1115,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -1054,7 +1126,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02452,
-      "epss_pct": 0.82584,
+      "epss_pct": 0.82607,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1091,7 +1163,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1102,7 +1174,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.25323,
-      "epss_pct": 0.97705,
+      "epss_pct": 0.9771,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -1149,7 +1221,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1160,7 +1232,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01045,
-      "epss_pct": 0.60308,
+      "epss_pct": 0.60352,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -1202,7 +1274,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1213,7 +1285,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.23857,
-      "epss_pct": 0.97576,
+      "epss_pct": 0.97581,
       "cwe": "CWE-352",
       "published": null,
       "kev": {
@@ -1243,59 +1315,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2026-15410",
-      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.01486,
-      "epss_pct": 0.71147,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-15410",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 22
     },
     {
@@ -1307,7 +1326,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01505,
-      "epss_pct": 0.715,
+      "epss_pct": 0.71535,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -1365,7 +1384,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00855,
-      "epss_pct": 0.54284,
+      "epss_pct": 0.54338,
       "cwe": "CWE-645",
       "published": null,
       "kev": {
@@ -1406,7 +1425,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01654,
-      "epss_pct": 0.73953,
+      "epss_pct": 0.73984,
       "cwe": "CWE-125",
       "published": null,
       "kev": {
@@ -1464,7 +1483,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00379,
-      "epss_pct": 0.30198,
+      "epss_pct": 0.30278,
       "cwe": "CWE-1220",
       "published": null,
       "kev": {
@@ -1505,7 +1524,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0116,
-      "epss_pct": 0.63577,
+      "epss_pct": 0.63621,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1553,7 +1572,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01261,
-      "epss_pct": 0.66347,
+      "epss_pct": 0.66387,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1611,7 +1630,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07683,
-      "epss_pct": 0.93925,
+      "epss_pct": 0.93935,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1664,7 +1683,7 @@
       "cvss": 5.8,
       "severity": "MEDIUM",
       "epss": 0.00836,
-      "epss_pct": 0.53652,
+      "epss_pct": 0.53704,
       "cwe": "CWE-1023",
       "published": null,
       "kev": {
@@ -1712,7 +1731,7 @@
       "cvss": 8.4,
       "severity": "HIGH",
       "epss": 0.0056,
-      "epss_pct": 0.42843,
+      "epss_pct": 0.42908,
       "cwe": "CWE-639",
       "published": null,
       "kev": {
@@ -1760,7 +1779,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03219,
-      "epss_pct": 0.86805,
+      "epss_pct": 0.86824,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1808,7 +1827,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01247,
-      "epss_pct": 0.65991,
+      "epss_pct": 0.66032,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1849,7 +1868,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00889,
-      "epss_pct": 0.55314,
+      "epss_pct": 0.55364,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1890,7 +1909,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02269,
-      "epss_pct": 0.81102,
+      "epss_pct": 0.81125,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1931,7 +1950,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.08946,
-      "epss_pct": 0.94668,
+      "epss_pct": 0.94675,
       "cwe": "CWE-436",
       "published": null,
       "kev": {
@@ -1940,20 +1959,20 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 24,
-      "rising": 36,
+      "rising": 34,
       "repos": {
         "count": 52,
-        "stars": 565,
+        "stars": 581,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 386
+            "stars": 392
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 42
+            "stars": 44
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -1993,7 +2012,7 @@
       "cvss": 5.9,
       "severity": "MEDIUM",
       "epss": 0.04026,
-      "epss_pct": 0.89451,
+      "epss_pct": 0.89467,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2002,20 +2021,20 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 23,
-      "rising": 36,
+      "rising": 34,
       "repos": {
         "count": 28,
-        "stars": 525,
+        "stars": 538,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 386
+            "stars": 392
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 42
+            "stars": 44
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -2055,7 +2074,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.00243,
-      "epss_pct": 0.15438,
+      "epss_pct": 0.15538,
       "cwe": "CWE-862",
       "published": "2026-07-13T08:16:21.713",
       "kev": {
@@ -2098,7 +2117,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.17903,
-      "epss_pct": 0.96846,
+      "epss_pct": 0.96851,
       "cwe": "CWE-434",
       "published": "2026-07-14T20:17:08.437",
       "kev": {
@@ -2133,7 +2152,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.0794,
-      "epss_pct": 0.94088,
+      "epss_pct": 0.94098,
       "cwe": "CWE-20",
       "published": "2026-07-14T21:16:58.043",
       "kev": {
@@ -2168,7 +2187,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.09358,
-      "epss_pct": 0.94842,
+      "epss_pct": 0.94847,
       "cwe": "CWE-79",
       "published": "2026-07-14T21:16:58.703",
       "kev": {
@@ -2203,7 +2222,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0177,
-      "epss_pct": 0.75658,
+      "epss_pct": 0.7569,
       "cwe": "CWE-307",
       "published": "2026-07-16T17:16:55.880",
       "kev": {
@@ -2212,7 +2231,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2255,7 +2274,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2281,7 +2300,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00502,
-      "epss_pct": 0.39621,
+      "epss_pct": 0.39688,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -2326,32 +2345,40 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-62390",
-      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin.",
+      "cve_id": "CVE-2026-54992",
+      "title": "Heap-based buffer overflow in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code l…",
       "vendor": null,
       "product": null,
-      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00681,
-      "epss_pct": 0.48333,
-      "cwe": "CWE-89",
-      "published": "2026-07-14T13:19:08.307",
+      "description": "Heap-based buffer overflow in Windows Message Queuing Queue Manager allows an unauthorized attacker to execute code locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00388,
+      "epss_pct": 0.31189,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T17:17:06.830",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
+      "hype": 18,
       "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "DavidCarliez/CVE-2026-54992-PoC",
+            "html_url": "https://github.com/DavidCarliez/CVE-2026-54992-PoC",
+            "stars": 5
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
           "date": "2026-07-14",
@@ -2361,17 +2388,17 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-62392",
-      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
+      "cve_id": "CVE-2026-62390",
+      "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin.",
       "vendor": null,
       "product": null,
-      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01828,
-      "epss_pct": 0.76441,
-      "cwe": "CWE-78",
-      "published": "2026-07-14T13:19:08.447",
+      "epss": 0.00681,
+      "epss_pct": 0.48394,
+      "cwe": "CWE-89",
+      "published": "2026-07-14T13:19:08.307",
       "kev": {
         "in_kev": false
       },
@@ -2396,17 +2423,17 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-59836",
-      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
+      "cve_id": "CVE-2026-62392",
+      "title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Ky…",
       "vendor": null,
       "product": null,
-      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
+      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue affects Apache Kylin: from 4 through 5.0.3.\n\nUsers are recommended to upgrade to version 5.0.4, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00126,
-      "epss_pct": 0.0264,
-      "cwe": "CWE-295",
-      "published": "2026-07-14T16:17:02.727",
+      "epss": 0.01828,
+      "epss_pct": 0.76472,
+      "cwe": "CWE-78",
+      "published": "2026-07-14T13:19:08.447",
       "kev": {
         "in_kev": false
       },
@@ -2431,17 +2458,17 @@
       "rank": 47
     },
     {
-      "cve_id": "CVE-2026-62643",
-      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in …",
+      "cve_id": "CVE-2026-59836",
+      "title": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 …",
       "vendor": null,
       "product": null,
-      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts. NOTE: this issue exists because of insufficient fixes for CVE-2026-35540 and CVE-2026-48843.",
-      "cvss": 10,
+      "description": "A improper certificate validation vulnerability in Fortinet FortiClientEMS 7.4.3 through 7.4.5, FortiClientEMS 7.4.0 through 7.4.1, FortiClientEMS 7.2 all versions may allow attacker to information disclosure via <insert attack vector here>",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00224,
-      "epss_pct": 0.12963,
-      "cwe": "CWE-918",
-      "published": "2026-07-14T16:17:04.670",
+      "epss": 0.00126,
+      "epss_pct": 0.02638,
+      "cwe": "CWE-295",
+      "published": "2026-07-14T16:17:02.727",
       "kev": {
         "in_kev": false
       },
@@ -2466,17 +2493,17 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-62644",
-      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, the password plugin of the Roundcube Webmail was subject t…",
+      "cve_id": "CVE-2026-62643",
+      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in …",
       "vendor": null,
       "product": null,
-      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, the password plugin of the Roundcube Webmail was subject to username spoofing via session data, which could lead to account takeover.",
-      "cvss": 9.8,
+      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts. NOTE: this issue exists because of insufficient fixes for CVE-2026-35540 and CVE-2026-48843.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00239,
-      "epss_pct": 0.14938,
-      "cwe": "CWE-290",
-      "published": "2026-07-14T16:17:04.810",
+      "epss": 0.00224,
+      "epss_pct": 0.13067,
+      "cwe": "CWE-918",
+      "published": "2026-07-14T16:17:04.670",
       "kev": {
         "in_kev": false
       },
@@ -2501,17 +2528,17 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2026-49164",
-      "title": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a…",
+      "cve_id": "CVE-2026-62644",
+      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, the password plugin of the Roundcube Webmail was subject t…",
       "vendor": null,
       "product": null,
-      "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
+      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, the password plugin of the Roundcube Webmail was subject to username spoofing via session data, which could lead to account takeover.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00649,
-      "epss_pct": 0.46996,
-      "cwe": "CWE-122",
-      "published": "2026-07-14T17:16:51.033",
+      "epss": 0.00239,
+      "epss_pct": 0.15039,
+      "cwe": "CWE-290",
+      "published": "2026-07-14T16:17:04.810",
       "kev": {
         "in_kev": false
       },
@@ -2536,17 +2563,17 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2026-50694",
-      "title": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code ove…",
+      "cve_id": "CVE-2026-49164",
+      "title": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code over a network.",
+      "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00649,
-      "epss_pct": 0.46996,
-      "cwe": "CWE-416",
-      "published": "2026-07-14T17:17:02.327",
+      "epss_pct": 0.47058,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T17:16:51.033",
       "kev": {
         "in_kev": false
       },
@@ -2571,17 +2598,17 @@
       "rank": 51
     },
     {
-      "cve_id": "CVE-2026-54433",
-      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted p…",
+      "cve_id": "CVE-2026-49181",
+      "title": "Integer underflow (wrap or wraparound) in Windows DHCP Client allows an unauthorized attacker to elevate privileges o…",
       "vendor": null,
       "product": null,
-      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted plain-text email message. The attacker-controlled JavaScript executes within the victim's authenticated session simply by opening or previewing the message (zero-click).",
-      "cvss": 10,
+      "description": "Integer underflow (wrap or wraparound) in Windows DHCP Client allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00311,
-      "epss_pct": 0.23188,
-      "cwe": "CWE-79",
-      "published": "2026-07-14T17:17:05.530",
+      "epss": 0.00755,
+      "epss_pct": 0.51037,
+      "cwe": "CWE-191",
+      "published": "2026-07-14T17:16:53.277",
       "kev": {
         "in_kev": false
       },
@@ -2606,17 +2633,17 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-57089",
-      "title": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute…",
+      "cve_id": "CVE-2026-50694",
+      "title": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code ove…",
       "vendor": null,
       "product": null,
-      "description": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute code over a network.",
+      "description": "Use after free in Windows Secure Socket Tunneling Protocol (SSTP) allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0061,
-      "epss_pct": 0.45208,
+      "epss": 0.00649,
+      "epss_pct": 0.47058,
       "cwe": "CWE-416",
-      "published": "2026-07-14T18:18:33.237",
+      "published": "2026-07-14T17:17:02.327",
       "kev": {
         "in_kev": false
       },
@@ -2641,17 +2668,17 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-57090",
-      "title": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over…",
+      "cve_id": "CVE-2026-54433",
+      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted p…",
       "vendor": null,
       "product": null,
-      "description": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
+      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted plain-text email message. The attacker-controlled JavaScript executes within the victim's authenticated session simply by opening or previewing the message (zero-click).",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00812,
-      "epss_pct": 0.52901,
-      "cwe": "CWE-122",
-      "published": "2026-07-14T18:18:33.430",
+      "epss": 0.00311,
+      "epss_pct": 0.23279,
+      "cwe": "CWE-79",
+      "published": "2026-07-14T17:17:05.530",
       "kev": {
         "in_kev": false
       },
@@ -2676,17 +2703,17 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-58594",
-      "title": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
+      "cve_id": "CVE-2026-57089",
+      "title": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute…",
       "vendor": null,
       "product": null,
-      "description": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
+      "description": "Use after free in Windows SMB Server Network Transport Driver (srvnet.sys) allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00767,
-      "epss_pct": 0.51432,
-      "cwe": "CWE-190",
-      "published": "2026-07-14T18:18:43.067",
+      "epss": 0.0061,
+      "epss_pct": 0.45268,
+      "cwe": "CWE-416",
+      "published": "2026-07-14T18:18:33.237",
       "kev": {
         "in_kev": false
       },
@@ -2711,17 +2738,17 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-58617",
-      "title": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a…",
+      "cve_id": "CVE-2026-57090",
+      "title": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over…",
       "vendor": null,
       "product": null,
-      "description": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a network.",
+      "description": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00721,
-      "epss_pct": 0.49833,
-      "cwe": "CWE-284",
-      "published": "2026-07-14T18:18:44.260",
+      "epss": 0.00812,
+      "epss_pct": 0.5296,
+      "cwe": "CWE-122",
+      "published": "2026-07-14T18:18:33.430",
       "kev": {
         "in_kev": false
       },
@@ -2746,17 +2773,17 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-47767",
-      "title": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components.",
+      "cve_id": "CVE-2026-58594",
+      "title": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
       "vendor": null,
       "product": null,
-      "description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. From 5.4.46 until 5.4.52, 6.4.40, 7.4.12, and 8.0.12, the CVE-2024-50340 fix gated runtime argv parsing on empty($_GET), but parse_str() and the web SAPI can disagree, allowing a crafted query string to leave $_GET empty while $_SERVER['argv'] still carries attacker-controlled --env or --no-debug flags that change APP_ENV or APP_DEBUG. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+      "description": "Integer overflow or wraparound in Windows RDP allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00386,
-      "epss_pct": 0.30875,
-      "cwe": "CWE-436",
-      "published": "2026-07-14T19:17:09.237",
+      "epss": 0.00767,
+      "epss_pct": 0.51489,
+      "cwe": "CWE-190",
+      "published": "2026-07-14T18:18:43.067",
       "kev": {
         "in_kev": false
       },
@@ -2781,17 +2808,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-48358",
-      "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
+      "cve_id": "CVE-2026-58617",
+      "title": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a…",
       "vendor": null,
       "product": null,
-      "description": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
+      "description": "Improper access control in Microsoft 365 Copilot for iOS allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00912,
-      "epss_pct": 0.56044,
-      "cwe": "CWE-116",
-      "published": "2026-07-14T20:17:08.653",
+      "epss": 0.00721,
+      "epss_pct": 0.4989,
+      "cwe": "CWE-284",
+      "published": "2026-07-14T18:18:44.260",
       "kev": {
         "in_kev": false
       },
@@ -2816,17 +2843,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-24227",
-      "title": "NVIDIA TensorRT for contains a vulnerability where a user might cause a deserialization of untrusted data.",
+      "cve_id": "CVE-2026-47767",
+      "title": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components.",
       "vendor": null,
       "product": null,
-      "description": "NVIDIA TensorRT for contains a vulnerability where a user might cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution.",
+      "description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. From 5.4.46 until 5.4.52, 6.4.40, 7.4.12, and 8.0.12, the CVE-2024-50340 fix gated runtime argv parsing on empty($_GET), but parse_str() and the web SAPI can disagree, allowing a crafted query string to leave $_GET empty while $_SERVER['argv'] still carries attacker-controlled --env or --no-debug flags that change APP_ENV or APP_DEBUG. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00696,
-      "epss_pct": 0.48912,
-      "cwe": "CWE-502",
-      "published": "2026-07-14T21:16:43.983",
+      "epss": 0.00386,
+      "epss_pct": 0.30954,
+      "cwe": "CWE-436",
+      "published": "2026-07-14T19:17:09.237",
       "kev": {
         "in_kev": false
       },
@@ -2851,17 +2878,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-48319",
-      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
+      "cve_id": "CVE-2026-48358",
+      "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
       "vendor": null,
       "product": null,
-      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.9,
+      "description": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00884,
-      "epss_pct": 0.55177,
-      "cwe": "CWE-22",
-      "published": "2026-07-14T21:16:58.600",
+      "epss": 0.00912,
+      "epss_pct": 0.56092,
+      "cwe": "CWE-116",
+      "published": "2026-07-14T20:17:08.653",
       "kev": {
         "in_kev": false
       },
