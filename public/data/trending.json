@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-21T14:25:54.700Z",
+  "generated_at": "2026-07-21T16:45:16.720Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 36,
-    "kev_total": 1647,
+    "kev_count": 40,
+    "kev_total": 1651,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,27 +14,27 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1647 entries"
+      "detail": "1651 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1327 recent"
+      "detail": "1335 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1353 scored"
+      "detail": "1340 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3716 mapped"
+      "detail": "3719 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,170 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.04026,
+      "epss_pct": 0.89474,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 87,
+      "rising": 100,
+      "repos": {
+        "count": 30,
+        "stars": 629,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 454
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 56
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 35
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Critical wp2shell WordPress flaws exploited to install webshells",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+          "date": "2026-07-21T16:41:50.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+          "date": "2026-07-21T08:59:30.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.08946,
+      "epss_pct": 0.94679,
+      "cwe": "CWE-436",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 87,
+      "rising": 100,
+      "repos": {
+        "count": 55,
+        "stars": 675,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 454
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 56
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 35
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Critical wp2shell WordPress flaws exploited to install webshells",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+          "date": "2026-07-21T16:41:50.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+          "date": "2026-07-21T08:59:30.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 2
+    },
     {
       "cve_id": "CVE-2026-0257",
       "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
@@ -79,12 +243,12 @@
         "in_kev": true,
         "date_added": "2026-05-29",
         "due_date": "2026-06-01",
-        "ransomware": false
+        "ransomware": true
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 68,
-      "rising": 40,
+      "hype": 76,
+      "rising": 39,
       "repos": {
         "count": 8,
         "stars": 36,
@@ -118,6 +282,7 @@
       "tags": [
         "kev",
         "actively-exploited",
+        "ransomware",
         "in-the-news",
         "high-epss",
         "poc-available"
@@ -132,7 +297,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -191,7 +356,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -244,7 +409,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -304,7 +469,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-50751",
@@ -364,7 +529,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -423,7 +588,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-10520",
@@ -482,7 +647,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -545,7 +710,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -604,7 +769,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -666,7 +831,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-0770",
+      "title": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
+      "vendor": "Langflow",
+      "product": "Langflow",
+      "description": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.10371,
+      "epss_pct": 0.95225,
+      "cwe": "CWE-829",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 34,
+      "repos": {
+        "count": 6,
+        "stars": 7,
+        "top": [
+          {
+            "full_name": "affix/CVE-2026-0770-PoC",
+            "html_url": "https://github.com/affix/CVE-2026-0770-PoC",
+            "stars": 5
+          },
+          {
+            "full_name": "0xgh057r3c0n/CVE-2026-0770",
+            "html_url": "https://github.com/0xgh057r3c0n/CVE-2026-0770",
+            "stars": 1
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-0770",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-0770",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -719,7 +942,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -741,7 +964,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 48,
+      "hype": 47,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -773,7 +996,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -831,7 +1054,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-42271",
@@ -885,7 +1108,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -943,7 +1166,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -1001,7 +1224,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -1043,7 +1266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1101,7 +1324,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2021-27137",
+      "title": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "DD-WRT",
+      "product": "DD-WRT",
+      "description": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.05447,
+      "epss_pct": 0.91861,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -1149,7 +1413,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-20245",
@@ -1207,7 +1471,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1260,7 +1524,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 25
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1301,7 +1565,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1359,7 +1623,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -1412,7 +1676,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-11645",
@@ -1470,7 +1734,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 29
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1511,7 +1775,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1552,7 +1816,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1600,7 +1864,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1658,7 +1922,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1711,7 +1975,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-7473",
@@ -1759,7 +2023,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1807,7 +2071,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1855,74 +2119,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-63030",
-      "title": "CVE-2026-63030",
-      "vendor": null,
-      "product": null,
-      "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.08946,
-      "epss_pct": 0.94679,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 35,
-      "rising": 68,
-      "repos": {
-        "count": 55,
-        "stars": 665,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 447
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 53
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 35
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-          "date": "2026-07-21T08:59:30.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 34
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -1963,7 +2160,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 38
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -2004,7 +2201,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -2045,74 +2242,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "CVE-2026-60137",
-      "vendor": null,
-      "product": null,
-      "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.04026,
-      "epss_pct": 0.89474,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 34,
-      "rising": 68,
-      "repos": {
-        "count": 30,
-        "stars": 619,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 447
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 53
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 35
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-          "date": "2026-07-21T08:59:30.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-6875",
@@ -2131,16 +2261,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 22,
-      "rising": 72,
+      "hype": 23,
+      "rising": 70,
       "repos": {
         "count": 1,
-        "stars": 0,
+        "stars": 1,
         "top": [
           {
             "full_name": "HORKimhab/CVE-2026-6875",
             "html_url": "https://github.com/HORKimhab/CVE-2026-6875",
-            "stars": 0
+            "stars": 1
           }
         ]
       },
@@ -2169,7 +2299,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2204,7 +2334,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2247,7 +2377,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2282,7 +2412,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2325,7 +2455,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-63766",
@@ -2360,7 +2490,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-64625",
@@ -2395,76 +2525,6 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-13439",
-      "title": "The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Ad…",
-      "vendor": null,
-      "product": null,
-      "description": "The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password recovery flow using the publicly-visible session identifier ('sid') as the password reset token stored in wp_emsfb_temp_links, combined with a publicly-accessible nonce refresh endpoint (Emsfb/v1/nonce/refresh) that issues valid WordPress REST nonces to unauthenticated visitors. This makes it possible for unauthenticated attackers to reset the password of any WordPress user — including administrators — by scraping the public sid from a published login form page, submitting a recovery request for any known user email via Emsfb/v1/forms/message/add, and then calling Emsfb/v1/forms/recovery/efb_set_password with the known sid to set an arbitrary new password and gain full administrator access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00401,
-      "epss_pct": 0.32529,
-      "cwe": "CWE-269",
-      "published": "2026-07-21T06:16:28.060",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-65007",
-      "title": "The Grav api plugin (grav-plugin-api) before 1.0.8 fails to properly authorize API key generation and revocation: the…",
-      "vendor": null,
-      "product": null,
-      "description": "The Grav api plugin (grav-plugin-api) before 1.0.8 fails to properly authorize API key generation and revocation: the plugin intercepts the apiKeyGenerate/apiKeyRevoke admin tasks before the account-management ACL runs and authorizes the caller on only the admin.login permission (the baseline permission held by every panel user). This allows any user with admin.login to mint a persistent API key bound to any account, and the forged key inherits the target account's API permissions. On installs where an API-enabled account holds broader permissions, this enables account impersonation and privilege escalation up to account takeover.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-07-21T12:19:00.910",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 47
     },
     {
@@ -2485,7 +2545,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2523,12 +2583,12 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 15,
+        "stars": 16,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Netscaler-CVE-2026-8451",
-            "stars": 11
+            "stars": 12
           },
           {
             "full_name": "derekpreston81/CVE_ADC_IOC_2026",
@@ -2739,41 +2799,6 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-57090",
-      "title": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over…",
-      "vendor": null,
-      "product": null,
-      "description": "Heap-based buffer overflow in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00812,
-      "epss_pct": 0.52987,
-      "cwe": "CWE-122",
-      "published": "2026-07-14T18:18:33.430",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
       "cve_id": "CVE-2026-48358",
       "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
       "vendor": null,
@@ -2806,42 +2831,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-24227",
-      "title": "NVIDIA TensorRT for contains a vulnerability where a user might cause a deserialization of untrusted data.",
-      "vendor": null,
-      "product": null,
-      "description": "NVIDIA TensorRT for contains a vulnerability where a user might cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00696,
-      "epss_pct": 0.48993,
-      "cwe": "CWE-502",
-      "published": "2026-07-14T21:16:43.983",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2876,7 +2866,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2911,7 +2901,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-48321",
@@ -2925,6 +2915,76 @@
       "epss_pct": 0.40595,
       "cwe": "CWE-863",
       "published": "2026-07-14T21:16:58.813",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-48322",
+      "title": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could resul…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00495,
+      "epss_pct": 0.3929,
+      "cwe": "CWE-94",
+      "published": "2026-07-14T21:16:58.920",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-48324",
+      "title": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vul…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00659,
+      "epss_pct": 0.47527,
+      "cwe": "CWE-89",
+      "published": "2026-07-14T21:16:59.023",
       "kev": {
         "in_kev": false
       },
