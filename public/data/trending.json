@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T16:45:16.720Z",
+  "generated_at": "2026-07-21T18:42:05.554Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1335 recent"
+      "detail": "1362 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1340 scored"
+      "detail": "1375 scored"
     },
     {
       "name": "BleepingComputer",
@@ -64,21 +64,21 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
       "vendor": "WordPress",
       "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.04026,
-      "epss_pct": 0.89474,
-      "cwe": "CWE-89",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.08946,
+      "epss_pct": 0.94679,
+      "cwe": "CWE-436",
       "published": null,
       "kev": {
         "in_kev": true,
         "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
+        "due_date": "2026-07-24",
         "ransomware": false
       },
       "zero_day": false,
@@ -86,18 +86,18 @@
       "hype": 87,
       "rising": 100,
       "repos": {
-        "count": 30,
-        "stars": 629,
+        "count": 58,
+        "stars": 681,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 454
+            "stars": 455
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 56
+            "stars": 57
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -146,40 +146,40 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
       "vendor": "WordPress",
       "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.08946,
-      "epss_pct": 0.94679,
-      "cwe": "CWE-436",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.04026,
+      "epss_pct": 0.89474,
+      "cwe": "CWE-89",
       "published": null,
       "kev": {
         "in_kev": true,
         "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
+        "due_date": "2026-08-04",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 87,
+      "hype": 86,
       "rising": 100,
       "repos": {
-        "count": 55,
-        "stars": 675,
+        "count": 33,
+        "stars": 634,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 454
+            "stars": 455
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 56
+            "stars": 57
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -248,7 +248,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 76,
-      "rising": 39,
+      "rising": 37,
       "repos": {
         "count": 8,
         "stars": 36,
@@ -2261,16 +2261,21 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
-      "rising": 70,
+      "hype": 24,
+      "rising": 68,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 1,
         "top": [
           {
             "full_name": "HORKimhab/CVE-2026-6875",
             "html_url": "https://github.com/HORKimhab/CVE-2026-6875",
             "stars": 1
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-6875-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-6875-PoC-Exploit",
+            "stars": 0
           }
         ]
       },
@@ -2458,41 +2463,6 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-63766",
-      "title": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise…",
-      "vendor": null,
-      "product": null,
-      "description": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into shell commands executed with shell=True. Attackers can inject shell metacharacters through path parameters to execute arbitrary OS commands as the server process user without authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0139,
-      "epss_pct": 0.69323,
-      "cwe": "CWE-78",
-      "published": "2026-07-20T20:16:46.170",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-64625",
       "title": "AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in doubl…",
       "vendor": null,
@@ -2525,7 +2495,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-65008",
@@ -2560,7 +2530,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2613,7 +2583,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2656,7 +2626,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-62392",
@@ -2691,7 +2661,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-62643",
@@ -2726,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-54433",
@@ -2761,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-50330",
@@ -2796,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-48358",
@@ -2831,7 +2801,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2866,7 +2836,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2901,7 +2871,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-48321",
@@ -2936,7 +2906,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-48322",
@@ -2971,7 +2941,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-48324",
@@ -3003,6 +2973,41 @@
       "timeline": [
         {
           "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-54052",
+      "title": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations.",
+      "vendor": null,
+      "product": null,
+      "description": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations. Prior to 2.56.1, in HTTP mode with multi-tenancy enabled through ENABLE_MULTI_TENANT=true, n8n-mcp's local workflow version history backups were not isolated per tenant, allowing an authenticated tenant to read workflow version snapshots belonging to other tenants and delete or destroy other tenants' stored backups, including full node definitions, credential references, and authorization headers. This issue is fixed in version 2.56.1.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00389,
+      "epss_pct": 0.31271,
+      "cwe": "CWE-639",
+      "published": "2026-07-15T21:16:54.797",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-15",
           "label": "Published to NVD"
         }
       ],
