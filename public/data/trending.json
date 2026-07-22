@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T14:26:33.572Z",
+  "generated_at": "2026-07-22T16:50:23.464Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1637 recent"
+      "detail": "1607 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1675 scored"
+      "detail": "1637 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3729 mapped"
+      "detail": "3734 mapped"
     },
     {
       "name": "Reddit",
@@ -84,20 +84,20 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 89,
-      "rising": 96,
+      "rising": 91,
       "repos": {
-        "count": 59,
-        "stars": 720,
+        "count": 62,
+        "stars": 728,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 480
+            "stars": 485
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 58
+            "stars": 59
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -166,20 +166,20 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 87,
-      "rising": 96,
+      "rising": 91,
       "repos": {
-        "count": 34,
-        "stars": 673,
+        "count": 36,
+        "stars": 681,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 480
+            "stars": 485
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 58
+            "stars": 59
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -248,7 +248,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 76,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 8,
         "stars": 36,
@@ -670,7 +670,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 6,
         "stars": 7,
@@ -1348,7 +1348,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2140,7 +2140,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 35,
-      "rising": 95,
+      "rising": 91,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2387,17 +2387,17 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-65008",
-      "title": "Grav 2.0.4 (fixed in 2.0.7) contains a remote code execution vulnerability in Blueprint::dynamicData() (system/src/Gr…",
+      "cve_id": "CVE-2016-20096",
+      "title": "Linknat VOS3000 and VOS2009 through version 2.1.2.0 contain an unauthenticated SQL injection vulnerability that allow…",
       "vendor": null,
       "product": null,
-      "description": "Grav 2.0.4 (fixed in 2.0.7) contains a remote code execution vulnerability in Blueprint::dynamicData() (system/src/Grav/Common/Data/Blueprint.php), which passes a Class::method callable string and its arguments directly to call_user_func_array() without any allowlist. Because the form plugin routes page frontmatter through this path, an authenticated account with the admin.pages (or api.pages.write) permission can plant a malicious callable directive in a page. The command then executes as the web-server user whenever anyone — including an unauthenticated visitor — accesses the page.",
+      "description": "Linknat VOS3000 and VOS2009 through version 2.1.2.0 contain an unauthenticated SQL injection vulnerability that allows remote attackers to execute arbitrary SQL commands by manipulating the name parameter in a POST request to the login endpoint. Attackers can inject malicious SQL through the login form and retrieve injected query results from a subsequent session request, enabling extraction of plaintext credentials and other database content with DBA-level privileges.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00648,
-      "epss_pct": 0.47244,
-      "cwe": "CWE-94",
-      "published": "2026-07-21T12:19:01.183",
+      "epss": 0.00382,
+      "epss_pct": 0.30735,
+      "cwe": "CWE-89",
+      "published": "2026-07-21T19:17:07.357",
       "kev": {
         "in_kev": false
       },
@@ -2420,41 +2420,6 @@
         }
       ],
       "rank": 44
-    },
-    {
-      "cve_id": "CVE-2016-20096",
-      "title": "Linknat VOS3000 and VOS2009 through version 2.1.2.0 contain an unauthenticated SQL injection vulnerability that allow…",
-      "vendor": null,
-      "product": null,
-      "description": "Linknat VOS3000 and VOS2009 through version 2.1.2.0 contain an unauthenticated SQL injection vulnerability that allows remote attackers to execute arbitrary SQL commands by manipulating the name parameter in a POST request to the login endpoint. Attackers can inject malicious SQL through the login form and retrieve injected query results from a subsequent session request, enabling extraction of plaintext credentials and other database content with DBA-level privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00382,
-      "epss_pct": 0.30735,
-      "cwe": "CWE-89",
-      "published": "2026-07-21T19:17:07.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
     },
     {
       "cve_id": "CVE-2026-35290",
@@ -2489,7 +2454,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-46876",
@@ -2524,7 +2489,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-46924",
@@ -2559,7 +2524,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-46982",
@@ -2594,7 +2559,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-46983",
@@ -2629,7 +2594,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-46994",
@@ -2664,7 +2629,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-47036",
@@ -2699,7 +2664,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-47056",
@@ -2734,7 +2699,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-60173",
@@ -2769,7 +2734,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-60197",
@@ -2804,7 +2769,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60198",
@@ -2839,7 +2804,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-60199",
@@ -2874,7 +2839,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-60200",
@@ -2909,7 +2874,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-60202",
@@ -2944,7 +2909,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-60204",
@@ -2958,6 +2923,41 @@
       "epss_pct": 0.4113,
       "cwe": null,
       "published": "2026-07-21T22:17:21.730",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-60205",
+      "title": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00522,
+      "epss_pct": 0.41132,
+      "cwe": null,
+      "published": "2026-07-21T22:17:21.847",
       "kev": {
         "in_kev": false
       },
