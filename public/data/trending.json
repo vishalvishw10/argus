@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-22T20:32:52.682Z",
+  "generated_at": "2026-07-22T22:17:33.551Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
     "kev_count": 42,
     "kev_total": 1653,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1516 recent"
+      "detail": "1503 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1553 scored"
+      "detail": "1540 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "3 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3734 mapped"
+      "detail": "3735 mapped"
     },
     {
       "name": "Reddit",
@@ -83,11 +83,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 89,
-      "rising": 84,
+      "hype": 78,
+      "rising": 57,
       "repos": {
         "count": 63,
-        "stars": 736,
+        "stars": 738,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -102,17 +102,11 @@
           {
             "full_name": "dinosn/wp2shell-lab",
             "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 36
+            "stars": 37
           }
         ]
       },
       "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Critical wp2shell WordPress flaws exploited to install webshells",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
-          "date": "2026-07-21T16:41:50.000Z"
-        },
         {
           "source": "The Hacker News",
           "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
@@ -140,92 +134,10 @@
         },
         {
           "date": "2026-07-21",
-          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
+          "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
       "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.20395,
-      "epss_pct": 0.97219,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 86,
-      "rising": 84,
-      "repos": {
-        "count": 37,
-        "stars": 689,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 488
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 59
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 36
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Critical wp2shell WordPress flaws exploited to install webshells",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
-          "date": "2026-07-21T16:41:50.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-          "date": "2026-07-21T08:59:30.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 2
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -297,6 +209,82 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.20395,
+      "epss_pct": 0.97219,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 76,
+      "rising": 57,
+      "repos": {
+        "count": 37,
+        "stars": 691,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 488
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 59
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 37
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+          "date": "2026-07-21T08:59:30.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
       "rank": 3
     },
     {
@@ -320,7 +308,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 75,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 8,
         "stars": 36,
