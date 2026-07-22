@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-22T09:40:47.780Z",
+  "generated_at": "2026-07-22T12:05:48.027Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 40,
     "kev_total": 1651,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1646 recent"
+      "detail": "1651 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "924 scored"
+      "detail": "929 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3726 mapped"
+      "detail": "3727 mapped"
     },
     {
       "name": "Reddit",
@@ -64,35 +64,35 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
       "vendor": "WordPress",
       "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.08946,
-      "epss_pct": 0.94679,
-      "cwe": "CWE-436",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.04026,
+      "epss_pct": 0.89474,
+      "cwe": "CWE-89",
       "published": null,
       "kev": {
         "in_kev": true,
         "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
+        "due_date": "2026-08-04",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 86,
+      "hype": 85,
       "rising": 100,
       "repos": {
-        "count": 58,
-        "stars": 706,
+        "count": 33,
+        "stars": 668,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 471
+            "stars": 478
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -102,7 +102,7 @@
           {
             "full_name": "dinosn/wp2shell-lab",
             "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 35
+            "stars": 36
           }
         ]
       },
@@ -146,21 +146,21 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
       "vendor": "WordPress",
       "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.04026,
-      "epss_pct": 0.89474,
-      "cwe": "CWE-89",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.08946,
+      "epss_pct": 0.94679,
+      "cwe": "CWE-436",
       "published": null,
       "kev": {
         "in_kev": true,
         "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
+        "due_date": "2026-07-24",
         "ransomware": false
       },
       "zero_day": false,
@@ -168,13 +168,13 @@
       "hype": 85,
       "rising": 100,
       "repos": {
-        "count": 33,
-        "stars": 659,
+        "count": 58,
+        "stars": 715,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 471
+            "stars": 478
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -184,7 +184,7 @@
           {
             "full_name": "dinosn/wp2shell-lab",
             "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 35
+            "stars": 36
           }
         ]
       },
@@ -248,7 +248,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 76,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 8,
         "stars": 36,
@@ -854,7 +854,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 6,
         "stars": 7,
@@ -1347,7 +1347,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2026,6 +2026,69 @@
       "rank": 35
     },
     {
+      "cve_id": "CVE-2026-50522",
+      "title": "CVE-2026-50522",
+      "vendor": null,
+      "product": null,
+      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.20346,
+      "epss_pct": 0.97203,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 36,
+      "rising": 99,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-50522",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Fourth SharePoint Vulnerability Exploited in Past Month&#8217;s Wave of Attacks",
+          "url": "https://www.securityweek.com/fourth-sharepoint-vulnerability-exploited-in-past-months-wave-of-attacks/",
+          "date": "2026-07-22T11:29:16.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Critical SharePoint RCE flaw exploited to steal machine keys",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
+          "date": "2026-07-21T20:06:55.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+          "date": "2026-07-21T14:57:51.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 36
+    },
+    {
       "cve_id": "CVE-2026-55255",
       "title": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
       "vendor": "Langflow",
@@ -2071,7 +2134,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -2119,7 +2182,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -2160,7 +2223,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -2201,7 +2264,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -2240,63 +2303,6 @@
         {
           "date": "2026-06-23",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 40
-    },
-    {
-      "cve_id": "CVE-2026-50522",
-      "title": "CVE-2026-50522",
-      "vendor": null,
-      "product": null,
-      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.20346,
-      "epss_pct": 0.97203,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 25,
-      "rising": 62,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-50522",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Critical SharePoint RCE flaw exploited to steal machine keys",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
-          "date": "2026-07-21T20:06:55.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
-          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
-          "date": "2026-07-21T14:57:51.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
       "rank": 41
@@ -2380,41 +2386,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-64625",
-      "title": "AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in doubl…",
-      "vendor": null,
-      "product": null,
-      "description": "AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in double-quoted sh -c, allowing command substitution via $() and backticks. Attackers can inject arbitrary OS commands through the Live plugin on_publish.php endpoint despite escapeshellarg() protection.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00351,
-      "epss_pct": 0.27494,
-      "cwe": "CWE-78",
-      "published": "2026-07-20T22:17:18.740",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-65008",
       "title": "Grav 2.0.4 (fixed in 2.0.7) contains a remote code execution vulnerability in Blueprint::dynamicData() (system/src/Gr…",
       "vendor": null,
@@ -2447,7 +2418,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2016-20096",
@@ -2467,7 +2438,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2482,7 +2453,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-35290",
@@ -2517,7 +2488,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-46876",
@@ -2552,7 +2523,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-46924",
@@ -2587,7 +2558,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-46982",
@@ -2622,7 +2593,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-46983",
@@ -2657,7 +2628,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-46994",
@@ -2692,7 +2663,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-47036",
@@ -2727,7 +2698,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-47056",
@@ -2762,7 +2733,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-60173",
@@ -2797,7 +2768,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60197",
@@ -2832,7 +2803,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-60198",
@@ -2867,7 +2838,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-60199",
@@ -2902,7 +2873,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-60200",
@@ -2937,7 +2908,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-60202",
@@ -2951,6 +2922,41 @@
       "epss_pct": null,
       "cwe": null,
       "published": "2026-07-21T22:17:21.520",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-60204",
+      "title": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": "2026-07-21T22:17:21.730",
       "kev": {
         "in_kev": false
       },
