@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T21:30:45.111Z",
+  "generated_at": "2026-07-24T23:18:20.258Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1258 recent"
+      "detail": "1245 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1282 scored"
+      "detail": "1265 scored"
     },
     {
       "name": "BleepingComputer",
@@ -84,15 +84,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 83,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 65,
-        "stars": 778,
+        "stars": 782,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 511
+            "stars": 513
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -161,15 +161,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 80,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 39,
-        "stars": 731,
+        "stars": 734,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 511
+            "stars": 513
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -609,7 +609,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -850,7 +850,7 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 30,
+        "stars": 32,
         "top": [
           {
             "full_name": "remmons-r7/rapid7-CVE-2026-15409",
@@ -860,7 +860,7 @@
           {
             "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
             "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
-            "stars": 3
+            "stars": 5
           },
           {
             "full_name": "0xBlackash/CVE-2026-15409",
@@ -965,7 +965,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 7,
         "stars": 7,
@@ -1083,7 +1083,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 53,
-      "rising": 35,
+      "rising": 34,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1401,7 +1401,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2313,76 +2313,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-15981",
-      "title": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to…",
-      "vendor": null,
-      "product": null,
-      "description": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.4. This is due to the mo_saml_validate_signature() function performing a loose boolean check on the raw tri-state integer returned by PHP's openssl_verify(), causing an error return value of -1 to be evaluated as truthy and therefore treated as a successful signature verification. This makes it possible for unauthenticated attackers to log in as any existing WordPress user, including administrators, by submitting a crafted SAMLResponse containing an attacker-controlled NameID and a deliberately malformed signature value that triggers an OpenSSL processing error — bypassing verification entirely and resulting in wp_set_auth_cookie() being called for the targeted account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00547,
-      "epss_pct": 0.4252,
-      "cwe": "CWE-287",
-      "published": "2026-07-23T21:17:03.220",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
-      "cve_id": "CVE-2025-71389",
-      "title": "Cal.com (calcom/cal.diy) before 5.9.9 is vulnerable to unauthenticated remote code execution because it bundles a ver…",
-      "vendor": null,
-      "product": null,
-      "description": "Cal.com (calcom/cal.diy) before 5.9.9 is vulnerable to unauthenticated remote code execution because it bundles a version of Next.js whose React Server Components (RSC) request handling deserializes attacker-controlled input. A remote attacker can send a crafted RSC request to the server and cause arbitrary code to be executed during server-side processing, without authentication or user interaction. The flaw derives from the upstream Next.js vulnerability CVE-2025-55182 and is resolved in 5.9.9 by updating the affected dependency.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00928,
-      "epss_pct": 0.56819,
-      "cwe": "CWE-94",
-      "published": "2026-07-23T22:16:51.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
       "cve_id": "CVE-2026-63732",
       "title": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that auth…",
       "vendor": null,
@@ -2415,42 +2345,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-56191",
-      "title": "Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a netw…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a network.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00681,
-      "epss_pct": 0.4865,
-      "cwe": "CWE-287",
-      "published": "2026-07-24T01:17:36.417",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2485,7 +2380,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2528,7 +2423,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2563,7 +2458,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-60540",
@@ -2598,7 +2493,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-60541",
@@ -2633,7 +2528,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-60542",
@@ -2668,7 +2563,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-60547",
@@ -2703,7 +2598,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-60551",
@@ -2738,7 +2633,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-60552",
@@ -2773,7 +2668,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-60555",
@@ -2808,7 +2703,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60561",
@@ -2843,7 +2738,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-60562",
@@ -2878,7 +2773,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-60564",
@@ -2892,6 +2787,111 @@
       "epss_pct": 0.29054,
       "cwe": null,
       "published": "2026-07-21T22:17:56.570",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-60565",
+      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00447,
+      "epss_pct": 0.36503,
+      "cwe": null,
+      "published": "2026-07-21T22:17:56.697",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-60566",
+      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00358,
+      "epss_pct": 0.28284,
+      "cwe": null,
+      "published": "2026-07-21T22:17:56.813",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-60568",
+      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00328,
+      "epss_pct": 0.25199,
+      "cwe": null,
+      "published": "2026-07-21T22:17:57.033",
       "kev": {
         "in_kev": false
       },
