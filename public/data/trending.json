@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T03:58:57.203Z",
+  "generated_at": "2026-07-26T07:05:36.678Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1653,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1048 recent"
+      "detail": "1050 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
@@ -477,118 +477,6 @@
       "rank": 6
     },
     {
-      "cve_id": "CVE-2026-39808",
-      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.89691,
-      "epss_pct": 0.99774,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 35,
-        "top": [
-          {
-            "full_name": "ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
-            "html_url": "https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
-            "stars": 26
-          },
-          {
-            "full_name": "samu-delucas/CVE-2026-39808",
-            "html_url": "https://github.com/samu-delucas/CVE-2026-39808",
-            "stars": 8
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-39808",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-39808",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-56164",
-      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.18395,
-      "epss_pct": 0.96927,
-      "cwe": "CWE-306",
-      "published": "2026-07-14T17:17:09.907",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 15,
-        "top": [
-          {
-            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
-            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
-            "stars": 15
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
       "cve_id": "CVE-2026-50522",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
       "vendor": "Microsoft",
@@ -609,7 +497,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -649,6 +537,118 @@
         },
         {
           "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-39808",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.89691,
+      "epss_pct": 0.99774,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 35,
+        "top": [
+          {
+            "full_name": "ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
+            "html_url": "https://github.com/ynsmroztas/FortiSandbox-RCE-Exploit-CVE-2026-39808",
+            "stars": 26
+          },
+          {
+            "full_name": "samu-delucas/CVE-2026-39808",
+            "html_url": "https://github.com/samu-delucas/CVE-2026-39808",
+            "stars": 8
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-39808",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-39808",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-56164",
+      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.18395,
+      "epss_pct": 0.96927,
+      "cwe": "CWE-306",
+      "published": "2026-07-14T17:17:09.907",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 15,
+        "top": [
+          {
+            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
+            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
+            "stars": 15
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1029,7 +1029,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 51,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 0,
