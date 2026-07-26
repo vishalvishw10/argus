@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T07:05:36.678Z",
+  "generated_at": "2026-07-26T09:26:37.219Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1653,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1050 recent"
+      "detail": "1049 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1084 scored"
+      "detail": "1083 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
@@ -237,7 +237,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 75,
+      "hype": 74,
       "rising": 0,
       "repos": {
         "count": 8,
@@ -497,7 +497,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1029,7 +1029,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 51,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2023,23 +2023,23 @@
       "rank": 36
     },
     {
-      "cve_id": "CVE-2026-48284",
-      "title": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in…",
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in a…",
       "vendor": null,
       "product": null,
-      "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.9,
+      "description": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
+      "cvss": 9.3,
       "severity": "CRITICAL",
-      "epss": 0.28002,
-      "epss_pct": 0.979,
-      "cwe": "CWE-20",
-      "published": "2026-07-14T21:16:58.043",
+      "epss": 0.28225,
+      "epss_pct": 0.97913,
+      "cwe": "CWE-434",
+      "published": "2026-07-14T20:17:08.437",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
+      "hype": 19,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -2058,17 +2058,17 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in a…",
+      "cve_id": "CVE-2026-48284",
+      "title": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in…",
       "vendor": null,
       "product": null,
-      "description": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
-      "cvss": 9.3,
+      "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.28225,
-      "epss_pct": 0.97913,
-      "cwe": "CWE-434",
-      "published": "2026-07-14T20:17:08.437",
+      "epss": 0.28002,
+      "epss_pct": 0.979,
+      "cwe": "CWE-20",
+      "published": "2026-07-14T21:16:58.043",
       "kev": {
         "in_kev": false
       },
@@ -2181,41 +2181,6 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-63732",
-      "title": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that auth…",
-      "vendor": null,
-      "product": null,
-      "description": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that authenticates any fresh installation, a bypass of the LOCAL_ONLY network gate via a spoofed Host header, and unvalidated arguments passed to child_process.spawn() when registering MCP plugins. A remote, unauthenticated attacker can log in with the default credential, spoof the Host header to reach local-only routes, and register a malicious MCP plugin (e.g. node -e <payload>) to achieve arbitrary code execution on the host operating system when the plugin's SSE endpoint is triggered.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00744,
-      "epss_pct": 0.50969,
-      "cwe": "CWE-78",
-      "published": "2026-07-23T22:16:53.023",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 41
-    },
-    {
       "cve_id": "CVE-2026-66012",
       "title": "SiYuan before v3.7.2 contains a missing authorization vulnerability in the POST /mcp kernel endpoint, which is gated …",
       "vendor": null,
@@ -2233,7 +2198,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2248,7 +2213,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2291,7 +2256,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2334,7 +2299,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2354,7 +2319,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2369,7 +2334,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-60540",
@@ -2389,7 +2354,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2404,7 +2369,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-60541",
@@ -2424,7 +2389,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2439,7 +2404,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-60542",
@@ -2459,7 +2424,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2474,7 +2439,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-60547",
@@ -2494,7 +2459,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2509,7 +2474,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-60551",
@@ -2529,7 +2494,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2544,7 +2509,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-60552",
@@ -2564,7 +2529,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2579,7 +2544,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-60555",
@@ -2599,7 +2564,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2614,7 +2579,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-60561",
@@ -2634,7 +2599,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2649,7 +2614,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-60562",
@@ -2669,7 +2634,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2684,7 +2649,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-60564",
@@ -2704,7 +2669,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2719,7 +2684,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60565",
@@ -2739,7 +2704,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2754,7 +2719,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-60566",
@@ -2774,7 +2739,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2789,7 +2754,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-60568",
@@ -2809,7 +2774,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2824,7 +2789,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-60644",
@@ -2844,7 +2809,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2859,7 +2824,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-65700",
@@ -2873,6 +2838,41 @@
       "epss_pct": 0.66766,
       "cwe": "CWE-22",
       "published": "2026-07-23T18:17:01.327",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-63732",
+      "title": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that auth…",
+      "vendor": null,
+      "product": null,
+      "description": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that authenticates any fresh installation, a bypass of the LOCAL_ONLY network gate via a spoofed Host header, and unvalidated arguments passed to child_process.spawn() when registering MCP plugins. A remote, unauthenticated attacker can log in with the default credential, spoof the Host header to reach local-only routes, and register a malicious MCP plugin (e.g. node -e <payload>) to achieve arbitrary code execution on the host operating system when the plugin's SSE endpoint is triggered.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00744,
+      "epss_pct": 0.50969,
+      "cwe": "CWE-78",
+      "published": "2026-07-23T22:16:53.023",
       "kev": {
         "in_kev": false
       },
