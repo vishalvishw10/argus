@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-27T11:43:05.028Z",
+  "generated_at": "2026-07-27T15:16:44.310Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1653,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "990 recent"
+      "detail": "925 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1018 scored"
+      "detail": "957 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "10 mentions"
     },
     {
       "name": "Dark Reading",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3774 mapped"
+      "detail": "3776 mapped"
     },
     {
       "name": "Reddit",
@@ -63,160 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.98051,
-      "epss_pct": 0.99907,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 79,
-      "rising": 0,
-      "repos": {
-        "count": 67,
-        "stars": 815,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 528
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 69
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 41
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-          "date": "2026-07-21T08:59:30.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.77974,
-      "epss_pct": 0.99527,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 76,
-      "rising": 0,
-      "repos": {
-        "count": 41,
-        "stars": 765,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 528
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 69
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 41
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
-          "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-          "date": "2026-07-21T08:59:30.000Z"
-        },
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 2
-    },
     {
       "cve_id": "CVE-2026-0257",
       "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
@@ -285,6 +131,148 @@
         {
           "date": "2026-07-21",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.98051,
+      "epss_pct": 0.99907,
+      "cwe": "CWE-436",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 71,
+      "rising": 0,
+      "repos": {
+        "count": 67,
+        "stars": 817,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 530
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 69
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 41
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.77974,
+      "epss_pct": 0.99527,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 68,
+      "rising": 0,
+      "repos": {
+        "count": 41,
+        "stars": 767,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 530
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 69
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 41
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 3
@@ -361,7 +349,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.76066,
-      "epss_pct": 0.9948,
+      "epss_pct": 0.99481,
       "cwe": "CWE-434",
       "published": "2026-07-09T11:16:40.990",
       "kev": {
@@ -417,72 +405,6 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-50522",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.57101,
-      "epss_pct": 0.98974,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-50522",
-            "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-50522",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
-          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
-          "date": "2026-07-21T14:57:51.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-07-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-39808",
       "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
       "vendor": "Fortinet",
@@ -491,7 +413,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.89691,
-      "epss_pct": 0.99774,
+      "epss_pct": 0.99775,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -539,7 +461,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -598,7 +520,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -657,6 +579,72 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-50522",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.57101,
+      "epss_pct": 0.98974,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-22",
+        "due_date": "2026-07-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "4minx/CVE-2026-50522",
+            "html_url": "https://github.com/4minx/CVE-2026-50522",
+            "stars": 2
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-50522",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+          "date": "2026-07-21T14:57:51.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 9
     },
     {
@@ -668,7 +656,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18395,
-      "epss_pct": 0.9693,
+      "epss_pct": 0.96932,
       "cwe": "CWE-306",
       "published": "2026-07-14T17:17:09.907",
       "kev": {
@@ -957,7 +945,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.12685,
-      "epss_pct": 0.95844,
+      "epss_pct": 0.95845,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1071,7 +1059,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.58432,
-      "epss_pct": 0.99006,
+      "epss_pct": 0.99007,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1333,7 +1321,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02263,
-      "epss_pct": 0.81174,
+      "epss_pct": 0.81173,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1612,7 +1600,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.32953,
-      "epss_pct": 0.98187,
+      "epss_pct": 0.98186,
       "cwe": "CWE-352",
       "published": null,
       "kev": {
@@ -1701,7 +1689,7 @@
       "cvss": 8.5,
       "severity": "HIGH",
       "epss": 0.01439,
-      "epss_pct": 0.70411,
+      "epss_pct": 0.7041,
       "cwe": "CWE-61",
       "published": null,
       "kev": {
@@ -1759,7 +1747,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.06918,
-      "epss_pct": 0.93408,
+      "epss_pct": 0.93407,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1889,7 +1877,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00907,
-      "epss_pct": 0.56183,
+      "epss_pct": 0.56182,
       "cwe": "CWE-645",
       "published": null,
       "kev": {
@@ -1930,7 +1918,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02333,
-      "epss_pct": 0.81772,
+      "epss_pct": 0.8177,
       "cwe": "CWE-1220",
       "published": null,
       "kev": {
@@ -1961,6 +1949,62 @@
         }
       ],
       "rank": 35
+    },
+    {
+      "cve_id": "CVE-2026-16723",
+      "title": "CVE-2026-16723",
+      "vendor": null,
+      "product": null,
+      "description": "A remote code execution (RCE) vulnerability exists in fastjson 1.2.68 through 1.2.83. This vulnerability is exploitable under fastjson's stock default configuration — no AutoType enablement required, no classpath gadget required.",
+      "cvss": 9,
+      "severity": "CRITICAL",
+      "epss": 0.00413,
+      "epss_pct": 0.33875,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 20,
+      "rising": 12,
+      "repos": {
+        "count": 2,
+        "stars": 177,
+        "top": [
+          {
+            "full_name": "dinosn/fastjson-jsontype-rce-lab",
+            "html_url": "https://github.com/dinosn/fastjson-jsontype-rce-lab",
+            "stars": 176
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-16723",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-16723",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
+          "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
+          "date": "2026-07-25T12:52:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-25",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -1995,7 +2039,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2030,7 +2074,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2065,7 +2109,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-66012",
@@ -2076,7 +2120,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00437,
-      "epss_pct": 0.35824,
+      "epss_pct": 0.35802,
       "cwe": "CWE-862",
       "published": "2026-07-25T11:17:19.053",
       "kev": {
@@ -2085,7 +2129,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2108,7 +2152,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2119,7 +2163,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.15654,
-      "epss_pct": 0.96504,
+      "epss_pct": 0.96505,
       "cwe": "CWE-125",
       "published": "2026-06-30T13:19:33.347",
       "kev": {
@@ -2161,7 +2205,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-61511",
+      "title": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtim…",
+      "vendor": null,
+      "product": null,
+      "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote attackers to execute arbitrary PHP code by supplying crafted input through the pagenav[pagenumber] parameter. Attackers can exploit the insufficiently restrictive regex filter by using phpfuck-style encoding with permitted characters to inject and execute arbitrary PHP code via the unauthenticated ajax/render template route without any authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-95",
+      "published": "2026-07-27T14:16:59.177",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2172,7 +2251,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.00303,
-      "epss_pct": 0.22532,
+      "epss_pct": 0.22507,
       "cwe": "CWE-862",
       "published": "2026-07-13T08:16:21.713",
       "kev": {
@@ -2204,7 +2283,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2215,79 +2294,9 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00486,
-      "epss_pct": 0.39121,
+      "epss_pct": 0.39108,
       "cwe": null,
       "published": "2026-07-21T22:17:32.160",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-60541",
-      "title": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Enterprise Scheduling System).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Enterprise Scheduling System).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  Successful attacks of this vulnerability can result in takeover of Oracle SOA Suite. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39121,
-      "cwe": null,
-      "published": "2026-07-21T22:17:53.960",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-60542",
-      "title": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human W…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via T3, IIOP to compromise Oracle Business Process Management Suite.  While the vulnerability is in Oracle Business Process Management Suite, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Business Process Management Suite. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00447,
-      "epss_pct": 0.3657,
-      "cwe": null,
-      "published": "2026-07-21T22:17:54.060",
       "kev": {
         "in_kev": false
       },
@@ -2312,17 +2321,17 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-60547",
-      "title": "Vulnerability in the Oracle Managed File Transfer product of Oracle Fusion Middleware (component: MFT Runtime Server).",
+      "cve_id": "CVE-2026-60565",
+      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
       "vendor": null,
       "product": null,
-      "description": "Vulnerability in the Oracle Managed File Transfer product of Oracle Fusion Middleware (component: MFT Runtime Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Managed File Transfer.  While the vulnerability is in Oracle Managed File Transfer, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Managed File Transfer. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00447,
-      "epss_pct": 0.36529,
+      "epss": 0.00473,
+      "epss_pct": 0.3826,
       "cwe": null,
-      "published": "2026-07-21T22:17:54.613",
+      "published": "2026-07-21T22:17:56.697",
       "kev": {
         "in_kev": false
       },
@@ -2347,17 +2356,17 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-60551",
-      "title": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).",
+      "cve_id": "CVE-2026-60566",
+      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
       "vendor": null,
       "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Sites.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39121,
+      "epss": 0.00383,
+      "epss_pct": 0.309,
       "cwe": null,
-      "published": "2026-07-21T22:17:55.070",
+      "published": "2026-07-21T22:17:56.813",
       "kev": {
         "in_kev": false
       },
@@ -2382,216 +2391,6 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-60552",
-      "title": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Sites.  While the vulnerability is in Oracle WebCenter Sites, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00447,
-      "epss_pct": 0.36528,
-      "cwe": null,
-      "published": "2026-07-21T22:17:55.183",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-60555",
-      "title": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Sites product of Oracle Fusion Middleware (component: WebCenter Sites).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Sites.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Sites. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39121,
-      "cwe": null,
-      "published": "2026-07-21T22:17:55.517",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-60561",
-      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00473,
-      "epss_pct": 0.38274,
-      "cwe": null,
-      "published": "2026-07-21T22:17:56.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
-    },
-    {
-      "cve_id": "CVE-2026-60562",
-      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00354,
-      "epss_pct": 0.28054,
-      "cwe": null,
-      "published": "2026-07-21T22:17:56.350",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-60565",
-      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle WebCenter Portal.  While the vulnerability is in Oracle WebCenter Portal, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00473,
-      "epss_pct": 0.38274,
-      "cwe": null,
-      "published": "2026-07-21T22:17:56.697",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-60566",
-      "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Portal.  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Portal. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00383,
-      "epss_pct": 0.30927,
-      "cwe": null,
-      "published": "2026-07-21T22:17:56.813",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
-    },
-    {
       "cve_id": "CVE-2026-60568",
       "title": "Vulnerability in the Oracle WebCenter Portal product of Oracle Fusion Middleware (component: Runtime Tools).",
       "vendor": null,
@@ -2600,7 +2399,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00354,
-      "epss_pct": 0.28006,
+      "epss_pct": 0.27983,
       "cwe": null,
       "published": "2026-07-21T22:17:57.033",
       "kev": {
@@ -2624,42 +2423,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-60644",
-      "title": "Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Web Content Management).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Web Content Management).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Content.  While the vulnerability is in Oracle WebCenter Content, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Content. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00358,
-      "epss_pct": 0.28365,
-      "cwe": null,
-      "published": "2026-07-21T22:18:05.193",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-65700",
@@ -2694,7 +2458,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-63732",
@@ -2705,7 +2469,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00744,
-      "epss_pct": 0.50966,
+      "epss_pct": 0.50961,
       "cwe": "CWE-78",
       "published": "2026-07-23T22:16:53.023",
       "kev": {
@@ -2714,7 +2478,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2729,7 +2493,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2740,7 +2504,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00471,
-      "epss_pct": 0.38101,
+      "epss_pct": 0.38085,
       "cwe": "CWE-122",
       "published": "2026-07-14T17:17:06.830",
       "kev": {
@@ -2772,7 +2536,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2783,7 +2547,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00605,
-      "epss_pct": 0.45365,
+      "epss_pct": 0.45358,
       "cwe": "CWE-434",
       "published": "2026-07-08T14:17:19.977",
       "kev": {
@@ -2815,7 +2579,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-48358",
@@ -2826,7 +2590,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01501,
-      "epss_pct": 0.71615,
+      "epss_pct": 0.71612,
       "cwe": "CWE-116",
       "published": "2026-07-14T20:17:08.653",
       "kev": {
@@ -2850,7 +2614,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2861,7 +2625,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.08601,
-      "epss_pct": 0.94516,
+      "epss_pct": 0.94517,
       "cwe": "CWE-79",
       "published": "2026-07-14T21:16:58.703",
       "kev": {
@@ -2882,6 +2646,259 @@
       "timeline": [
         {
           "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-48321",
+      "title": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in privilege escalation.",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain unauthorized read and write access. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00819,
+      "epss_pct": 0.53453,
+      "cwe": "CWE-863",
+      "published": "2026-07-14T21:16:58.813",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-54052",
+      "title": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations.",
+      "vendor": null,
+      "product": null,
+      "description": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations. Prior to 2.56.1, in HTTP mode with multi-tenancy enabled through ENABLE_MULTI_TENANT=true, n8n-mcp's local workflow version history backups were not isolated per tenant, allowing an authenticated tenant to read workflow version snapshots belonging to other tenants and delete or destroy other tenants' stored backups, including full node definitions, credential references, and authorization headers. This issue is fixed in version 2.56.1.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00228,
+      "epss_pct": 0.1371,
+      "cwe": "CWE-639",
+      "published": "2026-07-15T21:16:54.797",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-15",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-56453",
+      "title": "HCL DFXAnalytics is affected by an Account Takeover via Response Manipulation vulnerability.",
+      "vendor": null,
+      "product": null,
+      "description": "HCL DFXAnalytics is affected by an Account Takeover via Response Manipulation vulnerability. A remote attacker can intercept and alter the contents of the server's HTTP responses before they reach the client application, allowing them to manipulate the authentication or authorization logic to bypass controls and gain unauthorized access to targeted user accounts.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00187,
+      "epss_pct": 0.08547,
+      "cwe": "CWE-294",
+      "published": "2026-07-16T14:16:54.497",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-16",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-44596",
+      "title": "Yamcs is a mission control framework.",
+      "vendor": null,
+      "product": null,
+      "description": "Yamcs is a mission control framework. Prior to 5.12.7, the authentication endpoint POST /auth/token in yamcs-core, handled by yamcs-core/src/main/java/org/yamcs/http/auth/AuthHandler.java, lacked any rate limiting, account lockout, or failed-attempt throttling, so an unauthenticated remote attacker could perform unlimited password-guessing attempts against any user account, significantly increasing the risk of successful brute-force attacks. This issue is fixed in versions 5.12.7 and 5.13.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01729,
+      "epss_pct": 0.75204,
+      "cwe": "CWE-307",
+      "published": "2026-07-16T17:16:55.880",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "ex-cal1bur/CVE-2026-44596",
+            "html_url": "https://github.com/ex-cal1bur/CVE-2026-44596",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-16",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-12692",
+      "title": "Unverified password change vulnerability in Vimesoft Inc.",
+      "vendor": null,
+      "product": null,
+      "description": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00346,
+      "epss_pct": 0.27128,
+      "cwe": "CWE-620",
+      "published": "2026-07-17T17:17:13.303",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-8297",
+      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisLab Laboratory Management System: from 1.4.03 through 08072026.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0026,
+      "epss_pct": 0.17643,
+      "cwe": "CWE-89",
+      "published": "2026-07-17T17:17:17.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-13448",
+      "title": "IBM Langflow OSS 1.0.0 through 1.10.1 Lanflow OSS contains an unauthenticated remote code execution vulnerability in …",
+      "vendor": null,
+      "product": null,
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.1 Lanflow OSS contains an unauthenticated remote code execution vulnerability in the public flow build endpoint ( /api/v1/build_public_tmp/{flow_id}/flow ). The vulnerability stems from an incomplete denylist in the validate_public_flow_no_code_execution() function that fails to block several code-execution agent components including OpenDsStarAgent, CodeActAgentSmolagents, and CSVAgent.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00456,
+      "epss_pct": 0.37198,
+      "cwe": "CWE-184",
+      "published": "2026-07-17T20:17:14.713",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-17",
           "label": "Published to NVD"
         }
       ],
