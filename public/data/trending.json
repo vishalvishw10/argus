@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T07:54:46.040Z",
+  "generated_at": "2026-07-27T11:43:05.028Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1653,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "987 recent"
+      "detail": "990 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3772 mapped"
+      "detail": "3774 mapped"
     },
     {
       "name": "Reddit",
@@ -87,17 +87,17 @@
       "rising": 0,
       "repos": {
         "count": 67,
-        "stars": 813,
+        "stars": 815,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 527
+            "stars": 528
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 68
+            "stars": 69
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -164,17 +164,17 @@
       "rising": 0,
       "repos": {
         "count": 41,
-        "stars": 763,
+        "stars": 765,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 527
+            "stars": 528
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 68
+            "stars": 69
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -542,59 +542,6 @@
       "rank": 7
     },
     {
-      "cve_id": "CVE-2026-56164",
-      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.18395,
-      "epss_pct": 0.9693,
-      "cwe": "CWE-306",
-      "published": "2026-07-14T17:17:09.907",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 15,
-        "top": [
-          {
-            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
-            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
-            "stars": 15
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
       "cve_id": "CVE-2026-48908",
       "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
       "vendor": "JoomShaper",
@@ -651,7 +598,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -707,6 +654,59 @@
       "timeline": [
         {
           "date": "2026-06-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-56164",
+      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint Server",
+      "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.18395,
+      "epss_pct": 0.9693,
+      "cwe": "CWE-306",
+      "published": "2026-07-14T17:17:09.907",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 15,
+        "top": [
+          {
+            "full_name": "sentinel-aidefense/CVE-2026-56164-EXP",
+            "html_url": "https://github.com/sentinel-aidefense/CVE-2026-56164-EXP",
+            "stars": 15
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -772,65 +772,6 @@
       "rank": 11
     },
     {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.7844,
-      "epss_pct": 0.99539,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 34,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 26
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
-            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
-            "stars": 5
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
       "cve_id": "CVE-2026-48282",
       "title": "Adobe ColdFusion Path Traversal Vulnerability",
       "vendor": "Adobe",
@@ -887,7 +828,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -943,6 +884,65 @@
       "timeline": [
         {
           "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.7844,
+      "epss_pct": 0.99539,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 34,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 26
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
+            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
+            "stars": 5
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2085,7 +2085,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2679,7 +2679,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2818,17 +2818,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-62643",
-      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in …",
+      "cve_id": "CVE-2026-48358",
+      "title": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary…",
       "vendor": null,
       "product": null,
-      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts. NOTE: this issue exists because of insufficient fixes for CVE-2026-35540 and CVE-2026-48843.",
+      "description": "Adobe Commerce is affected by an Improper Encoding or Escaping of Output vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00246,
-      "epss_pct": 0.1601,
-      "cwe": "CWE-918",
-      "published": "2026-07-14T16:17:04.670",
+      "epss": 0.01501,
+      "epss_pct": 0.71615,
+      "cwe": "CWE-116",
+      "published": "2026-07-14T20:17:08.653",
       "kev": {
         "in_kev": false
       },
@@ -2853,17 +2853,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-54433",
-      "title": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted p…",
+      "cve_id": "CVE-2026-48320",
+      "title": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability.",
       "vendor": null,
       "product": null,
-      "description": "In Roundcube Webmail before 1.6.17 and 1.7.x before 1.7.2, there is Stored Cross-Site Scripting (XSS) via a crafted plain-text email message. The attacker-controlled JavaScript executes within the victim's authenticated session simply by opening or previewing the message (zero-click).",
-      "cvss": 10,
+      "description": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
+      "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.00312,
-      "epss_pct": 0.23523,
+      "epss": 0.08601,
+      "epss_pct": 0.94516,
       "cwe": "CWE-79",
-      "published": "2026-07-14T17:17:05.530",
+      "published": "2026-07-14T21:16:58.703",
       "kev": {
         "in_kev": false
       },
