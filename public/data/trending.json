@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-28T03:40:23.987Z",
+  "generated_at": "2026-07-28T06:43:00.285Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 6,
     "reddit_upvotes": 0,
-    "kev_count": 37,
+    "kev_count": 36,
     "kev_total": 1655,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "878 recent"
+      "detail": "874 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "900 scored"
+      "detail": "896 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3783 mapped"
+      "detail": "3785 mapped"
     },
     {
       "name": "Reddit",
@@ -63,78 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-0257",
-      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.93905,
-      "epss_pct": 0.99835,
-      "cwe": "CWE-565",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-05-29",
-        "due_date": "2026-06-01",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 73,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 36,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-0257",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-0257",
-            "stars": 26
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-0257",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-0257",
-            "stars": 3
-          },
-          {
-            "full_name": "tushargurav28/CVE-2026-0257",
-            "html_url": "https://github.com/tushargurav28/CVE-2026-0257",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access",
-          "url": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
-          "date": "2026-07-21T14:04:57.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-05-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-63030",
       "title": "WordPress Core Interpretation Conflict Vulnerability",
@@ -159,12 +87,83 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 888,
+        "stars": 893,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 590
+            "stars": 595
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 68
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 45
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.77974,
+      "epss_pct": 0.99527,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 68,
+      "rising": 0,
+      "repos": {
+        "count": 42,
+        "stars": 843,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 595
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -205,77 +204,6 @@
         }
       ],
       "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.77974,
-      "epss_pct": 0.99527,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 68,
-      "rising": 0,
-      "repos": {
-        "count": 42,
-        "stars": 838,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 590
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 68
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 45
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Covered by Dark Reading"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 3
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -338,7 +266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -402,78 +330,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-50522",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.57101,
-      "epss_pct": 0.98974,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-50522",
-            "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 12
-          },
-          {
-            "full_name": "ChPratik/CVE-2026-50522",
-            "html_url": "https://github.com/ChPratik/CVE-2026-50522",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-50522",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
-          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
-          "date": "2026-07-21T14:57:51.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-07-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -532,7 +389,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -591,7 +448,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -650,7 +507,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -703,7 +560,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -762,7 +619,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -821,7 +678,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -880,7 +737,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-50522",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.57101,
+      "epss_pct": 0.98974,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-22",
+        "due_date": "2026-07-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 53,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 14,
+        "top": [
+          {
+            "full_name": "4minx/CVE-2026-50522",
+            "html_url": "https://github.com/4minx/CVE-2026-50522",
+            "stars": 14
+          },
+          {
+            "full_name": "ChPratik/CVE-2026-50522",
+            "html_url": "https://github.com/ChPratik/CVE-2026-50522",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-50522",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -937,6 +853,59 @@
         {
           "date": "2026-07-21",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-16812",
+      "title": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-27",
+        "due_date": "2026-07-30",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 69,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
+          "url": "https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
+          "date": "2026-07-28T04:43:53.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-28",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 14
@@ -1422,7 +1391,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1441,47 +1410,6 @@
         }
       ],
       "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-16812",
-      "title": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-27",
-        "due_date": "2026-07-30",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 31,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1522,7 +1450,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1570,7 +1498,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1623,7 +1551,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1676,7 +1604,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1717,7 +1645,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1765,7 +1693,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1823,7 +1751,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1871,7 +1799,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1912,7 +1840,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1953,7 +1881,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1994,7 +1922,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -2035,7 +1963,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-16723",
@@ -2055,20 +1983,25 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 20,
-      "rising": 5,
+      "rising": 3,
       "repos": {
-        "count": 2,
-        "stars": 179,
+        "count": 3,
+        "stars": 181,
         "top": [
           {
             "full_name": "dinosn/fastjson-jsontype-rce-lab",
             "html_url": "https://github.com/dinosn/fastjson-jsontype-rce-lab",
-            "stars": 178
+            "stars": 180
           },
           {
             "full_name": "HORKimhab/CVE-2026-16723",
             "html_url": "https://github.com/HORKimhab/CVE-2026-16723",
             "stars": 1
+          },
+          {
+            "full_name": "why-success/fastjson-rce-lab",
+            "html_url": "https://github.com/why-success/fastjson-rce-lab",
+            "stars": 0
           }
         ]
       },
@@ -2091,7 +2024,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2126,7 +2059,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2161,7 +2094,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2214,7 +2147,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2249,7 +2182,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2284,7 +2217,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2327,7 +2260,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2362,7 +2295,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2397,7 +2330,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-48144",
@@ -2432,7 +2365,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-58023",
@@ -2467,7 +2400,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58662",
@@ -2502,7 +2435,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2545,7 +2478,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-48358",
@@ -2580,7 +2513,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2615,7 +2548,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2658,7 +2591,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-12692",
@@ -2693,7 +2626,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-8297",
@@ -2728,7 +2661,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-13448",
@@ -2763,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-50252",
@@ -2798,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2841,42 +2774,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-65702",
-      "title": "Vanna through 2.0.2 contains a path traversal vulnerability in the FileSystemConversationStore persistence integratio…",
-      "vendor": null,
-      "product": null,
-      "description": "Vanna through 2.0.2 contains a path traversal vulnerability in the FileSystemConversationStore persistence integration that allows unauthenticated remote attackers to write attacker-controlled JSON files to arbitrary filesystem locations and read conversation metadata from outside the intended store base directory. Attackers can supply path traversal sequences in the conversation_id parameter submitted to the unauthenticated chat API endpoints to escape the base directory during both write and read operations, enabling arbitrary file write with attacker-controlled content and unauthorized file read on the server filesystem.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.00487,
-      "epss_pct": 0.39158,
-      "cwe": "CWE-22",
-      "published": "2026-07-23T18:17:01.630",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 2,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-2406",
@@ -2921,6 +2819,110 @@
       "timeline": [
         {
           "date": "2026-07-22",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-64600",
+      "title": "CVE-2026-64600",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: resample the data fork mapping after cycling ILOCK\n\nxfs_reflink_fill_{cow_hole,delalloc} are both presented with an inode,\na data fork mapping, and a cow fork mapping.  Unfortunately, these two\nhelpers cycle the ILOCK to grab a transaction, which means that the\nmappings are stale as soon as we reacquire the ILOCK.  Currently we\nrefresh the cow fork mapping by re-calling xfs_find_trim_cow_extent, but\nwe don't refresh the data fork mapping beforehand, which means that the\nxfs_bmap_trim_cow in that function queries the refcount btree about the\nwrong physical blocks and returns an inaccurate value in *shared.\n\nIf *shared is now false, the directio write proceeds with a stale data\nfork mapping.  Fix this by querying the data fork mapping if the\nsequence counter changes across the ILOCK cycle.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00488,
+      "epss_pct": 0.39211,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 19,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-64600",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-64600",
+            "stars": 17
+          },
+          {
+            "full_name": "Debajyoti0-0/CVE-2026-64600",
+            "html_url": "https://github.com/Debajyoti0-0/CVE-2026-64600",
+            "stars": 2
+          },
+          {
+            "full_name": "vulnquest58/VQ-RefluxCore",
+            "html_url": "https://github.com/vulnquest58/VQ-RefluxCore",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Nine-Year-Old RefluXFS Linux Flaw Gives Local Users Root on Default RHEL Installs",
+          "url": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
+          "date": "2026-07-23T08:04:35.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-8452",
+      "title": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and …",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if the appliance is configured as a Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00487,
+      "epss_pct": 0.39117,
+      "cwe": "CWE-119",
+      "published": "2026-06-30T13:19:33.450",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 15,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
+            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
           "label": "Published to NVD"
         }
       ],
