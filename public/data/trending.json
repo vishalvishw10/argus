@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T03:44:09.299Z",
+  "generated_at": "2026-07-29T06:46:52.135Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1655,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "927 recent"
+      "detail": "923 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "915 scored"
+      "detail": "914 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,7 +48,7 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 957,
+        "stars": 961,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 636
+            "stars": 639
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -158,12 +158,12 @@
       "rising": 0,
       "repos": {
         "count": 42,
-        "stars": 905,
+        "stars": 909,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 636
+            "stars": 639
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -704,12 +704,12 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 28,
+        "stars": 29,
         "top": [
           {
             "full_name": "4minx/CVE-2026-50522",
             "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 28
+            "stars": 29
           },
           {
             "full_name": "darses/CVE-2026-50522",
@@ -878,7 +878,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 50,
+      "rising": 47,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -934,12 +934,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 1,
+        "stars": 2,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-16232",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
-            "stars": 1
+            "stars": 2
           },
           {
             "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
@@ -1396,7 +1396,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1991,12 +1991,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 186,
+        "stars": 187,
         "top": [
           {
             "full_name": "dinosn/fastjson-jsontype-rce-lab",
             "html_url": "https://github.com/dinosn/fastjson-jsontype-rce-lab",
-            "stars": 185
+            "stars": 186
           },
           {
             "full_name": "HORKimhab/CVE-2026-16723",
@@ -2242,7 +2242,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2277,7 +2277,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2293,6 +2293,41 @@
         }
       ],
       "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-18072",
+      "title": "The Advanced Responsive Video Embedder for Rumble, Odysee, YouTube, Vimeo, Kick … plugin for WordPress is vulnerable …",
+      "vendor": null,
+      "product": null,
+      "description": "The Advanced Responsive Video Embedder for Rumble, Odysee, YouTube, Vimeo, Kick … plugin for WordPress is vulnerable to Authentication Bypass via a Hardcoded Backdoor in version 10.8.7. The vulnerability exists because the `_arve_uc_init()` function — registered on WordPress's `init` hook at priority 1 so that it runs before any authentication checks on every request — reads an attacker-supplied token from the `_wplogin` (or `_wpm`) parameter and compares it against a hardcoded SHA-256 hash embedded directly in the plugin source, with no nonce verification, no capability check, and no password validation anywhere in the flow. Because this static hash constitutes a set of universal credentials that are publicly accessible in the plugin's source code, unauthenticated attackers can supply the known token to be authenticated as an arbitrarily selected existing administrator account, gaining full administrative control over the affected WordPress site. This was likely introduced by an attacker who gained commit access to the developers account.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-506",
+      "published": "2026-07-29T05:16:40.840",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2335,7 +2370,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-64815",
@@ -2370,7 +2405,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-48144",
@@ -2405,7 +2440,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58023",
@@ -2440,7 +2475,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58662",
@@ -2475,7 +2510,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-14958",
@@ -2495,7 +2530,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2510,7 +2545,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-14959",
@@ -2530,7 +2565,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2545,7 +2580,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-14973",
@@ -2565,7 +2600,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2580,7 +2615,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-12144",
@@ -2600,7 +2635,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2615,7 +2650,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-64600",
@@ -2676,7 +2711,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2719,7 +2754,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2754,7 +2789,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2797,77 +2832,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-12692",
-      "title": "Unverified password change vulnerability in Vimesoft Inc.",
-      "vendor": null,
-      "product": null,
-      "description": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00346,
-      "epss_pct": 0.27187,
-      "cwe": "CWE-620",
-      "published": "2026-07-17T17:17:13.303",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-17",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-8297",
-      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics…",
-      "vendor": null,
-      "product": null,
-      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisLab Laboratory Management System: from 1.4.03 through 08072026.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0026,
-      "epss_pct": 0.17705,
-      "cwe": "CWE-89",
-      "published": "2026-07-17T17:17:17.860",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
     },
     {
       "cve_id": "CVE-2026-13448",
@@ -2899,6 +2864,41 @@
       "timeline": [
         {
           "date": "2026-07-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-15631",
+      "title": "Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket de…",
+      "vendor": null,
+      "product": null,
+      "description": "Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket destination path against the configured rewrite prefix. The WebSocket routing path in WebSocketProxy.findUpstream resolves the destination via the WHATWG URL constructor, which collapses dot segments, so a crafted upgrade request with path traversal sequences can escape the rewrite prefix and reach upstream endpoints that were not meant to be exposed by the proxy. This is a variant of CVE-2021-21322 in a code path that never went through the HTTP fix in fastify/reply-from. Exploitation requires a non-normalizing WebSocket client, since browsers and the ws package normalize the request path before sending, but raw HTTP clients or downstream proxies that forward the request target unchanged make the attack reachable in production topologies. \n\nPatches: upgrade to @fastify/http-proxy 11.6.0. \n\nWorkarounds: none.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00298,
+      "epss_pct": 0.2207,
+      "cwe": "CWE-22",
+      "published": "2026-07-18T13:17:05.323",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-18",
           "label": "Published to NVD"
         }
       ],
