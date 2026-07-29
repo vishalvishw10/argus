@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:26:25.239Z",
+  "generated_at": "2026-07-29T03:44:09.299Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 36,
     "kev_total": 1655,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "920 recent"
+      "detail": "927 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3796 mapped"
+      "detail": "3810 mapped"
     },
     {
       "name": "Reddit",
@@ -87,22 +87,22 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 947,
+        "stars": 957,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 630
+            "stars": 636
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 77
+            "stars": 79
           },
           {
             "full_name": "dinosn/wp2shell-lab",
             "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 45
+            "stars": 46
           }
         ]
       },
@@ -158,22 +158,22 @@
       "rising": 0,
       "repos": {
         "count": 42,
-        "stars": 896,
+        "stars": 905,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 630
+            "stars": 636
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 77
+            "stars": 79
           },
           {
             "full_name": "dinosn/wp2shell-lab",
             "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 45
+            "stars": 46
           }
         ]
       },
@@ -877,8 +877,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 52,
-      "rising": 54,
+      "hype": 51,
+      "rising": 50,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -911,55 +911,66 @@
       "rank": 14
     },
     {
-      "cve_id": "CVE-2026-25089",
-      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
-      "cvss": 9.8,
+      "cve_id": "CVE-2026-16232",
+      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
+      "vendor": "Check Point",
+      "product": "SmartConsole",
+      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.69827,
-      "epss_pct": 0.99303,
-      "cwe": "CWE-78",
+      "epss": 0.12685,
+      "epss_pct": 0.95846,
+      "cwe": "CWE-287",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
+        "date_added": "2026-07-22",
+        "due_date": "2026-07-25",
         "ransomware": false
       },
       "zero_day": false,
-      "no_patch": true,
+      "no_patch": false,
       "hype": 50,
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 9,
+        "stars": 1,
         "top": [
           {
-            "full_name": "HORKimhab/CVE-2026-25089",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-25089",
-            "stars": 6
+            "full_name": "sfewer-r7/CVE-2026-16232",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
+            "stars": 1
           },
           {
-            "full_name": "0xBlackash/CVE-2026-25089",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-25089",
-            "stars": 3
+            "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
+            "html_url": "https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review",
+            "stars": 0
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
+          "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+          "date": "2026-07-23T06:34:36.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss",
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-07-16",
+          "date": "2026-07-22",
           "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-23",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 15
@@ -1014,66 +1025,55 @@
       "rank": 16
     },
     {
-      "cve_id": "CVE-2026-16232",
-      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
-      "vendor": "Check Point",
-      "product": "SmartConsole",
-      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
-      "cvss": 9.1,
+      "cve_id": "CVE-2026-25089",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.12685,
-      "epss_pct": 0.95846,
-      "cwe": "CWE-287",
+      "epss": 0.69827,
+      "epss_pct": 0.99303,
+      "cwe": "CWE-78",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
         "ransomware": false
       },
       "zero_day": false,
-      "no_patch": false,
+      "no_patch": true,
       "hype": 49,
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 0,
+        "stars": 9,
         "top": [
           {
-            "full_name": "sfewer-r7/CVE-2026-16232",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
-            "stars": 0
+            "full_name": "HORKimhab/CVE-2026-25089",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-25089",
+            "stars": 6
           },
           {
-            "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "html_url": "https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "stars": 0
+            "full_name": "0xBlackash/CVE-2026-25089",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-25089",
+            "stars": 3
           }
         ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
-          "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
-          "date": "2026-07-23T06:34:36.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news",
+        "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-07-22",
+          "date": "2026-07-16",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-23",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 17
@@ -1396,7 +1396,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2207,7 +2207,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2242,7 +2242,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2277,7 +2277,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2338,41 +2338,6 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-65590",
-      "title": "n8n before 2.29.8 and 2.30.x before 2.30.1 does not enforce shell sandbox restrictions on Linux and Windows in the @n…",
-      "vendor": null,
-      "product": null,
-      "description": "n8n before 2.29.8 and 2.30.x before 2.30.1 does not enforce shell sandbox restrictions on Linux and Windows in the @n8n/computer-use package (sandboxing was applied only on macOS). Shell commands executed by the tool run without any filesystem or network restrictions, allowing unrestricted access to the host filesystem and network from within the computer-use agent process. This issue only affects deployments where the @n8n/computer-use package is explicitly installed and running; standard n8n installations are not affected.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00322,
-      "epss_pct": 0.24569,
-      "cwe": "CWE-78",
-      "published": "2026-07-22T12:18:18.987",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-22",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-64815",
       "title": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
       "vendor": null,
@@ -2405,7 +2370,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-48144",
@@ -2425,7 +2390,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2440,7 +2405,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58023",
@@ -2460,7 +2425,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2475,7 +2440,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58662",
@@ -2495,7 +2460,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2510,7 +2475,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-14958",
@@ -2530,7 +2495,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2545,7 +2510,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-14959",
@@ -2565,7 +2530,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2580,7 +2545,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-14973",
@@ -2600,6 +2565,41 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-28",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "cve_id": "CVE-2026-12144",
+      "title": "The Wholesale for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and i…",
+      "vendor": null,
+      "product": null,
+      "description": "The Wholesale for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.5. This is due to the `save_requests_meta()` function applying only `sanitize_text_field()` to the `user_role_set` POST parameter before passing it directly to `WP_User::add_role()`, with no allowlist validation against permitted wholesale roles and no capability check such as `current_user_can('promote_users')` or `current_user_can('manage_options')`. This makes it possible for authenticated attackers with author-level access and above to escalate their privileges to administrator by supplying `administrator` as the `user_role_set` value in a crafted request. The function is gated only by a nonce (`request_user_role_nonce`) that is rendered in the meta box on the `wwp_requests` post edit screen; because the post type is registered with `capability_type => 'post'`, any author-level user who has authored a `wwp_requests` post — such as one created via the wholesale registration form — can access this nonce and submit the role-assignment request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-269",
+      "published": "2026-07-29T02:16:41.840",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
       "rising": 20,
       "repos": {
         "count": 0,
@@ -2611,81 +2611,11 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-28",
+          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
       "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-15992",
-      "title": "The WP Password Policy plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including…",
-      "vendor": null,
-      "product": null,
-      "description": "The WP Password Policy plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 3.7.1. This is due to missing authorization checks and nonce verification in the `get_user()` function of the `Module_Password_Hint` class, which unconditionally calls `WP_User::set_role()` with the attacker-supplied `role` parameter on any account resolved via `$_POST['user_login']`, without confirming the requesting user holds the capability to assign roles. This makes it possible for authenticated attackers, with subscriber-level access and above, to escalate their own privileges to Administrator by submitting a crafted POST request — with `action` set to `createuser` and `role` set to `administrator` — to the password-reset form endpoint. The vulnerable code path is reachable via the `password_hint` filter hooked during the WordPress password-reset form render, meaning an attacker need only possess a valid password-reset cookie to reach the sink.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-269",
-      "published": "2026-07-28T19:17:31.727",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-28",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-57510",
-      "title": "SuperPlane before 0.27.0 contains a broken object-level authorization vulnerability in the CanvasService gRPC handler…",
-      "vendor": null,
-      "product": null,
-      "description": "SuperPlane before 0.27.0 contains a broken object-level authorization vulnerability in the CanvasService gRPC handlers that allows authenticated users with viewer-level access to one organization to access resources belonging to other organizations by supplying arbitrary canvas or queue UUIDs without organization scoping. Attackers can read cross-tenant execution history and event payloads containing sensitive secrets, write queue items and canvas events into victim organizations, delete arbitrary canvases, and disrupt automation workflows across tenant boundaries.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-639",
-      "published": "2026-07-28T20:17:27.027",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-28",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
     },
     {
       "cve_id": "CVE-2026-64600",
@@ -2746,7 +2676,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2789,7 +2719,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2824,7 +2754,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2867,7 +2797,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-12692",
@@ -2881,6 +2811,76 @@
       "epss_pct": 0.27187,
       "cwe": "CWE-620",
       "published": "2026-07-17T17:17:13.303",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-8297",
+      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisLab Laboratory Management System: from 1.4.03 through 08072026.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0026,
+      "epss_pct": 0.17705,
+      "cwe": "CWE-89",
+      "published": "2026-07-17T17:17:17.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-13448",
+      "title": "IBM Langflow OSS 1.0.0 through 1.10.1 Lanflow OSS contains an unauthenticated remote code execution vulnerability in …",
+      "vendor": null,
+      "product": null,
+      "description": "IBM Langflow OSS 1.0.0 through 1.10.1 Lanflow OSS contains an unauthenticated remote code execution vulnerability in the public flow build endpoint ( /api/v1/build_public_tmp/{flow_id}/flow ). The vulnerability stems from an incomplete denylist in the validate_public_flow_no_code_execution() function that fails to block several code-execution agent components including OpenDsStarAgent, CodeActAgentSmolagents, and CSVAgent.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00456,
+      "epss_pct": 0.37256,
+      "cwe": "CWE-184",
+      "published": "2026-07-17T20:17:14.713",
       "kev": {
         "in_kev": false
       },
