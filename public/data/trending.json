@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-29T17:40:36.030Z",
+  "generated_at": "2026-07-29T19:46:55.753Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 5,
     "reddit_upvotes": 0,
-    "kev_count": 36,
-    "kev_total": 1655,
+    "kev_count": 37,
+    "kev_total": 1656,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1655 entries"
+      "detail": "1656 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "903 recent"
+      "detail": "902 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "934 scored"
+      "detail": "935 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "13 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3818 mapped"
+      "detail": "3820 mapped"
     },
     {
       "name": "Reddit",
@@ -87,17 +87,17 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 986,
+        "stars": 992,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 657
+            "stars": 660
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 82
+            "stars": 83
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -158,17 +158,17 @@
       "rising": 0,
       "repos": {
         "count": 42,
-        "stars": 934,
+        "stars": 940,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 657
+            "stars": 660
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 82
+            "stars": 83
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -226,7 +226,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 35,
+      "rising": 34,
       "repos": {
         "count": 2,
         "stars": 6,
@@ -566,65 +566,6 @@
       "rank": 8
     },
     {
-      "cve_id": "CVE-2026-50522",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.57101,
-      "epss_pct": 0.98973,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 30,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-50522",
-            "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 30
-          },
-          {
-            "full_name": "webshellseo8/CVE-2026-50522-Proof-of-Concept",
-            "html_url": "https://github.com/webshellseo8/CVE-2026-50522-Proof-of-Concept",
-            "stars": 0
-          },
-          {
-            "full_name": "darses/CVE-2026-50522",
-            "html_url": "https://github.com/darses/CVE-2026-50522",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
-    },
-    {
       "cve_id": "CVE-2026-48282",
       "title": "Adobe ColdFusion Path Traversal Vulnerability",
       "vendor": "Adobe",
@@ -681,7 +622,112 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow the attacker to log in to the affected system and access sensitive data as the low-privileged user.&nbsp;\r\nNote:&nbsp;If the FMC management interface does not have public internet access, the attack surface that is associated with this vulnerability is reduced.&nbsp;&nbsp;\r\nCisco has assigned this security advisory a Security Impact Rating (SIR) of High rather than Medium as the score indicates. The reason is that this vulnerability can be used with other Cisco Secure FMC Software vulnerabilities to elevate privileges.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-259",
+      "published": "2026-07-29T17:16:51.840",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 53,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-07-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-50522",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.57101,
+      "epss_pct": 0.98973,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-22",
+        "due_date": "2026-07-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 30,
+        "top": [
+          {
+            "full_name": "4minx/CVE-2026-50522",
+            "html_url": "https://github.com/4minx/CVE-2026-50522",
+            "stars": 30
+          },
+          {
+            "full_name": "darses/CVE-2026-50522",
+            "html_url": "https://github.com/darses/CVE-2026-50522",
+            "stars": 0
+          },
+          {
+            "full_name": "webshellseo8/CVE-2026-50522-Proof-of-Concept",
+            "html_url": "https://github.com/webshellseo8/CVE-2026-50522-Proof-of-Concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -740,7 +786,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -799,7 +845,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -858,7 +904,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -917,7 +963,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -940,7 +986,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 38,
+      "rising": 36,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -970,7 +1016,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -1019,7 +1065,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -1073,7 +1119,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1132,7 +1178,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -1186,7 +1232,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -1228,7 +1274,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1286,7 +1332,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -1328,7 +1374,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1370,7 +1416,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1393,7 +1439,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1411,7 +1457,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1459,7 +1505,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-20262",
@@ -1512,7 +1558,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1553,7 +1599,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1594,7 +1640,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1642,7 +1688,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1695,7 +1741,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-54420",
@@ -1753,7 +1799,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1801,7 +1847,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1842,7 +1888,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1883,7 +1929,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1924,7 +1970,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1965,7 +2011,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-16723",
@@ -2026,7 +2072,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2040,41 +2086,6 @@
       "epss_pct": 0.97904,
       "cwe": "CWE-20",
       "published": "2026-07-14T21:16:58.043",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-48319",
-      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
-      "vendor": null,
-      "product": null,
-      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.26956,
-      "epss_pct": 0.97835,
-      "cwe": "CWE-22",
-      "published": "2026-07-14T21:16:58.600",
       "kev": {
         "in_kev": false
       },
@@ -2187,24 +2198,24 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-60112",
-      "title": "AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unaut…",
+      "cve_id": "CVE-2026-48319",
+      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
       "vendor": null,
       "product": null,
-      "description": "AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unauthenticated network attacker to obtain a valid session and issue arbitrary spacecraft commands by calling Sessions.create() without any credential check. Attackers can exploit the unauthenticated session issuance in Sessions.create() and subsequently invoke handle_cmd() to forward arbitrary commands directly to the AIT command bus without any authentication gate between session creation and command dispatch.",
-      "cvss": 9.8,
+      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-07-29T16:17:55.413",
+      "epss": 0.26956,
+      "epss_pct": 0.97835,
+      "cwe": "CWE-22",
+      "published": "2026-07-14T21:16:58.600",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2215,7 +2226,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-07-29",
+          "date": "2026-07-14",
           "label": "Published to NVD"
         }
       ],
@@ -2239,7 +2250,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2255,6 +2266,41 @@
         }
       ],
       "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-41939",
+      "title": "Care Everywhere Gateway 14.3.10 contains a hard-coded credentials vulnerability in the bundled WildFly 8.2.0.Final ma…",
+      "vendor": null,
+      "product": null,
+      "description": "Care Everywhere Gateway 14.3.10 contains a hard-coded credentials vulnerability in the bundled WildFly 8.2.0.Final management interface that allows unauthenticated remote attackers to gain administrative access by using default credentials identical across all installations. Attackers can authenticate to the exposed WildFly management console on port 20990 and deploy a malicious Web Application Archive file through the Deployments interface to achieve remote code execution as the Windows machine account. Version 14.x.x was declared end-of-life (EOL) in 2017 and future releases have addressed the vulnerable finding.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-1392",
+      "published": "2026-07-29T18:16:53.477",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2297,7 +2343,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-64815",
@@ -2332,7 +2378,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-48144",
@@ -2367,7 +2413,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2402,7 +2448,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58023",
@@ -2437,7 +2483,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58662",
@@ -2472,7 +2518,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-14529",
+      "title": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 traditional is vulnerable to server-side request forgery (SSRF) when the SIP container feature (sipServlet-1.1) is enabled.",
+      "cvss": 9.4,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-07-29T19:16:44.720",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2515,42 +2596,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-48320",
-      "title": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": 0.08601,
-      "epss_pct": 0.94522,
-      "cwe": "CWE-79",
-      "published": "2026-07-14T21:16:58.703",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2593,7 +2639,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-15631",
@@ -2628,7 +2674,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2663,7 +2709,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2698,7 +2744,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-50252",
@@ -2733,7 +2779,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2776,7 +2822,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-64642",
@@ -2811,7 +2857,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-49332",
@@ -2825,41 +2871,6 @@
       "epss_pct": 0.09377,
       "cwe": "CWE-436",
       "published": "2026-07-28T13:18:46.067",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-28",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-7187",
-      "title": "Missing authentication for critical function vulnerability in Universal Software Inc.",
-      "vendor": null,
-      "product": null,
-      "description": "Missing authentication for critical function vulnerability in Universal Software Inc. UKBS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects UKBS: through 28072026.\nNOTE: The vendor was contacted and it was learned that the product is not supported.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00215,
-      "epss_pct": 0.1209,
-      "cwe": "CWE-306",
-      "published": "2026-07-28T13:19:08.247",
       "kev": {
         "in_kev": false
       },
