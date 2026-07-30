@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-30T03:32:53.446Z",
+  "generated_at": "2026-07-30T06:43:54.238Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1656,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "903 recent"
+      "detail": "911 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "13 mentions"
+      "detail": "14 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3826 mapped"
+      "detail": "3828 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,72 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-259",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 74,
+      "rising": 100,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Cisco Secure FMC Zero-Day Exploited in the Wild",
+          "url": "https://www.securityweek.com/cisco-secure-fmc-zero-day-exploited-in-the-wild/",
+          "date": "2026-07-30T06:31:31.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
+          "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
+          "date": "2026-07-30T05:08:39.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Cisco warns of FMC static credential flaw exploited in zero-day attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+          "date": "2026-07-29T21:35:40.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-29",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-63030",
       "title": "WordPress Core Interpretation Conflict Vulnerability",
@@ -87,83 +153,12 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 998,
+        "stars": 999,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 664
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 84
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 48
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Covered by Dark Reading"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.77974,
-      "epss_pct": 0.99527,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 67,
-      "rising": 0,
-      "repos": {
-        "count": 42,
-        "stars": 946,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 664
+            "stars": 665
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -204,6 +199,77 @@
         }
       ],
       "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.77974,
+      "epss_pct": 0.99527,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 67,
+      "rising": 0,
+      "repos": {
+        "count": 42,
+        "stars": 947,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 665
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 84
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 48
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -267,7 +333,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -290,7 +356,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 6,
@@ -333,7 +399,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -392,7 +458,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -445,7 +511,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -504,7 +570,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-20253",
@@ -563,7 +629,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -622,7 +688,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -648,12 +714,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 30,
+        "stars": 31,
         "top": [
           {
             "full_name": "4minx/CVE-2026-50522",
             "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 30
+            "stars": 31
           },
           {
             "full_name": "darses/CVE-2026-50522",
@@ -681,7 +747,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -740,7 +806,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-48907",
@@ -797,60 +863,6 @@
         {
           "date": "2026-06-16",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-20316",
-      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-259",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-29",
-        "due_date": "2026-08-01",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 68,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Cisco warns of FMC static credential flaw exploited in zero-day attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
-          "date": "2026-07-29T21:35:40.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-29",
-          "label": "Covered by BleepingComputer"
         }
       ],
       "rank": 13
@@ -994,7 +1006,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1447,7 +1459,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2164,7 +2176,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2180,6 +2192,41 @@
         }
       ],
       "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-16610",
+      "title": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions…",
+      "vendor": null,
+      "product": null,
+      "description": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.9.0 via the recursive_html function. This is due to the frontend save handler enforces only a publicly emitted nonce with no authentication check, CAPTCHA validation is bypassable by omitting an attacker-supplied key, and repeater row keys from cfgroup[input] are stored verbatim and later spliced into an eval() call in recursive_html without any sanitization or identifier validation. This makes it possible for unauthenticated attackers to execute code on the server. This requires the [post_cf_form] shortcode to be present on at least one publicly accessible page, as the nonce and session ID needed to reach the vulnerable save handler are emitted to unauthenticated visitors by that shortcode.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-07-30T05:16:34.520",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-8451",
@@ -2232,7 +2279,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2275,7 +2322,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2310,7 +2357,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-58023",
@@ -2345,7 +2392,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58662",
@@ -2380,7 +2427,77 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-14356",
+      "title": "The FleekDash V2 plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.6…",
+      "vendor": null,
+      "product": null,
+      "description": "The FleekDash V2 plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.6.2.2. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for authenticated attackers, with subscriber-level access and above, to overwrite the email address and password of any WordPress user, including administrators, enabling full account takeover and complete site compromise. The public /wp-json/fleekdash/v1/register endpoint auto-provisions a Subscriber-role account and returns a valid REST nonce regardless of the site's users_can_register setting, enabling unauthenticated attackers to self-provision the required credentials and nonce in a single prior request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-862",
+      "published": "2026-07-30T05:16:32.853",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-16526",
+      "title": "A flaw in the PCP linux_sockets module exposes an unsecured internal connection.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw in the PCP linux_sockets module exposes an unsecured internal connection.\nAn attacker with initial code execution can exploit this to escalate privileges and execute arbitrary commands as root.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-403",
+      "published": "2026-07-30T06:25:02.663",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2423,7 +2540,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-44596",
@@ -2466,7 +2583,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-15631",
@@ -2501,7 +2618,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-60296",
@@ -2536,7 +2653,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2571,7 +2688,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-50252",
@@ -2606,7 +2723,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-64815",
@@ -2641,7 +2758,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-48144",
@@ -2676,7 +2793,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-57239",
@@ -2719,7 +2836,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-54992",
@@ -2759,111 +2876,6 @@
       "timeline": [
         {
           "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-64642",
-      "title": "Next.js is a React framework for building full-stack web applications.",
-      "vendor": null,
-      "product": null,
-      "description": "Next.js is a React framework for building full-stack web applications. In versions 16.0.0 through 16.2.10, crafted requests targeting Next.js applications using App Router built with Turbopack and a single entry in config.i18n.locales can bypass middleware/proxy based authentication. This issue has been fixed in version 16.2.11.",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.01278,
-      "epss_pct": 0.67023,
-      "cwe": "CWE-285",
-      "published": "2026-07-27T18:16:59.010",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 10,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-49332",
-      "title": "A flaw was found in openshift/oauth-proxy.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) from incoming requests. WSGI and PHP frameworks normalize both variants to the same variable, allowing an authenticated low-privilege user to smuggle a forged identity that may override the legitimate authenticated identity in the upstream application.",
-      "cvss": 8.5,
-      "severity": "HIGH",
-      "epss": 0.00194,
-      "epss_pct": 0.09377,
-      "cwe": "CWE-436",
-      "published": "2026-07-28T13:18:46.067",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-28",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-7187",
-      "title": "Missing authentication for critical function vulnerability in Universal Software Inc.",
-      "vendor": null,
-      "product": null,
-      "description": "Missing authentication for critical function vulnerability in Universal Software Inc. UKBS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects UKBS: through 28072026.\nNOTE: The vendor was contacted and it was learned that the product is not supported.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00215,
-      "epss_pct": 0.1209,
-      "cwe": "CWE-306",
-      "published": "2026-07-28T13:19:08.247",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-28",
           "label": "Published to NVD"
         }
       ],
