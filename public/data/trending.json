@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-30T14:34:51.215Z",
+  "generated_at": "2026-07-30T16:51:50.596Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1656,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "922 recent"
+      "detail": "944 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "950 scored"
+      "detail": "957 scored"
     },
     {
       "name": "BleepingComputer",
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 68,
-        "stars": 1014,
+        "stars": 1016,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 678
+            "stars": 680
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -158,12 +158,12 @@
       "rising": 0,
       "repos": {
         "count": 42,
-        "stars": 962,
+        "stars": 964,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 678
+            "stars": 680
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -225,8 +225,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 63,
-      "rising": 92,
+      "hype": 62,
+      "rising": 89,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -286,7 +286,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -649,12 +649,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 32,
+        "stars": 33,
         "top": [
           {
             "full_name": "4minx/CVE-2026-50522",
             "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 32
+            "stars": 33
           },
           {
             "full_name": "darses/CVE-2026-50522",
@@ -1000,7 +1000,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1453,7 +1453,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1937,7 +1937,7 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 194,
+        "stars": 195,
         "top": [
           {
             "full_name": "dinosn/fastjson-jsontype-rce-lab",
@@ -1945,13 +1945,13 @@
             "stars": 191
           },
           {
-            "full_name": "EQSTLab/CVE-2026-16723",
-            "html_url": "https://github.com/EQSTLab/CVE-2026-16723",
+            "full_name": "Nowafen/CVE-2026-16723",
+            "html_url": "https://github.com/Nowafen/CVE-2026-16723",
             "stars": 1
           },
           {
-            "full_name": "why-success/fastjson-rce-lab",
-            "html_url": "https://github.com/why-success/fastjson-rce-lab",
+            "full_name": "EQSTLab/CVE-2026-16723",
+            "html_url": "https://github.com/EQSTLab/CVE-2026-16723",
             "stars": 1
           }
         ]
@@ -2083,17 +2083,17 @@
       "rank": 39
     },
     {
-      "cve_id": "CVE-2026-16610",
-      "title": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions…",
+      "cve_id": "CVE-2026-44101",
+      "title": "Due to missing authentication the CHARX OCPP Agent service allows an unauthenticated remote attacker to reconfigure t…",
       "vendor": null,
       "product": null,
-      "description": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.9.0 via the recursive_html function. This is due to the frontend save handler enforces only a publicly emitted nonce with no authentication check, CAPTCHA validation is bypassable by omitting an attacker-supplied key, and repeater row keys from cfgroup[input] are stored verbatim and later spliced into an eval() call in recursive_html without any sanitization or identifier validation. This makes it possible for unauthenticated attackers to execute code on the server. This requires the [post_cf_form] shortcode to be present on at least one publicly accessible page, as the nonce and session ID needed to reach the vulnerable save handler are emitted to unauthenticated visitors by that shortcode.",
+      "description": "Due to missing authentication the CHARX OCPP Agent service allows an unauthenticated remote attacker to reconfigure the backend connection. This can lead to Denial-of-Service and confidential data being disclosed to the attacker.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00578,
-      "epss_pct": 0.44292,
-      "cwe": "CWE-434",
-      "published": "2026-07-30T05:16:34.520",
+      "epss": 0.00401,
+      "epss_pct": 0.32905,
+      "cwe": "CWE-306",
+      "published": "2026-07-30T07:16:58.357",
       "kev": {
         "in_kev": false
       },
@@ -2118,24 +2118,24 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-44101",
-      "title": "Due to missing authentication the CHARX OCPP Agent service allows an unauthenticated remote attacker to reconfigure t…",
+      "cve_id": "CVE-2026-15435",
+      "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker t…",
       "vendor": null,
       "product": null,
-      "description": "Due to missing authentication the CHARX OCPP Agent service allows an unauthenticated remote attacker to reconfigure the backend connection. This can lead to Denial-of-Service and confidential data being disclosed to the attacker.",
+      "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\" sequences (/../) to write arbitrary files on the system.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00401,
-      "epss_pct": 0.32905,
-      "cwe": "CWE-306",
-      "published": "2026-07-30T07:16:58.357",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-07-30T15:16:26.757",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2153,24 +2153,24 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-44104",
-      "title": "The firmware update process for the basemodule of the charging controller only validates the\nCRC32 checksum without c…",
+      "cve_id": "CVE-2026-28323",
+      "title": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability.",
       "vendor": null,
       "product": null,
-      "description": "The firmware update process for the basemodule of the charging controller only validates the\nCRC32 checksum without cryptographic signature verification. This allows an unauthenticated remote attacker to install a modified firmware, resulting in full system compromise.",
+      "description": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability. This requires the SAML 2.0 authentication method to be enabled.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00241,
-      "epss_pct": 0.15394,
-      "cwe": "CWE-347",
-      "published": "2026-07-30T07:16:58.760",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-287",
+      "published": "2026-07-30T16:17:10.710",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2188,24 +2188,24 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-7849",
-      "title": "Due to improper neutralization of special elements, an unauthenticated remote attacker is able to inject a command in…",
+      "cve_id": "CVE-2026-4978",
+      "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Tra…",
       "vendor": null,
       "product": null,
-      "description": "Due to improper neutralization of special elements, an unauthenticated remote attacker is able to inject a command into the system configuration which is subsequently executed as root.",
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Traffic Analysis System allows SQL Injection.\n\nThis issue affects Traffic Analysis System: from 30 before 34.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00419,
-      "epss_pct": 0.34509,
-      "cwe": "CWE-77",
-      "published": "2026-07-30T07:16:59.443",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-07-30T16:17:12.933",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2266,49 +2266,6 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-57830",
-      "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla ex…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00303,
-      "epss_pct": 0.22614,
-      "cwe": "CWE-862",
-      "published": "2026-07-13T08:16:21.713",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Is4yev/CVE-2026-57830",
-            "html_url": "https://github.com/Is4yev/CVE-2026-57830",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
       "cve_id": "CVE-2026-55971",
       "title": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.",
       "vendor": null,
@@ -2326,7 +2283,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-66014",
+      "title": "JFrog Artifactory contains an authentication handling weakness in internal request processing that, under specific co…",
+      "vendor": null,
+      "product": null,
+      "description": "JFrog Artifactory contains an authentication handling weakness in internal request processing that, under specific conditions, may allow an attacker to escalate privileges beyond the intended access level.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00316,
+      "epss_pct": 0.23984,
+      "cwe": "CWE-287",
+      "published": "2026-07-27T20:16:41.790",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2361,7 +2353,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2377,111 +2369,6 @@
         }
       ],
       "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-44092",
-      "title": "An unauthenticated remote attacker can inject malicious input into the ModbusServer application because it does not v…",
-      "vendor": null,
-      "product": null,
-      "description": "An unauthenticated remote attacker can inject malicious input into the ModbusServer application because it does not validate the input it fetches from MQTT. This may lead to integrity and availability loss.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.0038,
-      "epss_pct": 0.30702,
-      "cwe": "CWE-93",
-      "published": "2026-07-30T07:16:57.110",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-54363",
-      "title": "CentreStack before 17.5 contains a hardcoded cryptographic key vulnerability that allows unauthenticated attackers to…",
-      "vendor": null,
-      "product": null,
-      "description": "CentreStack before 17.5 contains a hardcoded cryptographic key vulnerability that allows unauthenticated attackers to forge arbitrary encrypted tokens by exploiting a static SysNumber value used as entropy for AccessTicket.Encrypt() and AccessTicket.Decrypt() across all installations. Attackers can use the hardcoded key to craft valid x-glad-auth headers and call privileged API endpoints such as acquiretenantbackuptoken to obtain a domain administrator IdentityTicket, enabling a complete unauthenticated remote code execution chain.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-321",
-      "published": "2026-07-30T13:16:51.223",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
-    },
-    {
-      "cve_id": "CVE-2026-54368",
-      "title": "CentreStack before 17.4 contains a SQL injection vulnerability in GladDBFiles.SearchEx() and SearchExUnder() that all…",
-      "vendor": null,
-      "product": null,
-      "description": "CentreStack before 17.4 contains a SQL injection vulnerability in GladDBFiles.SearchEx() and SearchExUnder() that allows authenticated attackers to execute arbitrary SQL statements by supplying a crafted x-glad-filter request header through the jsondir API endpoint. Attackers can exploit unsanitized interpolation of the Field parameter directly into SQL query strings to write arbitrary files to the server filesystem via PostgreSQL lo_from_bytea() and lo_export() functions, enabling remote code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-07-30T13:16:51.910",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
     },
     {
       "cve_id": "CVE-2026-67351",
@@ -2516,7 +2403,103 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-58222",
+      "title": "A security flaw combining LDAP filter injection and improper authorization checks was found in Samba Active Directory…",
+      "vendor": null,
+      "product": null,
+      "description": "A security flaw combining LDAP filter injection and improper authorization checks was found in Samba Active Directory Domain Controller (AD DC). When processing LDAP Compare requests, Samba fails to properly validate user-supplied attribute names and executes the resulting internal database search in a trusted context, bypassing normal Access Control List (ACL) enforcement. An authenticated low-privilege domain user can exploit these flaws to disclose confidential Active Directory attributes that would normally be inaccessible. The disclosed information may be leveraged to derive sensitive authentication material, potentially leading to privilege escalation and complete domain compromise. For example: In deployments configured with Group Managed Service Accounts (gMSAs), an attacker can extract the \"msKds-RootKeyData\" attribute and derive gMSA passwords offline, potentially leading to complete domain compromise if privileged gMSAs are present.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-90",
+      "published": "2026-07-30T16:17:14.933",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-66066",
+      "title": "CVE-2026-66066",
+      "vendor": null,
+      "product": null,
+      "description": "",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 27,
+      "repos": {
+        "count": 3,
+        "stars": 11,
+        "top": [
+          {
+            "full_name": "Zer0SumGam3/CVE-2026-66066-POC",
+            "html_url": "https://github.com/Zer0SumGam3/CVE-2026-66066-POC",
+            "stars": 11
+          },
+          {
+            "full_name": "paveg/rails-activestorage-vips-audit",
+            "html_url": "https://github.com/paveg/rails-activestorage-vips-audit",
+            "stars": 0
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-66066",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-66066",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
+          "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+          "date": "2026-07-29T18:10:00.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2556,6 +2539,49 @@
       "timeline": [
         {
           "date": "2026-07-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-57830",
+      "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla ex…",
+      "vendor": null,
+      "product": null,
+      "description": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00303,
+      "epss_pct": 0.22614,
+      "cwe": "CWE-862",
+      "published": "2026-07-13T08:16:21.713",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Is4yev/CVE-2026-57830",
+            "html_url": "https://github.com/Is4yev/CVE-2026-57830",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-13",
           "label": "Published to NVD"
         }
       ],
@@ -2675,6 +2701,41 @@
       "rank": 55
     },
     {
+      "cve_id": "CVE-2026-12341",
+      "title": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to p…",
+      "vendor": null,
+      "product": null,
+      "description": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to protected APIs and data due to improper validation of\nOAuth bearer tokens.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00216,
+      "epss_pct": 0.12211,
+      "cwe": "CWE-287",
+      "published": "2026-07-20T19:17:18.027",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-60296",
       "title": "Vulnerability in the Oracle Coherence product of Oracle Fusion Middleware (component: Core).",
       "vendor": null,
@@ -2707,7 +2768,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-56817",
+      "title": "Netty is a network application framework for development of protocol servers and clients.",
+      "vendor": null,
+      "product": null,
+      "description": "Netty is a network application framework for development of protocol servers and clients. In versions 4.2.0.Final through 4.2.15.Final and 4.1.0.Final through 4.1.135.Final, any caller that can deliver bytes to a Netty channel pipeline containing `XmlDecoder` can send XML with a `DOCTYPE` declaration to an `AsyncXMLInputFactory` instantiated with no security configuration, leaving DTD and entity handling active depending on Aalto XML async parser behavior and creating conditional XML external entity risk. This issue is fixed in versions 4.1.136.Final and 4.2.16.Final.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0032,
+      "epss_pct": 0.24413,
+      "cwe": "CWE-611",
+      "published": "2026-07-21T23:17:52.127",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2742,7 +2838,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-50252",
@@ -2774,76 +2870,6 @@
       "timeline": [
         {
           "date": "2026-07-22",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-64815",
-      "title": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
-      "vendor": null,
-      "product": null,
-      "description": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0033,
-      "epss_pct": 0.25561,
-      "cwe": "CWE-94",
-      "published": "2026-07-23T12:18:37.120",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-48144",
-      "title": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.",
-      "vendor": null,
-      "product": null,
-      "description": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00418,
-      "epss_pct": 0.34372,
-      "cwe": "CWE-297",
-      "published": "2026-07-27T12:16:44.700",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 8,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-27",
           "label": "Published to NVD"
         }
       ],
