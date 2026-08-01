@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T03:53:31.451Z",
+  "generated_at": "2026-08-01T06:42:13.810Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "795 recent"
+      "detail": "796 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3835 mapped"
+      "detail": "3836 mapped"
     },
     {
       "name": "Reddit",
@@ -290,15 +290,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 2,
-        "stars": 9,
+        "stars": 10,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-16232",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
-            "stars": 9
+            "stars": 10
           },
           {
             "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
@@ -881,7 +881,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1869,7 +1869,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 28,
+      "rising": 27,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1974,7 +1974,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 5,
         "stars": 35,
@@ -2140,7 +2140,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2175,7 +2175,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2210,7 +2210,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2315,7 +2315,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2473,17 +2473,17 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2026-15414",
-      "title": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and i…",
+      "cve_id": "CVE-2026-3141",
+      "title": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability c…",
       "vendor": null,
       "product": null,
-      "description": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.0.0. This is due to the `save_meta_boxes()` function persisting the `_wps_plan_user_role` membership plan meta from `$_POST` without an allowlist that excludes privileged roles — the only validations applied, `sanitize_key()` and `wp_roles()->is_role()`, both accept `'administrator'` as a valid value, and the UI's `disabled` attribute on the role dropdown is a client-side-only control trivially bypassed via DevTools or a direct POST request; additionally, because the `wps_membership_plan` custom post type is registered with `capability_type => 'post'`, any user who can edit posts satisfies the `current_user_can('edit_post', $post_id)` guard in `save_meta_boxes()`. This makes it possible for authenticated attackers, with Contributor-level access and above, to escalate their privileges to Administrator by storing `'administrator'` as the role granted on membership acquisition, which the Pro companion plugin then applies via `add_role()` during membership lifecycle events. Successful exploitation requires the Subscriptions for WooCommerce Pro companion plugin to be active, as it is the component that reads the stored `_wps_plan_user_role` meta via `get_post_meta()` and calls `add_role()` to apply the role during membership lifecycle events.",
-      "cvss": 8.8,
-      "severity": "HIGH",
+      "description": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability check on the /wp-json/formgent/responses/attachments REST API endpoint in all versions up to, and including, 1.9.2 This is due to the REST API route being registered without any authentication middleware in routes/rest/api.php. This makes it possible for unauthenticated attackers to delete arbitrary files within the formgent uploads directory. Additionally, on Linux servers where the wp-content/uploads/formgent directory does not yet exist (the default state after plugin installation), the path traversal protection can be bypassed, enabling deletion of arbitrary files including wp-config.php which can lead to complete site takeover via a fresh WordPress installation.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-269",
-      "published": "2026-08-01T03:16:25.757",
+      "cwe": "CWE-862",
+      "published": "2026-08-01T06:16:26.030",
       "kev": {
         "in_kev": false
       },
@@ -2506,6 +2506,41 @@
         }
       ],
       "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-15414",
+      "title": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and i…",
+      "vendor": null,
+      "product": null,
+      "description": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.0.0. This is due to the `save_meta_boxes()` function persisting the `_wps_plan_user_role` membership plan meta from `$_POST` without an allowlist that excludes privileged roles — the only validations applied, `sanitize_key()` and `wp_roles()->is_role()`, both accept `'administrator'` as a valid value, and the UI's `disabled` attribute on the role dropdown is a client-side-only control trivially bypassed via DevTools or a direct POST request; additionally, because the `wps_membership_plan` custom post type is registered with `capability_type => 'post'`, any user who can edit posts satisfies the `current_user_can('edit_post', $post_id)` guard in `save_meta_boxes()`. This makes it possible for authenticated attackers, with Contributor-level access and above, to escalate their privileges to Administrator by storing `'administrator'` as the role granted on membership acquisition, which the Pro companion plugin then applies via `add_role()` during membership lifecycle events. Successful exploitation requires the Subscriptions for WooCommerce Pro companion plugin to be active, as it is the component that reads the stored `_wps_plan_user_role` meta via `get_post_meta()` and calls `add_role()` to apply the role during membership lifecycle events.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-269",
+      "published": "2026-08-01T03:16:25.757",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2548,7 +2583,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2591,7 +2626,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-48320",
@@ -2626,85 +2661,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-44596",
-      "title": "Yamcs is a mission control framework.",
-      "vendor": null,
-      "product": null,
-      "description": "Yamcs is a mission control framework. Prior to 5.12.7, the authentication endpoint POST /auth/token in yamcs-core, handled by yamcs-core/src/main/java/org/yamcs/http/auth/AuthHandler.java, lacked any rate limiting, account lockout, or failed-attempt throttling, so an unauthenticated remote attacker could perform unlimited password-guessing attempts against any user account, significantly increasing the risk of successful brute-force attacks. This issue is fixed in versions 5.12.7 and 5.13.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01729,
-      "epss_pct": 0.75305,
-      "cwe": "CWE-307",
-      "published": "2026-07-16T17:16:55.880",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "ex-cal1bur/CVE-2026-44596",
-            "html_url": "https://github.com/ex-cal1bur/CVE-2026-44596",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-16",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-12341",
-      "title": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to p…",
-      "vendor": null,
-      "product": null,
-      "description": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to protected APIs and data due to improper validation of\nOAuth bearer tokens.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00216,
-      "epss_pct": 0.12208,
-      "cwe": "CWE-287",
-      "published": "2026-07-20T19:17:18.027",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
     },
     {
       "cve_id": "CVE-2026-56817",
@@ -2739,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2774,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-64815",
@@ -2809,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-10697",
@@ -2823,6 +2780,41 @@
       "epss_pct": 0.21427,
       "cwe": "CWE-287",
       "published": "2026-07-23T21:17:01.597",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-15966",
+      "title": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.",
+      "vendor": null,
+      "product": null,
+      "description": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00204,
+      "epss_pct": 0.10589,
+      "cwe": "CWE-942",
+      "published": "2026-07-23T21:17:02.860",
       "kev": {
         "in_kev": false
       },
