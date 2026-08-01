@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-01T09:23:38.332Z",
+  "generated_at": "2026-08-01T11:36:07.300Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 34,
     "kev_total": 1656,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -24,7 +24,7 @@
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "100 scored"
+      "detail": "826 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,12 +34,12 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "13 mentions"
+      "detail": "12 mentions"
     },
     {
       "name": "Dark Reading",
-      "status": "error",
-      "detail": "0 mentions"
+      "status": "ok",
+      "detail": "2 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3837 mapped"
+      "detail": "3840 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,148 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.98417,
+      "epss_pct": 0.99914,
+      "cwe": "CWE-436",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 68,
+      "rising": 0,
+      "repos": {
+        "count": 70,
+        "stars": 1042,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 695
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 88
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 48
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.79029,
+      "epss_pct": 0.99559,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 66,
+      "rising": 0,
+      "repos": {
+        "count": 43,
+        "stars": 987,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 695
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 88
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 48
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "date": "2026-07-20T21:38:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-20",
+          "label": "Covered by Dark Reading"
+        },
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
     {
       "cve_id": "CVE-2026-56291",
       "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
@@ -125,66 +267,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.98417,
-      "epss_pct": 0.99914,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 61,
-      "rising": 0,
-      "repos": {
-        "count": 70,
-        "stars": 1038,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 694
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 85
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 48
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -248,65 +331,6 @@
         {
           "date": "2026-07-29",
           "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.79029,
-      "epss_pct": 0.99559,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 43,
-        "stars": 983,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 694
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 85
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 48
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 4
@@ -447,12 +471,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 36,
+        "stars": 37,
         "top": [
           {
             "full_name": "4minx/CVE-2026-50522",
             "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 36
+            "stars": 37
           },
           {
             "full_name": "darses/CVE-2026-50522",
@@ -857,7 +881,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1835,8 +1859,8 @@
       "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00649,
+      "epss_pct": 0.47523,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1845,7 +1869,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1940,8 +1964,8 @@
       "description": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated attacker may exploit this behavior to read arbitrary files accessible to the Rails process, including environment variables and application secrets. Exposure of credentials such as secret_key_base or external-service tokens may enable remote code execution or lateral movement. This issue has been fixed in versions 7.2.3.2, 8.0.5.1 and 8.1.3.1.",
       "cvss": null,
       "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.01701,
+      "epss_pct": 0.74932,
       "cwe": "CWE-1188",
       "published": null,
       "kev": {
@@ -1950,10 +1974,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 5,
-        "stars": 37,
+        "stars": 38,
         "top": [
           {
             "full_name": "Zer0SumGam3/CVE-2026-66066-POC",
@@ -1966,8 +1990,8 @@
             "stars": 16
           },
           {
-            "full_name": "0xBlackash/CVE-2026-66066",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-66066",
+            "full_name": "0xsha/KindaRails2Shell",
+            "html_url": "https://github.com/0xsha/KindaRails2Shell",
             "stars": 1
           }
         ]
@@ -2029,6 +2053,111 @@
       "rank": 38
     },
     {
+      "cve_id": "CVE-2026-48284",
+      "title": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.28002,
+      "epss_pct": 0.97908,
+      "cwe": "CWE-20",
+      "published": "2026-07-14T21:16:58.043",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-48319",
+      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
+      "vendor": null,
+      "product": null,
+      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.3229,
+      "epss_pct": 0.98153,
+      "cwe": "CWE-22",
+      "published": "2026-07-14T21:16:58.600",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2026-67208",
+      "title": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to e…",
+      "vendor": null,
+      "product": null,
+      "description": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by connecting to the exposed H2 database web console using default shipped credentials. Attackers can access the unprotected /h2-console endpoint, authenticate with default credentials, and leverage the H2 CREATE ALIAS Runtime.exec() technique to execute arbitrary commands, resulting in root-level code execution when running the stock Docker image.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01097,
+      "epss_pct": 0.62343,
+      "cwe": "CWE-306",
+      "published": "2026-07-30T20:18:14.323",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 13,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 41
+    },
+    {
       "cve_id": "CVE-2026-68770",
       "title": "sentence-transformers contains a security control bypass vulnerability that allows attackers to achieve arbitrary cod…",
       "vendor": null,
@@ -2061,7 +2190,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-68771",
@@ -2096,7 +2225,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-15964",
@@ -2131,7 +2260,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2141,8 +2270,8 @@
       "description": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.01042,
+      "epss_pct": 0.60672,
       "cwe": "CWE-122",
       "published": "2026-07-27T12:16:46.110",
       "kev": {
@@ -2166,7 +2295,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2176,8 +2305,8 @@
       "description": "JFrog Artifactory contains an authentication handling weakness in internal request processing that, under specific conditions, may allow an attacker to escalate privileges beyond the intended access level.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00319,
+      "epss_pct": 0.24343,
       "cwe": "CWE-287",
       "published": "2026-07-27T20:16:41.790",
       "kev": {
@@ -2186,7 +2315,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2201,7 +2330,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2211,8 +2340,8 @@
       "description": "The Apache Traffic Server Cripts framework has out-of-bounds writes, path traversal, and use-after-free errors.\n\nThis issue affects Apache Traffic Server: from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 10.1.4, which fix the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00303,
+      "epss_pct": 0.22703,
       "cwe": "CWE-787",
       "published": "2026-07-29T10:16:42.510",
       "kev": {
@@ -2236,7 +2365,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2246,8 +2375,8 @@
       "description": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00416,
+      "epss_pct": 0.3422,
       "cwe": "CWE-121",
       "published": "2026-07-29T10:16:42.803",
       "kev": {
@@ -2271,7 +2400,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2281,8 +2410,8 @@
       "description": "The Apache Traffic Server intercept plugin has a use-after-free.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00328,
+      "epss_pct": 0.25397,
       "cwe": "CWE-416",
       "published": "2026-07-29T10:16:43.663",
       "kev": {
@@ -2306,7 +2435,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2316,8 +2445,8 @@
       "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Traffic Analysis System allows SQL Injection.\n\nThis issue affects Traffic Analysis System: from 30 before 34.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0026,
+      "epss_pct": 0.17721,
       "cwe": "CWE-89",
       "published": "2026-07-30T16:17:12.933",
       "kev": {
@@ -2341,7 +2470,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2351,8 +2480,8 @@
       "description": "IBM webMethods Integration (on prem) 10.15, 10.11 could allow an unauthenticated remote attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00499,
+      "epss_pct": 0.4001,
       "cwe": "CWE-502",
       "published": "2026-07-30T19:17:04.483",
       "kev": {
@@ -2361,7 +2490,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2376,42 +2505,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-67208",
-      "title": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to e…",
-      "vendor": null,
-      "product": null,
-      "description": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by connecting to the exposed H2 database web console using default shipped credentials. Attackers can access the unprotected /h2-console endpoint, authenticate with default credentials, and leverage the H2 CREATE ALIAS Runtime.exec() technique to execute arbitrary commands, resulting in root-level code execution when running the stock Docker image.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-07-30T20:18:14.323",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-3141",
@@ -2446,20 +2540,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
-      "cve_id": "CVE-2026-15414",
-      "title": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and i…",
+      "cve_id": "CVE-2026-15988",
+      "title": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Reques…",
       "vendor": null,
       "product": null,
-      "description": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.0.0. This is due to the `save_meta_boxes()` function persisting the `_wps_plan_user_role` membership plan meta from `$_POST` without an allowlist that excludes privileged roles — the only validations applied, `sanitize_key()` and `wp_roles()->is_role()`, both accept `'administrator'` as a valid value, and the UI's `disabled` attribute on the role dropdown is a client-side-only control trivially bypassed via DevTools or a direct POST request; additionally, because the `wps_membership_plan` custom post type is registered with `capability_type => 'post'`, any user who can edit posts satisfies the `current_user_can('edit_post', $post_id)` guard in `save_meta_boxes()`. This makes it possible for authenticated attackers, with Contributor-level access and above, to escalate their privileges to Administrator by storing `'administrator'` as the role granted on membership acquisition, which the Pro companion plugin then applies via `add_role()` during membership lifecycle events. Successful exploitation requires the Subscriptions for WooCommerce Pro companion plugin to be active, as it is the component that reads the stored `_wps_plan_user_role` meta via `get_post_meta()` and calls `add_role()` to apply the role during membership lifecycle events.",
+      "description": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.6.5 This is due to missing or incorrect nonce validation on the reauth_for_authorize function. This makes it possible for unauthenticated attackers to create new administrator accounts with attacker-supplied credentials via a CSRF-based REST authentication bypass, granted they can trick a site administrator into performing an action such as clicking on a link. This bypass can be combined with WordPress's ?_method=POST method-override support to convert a top-navigation GET request into an authenticated POST to the REST users endpoint, requiring no existing account on the attacker's part.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-269",
-      "published": "2026-08-01T03:16:25.757",
+      "cwe": "CWE-352",
+      "published": "2026-08-01T08:16:29.610",
       "kev": {
         "in_kev": false
       },
@@ -2481,42 +2575,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-15988",
-      "title": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Reques…",
-      "vendor": null,
-      "product": null,
-      "description": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.6.5 This is due to missing or incorrect nonce validation on the reauth_for_authorize function. This makes it possible for unauthenticated attackers to create new administrator accounts with attacker-supplied credentials via a CSRF-based REST authentication bypass, granted they can trick a site administrator into performing an action such as clicking on a link. This bypass can be combined with WordPress's ?_method=POST method-override support to convert a top-navigation GET request into an authenticated POST to the REST users endpoint, requiring no existing account on the attacker's part.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-352",
-      "published": "2026-08-01T08:16:29.610",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-16635",
@@ -2551,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2594,7 +2653,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-57830",
@@ -2637,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-56817",
@@ -2647,8 +2706,8 @@
       "description": "Netty is a network application framework for development of protocol servers and clients. In versions 4.2.0.Final through 4.2.15.Final and 4.1.0.Final through 4.1.135.Final, any caller that can deliver bytes to a Netty channel pipeline containing `XmlDecoder` can send XML with a `DOCTYPE` declaration to an `AsyncXMLInputFactory` instantiated with no security configuration, leaving DTD and entity handling active depending on Aalto XML async parser behavior and creating conditional XML external entity risk. This issue is fixed in versions 4.1.136.Final and 4.2.16.Final.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00371,
+      "epss_pct": 0.29872,
       "cwe": "CWE-611",
       "published": "2026-07-21T23:17:52.127",
       "kev": {
@@ -2672,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-65590",
@@ -2682,8 +2741,8 @@
       "description": "n8n before 2.29.8 and 2.30.x before 2.30.1 does not enforce shell sandbox restrictions on Linux and Windows in the @n8n/computer-use package (sandboxing was applied only on macOS). Shell commands executed by the tool run without any filesystem or network restrictions, allowing unrestricted access to the host filesystem and network from within the computer-use agent process. This issue only affects deployments where the @n8n/computer-use package is explicitly installed and running; standard n8n installations are not affected.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00322,
+      "epss_pct": 0.24637,
       "cwe": "CWE-78",
       "published": "2026-07-22T12:18:18.987",
       "kev": {
@@ -2707,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-64815",
@@ -2717,45 +2776,10 @@
       "description": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0033,
+      "epss_pct": 0.2557,
       "cwe": "CWE-94",
       "published": "2026-07-23T12:18:37.120",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-10697",
-      "title": "Improper Authentication vulnerability in Progress MOVEit Transfer.",
-      "vendor": null,
-      "product": null,
-      "description": "Improper Authentication vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-287",
-      "published": "2026-07-23T21:17:01.597",
       "kev": {
         "in_kev": false
       },
@@ -2780,17 +2804,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-15966",
-      "title": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.",
+      "cve_id": "CVE-2026-10697",
+      "title": "Improper Authentication vulnerability in Progress MOVEit Transfer.",
       "vendor": null,
       "product": null,
-      "description": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
+      "description": "Improper Authentication vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-942",
-      "published": "2026-07-23T21:17:02.860",
+      "epss": 0.00292,
+      "epss_pct": 0.21427,
+      "cwe": "CWE-287",
+      "published": "2026-07-23T21:17:01.597",
       "kev": {
         "in_kev": false
       },
