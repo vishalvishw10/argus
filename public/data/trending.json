@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T11:36:07.300Z",
+  "generated_at": "2026-08-01T13:58:38.171Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 34,
     "kev_total": 1656,
-    "sources_live": 9,
+    "sources_live": 8,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "831 recent"
+      "detail": "881 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "ok",
+      "status": "error",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3840 mapped"
+      "detail": "3844 mapped"
     },
     {
       "name": "Reddit",
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 70,
-        "stars": 1042,
+        "stars": 1043,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 695
+            "stars": 696
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -154,16 +154,16 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 66,
+      "hype": 65,
       "rising": 0,
       "repos": {
         "count": 43,
-        "stars": 987,
+        "stars": 988,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 695
+            "stars": 696
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -881,7 +881,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1096,7 +1096,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 48,
+      "hype": 47,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1869,7 +1869,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1974,7 +1974,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 5,
         "stars": 38,
@@ -2175,7 +2175,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2210,7 +2210,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2245,7 +2245,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2261,6 +2261,286 @@
         }
       ],
       "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-66402",
+      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses …",
+      "vendor": null,
+      "product": null,
+      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). Because FreeRDP performs custom Common Name and DNS SAN string matching instead of using OpenSSL's length-aware identity validation APIs, it (1) truncates DNS SAN values at embedded NUL bytes (accepting e.g. 'victim.example\\0.attacker.example' as 'victim.example'), (2) accepts a matching Common Name even when non-matching DNS SAN entries are present, and (3) accepts IP-literal targets via DNS/CN matching without comparing iPAddress SANs. Under a trusted or misissued certificate chain, an attacker positioned to present such a certificate can bypass server identity verification, weakening TLS server authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-295",
+      "published": "2026-08-01T13:16:57.487",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-67289",
+      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-contr…",
+      "vendor": null,
+      "product": null,
+      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client's ServerHostname and, when the client connects through an HTTP proxy, is written directly into the proxy CONNECT request line and Host header by http_proxy_connect() without filtering. A malicious or compromised RDP server can send a crafted redirection PDU containing embedded control characters to inject arbitrary headers/requests into the HTTP proxy CONNECT request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-113",
+      "published": "2026-08-01T13:16:57.803",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-67308",
+      "title": "Wazuh workflows before 44bf114 contain a shell injection vulnerability in GitHub Actions that allows attackers to exe…",
+      "vendor": null,
+      "product": null,
+      "description": "Wazuh workflows before 44bf114 contain a shell injection vulnerability in GitHub Actions that allows attackers to execute arbitrary commands by submitting pull requests with crafted VERSION.json files. Attackers can inject shell metacharacters into environment variables that are directly interpolated into run steps, enabling command execution and exfiltration of secrets including GITHUB_TOKEN and AWS credentials on self-hosted runners.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-01T13:17:00.553",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-67324",
+      "title": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<val…",
+      "vendor": null,
+      "product": null,
+      "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options into Repo.clone_from(..., multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper> to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified helper command during clone. Fixed in 3.1.51.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-01T13:17:02.770",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-67330",
+      "title": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1…",
+      "vendor": null,
+      "product": null,
+      "description": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1.7.0-beta.9 contain an authorization bypass. SCIM token issuance did not reject provider IDs already used by existing SSO, SAML, OIDC, generic OAuth, or social account providers, and the same logical provider ID was used for both SCIM provider configuration and account ownership. An authenticated user could mint a SCIM token whose provider ID collided with an existing provider namespace, causing SCIM user routes to resolve account rows the token never provisioned. This allowed listing, reading, updating (including rewriting global profile/email fields without uniqueness checks), and deleting global user accounts and sessions, resulting in account takeover and unauthorized deprovisioning. Fixed in 1.6.22 and 1.7.0-beta.10 (1.7.0-rc.0).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-20",
+      "published": "2026-08-01T13:17:03.677",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-67340",
+      "title": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type…",
+      "vendor": null,
+      "product": null,
+      "description": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authenticated user with UPDATE_SCHEMA permission can create a JavaScript trigger that invokes java.lang.Runtime.getRuntime().exec() (or ProcessBuilder), achieving OS command execution when the trigger fires.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-08-01T13:17:05.127",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-67341",
+      "title": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement w…",
+      "vendor": null,
+      "product": null,
+      "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript code by submitting DEFINE FUNCTION statements, bypassing security controls intended to restrict scripting to administrators.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-863",
+      "published": "2026-08-01T13:17:05.273",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-67342",
+      "title": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch…",
+      "vendor": null,
+      "product": null,
+      "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissions. Attackers can access and modify databases they are not authorized to use by directly calling affected endpoints with arbitrary database parameters.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-639",
+      "published": "2026-08-01T13:17:05.417",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2295,7 +2575,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2330,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2350,7 +2630,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2365,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2385,7 +2665,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2400,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2420,7 +2700,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2435,7 +2715,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2455,7 +2735,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2470,7 +2750,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2505,7 +2785,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-3141",
@@ -2537,302 +2817,6 @@
       "timeline": [
         {
           "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-15988",
-      "title": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Reques…",
-      "vendor": null,
-      "product": null,
-      "description": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.6.5 This is due to missing or incorrect nonce validation on the reauth_for_authorize function. This makes it possible for unauthenticated attackers to create new administrator accounts with attacker-supplied credentials via a CSRF-based REST authentication bypass, granted they can trick a site administrator into performing an action such as clicking on a link. This bypass can be combined with WordPress's ?_method=POST method-override support to convert a top-navigation GET request into an authenticated POST to the REST users endpoint, requiring no existing account on the attacker's part.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-352",
-      "published": "2026-08-01T08:16:29.610",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-16635",
-      "title": "The Pronamic Pay plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 10.…",
-      "vendor": null,
-      "product": null,
-      "description": "The Pronamic Pay plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 10.1.0 This is due to the `maybe_update_user_role()` function passing an attacker-controlled Gravity Forms field value (`$lead[$feed->user_role_field_id]`) directly into `WP_User::set_role()` without any allowlist validation, capability comparison, or permission check to constrain which roles can be assigned. This makes it possible for authenticated attackers, with Subscriber-level access and above, to escalate their own WordPress account to Administrator by tampering with the role field value in a form submission. Exploitation requires that an administrator has already configured a Pronamic Pay payment feed in Gravity Forms with the **Update User Role** option enabled and mapped to a form field; once that configuration is in place, no further preconditions exist to prevent an authenticated attacker from exploiting this vulnerability.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-269",
-      "published": "2026-08-01T09:17:00.970",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-58480",
-      "title": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerabil…",
-      "vendor": null,
-      "product": null,
-      "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validation in the save_attachments function exposed through the Advanced Reviews feature. Attackers can exploit the Custom Fonts extension's flawed strpos() substring check by uploading double-extension filenames such as shell.woff2.php, causing the validation to pass on the substring match while the web server executes the file as PHP, achieving remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00605,
-      "epss_pct": 0.45554,
-      "cwe": "CWE-434",
-      "published": "2026-07-08T14:17:19.977",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-58480",
-            "html_url": "https://github.com/shinthink/CVE-2026-58480",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-08",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-57830",
-      "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla ex…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00303,
-      "epss_pct": 0.22626,
-      "cwe": "CWE-862",
-      "published": "2026-07-13T08:16:21.713",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Is4yev/CVE-2026-57830",
-            "html_url": "https://github.com/Is4yev/CVE-2026-57830",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-56817",
-      "title": "Netty is a network application framework for development of protocol servers and clients.",
-      "vendor": null,
-      "product": null,
-      "description": "Netty is a network application framework for development of protocol servers and clients. In versions 4.2.0.Final through 4.2.15.Final and 4.1.0.Final through 4.1.135.Final, any caller that can deliver bytes to a Netty channel pipeline containing `XmlDecoder` can send XML with a `DOCTYPE` declaration to an `AsyncXMLInputFactory` instantiated with no security configuration, leaving DTD and entity handling active depending on Aalto XML async parser behavior and creating conditional XML external entity risk. This issue is fixed in versions 4.1.136.Final and 4.2.16.Final.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00371,
-      "epss_pct": 0.29872,
-      "cwe": "CWE-611",
-      "published": "2026-07-21T23:17:52.127",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-65590",
-      "title": "n8n before 2.29.8 and 2.30.x before 2.30.1 does not enforce shell sandbox restrictions on Linux and Windows in the @n…",
-      "vendor": null,
-      "product": null,
-      "description": "n8n before 2.29.8 and 2.30.x before 2.30.1 does not enforce shell sandbox restrictions on Linux and Windows in the @n8n/computer-use package (sandboxing was applied only on macOS). Shell commands executed by the tool run without any filesystem or network restrictions, allowing unrestricted access to the host filesystem and network from within the computer-use agent process. This issue only affects deployments where the @n8n/computer-use package is explicitly installed and running; standard n8n installations are not affected.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00322,
-      "epss_pct": 0.24637,
-      "cwe": "CWE-78",
-      "published": "2026-07-22T12:18:18.987",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-22",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-64815",
-      "title": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
-      "vendor": null,
-      "product": null,
-      "description": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0033,
-      "epss_pct": 0.2557,
-      "cwe": "CWE-94",
-      "published": "2026-07-23T12:18:37.120",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-10697",
-      "title": "Improper Authentication vulnerability in Progress MOVEit Transfer.",
-      "vendor": null,
-      "product": null,
-      "description": "Improper Authentication vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00292,
-      "epss_pct": 0.21427,
-      "cwe": "CWE-287",
-      "published": "2026-07-23T21:17:01.597",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-23",
           "label": "Published to NVD"
         }
       ],
