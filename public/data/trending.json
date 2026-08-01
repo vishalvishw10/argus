@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T22:13:01.889Z",
+  "generated_at": "2026-08-01T23:13:38.304Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "865 recent"
+      "detail": "863 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "854 scored"
+      "detail": "852 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3850 mapped"
+      "detail": "3855 mapped"
     },
     {
       "name": "Reddit",
@@ -512,11 +512,11 @@
       "vendor": "Fortinet",
       "product": "FortiSandbox",
       "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.89691,
       "epss_pct": 0.99776,
-      "cwe": null,
+      "cwe": "CWE-78",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1852,6 +1852,49 @@
       "rank": 34
     },
     {
+      "cve_id": "CVE-2026-15964",
+      "title": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password r…",
+      "vendor": null,
+      "product": null,
+      "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_ajax()` function — registered on `wp_ajax_nopriv_ssoprocess_ajax` and therefore reachable without authentication — accepting an attacker-supplied `email` parameter with the `setnewpassword` operation and calling `reset_password()` on the resolved account without any ownership token, email confirmation link, or capability check. The sole guard is a call to `check_ajax_referer()`, which provides no authorization barrier because the `ssoajaxnonce` nonce is publicly broadcast on every front-end page via `wp_localize_script()` into the `SSOPWDREQUIREMENT` JavaScript object; since WordPress computes nonces for logged-out visitors against a shared anonymous session context, any unauthenticated visitor can scrape a valid nonce from the homepage and use it to authenticate the request. This makes it possible for unauthenticated attackers to change the password of any WordPress account, including administrator accounts, enabling complete site takeover.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00489,
+      "epss_pct": 0.39437,
+      "cwe": "CWE-620",
+      "published": "2026-08-01T09:17:00.137",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 18,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Instructor-Admin/CVE-2026-15964-PoC",
+            "html_url": "https://github.com/Instructor-Admin/CVE-2026-15964-PoC",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 35
+    },
+    {
       "cve_id": "CVE-2026-57827",
       "title": "Joomla Extension - rsjoomla.com - Unauthenticated file upload in RSFiles component < 1.17.12 - The Joomla extension R…",
       "vendor": null,
@@ -1897,7 +1940,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -1958,7 +2001,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -2015,7 +2058,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2050,7 +2093,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2085,7 +2128,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-68770",
@@ -2120,7 +2163,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-68771",
@@ -2155,41 +2198,6 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-15964",
-      "title": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password r…",
-      "vendor": null,
-      "product": null,
-      "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_ajax()` function — registered on `wp_ajax_nopriv_ssoprocess_ajax` and therefore reachable without authentication — accepting an attacker-supplied `email` parameter with the `setnewpassword` operation and calling `reset_password()` on the resolved account without any ownership token, email confirmation link, or capability check. The sole guard is a call to `check_ajax_referer()`, which provides no authorization barrier because the `ssoajaxnonce` nonce is publicly broadcast on every front-end page via `wp_localize_script()` into the `SSOPWDREQUIREMENT` JavaScript object; since WordPress computes nonces for logged-out visitors against a shared anonymous session context, any unauthenticated visitor can scrape a valid nonce from the homepage and use it to authenticate the request. This makes it possible for unauthenticated attackers to change the password of any WordPress account, including administrator accounts, enabling complete site takeover.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00489,
-      "epss_pct": 0.39437,
-      "cwe": "CWE-620",
-      "published": "2026-08-01T09:17:00.137",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 42
     },
     {
@@ -2210,7 +2218,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2245,7 +2253,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2280,7 +2288,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2315,7 +2323,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2350,7 +2358,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2385,7 +2393,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2420,7 +2428,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2455,7 +2463,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2735,7 +2743,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
