@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T13:59:36.263Z",
+  "generated_at": "2026-08-02T15:29:43.635Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "862 recent"
+      "detail": "863 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "832 scored"
+      "detail": "889 scored"
     },
     {
       "name": "BleepingComputer",
@@ -277,8 +277,8 @@
       "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
       "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.69969,
-      "epss_pct": 0.99309,
+      "epss": 0.71391,
+      "epss_pct": 0.99353,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -692,7 +692,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.83254,
-      "epss_pct": 0.99648,
+      "epss_pct": 0.99649,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -743,6 +743,55 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-34908",
+      "title": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
+      "vendor": "Ubiquiti",
+      "product": "UniFi OS",
+      "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.61906,
+      "epss_pct": 0.99091,
+      "cwe": "CWE-284",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-23",
+        "due_date": "2026-06-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 64,
+        "top": [
+          {
+            "full_name": "BishopFox/CVE-2026-34908-check",
+            "html_url": "https://github.com/BishopFox/CVE-2026-34908-check",
+            "stars": 64
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
+    },
+    {
       "cve_id": "CVE-2026-0770",
       "title": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
       "vendor": "Langflow",
@@ -751,7 +800,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.56267,
-      "epss_pct": 0.98954,
+      "epss_pct": 0.98955,
       "cwe": "CWE-829",
       "published": null,
       "kev": {
@@ -799,110 +848,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-34908",
-      "title": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
-      "vendor": "Ubiquiti",
-      "product": "UniFi OS",
-      "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.58432,
-      "epss_pct": 0.99006,
-      "cwe": "CWE-284",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 64,
-        "top": [
-          {
-            "full_name": "BishopFox/CVE-2026-34908-check",
-            "html_url": "https://github.com/BishopFox/CVE-2026-34908-check",
-            "stars": 64
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-20316",
-      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "epss": 0.00788,
-      "epss_pct": 0.52633,
-      "cwe": "CWE-259",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-29",
-        "due_date": "2026-08-01",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 3,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
-          "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
-          "date": "2026-07-30T05:08:39.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-30",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 14
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -956,7 +902,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1015,6 +961,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": 0.00788,
+      "epss_pct": 0.52638,
+      "cwe": "CWE-259",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 3,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Cisco FMC Zero-Day Actively Exploited, Static Credentials Could Expose Sensitive Data",
+          "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
+          "date": "2026-07-30T05:08:39.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-07-30",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 16
     },
     {
@@ -1026,7 +1026,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00884,
-      "epss_pct": 0.5567,
+      "epss_pct": 0.55676,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1125,6 +1125,48 @@
       "rank": 18
     },
     {
+      "cve_id": "CVE-2026-12569",
+      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "vendor": "PTC",
+      "product": "Windchill and FlexPLM",
+      "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.30198,
+      "epss_pct": 0.98035,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
+    },
+    {
       "cve_id": "CVE-2026-34910",
       "title": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
       "vendor": "Ubiquiti",
@@ -1164,7 +1206,49 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
+    },
+    {
+      "cve_id": "CVE-2026-34909",
+      "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
+      "vendor": "Ubiquiti",
+      "product": "UniFi OS",
+      "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.62767,
+      "epss_pct": 0.99113,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-23",
+        "due_date": "2026-06-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1175,7 +1259,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.24347,
-      "epss_pct": 0.97643,
+      "epss_pct": 0.97642,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -1219,90 +1303,6 @@
       "timeline": [
         {
           "date": "2026-07-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 20
-    },
-    {
-      "cve_id": "CVE-2026-12569",
-      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-      "vendor": "PTC",
-      "product": "Windchill and FlexPLM",
-      "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02263,
-      "epss_pct": 0.81258,
-      "cwe": "CWE-20",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2026-34909",
-      "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
-      "vendor": "Ubiquiti",
-      "product": "UniFi OS",
-      "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.56934,
-      "epss_pct": 0.98971,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-23",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1454,7 +1454,7 @@
       "cvss": 5.9,
       "severity": "MEDIUM",
       "epss": 0.01264,
-      "epss_pct": 0.66797,
+      "epss_pct": 0.66805,
       "cwe": "CWE-200",
       "published": null,
       "kev": {
@@ -1548,7 +1548,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.16488,
-      "epss_pct": 0.96667,
+      "epss_pct": 0.96666,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -1589,7 +1589,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.0912,
-      "epss_pct": 0.94791,
+      "epss_pct": 0.94792,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1678,7 +1678,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05985,
-      "epss_pct": 0.92575,
+      "epss_pct": 0.92576,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1719,7 +1719,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00907,
-      "epss_pct": 0.56367,
+      "epss_pct": 0.56373,
       "cwe": "CWE-645",
       "published": null,
       "kev": {
@@ -1760,7 +1760,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02333,
-      "epss_pct": 0.81852,
+      "epss_pct": 0.8186,
       "cwe": "CWE-1220",
       "published": null,
       "kev": {
@@ -1801,7 +1801,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00405,
-      "epss_pct": 0.33303,
+      "epss_pct": 0.33304,
       "cwe": "CWE-434",
       "published": "2026-07-11T10:16:34.057",
       "kev": {
@@ -1809,11 +1809,11 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
+      "hype": 21,
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 19,
+        "stars": 22,
         "top": [
           {
             "full_name": "shinthink/CVE-2026-57827",
@@ -1823,7 +1823,7 @@
           {
             "full_name": "Mohammad-008/rsfiles-CVE-2026-57827",
             "html_url": "https://github.com/Mohammad-008/rsfiles-CVE-2026-57827",
-            "stars": 6
+            "stars": 9
           },
           {
             "full_name": "Candisexterior171/CVE-2026-57827",
@@ -1854,7 +1854,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00489,
-      "epss_pct": 0.39437,
+      "epss_pct": 0.39441,
       "cwe": "CWE-620",
       "published": "2026-08-01T09:17:00.137",
       "kev": {
@@ -1967,7 +1967,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00623,
-      "epss_pct": 0.46452,
+      "epss_pct": 0.46456,
       "cwe": "CWE-502",
       "published": "2026-07-31T22:17:03.630",
       "kev": {
@@ -2001,8 +2001,8 @@
       "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). Because FreeRDP performs custom Common Name and DNS SAN string matching instead of using OpenSSL's length-aware identity validation APIs, it (1) truncates DNS SAN values at embedded NUL bytes (accepting e.g. 'victim.example\\0.attacker.example' as 'victim.example'), (2) accepts a matching Common Name even when non-matching DNS SAN entries are present, and (3) accepts IP-literal targets via DNS/CN matching without comparing iPAddress SANs. Under a trusted or misissued certificate chain, an attacker positioned to present such a certificate can bypass server identity verification, weakening TLS server authentication.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0029,
+      "epss_pct": 0.21307,
       "cwe": "CWE-295",
       "published": "2026-08-01T13:16:57.487",
       "kev": {
@@ -2036,8 +2036,8 @@
       "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client's ServerHostname and, when the client connects through an HTTP proxy, is written directly into the proxy CONNECT request line and Host header by http_proxy_connect() without filtering. A malicious or compromised RDP server can send a crafted redirection PDU containing embedded control characters to inject arbitrary headers/requests into the HTTP proxy CONNECT request.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0038,
+      "epss_pct": 0.30782,
       "cwe": "CWE-113",
       "published": "2026-08-01T13:16:57.803",
       "kev": {
@@ -2071,8 +2071,8 @@
       "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options into Repo.clone_from(..., multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper> to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified helper command during clone. Fixed in 3.1.51.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00379,
+      "epss_pct": 0.30616,
       "cwe": "CWE-78",
       "published": "2026-08-01T13:17:02.770",
       "kev": {
@@ -2106,8 +2106,8 @@
       "description": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1.7.0-beta.9 contain an authorization bypass. SCIM token issuance did not reject provider IDs already used by existing SSO, SAML, OIDC, generic OAuth, or social account providers, and the same logical provider ID was used for both SCIM provider configuration and account ownership. An authenticated user could mint a SCIM token whose provider ID collided with an existing provider namespace, causing SCIM user routes to resolve account rows the token never provisioned. This allowed listing, reading, updating (including rewriting global profile/email fields without uniqueness checks), and deleting global user accounts and sessions, resulting in account takeover and unauthorized deprovisioning. Fixed in 1.6.22 and 1.7.0-beta.10 (1.7.0-rc.0).",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00352,
+      "epss_pct": 0.27872,
       "cwe": "CWE-20",
       "published": "2026-08-01T13:17:03.677",
       "kev": {
@@ -2141,8 +2141,8 @@
       "description": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authenticated user with UPDATE_SCHEMA permission can create a JavaScript trigger that invokes java.lang.Runtime.getRuntime().exec() (or ProcessBuilder), achieving OS command execution when the trigger fires.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00523,
+      "epss_pct": 0.41483,
       "cwe": "CWE-94",
       "published": "2026-08-01T13:17:05.127",
       "kev": {
@@ -2176,8 +2176,8 @@
       "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript code by submitting DEFINE FUNCTION statements, bypassing security controls intended to restrict scripting to administrators.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00319,
+      "epss_pct": 0.24366,
       "cwe": "CWE-863",
       "published": "2026-08-01T13:17:05.273",
       "kev": {
@@ -2211,8 +2211,8 @@
       "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissions. Attackers can access and modify databases they are not authorized to use by directly calling affected endpoints with arbitrary database parameters.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00319,
+      "epss_pct": 0.24365,
       "cwe": "CWE-639",
       "published": "2026-08-01T13:17:05.417",
       "kev": {
@@ -2246,8 +2246,8 @@
       "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's public keys or validating the issuer, audience, or expiry claims, combined with the security nonce required to invoke the login flow being publicly exposed to unauthenticated users via a localized JavaScript object on the login page. This makes it possible for unauthenticated attackers to log in as any existing WordPress user — including administrators — by supplying a forged id_token whose payload contains the target user's email address, as that email is used without any role exclusion to resolve a WordPress account and immediately issue an authenticated session for it.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.004,
+      "epss_pct": 0.32836,
       "cwe": "CWE-289",
       "published": "2026-08-02T00:16:23.047",
       "kev": {
@@ -2256,7 +2256,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2309,6 +2309,41 @@
       "rank": 47
     },
     {
+      "cve_id": "CVE-2026-65321",
+      "title": "PyAthena prior to 3.35.4 contains a sql injection vulnerability that allows unauthenticated attackers to inject arbit…",
+      "vendor": null,
+      "product": null,
+      "description": "PyAthena prior to 3.35.4 contains a sql injection vulnerability that allows unauthenticated attackers to inject arbitrary SQL by exploiting improper quote-escaping in DefaultParameterFormatter.format(), which routes DELETE and CTAS statements to the _escape_hive function that backslash-escapes single quotes rather than doubling them. Because Athena and Trino do not treat backslashes as escape characters inside string literals, attacker-supplied input such as a single quote followed by SQL syntax causes the parser to terminate the string literal prematurely, enabling data exfiltration via UNION SELECT, execution of destructive statements, and attacker-controlled CTAS destination and content.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-08-02T15:16:33.957",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
       "cve_id": "CVE-2026-66066",
       "title": "CVE-2026-66066",
       "vendor": null,
@@ -2317,7 +2352,7 @@
       "cvss": null,
       "severity": "UNKNOWN",
       "epss": 0.01701,
-      "epss_pct": 0.7494,
+      "epss_pct": 0.74946,
       "cwe": "CWE-1188",
       "published": null,
       "kev": {
@@ -2367,7 +2402,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -2378,7 +2413,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00649,
-      "epss_pct": 0.47534,
+      "epss_pct": 0.47543,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -2424,7 +2459,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2435,7 +2470,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.28225,
-      "epss_pct": 0.97922,
+      "epss_pct": 0.97923,
       "cwe": "CWE-434",
       "published": "2026-07-14T20:17:08.437",
       "kev": {
@@ -2459,7 +2494,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2470,7 +2505,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01042,
-      "epss_pct": 0.60681,
+      "epss_pct": 0.60689,
       "cwe": "CWE-122",
       "published": "2026-07-27T12:16:46.110",
       "kev": {
@@ -2494,7 +2529,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2529,7 +2564,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2540,44 +2575,9 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00547,
-      "epss_pct": 0.4277,
+      "epss_pct": 0.42777,
       "cwe": "CWE-787",
       "published": "2026-07-29T10:16:42.510",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 3,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-58179",
-      "title": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.",
-      "vendor": null,
-      "product": null,
-      "description": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00554,
-      "epss_pct": 0.4315,
-      "cwe": "CWE-121",
-      "published": "2026-07-29T10:16:42.803",
       "kev": {
         "in_kev": false
       },
@@ -2602,17 +2602,17 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-58185",
-      "title": "The Apache Traffic Server intercept plugin has a use-after-free.",
+      "cve_id": "CVE-2026-58179",
+      "title": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.",
       "vendor": null,
       "product": null,
-      "description": "The Apache Traffic Server intercept plugin has a use-after-free.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
+      "description": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00446,
-      "epss_pct": 0.36663,
-      "cwe": "CWE-416",
-      "published": "2026-07-29T10:16:43.663",
+      "epss": 0.00554,
+      "epss_pct": 0.43158,
+      "cwe": "CWE-121",
+      "published": "2026-07-29T10:16:42.803",
       "kev": {
         "in_kev": false
       },
@@ -2637,6 +2637,41 @@
       "rank": 55
     },
     {
+      "cve_id": "CVE-2026-58185",
+      "title": "The Apache Traffic Server intercept plugin has a use-after-free.",
+      "vendor": null,
+      "product": null,
+      "description": "The Apache Traffic Server intercept plugin has a use-after-free.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00446,
+      "epss_pct": 0.3667,
+      "cwe": "CWE-416",
+      "published": "2026-07-29T10:16:43.663",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 3,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-4978",
       "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Tra…",
       "vendor": null,
@@ -2645,7 +2680,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0026,
-      "epss_pct": 0.17718,
+      "epss_pct": 0.17717,
       "cwe": "CWE-89",
       "published": "2026-07-30T16:17:12.933",
       "kev": {
@@ -2669,7 +2704,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2680,44 +2715,9 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00499,
-      "epss_pct": 0.40019,
+      "epss_pct": 0.40021,
       "cwe": "CWE-502",
       "published": "2026-07-30T19:17:04.483",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 9,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-67208",
-      "title": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to e…",
-      "vendor": null,
-      "product": null,
-      "description": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by connecting to the exposed H2 database web console using default shipped credentials. Attackers can access the unprotected /h2-console endpoint, authenticate with default credentials, and leverage the H2 CREATE ALIAS Runtime.exec() technique to execute arbitrary commands, resulting in root-level code execution when running the stock Docker image.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01097,
-      "epss_pct": 0.62353,
-      "cwe": "CWE-306",
-      "published": "2026-07-30T20:18:14.323",
       "kev": {
         "in_kev": false
       },
@@ -2742,6 +2742,41 @@
       "rank": 58
     },
     {
+      "cve_id": "CVE-2026-67208",
+      "title": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to e…",
+      "vendor": null,
+      "product": null,
+      "description": "Juggle through 1.6.0 contains a remote code execution vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by connecting to the exposed H2 database web console using default shipped credentials. Attackers can access the unprotected /h2-console endpoint, authenticate with default credentials, and leverage the H2 CREATE ALIAS Runtime.exec() technique to execute arbitrary commands, resulting in root-level code execution when running the stock Docker image.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01097,
+      "epss_pct": 0.62361,
+      "cwe": "CWE-306",
+      "published": "2026-07-30T20:18:14.323",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
       "cve_id": "CVE-2026-68770",
       "title": "sentence-transformers contains a security control bypass vulnerability that allows attackers to achieve arbitrary cod…",
       "vendor": null,
@@ -2750,7 +2785,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00521,
-      "epss_pct": 0.41335,
+      "epss_pct": 0.41339,
       "cwe": "CWE-94",
       "published": "2026-07-31T21:17:32.440",
       "kev": {
@@ -2771,41 +2806,6 @@
       "timeline": [
         {
           "date": "2026-07-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-3141",
-      "title": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability c…",
-      "vendor": null,
-      "product": null,
-      "description": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability check on the /wp-json/formgent/responses/attachments REST API endpoint in all versions up to, and including, 1.9.2 This is due to the REST API route being registered without any authentication middleware in routes/rest/api.php. This makes it possible for unauthenticated attackers to delete arbitrary files within the formgent uploads directory. Additionally, on Linux servers where the wp-content/uploads/formgent directory does not yet exist (the default state after plugin installation), the path traversal protection can be bypassed, enabling deletion of arbitrary files including wp-config.php which can lead to complete site takeover via a fresh WordPress installation.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00467,
-      "epss_pct": 0.38067,
-      "cwe": "CWE-862",
-      "published": "2026-08-01T06:16:26.030",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
           "label": "Published to NVD"
         }
       ],
