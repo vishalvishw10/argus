@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T00:14:40.287Z",
+  "generated_at": "2026-08-02T03:55:55.126Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "859 recent"
+      "detail": "851 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "847 scored"
+      "detail": "836 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3855 mapped"
+      "detail": "3854 mapped"
     },
     {
       "name": "Reddit",
@@ -97,7 +97,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 88
+            "stars": 87
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -168,7 +168,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 88
+            "stars": 87
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -225,7 +225,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 63,
+      "hype": 62,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -871,7 +871,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 49,
-      "rising": 11,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1793,49 +1793,6 @@
       "rank": 33
     },
     {
-      "cve_id": "CVE-2026-15964",
-      "title": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password r…",
-      "vendor": null,
-      "product": null,
-      "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_ajax()` function — registered on `wp_ajax_nopriv_ssoprocess_ajax` and therefore reachable without authentication — accepting an attacker-supplied `email` parameter with the `setnewpassword` operation and calling `reset_password()` on the resolved account without any ownership token, email confirmation link, or capability check. The sole guard is a call to `check_ajax_referer()`, which provides no authorization barrier because the `ssoajaxnonce` nonce is publicly broadcast on every front-end page via `wp_localize_script()` into the `SSOPWDREQUIREMENT` JavaScript object; since WordPress computes nonces for logged-out visitors against a shared anonymous session context, any unauthenticated visitor can scrape a valid nonce from the homepage and use it to authenticate the request. This makes it possible for unauthenticated attackers to change the password of any WordPress account, including administrator accounts, enabling complete site takeover.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00489,
-      "epss_pct": 0.39437,
-      "cwe": "CWE-620",
-      "published": "2026-08-01T09:17:00.137",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 18,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "Instructor-Admin/CVE-2026-15964-PoC",
-            "html_url": "https://github.com/Instructor-Admin/CVE-2026-15964-PoC",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 34
-    },
-    {
       "cve_id": "CVE-2026-57827",
       "title": "Joomla Extension - rsjoomla.com - Unauthenticated file upload in RSFiles component < 1.17.12 - The Joomla extension R…",
       "vendor": null,
@@ -1878,6 +1835,49 @@
       "timeline": [
         {
           "date": "2026-07-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-15964",
+      "title": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password r…",
+      "vendor": null,
+      "product": null,
+      "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_ajax()` function — registered on `wp_ajax_nopriv_ssoprocess_ajax` and therefore reachable without authentication — accepting an attacker-supplied `email` parameter with the `setnewpassword` operation and calling `reset_password()` on the resolved account without any ownership token, email confirmation link, or capability check. The sole guard is a call to `check_ajax_referer()`, which provides no authorization barrier because the `ssoajaxnonce` nonce is publicly broadcast on every front-end page via `wp_localize_script()` into the `SSOPWDREQUIREMENT` JavaScript object; since WordPress computes nonces for logged-out visitors against a shared anonymous session context, any unauthenticated visitor can scrape a valid nonce from the homepage and use it to authenticate the request. This makes it possible for unauthenticated attackers to change the password of any WordPress account, including administrator accounts, enabling complete site takeover.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00489,
+      "epss_pct": 0.39437,
+      "cwe": "CWE-620",
+      "published": "2026-08-01T09:17:00.137",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 17,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Instructor-Admin/CVE-2026-15964-PoC",
+            "html_url": "https://github.com/Instructor-Admin/CVE-2026-15964-PoC",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-01",
           "label": "Published to NVD"
         }
       ],
@@ -1962,7 +1962,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 17,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2089,7 +2089,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2124,7 +2124,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2422,6 +2422,41 @@
       "rank": 49
     },
     {
+      "cve_id": "CVE-2026-8457",
+      "title": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and …",
+      "vendor": null,
+      "product": null,
+      "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's public keys or validating the issuer, audience, or expiry claims, combined with the security nonce required to invoke the login flow being publicly exposed to unauthenticated users via a localized JavaScript object on the login page. This makes it possible for unauthenticated attackers to log in as any existing WordPress user — including administrators — by supplying a forged id_token whose payload contains the target user's email address, as that email is used without any role exclusion to resolve a WordPress account and immediately issue an authenticated session for it.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-289",
+      "published": "2026-08-02T00:16:23.047",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
+    },
+    {
       "cve_id": "CVE-2026-48356",
       "title": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in a…",
       "vendor": null,
@@ -2454,7 +2489,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2489,7 +2524,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2524,7 +2559,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2544,7 +2579,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2559,7 +2594,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2579,7 +2614,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2594,7 +2629,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2614,7 +2649,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2629,7 +2664,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2649,7 +2684,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2664,7 +2699,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2699,7 +2734,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2734,7 +2769,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-3141",
@@ -2754,7 +2789,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2766,49 +2801,6 @@
       "timeline": [
         {
           "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-57830",
-      "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla ex…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00303,
-      "epss_pct": 0.22625,
-      "cwe": "CWE-862",
-      "published": "2026-07-13T08:16:21.713",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Is4yev/CVE-2026-57830",
-            "html_url": "https://github.com/Is4yev/CVE-2026-57830",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-13",
           "label": "Published to NVD"
         }
       ],
