@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T00:14:48.204Z",
+  "generated_at": "2026-08-03T03:58:04.098Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "842 recent"
+      "detail": "843 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3863 mapped"
+      "detail": "3886 mapped"
     },
     {
       "name": "Reddit",
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 70,
-        "stars": 1052,
+        "stars": 1053,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 700
+            "stars": 701
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -158,12 +158,12 @@
       "rising": 0,
       "repos": {
         "count": 43,
-        "stars": 997,
+        "stars": 998,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 700
+            "stars": 701
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -1362,11 +1362,11 @@
       "vendor": "Cisco",
       "product": "IOS",
       "description": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain \"alias exec\" command to the /level/15/exec/-/configure/http URI.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "epss": 0.32953,
       "epss_pct": 0.98191,
-      "cwe": null,
+      "cwe": "CWE-352",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1813,12 +1813,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 22,
+        "stars": 23,
         "top": [
           {
             "full_name": "shinthink/CVE-2026-57827",
             "html_url": "https://github.com/shinthink/CVE-2026-57827",
-            "stars": 13
+            "stars": 14
           },
           {
             "full_name": "Mohammad-008/rsfiles-CVE-2026-57827",
@@ -1863,7 +1863,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1959,111 +1959,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-66402",
-      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses …",
-      "vendor": null,
-      "product": null,
-      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). Because FreeRDP performs custom Common Name and DNS SAN string matching instead of using OpenSSL's length-aware identity validation APIs, it (1) truncates DNS SAN values at embedded NUL bytes (accepting e.g. 'victim.example\\0.attacker.example' as 'victim.example'), (2) accepts a matching Common Name even when non-matching DNS SAN entries are present, and (3) accepts IP-literal targets via DNS/CN matching without comparing iPAddress SANs. Under a trusted or misissued certificate chain, an attacker positioned to present such a certificate can bypass server identity verification, weakening TLS server authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0029,
-      "epss_pct": 0.21307,
-      "cwe": "CWE-295",
-      "published": "2026-08-01T13:16:57.487",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-67289",
-      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-contr…",
-      "vendor": null,
-      "product": null,
-      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client's ServerHostname and, when the client connects through an HTTP proxy, is written directly into the proxy CONNECT request line and Host header by http_proxy_connect() without filtering. A malicious or compromised RDP server can send a crafted redirection PDU containing embedded control characters to inject arbitrary headers/requests into the HTTP proxy CONNECT request.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0038,
-      "epss_pct": 0.30782,
-      "cwe": "CWE-113",
-      "published": "2026-08-01T13:16:57.803",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-67324",
-      "title": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<val…",
-      "vendor": null,
-      "product": null,
-      "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options into Repo.clone_from(..., multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper> to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified helper command during clone. Fixed in 3.1.51.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00379,
-      "epss_pct": 0.30616,
-      "cwe": "CWE-78",
-      "published": "2026-08-01T13:17:02.770",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 40
-    },
-    {
       "cve_id": "CVE-2026-67330",
       "title": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1…",
       "vendor": null,
@@ -2096,7 +1991,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-67340",
@@ -2131,77 +2026,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-67341",
-      "title": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement w…",
-      "vendor": null,
-      "product": null,
-      "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript code by submitting DEFINE FUNCTION statements, bypassing security controls intended to restrict scripting to administrators.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00319,
-      "epss_pct": 0.24366,
-      "cwe": "CWE-863",
-      "published": "2026-08-01T13:17:05.273",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-67342",
-      "title": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch…",
-      "vendor": null,
-      "product": null,
-      "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissions. Attackers can access and modify databases they are not authorized to use by directly calling affected endpoints with arbitrary database parameters.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00319,
-      "epss_pct": 0.24365,
-      "cwe": "CWE-639",
-      "published": "2026-08-01T13:17:05.417",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-8457",
@@ -2221,7 +2046,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2236,7 +2061,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-65321",
@@ -2256,7 +2081,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2271,7 +2096,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2332,7 +2157,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 47
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -2352,7 +2177,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2389,7 +2214,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 48
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2424,7 +2249,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2459,7 +2284,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2494,7 +2319,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2514,7 +2339,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2529,7 +2354,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2549,7 +2374,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2564,7 +2389,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2584,7 +2409,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2599,7 +2424,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2619,7 +2444,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2634,7 +2459,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2669,7 +2494,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2704,7 +2529,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-68770",
@@ -2724,7 +2549,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2739,7 +2564,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-68771",
@@ -2759,7 +2584,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2774,7 +2599,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-3141",
@@ -2794,7 +2619,182 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-66402",
+      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses …",
+      "vendor": null,
+      "product": null,
+      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). Because FreeRDP performs custom Common Name and DNS SAN string matching instead of using OpenSSL's length-aware identity validation APIs, it (1) truncates DNS SAN values at embedded NUL bytes (accepting e.g. 'victim.example\\0.attacker.example' as 'victim.example'), (2) accepts a matching Common Name even when non-matching DNS SAN entries are present, and (3) accepts IP-literal targets via DNS/CN matching without comparing iPAddress SANs. Under a trusted or misissued certificate chain, an attacker positioned to present such a certificate can bypass server identity verification, weakening TLS server authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0029,
+      "epss_pct": 0.21307,
+      "cwe": "CWE-295",
+      "published": "2026-08-01T13:16:57.487",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-67289",
+      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-contr…",
+      "vendor": null,
+      "product": null,
+      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client's ServerHostname and, when the client connects through an HTTP proxy, is written directly into the proxy CONNECT request line and Host header by http_proxy_connect() without filtering. A malicious or compromised RDP server can send a crafted redirection PDU containing embedded control characters to inject arbitrary headers/requests into the HTTP proxy CONNECT request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0038,
+      "epss_pct": 0.30782,
+      "cwe": "CWE-113",
+      "published": "2026-08-01T13:16:57.803",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-67324",
+      "title": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<val…",
+      "vendor": null,
+      "product": null,
+      "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options into Repo.clone_from(..., multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper> to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified helper command during clone. Fixed in 3.1.51.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00379,
+      "epss_pct": 0.30616,
+      "cwe": "CWE-78",
+      "published": "2026-08-01T13:17:02.770",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-67341",
+      "title": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement w…",
+      "vendor": null,
+      "product": null,
+      "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript code by submitting DEFINE FUNCTION statements, bypassing security controls intended to restrict scripting to administrators.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00319,
+      "epss_pct": 0.24366,
+      "cwe": "CWE-863",
+      "published": "2026-08-01T13:17:05.273",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-67342",
+      "title": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch…",
+      "vendor": null,
+      "product": null,
+      "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissions. Attackers can access and modify databases they are not authorized to use by directly calling affected endpoints with arbitrary database parameters.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00319,
+      "epss_pct": 0.24365,
+      "cwe": "CWE-639",
+      "published": "2026-08-01T13:17:05.417",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
