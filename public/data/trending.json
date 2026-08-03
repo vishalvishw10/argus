@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-03T17:22:07.142Z",
+  "generated_at": "2026-08-03T20:00:42.582Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 8,
     "reddit_upvotes": 0,
-    "kev_count": 33,
-    "kev_total": 1656,
+    "kev_count": 34,
+    "kev_total": 1657,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1656 entries"
+      "detail": "1657 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "842 recent"
+      "detail": "801 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "856 scored"
+      "detail": "812 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3903 mapped"
+      "detail": "3906 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,71 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-18577",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.01477,
+      "epss_pct": 0.7132,
+      "cwe": "CWE-288",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-03",
+        "due_date": "2026-08-06",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 74,
+      "rising": 100,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "N-able warns of N-central auth bypass flaw exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+          "date": "2026-08-03T17:00:56.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "N‑able Patches Vulnerability Exploited to Hack N-central Servers",
+          "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
+          "date": "2026-08-03T12:34:06.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
+          "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
+          "date": "2026-08-03T06:41:46.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-03",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-63030",
       "title": "WordPress Core Interpretation Conflict Vulnerability",
@@ -87,7 +152,7 @@
       "rising": 0,
       "repos": {
         "count": 71,
-        "stars": 1056,
+        "stars": 1057,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -132,7 +197,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-60137",
@@ -203,7 +268,67 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.7844,
+      "epss_pct": 0.9954,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 35,
+        "top": [
+          {
+            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
+            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
+            "stars": 26
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
+            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
+            "stars": 5
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-15409",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -267,7 +392,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -293,7 +418,7 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 12,
+        "stars": 13,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-16232",
@@ -303,7 +428,7 @@
           {
             "full_name": "HackSpeak/checkpoint-smartconsole-poc",
             "html_url": "https://github.com/HackSpeak/checkpoint-smartconsole-poc",
-            "stars": 1
+            "stars": 2
           },
           {
             "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
@@ -338,7 +463,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -397,7 +522,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -456,7 +581,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -509,7 +634,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -568,66 +693,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.7844,
-      "epss_pct": 0.9954,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 35,
-        "top": [
-          {
-            "full_name": "remmons-r7/rapid7-CVE-2026-15409",
-            "html_url": "https://github.com/remmons-r7/rapid7-CVE-2026-15409",
-            "stars": 26
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-15409-15410-Framework",
-            "html_url": "https://github.com/tc4dy/CVE-2026-15409-15410-Framework",
-            "stars": 5
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-15409",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-15409",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -686,7 +752,62 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-15410",
+      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.76347,
+      "epss_pct": 0.99487,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-15410",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -745,7 +866,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -794,7 +915,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -853,7 +974,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -907,7 +1028,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -966,7 +1087,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1020,61 +1141,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-15410",
-      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.76347,
-      "epss_pct": 0.99487,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "html_url": "https://github.com/MrRawBit/SonicWall-SMA1000-Zero-Day-IoC-Check",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-15410",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-15410",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -1116,7 +1183,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -1158,7 +1225,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1200,7 +1267,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1258,7 +1325,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1306,7 +1373,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1347,7 +1414,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1395,7 +1462,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1436,7 +1503,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -1477,7 +1544,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1530,7 +1597,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1578,7 +1645,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1619,7 +1686,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1660,7 +1727,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1701,7 +1768,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1742,7 +1809,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1781,62 +1848,6 @@
         {
           "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-18577",
-      "title": "CVE-2026-18577",
-      "vendor": null,
-      "product": null,
-      "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.01477,
-      "epss_pct": 0.7132,
-      "cwe": "CWE-288",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 33,
-      "rising": 100,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "N-able warns of N-central auth bypass flaw exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
-          "date": "2026-08-03T17:00:56.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "N‑able Patches Vulnerability Exploited to Hack N-central Servers",
-          "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
-          "date": "2026-08-03T12:34:06.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "N-able Says Attackers Take Over N-central Servers After Initial Fix Proves Incomplete",
-          "url": "https://thehackernews.com/2026/08/n-able-says-attackers-take-over-n.html",
-          "date": "2026-08-03T06:41:46.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
         }
       ],
       "rank": 34
@@ -1895,49 +1906,6 @@
       "rank": 35
     },
     {
-      "cve_id": "CVE-2026-15964",
-      "title": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password r…",
-      "vendor": null,
-      "product": null,
-      "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_ajax()` function — registered on `wp_ajax_nopriv_ssoprocess_ajax` and therefore reachable without authentication — accepting an attacker-supplied `email` parameter with the `setnewpassword` operation and calling `reset_password()` on the resolved account without any ownership token, email confirmation link, or capability check. The sole guard is a call to `check_ajax_referer()`, which provides no authorization barrier because the `ssoajaxnonce` nonce is publicly broadcast on every front-end page via `wp_localize_script()` into the `SSOPWDREQUIREMENT` JavaScript object; since WordPress computes nonces for logged-out visitors against a shared anonymous session context, any unauthenticated visitor can scrape a valid nonce from the homepage and use it to authenticate the request. This makes it possible for unauthenticated attackers to change the password of any WordPress account, including administrator accounts, enabling complete site takeover.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00489,
-      "epss_pct": 0.3945,
-      "cwe": "CWE-620",
-      "published": "2026-08-01T09:17:00.137",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 11,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "Instructor-Admin/CVE-2026-15964-PoC",
-            "html_url": "https://github.com/Instructor-Admin/CVE-2026-15964-PoC",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 36
-    },
-    {
       "cve_id": "CVE-2026-66066",
       "title": "CVE-2026-66066",
       "vendor": null,
@@ -1958,16 +1926,16 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 44,
+        "stars": 46,
         "top": [
-          {
-            "full_name": "rails/rails-forensics-CVE-2026-66066",
-            "html_url": "https://github.com/rails/rails-forensics-CVE-2026-66066",
-            "stars": 20
-          },
           {
             "full_name": "Zer0SumGam3/CVE-2026-66066-POC",
             "html_url": "https://github.com/Zer0SumGam3/CVE-2026-66066-POC",
+            "stars": 21
+          },
+          {
+            "full_name": "rails/rails-forensics-CVE-2026-66066",
+            "html_url": "https://github.com/rails/rails-forensics-CVE-2026-66066",
             "stars": 20
           },
           {
@@ -1996,7 +1964,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2031,7 +1999,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-18589",
@@ -2066,7 +2034,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-18601",
@@ -2101,7 +2069,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-69084",
@@ -2136,7 +2104,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-18602",
@@ -2171,7 +2139,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2206,7 +2174,182 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-18612",
+      "title": "A flaw has been found in GL-iNet GL-MT3000 up to 4.4.5.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw has been found in GL-iNet GL-MT3000 up to 4.4.5. This vulnerability affects the function plugins.remove_package/plugins.install_package of the file /cgi-bin/glc of the component plugins.so Native Plugin. This manipulation causes command injection. The attack can be initiated remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T18:16:38.450",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-18613",
+      "title": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5. This issue affects the function plugins.set_config of the file /cgi-bin/glc of the component plugins.so Native Plugin. Such manipulation leads to injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T18:16:38.617",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-18614",
+      "title": "A vulnerability was found in GL-iNet GL-MT3000 up to 4.4.5.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was found in GL-iNet GL-MT3000 up to 4.4.5. Impacted is the function s2s.enable_echo_server of the file /cgi-bin/glc of the component s2s.so Native Plugin. Performing a manipulation of the argument port results in command injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T19:16:45.200",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-18615",
+      "title": "A vulnerability was determined in GL-iNet GL-MT3000 up to 4.4.5.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was determined in GL-iNet GL-MT3000 up to 4.4.5. The affected element is the function wg-server.generate_publickey of the file /cgi-bin/glc of the component wg-server.so Native Plugin. Executing a manipulation of the argument private_key can lead to command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T19:16:45.383",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-18616",
+      "title": "A vulnerability was identified in GL-iNet GL-MT3000 up to 4.4.5.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was identified in GL-iNet GL-MT3000 up to 4.4.5. The impacted element is the function server.set_peer of the file /cgi-bin/glc of the component wg-server.so Native Plugin. The manipulation of the argument public_key leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T19:16:45.557",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2241,7 +2384,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2276,7 +2419,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-16184",
@@ -2311,7 +2454,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2346,7 +2489,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2381,7 +2524,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2416,7 +2559,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2436,7 +2579,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2451,7 +2594,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2486,7 +2629,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2521,167 +2664,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-68770",
-      "title": "sentence-transformers contains a security control bypass vulnerability that allows attackers to achieve arbitrary cod…",
-      "vendor": null,
-      "product": null,
-      "description": "sentence-transformers contains a security control bypass vulnerability that allows attackers to achieve arbitrary code execution by exploiting a logic flaw in the import_module_class helper within sentence_transformers/util/misc.py, where the guard condition includes an 'or os.path.exists(model_name_or_path)' clause that satisfies the trust gate whenever the supplied path exists on the local filesystem, regardless of the trust_remote_code=False argument. Attackers who can control or influence the contents of a model directory on disk can place malicious Python files such as modeling_*.py referenced via modules.json, causing the code to execute at import time when an application loads the model with SentenceTransformer(path, trust_remote_code=False), bypassing the documented security contract and achieving code execution within the loading process.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00521,
-      "epss_pct": 0.41349,
-      "cwe": "CWE-94",
-      "published": "2026-07-31T21:17:32.440",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 9,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-68771",
-      "title": "ComfyUI v0.23.0 contains an unsafe deserialization vulnerability in the LoadTrainingDataset node that allows unauthen…",
-      "vendor": null,
-      "product": null,
-      "description": "ComfyUI v0.23.0 contains an unsafe deserialization vulnerability in the LoadTrainingDataset node that allows unauthenticated remote attackers to execute arbitrary Python code by uploading a crafted pickle file and triggering its deserialization. Attackers can upload a malicious shard_*.pkl file via the unauthenticated POST /upload/image endpoint and then queue a workflow graph via POST /prompt referencing the uploaded file, causing torch.load to deserialize the attacker-controlled pickle payload using __reduce__ and execute arbitrary commands as the ComfyUI process user.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00623,
-      "epss_pct": 0.46468,
-      "cwe": "CWE-502",
-      "published": "2026-07-31T22:17:03.630",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 9,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-66402",
-      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses …",
-      "vendor": null,
-      "product": null,
-      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). Because FreeRDP performs custom Common Name and DNS SAN string matching instead of using OpenSSL's length-aware identity validation APIs, it (1) truncates DNS SAN values at embedded NUL bytes (accepting e.g. 'victim.example\\0.attacker.example' as 'victim.example'), (2) accepts a matching Common Name even when non-matching DNS SAN entries are present, and (3) accepts IP-literal targets via DNS/CN matching without comparing iPAddress SANs. Under a trusted or misissued certificate chain, an attacker positioned to present such a certificate can bypass server identity verification, weakening TLS server authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0029,
-      "epss_pct": 0.21321,
-      "cwe": "CWE-295",
-      "published": "2026-08-01T13:16:57.487",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-67289",
-      "title": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-contr…",
-      "vendor": null,
-      "product": null,
-      "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client's ServerHostname and, when the client connects through an HTTP proxy, is written directly into the proxy CONNECT request line and Host header by http_proxy_connect() without filtering. A malicious or compromised RDP server can send a crafted redirection PDU containing embedded control characters to inject arbitrary headers/requests into the HTTP proxy CONNECT request.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0038,
-      "epss_pct": 0.30791,
-      "cwe": "CWE-113",
-      "published": "2026-08-01T13:16:57.803",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-67324",
-      "title": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<val…",
+      "cve_id": "CVE-2026-39932",
+      "title": "OpenEMR through 8.2.0 contains a remote code execution vulnerability in the document category tree component (library…",
       "vendor": null,
       "product": null,
-      "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options into Repo.clone_from(..., multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper> to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified helper command during clone. Fixed in 3.1.51.",
-      "cvss": 9.8,
+      "description": "OpenEMR through 8.2.0 contains a remote code execution vulnerability in the document category tree component (library/classes/Tree.class.php) that allows authenticated administrators to execute arbitrary operating system commands by injecting PHP payloads into the categories database table. Attackers can chain arbitrary SQL execution to alter the id column type to VARCHAR and insert a malicious PHP payload, which is then executed via an unsanitized eval() call whenever any page instantiates CategoryTree, including unauthenticated and low-privilege pages, resulting in command execution as the web server user.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.00379,
-      "epss_pct": 0.30626,
-      "cwe": "CWE-78",
-      "published": "2026-08-01T13:17:02.770",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-95",
+      "published": "2026-08-03T17:16:36.893",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2692,31 +2695,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-01",
+          "date": "2026-08-03",
           "label": "Published to NVD"
         }
       ],
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-67341",
-      "title": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement w…",
+      "cve_id": "CVE-2026-18598",
+      "title": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5.",
       "vendor": null,
       "product": null,
-      "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript code by submitting DEFINE FUNCTION statements, bypassing security controls intended to restrict scripting to administrators.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00319,
-      "epss_pct": 0.24372,
-      "cwe": "CWE-863",
-      "published": "2026-08-01T13:17:05.273",
+      "description": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function logread.get_system_log of the file /usr/lib/oui-httpd/rpc/logread of the component Logread Lua RPC plugin. The manipulation of the argument module results in command injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T13:17:13.140",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2727,31 +2730,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-01",
+          "date": "2026-08-03",
           "label": "Published to NVD"
         }
       ],
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-67342",
-      "title": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch…",
+      "cve_id": "CVE-2026-18607",
+      "title": "A security vulnerability has been detected in Wavlink WN572, WN570H, WN573, WN529, WN530, WN531, WN535, etc.",
       "vendor": null,
       "product": null,
-      "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissions. Attackers can access and modify databases they are not authorized to use by directly calling affected endpoints with arbitrary database parameters.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00319,
-      "epss_pct": 0.24372,
-      "cwe": "CWE-639",
-      "published": "2026-08-01T13:17:05.417",
+      "description": "A security vulnerability has been detected in Wavlink WN572, WN570H, WN573, WN529, WN530, WN531, WN535, etc. WN529, WN530, WN531, WN535, WN536, WN551, WN557 and NU516 up to 20260609. Affected by this issue is the function strcpy of the file upload.cgi of the component lighttpd. The manipulation of the argument HTTP_COOKIE leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-03T17:16:35.913",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2762,42 +2765,50 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-01",
+          "date": "2026-08-03",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-8457",
-      "title": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and …",
+      "cve_id": "CVE-2026-58480",
+      "title": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerabil…",
       "vendor": null,
       "product": null,
-      "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's public keys or validating the issuer, audience, or expiry claims, combined with the security nonce required to invoke the login flow being publicly exposed to unauthenticated users via a localized JavaScript object on the login page. This makes it possible for unauthenticated attackers to log in as any existing WordPress user — including administrators — by supplying a forged id_token whose payload contains the target user's email address, as that email is used without any role exclusion to resolve a WordPress account and immediately issue an authenticated session for it.",
+      "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validation in the save_attachments function exposed through the Advanced Reviews feature. Attackers can exploit the Custom Fonts extension's flawed strpos() substring check by uploading double-extension filenames such as shell.woff2.php, causing the validation to pass on the substring match while the web server executes the file as PHP, achieving remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.004,
-      "epss_pct": 0.32845,
-      "cwe": "CWE-289",
-      "published": "2026-08-02T00:16:23.047",
+      "epss": 0.00605,
+      "epss_pct": 0.45582,
+      "cwe": "CWE-434",
+      "published": "2026-07-08T14:17:19.977",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 13,
+      "hype": 16,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-58480",
+            "html_url": "https://github.com/shinthink/CVE-2026-58480",
+            "stars": 3
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-08-02",
+          "date": "2026-07-08",
           "label": "Published to NVD"
         }
       ],
