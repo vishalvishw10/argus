@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T20:00:42.582Z",
+  "generated_at": "2026-08-03T21:31:52.416Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 34,
     "kev_total": 1657,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "801 recent"
+      "detail": "765 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "812 scored"
+      "detail": "774 scored"
     },
     {
       "name": "BleepingComputer",
@@ -39,7 +39,7 @@
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3906 mapped"
+      "detail": "3907 mapped"
     },
     {
       "name": "Reddit",
@@ -129,148 +129,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.98417,
-      "epss_pct": 0.99915,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 67,
-      "rising": 0,
-      "repos": {
-        "count": 71,
-        "stars": 1057,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 702
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 89
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 50
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Covered by Dark Reading"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.79029,
-      "epss_pct": 0.99559,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 64,
-      "rising": 0,
-      "repos": {
-        "count": 44,
-        "stars": 1001,
-        "top": [
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 702
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 89
-          },
-          {
-            "full_name": "dinosn/wp2shell-lab",
-            "html_url": "https://github.com/dinosn/wp2shell-lab",
-            "stars": 50
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-          "date": "2026-07-20T21:38:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-20",
-          "label": "Covered by Dark Reading"
-        },
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 3
-    },
-    {
       "cve_id": "CVE-2026-15409",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
       "vendor": "SonicWall",
@@ -328,7 +186,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -392,7 +250,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.98417,
+      "epss_pct": 0.99915,
+      "cwe": "CWE-436",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 0,
+      "repos": {
+        "count": 71,
+        "stars": 1057,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 702
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 89
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 50
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -463,7 +380,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -519,6 +436,65 @@
       "timeline": [
         {
           "date": "2026-07-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-60137",
+      "title": "WordPress Core SQL Injection Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "epss": 0.79029,
+      "epss_pct": 0.99559,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
+      "repos": {
+        "count": 44,
+        "stars": 1001,
+        "top": [
+          {
+            "full_name": "Icex0/wp2shell-poc",
+            "html_url": "https://github.com/Icex0/wp2shell-poc",
+            "stars": 702
+          },
+          {
+            "full_name": "0xsha/wp2shell",
+            "html_url": "https://github.com/0xsha/wp2shell",
+            "stars": 89
+          },
+          {
+            "full_name": "dinosn/wp2shell-lab",
+            "html_url": "https://github.com/dinosn/wp2shell-lab",
+            "stars": 50
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-21",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2002,24 +1978,24 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-18589",
-      "title": "A vulnerability was found in Wavlink WL-NU516U1 708c073-mt7628.",
+      "cve_id": "CVE-2026-18602",
+      "title": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was found in Wavlink WL-NU516U1 708c073-mt7628. This impacts the function change_password of the file nas.cgi. The manipulation of the argument User1Passwd results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been made public and could be used. The affected component should be upgraded. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "description": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function ovpn-client.get_recommend_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Executing a manipulation of the argument Hostname can lead to command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00609,
-      "epss_pct": 0.45754,
-      "cwe": "CWE-119",
-      "published": "2026-08-03T07:16:43.260",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-08-03T17:16:35.153",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2037,17 +2013,17 @@
       "rank": 38
     },
     {
-      "cve_id": "CVE-2026-18601",
-      "title": "A vulnerability was found in GL.iNet GL-MT3000 up to 4.4.5.",
+      "cve_id": "CVE-2026-41452",
+      "title": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthentica…",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was found in GL.iNet GL-MT3000 up to 4.4.5. This impacts the function ovpn-client.check_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Performing a manipulation of the argument filename results in command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "description": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the X-Requested-With: XMLHttpRequest header to bypass the CanInstall middleware redirect check. Attackers can supply arbitrary name, email, and password values to the admin-config-setup endpoint, which performs an unauthenticated updateOrInsert targeting the hardcoded administrator user ID, enabling full administrative access to all CRM data.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T14:16:25.947",
+      "cwe": "CWE-306",
+      "published": "2026-08-03T17:16:37.047",
       "kev": {
         "in_kev": false
       },
@@ -2072,17 +2048,17 @@
       "rank": 39
     },
     {
-      "cve_id": "CVE-2026-69084",
-      "title": "SiYuan versions <= v3.7.2 expose the /api/search/searchEmbedBlock endpoint, which passes a client-supplied SQL statem…",
+      "cve_id": "CVE-2026-18613",
+      "title": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5.",
       "vendor": null,
       "product": null,
-      "description": "SiYuan versions <= v3.7.2 expose the /api/search/searchEmbedBlock endpoint, which passes a client-supplied SQL statement verbatim to the main read-write siyuan.db handle with no single-statement, read-only, or admin restrictions. The endpoint is gated only by CheckAuth, making it reachable by the publish RoleReader token and by anonymous users when publish authentication is disabled. Because the underlying driver executes stacked statements, an attacker can read and modify content across all opened cleartext notebooks (encrypted per-box notebooks are excluded). Fixed in v3.7.3.",
-      "cvss": 10,
+      "description": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5. This issue affects the function plugins.set_config of the file /cgi-bin/glc of the component plugins.so Native Plugin. Such manipulation leads to injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-08-03T14:16:28.680",
+      "cwe": "CWE-74",
+      "published": "2026-08-03T18:16:38.617",
       "kev": {
         "in_kev": false
       },
@@ -2105,146 +2081,6 @@
         }
       ],
       "rank": 40
-    },
-    {
-      "cve_id": "CVE-2026-18602",
-      "title": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function ovpn-client.get_recommend_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Executing a manipulation of the argument Hostname can lead to command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T17:16:35.153",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-41452",
-      "title": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the X-Requested-With: XMLHttpRequest header to bypass the CanInstall middleware redirect check. Attackers can supply arbitrary name, email, and password values to the admin-config-setup endpoint, which performs an unauthenticated updateOrInsert targeting the hardcoded administrator user ID, enabling full administrative access to all CRM data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-08-03T17:16:37.047",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-18612",
-      "title": "A flaw has been found in GL-iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw has been found in GL-iNet GL-MT3000 up to 4.4.5. This vulnerability affects the function plugins.remove_package/plugins.install_package of the file /cgi-bin/glc of the component plugins.so Native Plugin. This manipulation causes command injection. The attack can be initiated remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T18:16:38.450",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-18613",
-      "title": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability has been found in GL-iNet GL-MT3000 up to 4.4.5. This issue affects the function plugins.set_config of the file /cgi-bin/glc of the component plugins.so Native Plugin. Such manipulation leads to injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T18:16:38.617",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
     },
     {
       "cve_id": "CVE-2026-18614",
@@ -2279,42 +2115,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-18615",
-      "title": "A vulnerability was determined in GL-iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in GL-iNet GL-MT3000 up to 4.4.5. The affected element is the function wg-server.generate_publickey of the file /cgi-bin/glc of the component wg-server.so Native Plugin. Executing a manipulation of the argument private_key can lead to command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T19:16:45.383",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-18616",
@@ -2349,7 +2150,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2384,7 +2185,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2419,7 +2220,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-16184",
@@ -2454,7 +2255,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2489,7 +2290,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2524,7 +2325,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2559,7 +2360,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2594,7 +2395,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2629,7 +2430,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2664,7 +2465,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-39932",
@@ -2678,41 +2479,6 @@
       "epss_pct": null,
       "cwe": "CWE-95",
       "published": "2026-08-03T17:16:36.893",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-18598",
-      "title": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function logread.get_system_log of the file /usr/lib/oui-httpd/rpc/logread of the component Logread Lua RPC plugin. The manipulation of the argument module results in command injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T13:17:13.140",
       "kev": {
         "in_kev": false
       },
@@ -2734,42 +2500,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-18607",
-      "title": "A security vulnerability has been detected in Wavlink WN572, WN570H, WN573, WN529, WN530, WN531, WN535, etc.",
-      "vendor": null,
-      "product": null,
-      "description": "A security vulnerability has been detected in Wavlink WN572, WN570H, WN573, WN529, WN530, WN531, WN535, etc. WN529, WN530, WN531, WN535, WN536, WN551, WN557 and NU516 up to 20260609. Affected by this issue is the function strcpy of the file upload.cgi of the component lighttpd. The manipulation of the argument HTTP_COOKIE leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-119",
-      "published": "2026-08-03T17:16:35.913",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-58480",
@@ -2809,6 +2540,259 @@
       "timeline": [
         {
           "date": "2026-07-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-57830",
+      "title": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla ex…",
+      "vendor": null,
+      "product": null,
+      "description": "Joomla Extension - joomshaper.com - Unauthenticated arbitrary file deletion in Helix Ultimate < 2.2.7 - The Joomla extension Helix Ultimate is vulnerable to an unauthenticated arbitrary file deletion.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00303,
+      "epss_pct": 0.22645,
+      "cwe": "CWE-862",
+      "published": "2026-07-13T08:16:21.713",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Is4yev/CVE-2026-57830",
+            "html_url": "https://github.com/Is4yev/CVE-2026-57830",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-64815",
+      "title": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
+      "vendor": null,
+      "product": null,
+      "description": "In JetBrains IntelliJ IDEA before 2026.2 arbitrary code injection was possible via UI Designer form files",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0033,
+      "epss_pct": 0.2559,
+      "cwe": "CWE-94",
+      "published": "2026-07-23T12:18:37.120",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-10697",
+      "title": "Improper Authentication vulnerability in Progress MOVEit Transfer.",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Authentication vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00292,
+      "epss_pct": 0.21446,
+      "cwe": "CWE-287",
+      "published": "2026-07-23T21:17:01.597",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-15966",
+      "title": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.",
+      "vendor": null,
+      "product": null,
+      "description": "Permissive cross-domain security policy with untrusted domains vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00204,
+      "epss_pct": 0.10573,
+      "cwe": "CWE-942",
+      "published": "2026-07-23T21:17:02.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-15967",
+      "title": "Insufficient session expiration vulnerability in Progress MOVEit Transfer.",
+      "vendor": null,
+      "product": null,
+      "description": "Insufficient session expiration vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.5, from 2026.0.0 before 2026.0.3.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00204,
+      "epss_pct": 0.10573,
+      "cwe": "CWE-613",
+      "published": "2026-07-23T21:17:02.977",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-23",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-48144",
+      "title": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.",
+      "vendor": null,
+      "product": null,
+      "description": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00418,
+      "epss_pct": 0.34417,
+      "cwe": "CWE-297",
+      "published": "2026-07-27T12:16:44.700",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-55971",
+      "title": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.",
+      "vendor": null,
+      "product": null,
+      "description": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01042,
+      "epss_pct": 0.60698,
+      "cwe": "CWE-122",
+      "published": "2026-07-27T12:16:46.110",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-27",
           "label": "Published to NVD"
         }
       ],
