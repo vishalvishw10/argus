@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T17:04:50.794Z",
+  "generated_at": "2026-08-04T18:55:59.232Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
-    "kev_count": 34,
-    "kev_total": 1657,
+    "kev_count": 37,
+    "kev_total": 1660,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1657 entries"
+      "detail": "1660 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "812 recent"
+      "detail": "787 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "823 scored"
+      "detail": "817 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "3978 mapped"
+      "detail": "3979 mapped"
     },
     {
       "name": "Reddit",
@@ -147,6 +147,64 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-18556",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+      "cvss": 7.4,
+      "severity": "HIGH",
+      "epss": 0.0027,
+      "epss_pct": 0.19053,
+      "cwe": "CWE-288",
+      "published": "2026-08-01T20:16:37.157",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 67,
+      "rising": 75,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
+          "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+          "date": "2026-08-04T07:00:13.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-04",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-15409",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
       "vendor": "SonicWall",
@@ -204,7 +262,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -268,7 +326,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-63030",
@@ -294,7 +352,7 @@
       "rising": 0,
       "repos": {
         "count": 74,
-        "stars": 1073,
+        "stars": 1074,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -304,7 +362,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 90
+            "stars": 91
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -327,78 +385,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
-      "cve_id": "CVE-2026-16232",
-      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
-      "vendor": "Check Point",
-      "product": "SmartConsole",
-      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.71391,
-      "epss_pct": 0.99353,
-      "cwe": "CWE-287",
+      "cve_id": "CVE-2026-34486",
+      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Tomcat",
+      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.42627,
+      "epss_pct": 0.9858,
+      "cwe": "CWE-311",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 58,
-      "rising": 0,
+      "hype": 59,
+      "rising": 34,
       "repos": {
-        "count": 3,
-        "stars": 13,
+        "count": 6,
+        "stars": 89,
         "top": [
           {
-            "full_name": "sfewer-r7/CVE-2026-16232",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
+            "full_name": "striga-ai/CVE-2026-34486",
+            "html_url": "https://github.com/striga-ai/CVE-2026-34486",
+            "stars": 69
+          },
+          {
+            "full_name": "AirSkye/CVE-2026-34486-poc",
+            "html_url": "https://github.com/AirSkye/CVE-2026-34486-poc",
             "stars": 11
           },
           {
-            "full_name": "HackSpeak/CVE-2026-16232",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-16232",
-            "stars": 2
-          },
-          {
-            "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "html_url": "https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "stars": 0
+            "full_name": "404-src/CVE-2026-34486",
+            "html_url": "https://github.com/404-src/CVE-2026-34486",
+            "stars": 8
           }
         ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
-          "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
-          "date": "2026-07-29T08:58:27.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news",
-        "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-07-22",
+          "date": "2026-08-04",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-07-29",
-          "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -457,7 +502,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-60137",
@@ -483,7 +528,7 @@
       "rising": 0,
       "repos": {
         "count": 45,
-        "stars": 1014,
+        "stars": 1015,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -493,7 +538,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 90
+            "stars": 91
           },
           {
             "full_name": "dinosn/wp2shell-lab",
@@ -516,7 +561,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -575,7 +620,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -628,7 +673,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -687,7 +732,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -746,7 +791,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -801,7 +846,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -860,7 +905,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -909,7 +954,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-16232",
+      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
+      "vendor": "Check Point",
+      "product": "SmartConsole",
+      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.71391,
+      "epss_pct": 0.99353,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-22",
+        "due_date": "2026-07-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 13,
+        "top": [
+          {
+            "full_name": "sfewer-r7/CVE-2026-16232",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
+            "stars": 11
+          },
+          {
+            "full_name": "HackSpeak/CVE-2026-16232",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-16232",
+            "stars": 2
+          },
+          {
+            "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
+            "html_url": "https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -968,7 +1072,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -1022,7 +1126,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-20230",
@@ -1081,7 +1185,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 19
+    },
+    {
+      "cve_id": "CVE-2026-9198",
+      "title": "IBM Langflow Code Injection Vulnerability",
+      "vendor": "IBM",
+      "product": "Langflow",
+      "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01886,
+      "epss_pct": 0.77474,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 34,
+      "repos": {
+        "count": 3,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "0xgh057r3c0n/CVE-2026-9198",
+            "html_url": "https://github.com/0xgh057r3c0n/CVE-2026-9198",
+            "stars": 1
+          },
+          {
+            "full_name": "0xdak/CVE-2026-9198_exploit",
+            "html_url": "https://github.com/0xdak/CVE-2026-9198_exploit",
+            "stars": 1
+          },
+          {
+            "full_name": "ywh-jfellus/CVE-2026-9198",
+            "html_url": "https://github.com/ywh-jfellus/CVE-2026-9198",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1135,7 +1297,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-12569",
@@ -1177,7 +1339,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-34910",
@@ -1219,7 +1381,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-34909",
@@ -1261,7 +1423,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1319,7 +1481,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1367,7 +1529,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 26
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1408,7 +1570,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1456,7 +1618,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1509,7 +1671,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 29
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1550,7 +1712,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -1591,7 +1753,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1639,7 +1801,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 32
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1680,7 +1842,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-67038",
@@ -1721,7 +1883,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1762,7 +1924,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 35
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1803,7 +1965,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1844,55 +2006,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-18556",
-      "title": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.",
-      "vendor": null,
-      "product": null,
-      "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
-      "cvss": 7.4,
-      "severity": "HIGH",
-      "epss": 0.0027,
-      "epss_pct": 0.19053,
-      "cwe": "CWE-288",
-      "published": "2026-08-01T20:16:37.157",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 25,
-      "rising": 43,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
-          "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
-          "date": "2026-08-04T07:00:13.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-04",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 35
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-57827",
@@ -1945,7 +2059,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2006,7 +2120,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 37
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-48284",
@@ -2041,7 +2155,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-18602",
@@ -2076,7 +2190,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2111,7 +2225,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-18614",
@@ -2146,112 +2260,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-18616",
-      "title": "A vulnerability was identified in GL-iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was identified in GL-iNet GL-MT3000 up to 4.4.5. The impacted element is the function server.set_peer of the file /cgi-bin/glc of the component wg-server.so Native Plugin. The manipulation of the argument public_key leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01989,
-      "epss_pct": 0.78667,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T19:16:45.557",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-18684",
-      "title": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. This issue affects the function remove_profile of the file /cgi-bin/glc of the component modem.so. This manipulation causes command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02028,
-      "epss_pct": 0.79119,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T23:16:45.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-48323",
-      "title": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements Used in a Template Engine …",
-      "vendor": null,
-      "product": null,
-      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00624,
-      "epss_pct": 0.46505,
-      "cwe": "CWE-1336",
-      "published": "2026-08-03T23:16:46.063",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
     },
     {
       "cve_id": "CVE-2026-48330",
@@ -2286,42 +2295,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-61514",
-      "title": "Puwell IP Camera firmware versions 2.x through 4.x contains an authentication bypass vulnerability that allows unauth…",
-      "vendor": null,
-      "product": null,
-      "description": "Puwell IP Camera firmware versions 2.x through 4.x contains an authentication bypass vulnerability that allows unauthenticated attackers to access device functions by sending protocol-conforming packets over TCP port 23456 without credentials. Attackers can exploit the unvalidated Session field in the proprietary control protocol header to access live video streams, control pan and tilt motors, activate audio functions, and remotely restart the device.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-08-04T15:16:36.810",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-61515",
@@ -2341,7 +2315,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2356,42 +2330,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-25289",
-      "title": "Memory Corruption when processing Device Capability Extended attributes in certain NAN Service Discovery Frames with …",
-      "vendor": null,
-      "product": null,
-      "description": "Memory Corruption when processing Device Capability Extended attributes in certain NAN Service Discovery Frames with invalid length values.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-121",
-      "published": "2026-08-04T16:16:24.890",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-69098",
@@ -2426,7 +2365,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2461,7 +2400,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2496,7 +2435,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2531,7 +2470,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2566,7 +2505,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2601,7 +2540,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-14529",
@@ -2636,7 +2575,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2671,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2706,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2726,7 +2665,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2741,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-39932",
@@ -2776,27 +2715,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
-      "cve_id": "CVE-2026-69110",
-      "title": "OpenCode Studio before 2.4.4 contains a missing authentication vulnerability that allows unauthenticated remote attac…",
+      "cve_id": "CVE-2026-55971",
+      "title": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.",
       "vendor": null,
       "product": null,
-      "description": "OpenCode Studio before 2.4.4 contains a missing authentication vulnerability that allows unauthenticated remote attackers to read arbitrary files within the temp and static/music directories by directly accessing the GET /api/tmp/:tmpFile and GET /api/music/:fileName endpoints. Attackers can retrieve intermediate audio, video artifacts, and subtitles belonging to other users' jobs, and additionally delete any video by ID through the unauthenticated DELETE /api/short-video/:videoId endpoint.",
-      "cvss": 9.1,
+      "description": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-22",
-      "published": "2026-08-04T16:16:28.483",
+      "epss": 0.01042,
+      "epss_pct": 0.60722,
+      "cwe": "CWE-122",
+      "published": "2026-07-27T12:16:46.110",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 20,
+      "hype": 16,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2807,7 +2746,112 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-04",
+          "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-66014",
+      "title": "JFrog Artifactory contains an authentication handling weakness in internal request processing that, under specific co…",
+      "vendor": null,
+      "product": null,
+      "description": "JFrog Artifactory contains an authentication handling weakness in internal request processing that, under specific conditions, may allow an attacker to escalate privileges beyond the intended access level.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00319,
+      "epss_pct": 0.24309,
+      "cwe": "CWE-287",
+      "published": "2026-07-27T20:16:41.790",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-16184",
+      "title": "IBM WebSphere Application Server 9.0, and 8.5 could allow a remote attacker to bypass authentication by sending a cra…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server 9.0, and 8.5 could allow a remote attacker to bypass authentication by sending a crafted unauthenticated request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00322,
+      "epss_pct": 0.24699,
+      "cwe": "CWE-862",
+      "published": "2026-07-28T20:17:23.330",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-28",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-58163",
+      "title": "Apache Traffic Server mishandles on-disk cache fields and object lifetimes, corrupting state or crashing.",
+      "vendor": null,
+      "product": null,
+      "description": "Apache Traffic Server mishandles on-disk cache fields and object lifetimes, corrupting state or crashing.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fix the issue.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00652,
+      "epss_pct": 0.4771,
+      "cwe": "CWE-502",
+      "published": "2026-07-29T10:16:42.073",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
