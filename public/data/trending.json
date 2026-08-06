@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T00:11:50.191Z",
+  "generated_at": "2026-08-06T03:42:32.969Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "808 recent"
+      "detail": "820 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "825 scored"
+      "detail": "828 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4009 mapped"
+      "detail": "4010 mapped"
     },
     {
       "name": "Reddit",
@@ -84,11 +84,16 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 86,
-      "rising": 56,
+      "rising": 49,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
+          {
+            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
+            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
+            "stars": 0
+          },
           {
             "full_name": "HORKimhab/CVE-2026-18577",
             "html_url": "https://github.com/HORKimhab/CVE-2026-18577",
@@ -161,11 +166,17 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 65,
-      "rising": 44,
+      "rising": 41,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
+            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
+            "stars": 0
+          }
+        ]
       },
       "media": [
         {
@@ -180,7 +191,8 @@
         "kev",
         "actively-exploited",
         "zero-day",
-        "in-the-news"
+        "in-the-news",
+        "poc-available"
       ],
       "timeline": [
         {
@@ -219,7 +231,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 6,
         "stars": 90,
@@ -460,8 +472,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 59,
-      "rising": 55,
+      "hype": 58,
+      "rising": 52,
       "repos": {
         "count": 4,
         "stars": 3,
@@ -1399,7 +1411,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 32,
+      "rising": 31,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1622,47 +1634,6 @@
       "rank": 28
     },
     {
-      "cve_id": "CVE-2026-20316",
-      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "epss": 0.00788,
-      "epss_pct": 0.52702,
-      "cwe": "CWE-259",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-29",
-        "due_date": "2026-08-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 29
-    },
-    {
       "cve_id": "CVE-2026-46817",
       "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
       "vendor": "Oracle",
@@ -1710,6 +1681,47 @@
       "timeline": [
         {
           "date": "2026-07-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": 0.00788,
+      "epss_pct": 0.52702,
+      "cwe": "CWE-259",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2169,7 +2181,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2448,41 +2460,6 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-17544",
-      "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
-      "vendor": null,
-      "product": null,
-      "description": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versions from 8.4.* before 8.4.24 and from 8.5.* before 8.5.9.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00428,
-      "epss_pct": 0.3519,
-      "cwe": "CWE-787",
-      "published": "2026-07-30T12:17:27.347",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
-    },
-    {
       "cve_id": "CVE-2026-14522",
       "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker t…",
       "vendor": null,
@@ -2515,7 +2492,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-4978",
@@ -2550,7 +2527,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-12118",
@@ -2585,7 +2562,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-67208",
@@ -2620,7 +2597,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-39932",
@@ -2640,7 +2617,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2655,7 +2632,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2675,7 +2652,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2690,7 +2667,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-68979",
@@ -2725,42 +2702,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-68980",
-      "title": "Apache NiFi 2.0.0 through 2.10.0 support creating, reading, and deleting Assets associated with Parameter Contexts th…",
-      "vendor": null,
-      "product": null,
-      "description": "Apache NiFi 2.0.0 through 2.10.0 support creating, reading, and deleting Assets associated with Parameter Contexts through the REST API. The framework authorizes asset deletion against the owning Parameter Context using the supplied Parameter Context Identifier and Asset Identifier. The framework performed authorized based on the supplied Parameter Context Identifier without verifying the requested Identifier against the stored Identifier. Apache NiFi installations that do not implement different levels of authorization across Parameter Contexts are not subject to this vulnerability, because the framework enforces write permissions as the security boundary. Upgrading to Apache NiFi 2.11.0 is the recommended mitigation, which verifies Parameter Context ownership of the requested Asset before deletion using the same strategy applied to Asset read operations.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00261,
-      "epss_pct": 0.17677,
-      "cwe": "CWE-863",
-      "published": "2026-08-03T20:17:29.127",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-64531",
@@ -2780,7 +2722,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 33,
+      "rising": 31,
       "repos": {
         "count": 4,
         "stars": 8,
@@ -2821,7 +2763,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2856,7 +2798,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2888,6 +2830,76 @@
       "timeline": [
         {
           "date": "2026-07-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-16184",
+      "title": "IBM WebSphere Application Server 9.0, and 8.5 could allow a remote attacker to bypass authentication by sending a cra…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server 9.0, and 8.5 could allow a remote attacker to bypass authentication by sending a crafted unauthenticated request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00322,
+      "epss_pct": 0.24647,
+      "cwe": "CWE-862",
+      "published": "2026-07-28T20:17:23.330",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-28",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-14974",
+      "title": "IBM WebSphere Application Server 8.5, and 9.0 traditional could allow a remote attacker to execute arbitrary code cau…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server 8.5, and 9.0 traditional could allow a remote attacker to execute arbitrary code caused by unsafe deserialization of untrusted data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00366,
+      "epss_pct": 0.29308,
+      "cwe": "CWE-502",
+      "published": "2026-07-28T21:17:26.700",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-28",
           "label": "Published to NVD"
         }
       ],
