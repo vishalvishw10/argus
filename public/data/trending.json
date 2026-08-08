@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T02:23:29.937Z",
+  "generated_at": "2026-08-08T04:30:21.971Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "803 recent"
+      "detail": "795 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "826 scored"
+      "detail": "820 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4035 mapped"
+      "detail": "4037 mapped"
     },
     {
       "name": "Reddit",
@@ -160,7 +160,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -285,7 +285,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 6,
         "stars": 91,
@@ -411,22 +411,22 @@
       "rising": 0,
       "repos": {
         "count": 77,
-        "stars": 1294,
+        "stars": 1324,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 721
+            "stars": 722
           },
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 190
+            "stars": 217
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 93
+            "stars": 94
           }
         ]
       },
@@ -529,22 +529,22 @@
       "rising": 0,
       "repos": {
         "count": 47,
-        "stars": 1228,
+        "stars": 1258,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 721
+            "stars": 722
           },
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 190
+            "stars": 217
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 93
+            "stars": 94
           }
         ]
       },
@@ -707,7 +707,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 10,
+      "rising": 8,
       "repos": {
         "count": 4,
         "stars": 3,
@@ -895,7 +895,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1004,7 +1004,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 31,
+      "rising": 29,
       "repos": {
         "count": 3,
         "stars": 1,
@@ -2071,41 +2071,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-70558",
-      "title": "Dinky's POST /download/uploadFromRsByLocal handler passes the caller-supplied path parameter directly to new File(pat…",
-      "vendor": null,
-      "product": null,
-      "description": "Dinky's POST /download/uploadFromRsByLocal handler passes the caller-supplied path parameter directly to new File(path) and file.transferTo(dest) with no path validation. The route is marked @SaIgnore and /download/** is excluded from the Sa-Token interceptor, so the only guard is a header equality check against a dinkyToken value whose default (efda1551-7958-4e0f-80a8-dfd107df3e38) is hardcoded in source and shipped to every deployment. Anyone who can reach Dinky's HTTP port (8888 by default) and supplies the hardcoded token can write arbitrary files as the Dinky service account. The default Docker image runs on 8888 with no proxy or authentication and chmod 777 on /opt/dinky, so the application's own classpath, launch scripts, and static assets are writable. Demonstrated impact: overwriting /opt/dinky/config/static/index.html served attacker JavaScript to admin browsers immediately, and writing /opt/dinky/org/dinky/Dinky.class executed attacker code as the Dinky service account at the next JVM start via a classpath-shadow launched by script/bin/auto.sh. Writes are uid 9999 (flink), not root, so /etc, /root, /home, and /usr are refused. Affects Dinky v1.2.5 (the current release) and the development branch, where the code is byte-identical.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00596,
-      "epss_pct": 0.45242,
-      "cwe": "CWE-434",
-      "published": "2026-08-06T22:18:26.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
-    },
-    {
       "cve_id": "CVE-2026-62836",
       "title": "Improper restriction of communication channel to intended endpoints in Azure SQL Managed Instance allows an unauthori…",
       "vendor": null,
@@ -2123,7 +2088,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2138,7 +2103,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-56793",
@@ -2158,7 +2123,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2173,7 +2138,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-14266",
@@ -2226,6 +2191,67 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2026-64638",
+      "title": "CVE-2026-64638",
+      "vendor": null,
+      "product": null,
+      "description": "WordPress is vulnerable to a pre-auth reflected XSS vulnerability on the login screen.\r\n\r\nVia a specially crafted malicious third-party website hosted by an attacker, it is possible for this to be escalated to an RCE vulnerability with conditions outside of the attackers control. This requires successful social engineering of and explicit interaction by the target victim.\r\n\r\nThis issue affects all versions of WordPress. Version 7.0.3 has been released, containing a fix for the vulnerability, and as a courtesy to users on older branches the fix has been backported to all branches back to 4.7.\r\n\r\nDiscovered and responsibly disclosed by [the team at pwn.ai](https://pwn.ai/).",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-79",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 31,
+      "repos": {
+        "count": 10,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "5yu4n/CVE-2026-64638",
+            "html_url": "https://github.com/5yu4n/CVE-2026-64638",
+            "stars": 1
+          },
+          {
+            "full_name": "imbas007/CVE-2026-64638-POC",
+            "html_url": "https://github.com/imbas007/CVE-2026-64638-POC",
+            "stars": 0
+          },
+          {
+            "full_name": "renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell",
+            "html_url": "https://github.com/renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
+          "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
+          "date": "2026-08-07T12:56:23.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-07",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 41
     },
     {
@@ -2262,49 +2288,6 @@
         }
       ],
       "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-65883",
-      "title": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A forged clfgd field allows PHP objection injection and thereby remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00557,
-      "epss_pct": 0.43346,
-      "cwe": "CWE-502",
-      "published": "2026-07-29T11:16:50.297",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-65883",
-            "html_url": "https://github.com/shinthink/CVE-2026-65883",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2352,7 +2335,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-18602",
@@ -2387,7 +2370,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2422,7 +2405,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-18614",
@@ -2442,7 +2425,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2457,7 +2440,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-68979",
@@ -2492,7 +2475,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-66321",
@@ -2512,7 +2495,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2527,7 +2510,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-9205",
@@ -2547,7 +2530,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2562,68 +2545,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-64638",
-      "title": "CVE-2026-64638",
-      "vendor": null,
-      "product": null,
-      "description": "WordPress is vulnerable to a pre-auth reflected XSS vulnerability on the login screen.\r\n\r\nVia a specially crafted malicious third-party website hosted by an attacker, it is possible for this to be escalated to an RCE vulnerability with conditions outside of the attackers control. This requires successful social engineering of and explicit interaction by the target victim.\r\n\r\nThis issue affects all versions of WordPress. Version 7.0.3 has been released, containing a fix for the vulnerability, and as a courtesy to users on older branches the fix has been backported to all branches back to 4.7.\r\n\r\nDiscovered and responsibly disclosed by [the team at pwn.ai](https://pwn.ai/).",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-79",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 33,
-      "repos": {
-        "count": 8,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "5yu4n/CVE-2026-64638",
-            "html_url": "https://github.com/5yu4n/CVE-2026-64638",
-            "stars": 1
-          },
-          {
-            "full_name": "renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell",
-            "html_url": "https://github.com/renzi25031469/CVE-2026-64638-WordPress-Core-XSS2Shell",
-            "stars": 0
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-64638",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-64638",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
-          "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
-          "date": "2026-08-07T12:56:23.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-07",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2658,7 +2580,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-55971",
@@ -2693,7 +2615,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-66014",
@@ -2728,7 +2650,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-16184",
@@ -2763,7 +2685,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-14974",
@@ -2798,7 +2720,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-14976",
@@ -2833,7 +2755,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-58177",
@@ -2868,7 +2790,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58179",
@@ -2903,7 +2825,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-58185",
@@ -2917,6 +2839,84 @@
       "epss_pct": 0.3671,
       "cwe": "CWE-416",
       "published": "2026-07-29T10:16:43.663",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-65883",
+      "title": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A…",
+      "vendor": null,
+      "product": null,
+      "description": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A forged clfgd field allows PHP objection injection and thereby remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00557,
+      "epss_pct": 0.43346,
+      "cwe": "CWE-502",
+      "published": "2026-07-29T11:16:50.297",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "shinthink/CVE-2026-65883",
+            "html_url": "https://github.com/shinthink/CVE-2026-65883",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-65884",
+      "title": "Joomla Extension - balbooa.com - Privilege Escalation in Gridbox < 2.20.2 - The registration method allows users prov…",
+      "vendor": null,
+      "product": null,
+      "description": "Joomla Extension - balbooa.com - Privilege Escalation in Gridbox < 2.20.2 - The registration method allows users provided usergroup IDs, allowing unauthenticated actors to register new accounts with administrative permissions.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00284,
+      "epss_pct": 0.20623,
+      "cwe": "CWE-284",
+      "published": "2026-07-29T13:19:10.677",
       "kev": {
         "in_kev": false
       },
