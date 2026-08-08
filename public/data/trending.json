@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-08T07:17:51.245Z",
+  "generated_at": "2026-08-08T08:03:28.748Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 5,
     "reddit_upvotes": 0,
     "kev_count": 35,
     "kev_total": 1662,
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "8 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4037 mapped"
+      "detail": "4060 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,72 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-8037",
+      "title": "Progress LoadMaster Command Injection Vulnerability",
+      "vendor": "Progress",
+      "product": "LoadMaster",
+      "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.84793,
+      "epss_pct": 0.99688,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-07",
+        "due_date": "2026-08-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 65,
+      "rising": 69,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-8037",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-8037",
+            "stars": 0
+          },
+          {
+            "full_name": "Caster-chen/CVE-2026-8037-POC",
+            "html_url": "https://github.com/Caster-chen/CVE-2026-8037-POC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Progress Kemp LoadMaster Flaw Hits CISA KEV After 792 Reported Exploit Attempts",
+          "url": "https://thehackernews.com/2026/08/progress-kemp-loadmaster-flaw-hits-cisa.html",
+          "date": "2026-08-08T06:52:16.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-07",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-08",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-18577",
       "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -83,7 +149,7 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 73,
+      "hype": 64,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -102,12 +168,6 @@
         ]
       },
       "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
-          "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
-          "date": "2026-08-04T07:00:13.000Z"
-        },
         {
           "source": "Dark Reading",
           "title": "Attackers Exploit N-able Patch Bypass Flaw on RMM Servers",
@@ -133,73 +193,8 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-08-04",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-18556",
-      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
-      "cvss": 7.4,
-      "severity": "HIGH",
-      "epss": 0.00492,
-      "epss_pct": 0.39697,
-      "cwe": "CWE-288",
-      "published": "2026-08-01T20:16:37.157",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-04",
-        "due_date": "2026-08-07",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 6,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
-            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
-          "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
-          "date": "2026-08-04T07:00:13.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-01",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-04",
-          "label": "Covered by The Hacker News"
+          "date": "2026-08-03",
+          "label": "Covered by Dark Reading"
         }
       ],
       "rank": 2
@@ -228,7 +223,7 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 36,
+        "stars": 37,
         "top": [
           {
             "full_name": "remmons-r7/rapid7-CVE-2026-15409",
@@ -285,7 +280,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 6,
         "stars": 91,
@@ -411,7 +406,7 @@
       "rising": 0,
       "repos": {
         "count": 77,
-        "stars": 1340,
+        "stars": 1346,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -421,7 +416,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 233
+            "stars": 238
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -529,7 +524,7 @@
       "rising": 0,
       "repos": {
         "count": 47,
-        "stars": 1274,
+        "stars": 1279,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -539,7 +534,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 233
+            "stars": 238
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -707,7 +702,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 4,
         "stars": 3,
@@ -875,60 +870,6 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-8037",
-      "title": "Progress LoadMaster Command Injection Vulnerability",
-      "vendor": "Progress",
-      "product": "LoadMaster",
-      "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.84793,
-      "epss_pct": 0.99688,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-07",
-        "due_date": "2026-08-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 54,
-      "rising": 30,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-8037",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-8037",
-            "stars": 0
-          },
-          {
-            "full_name": "Caster-chen/CVE-2026-8037-POC",
-            "html_url": "https://github.com/Caster-chen/CVE-2026-8037-POC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-07",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
-    },
-    {
       "cve_id": "CVE-2026-63077",
       "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
       "vendor": "JetBrains",
@@ -949,7 +890,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 54,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 4,
         "stars": 1,
@@ -995,6 +936,59 @@
         {
           "date": "2026-08-06",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-18556",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+      "cvss": 7.4,
+      "severity": "HIGH",
+      "epss": 0.00492,
+      "epss_pct": 0.39697,
+      "cwe": "CWE-288",
+      "published": "2026-08-01T20:16:37.157",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 5,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
+            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-01",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 15
@@ -2053,7 +2047,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 30,
+      "rising": 29,
       "repos": {
         "count": 11,
         "stars": 4,
