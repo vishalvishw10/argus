@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T19:03:47.715Z",
+  "generated_at": "2026-08-09T19:50:30.024Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 33,
     "kev_total": 1662,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "803 recent"
+      "detail": "798 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "820 scored"
+      "detail": "813 scored"
     },
     {
       "name": "BleepingComputer",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4071 mapped"
+      "detail": "4072 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 66,
-      "rising": 38,
+      "rising": 37,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -190,65 +190,6 @@
       "rank": 2
     },
     {
-      "cve_id": "CVE-2026-34486",
-      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
-      "vendor": "Apache",
-      "product": "Tomcat",
-      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.8116,
-      "epss_pct": 0.99598,
-      "cwe": "CWE-311",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-04",
-        "due_date": "2026-08-07",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 62,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 91,
-        "top": [
-          {
-            "full_name": "striga-ai/CVE-2026-34486",
-            "html_url": "https://github.com/striga-ai/CVE-2026-34486",
-            "stars": 69
-          },
-          {
-            "full_name": "AirSkye/CVE-2026-34486-poc",
-            "html_url": "https://github.com/AirSkye/CVE-2026-34486-poc",
-            "stars": 12
-          },
-          {
-            "full_name": "404-src/CVE-2026-34486",
-            "html_url": "https://github.com/404-src/CVE-2026-34486",
-            "stars": 9
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 3
-    },
-    {
       "cve_id": "CVE-2026-18577",
       "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "N-able",
@@ -316,6 +257,65 @@
           "label": "Covered by Dark Reading"
         }
       ],
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-34486",
+      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Tomcat",
+      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.8116,
+      "epss_pct": 0.99598,
+      "cwe": "CWE-311",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 91,
+        "top": [
+          {
+            "full_name": "striga-ai/CVE-2026-34486",
+            "html_url": "https://github.com/striga-ai/CVE-2026-34486",
+            "stars": 69
+          },
+          {
+            "full_name": "AirSkye/CVE-2026-34486-poc",
+            "html_url": "https://github.com/AirSkye/CVE-2026-34486-poc",
+            "stars": 12
+          },
+          {
+            "full_name": "404-src/CVE-2026-34486",
+            "html_url": "https://github.com/404-src/CVE-2026-34486",
+            "stars": 9
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 4
     },
     {
@@ -342,12 +342,12 @@
       "rising": 0,
       "repos": {
         "count": 78,
-        "stars": 1470,
+        "stars": 1471,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 728
+            "stars": 729
           },
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -519,12 +519,12 @@
       "rising": 0,
       "repos": {
         "count": 48,
-        "stars": 1402,
+        "stars": 1403,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 728
+            "stars": 729
           },
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -756,7 +756,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 54,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 4,
         "stars": 7,
@@ -1888,15 +1888,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 20,
-        "stars": 33,
+        "stars": 34,
         "top": [
           {
             "full_name": "Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
             "html_url": "https://github.com/Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
-            "stars": 15
+            "stars": 16
           },
           {
             "full_name": "Linuxhackingid-official/XSS2Shell-CVE-2026-64638",
