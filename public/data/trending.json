@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T04:56:41.313Z",
+  "generated_at": "2026-08-10T06:43:53.330Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4072 mapped"
+      "detail": "4071 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 29,
+      "rising": 27,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -618,6 +618,77 @@
       "rank": 9
     },
     {
+      "cve_id": "CVE-2026-63077",
+      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+      "vendor": "JetBrains",
+      "product": "TeamCity",
+      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0101,
+      "epss_pct": 0.59837,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-05",
+        "due_date": "2026-08-08",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 11,
+        "top": [
+          {
+            "full_name": "sfewer-r7/CVE-2026-63077",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-63077",
+            "stars": 11
+          },
+          {
+            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
+            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
+            "stars": 0
+          },
+          {
+            "full_name": "AnggaTechI/CVE-2026-63077",
+            "html_url": "https://github.com/AnggaTechI/CVE-2026-63077",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
+          "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+          "date": "2026-08-06T06:51:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-05",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-06",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 10
+    },
+    {
       "cve_id": "CVE-2026-50522",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
       "vendor": "Microsoft",
@@ -674,7 +745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -731,77 +802,6 @@
         {
           "date": "2026-07-07",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-63077",
-      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-      "vendor": "JetBrains",
-      "product": "TeamCity",
-      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0101,
-      "epss_pct": 0.59837,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-05",
-        "due_date": "2026-08-08",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 54,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 10,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-63077",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-63077",
-            "stars": 10
-          },
-          {
-            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "stars": 0
-          },
-          {
-            "full_name": "AnggaTechI/CVE-2026-63077",
-            "html_url": "https://github.com/AnggaTechI/CVE-2026-63077",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
-          "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
-          "date": "2026-08-06T06:51:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-05",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-06",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 12
@@ -1888,7 +1888,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 20,
         "stars": 43,
@@ -2785,7 +2785,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
