@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T21:04:04.453Z",
+  "generated_at": "2026-08-10T22:00:19.087Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "803 recent"
+      "detail": "817 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "815 scored"
+      "detail": "808 scored"
     },
     {
       "name": "BleepingComputer",
@@ -405,7 +405,7 @@
       "hype": 59,
       "rising": 0,
       "repos": {
-        "count": 78,
+        "count": 79,
         "stars": 1481,
         "top": [
           {
@@ -653,7 +653,7 @@
       "hype": 56,
       "rising": 0,
       "repos": {
-        "count": 48,
+        "count": 49,
         "stars": 1413,
         "top": [
           {
@@ -1884,7 +1884,7 @@
       "hype": 21,
       "rising": 0,
       "repos": {
-        "count": 19,
+        "count": 20,
         "stars": 41,
         "top": [
           {
@@ -1978,7 +1978,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2048,7 +2048,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2083,7 +2083,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2118,7 +2118,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2153,7 +2153,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2188,7 +2188,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2223,7 +2223,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2241,24 +2241,24 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-19348",
-      "title": "A security flaw has been discovered in Shenzhen Aitemi M300 Wi-Fi Repeater r0-ea7890a.",
+      "cve_id": "CVE-2026-14450",
+      "title": "A flaw was found in the MaaS API.",
       "vendor": null,
       "product": null,
-      "description": "A security flaw has been discovered in Shenzhen Aitemi M300 Wi-Fi Repeater r0-ea7890a. Impacted is the function sprintf of the file /protocol.csp?fname=net&opt=smacfilter_conf&function=set&act=add&name=test&enable=1. Performing a manipulation of the argument enable/name/mac results in command injection. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks.",
-      "cvss": 9.8,
+      "description": "A flaw was found in the MaaS API. This vulnerability allows any pod within the cluster to bypass the Kuadrant AuthPolicy gateway by forging HTTP headers, specifically `X-MaaS-Username` and `X-MaaS-Group`, which are trusted verbatim. This lack of first-party authentication enables an attacker to gain unauthorized access and escalate privileges. The concrete consequences include the ability to mint Kubernetes ServiceAccount tokens in other tenants' namespaces, revoke API keys, and exfiltrate sensitive model access configuration.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.02465,
-      "epss_pct": 0.82942,
-      "cwe": "CWE-74",
-      "published": "2026-08-09T11:16:52.743",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-290",
+      "published": "2026-08-10T21:17:19.487",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2269,31 +2269,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-09",
+          "date": "2026-08-10",
           "label": "Published to NVD"
         }
       ],
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-63106",
-      "title": "ReadyEcommerce before 4.5.2 contains an unauthenticated SQL injection vulnerability in the product listing API where …",
+      "cve_id": "CVE-2026-18948",
+      "title": "A flaw was found in Feast.",
       "vendor": null,
       "product": null,
-      "description": "ReadyEcommerce before 4.5.2 contains an unauthenticated SQL injection vulnerability in the product listing API where the rating parameter from the products endpoint is concatenated directly into a MySQL HAVING clause without parameterization in ProductController.php. Attackers can perform time-based blind SQL injection through the unsanitized rating parameter to extract the full database contents, including user credentials and administrator password hashes, with potential additional file system access due to the database connection running as root.",
-      "cvss": 9.8,
+      "description": "A flaw was found in Feast. The system improperly deserializes user-defined functions (UDFs) stored in its registry, which are serialized using the 'dill' library. This allows a remote attacker to store a malicious UDF, leading to unauthenticated arbitrary code execution on the feature server in default configurations. An authenticated attacker can also achieve arbitrary code execution on the registry server by bypassing authorization checks during deserialization. This vulnerability can result in cross-tenant data access and lateral movement within the system.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-08-10T14:17:25.633",
+      "cwe": null,
+      "published": "2026-08-10T21:17:21.290",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2656,7 +2656,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2761,7 +2761,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
