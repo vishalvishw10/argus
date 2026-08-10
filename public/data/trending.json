@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T12:01:21.800Z",
+  "generated_at": "2026-08-10T13:47:20.454Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "792 recent"
+      "detail": "799 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4083 mapped"
+      "detail": "4085 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -829,7 +829,7 @@
       "hype": 54,
       "rising": 0,
       "repos": {
-        "count": 4,
+        "count": 5,
         "stars": 3,
         "top": [
           {
@@ -1888,7 +1888,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 19,
         "stars": 39,
@@ -2422,6 +2422,41 @@
       "rank": 48
     },
     {
+      "cve_id": "CVE-2026-13206",
+      "title": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Zyxel Net…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Zyxel Networks WAH7601 allows OS Command Injection.\n\nThis issue affects WAH7601: through 20072026.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-10T13:17:56.020",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
       "cve_id": "CVE-2026-17543",
       "title": "Improper escaping of backslashes in attacker-provided parameters would allow for trivial SQL injection in PHP version…",
       "vendor": null,
@@ -2467,7 +2502,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-18602",
@@ -2502,7 +2537,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-18614",
@@ -2516,41 +2551,6 @@
       "epss_pct": 0.78999,
       "cwe": "CWE-74",
       "published": "2026-08-03T19:16:45.200",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-68979",
-      "title": "Apache NiFI 1.10.0 through 2.10.0 provide a Parameter Context update REST API method that does not enforce authorizat…",
-      "vendor": null,
-      "product": null,
-      "description": "Apache NiFI 1.10.0 through 2.10.0 provide a Parameter Context update REST API method that does not enforce authorization checking on components referencing Parameter values. Updating a Parameter Context can change parameter values that affect referencing components, but framework authorization was limited to read and write privileges on the Parameter Context itself. As a result of the missing authorization, an authenticated user authorized to modify a Parameter Context, but not authorized on referencing components, could alter Parameter values affecting those components. In deployments where a Parameter value contains executable scripting content, updating a Parameter can result in code execution during automatic component validation, without starting the referencing component. The impact was limited to stopped components by existing verification checks, and the issue applies only to deployments that use component-level authorization policies. Upgrading to Apache NiFi 2.11.0 is the recommended mitigation, which aligns the Parameter Context update method authorization with other methods, adding authorization checking on affected components.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00522,
-      "epss_pct": 0.41457,
-      "cwe": "CWE-862",
-      "published": "2026-08-03T20:17:28.977",
       "kev": {
         "in_kev": false
       },
@@ -2627,7 +2627,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
