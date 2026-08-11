@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T16:13:19.658Z",
+  "generated_at": "2026-08-11T17:14:34.195Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -24,7 +24,7 @@
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "832 scored"
+      "detail": "831 scored"
     },
     {
       "name": "BleepingComputer",
@@ -148,7 +148,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -411,7 +411,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1492,
+        "stars": 1493,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -426,7 +426,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 99
+            "stars": 100
           }
         ]
       },
@@ -588,7 +588,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1421,
+        "stars": 1422,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -603,7 +603,7 @@
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 99
+            "stars": 100
           }
         ]
       },
@@ -1890,12 +1890,12 @@
       "rising": 0,
       "repos": {
         "count": 20,
-        "stars": 48,
+        "stars": 49,
         "top": [
           {
             "full_name": "Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
             "html_url": "https://github.com/Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
-            "stars": 26
+            "stars": 27
           },
           {
             "full_name": "imbas007/CVE-2026-64638-POC",
@@ -2053,7 +2053,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2381,7 +2381,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2749,7 +2749,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2765,6 +2765,76 @@
         }
       ],
       "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-19546",
+      "title": "A flaw was found in DBI.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in DBI. This is a fix for a partial fix for CVE-2026-14380 for RHEL 9.8.z and 10.2.z.\n\nFor a detailed Statement, Description and Mitigation please reffer to the original https://access.redhat.com/security/cve/cve-2026-19546.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-08-11T16:17:31.767",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-56721",
+      "title": "CamaleonCMS version 2.9.2 and earlier contains a privilege escalation vulnerability via insecure direct object refere…",
+      "vendor": null,
+      "product": null,
+      "description": "CamaleonCMS version 2.9.2 and earlier contains a privilege escalation vulnerability via insecure direct object reference (IDOR) that allows authenticated low-privileged attackers to overwrite any user's credentials by exploiting a parameter confusion flaw between the authorization filter and action body in the UsersController. Attackers can send a PATCH request to the updated_ajax endpoint setting params[:id] to their own user ID to pass the self-authorization check while simultaneously setting params[:user_id] to a victim's ID, causing the controller to load and mutate the victim's account, including overwriting administrator passwords to achieve full site takeover.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-639",
+      "published": "2026-08-11T16:17:33.563",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -2796,84 +2866,6 @@
       "timeline": [
         {
           "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-48319",
-      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
-      "vendor": null,
-      "product": null,
-      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.3229,
-      "epss_pct": 0.98162,
-      "cwe": "CWE-22",
-      "published": "2026-07-14T21:16:58.600",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-65883",
-      "title": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A forged clfgd field allows PHP objection injection and thereby remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00557,
-      "epss_pct": 0.4344,
-      "cwe": "CWE-502",
-      "published": "2026-07-29T11:16:50.297",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-65883",
-            "html_url": "https://github.com/shinthink/CVE-2026-65883",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
