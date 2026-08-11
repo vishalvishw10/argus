@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-11T19:27:59.847Z",
+  "generated_at": "2026-08-11T21:06:33.524Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 4,
     "reddit_upvotes": 0,
-    "kev_count": 33,
-    "kev_total": 1662,
+    "kev_count": 36,
+    "kev_total": 1665,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1662 entries"
+      "detail": "1665 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1157 recent"
+      "detail": "1101 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "828 scored"
+      "detail": "835 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4108 mapped"
+      "detail": "4109 mapped"
     },
     {
       "name": "Reddit",
@@ -148,7 +148,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -411,7 +411,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1494,
+        "stars": 1495,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -588,7 +588,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1423,
+        "stars": 1424,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -687,77 +687,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-63077",
-      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-      "vendor": "JetBrains",
-      "product": "TeamCity",
-      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.10722,
-      "epss_pct": 0.95396,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-05",
-        "due_date": "2026-08-08",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 14,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-63077",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-63077",
-            "stars": 14
-          },
-          {
-            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "stars": 0
-          },
-          {
-            "full_name": "BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
-            "html_url": "https://github.com/BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Flags TeamCity CVE-2026-63077 RCE Flaw Under Active Exploitation in the Wild",
-          "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
-          "date": "2026-08-06T06:51:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-05",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-06",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-50522",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
       "vendor": "Microsoft",
@@ -814,7 +743,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -873,7 +802,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -926,6 +855,60 @@
         {
           "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-68820",
+      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows Ancillary Function Driver for WinSock ",
+      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-25",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 72,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+          "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+          "date": "2026-08-11T20:10:55.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-11",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 14
@@ -1274,6 +1257,64 @@
       "rank": 20
     },
     {
+      "cve_id": "CVE-2026-63077",
+      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+      "vendor": "JetBrains",
+      "product": "TeamCity",
+      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.10722,
+      "epss_pct": 0.95396,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-05",
+        "due_date": "2026-08-08",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 14,
+        "top": [
+          {
+            "full_name": "sfewer-r7/CVE-2026-63077",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-63077",
+            "stars": 14
+          },
+          {
+            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
+            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
+            "stars": 0
+          },
+          {
+            "full_name": "BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
+            "html_url": "https://github.com/BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-05",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
+    },
+    {
       "cve_id": "CVE-2026-9198",
       "title": "IBM Langflow Code Injection Vulnerability",
       "vendor": "IBM",
@@ -1329,7 +1370,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-45659",
@@ -1383,7 +1424,89 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0069,
+      "epss_pct": 0.4946,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 33,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "cve_id": "CVE-2026-20349",
+      "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-244",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 33,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48558",
@@ -1431,7 +1554,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 26
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1472,7 +1595,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1520,7 +1643,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1573,7 +1696,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 29
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1614,7 +1737,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1662,7 +1785,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1703,7 +1826,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 32
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1744,7 +1867,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -1785,7 +1908,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 34
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1826,7 +1949,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1867,7 +1990,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-64638",
@@ -1928,7 +2051,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 34
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-19425",
@@ -1948,7 +2071,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1963,7 +2086,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 35
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-58115",
@@ -1998,77 +2121,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-62815",
-      "title": "Use after free in Microsoft QUIC allows an unauthorized attacker to execute code over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Use after free in Microsoft QUIC allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-416",
-      "published": "2026-08-11T17:18:35.320",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-62878",
-      "title": "Stack-based buffer overflow in Windows DNS allows an unauthorized attacker to execute code over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Stack-based buffer overflow in Windows DNS allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-121",
-      "published": "2026-08-11T17:18:38.590",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-62893",
@@ -2088,7 +2141,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2103,7 +2156,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-27302",
@@ -2138,7 +2191,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-69102",
@@ -2173,7 +2226,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-71398",
@@ -2208,7 +2261,155 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-16230",
+      "title": "The Formidable Digital Signatures plugin for WordPress is vulnerable to file deletion due to insufficient file path v…",
+      "vendor": null,
+      "product": null,
+      "description": "The Formidable Digital Signatures plugin for WordPress is vulnerable to file deletion due to insufficient file path validation in the delete_file function in all versions up to, and including, 3.0.6. This makes it possible for unauthenticated attackers to delete files on the server by supplying an attacker-controlled filename in the item_meta[field_id][content] parameter alongside the delete_saved_image flag during the standard entry-creation POST flow on any form that accepts anonymous submissions.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-23",
+      "published": "2026-08-11T20:17:27.133",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-73032",
+      "title": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary …",
+      "vendor": null,
+      "product": null,
+      "description": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary JavaScript by returning malicious code from an LLM endpoint that is passed unsanitized to window.eval() in views.ts. Attackers can exploit this through prompt injection in PDFs, MITM interception of API requests, or a malicious custom LLM endpoint to execute arbitrary code in Zotero's chrome-privileged context, enabling file read/write, process execution, and access to all Zotero data.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-08-11T20:18:46.320",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-73034",
+      "title": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrar…",
+      "vendor": null,
+      "product": null,
+      "description": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrary files to any location on the server by injecting directory traversal sequences into the user_id HTTP header of the Python file-upload endpoint. Attackers can send a crafted multipart upload request with a traversal-poisoned user_id header to escape the intended upload directory and write attacker-controlled content to locations such as Python startup hooks, cron directories, or agent scripts, resulting in remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-08-11T20:18:46.470",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-66804",
+      "title": "Improper access control in Windows Cross Device Service allows an authorized attacker to elevate privileges locally.",
+      "vendor": null,
+      "product": null,
+      "description": "Improper access control in Windows Cross Device Service allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-284",
+      "published": "2026-08-11T17:19:01.733",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "DavidCarliez/CVE-2026-66804-CrossDevice-LPE",
+            "html_url": "https://github.com/DavidCarliez/CVE-2026-66804-CrossDevice-LPE",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2256,7 +2457,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-10025",
@@ -2291,7 +2492,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-16442",
@@ -2326,7 +2527,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-8400",
@@ -2361,7 +2562,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-17617",
@@ -2396,7 +2597,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-9205",
@@ -2431,7 +2632,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-54489",
@@ -2466,7 +2667,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2501,7 +2702,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-56793",
@@ -2536,7 +2737,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2571,7 +2772,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2606,7 +2807,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2641,7 +2842,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-50516",
@@ -2655,199 +2856,6 @@
       "epss_pct": null,
       "cwe": "CWE-306",
       "published": "2026-08-11T17:18:02.900",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-71362",
-      "title": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation.",
-      "vendor": null,
-      "product": null,
-      "description": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain elevated access to sensitive resources. Exploitation of this issue does not require user interaction.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-863",
-      "published": "2026-08-11T18:18:21.610",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-14266",
-      "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of XZ chunked data. Crafted XZ-compressed data can trigger an overflow of a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30169.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00939,
-      "epss_pct": 0.5766,
-      "cwe": "CWE-122",
-      "published": "2026-07-29T18:16:50.720",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-14266",
-            "html_url": "https://github.com/4minx/CVE-2026-14266",
-            "stars": 2
-          },
-          {
-            "full_name": "liyuxuan504-byte/CVE-2026-14266",
-            "html_url": "https://github.com/liyuxuan504-byte/CVE-2026-14266",
-            "stars": 1
-          },
-          {
-            "full_name": "hg0434hongzh0/CVE-2026-14266",
-            "html_url": "https://github.com/hg0434hongzh0/CVE-2026-14266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-71966",
-      "title": "CyberPanel 2.4.3, fixed in commit eca0c3c, contains an authenticated command injection vulnerability in the remote ba…",
-      "vendor": null,
-      "product": null,
-      "description": "CyberPanel 2.4.3, fixed in commit eca0c3c, contains an authenticated command injection vulnerability in the remote backup transfer feature that allows authenticated attackers to execute arbitrary OS commands by controlling a remote server's API response. Attackers can inject malicious commands through a crafted directory name in the remote server's API response, which bypasses security middleware validation and is passed unsanitized to the OS command execution function.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.02078,
-      "epss_pct": 0.79721,
-      "cwe": "CWE-78",
-      "published": "2026-08-10T20:17:32.723",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-10",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-72778",
-      "title": "Craft CMS versions from 4.0.0-RC1 before 4.18.2 and from 5.0.0-RC1 before 5.10.6 contain an authenticated remote code…",
-      "vendor": null,
-      "product": null,
-      "description": "Craft CMS versions from 4.0.0-RC1 before 4.18.2 and from 5.0.0-RC1 before 5.10.6 contain an authenticated remote code execution vulnerability in the control panel element-search condition handling. Craft cleanses the outer request-controlled condition array via Component::cleanseConfig(), but Conditions::createCondition() later decodes and merges the JSON string in condition.config without re-running cleanseConfig() on the decoded configuration. Because condition.config is a JSON string during the first cleanse, Yii special config keys such as 'as ...' and 'on ...' can be hidden inside it and, after JSON decoding, are interpreted by Yii as behavior/event configuration during FieldLayout object creation. An attacker with an authenticated control panel session (and a valid CSRF token) can exploit this to execute operating system commands as the PHP/web user.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-915",
-      "published": "2026-08-11T13:19:08.207",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-19546",
-      "title": "A flaw was found in DBI.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in DBI. This is a fix for a partial fix for CVE-2026-14380 for RHEL 9.8.z and 10.2.z.\n\nFor a detailed Statement, Description and Mitigation please reffer to the original https://access.redhat.com/security/cve/cve-2026-19546.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-94",
-      "published": "2026-08-11T16:17:31.767",
       "kev": {
         "in_kev": false
       },
