@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T00:01:54.684Z",
+  "generated_at": "2026-08-12T02:47:10.163Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "991 recent"
+      "detail": "1002 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "839 scored"
+      "detail": "843 scored"
     },
     {
       "name": "BleepingComputer",
@@ -880,7 +880,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 52,
-      "rising": 70,
+      "rising": 67,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1427,47 +1427,6 @@
       "rank": 23
     },
     {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0069,
-      "epss_pct": 0.4946,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 32,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 24
-    },
-    {
       "cve_id": "CVE-2026-20349",
       "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
       "vendor": "Cisco",
@@ -1488,7 +1447,48 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 32,
+      "rising": 31,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0069,
+      "epss_pct": 0.4946,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 31,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2009,7 +2009,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 21,
+      "hype": 20,
       "rising": 0,
       "repos": {
         "count": 20,
@@ -2071,7 +2071,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2264,17 +2264,17 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-5917",
-      "title": "libgit2 versions v0.27.0 through v1.9.0 built with the libssh2 SSH backend (USE_SSH=libssh2) contain a shell command …",
+      "cve_id": "CVE-2026-70398",
+      "title": "A flaw was found in multicloud-integrations, a component of Red Hat Advanced Cluster Management (RHACM).",
       "vendor": null,
       "product": null,
-      "description": "libgit2 versions v0.27.0 through v1.9.0 built with the libssh2 SSH backend (USE_SSH=libssh2) contain a shell command injection vulnerability that allows remote attackers to execute arbitrary commands on an SSH server by supplying a repository path containing unescaped shell metacharacters such as single quotes, semicolons, or pipes. The gen_proto() function in ssh_libssh2.c inserts the repository path directly into a shell command string without escaping special characters before passing it to libssh2_channel_exec(), enabling an attacker to craft a malicious submodule URL in a .gitmodules file that, when processed during a recursive clone, causes the remote server's shell to interpret injected commands under the victim's SSH user account.",
+      "description": "A flaw was found in multicloud-integrations, a component of Red Hat Advanced Cluster Management (RHACM). This vulnerability allows an authenticated user, referred to as a tenant, to manipulate the GitOpsCluster controller. By exploiting this, a tenant can redirect sensitive spoke cluster bearer tokens from secure locations to a namespace they control. This unauthorized access to tokens can lead to the disclosure of critical information and bypass security policies within ArgoCD AppProjects.",
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-08-11T22:17:37.390",
+      "cwe": "CWE-441",
+      "published": "2026-08-12T02:16:38.060",
       "kev": {
         "in_kev": false
       },
@@ -2292,11 +2292,46 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-11",
+          "date": "2026-08-12",
           "label": "Published to NVD"
         }
       ],
       "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-72526",
+      "title": "A flaw was found in the multicloud-integrations component.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in the multicloud-integrations component. The Application propagation controller processes the `ocm-managed-cluster` annotation from an Application Custom Resource (CR) without proper validation. A tenant with permissions to create Applications on the hub cluster can exploit this to target arbitrary managed clusters. This can force ArgoCD on the spoke clusters to synchronize attacker-controlled manifests, leading to arbitrary code execution or privilege escalation on those clusters.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-441",
+      "published": "2026-08-12T02:16:38.200",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-66804",
@@ -2316,7 +2351,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -2339,7 +2374,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2387,7 +2422,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-10025",
@@ -2422,7 +2457,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-16442",
@@ -2457,7 +2492,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-8400",
@@ -2492,7 +2527,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-17617",
@@ -2527,7 +2562,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-9205",
@@ -2562,7 +2597,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-54489",
@@ -2597,7 +2632,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2632,7 +2667,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-56793",
@@ -2667,7 +2702,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2702,7 +2737,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2737,7 +2772,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2772,7 +2807,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -2807,7 +2842,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2839,59 +2874,6 @@
       "timeline": [
         {
           "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-14266",
-      "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of XZ chunked data. Crafted XZ-compressed data can trigger an overflow of a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30169.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00939,
-      "epss_pct": 0.5766,
-      "cwe": "CWE-122",
-      "published": "2026-07-29T18:16:50.720",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-14266",
-            "html_url": "https://github.com/4minx/CVE-2026-14266",
-            "stars": 2
-          },
-          {
-            "full_name": "liyuxuan504-byte/CVE-2026-14266",
-            "html_url": "https://github.com/liyuxuan504-byte/CVE-2026-14266",
-            "stars": 1
-          },
-          {
-            "full_name": "hg0434hongzh0/CVE-2026-14266",
-            "html_url": "https://github.com/hg0434hongzh0/CVE-2026-14266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
