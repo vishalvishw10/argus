@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T18:09:05.931Z",
+  "generated_at": "2026-08-12T19:29:25.288Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "879 recent"
+      "detail": "900 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "900 scored"
+      "detail": "905 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4120 mapped"
+      "detail": "4122 mapped"
     },
     {
       "name": "Reddit",
@@ -148,7 +148,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 62,
-      "rising": 92,
+      "rising": 90,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -940,7 +940,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 59,
+      "rising": 58,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2019,6 +2019,49 @@
       "rank": 36
     },
     {
+      "cve_id": "CVE-2026-73034",
+      "title": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrar…",
+      "vendor": null,
+      "product": null,
+      "description": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrary files to any location on the server by injecting directory traversal sequences into the user_id HTTP header of the Python file-upload endpoint. Attackers can send a crafted multipart upload request with a traversal-poisoned user_id header to escape the intended upload directory and write attacker-controlled content to locations such as Python startup hooks, cron directories, or agent scripts, resulting in remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01334,
+      "epss_pct": 0.68583,
+      "cwe": "CWE-22",
+      "published": "2026-08-11T20:18:46.470",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 16,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Boreas37/CVE-2026-73034-PoC",
+            "html_url": "https://github.com/Boreas37/CVE-2026-73034-PoC",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 37
+    },
+    {
       "cve_id": "CVE-2026-64638",
       "title": "CVE-2026-64638",
       "vendor": null,
@@ -2075,41 +2118,6 @@
         {
           "date": "2026-08-07",
           "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-19425",
-      "title": "Travel Agency Management System developed by Win Men Intermational has a SQL Injection vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "Travel Agency Management System developed by Win Men Intermational has a SQL Injection vulnerability. Unauthenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete database contents.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00474,
-      "epss_pct": 0.38731,
-      "cwe": "CWE-89",
-      "published": "2026-08-11T05:17:14.680",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
         }
       ],
       "rank": 38
@@ -2220,41 +2228,6 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-73034",
-      "title": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrar…",
-      "vendor": null,
-      "product": null,
-      "description": "DB-GPT v0.8.1 contains an unauthenticated path traversal vulnerability that allows remote attackers to write arbitrary files to any location on the server by injecting directory traversal sequences into the user_id HTTP header of the Python file-upload endpoint. Attackers can send a crafted multipart upload request with a traversal-poisoned user_id header to escape the intended upload directory and write attacker-controlled content to locations such as Python startup hooks, cron directories, or agent scripts, resulting in remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01334,
-      "epss_pct": 0.68583,
-      "cwe": "CWE-22",
-      "published": "2026-08-11T20:18:46.470",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
       "cve_id": "CVE-2025-41769",
       "title": "The device's PROFINET service is affected by a buffer overflow vulnerability that exists in the default configuration.",
       "vendor": null,
@@ -2287,7 +2260,147 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-16860",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to execute arbitrary code due to an uncontro…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to execute arbitrary code due to an uncontrolled search path element.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-427",
+      "published": "2026-08-12T18:17:24.397",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 43
+    },
+    {
+      "cve_id": "CVE-2026-16956",
+      "title": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary commands due to improper ne…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-12T18:17:25.133",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-17218",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to execute arbitrary code due to an out-of-bounds write.",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to execute arbitrary code due to an out-of-bounds write.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-787",
+      "published": "2026-08-12T18:17:25.867",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-17276",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to escalate privileges due to improper autho…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to escalate privileges due to improper authorization in the handling of high-authority threads.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-269",
+      "published": "2026-08-12T18:17:26.680",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-50656",
@@ -2307,7 +2420,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 18,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 3,
         "stars": 10,
@@ -2349,7 +2462,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 44
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -2369,7 +2482,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 2,
         "stars": 27,
@@ -2405,7 +2518,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 45
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2448,7 +2561,50 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-41452",
+      "title": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the X-Requested-With: XMLHttpRequest header to bypass the CanInstall middleware redirect check. Attackers can supply arbitrary name, email, and password values to the admin-config-setup endpoint, which performs an unauthenticated updateOrInsert targeting the hardcoded administrator user ID, enabling full administrative access to all CRM data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00658,
+      "epss_pct": 0.48292,
+      "cwe": "CWE-306",
+      "published": "2026-08-03T17:16:37.047",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Boreas37/CVE-2026-41452-PoC",
+            "html_url": "https://github.com/Boreas37/CVE-2026-41452-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-54489",
@@ -2483,7 +2639,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2518,7 +2674,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-56793",
@@ -2553,7 +2709,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2588,7 +2744,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2623,7 +2779,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2658,7 +2814,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2693,7 +2849,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-14266",
@@ -2746,7 +2902,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-57858",
@@ -2789,42 +2945,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-18683",
-      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 is vulnerable to privilege escalation via Navigator for i.",
-      "vendor": null,
-      "product": null,
-      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 is vulnerable to privilege escalation via Navigator for i. An authenticated user could elevate privileges to a root user to execute commands.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-08-12T17:17:25.790",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-18847",
@@ -2856,127 +2977,6 @@
       "timeline": [
         {
           "date": "2026-08-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-48319",
-      "title": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerabi…",
-      "vendor": null,
-      "product": null,
-      "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.3229,
-      "epss_pct": 0.98167,
-      "cwe": "CWE-22",
-      "published": "2026-07-14T21:16:58.600",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-07-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-33267",
-      "title": "Improper Input Validation vulnerability in Apache Traffic Server.",
-      "vendor": null,
-      "product": null,
-      "description": "Improper Input Validation vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.2.0 through 9.2.14, from 10.1.0 through 10.1.3.\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fixes the issue.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00335,
-      "epss_pct": 0.26287,
-      "cwe": "CWE-20",
-      "published": "2026-07-29T08:16:30.983",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "Boreas37/CVE-2026-33267-PoC",
-            "html_url": "https://github.com/Boreas37/CVE-2026-33267-PoC",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-65883",
-      "title": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A…",
-      "vendor": null,
-      "product": null,
-      "description": "Joomla Extension - aimy-extensions.com - RCE via PHP object injection in Aimy Captcha-Less Form Guard 18.0 - 20.0 - A forged clfgd field allows PHP objection injection and thereby remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00557,
-      "epss_pct": 0.4353,
-      "cwe": "CWE-502",
-      "published": "2026-07-29T11:16:50.297",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "shinthink/CVE-2026-65883",
-            "html_url": "https://github.com/shinthink/CVE-2026-65883",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
