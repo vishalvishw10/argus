@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T22:04:55.645Z",
+  "generated_at": "2026-08-13T23:04:45.721Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "857 recent"
+      "detail": "854 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "772 scored"
+      "detail": "752 scored"
     },
     {
       "name": "BleepingComputer",
@@ -817,7 +817,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 52,
-      "rising": 29,
+      "rising": 28,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -936,8 +936,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 51,
-      "rising": 35,
+      "hype": 50,
+      "rising": 34,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1503,7 +1503,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1989,7 +1989,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 28,
-      "rising": 42,
+      "rising": 40,
       "repos": {
         "count": 2,
         "stars": 41,
@@ -2051,7 +2051,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 56,
+      "rising": 55,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2101,7 +2101,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 62,
+      "rising": 61,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2518,6 +2518,181 @@
       "rank": 48
     },
     {
+      "cve_id": "CVE-2026-72776",
+      "title": "AgenticSeek (commit fc242c7) contains an unauthenticated remote code execution vulnerability that allows any network-…",
+      "vendor": null,
+      "product": null,
+      "description": "AgenticSeek (commit fc242c7) contains an unauthenticated remote code execution vulnerability that allows any network-adjacent attacker to execute arbitrary commands by submitting crafted queries to the unprotected POST /query API endpoint bound to 0.0.0.0:7777 with wildcard CORS. Attackers can send unauthenticated HTTP requests that cause the autonomous agent to generate and execute shell commands through BashInterpreter using subprocess.Popen with shell=True and safety=False, bypassing the incomplete command blocklist to achieve full host-level code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-08-13T22:17:23.340",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-72839",
+      "title": "filebrowser through 2.63.16 fails to properly restrict scope and permissions when self-signup is enabled with default…",
+      "vendor": null,
+      "product": null,
+      "description": "filebrowser through 2.63.16 fails to properly restrict scope and permissions when self-signup is enabled with default CreateUserDir setting. Unauthenticated attackers can register accounts that inherit the server root scope with full create, modify, delete, rename, share, and download permissions, allowing unrestricted access to all files.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-266",
+      "published": "2026-08-13T22:17:23.490",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-72841",
+      "title": "luci-app-openvpn fails to properly validate the instance_name2 parameter during file upload, allowing authenticated u…",
+      "vendor": null,
+      "product": null,
+      "description": "luci-app-openvpn fails to properly validate the instance_name2 parameter during file upload, allowing authenticated users to perform path traversal and write arbitrary files outside the intended directory. Attackers can upload malicious payloads to gain persistent root code execution by placing SSH keys in system directories accessible on reboot.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-73",
+      "published": "2026-08-13T22:17:23.813",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-72842",
+      "title": "luci-app-lxc contains an ACL inconsistency vulnerability that allows low-privileged authenticated LuCI users to acces…",
+      "vendor": null,
+      "product": null,
+      "description": "luci-app-lxc contains an ACL inconsistency vulnerability that allows low-privileged authenticated LuCI users to access backend container management routes without proper authorization checks. Attackers can exploit path traversal via `/.%2E` in the `lxc_name` parameter to escape container directories and control host-side scripts executed through `lxc.hook.start-host`, achieving root code execution on the OpenWrt host.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-73",
+      "published": "2026-08-13T22:17:23.977",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
+    },
+    {
+      "cve_id": "CVE-2026-72851",
+      "title": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with …",
+      "vendor": null,
+      "product": null,
+      "description": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with EXECUTE_QUERY steps. Attackers can POST attacker-controlled JSON to the webhook trigger endpoint to inject SQL payloads that execute with builder-configured database credentials, enabling data exfiltration, modification, and persistence in connected datasources like Snowflake.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-08-13T22:17:24.450",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
       "cve_id": "CVE-2026-50656",
       "title": "CVE-2026-50656",
       "vendor": null,
@@ -2577,7 +2752,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 49
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2620,7 +2795,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2655,7 +2830,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-56793",
@@ -2690,7 +2865,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2725,7 +2900,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2760,7 +2935,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2792,199 +2967,6 @@
       "timeline": [
         {
           "date": "2026-08-09",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-73032",
-      "title": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary …",
-      "vendor": null,
-      "product": null,
-      "description": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary JavaScript by returning malicious code from an LLM endpoint that is passed unsanitized to window.eval() in views.ts. Attackers can exploit this through prompt injection in PDFs, MITM interception of API requests, or a malicious custom LLM endpoint to execute arbitrary code in Zotero's chrome-privileged context, enabling file read/write, process execution, and access to all Zotero data.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": 0.00437,
-      "epss_pct": 0.3625,
-      "cwe": "CWE-94",
-      "published": "2026-08-11T20:18:46.320",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-53791",
-      "title": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers …",
-      "vendor": null,
-      "product": null,
-      "description": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers to bypass IP-based access controls by sending a crafted PROXY protocol header with a forged source address. Attackers who can connect directly to the rsync daemon can inject a spoofed source IP in the PROXY protocol header to circumvent hosts allow/deny rules, gaining unauthorized access that would otherwise be blocked based on their real source address.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-290",
-      "published": "2026-08-13T15:19:43.363",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-14525",
-      "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vuln…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vulnerable to an authentication bypass when the rtcomm-1.0 or rtcommGateway-1.0 feature is enabled.",
-      "cvss": 9.4,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-08-13T20:17:14.250",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-19297",
-      "title": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow a remote attacker to obtain unauthorized access to user accounts due…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow a remote attacker to obtain unauthorized access to user accounts due to improper restriction of excessive authentication attempts.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-307",
-      "published": "2026-08-13T21:17:45.870",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-14266",
-      "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
-      "vendor": null,
-      "product": null,
-      "description": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of XZ chunked data. Crafted XZ-compressed data can trigger an overflow of a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30169.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00939,
-      "epss_pct": 0.57775,
-      "cwe": "CWE-122",
-      "published": "2026-07-29T18:16:50.720",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-14266",
-            "html_url": "https://github.com/4minx/CVE-2026-14266",
-            "stars": 3
-          },
-          {
-            "full_name": "liyuxuan504-byte/CVE-2026-14266",
-            "html_url": "https://github.com/liyuxuan504-byte/CVE-2026-14266",
-            "stars": 1
-          },
-          {
-            "full_name": "hg0434hongzh0/CVE-2026-14266",
-            "html_url": "https://github.com/hg0434hongzh0/CVE-2026-14266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
           "label": "Published to NVD"
         }
       ],
