@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T12:01:37.084Z",
+  "generated_at": "2026-08-13T13:50:33.845Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "925 recent"
+      "detail": "942 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "888 scored"
+      "detail": "893 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4130 mapped"
+      "detail": "4131 mapped"
     },
     {
       "name": "Reddit",
@@ -148,7 +148,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 62,
-      "rising": 67,
+      "rising": 64,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1006,7 +1006,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 43,
+      "rising": 42,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1514,7 +1514,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1994,8 +1994,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 29,
-      "rising": 53,
+      "hype": 28,
+      "rising": 51,
       "repos": {
         "count": 2,
         "stars": 37,
@@ -2336,7 +2336,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2371,7 +2371,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2406,7 +2406,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 18,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 3,
         "stars": 10,
@@ -2704,41 +2704,6 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-71471",
-      "title": "A flaw was found in acm-search-v2-rhel9.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in acm-search-v2-rhel9. An attacker with administrative privileges on the hub cluster, specifically with patch access to the Search Custom Resource (CR), could exploit a vulnerability in the `Collector.ImageOverride` field. This allows the attacker to deploy an arbitrary container image across all managed clusters. The consequence is remote code execution (RCE), enabling the attacker to execute commands and potentially access sensitive information across the entire fleet of managed clusters.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-829",
-      "published": "2026-08-12T22:17:15.890",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
       "cve_id": "CVE-2026-14266",
       "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
       "vendor": null,
@@ -2789,7 +2754,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-57858",
@@ -2832,7 +2797,77 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-73615",
+      "title": "Network-AI versions before 5.15.1 contain a security matcher bypass vulnerability where SandboxPolicy evaluates raw c…",
+      "vendor": null,
+      "product": null,
+      "description": "Network-AI versions before 5.15.1 contain a security matcher bypass vulnerability where SandboxPolicy evaluates raw command strings with quotes preserved while the executor tokenizes commands by stripping quotes before execution. Attackers can craft quoted commands that evade blocklist checks and approval gates while the executor runs the identical unquoted dangerous argv.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-436",
+      "published": "2026-08-13T12:17:26.337",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
       "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-73625",
+      "title": "GitPython versions before 3.1.54 contain a remote code execution vulnerability in the check_unsafe_options guard that…",
+      "vendor": null,
+      "product": null,
+      "description": "GitPython versions before 3.1.54 contain a remote code execution vulnerability in the check_unsafe_options guard that can be bypassed by smuggling git options inside single-character kwarg values. Attackers can supply crafted option dictionaries to clone_from, fetch, pull, push, ls_remote, iter_commits, blame, or archive methods to execute arbitrary OS commands via the --upload-pack parameter.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-13T12:17:27.753",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-48319",
@@ -2867,7 +2902,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-33267",
@@ -2910,7 +2945,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2955,41 +2990,6 @@
       "timeline": [
         {
           "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-18602",
-      "title": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function ovpn-client.get_recommend_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Executing a manipulation of the argument Hostname can lead to command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure and confirmed the existence of the vulnerability.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01989,
-      "epss_pct": 0.78811,
-      "cwe": "CWE-74",
-      "published": "2026-08-03T17:16:35.153",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-03",
           "label": "Published to NVD"
         }
       ],
