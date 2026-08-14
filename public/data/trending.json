@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T17:14:03.193Z",
+  "generated_at": "2026-08-14T18:08:01.071Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "866 recent"
+      "detail": "834 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "877 scored"
+      "detail": "842 scored"
     },
     {
       "name": "BleepingComputer",
@@ -876,7 +876,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 51,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1989,7 +1989,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 28,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 2,
         "stars": 46,
@@ -2051,7 +2051,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 35,
+      "rising": 34,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2104,7 +2104,7 @@
       "rising": 0,
       "repos": {
         "count": 21,
-        "stars": 62,
+        "stars": 63,
         "top": [
           {
             "full_name": "Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
@@ -2232,7 +2232,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2248,41 +2248,6 @@
         }
       ],
       "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-73532",
-      "title": "Fluent Forms Pro 6.2.7 contains an embedded malicious code vulnerability introduced via a tampered plugin build serve…",
-      "vendor": null,
-      "product": null,
-      "description": "Fluent Forms Pro 6.2.7 contains an embedded malicious code vulnerability introduced via a tampered plugin build served through a decommissioned update server. The tampered build introduced a rogue PHP file (libs/class-license-sync.php), loaded via a require_once directive added to fluentformpro.php, that established a backdoor REST API endpoint, dropped persistent PHP files in mu-plugins and uploads directories, installed a passwordless administrator account, and registered scheduled tasks that survived plugin removal.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00463,
-      "epss_pct": 0.38121,
-      "cwe": "CWE-506",
-      "published": "2026-08-13T16:19:05.480",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
     },
     {
       "cve_id": "CVE-2026-73533",
@@ -2317,7 +2282,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-17482",
@@ -2352,42 +2317,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-72839",
-      "title": "filebrowser through 2.63.16 fails to properly restrict scope and permissions when self-signup is enabled with default…",
-      "vendor": null,
-      "product": null,
-      "description": "filebrowser through 2.63.16 fails to properly restrict scope and permissions when self-signup is enabled with default CreateUserDir setting. Unauthenticated attackers can register accounts that inherit the server root scope with full create, modify, delete, rename, share, and download permissions, allowing unrestricted access to all files.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00394,
-      "epss_pct": 0.32431,
-      "cwe": "CWE-266",
-      "published": "2026-08-13T22:17:23.490",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-72841",
@@ -2422,42 +2352,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-72842",
-      "title": "luci-app-lxc contains an ACL inconsistency vulnerability that allows low-privileged authenticated LuCI users to acces…",
-      "vendor": null,
-      "product": null,
-      "description": "luci-app-lxc contains an ACL inconsistency vulnerability that allows low-privileged authenticated LuCI users to access backend container management routes without proper authorization checks. Attackers can exploit path traversal via `/.%2E` in the `lxc_name` parameter to escape container directories and control host-side scripts executed through `lxc.hook.start-host`, achieving root code execution on the OpenWrt host.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00422,
-      "epss_pct": 0.35128,
-      "cwe": "CWE-73",
-      "published": "2026-08-13T22:17:23.977",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-72851",
@@ -2492,7 +2387,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-72826",
@@ -2527,7 +2422,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-72830",
@@ -2562,7 +2457,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2610,7 +2505,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2653,7 +2548,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2696,7 +2591,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2731,7 +2626,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2766,7 +2661,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2801,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2836,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2871,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2891,7 +2786,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2906,7 +2801,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-53791",
@@ -2927,6 +2822,129 @@
       "no_patch": false,
       "hype": 17,
       "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-14525",
+      "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vuln…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vulnerable to an authentication bypass when the rtcomm-1.0 or rtcommGateway-1.0 feature is enabled.",
+      "cvss": 9.4,
+      "severity": "CRITICAL",
+      "epss": 0.0058,
+      "epss_pct": 0.44793,
+      "cwe": "CWE-306",
+      "published": "2026-08-13T20:17:14.250",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-14266",
+      "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
+      "vendor": null,
+      "product": null,
+      "description": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of XZ chunked data. Crafted XZ-compressed data can trigger an overflow of a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-30169.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00939,
+      "epss_pct": 0.57835,
+      "cwe": "CWE-122",
+      "published": "2026-07-29T18:16:50.720",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "4minx/CVE-2026-14266",
+            "html_url": "https://github.com/4minx/CVE-2026-14266",
+            "stars": 3
+          },
+          {
+            "full_name": "liyuxuan504-byte/CVE-2026-14266",
+            "html_url": "https://github.com/liyuxuan504-byte/CVE-2026-14266",
+            "stars": 1
+          },
+          {
+            "full_name": "hg0434hongzh0/CVE-2026-14266",
+            "html_url": "https://github.com/hg0434hongzh0/CVE-2026-14266",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-18193",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of user-controlled addresses.",
+      "cvss": 8.9,
+      "severity": "HIGH",
+      "epss": 0.00325,
+      "epss_pct": 0.25243,
+      "cwe": "CWE-269",
+      "published": "2026-08-13T21:17:44.700",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
