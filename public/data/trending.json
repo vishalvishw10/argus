@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:16:21.765Z",
+  "generated_at": "2026-08-14T19:58:04.305Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "830 recent"
+      "detail": "799 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "842 scored"
+      "detail": "811 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4142 mapped"
+      "detail": "4141 mapped"
     },
     {
       "name": "Reddit",
@@ -876,7 +876,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 51,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1109,7 +1109,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 49,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1387,7 +1387,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1992,12 +1992,12 @@
       "rising": 19,
       "repos": {
         "count": 2,
-        "stars": 47,
+        "stars": 49,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-55040",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-55040",
-            "stars": 46
+            "stars": 48
           },
           {
             "full_name": "l0ggg/CVE-2026-55040",
@@ -2051,7 +2051,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2103,7 +2103,7 @@
       "hype": 19,
       "rising": 0,
       "repos": {
-        "count": 22,
+        "count": 21,
         "stars": 63,
         "top": [
           {
@@ -2267,7 +2267,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2337,7 +2337,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2353,41 +2353,6 @@
         }
       ],
       "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-72851",
-      "title": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with …",
-      "vendor": null,
-      "product": null,
-      "description": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with EXECUTE_QUERY steps. Attackers can POST attacker-controlled JSON to the webhook trigger endpoint to inject SQL payloads that execute with builder-configured database credentials, enabling data exfiltration, modification, and persistence in connected datasources like Snowflake.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00286,
-      "epss_pct": 0.20943,
-      "cwe": "CWE-89",
-      "published": "2026-08-13T22:17:24.450",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
     },
     {
       "cve_id": "CVE-2026-72826",
@@ -2408,6 +2373,41 @@
       "no_patch": false,
       "hype": 18,
       "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-73678",
+      "title": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability tha…",
+      "vendor": null,
+      "product": null,
+      "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting crafted prompts to the unprotected POST /api/v1/responses/ endpoint, which reaches the Anton agent's scratchpad tool that calls exec() on attacker-influenced Python source without sandboxing. Attackers can first configure their own LLM API key through the unauthenticated PUT /api/v1/settings/ endpoint, then POST a prompt directing the agent to invoke the scratchpad tool with arbitrary Python code, achieving full OS command execution as the user running the desktop application and enabling access to SSH keys, stored credentials, and environment secrets.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-08-14T19:18:01.457",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2734,76 +2734,6 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-53791",
-      "title": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers …",
-      "vendor": null,
-      "product": null,
-      "description": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers to bypass IP-based access controls by sending a crafted PROXY protocol header with a forged source address. Attackers who can connect directly to the rsync daemon can inject a spoofed source IP in the PROXY protocol header to circumvent hosts allow/deny rules, gaining unauthorized access that would otherwise be blocked based on their real source address.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00471,
-      "epss_pct": 0.38644,
-      "cwe": "CWE-290",
-      "published": "2026-08-13T15:19:43.363",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-14525",
-      "title": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vuln…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 IBM WebSphere Application Server Liberty is vulnerable to an authentication bypass when the rtcomm-1.0 or rtcommGateway-1.0 feature is enabled.",
-      "cvss": 9.4,
-      "severity": "CRITICAL",
-      "epss": 0.0058,
-      "epss_pct": 0.44793,
-      "cwe": "CWE-306",
-      "published": "2026-08-13T20:17:14.250",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
       "cve_id": "CVE-2026-14266",
       "title": "7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability.",
       "vendor": null,
@@ -2854,55 +2784,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
-      "cve_id": "CVE-2026-18193",
-      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation…",
+      "cve_id": "CVE-2026-19811",
+      "title": "A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730.",
       "vendor": null,
       "product": null,
-      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of user-controlled addresses.",
-      "cvss": 8.9,
-      "severity": "HIGH",
-      "epss": 0.00325,
-      "epss_pct": 0.25243,
-      "cwe": "CWE-269",
-      "published": "2026-08-13T21:17:44.700",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-19788",
-      "title": "A vulnerability was found in Tenda AC1206 15.03.06.23_multi_TD01.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was found in Tenda AC1206 15.03.06.23_multi_TD01. This affects the function set_device_name of the file /goform/SetOnlineDevName of the component httpd web management interface. The manipulation of the argument devName results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used.",
+      "description": "A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The manipulation of the argument Comment results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00466,
       "epss_pct": 0.38324,
       "cwe": "CWE-119",
-      "published": "2026-08-14T04:16:36.177",
+      "published": "2026-08-14T07:16:52.627",
       "kev": {
         "in_kev": false
       },
@@ -2924,20 +2819,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
-      "cve_id": "CVE-2026-19790",
-      "title": "A vulnerability was identified in Tenda G0 up to 20260625.",
+      "cve_id": "CVE-2026-19813",
+      "title": "A security vulnerability has been detected in TOTOLINK A800R 4.1.2cu.5137_B20200730.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was identified in Tenda G0 up to 20260625. This issue affects the function formSetPortMirror of the file /goform/module of the component httpd Web Management Interface. Such manipulation of the argument portMirrorMirroredPorts leads to stack-based buffer overflow. The attack can be executed remotely. The exploit is publicly available and might be used.",
+      "description": "A security vulnerability has been detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Such manipulation of the argument Comment leads to stack-based buffer overflow. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00466,
-      "epss_pct": 0.38324,
+      "epss": 0.00601,
+      "epss_pct": 0.45806,
       "cwe": "CWE-119",
-      "published": "2026-08-14T04:16:40.780",
+      "published": "2026-08-14T08:17:38.427",
       "kev": {
         "in_kev": false
       },
@@ -2945,6 +2840,111 @@
       "no_patch": false,
       "hype": 17,
       "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-19823",
+      "title": "A security flaw has been discovered in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC.",
+      "vendor": null,
+      "product": null,
+      "description": "A security flaw has been discovered in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. Impacted is the function formQOSRuleDel of the file /goform/delQos of the component QoS Rule Deletion. Performing a manipulation of the argument qosIndex results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-14T13:17:37.763",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-19844",
+      "title": "A vulnerability was found in TOTOLINK A800R 4.1.2cu.5137_B20200730.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was found in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component ipv6.so. Performing a manipulation of the argument radvdinterfacename results in stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been made public and could be used.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-14T17:17:35.560",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-19846",
+      "title": "A vulnerability was identified in TOTOLINK A800R 4.1.2cu.5137_B20200730.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setUrlFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The manipulation of the argument url leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit is publicly available and might be used.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-14T18:17:23.883",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
