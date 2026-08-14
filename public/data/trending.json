@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:07:29.678Z",
+  "generated_at": "2026-08-14T17:14:03.193Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "898 recent"
+      "detail": "866 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "907 scored"
+      "detail": "877 scored"
     },
     {
       "name": "BleepingComputer",
@@ -876,7 +876,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 51,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -937,7 +937,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1387,7 +1387,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1989,7 +1989,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 28,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 2,
         "stars": 46,
@@ -2051,7 +2051,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 36,
+      "rising": 35,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2320,41 +2320,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-19747",
-      "title": "A weakness has been identified in Tenda CH7, CH7G, CH10, CP3, CP3 Pro, CP7, TC3B14C, TC3B15C, TC3T14C and TC3T15C up …",
-      "vendor": null,
-      "product": null,
-      "description": "A weakness has been identified in Tenda CH7, CH7G, CH10, CP3, CP3 Pro, CP7, TC3B14C, TC3B15C, TC3T14C and TC3T15C up to 20260625. This impacts the function CAte::HandleCmd of the file Kylin of the component ATE Module. This manipulation causes command injection. The attack is possible to be carried out remotely.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02364,
-      "epss_pct": 0.82295,
-      "cwe": "CWE-74",
-      "published": "2026-08-13T20:17:21.570",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-17482",
       "title": "IBM Documentation Offline 1.0.0 through 1.4.1 could allow a remote attacker to execute arbitrary code due to improper…",
       "vendor": null,
@@ -2387,7 +2352,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-72839",
@@ -2422,7 +2387,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-72841",
@@ -2457,7 +2422,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-72842",
@@ -2492,7 +2457,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-72851",
@@ -2527,112 +2492,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
-    },
-    {
-      "cve_id": "CVE-2026-12949",
-      "title": "The Wishlist Member plugin for WordPress is vulnerable to Account Takeover via Insufficient Verification of Data Auth…",
-      "vendor": null,
-      "product": null,
-      "description": "The Wishlist Member plugin for WordPress is vulnerable to Account Takeover via Insufficient Verification of Data Authenticity in versions up to and including 3.34.1. This is due to the wpm_register() function validating the registration cookie only against the GET reg parameter while accepting the POST mergewith and POST wpm_id parameters without verifying that the mergewith user ID references a temporary or incomplete registrant that is bound to the current registration transaction. This makes it possible for unauthenticated attackers to take over any existing WordPress account — including administrator accounts — by supplying an arbitrary user's numeric ID as the mergewith value, which causes wp_update_user() to overwrite the target account's username (additionally written via a direct $wpdb UPDATE), password, email address, first name, and last name with attacker-controlled values, while WordPress password and email change notification emails are explicitly suppressed. When wpm_id references a non-existent membership level, no role key is added to the update payload, causing wp_update_user() to preserve the target user's existing role — including administrator — making full privilege escalation a direct consequence of the takeover.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00339,
-      "epss_pct": 0.26787,
-      "cwe": "CWE-640",
-      "published": "2026-08-14T06:16:53.237",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-72811",
-      "title": "SiYuan versions <= v3.7.2 contain a SQL injection vulnerability in the backlink/mention search query (kernel/model/ba…",
-      "vendor": null,
-      "product": null,
-      "description": "SiYuan versions <= v3.7.2 contain a SQL injection vulnerability in the backlink/mention search query (kernel/model/backlink.go), which concatenates stored block metadata (title, name, alias, anchor text) and the client-supplied keyword into a SQL MATCH/search statement while escaping only the double-quote character and not the single quote. A single quote in the client keyword (first-order, reachable by an anonymous or RoleReader user on the publish surface) or in stored document metadata (second-order) breaks out of the string literal. Because the query runs on the main read-write siyuan.db handle via a statement-stacking-capable driver, an attacker can execute arbitrary SQL, enabling cross-notebook read and write. Fixed in v3.7.4.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-08-14T12:16:43.903",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-72822",
-      "title": "The getgrav/grav-plugin-api Composer package before 1.0.13 (affected <= 1.0.12) fails to enforce API key scope caps o…",
-      "vendor": null,
-      "product": null,
-      "description": "The getgrav/grav-plugin-api Composer package before 1.0.13 (affected <= 1.0.12) fails to enforce API key scope caps on the disable2fa endpoint. Unlike the sibling generate2fa endpoint, disable2fa authorizes the admin (non-self) path solely via ACL reads (isSuperAdmin/hasPermission) and never invokes requirePermission(), so the api_key_scopes cap is never applied. As a result, a holder of a narrow-scope API key on a super account, or a non-super account whose ACL includes api.users.write, can force-disable two-factor authentication on any non-super target account via POST /api/v1/users/{user}/2fa/disable without providing a TOTP code, facilitating account takeover.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-08-14T12:16:45.267",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-72826",
@@ -2667,7 +2527,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-72830",
@@ -2702,7 +2562,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2750,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2793,7 +2653,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2836,7 +2696,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-62836",
@@ -2871,7 +2731,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-71957",
@@ -2906,7 +2766,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2938,6 +2798,146 @@
       "timeline": [
         {
           "date": "2026-08-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-71991",
+      "title": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the TelnetSSH functio…",
+      "vendor": null,
+      "product": null,
+      "description": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the TelnetSSH function used for Telnet configuration that allows remote attackers to execute arbitrary commands on the affected device. Attackers can exploit this vulnerability through the Telnet configuration interface to inject malicious commands and obtain root privileges on the underlying system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0135,
+      "epss_pct": 0.6904,
+      "cwe": "CWE-78",
+      "published": "2026-08-09T00:16:48.270",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-65768",
+      "title": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Teams for Android allows …",
+      "vendor": null,
+      "product": null,
+      "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Teams for Android allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00625,
+      "epss_pct": 0.4694,
+      "cwe": "CWE-22",
+      "published": "2026-08-11T17:18:56.117",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-73032",
+      "title": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary …",
+      "vendor": null,
+      "product": null,
+      "description": "PapersGPT for Zotero 0.6.1 contains a remote code execution vulnerability that allows attackers to execute arbitrary JavaScript by returning malicious code from an LLM endpoint that is passed unsanitized to window.eval() in views.ts. Attackers can exploit this through prompt injection in PDFs, MITM interception of API requests, or a malicious custom LLM endpoint to execute arbitrary code in Zotero's chrome-privileged context, enabling file read/write, process execution, and access to all Zotero data.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": 0.00437,
+      "epss_pct": 0.36306,
+      "cwe": "CWE-94",
+      "published": "2026-08-11T20:18:46.320",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-53791",
+      "title": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers …",
+      "vendor": null,
+      "product": null,
+      "description": "rsync daemon before 3.5.0 contains an IP address spoofing vulnerability that allows unauthenticated remote attackers to bypass IP-based access controls by sending a crafted PROXY protocol header with a forged source address. Attackers who can connect directly to the rsync daemon can inject a spoofed source IP in the PROXY protocol header to circumvent hosts allow/deny rules, gaining unauthorized access that would otherwise be blocked based on their real source address.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00471,
+      "epss_pct": 0.38644,
+      "cwe": "CWE-290",
+      "published": "2026-08-13T15:19:43.363",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
           "label": "Published to NVD"
         }
       ],
