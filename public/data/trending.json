@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T17:37:59.821Z",
+  "generated_at": "2026-08-15T18:48:57.341Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "792 recent"
+      "detail": "794 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "827 scored"
+      "detail": "826 scored"
     },
     {
       "name": "BleepingComputer",
@@ -511,11 +511,11 @@
       "vendor": "Fortinet",
       "product": "FortiSandbox",
       "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.9121,
       "epss_pct": 0.99802,
-      "cwe": null,
+      "cwe": "CWE-78",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1945,7 +1945,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 51,
@@ -2329,7 +2329,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2364,7 +2364,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2434,7 +2434,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2450,6 +2450,41 @@
         }
       ],
       "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-19598",
+      "title": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorizati…",
+      "vendor": null,
+      "product": null,
+      "description": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorization Bypass in all versions up to, and including, 3.3.9. The vulnerability exists because the pods_admin AJAX router funnels every access check — including the method allowlist, nonce verification, login enforcement, and capability gate — through pods_error(), which under the JSON meta-box-loader compatibility path only writes failures to the PHP error log and returns false instead of terminating the request, rendering all guards ineffective.  This makes it possible for unauthenticated attackers to escalate their privileges to Administrator or overwrite the password of any user account, including the site owner's, enabling complete site takeover, or perform another administrator action.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-863",
+      "published": "2026-08-15T18:16:23.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-15",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2497,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2540,7 +2575,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2575,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2610,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2645,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2680,7 +2715,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2715,7 +2750,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2750,7 +2785,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2785,7 +2820,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-73533",
@@ -2820,7 +2855,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-17482",
@@ -2840,7 +2875,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2855,7 +2890,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-17181",
@@ -2887,41 +2922,6 @@
       "timeline": [
         {
           "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-14484",
-      "title": "The RapiSafe – Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file delet…",
-      "vendor": null,
-      "product": null,
-      "description": "The RapiSafe – Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the handleAjaxRemoveUpload function in all versions up to, and including, 1.0.4. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The nonce required to invoke the removal handler is exposed in public-facing JavaScript as RSMFCF7Vars.nonce on every Contact Form 7 page rendering a RapiSafe upload field, making it obtainable by any unauthenticated visitor.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00762,
-      "epss_pct": 0.52319,
-      "cwe": "CWE-22",
-      "published": "2026-08-15T03:16:47.263",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-15",
           "label": "Published to NVD"
         }
       ],
