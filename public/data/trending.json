@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T20:41:36.998Z",
+  "generated_at": "2026-08-15T21:37:05.223Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4150 mapped"
+      "detail": "4151 mapped"
     },
     {
       "name": "Reddit",
@@ -1283,8 +1283,13 @@
       "rising": 1,
       "repos": {
         "count": 5,
-        "stars": 3,
+        "stars": 4,
         "top": [
+          {
+            "full_name": "VuxNx/CVE-2026-72898",
+            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
+            "stars": 1
+          },
           {
             "full_name": "ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
             "html_url": "https://github.com/ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
@@ -1293,11 +1298,6 @@
           {
             "full_name": "4minx/CVE-2026-72898",
             "html_url": "https://github.com/4minx/CVE-2026-72898",
-            "stars": 1
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-72898",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
             "stars": 1
           }
         ]
@@ -2033,49 +2033,6 @@
       "rank": 36
     },
     {
-      "cve_id": "CVE-2026-73678",
-      "title": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability tha…",
-      "vendor": null,
-      "product": null,
-      "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting crafted prompts to the unprotected POST /api/v1/responses/ endpoint, which reaches the Anton agent's scratchpad tool that calls exec() on attacker-influenced Python source without sandboxing. Attackers can first configure their own LLM API key through the unauthenticated PUT /api/v1/settings/ endpoint, then POST a prompt directing the agent to invoke the scratchpad tool with arbitrary Python code, achieving full OS command execution as the user running the desktop application and enabling access to SSH keys, stored credentials, and environment secrets.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00807,
-      "epss_pct": 0.53777,
-      "cwe": "CWE-94",
-      "published": "2026-08-14T19:18:01.457",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 16,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
-            "html_url": "https://github.com/Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 37
-    },
-    {
       "cve_id": "CVE-2026-64638",
       "title": "CVE-2026-64638",
       "vendor": null,
@@ -2134,7 +2091,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-72841",
@@ -2169,7 +2126,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-72826",
@@ -2189,7 +2146,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2198,6 +2155,49 @@
       "media": [],
       "reddit": null,
       "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-73678",
+      "title": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability tha…",
+      "vendor": null,
+      "product": null,
+      "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting crafted prompts to the unprotected POST /api/v1/responses/ endpoint, which reaches the Anton agent's scratchpad tool that calls exec() on attacker-influenced Python source without sandboxing. Attackers can first configure their own LLM API key through the unauthenticated PUT /api/v1/settings/ endpoint, then POST a prompt directing the agent to invoke the scratchpad tool with arbitrary Python code, achieving full OS command execution as the user running the desktop application and enabling access to SSH keys, stored credentials, and environment secrets.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00807,
+      "epss_pct": 0.53777,
+      "cwe": "CWE-94",
+      "published": "2026-08-14T19:18:01.457",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "html_url": "https://github.com/Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
           "date": "2026-08-14",
@@ -2469,7 +2469,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2735,7 +2735,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2770,7 +2770,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
