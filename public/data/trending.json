@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T10:41:55.381Z",
+  "generated_at": "2026-08-15T11:36:25.006Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4143 mapped"
+      "detail": "4144 mapped"
     },
     {
       "name": "Reddit",
@@ -797,6 +797,72 @@
       "rank": 12
     },
     {
+      "cve_id": "CVE-2026-68820",
+      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows Ancillary Function Driver for WinSock ",
+      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.00332,
+      "epss_pct": 0.25983,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-25",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 4,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ubitquity/Windows-WinSock-UAF-Mitigation",
+            "html_url": "https://github.com/ubitquity/Windows-WinSock-UAF-Mitigation",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-68820",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-68820",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+          "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+          "date": "2026-08-11T20:10:55.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-11",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-56290",
       "title": "Joomlack Page Builder Improper Access Control Vulnerability",
       "vendor": "Joomlack",
@@ -851,67 +917,6 @@
         {
           "date": "2026-07-07",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-68820",
-      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows Ancillary Function Driver for WinSock ",
-      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "cvss": 7,
-      "severity": "HIGH",
-      "epss": 0.00332,
-      "epss_pct": 0.25983,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-25",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 50,
-      "rising": 4,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-68820",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-68820",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
-          "url": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
-          "date": "2026-08-11T20:10:55.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-11",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 14
@@ -1274,12 +1279,17 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 45,
+      "hype": 46,
       "rising": 4,
       "repos": {
-        "count": 3,
-        "stars": 2,
+        "count": 4,
+        "stars": 3,
         "top": [
+          {
+            "full_name": "ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
+            "html_url": "https://github.com/ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
+            "stars": 1
+          },
           {
             "full_name": "4minx/CVE-2026-72898",
             "html_url": "https://github.com/4minx/CVE-2026-72898",
@@ -1289,11 +1299,6 @@
             "full_name": "0xBlackash/CVE-2026-72898",
             "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
             "stars": 1
-          },
-          {
-            "full_name": "codeb0ssx/CVE-2026-72898-PoC",
-            "html_url": "https://github.com/codeb0ssx/CVE-2026-72898-PoC",
-            "stars": 0
           }
         ]
       },
@@ -1940,7 +1945,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 50,
@@ -2002,7 +2007,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2055,7 +2060,7 @@
       "rising": 0,
       "repos": {
         "count": 21,
-        "stars": 64,
+        "stars": 65,
         "top": [
           {
             "full_name": "Boreas37/CVE-2026-64638-PoC-XSS2Shell-",
@@ -2065,7 +2070,7 @@
           {
             "full_name": "imbas007/CVE-2026-64638-POC",
             "html_url": "https://github.com/imbas007/CVE-2026-64638-POC",
-            "stars": 5
+            "stars": 6
           },
           {
             "full_name": "wordsec/XSS2Shell",
@@ -2263,13 +2268,21 @@
       "hype": 18,
       "rising": 17,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "html_url": "https://github.com/Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
           "date": "2026-08-14",
@@ -2296,7 +2309,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2331,7 +2344,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2366,7 +2379,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2615,41 +2628,6 @@
       "rank": 51
     },
     {
-      "cve_id": "CVE-2026-71957",
-      "title": "D-Link DWR-M961 devices with hardware version C1 and software version 1.1.2_C1_202602110044 contain a buffer overflow…",
-      "vendor": null,
-      "product": null,
-      "description": "D-Link DWR-M961 devices with hardware version C1 and software version 1.1.2_C1_202602110044 contain a buffer overflow vulnerability in the app.cgi interface. A remote attacker can write an overly long string to the netAcc.addlist[].name field and execute arbitrary commands by crafting a specific payload, or cause the device to crash.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00594,
-      "epss_pct": 0.45468,
-      "cwe": "CWE-120",
-      "published": "2026-08-08T18:16:56.647",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-08",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
-    },
-    {
       "cve_id": "CVE-2026-71986",
       "title": "MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the dmz function that…",
       "vendor": null,
@@ -2682,7 +2660,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2717,7 +2695,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2752,7 +2730,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2772,7 +2750,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2787,7 +2765,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2822,7 +2800,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2857,7 +2835,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2877,7 +2855,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2892,7 +2870,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-73533",
@@ -2924,6 +2902,41 @@
       "timeline": [
         {
           "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-17181",
+      "title": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write files to arbitrary locations due to pat…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write files to arbitrary locations due to path traversal.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-08-14T20:16:50.777",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-14",
           "label": "Published to NVD"
         }
       ],
