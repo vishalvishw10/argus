@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T21:37:05.223Z",
+  "generated_at": "2026-08-15T22:40:46.487Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "795 recent"
+      "detail": "804 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "825 scored"
+      "detail": "822 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4151 mapped"
+      "detail": "4153 mapped"
     },
     {
       "name": "Reddit",
@@ -876,7 +876,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 51,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 2,
@@ -1173,7 +1173,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 48,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1280,7 +1280,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 5,
         "stars": 4,
@@ -1945,7 +1945,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 51,
@@ -2181,7 +2181,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2399,7 +2399,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2487,6 +2487,41 @@
       "rank": 48
     },
     {
+      "cve_id": "CVE-2026-73046",
+      "title": "SiYuan before v3.7.4 improperly restricts excessive authentication attempts in the CheckAuth() middleware.",
+      "vendor": null,
+      "product": null,
+      "description": "SiYuan before v3.7.4 improperly restricts excessive authentication attempts in the CheckAuth() middleware. The HTTP Basic Authentication branch, which guards nearly the entire /api/* surface, accepts the workspace access code (Conf.AccessAuthCode) as the Basic Auth password but never consults the CAPTCHA/lockout gate or increments the failure counter used by the cookie/session login path. This allows unauthenticated remote attackers to brute-force the admin access code with unlimited automated requests and obtain full RoleAdministrator access to the kernel. A secondary weakness exists because the access code is compared using a non-constant-time string comparison.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-307",
+      "published": "2026-08-15T22:16:54.600",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-15",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
       "cve_id": "CVE-2026-17543",
       "title": "Improper escaping of backslashes in attacker-provided parameters would allow for trivial SQL injection in PHP version…",
       "vendor": null,
@@ -2532,7 +2567,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2575,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-71986",
@@ -2610,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-71991",
@@ -2645,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2680,7 +2715,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2715,7 +2750,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2750,7 +2785,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2785,7 +2820,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2820,7 +2855,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-73533",
@@ -2855,7 +2890,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-17482",
@@ -2887,41 +2922,6 @@
       "timeline": [
         {
           "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-17181",
-      "title": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write files to arbitrary locations due to pat…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write files to arbitrary locations due to path traversal.",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "epss": 0.00593,
-      "epss_pct": 0.4554,
-      "cwe": "CWE-22",
-      "published": "2026-08-14T20:16:50.777",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-14",
           "label": "Published to NVD"
         }
       ],
