@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T14:42:07.985Z",
+  "generated_at": "2026-08-16T15:39:00.769Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "879 recent"
+      "detail": "878 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "898 scored"
+      "detail": "897 scored"
     },
     {
       "name": "BleepingComputer",
@@ -277,7 +277,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1583,
+        "stars": 1596,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -287,7 +287,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 431
+            "stars": 444
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -588,7 +588,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1512,
+        "stars": 1525,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -598,7 +598,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 431
+            "stars": 444
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -1990,6 +1990,54 @@
       "rank": 35
     },
     {
+      "cve_id": "CVE-2026-73678",
+      "title": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability tha…",
+      "vendor": null,
+      "product": null,
+      "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting crafted prompts to the unprotected POST /api/v1/responses/ endpoint, which reaches the Anton agent's scratchpad tool that calls exec() on attacker-influenced Python source without sandboxing. Attackers can first configure their own LLM API key through the unauthenticated PUT /api/v1/settings/ endpoint, then POST a prompt directing the agent to invoke the scratchpad tool with arbitrary Python code, achieving full OS command execution as the user running the desktop application and enabling access to SSH keys, stored credentials, and environment secrets.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00807,
+      "epss_pct": 0.53798,
+      "cwe": "CWE-94",
+      "published": "2026-08-14T19:18:01.457",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 13,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Boreas37/CVE-2026-73678-PoC",
+            "html_url": "https://github.com/Boreas37/CVE-2026-73678-PoC",
+            "stars": 1
+          },
+          {
+            "full_name": "Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "html_url": "https://github.com/Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 36
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2035,54 +2083,6 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-73678",
-      "title": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability tha…",
-      "vendor": null,
-      "product": null,
-      "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting crafted prompts to the unprotected POST /api/v1/responses/ endpoint, which reaches the Anton agent's scratchpad tool that calls exec() on attacker-influenced Python source without sandboxing. Attackers can first configure their own LLM API key through the unauthenticated PUT /api/v1/settings/ endpoint, then POST a prompt directing the agent to invoke the scratchpad tool with arbitrary Python code, achieving full OS command execution as the user running the desktop application and enabling access to SSH keys, stored credentials, and environment secrets.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00807,
-      "epss_pct": 0.53798,
-      "cwe": "CWE-94",
-      "published": "2026-08-14T19:18:01.457",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 13,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Boreas37/CVE-2026-73678-PoC",
-            "html_url": "https://github.com/Boreas37/CVE-2026-73678-PoC",
-            "stars": 0
-          },
-          {
-            "full_name": "Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
-            "html_url": "https://github.com/Hunt-Benito/bring-your-own-key-cve-2026-73678-unauthenticated-rce-in-mindsdb-cowork",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 37
     },
     {
@@ -2105,7 +2105,7 @@
       "hype": 19,
       "rising": 0,
       "repos": {
-        "count": 22,
+        "count": 23,
         "stars": 71,
         "top": [
           {
@@ -2409,7 +2409,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2893,7 +2893,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2928,7 +2928,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
