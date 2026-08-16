@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T15:39:00.769Z",
+  "generated_at": "2026-08-16T16:44:01.426Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4154 mapped"
+      "detail": "4156 mapped"
     },
     {
       "name": "Reddit",
@@ -277,7 +277,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1596,
+        "stars": 1608,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -287,7 +287,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 444
+            "stars": 456
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -588,7 +588,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1525,
+        "stars": 1537,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -598,7 +598,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 444
+            "stars": 456
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2007,7 +2007,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -2147,41 +2147,6 @@
       "rank": 38
     },
     {
-      "cve_id": "CVE-2026-17182",
-      "title": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to bypass authentication and obtain or alter sen…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to bypass authentication and obtain or alter sensitive information due to improper validation of request URI path segments.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00767,
-      "epss_pct": 0.52492,
-      "cwe": "CWE-287",
-      "published": "2026-08-14T20:16:50.893",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 39
-    },
-    {
       "cve_id": "CVE-2026-17184",
       "title": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary code due to external contro…",
       "vendor": null,
@@ -2214,7 +2179,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-17186",
@@ -2249,7 +2214,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-15303",
@@ -2284,20 +2249,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
-      "cve_id": "CVE-2026-15341",
-      "title": "The User Session Synchronizer plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover…",
+      "cve_id": "CVE-2026-15826",
+      "title": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions u…",
       "vendor": null,
       "product": null,
-      "description": "The User Session Synchronizer plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.4.0. The `synchronize_session()` function, hooked on `init` and therefore executed on every request, performs no nonce, capability, or shared-secret validation against the attacker-supplied `ussync-key`, `ussync-token`, and `ussync-ref` parameters; when `ussync-key` references an unregistered slot, `get_option()` returns `false` for both the secret key and the domain list, causing the AES-256-CBC encryption key to degrade to the fully predictable `md5('')` and the referer allowlist to collapse to an empty-string match, while the AES IV is unconditionally hard-coded as `md5('another-secret')`. This makes it possible for unauthenticated attackers to supply a crafted request encrypting any known or guessable user email address in the `ussync-ref` parameter, causing the handler to call `wp_set_auth_cookie()` for the matched user and granting full authentication as that user — including administrators — with no prior knowledge of site secrets.",
+      "description": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions up to, and including, 3.16.4. This is due to the wppb_log_in_user() function calling absint() on the return value of wp_insert_user() before performing an is_wp_error() check — when a registration is submitted with a 61–70 character username, WordPress core rejects it with a WP_Error object, but absint() coerces that object to the integer 1 before the error check can short-circuit execution, causing the plugin to bind and return a transient-backed autologin nonce tied to user ID 1. This makes it possible for unauthenticated attackers to log in as the site's Administrator account (user ID 1), resulting in full administrative takeover of the site.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00333,
-      "epss_pct": 0.26271,
-      "cwe": "CWE-287",
-      "published": "2026-08-15T03:16:47.943",
+      "epss": 0.00805,
+      "epss_pct": 0.53734,
+      "cwe": "CWE-704",
+      "published": "2026-08-15T07:16:19.280",
       "kev": {
         "in_kev": false
       },
@@ -2319,42 +2284,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-15826",
-      "title": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions u…",
-      "vendor": null,
-      "product": null,
-      "description": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions up to, and including, 3.16.4. This is due to the wppb_log_in_user() function calling absint() on the return value of wp_insert_user() before performing an is_wp_error() check — when a registration is submitted with a 61–70 character username, WordPress core rejects it with a WP_Error object, but absint() coerces that object to the integer 1 before the error check can short-circuit execution, causing the plugin to bind and return a transient-backed autologin nonce tied to user ID 1. This makes it possible for unauthenticated attackers to log in as the site's Administrator account (user ID 1), resulting in full administrative takeover of the site.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00805,
-      "epss_pct": 0.53734,
-      "cwe": "CWE-704",
-      "published": "2026-08-15T07:16:19.280",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-15",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-16142",
@@ -2389,7 +2319,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-19598",
@@ -2424,7 +2354,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-73046",
@@ -2459,7 +2389,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-19924",
@@ -2494,7 +2424,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-16098",
@@ -2529,7 +2459,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-18432",
@@ -2564,7 +2494,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2024-13784",
@@ -2599,7 +2529,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-73056",
@@ -2634,7 +2564,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-73061",
@@ -2669,7 +2599,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-33267",
@@ -2712,7 +2642,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2760,7 +2690,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2803,7 +2733,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2838,7 +2768,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-73032",
@@ -2873,7 +2803,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2908,7 +2838,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2940,6 +2870,76 @@
       "timeline": [
         {
           "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-73268",
+      "title": "A flaw was found in the cluster-curator-controller component of multicluster engine (MCE).",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in the cluster-curator-controller component of multicluster engine (MCE). A tenant with create or update permissions on ClusterCurator resources can inject an arbitrary Job specification. This is possible because the CreateJob() function does not validate user-controlled input when unmarshaling the spec.install.overrideJob raw extension. Successful exploitation allows the injected Job to run with the controller's elevated privileges, leading to arbitrary code execution and privilege escalation, potentially accessing cluster-wide secrets.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.0037,
+      "epss_pct": 0.30204,
+      "cwe": "CWE-94",
+      "published": "2026-08-12T20:17:53.650",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 5,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-73533",
+      "title": "Ninja Tables Pro 5.2.11 contains an embedded malicious code vulnerability introduced via a tampered plugin build serv…",
+      "vendor": null,
+      "product": null,
+      "description": "Ninja Tables Pro 5.2.11 contains an embedded malicious code vulnerability introduced via a tampered plugin build served through a decommissioned update server. The tampered build introduced a rogue PHP file (app/Library/updater/NinjaTableDataSync.php) that established a backdoor REST API endpoint, dropped persistent PHP files in mu-plugins and uploads directories, installed a passwordless administrator account, and registered scheduled tasks that survived plugin removal.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00448,
+      "epss_pct": 0.37265,
+      "cwe": "CWE-506",
+      "published": "2026-08-13T16:19:05.620",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
           "label": "Published to NVD"
         }
       ],
