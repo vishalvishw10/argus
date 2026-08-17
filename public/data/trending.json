@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T15:42:58.096Z",
+  "generated_at": "2026-08-17T16:48:31.561Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "914 recent"
+      "detail": "825 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "928 scored"
+      "detail": "851 scored"
     },
     {
       "name": "BleepingComputer",
@@ -211,7 +211,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1746,
+        "stars": 1753,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -221,7 +221,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 592
+            "stars": 599
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -522,7 +522,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1675,
+        "stars": 1682,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -532,7 +532,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 592
+            "stars": 599
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -1974,7 +1974,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 29,
-      "rising": 45,
+      "rising": 44,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2155,7 +2155,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 39,
+      "rising": 38,
       "repos": {
         "count": 11,
         "stars": 361,
@@ -2216,7 +2216,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -2645,41 +2645,6 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2026-19961",
-      "title": "A vulnerability was detected in Edimax EW-7478APC 1.04.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was detected in Edimax EW-7478APC 1.04. Affected is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey. Performing a manipulation of the argument selSSID results in buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00471,
-      "epss_pct": 0.38672,
-      "cwe": "CWE-119",
-      "published": "2026-08-16T23:16:25.050",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
       "cve_id": "CVE-2026-19977",
       "title": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0.",
       "vendor": null,
@@ -2712,7 +2677,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-74872",
@@ -2747,217 +2712,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-74875",
-      "title": "openssl_encrypt versions before 1.4.0 silently skip JSON schema validation when the jsonschema library is not install…",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt versions before 1.4.0 silently skip JSON schema validation when the jsonschema library is not installed, allowing malformed metadata to be accepted. Attackers can remove the jsonschema package or supply unknown metadata format versions to bypass all schema checks and process malicious data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-345",
-      "published": "2026-08-17T11:16:41.943",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-74876",
-      "title": "openssl_encrypt versions before 1.4.0 contain a vulnerability in PublicKeyBundle.from_dict() that creates key bundles…",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt versions before 1.4.0 contain a vulnerability in PublicKeyBundle.from_dict() that creates key bundles from untrusted data without verifying signatures. Attackers can call from_dict() followed by to_identity() without signature verification to encrypt data using attacker-controlled public keys, leaking secrets.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-347",
-      "published": "2026-08-17T11:16:42.073",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-74886",
-      "title": "openssl_encrypt versions before 1.4.0 contain a plugin sandbox bypass vulnerability where the PluginImportGuard block…",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt versions before 1.4.0 contain a plugin sandbox bypass vulnerability where the PluginImportGuard blocks a different set of modules than the AST analyzer's DANGEROUS_MODULES set. Attackers can bypass AST analysis through string obfuscation or encoding to import unblocked dangerous modules like sys, shutil, multiprocessing, importlib, and pickle for arbitrary code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-184",
-      "published": "2026-08-17T11:16:43.390",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-74889",
-      "title": "openssl_encrypt versions before 1.4.0 use HKDF with no salt and static info parameter in key normalization functions,…",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt versions before 1.4.0 use HKDF with no salt and static info parameter in key normalization functions, reducing entropy extraction and determinism. Attackers can exploit predictable key derivation with identical inputs to weaken cryptographic security against multi-target attacks.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-326",
-      "published": "2026-08-17T11:16:43.803",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-74891",
-      "title": "openssl_encrypt versions before 1.4.0 contain hardcoded database credentials in standalone server configuration files.",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt versions before 1.4.0 contain hardcoded database credentials in standalone server configuration files. Attackers on the same network can access PostgreSQL databases using well-known default credentials to retrieve sensitive data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-798",
-      "published": "2026-08-17T11:16:44.120",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-74894",
-      "title": "openssl_encrypt before 1.4.0 contains an authentication bypass vulnerability in the verify_api_token function that ac…",
-      "vendor": null,
-      "product": null,
-      "description": "openssl_encrypt before 1.4.0 contains an authentication bypass vulnerability in the verify_api_token function that accepts any non-empty Bearer token string without validation. Attackers can upload arbitrary public keys, enumerate all keys, and revoke keys belonging to any user by providing any Bearer token in the Authorization header.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-287",
-      "published": "2026-08-17T11:16:44.523",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-74899",
@@ -2989,6 +2744,264 @@
       "timeline": [
         {
           "date": "2026-08-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-17543",
+      "title": "Improper escaping of backslashes in attacker-provided parameters would allow for trivial SQL injection in PHP version…",
+      "vendor": null,
+      "product": null,
+      "description": "Improper escaping of backslashes in attacker-provided parameters would allow for trivial SQL injection in PHP versions from 8.2.* before 8.2.33, from 8.3.* before 8.3.33, from 8.4.* before 8.4.24, and from 8.5.* before 8.5.9.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00468,
+      "epss_pct": 0.38524,
+      "cwe": "CWE-89",
+      "published": "2026-07-30T12:17:27.120",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Hunt-Benito/e-is-for-exploit-cve-2026-17543-php-pgsql-sql-injection-backslash-breakout",
+            "html_url": "https://github.com/Hunt-Benito/e-is-for-exploit-cve-2026-17543-php-pgsql-sql-injection-backslash-breakout",
+            "stars": 1
+          },
+          {
+            "full_name": "pratham220/CVE-2026-17543-PHP-Exposure-Validator",
+            "html_url": "https://github.com/pratham220/CVE-2026-17543-PHP-Exposure-Validator",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-65768",
+      "title": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Teams for Android allows …",
+      "vendor": null,
+      "product": null,
+      "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Teams for Android allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00612,
+      "epss_pct": 0.46393,
+      "cwe": "CWE-22",
+      "published": "2026-08-11T17:18:56.117",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-18847",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote unauthenticated attacker to harvest credentials due to spoofing of …",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote unauthenticated attacker to harvest credentials due to spoofing of Navigator for i.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00176,
+      "epss_pct": 0.07387,
+      "cwe": "CWE-346",
+      "published": "2026-08-12T17:17:25.920",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-16860",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to execute arbitrary code due to an uncontro…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to execute arbitrary code due to an uncontrolled search path element.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00512,
+      "epss_pct": 0.41232,
+      "cwe": "CWE-427",
+      "published": "2026-08-12T18:17:24.397",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-17276",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to escalate privileges due to improper autho…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote authenticated attacker to escalate privileges due to improper authorization in the handling of high-authority threads.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00258,
+      "epss_pct": 0.17644,
+      "cwe": "CWE-269",
+      "published": "2026-08-12T18:17:26.680",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-73268",
+      "title": "A flaw was found in the cluster-curator-controller component of multicluster engine (MCE).",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in the cluster-curator-controller component of multicluster engine (MCE). A tenant with create or update permissions on ClusterCurator resources can inject an arbitrary Job specification. This is possible because the CreateJob() function does not validate user-controlled input when unmarshaling the spec.install.overrideJob raw extension. Successful exploitation allows the injected Job to run with the controller's elevated privileges, leading to arbitrary code execution and privilege escalation, potentially accessing cluster-wide secrets.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.0037,
+      "epss_pct": 0.30121,
+      "cwe": "CWE-94",
+      "published": "2026-08-12T20:17:53.650",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-17197",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of client-asserted identity.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00344,
+      "epss_pct": 0.27353,
+      "cwe": "CWE-287",
+      "published": "2026-08-13T19:17:18.640",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 4,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
           "label": "Published to NVD"
         }
       ],
