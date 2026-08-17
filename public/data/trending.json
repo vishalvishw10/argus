@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T19:44:57.798Z",
+  "generated_at": "2026-08-17T20:46:11.676Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "799 recent"
+      "detail": "783 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "824 scored"
+      "detail": "803 scored"
     },
     {
       "name": "BleepingComputer",
@@ -211,7 +211,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1764,
+        "stars": 1771,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -221,7 +221,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 610
+            "stars": 617
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -522,7 +522,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1693,
+        "stars": 1700,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -532,7 +532,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 610
+            "stars": 617
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -1974,7 +1974,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 29,
-      "rising": 41,
+      "rising": 40,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2037,7 +2037,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 26,
-      "rising": 43,
+      "rising": 42,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2092,7 +2092,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 25,
+      "hype": 24,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -2155,7 +2155,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 37,
+      "rising": 36,
       "repos": {
         "count": 11,
         "stars": 362,
@@ -2404,7 +2404,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2420,76 +2420,6 @@
         }
       ],
       "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-18432",
-      "title": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, an…",
-      "vendor": null,
-      "product": null,
-      "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.29.9. The vulnerability exists because `ActionUser::conditions_logic()` gates the `current_user_can('edit_user', $user_id)` authorization check behind an `is_numeric()` test, causing the check to be skipped entirely when `$user_id` is a non-numeric string — a condition that can be induced by passing a crafted value such as `1one` through the unvalidated `item_id` parameter of the unauthenticated `wp_ajax_nopriv_frontend_admin/forms/change_form` AJAX endpoint. This makes it possible for attackers to escalate privileges to administrator by obtaining a server-signed `_acf_objects` payload carrying the non-numeric user ID, which WordPress subsequently coerces to integer 1 (the default administrator), allowing the attacker to overwrite that account's password or email address. Exploitation by unauthenticated users requires a public-facing frontend user form to be configured; in all other cases a subscriber-level account is sufficient.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00448,
-      "epss_pct": 0.37211,
-      "cwe": "CWE-269",
-      "published": "2026-08-16T05:16:48.307",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2024-13784",
-      "title": "The Contact Form, Survey, Quiz & Popup Form Builder – ARForms plugin for WordPress is vulnerable to PHP Object Inject…",
-      "vendor": null,
-      "product": null,
-      "description": "The Contact Form, Survey, Quiz & Popup Form Builder – ARForms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.8.5 via deserialization of untrusted input from form submissions. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00519,
-      "epss_pct": 0.41714,
-      "cwe": "CWE-502",
-      "published": "2026-08-16T09:16:19.900",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
     },
     {
       "cve_id": "CVE-2026-19959",
@@ -2509,7 +2439,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2524,7 +2454,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-19977",
@@ -2559,7 +2489,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-74872",
@@ -2579,7 +2509,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2594,7 +2524,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-74899",
@@ -2614,7 +2544,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2629,7 +2559,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-66792",
@@ -2664,7 +2594,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2712,7 +2642,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-65768",
@@ -2747,7 +2677,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-18847",
@@ -2782,7 +2712,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2817,7 +2747,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2852,7 +2782,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-17111",
@@ -2887,7 +2817,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2922,7 +2852,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-17616",
@@ -2957,7 +2887,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-10534",
@@ -2989,6 +2919,76 @@
       "timeline": [
         {
           "date": "2026-08-12",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-17197",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of client-asserted identity.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00344,
+      "epss_pct": 0.27353,
+      "cwe": "CWE-287",
+      "published": "2026-08-13T19:17:18.640",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 4,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-16867",
+      "title": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to access server resources with the privileges of an authe…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to access server resources with the privileges of an authenticated user due to improper authentication during NTLM session negotiation.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00395,
+      "epss_pct": 0.32693,
+      "cwe": "CWE-287",
+      "published": "2026-08-13T20:17:15.723",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 4,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-13",
           "label": "Published to NVD"
         }
       ],
