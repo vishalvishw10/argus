@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T03:14:17.615Z",
+  "generated_at": "2026-08-17T04:05:15.578Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "854 recent"
+      "detail": "858 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4162 mapped"
+      "detail": "4164 mapped"
     },
     {
       "name": "Reddit",
@@ -211,7 +211,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1685,
+        "stars": 1702,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -221,7 +221,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 531
+            "stars": 548
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -588,7 +588,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1614,
+        "stars": 1631,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -598,7 +598,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 531
+            "stars": 548
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2147,41 +2147,6 @@
       "rank": 38
     },
     {
-      "cve_id": "CVE-2026-15826",
-      "title": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions u…",
-      "vendor": null,
-      "product": null,
-      "description": "The User Profile Builder plugin for WordPress is vulnerable to Authentication Bypass via Type Confusion in versions up to, and including, 3.16.4. This is due to the wppb_log_in_user() function calling absint() on the return value of wp_insert_user() before performing an is_wp_error() check — when a registration is submitted with a 61–70 character username, WordPress core rejects it with a WP_Error object, but absint() coerces that object to the integer 1 before the error check can short-circuit execution, causing the plugin to bind and return a transient-backed autologin nonce tied to user ID 1. This makes it possible for unauthenticated attackers to log in as the site's Administrator account (user ID 1), resulting in full administrative takeover of the site.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00805,
-      "epss_pct": 0.53734,
-      "cwe": "CWE-704",
-      "published": "2026-08-15T07:16:19.280",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-15",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 39
-    },
-    {
       "cve_id": "CVE-2026-19598",
       "title": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorizati…",
       "vendor": null,
@@ -2199,7 +2164,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2214,7 +2179,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-73046",
@@ -2249,7 +2214,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-19924",
@@ -2284,7 +2249,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-16098",
@@ -2319,7 +2284,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-18432",
@@ -2354,7 +2319,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2024-13784",
@@ -2389,7 +2354,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-73056",
@@ -2424,7 +2389,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-73061",
@@ -2459,7 +2424,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-19959",
@@ -2494,7 +2459,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-19961",
@@ -2526,6 +2491,41 @@
       "timeline": [
         {
           "date": "2026-08-16",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-19977",
+      "title": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0. The affected element is the function httpcon_check_session_url of the component Session Validation. Performing a manipulation results in improper authentication. Remote exploitation of the attack is possible. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-287",
+      "published": "2026-08-17T03:16:50.517",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-17",
           "label": "Published to NVD"
         }
       ],
@@ -2753,7 +2753,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2788,7 +2788,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
