@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-17T08:03:51.052Z",
+  "generated_at": "2026-08-17T09:02:47.438Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
     "kev_count": 34,
     "kev_total": 1665,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "872 recent"
+      "detail": "875 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4164 mapped"
+      "detail": "4165 mapped"
     },
     {
       "name": "Reddit",
@@ -2038,6 +2038,63 @@
       "rank": 36
     },
     {
+      "cve_id": "CVE-2026-58231",
+      "title": "CVE-2026-58231",
+      "vendor": null,
+      "product": null,
+      "description": "SAP Commerce Cloud allows an unauthenticated\nattacker to abuse a default authentication client and submit specially crafted\ninput to certain functions lacking sufficient validation. Successful\nexploitation could enable arbitrary code execution and compromise internal\ncomponents, resulting in high impact on confidentiality, integrity, and\navailability of the application.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00726,
+      "epss_pct": 0.51067,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 40,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-58231",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-58231",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Critical SAP Commerce Cloud Vulnerability Exploited 3 Days After Disclosure",
+          "url": "https://www.securityweek.com/critical-sap-commerce-cloud-vulnerability-exploited-3-days-after-disclosure/",
+          "date": "2026-08-17T08:13:07.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
+          "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
+          "date": "2026-08-12T07:31:40.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-12",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 37
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2083,7 +2140,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-64638",
@@ -2142,41 +2199,6 @@
         {
           "date": "2026-08-07",
           "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-19598",
-      "title": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorizati…",
-      "vendor": null,
-      "product": null,
-      "description": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorization Bypass in all versions up to, and including, 3.3.9. The vulnerability exists because the pods_admin AJAX router funnels every access check — including the method allowlist, nonce verification, login enforcement, and capability gate — through pods_error(), which under the JSON meta-box-loader compatibility path only writes failures to the PHP error log and returns false instead of terminating the request, rendering all guards ineffective.  This makes it possible for unauthenticated attackers to escalate their privileges to Administrator or overwrite the password of any user account, including the site owner's, enabling complete site takeover, or perform another administrator action.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00427,
-      "epss_pct": 0.35618,
-      "cwe": "CWE-863",
-      "published": "2026-08-15T18:16:23.860",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-15",
-          "label": "Published to NVD"
         }
       ],
       "rank": 39
@@ -2269,7 +2291,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2304,7 +2326,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2444,7 +2466,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2479,7 +2501,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
