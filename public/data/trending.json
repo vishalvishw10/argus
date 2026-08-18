@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T16:50:42.363Z",
+  "generated_at": "2026-08-18T17:46:23.161Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
-    "kev_count": 35,
-    "kev_total": 1666,
+    "kev_count": 39,
+    "kev_total": 1670,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1666 entries"
+      "detail": "1670 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "678 recent"
+      "detail": "683 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "692 scored"
+      "detail": "693 scored"
     },
     {
       "name": "BleepingComputer",
@@ -63,6 +63,77 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-55040",
+      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.03971,
+      "epss_pct": 0.89591,
+      "cwe": "CWE-1390",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 65,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 55,
+        "top": [
+          {
+            "full_name": "sfewer-r7/CVE-2026-55040",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-55040",
+            "stars": 53
+          },
+          {
+            "full_name": "l0ggg/CVE-2026-55040",
+            "html_url": "https://github.com/l0ggg/CVE-2026-55040",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
+          "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
+          "date": "2026-08-13T06:09:48.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Researchers Disclose AI-Assisted SharePoint Exploit Chain Reaching Unauthenticated RCE",
+          "url": "https://thehackernews.com/2026/08/researchers-disclose-ai-assisted.html",
+          "date": "2026-08-11T16:47:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-13",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-16232",
       "title": "Check Point SmartConsole Improper Authentication Vulnerability",
@@ -125,7 +196,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -185,7 +256,78 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0114,
+      "epss_pct": 0.63931,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 55,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BiuTrap/CVE-2026-59310",
+            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-59310",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
+          "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+          "date": "2026-08-17T07:36:19.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
+          "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
+          "date": "2026-08-12T09:01:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-17",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-63030",
@@ -211,7 +353,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1875,
+        "stars": 1876,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -221,7 +363,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 721
+            "stars": 722
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -244,7 +386,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-48908",
@@ -303,7 +445,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -362,7 +504,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-39808",
@@ -421,7 +563,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -496,7 +638,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-60137",
@@ -522,7 +664,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1804,
+        "stars": 1805,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -532,7 +674,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 721
+            "stars": 722
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -555,7 +697,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-48282",
@@ -614,7 +756,61 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-33824",
+      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.5585,
+      "epss_pct": 0.98957,
+      "cwe": "CWE-415",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "EpSiLoNPoInTOrI/IKEV2-POC",
+            "html_url": "https://github.com/EpSiLoNPoInTOrI/IKEV2-POC",
+            "stars": 4
+          },
+          {
+            "full_name": "kaleth4/CVE-2026-33824",
+            "html_url": "https://github.com/kaleth4/CVE-2026-33824",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -673,7 +869,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -728,7 +924,67 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-65400",
+      "title": "Apple macOS Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00496,
+      "epss_pct": 0.40366,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 34,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-65400",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
+          "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
+          "date": "2026-08-15T07:24:04.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-15",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-56290",
@@ -787,7 +1043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -841,7 +1097,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -900,7 +1156,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -954,7 +1210,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -1013,7 +1269,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -1072,7 +1328,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1138,7 +1394,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -1196,7 +1452,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1249,7 +1505,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -1303,7 +1559,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 21
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -1361,7 +1617,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -1419,7 +1675,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1467,7 +1723,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1525,7 +1781,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 29
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1566,7 +1822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 30
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1607,7 +1863,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-55255",
@@ -1655,7 +1911,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1708,7 +1964,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 33
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1749,7 +2005,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1790,7 +2046,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 35
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1831,7 +2087,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -1872,7 +2128,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 37
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -1913,7 +2169,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -1954,7 +2210,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-15748",
@@ -1974,7 +2230,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 64,
+      "rising": 63,
       "repos": {
         "count": 2,
         "stars": 2,
@@ -2016,69 +2272,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-55040",
-      "title": "CVE-2026-55040",
-      "vendor": null,
-      "product": null,
-      "description": "Weak authentication in Microsoft Office SharePoint allows an unauthorized attacker to bypass a security feature over a network.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.03971,
-      "epss_pct": 0.89591,
-      "cwe": "CWE-1390",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 24,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 55,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-55040",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-55040",
-            "stars": 53
-          },
-          {
-            "full_name": "l0ggg/CVE-2026-55040",
-            "html_url": "https://github.com/l0ggg/CVE-2026-55040",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-          "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
-          "date": "2026-08-13T06:09:48.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Researchers Disclose AI-Assisted SharePoint Exploit Chain Reaching Unauthenticated RCE",
-          "url": "https://thehackernews.com/2026/08/researchers-disclose-ai-assisted.html",
-          "date": "2026-08-11T16:47:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-13",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 37
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-54121",
@@ -2097,7 +2291,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
+      "hype": 22,
       "rising": 25,
       "repos": {
         "count": 11,
@@ -2139,7 +2333,7 @@
           "label": "Covered by BleepingComputer"
         }
       ],
-      "rank": 38
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2187,69 +2381,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-59310",
-      "title": "CVE-2026-59310",
-      "vendor": null,
-      "product": null,
-      "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0114,
-      "epss_pct": 0.63931,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 22,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiuTrap/CVE-2026-59310",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-59310",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
-          "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
-          "date": "2026-08-17T07:36:19.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
-          "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
-          "date": "2026-08-12T09:01:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2292,7 +2424,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-75627",
@@ -2327,7 +2459,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-75784",
@@ -2362,7 +2494,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-12564",
@@ -2397,7 +2529,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2445,7 +2577,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-18847",
@@ -2480,7 +2612,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2515,7 +2647,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2550,7 +2682,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-17111",
@@ -2585,7 +2717,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2620,7 +2752,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-10543",
@@ -2655,7 +2787,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-17616",
@@ -2690,7 +2822,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-10534",
@@ -2725,7 +2857,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-17197",
@@ -2760,7 +2892,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-16867",
@@ -2780,7 +2912,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2795,7 +2927,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-16961",
@@ -2815,7 +2947,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2830,7 +2962,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-17206",
@@ -2850,7 +2982,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2865,7 +2997,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-17481",
@@ -2897,76 +3029,6 @@
       "timeline": [
         {
           "date": "2026-08-13",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-19924",
-      "title": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01.",
-      "vendor": null,
-      "product": null,
-      "description": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01. This vulnerability affects the function R7WebsSecurityHandler of the component httpd. The manipulation leads to improper authentication. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00901,
-      "epss_pct": 0.56748,
-      "cwe": "CWE-287",
-      "published": "2026-08-16T02:16:47.247",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 10,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-16098",
-      "title": "The ProSolution WP Client plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and incl…",
-      "vendor": null,
-      "product": null,
-      "description": "The ProSolution WP Client plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.0.10 via the proSol_handleFileUpload function. This is due to missing validation of the attacker-controlled Content-Disposition header filename, which overrides the allow-listed multipart filename before the file is saved, and a post-save extension check that fails to delete the already-written file. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible. The nonce required to reach the upload handler is publicly exposed via wp_localize_script on any front-end page rendering the job portal shortcode, allowing unauthenticated visitors to obtain a valid nonce and bypass that gating check entirely.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00641,
-      "epss_pct": 0.47763,
-      "cwe": "CWE-434",
-      "published": "2026-08-16T05:16:47.667",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 10,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-16",
           "label": "Published to NVD"
         }
       ],
