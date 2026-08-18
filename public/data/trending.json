@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T13:10:45.444Z",
+  "generated_at": "2026-08-18T13:58:38.856Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "805 recent"
+      "detail": "803 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4180 mapped"
+      "detail": "4181 mapped"
     },
     {
       "name": "Reddit",
@@ -211,7 +211,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1861,
+        "stars": 1866,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -221,7 +221,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 707
+            "stars": 712
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -522,7 +522,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1790,
+        "stars": 1795,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -532,7 +532,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 707
+            "stars": 712
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -809,7 +809,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 51,
+      "hype": 50,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -1548,7 +1548,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 28,
+      "rising": 27,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1586,7 +1586,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 40,
-      "rising": 87,
+      "rising": 86,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2206,7 +2206,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 24,
+      "rising": 23,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -2469,41 +2469,6 @@
       "rank": 46
     },
     {
-      "cve_id": "CVE-2026-75110",
-      "title": "MemOS is a memory operating system for LLMs and AI agents.",
-      "vendor": null,
-      "product": null,
-      "description": "MemOS is a memory operating system for LLMs and AI agents. In deployments where authentication is enabled (AUTH_ENABLED=true) but the undocumented, defaultless INTERNAL_SERVICE_SECRET environment variable is unset, the is_internal_request() check in src/memos/api/middleware/auth.py fails open: os.getenv(\"INTERNAL_SERVICE_SECRET\") returns None and a request omitting the X-Internal-Service header also yields None, so the comparison None == None evaluates true. The request is then treated as a trusted internal principal and granted scopes: [\"all\"]. As a result, an unauthenticated remote attacker can reach the admin API-key management endpoints to mint API keys for any user, enumerate keys, revoke keys, and generate a master key for persistent privileged access, as well as all data endpoints.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-697",
-      "published": "2026-08-17T21:16:50.043",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
       "cve_id": "CVE-2026-75627",
       "title": "Bastillion fails to properly validate request URI paths in its controller dispatcher, allowing unauthenticated attack…",
       "vendor": null,
@@ -2536,7 +2501,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-75843",
@@ -2571,7 +2536,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-75851",
@@ -2606,7 +2571,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-75852",
@@ -2641,7 +2606,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-75854",
@@ -2655,6 +2620,41 @@
       "epss_pct": null,
       "cwe": "CWE-306",
       "published": "2026-08-18T12:19:35.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-75783",
+      "title": "A security vulnerability has been detected in TRENDnet TEW-WLC100P 12.07b01.",
+      "vendor": null,
+      "product": null,
+      "description": "A security vulnerability has been detected in TRENDnet TEW-WLC100P 12.07b01. Affected by this vulnerability is an unknown functionality of the file /sbin/netifd of the component DHCP blobmsg Handler. The manipulation leads to stack-based buffer overflow. The attack must be carried out from within the local network. The exploit has been disclosed publicly and may be used.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-18T13:17:43.287",
       "kev": {
         "in_kev": false
       },
