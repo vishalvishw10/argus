@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T17:46:23.161Z",
+  "generated_at": "2026-08-18T18:58:56.502Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "683 recent"
+      "detail": "695 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "693 scored"
+      "detail": "702 scored"
     },
     {
       "name": "BleepingComputer",
@@ -279,7 +279,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 55,
+      "rising": 54,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -353,7 +353,7 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1876,
+        "stars": 1879,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -363,7 +363,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 722
+            "stars": 725
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -664,7 +664,7 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1805,
+        "stars": 1808,
         "top": [
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -674,7 +674,7 @@
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 722
+            "stars": 725
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -2229,8 +2229,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 25,
-      "rising": 63,
+      "hype": 24,
+      "rising": 62,
       "repos": {
         "count": 2,
         "stars": 2,
@@ -2292,7 +2292,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 11,
         "stars": 362,
@@ -2427,17 +2427,17 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-75627",
-      "title": "Bastillion fails to properly validate request URI paths in its controller dispatcher, allowing unauthenticated attack…",
+      "cve_id": "CVE-2026-75784",
+      "title": "A vulnerability was detected in TRENDnet TEW-WLC100 1v2.07b01.",
       "vendor": null,
       "product": null,
-      "description": "Bastillion fails to properly validate request URI paths in its controller dispatcher, allowing unauthenticated attackers to bypass authentication filters by prefixing requests with arbitrary path segments. Attackers can access administrative controllers to read user listings, create manager accounts, and register managed systems, gaining control over SSH access to the managed fleet.",
-      "cvss": 9.8,
+      "description": "A vulnerability was detected in TRENDnet TEW-WLC100 1v2.07b01. Affected by this issue is the function FUN_0040da4c of the file /usr/nginx/sbin/nginx of the component HTTP Header Handler. The manipulation of the argument Server results in stack-based buffer overflow. The attack may be launched remotely. The exploit is now public and may be used.",
+      "cvss": 10,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-288",
-      "published": "2026-08-18T11:16:52.060",
+      "cwe": "CWE-119",
+      "published": "2026-08-18T15:17:13.857",
       "kev": {
         "in_kev": false
       },
@@ -2462,17 +2462,17 @@
       "rank": 44
     },
     {
-      "cve_id": "CVE-2026-75784",
-      "title": "A vulnerability was detected in TRENDnet TEW-WLC100 1v2.07b01.",
+      "cve_id": "CVE-2026-66780",
+      "title": "A flaw was found in the submariner-operator component.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was detected in TRENDnet TEW-WLC100 1v2.07b01. Affected by this issue is the function FUN_0040da4c of the file /usr/nginx/sbin/nginx of the component HTTP Header Handler. The manipulation of the argument Server results in stack-based buffer overflow. The attack may be launched remotely. The exploit is now public and may be used.",
-      "cvss": 10,
+      "description": "A flaw was found in the submariner-operator component. The `submariner-k8s-broker-cluster` Role, which is assigned to joined clusters, possesses excessive permissions. This allows a compromised cluster to alter network configurations, specifically by overwriting other clusters' endpoint information. Consequently, an attacker can redirect inter-cluster tunnel traffic, enabling a Man-in-the-Middle (MITM) attack across the entire cluster mesh.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-119",
-      "published": "2026-08-18T15:17:13.857",
+      "cwe": "CWE-284",
+      "published": "2026-08-18T18:19:23.940",
       "kev": {
         "in_kev": false
       },
@@ -2495,41 +2495,6 @@
         }
       ],
       "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-12564",
-      "title": "A flaw was found in the AAP Controller's HashiCorp Vault credential plugin.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in the AAP Controller's HashiCorp Vault credential plugin. The kubernetes_auth() function in awx_plugins/credentials/hashivault.py reads the controller pod's Kubernetes service account token and sends it to an attacker-controlled URL when a HashiCorp Vault Secret Lookup credential with kubernetes_role authentication is tested. An authenticated attacker with credential-creation privileges can exfiltrate the service account token, gaining Kubernetes API access to the control plane namespaces with full pod CRUD and secret read permissions, including database credentials and the Django SECRET_KEY.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-918",
-      "published": "2026-08-18T16:17:01.917",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
     },
     {
       "cve_id": "CVE-2026-17543",
@@ -2577,7 +2542,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-18847",
@@ -2612,7 +2577,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-16860",
@@ -2647,7 +2612,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-17276",
@@ -2682,7 +2647,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-17111",
@@ -2717,7 +2682,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-73268",
@@ -2752,7 +2717,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-10543",
@@ -2787,7 +2752,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-17616",
@@ -2822,7 +2787,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-10534",
@@ -2857,7 +2822,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-17197",
@@ -2892,7 +2857,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-16867",
@@ -2927,7 +2892,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-16961",
@@ -2962,7 +2927,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-17206",
@@ -2997,7 +2962,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-17481",
@@ -3017,7 +2982,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3029,6 +2994,41 @@
       "timeline": [
         {
           "date": "2026-08-13",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-19924",
+      "title": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01.",
+      "vendor": null,
+      "product": null,
+      "description": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01. This vulnerability affects the function R7WebsSecurityHandler of the component httpd. The manipulation leads to improper authentication. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00901,
+      "epss_pct": 0.56748,
+      "cwe": "CWE-287",
+      "published": "2026-08-16T02:16:47.247",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-16",
           "label": "Published to NVD"
         }
       ],
