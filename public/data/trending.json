@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T04:01:36.595Z",
+  "generated_at": "2026-08-19T04:54:20.511Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -7,7 +7,7 @@
     "reddit_upvotes": 0,
     "kev_count": 39,
     "kev_total": 1670,
-    "sources_live": 8,
+    "sources_live": 9,
     "window_days": 30
   },
   "sources": [
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1552 recent"
+      "detail": "1554 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -48,13 +48,13 @@
     },
     {
       "name": "The Record",
-      "status": "error",
+      "status": "ok",
       "detail": "0 mentions"
     },
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4188 mapped"
+      "detail": "4189 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 2,
         "stars": 55,
@@ -279,7 +279,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 46,
+      "rising": 45,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -353,12 +353,12 @@
       "rising": 0,
       "repos": {
         "count": 79,
-        "stars": 1923,
+        "stars": 1925,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 766
+            "stars": 768
           },
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -664,12 +664,12 @@
       "rising": 0,
       "repos": {
         "count": 49,
-        "stars": 1851,
+        "stars": 1853,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 766
+            "stars": 768
           },
           {
             "full_name": "Icex0/wp2shell-poc",
@@ -893,7 +893,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -947,7 +947,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 31,
+      "rising": 30,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1397,64 +1397,6 @@
       "rank": 22
     },
     {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.104,
-      "epss_pct": 0.95335,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "VuxNx/CVE-2026-72898",
-            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
-            "stars": 2
-          },
-          {
-            "full_name": "ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
-            "html_url": "https://github.com/ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
-            "stars": 1
-          },
-          {
-            "full_name": "4minx/CVE-2026-72898",
-            "html_url": "https://github.com/4minx/CVE-2026-72898",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 23
-    },
-    {
       "cve_id": "CVE-2026-18556",
       "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "N-able",
@@ -1505,6 +1447,64 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.104,
+      "epss_pct": 0.95335,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "VuxNx/CVE-2026-72898",
+            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
+            "stars": 2
+          },
+          {
+            "full_name": "ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
+            "html_url": "https://github.com/ubitquity/Metabase-Setup-Endpoint-SQLi-Fix",
+            "stars": 1
+          },
+          {
+            "full_name": "4minx/CVE-2026-72898",
+            "html_url": "https://github.com/4minx/CVE-2026-72898",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 24
     },
     {
@@ -1527,7 +1527,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 45,
+      "hype": 44,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1804,7 +1804,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2230,15 +2230,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 59,
+      "rising": 58,
       "repos": {
         "count": 2,
-        "stars": 3,
+        "stars": 4,
         "top": [
           {
             "full_name": "davkharrr/CVE-2026-19478-PoC",
             "html_url": "https://github.com/davkharrr/CVE-2026-19478-PoC",
-            "stars": 3
+            "stars": 4
           },
           {
             "full_name": "HORKimhab/CVE-2026-19650-CVE-2026-19478",
@@ -2292,7 +2292,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 24,
-      "rising": 52,
+      "rising": 51,
       "repos": {
         "count": 2,
         "stars": 2,
@@ -2354,7 +2354,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 11,
         "stars": 363,
