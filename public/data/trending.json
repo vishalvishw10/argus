@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-21T15:50:01.596Z",
+  "generated_at": "2026-08-21T16:53:42.347Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
-    "kev_count": 38,
-    "kev_total": 1673,
+    "kev_count": 40,
+    "kev_total": 1675,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1673 entries"
+      "detail": "1675 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1206 recent"
+      "detail": "1127 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1239 scored"
+      "detail": "1160 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -63,6 +63,72 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-73570",
+      "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+      "cvss": 8.9,
+      "severity": "HIGH",
+      "epss": 0.00539,
+      "epss_pct": 0.43183,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-21",
+        "due_date": "2026-08-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 65,
+      "rising": 85,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-73570",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-73570",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Hackers Target Zimbra Servers in Active Exploitation Campaign",
+          "url": "https://www.securityweek.com/hackers-target-zimbra-servers-in-active-exploitation-campaign/",
+          "date": "2026-08-20T14:50:49.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+          "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
+          "date": "2026-08-20T13:24:28.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        },
+        {
+          "date": "2026-08-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-15409",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
@@ -119,72 +185,6 @@
         {
           "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-65400",
-      "title": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00751,
-      "epss_pct": 0.52256,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 21,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-65400",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-          "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
-          "date": "2026-08-19T11:01:48.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-          "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
-          "date": "2026-08-15T07:24:04.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-19",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 2
@@ -387,7 +387,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -594,6 +594,126 @@
       "rank": 9
     },
     {
+      "cve_id": "CVE-2026-69836",
+      "title": "Microsoft Entra ID Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Entra ID ",
+      "description": "Microsoft Entra ID formerly known as Azure Active Directory contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01368,
+      "epss_pct": 0.69756,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-21",
+        "due_date": "2026-08-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 53,
+      "rising": 68,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-69836",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-69836",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+          "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+          "date": "2026-08-21T06:06:11.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-21",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-65400",
+      "title": "Apple macOS Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00751,
+      "epss_pct": 0.52256,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 20,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-65400",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
+          "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+          "date": "2026-08-19T11:01:48.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-19",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 11
+    },
+    {
       "cve_id": "CVE-2026-16232",
       "title": "Check Point SmartConsole Improper Authentication Vulnerability",
       "vendor": "Check Point",
@@ -650,7 +770,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -673,7 +793,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -715,7 +835,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -774,7 +894,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -828,7 +948,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-48939",
@@ -887,7 +1007,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -910,7 +1030,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 58,
@@ -940,7 +1060,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -994,7 +1114,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-56291",
@@ -1053,7 +1173,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1111,7 +1231,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1164,7 +1284,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -1222,7 +1342,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -1280,7 +1400,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -1303,7 +1423,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -1338,7 +1458,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -1396,7 +1516,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1444,7 +1564,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1502,7 +1622,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -1525,7 +1645,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1543,7 +1663,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -1566,7 +1686,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1584,7 +1704,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1607,7 +1727,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1625,7 +1745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1678,7 +1798,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1719,7 +1839,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1772,7 +1892,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -1813,7 +1933,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1854,7 +1974,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -1874,7 +1994,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 36,
-      "rising": 38,
+      "rising": 37,
       "repos": {
         "count": 4,
         "stars": 11,
@@ -1927,7 +2047,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 34
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1968,7 +2088,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -2009,7 +2129,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2050,7 +2170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 39
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -2091,7 +2211,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -2130,118 +2250,6 @@
         {
           "date": "2026-07-14",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-69836",
-      "title": "Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01368,
-      "epss_pct": 0.69756,
-      "cwe": "CWE-502",
-      "published": "2026-08-20T22:18:00.740",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 29,
-      "rising": 52,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-69836",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-69836",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-          "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
-          "date": "2026-08-21T06:06:11.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-21",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 40
-    },
-    {
-      "cve_id": "CVE-2026-73570",
-      "title": "CVE-2026-73570",
-      "vendor": null,
-      "product": null,
-      "description": "A remote code execution vulnerability exists in Zimbra Collaboration (ZCS) before 10.1.20 when the optional zimbra-snmp package is installed and SNMP notifications are enabled. Due to improper sanitization of untrusted input during SNMP notification processing, an unauthenticated attacker can send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
-      "cvss": 8.9,
-      "severity": "HIGH",
-      "epss": 0.00539,
-      "epss_pct": 0.43183,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 23,
-      "rising": 51,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-73570",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-73570",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Hackers Target Zimbra Servers in Active Exploitation Campaign",
-          "url": "https://www.securityweek.com/hackers-target-zimbra-servers-in-active-exploitation-campaign/",
-          "date": "2026-08-20T14:50:49.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
-          "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
-          "date": "2026-08-20T13:24:28.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 41
@@ -2312,7 +2320,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2338,41 +2346,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-70921",
-      "title": "Vulnerability in the Oracle Hyperion Financial Management product of Oracle Hyperion (component: Security).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Hyperion Financial Management product of Oracle Hyperion (component: Security).   The supported version that is affected is 11.2.25.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via TLS to compromise Oracle Hyperion Financial Management.  While the vulnerability is in Oracle Hyperion Financial Management, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Hyperion Financial Management accessible data as well as  unauthorized access to critical data or complete access to all Oracle Hyperion Financial Management accessible data. CVSS 3.1 Base Score 10.0 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N).",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00427,
-      "epss_pct": 0.3589,
-      "cwe": null,
-      "published": "2026-08-18T21:17:49.927",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 9,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-18315",
       "title": "The TrueBooker – Appointment Booking and Scheduler System plugin for WordPress is vulnerable to Authorization Bypass …",
       "vendor": null,
@@ -2390,7 +2363,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2413,7 +2386,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-70496",
@@ -2433,7 +2406,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2448,7 +2421,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-76589",
@@ -2483,7 +2456,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-76590",
@@ -2518,7 +2491,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-77022",
@@ -2553,7 +2526,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-66785",
@@ -2573,7 +2546,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2588,7 +2561,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-66788",
@@ -2608,7 +2581,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2623,7 +2596,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-67567",
@@ -2658,147 +2631,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-17040",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00802,
-      "epss_pct": 0.53922,
-      "cwe": "CWE-120",
-      "published": "2026-08-20T22:17:11.853",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-17122",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack-…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack-based buffer overflow.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00802,
-      "epss_pct": 0.53924,
-      "cwe": "CWE-787",
-      "published": "2026-08-20T22:17:12.680",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-17141",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00802,
-      "epss_pct": 0.53922,
-      "cwe": "CWE-787",
-      "published": "2026-08-20T22:17:13.350",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-17142",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary commands due to impr…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary commands due to improper authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00923,
-      "epss_pct": 0.57702,
-      "cwe": "CWE-287",
-      "published": "2026-08-20T22:17:13.520",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-17145",
@@ -2833,20 +2666,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 52
     },
     {
-      "cve_id": "CVE-2026-17157",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack …",
+      "cve_id": "CVE-2026-65816",
+      "title": "Use of incorrectly-resolved name or reference in Azure Arc allows an unauthorized attacker to elevate privileges over…",
       "vendor": null,
       "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack buffer overflow.",
-      "cvss": 9.8,
+      "description": "Use of incorrectly-resolved name or reference in Azure Arc allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00802,
-      "epss_pct": 0.53924,
-      "cwe": "CWE-787",
-      "published": "2026-08-20T22:17:14.013",
+      "epss": 0.00534,
+      "epss_pct": 0.4294,
+      "cwe": "CWE-706",
+      "published": "2026-08-20T22:17:55.597",
       "kev": {
         "in_kev": false
       },
@@ -2865,30 +2698,213 @@
       "timeline": [
         {
           "date": "2026-08-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-72843",
+      "title": "The customer update route in EverShop is declared with \"access\": \"public\" in packages/evershop/src/modules/customer/a…",
+      "vendor": null,
+      "product": null,
+      "description": "The customer update route in EverShop is declared with \"access\": \"public\" in packages/evershop/src/modules/customer/api/updateCustomer/route.json, which causes the admin authentication middleware to call next() without checking the caller, and no customer-session middleware guards the route; the only middleware in the chain parses the JSON body. The handler in updateCustomer.js then loads the customer by the uuid taken from the URL path and writes the supplied fields back to that record, hashing a password if one is provided, without verifying that the caller owns the record. An unauthenticated request carrying a known customer uuid can therefore overwrite that customer's email address and password and read back the updated record from the 200 response, taking over the account and locking out its owner. Customer uuids are exposed through order confirmation email links and administrative URLs. Version 2.2.1 changes the route to \"access\": \"private\".",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00573,
+      "epss_pct": 0.44948,
+      "cwe": "CWE-862",
+      "published": "2026-08-20T22:18:05.253",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-69502",
+      "title": "Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a…",
+      "vendor": null,
+      "product": null,
+      "description": "Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-918",
+      "published": "2026-08-21T16:18:07.090",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-41452",
+      "title": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a crafted HTTP POST request with the X-Requested-With: XMLHttpRequest header to bypass the CanInstall middleware redirect check. Attackers can supply arbitrary name, email, and password values to the admin-config-setup endpoint, which performs an unauthenticated updateOrInsert targeting the hardcoded administrator user ID, enabling full administrative access to all CRM data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00658,
+      "epss_pct": 0.48859,
+      "cwe": "CWE-306",
+      "published": "2026-08-03T17:16:37.047",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Boreas37/CVE-2026-41452-PoC",
+            "html_url": "https://github.com/Boreas37/CVE-2026-41452-PoC",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-74936",
+      "title": "Use-after-free in the JavaScript: WebAssembly component.",
+      "vendor": null,
+      "product": null,
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00403,
+      "epss_pct": 0.33781,
+      "cwe": "CWE-416",
+      "published": "2026-08-18T13:17:29.850",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 7,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-74940",
+      "title": "Use-after-free in the Graphics: Text component.",
+      "vendor": null,
+      "product": null,
+      "description": "Use-after-free in the Graphics: Text component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00412,
+      "epss_pct": 0.34656,
+      "cwe": "CWE-416",
+      "published": "2026-08-18T13:17:30.370",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 7,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
           "label": "Published to NVD"
         }
       ],
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-17160",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to an integ…",
+      "cve_id": "CVE-2026-74944",
+      "title": "Use-after-free in the DOM: Core & HTML component.",
       "vendor": null,
       "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to an integer overflow during size computation.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00795,
-      "epss_pct": 0.5368,
-      "cwe": "CWE-190",
-      "published": "2026-08-20T22:17:14.360",
+      "epss": 0.00403,
+      "epss_pct": 0.33781,
+      "cwe": "CWE-416",
+      "published": "2026-08-18T13:17:30.983",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 17,
+      "hype": 17,
+      "rising": 7,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2899,31 +2915,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-20",
+          "date": "2026-08-18",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-18835",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote authenticated attacker to execute arbitrary comman…",
+      "cve_id": "CVE-2026-75913",
+      "title": "CodeWhale (codewhale / codewhale-tui) versions >= 0.8.41 and < 0.8.64 contain an argument injection vulnerability in …",
       "vendor": null,
       "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
-      "cvss": 9.9,
+      "description": "CodeWhale (codewhale / codewhale-tui) versions >= 0.8.41 and < 0.8.64 contain an argument injection vulnerability in the git_show tool. The model-supplied rev parameter is passed unvalidated into the git show argv without an --end-of-options sentinel, so a value beginning with --output= is interpreted as a git flag. Because the tool is registered as auto-approved and advertised as read-only, an attacker (via a malicious repository combined with prompt injection) can cause an unprompted arbitrary file write at the privilege of the invoking user, targeting sensitive files such as ~/.ssh/authorized_keys, ~/.bashrc, or ~/.gitconfig. Fixed in 0.8.64 by adding rev validation.",
+      "cvss": 9.3,
       "severity": "CRITICAL",
-      "epss": 0.00776,
-      "epss_pct": 0.53083,
-      "cwe": "CWE-78",
-      "published": "2026-08-20T22:17:17.430",
+      "epss": 0.0033,
+      "epss_pct": 0.26123,
+      "cwe": "CWE-73",
+      "published": "2026-08-18T16:18:23.363",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 17,
+      "hype": 17,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2934,7 +2950,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-08-20",
+          "date": "2026-08-18",
           "label": "Published to NVD"
         }
       ],
