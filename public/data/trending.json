@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T20:42:47.950Z",
+  "generated_at": "2026-08-21T21:42:05.004Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1086 recent"
+      "detail": "1097 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1117 scored"
+      "detail": "1115 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4216 mapped"
+      "detail": "4217 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 79,
+      "rising": 78,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -367,60 +367,6 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-33824",
-      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Internet Key Exchange (IKE) Service Extensions",
-      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.77898,
-      "epss_pct": 0.99537,
-      "cwe": "CWE-415",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 9,
-      "repos": {
-        "count": 2,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "EpSiLoNPoInTOrI/IKEV2-POC",
-            "html_url": "https://github.com/EpSiLoNPoInTOrI/IKEV2-POC",
-            "stars": 6
-          },
-          {
-            "full_name": "kaleth4/CVE-2026-33824",
-            "html_url": "https://github.com/kaleth4/CVE-2026-33824",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-60137",
       "title": "WordPress Core SQL Injection Vulnerability",
       "vendor": "WordPress",
@@ -474,6 +420,60 @@
       "timeline": [
         {
           "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-33824",
+      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.77898,
+      "epss_pct": 0.99537,
+      "cwe": "CWE-415",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 9,
+      "repos": {
+        "count": 2,
+        "stars": 7,
+        "top": [
+          {
+            "full_name": "EpSiLoNPoInTOrI/IKEV2-POC",
+            "html_url": "https://github.com/EpSiLoNPoInTOrI/IKEV2-POC",
+            "stars": 6
+          },
+          {
+            "full_name": "kaleth4/CVE-2026-33824",
+            "html_url": "https://github.com/kaleth4/CVE-2026-33824",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -614,7 +614,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1939,7 +1939,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 36,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 4,
         "stars": 11,
@@ -2291,41 +2291,6 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-70496",
-      "title": "A flaw was found in search-v2-operator.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in search-v2-operator. The operator's ClusterRole has permissions equivalent to a cluster administrator, allowing it to impersonate other entities, write Role-Based Access Control (RBAC) configurations, approve Certificate Signing Requests (CSRs), and manage ManifestWork. This grants excessive privileges beyond what is necessary for the operator's intended function, potentially leading to privilege escalation within the cluster.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00258,
-      "epss_pct": 0.1773,
-      "cwe": "CWE-250",
-      "published": "2026-08-19T19:17:23.230",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-19",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 43
-    },
-    {
       "cve_id": "CVE-2026-76589",
       "title": "A vulnerability was found in TRENDnet TEW-755AP up to 20260702.",
       "vendor": null,
@@ -2358,7 +2323,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-77022",
@@ -2393,7 +2358,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-66785",
@@ -2428,7 +2393,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-66788",
@@ -2463,7 +2428,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-17145",
@@ -2498,42 +2463,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-65816",
-      "title": "Use of incorrectly-resolved name or reference in Azure Arc allows an unauthorized attacker to elevate privileges over…",
-      "vendor": null,
-      "product": null,
-      "description": "Use of incorrectly-resolved name or reference in Azure Arc allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00534,
-      "epss_pct": 0.4294,
-      "cwe": "CWE-706",
-      "published": "2026-08-20T22:17:55.597",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-72843",
@@ -2568,7 +2498,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2611,7 +2541,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-74936",
@@ -2646,7 +2576,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-74940",
@@ -2681,7 +2611,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-74944",
@@ -2716,7 +2646,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-75913",
@@ -2751,7 +2681,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-62457",
@@ -2786,7 +2716,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-62463",
@@ -2821,7 +2751,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-62539",
@@ -2856,7 +2786,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-62541",
@@ -2891,7 +2821,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62543",
@@ -2905,6 +2835,76 @@
       "epss_pct": 0.2911,
       "cwe": null,
       "published": "2026-08-18T21:17:06.837",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-62544",
+      "title": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation an…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation and Configuration).   The supported version that is affected is 11.2.25.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Infrastructure Technology. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00486,
+      "epss_pct": 0.40037,
+      "cwe": null,
+      "published": "2026-08-18T21:17:06.947",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-62582",
+      "title": "Vulnerability in the Oracle Hyperion Calculation Manager product of Oracle Hyperion (component: Security).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Hyperion Calculation Manager product of Oracle Hyperion (component: Security).   The supported version that is affected is 11.2.25.0.000. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Hyperion Calculation Manager.  While the vulnerability is in Oracle Hyperion Calculation Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Hyperion Calculation Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Hyperion Calculation Manager accessible data. CVSS 3.1 Base Score 9.6 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N).",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": 0.00298,
+      "epss_pct": 0.22522,
+      "cwe": null,
+      "published": "2026-08-18T21:17:10.303",
       "kev": {
         "in_kev": false
       },
