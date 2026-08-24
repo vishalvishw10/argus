@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-24T13:15:45.520Z",
+  "generated_at": "2026-08-24T14:04:43.944Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 5,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 37,
     "kev_total": 1674,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1034 recent"
+      "detail": "1033 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1009 scored"
+      "detail": "1008 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "7 mentions"
+      "detail": "6 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4256 mapped"
+      "detail": "4257 mapped"
     },
     {
       "name": "Reddit",
@@ -548,7 +548,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -1411,7 +1411,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1430,47 +1430,6 @@
         }
       ],
       "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-72529",
-      "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "TrueConf",
-      "product": "Server",
-      "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00785,
-      "epss_pct": 0.52955,
-      "cwe": "CWE-306",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-20",
-        "due_date": "2026-08-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 4,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1520,6 +1479,47 @@
       "timeline": [
         {
           "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-72529",
+      "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00785,
+      "epss_pct": 0.52955,
+      "cwe": "CWE-306",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-20",
+        "due_date": "2026-08-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 3,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2126,7 +2126,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2389,36 +2389,62 @@
       "rank": 47
     },
     {
-      "cve_id": "CVE-2026-78211",
-      "title": "4MOSAn GCB Doctor developed by 4MOSAn Security Technology has a OS Command Injection vulnerability.",
+      "cve_id": "CVE-2026-18963",
+      "title": "CVE-2026-18963",
       "vendor": null,
       "product": null,
-      "description": "4MOSAn GCB Doctor developed by 4MOSAn Security Technology has a OS Command Injection vulnerability. Unauthenticated remote attackers can inject malicious commands through an unremoved ADOdb test page parameter, thereby executing arbitrary system commands on the server.",
-      "cvss": 9.8,
+      "description": "A flaw was found in the reset-credentials flow of the keycloak-services component, which is the core engine for identity and access management in Red Hat Build of Keycloak. The issue allows an unauthenticated attacker to force the password reset process for any user without needing to click the required email verification link. This can result in the attacker gaining full control over target user accounts by directly setting new credentials.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-08-24T04:16:59.493",
+      "epss": 0.00391,
+      "epss_pct": 0.32417,
+      "cwe": "CWE-640",
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 39,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 4,
+        "stars": 10,
+        "top": [
+          {
+            "full_name": "kyos-public/keycloak-cve-2026-18963-hunt",
+            "html_url": "https://github.com/kyos-public/keycloak-cve-2026-18963-hunt",
+            "stars": 9
+          },
+          {
+            "full_name": "Snizi/CVE-2026-18963-Exploit",
+            "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
+            "stars": 1
+          },
+          {
+            "full_name": "T0w0T/POC-CVE-2026-18963",
+            "html_url": "https://github.com/T0w0T/POC-CVE-2026-18963",
+            "stars": 0
+          }
+        ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Keycloak Password Reset Flaw Could Let Unauthenticated Attackers Take Over Any Account",
+          "url": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
+          "date": "2026-08-24T11:56:34.000Z"
+        }
+      ],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
       "timeline": [
         {
           "date": "2026-08-24",
-          "label": "Published to NVD"
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 48
