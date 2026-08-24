@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:57:41.046Z",
+  "generated_at": "2026-08-24T16:57:03.388Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "969 recent"
+      "detail": "937 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "987 scored"
+      "detail": "952 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4263 mapped"
+      "detail": "4267 mapped"
     },
     {
       "name": "Reddit",
@@ -498,7 +498,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -1417,7 +1417,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1458,7 +1458,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1761,47 +1761,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2026-20349",
-      "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
-      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.02213,
-      "epss_pct": 0.81265,
-      "cwe": "CWE-244",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2026-20316",
       "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
       "vendor": "Cisco",
@@ -1840,7 +1799,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1878,6 +1837,47 @@
       "timeline": [
         {
           "date": "2026-07-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 33
+    },
+    {
+      "cve_id": "CVE-2026-20349",
+      "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.02213,
+      "epss_pct": 0.81265,
+      "cwe": "CWE-244",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2080,6 +2080,92 @@
       "rank": 38
     },
     {
+      "cve_id": "CVE-2026-76070",
+      "title": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by submitting an oversized Base64-encoded password to the login handler in /bin/netis.cgi. Attackers can exploit the custom Base64 decoder's lack of output length validation against the fixed-size stack buffer to achieve remote code execution with root privileges, as the Boa web server executes the CGI environment as root.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-121",
+      "published": "2026-08-24T16:17:22.963",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 20,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "ozcanpng/CVE-2026-76070",
+            "html_url": "https://github.com/ozcanpng/CVE-2026-76070",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-24",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-76071",
+      "title": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by supplying an oversized destHost parameter to the ipFilterList=mod action in netis.cgi. Attackers can exploit widthless sscanf conversions that copy user-supplied input into fixed-size stack buffers before authentication is verified, achieving remote code execution as root due to the Boa web server executing the CGI environment with root privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-121",
+      "published": "2026-08-24T16:17:23.117",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 20,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "ozcanpng/CVE-2026-76071",
+            "html_url": "https://github.com/ozcanpng/CVE-2026-76071",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-24",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 40
+    },
+    {
       "cve_id": "CVE-2026-77946",
       "title": "A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05.",
       "vendor": null,
@@ -2112,42 +2198,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-78050",
-      "title": "A vulnerability was found in Comfast CF-N1-S 2.6.0.1.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was found in Comfast CF-N1-S 2.6.0.1. The affected element is the function sub_41AD7C of the file /cgi-bin/mbox-config?method=SET&section=ntp_timezone of the component Web Management. The manipulation of the argument timestr/ntp_client_enabled results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been made public and could be used.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00569,
-      "epss_pct": 0.44535,
-      "cwe": "CWE-119",
-      "published": "2026-08-23T00:16:50.590",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-5388",
@@ -2182,7 +2233,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-7808",
@@ -2217,7 +2268,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-8445",
@@ -2252,7 +2303,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-78167",
@@ -2287,7 +2338,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-78168",
@@ -2322,41 +2373,6 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-76840",
-      "title": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upp…",
-      "vendor": null,
-      "product": null,
-      "description": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read with a buffer of cb bytes, CliprdrStream_Read in libs/clipboard/src/windows/wf_cliprdr.c requests that many bytes of a remote file through cliprdr_send_request_filecontents and then executes CopyMemory(pv, clipboard->req_fdata, clipboard->req_fsize), where req_fsize is taken verbatim from the peer's CLIPRDR FileContentsResponse by wf_cliprdr_server_file_contents_response (req_fsize = fileContentsResponse->cbRequested) and is never clamped to cb anywhere in the chain. The function's only length comparison, req_fsize < cb, handles the short-read case and is evaluated after the copy has already occurred. A malicious or compromised peer that answers a small file-contents read with an oversized response therefore writes attacker-chosen data past the end of the paste consumer's heap buffer when the local user pastes clipboard file contents offered by the remote side. The file is a fork of FreeRDP's client/Windows/wf_cliprdr.c, where the same defect is CVE-2026-68579, fixed in FreeRDP 3.30.0.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-20",
-      "published": "2026-08-24T14:17:01.550",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-24",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 46
     },
     {
@@ -2377,20 +2393,20 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 38,
+      "rising": 37,
       "repos": {
         "count": 4,
-        "stars": 11,
+        "stars": 14,
         "top": [
           {
             "full_name": "kyos-public/keycloak-cve-2026-18963-hunt",
             "html_url": "https://github.com/kyos-public/keycloak-cve-2026-18963-hunt",
-            "stars": 9
+            "stars": 10
           },
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 2
+            "stars": 4
           },
           {
             "full_name": "T0w0T/POC-CVE-2026-18963",
