@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:02:46.059Z",
+  "generated_at": "2026-08-24T15:57:41.046Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1022 recent"
+      "detail": "969 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1042 scored"
+      "detail": "987 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4257 mapped"
+      "detail": "4263 mapped"
     },
     {
       "name": "Reddit",
@@ -206,7 +206,7 @@
       "rising": 0,
       "repos": {
         "count": 80,
-        "stars": 2075,
+        "stars": 2076,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -265,7 +265,7 @@
       "rising": 0,
       "repos": {
         "count": 52,
-        "stars": 2009,
+        "stars": 2010,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -667,65 +667,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.79215,
-      "epss_pct": 0.99566,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 53,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "VuxNx/CVE-2026-72898",
-            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
-            "stars": 2
-          },
-          {
-            "full_name": "4minx/CVE-2026-72898",
-            "html_url": "https://github.com/4minx/CVE-2026-72898",
-            "stars": 2
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-72898",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-16232",
       "title": "Check Point SmartConsole Improper Authentication Vulnerability",
       "vendor": "Check Point",
@@ -779,6 +720,65 @@
       "timeline": [
         {
           "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.79215,
+      "epss_pct": 0.99566,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 7,
+        "top": [
+          {
+            "full_name": "VuxNx/CVE-2026-72898",
+            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
+            "stars": 2
+          },
+          {
+            "full_name": "4minx/CVE-2026-72898",
+            "html_url": "https://github.com/4minx/CVE-2026-72898",
+            "stars": 2
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-72898",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1520,6 +1520,64 @@
       "rank": 26
     },
     {
+      "cve_id": "CVE-2026-68820",
+      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows Ancillary Function Driver for WinSock ",
+      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.06184,
+      "epss_pct": 0.92942,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ubitquity/Windows-WinSock-UAF-Mitigation",
+            "html_url": "https://github.com/ubitquity/Windows-WinSock-UAF-Mitigation",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-68820",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-68820",
+            "stars": 1
+          },
+          {
+            "full_name": "fevar54/CVE-2026-68820-Mitigation-PoC-",
+            "html_url": "https://github.com/fevar54/CVE-2026-68820-Mitigation-PoC-",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 27
+    },
+    {
       "cve_id": "CVE-2026-58644",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
       "vendor": "Microsoft",
@@ -1565,7 +1623,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1603,59 +1661,6 @@
       "timeline": [
         {
           "date": "2026-07-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 28
-    },
-    {
-      "cve_id": "CVE-2026-68820",
-      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows Ancillary Function Driver for WinSock ",
-      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "cvss": 7,
-      "severity": "HIGH",
-      "epss": 0.06184,
-      "epss_pct": 0.92942,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "ubitquity/Windows-WinSock-UAF-Mitigation",
-            "html_url": "https://github.com/ubitquity/Windows-WinSock-UAF-Mitigation",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-68820",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-68820",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2127,7 +2132,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2655,41 +2660,6 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-62457",
-      "title": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Common Events).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Common Events).   The supported version that is affected is 11.2.25.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Infrastructure Technology.  Successful attacks of this vulnerability can result in takeover of Oracle Hyperion Infrastructure Technology. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39658,
-      "cwe": null,
-      "published": "2026-08-18T21:17:02.207",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
       "cve_id": "CVE-2026-62539",
       "title": "Vulnerability in the Oracle Hyperion Infrastructure Technology product of Oracle Hyperion (component: Installation an…",
       "vendor": null,
@@ -2722,7 +2692,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-62541",
@@ -2757,7 +2727,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-62543",
@@ -2792,7 +2762,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-62544",
@@ -2827,7 +2797,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62608",
@@ -2862,7 +2832,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-62609",
@@ -2876,6 +2846,41 @@
       "epss_pct": 0.39656,
       "cwe": null,
       "published": "2026-08-18T21:17:13.440",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-62611",
+      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via IIOP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00486,
+      "epss_pct": 0.39655,
+      "cwe": null,
+      "published": "2026-08-18T21:17:13.670",
       "kev": {
         "in_kev": false
       },
