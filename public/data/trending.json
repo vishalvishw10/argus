@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T19:02:30.989Z",
+  "generated_at": "2026-08-24T19:47:13.197Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "964 recent"
+      "detail": "927 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "937 scored"
+      "detail": "913 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4270 mapped"
+      "detail": "4271 mapped"
     },
     {
       "name": "Reddit",
@@ -262,7 +262,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 8,
         "stars": 15,
@@ -454,8 +454,8 @@
             "stars": 2
           },
           {
-            "full_name": "darses/CVE-2026-50522",
-            "html_url": "https://github.com/darses/CVE-2026-50522",
+            "full_name": "HORKimhab/CVE-2026-50522",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
             "stars": 0
           }
         ]
@@ -556,7 +556,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -1455,47 +1455,6 @@
       "rank": 24
     },
     {
-      "cve_id": "CVE-2026-72530",
-      "title": "TrueConf Server Code Injection Vulnerability",
-      "vendor": "TrueConf",
-      "product": "Server",
-      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": 0.01827,
-      "epss_pct": 0.77168,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-20",
-        "due_date": "2026-09-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 2,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
       "cve_id": "CVE-2025-62593",
       "title": "Ray-Project Ray Code Injection Vulnerability",
       "vendor": "Ray-Project",
@@ -1534,6 +1493,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-72530",
+      "title": "TrueConf Server Code Injection Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+      "cvss": 9,
+      "severity": "CRITICAL",
+      "epss": 0.01827,
+      "epss_pct": 0.77168,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-20",
+        "due_date": "2026-09-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 26
     },
     {
@@ -1557,7 +1557,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2138,49 +2138,6 @@
       "rank": 39
     },
     {
-      "cve_id": "CVE-2026-76070",
-      "title": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by submitting an oversized Base64-encoded password to the login handler in /bin/netis.cgi. Attackers can exploit the custom Base64 decoder's lack of output length validation against the fixed-size stack buffer to achieve remote code execution with root privileges, as the Boa web server executes the CGI environment as root.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-121",
-      "published": "2026-08-24T16:17:22.963",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 20,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "ozcanpng/CVE-2026-76070",
-            "html_url": "https://github.com/ozcanpng/CVE-2026-76070",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 40
-    },
-    {
       "cve_id": "CVE-2026-76071",
       "title": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthentica…",
       "vendor": null,
@@ -2198,7 +2155,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2221,7 +2178,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-77946",
@@ -2256,7 +2213,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-5388",
@@ -2291,42 +2248,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-7808",
-      "title": "justhtml before 1.16.0 contains multiple HTML sanitization bypass issues that can allow active/dangerous content (e.g…",
-      "vendor": null,
-      "product": null,
-      "description": "justhtml before 1.16.0 contains multiple HTML sanitization bypass issues that can allow active/dangerous content (e.g., script or style) to survive sanitization, potentially leading to cross-site scripting. The issues primarily affect advanced usage rather than the default JustHTML(..., sanitize=True) path for ordinary parsed HTML: mutating or reusing sanitization policy objects (including exported defaults) could weaken later sanitization; programmatic DOM input to sanitize()/sanitize_dom() could miss mixed-case tag names (e.g., ScRiPt, StYlE); crafted programmatic doctype names could serialize into active markup; and custom policies preserving SVG or MathML could allow animation elements, presentation attributes with external url(...) references, or DOM trees mislabeled as namespace=\"html\" to bypass foreign-content checks. Fixed in 1.16.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00352,
-      "epss_pct": 0.27821,
-      "cwe": "CWE-20",
-      "published": "2026-08-23T14:16:54.810",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-8445",
@@ -2361,7 +2283,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-78168",
@@ -2396,7 +2318,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-77915",
@@ -2431,7 +2353,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-71914",
@@ -2466,7 +2388,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-71921",
@@ -2501,7 +2423,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-18963",
@@ -2524,7 +2446,7 @@
       "rising": 36,
       "repos": {
         "count": 4,
-        "stars": 15,
+        "stars": 16,
         "top": [
           {
             "full_name": "kyos-public/keycloak-cve-2026-18963-hunt",
@@ -2534,7 +2456,7 @@
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 5
+            "stars": 6
           },
           {
             "full_name": "T0w0T/POC-CVE-2026-18963",
@@ -2562,7 +2484,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-17544",
@@ -2610,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2653,7 +2575,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-74936",
@@ -2688,7 +2610,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-74940",
@@ -2723,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2766,7 +2688,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-74944",
@@ -2801,7 +2723,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-62539",
@@ -2836,7 +2758,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-62541",
@@ -2871,7 +2793,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-62543",
@@ -2906,7 +2828,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62544",
@@ -2920,6 +2842,76 @@
       "epss_pct": 0.39659,
       "cwe": null,
       "published": "2026-08-18T21:17:06.947",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-62608",
+      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows low privileged attacker with network access via CORBA to compromise Oracle Reports Developer.  While the vulnerability is in Oracle Reports Developer, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00447,
+      "epss_pct": 0.36964,
+      "cwe": null,
+      "published": "2026-08-18T21:17:13.300",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-62609",
+      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00486,
+      "epss_pct": 0.39656,
+      "cwe": null,
+      "published": "2026-08-18T21:17:13.440",
       "kev": {
         "in_kev": false
       },
