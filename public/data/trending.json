@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-25T13:13:44.314Z",
+  "generated_at": "2026-08-25T14:06:30.114Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 38,
     "kev_total": 1675,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "950 recent"
+      "detail": "957 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "841 scored"
+      "detail": "859 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4280 mapped"
+      "detail": "4281 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 79,
-      "rising": 100,
+      "rising": 99,
       "repos": {
         "count": 8,
         "stars": 17,
@@ -220,7 +220,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 35,
+      "rising": 34,
       "repos": {
         "count": 3,
         "stars": 4,
@@ -2161,6 +2161,56 @@
       "rank": 39
     },
     {
+      "cve_id": "CVE-2026-61979",
+      "title": "CVE-2026-61979",
+      "vendor": null,
+      "product": null,
+      "description": "Unauthenticated Privilege Escalation in SAML SP Single Sign On <= 5.4.3 versions.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.00264,
+      "epss_pct": 0.17784,
+      "cwe": "CWE-266",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 22,
+      "rising": 77,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "WordPress Websites Targeted via MiniOrange Plugin Vulnerabilities",
+          "url": "https://www.securityweek.com/wordpress-websites-targeted-via-miniorange-plugin-vulnerabilities/",
+          "date": "2026-08-25T13:33:12.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+          "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+          "date": "2026-08-25T08:34:07.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 40
+    },
+    {
       "cve_id": "CVE-2026-18963",
       "title": "CVE-2026-18963",
       "vendor": null,
@@ -2178,10 +2228,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 6,
-        "stars": 43,
+        "stars": 44,
         "top": [
           {
             "full_name": "prot0tw/Keycloak_CVE-2026-18963_PoC",
@@ -2196,7 +2246,7 @@
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 10
+            "stars": 11
           }
         ]
       },
@@ -2219,7 +2269,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-76071",
@@ -2239,7 +2289,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2262,7 +2312,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-78168",
@@ -2283,41 +2333,6 @@
       "no_patch": false,
       "hype": 18,
       "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-77915",
-      "title": "rConfig 8.0.0 before 8.2.13 contains an authentication bypass vulnerability that allows unauthenticated attackers to …",
-      "vendor": null,
-      "product": null,
-      "description": "rConfig 8.0.0 before 8.2.13 contains an authentication bypass vulnerability that allows unauthenticated attackers to self-register accounts with full Administrator privileges due to a duplicate bare Auth::routes() call in routes/web.php that re-enables the POST /register route after it was explicitly disabled. Attackers can register a new account that is immediately authenticated with Admin-level access because the registration controller does not assign a role and the users.role column defaults to Admin, enabling access to stored device credentials, user data, and API token issuance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-08-24T17:18:18.450",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2597,7 +2612,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2776,146 +2791,6 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-62626",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00522,
-      "epss_pct": 0.41924,
-      "cwe": null,
-      "published": "2026-08-18T21:17:16.370",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-62632",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00522,
-      "epss_pct": 0.41924,
-      "cwe": null,
-      "published": "2026-08-18T21:17:17.043",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-62633",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00522,
-      "epss_pct": 0.41924,
-      "cwe": null,
-      "published": "2026-08-18T21:17:17.153",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-62635",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00522,
-      "epss_pct": 0.41925,
-      "cwe": null,
-      "published": "2026-08-18T21:17:17.387",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
       "cve_id": "CVE-2026-76589",
       "title": "A vulnerability was found in TRENDnet TEW-755AP up to 20260702.",
       "vendor": null,
@@ -2945,6 +2820,146 @@
       "timeline": [
         {
           "date": "2026-08-19",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-66785",
+      "title": "A flaw was found in Submariner.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in Submariner. This vulnerability allows a malicious cluster (spoke) to redirect network traffic from other connected clusters (peer clusters) by publishing a specially crafted network endpoint. The system fails to properly validate the network subnets provided by the malicious cluster, enabling it to declare arbitrary network ranges. Consequently, all network traffic intended for these arbitrary ranges from peer clusters will be rerouted through the attacker's tunnel, potentially leading to unauthorized information disclosure or network disruption.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00287,
+      "epss_pct": 0.20658,
+      "cwe": "CWE-20",
+      "published": "2026-08-20T19:16:58.463",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-66788",
+      "title": "A flaw was found in Lighthouse.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw was found in Lighthouse. A remote attacker, by compromising a spoke cluster, can exploit a vulnerability where the destination namespace for resource injection is derived from an attacker-controlled label or annotation on the broker object. This allows the attacker to inject unauthorized EndpointSlices and ServiceImports into any namespace on peer clusters, including critical system namespaces like kube-system and openshift-*. This could lead to privilege escalation or other forms of system compromise within the cluster.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00293,
+      "epss_pct": 0.21268,
+      "cwe": "CWE-284",
+      "published": "2026-08-20T19:16:58.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-17000",
+      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to improper…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to improper authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00403,
+      "epss_pct": 0.33239,
+      "cwe": "CWE-287",
+      "published": "2026-08-20T22:17:10.813",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-17006",
+      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a heap b…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a heap buffer overflow.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00207,
+      "epss_pct": 0.10705,
+      "cwe": "CWE-787",
+      "published": "2026-08-20T22:17:11.147",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 1,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-20",
           "label": "Published to NVD"
         }
       ],
