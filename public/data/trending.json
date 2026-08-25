@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T01:54:23.922Z",
+  "generated_at": "2026-08-25T03:14:19.830Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "887 recent"
+      "detail": "910 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "872 scored"
+      "detail": "859 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4275 mapped"
+      "detail": "4276 mapped"
     },
     {
       "name": "Reddit",
@@ -144,7 +144,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 45,
+      "rising": 44,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -2201,7 +2201,7 @@
       "rising": 32,
       "repos": {
         "count": 5,
-        "stars": 19,
+        "stars": 21,
         "top": [
           {
             "full_name": "kyos-public/keycloak-cve-2026-18963-hunt",
@@ -2216,7 +2216,7 @@
           {
             "full_name": "Red-Darkin/CVE-2026-18963-keycloak",
             "html_url": "https://github.com/Red-Darkin/CVE-2026-18963-keycloak",
-            "stars": 2
+            "stars": 3
           }
         ]
       },
@@ -2259,7 +2259,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2364,7 +2364,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2417,6 +2417,146 @@
       "rank": 46
     },
     {
+      "cve_id": "CVE-2026-56705",
+      "title": "Adminer before 5.4.3 fails to sanitize the server field before constructing a PDO DSN string, allowing unauthenticate…",
+      "vendor": null,
+      "product": null,
+      "description": "Adminer before 5.4.3 fails to sanitize the server field before constructing a PDO DSN string, allowing unauthenticated attackers to inject ODBC parameters via semicolons. Attackers can inject TraceFile and TraceOn parameters to write PHP code to the web root, achieving remote code execution when the trace file is accessed.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-73",
+      "published": "2026-08-25T02:16:42.330",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-56710",
+      "title": "Grav Login plugin versions before 1.0.16 fail to validate the target account's privilege level in the onApiUserListRo…",
+      "vendor": null,
+      "product": null,
+      "description": "Grav Login plugin versions before 1.0.16 fail to validate the target account's privilege level in the onApiUserListRowAction unlock handler. An attacker with api.users.write permission can clear login lockout counters on admin.super accounts, removing brute-force protection from the highest-privilege accounts without requiring equivalent permissions.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-863",
+      "published": "2026-08-25T02:16:43.073",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-78676",
+      "title": "GitPython before 3.1.59 fails to safely re-serialize multi-line git-config values during write operations, corrupting…",
+      "vendor": null,
+      "product": null,
+      "description": "GitPython before 3.1.59 fails to safely re-serialize multi-line git-config values during write operations, corrupting dormant quoted values into injected directives like core.hooksPath. Attackers can craft config files with embedded newlines that become live git directives after any unrelated GitPython config write, enabling arbitrary code execution via hook invocation.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-88",
+      "published": "2026-08-25T02:16:52.030",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-78683",
+      "title": "NLTK before 3.10.0 (affected versions <=3.9.4) contains an unsafe pickle deserialization vulnerability in the Transit…",
+      "vendor": null,
+      "product": null,
+      "description": "NLTK before 3.10.0 (affected versions <=3.9.4) contains an unsafe pickle deserialization vulnerability in the TransitionParser.parse() method (nltk/parse/transitionparser.py). The method calls pickle_load() with the default restricted=False, routing deserialization through WarningUnpickler, which does not override find_class() and therefore permits arbitrary class resolution. When an application loads an attacker-crafted model file, embedded pickle gadget chains execute arbitrary Python code with the privileges of the user running the application. NLTK provides a RestrictedUnpickler for safe deserialization, but it is not used by production code paths. Fixed in 3.10.0.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-502",
+      "published": "2026-08-25T02:16:53.033",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2462,7 +2602,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2505,7 +2645,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-74936",
@@ -2540,7 +2680,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-74940",
@@ -2575,7 +2715,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2618,7 +2758,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-74944",
@@ -2653,7 +2793,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-62541",
@@ -2688,7 +2828,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62543",
@@ -2723,7 +2863,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-62544",
@@ -2758,7 +2898,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-62608",
@@ -2772,146 +2912,6 @@
       "epss_pct": 0.36964,
       "cwe": null,
       "published": "2026-08-18T21:17:13.300",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-62609",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39656,
-      "cwe": null,
-      "published": "2026-08-18T21:17:13.440",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-62611",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via IIOP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39655,
-      "cwe": null,
-      "published": "2026-08-18T21:17:13.670",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-62614",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39658,
-      "cwe": null,
-      "published": "2026-08-18T21:17:14.017",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-62617",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via UDP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39655,
-      "cwe": null,
-      "published": "2026-08-18T21:17:14.370",
       "kev": {
         "in_kev": false
       },
