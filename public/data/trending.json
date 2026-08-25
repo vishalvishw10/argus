@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T22:47:47.416Z",
+  "generated_at": "2026-08-25T23:41:00.713Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "843 recent"
+      "detail": "846 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 78,
-      "rising": 87,
+      "rising": 86,
       "repos": {
         "count": 8,
         "stars": 18,
@@ -220,7 +220,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -2243,15 +2243,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 21,
+      "rising": 20,
       "repos": {
         "count": 8,
-        "stars": 50,
+        "stars": 52,
         "top": [
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 15
+            "stars": 17
           },
           {
             "full_name": "prot0tw/Keycloak_CVE-2026-18963_PoC",
@@ -2304,7 +2304,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 67,
+      "rising": 66,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2397,7 +2397,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2467,7 +2467,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2835,6 +2835,76 @@
       "rank": 56
     },
     {
+      "cve_id": "CVE-2026-79911",
+      "title": "A security vulnerability has been detected in TOTOLINK N600R 4.3.0cu.7647_B20210106.",
+      "vendor": null,
+      "product": null,
+      "description": "A security vulnerability has been detected in TOTOLINK N600R 4.3.0cu.7647_B20210106. The affected element is the function setSystemConfig of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument Hostname leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-08-25T23:17:59.490",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-80138",
+      "title": "ClipBucket V5's web installer fails to properly validate or escape the php_cli_filepath parameter before passing it t…",
+      "vendor": null,
+      "product": null,
+      "description": "ClipBucket V5's web installer fails to properly validate or escape the php_cli_filepath parameter before passing it to shell execution. Unauthenticated attackers can submit a crafted POST request to the installer with a malicious php_cli_filepath value to execute arbitrary commands as the web server user.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-08-25T23:17:59.860",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2880,7 +2950,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2920,76 +2990,6 @@
       "timeline": [
         {
           "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-62608",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows low privileged attacker with network access via CORBA to compromise Oracle Reports Developer.  While the vulnerability is in Oracle Reports Developer, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00447,
-      "epss_pct": 0.36996,
-      "cwe": null,
-      "published": "2026-08-18T21:17:13.300",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-66788",
-      "title": "A flaw was found in Lighthouse.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in Lighthouse. A remote attacker, by compromising a spoke cluster, can exploit a vulnerability where the destination namespace for resource injection is derived from an attacker-controlled label or annotation on the broker object. This allows the attacker to inject unauthorized EndpointSlices and ServiceImports into any namespace on peer clusters, including critical system namespaces like kube-system and openshift-*. This could lead to privilege escalation or other forms of system compromise within the cluster.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00293,
-      "epss_pct": 0.21285,
-      "cwe": "CWE-284",
-      "published": "2026-08-20T19:16:58.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
           "label": "Published to NVD"
         }
       ],
