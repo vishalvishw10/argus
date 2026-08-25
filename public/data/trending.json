@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-25T05:49:23.504Z",
+  "generated_at": "2026-08-25T07:10:31.693Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 38,
     "kev_total": 1675,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "904 recent"
+      "detail": "910 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "5 mentions"
+      "detail": "6 mentions"
     },
     {
       "name": "Dark Reading",
@@ -63,6 +63,76 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-21962",
+      "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
+      "vendor": "Oracle",
+      "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
+      "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.4323,
+      "epss_pct": 0.9862,
+      "cwe": "CWE-284",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-24",
+        "due_date": "2026-08-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 68,
+      "rising": 69,
+      "repos": {
+        "count": 8,
+        "stars": 15,
+        "top": [
+          {
+            "full_name": "samael0x4/CVE-2026-21962",
+            "html_url": "https://github.com/samael0x4/CVE-2026-21962",
+            "stars": 4
+          },
+          {
+            "full_name": "boroeurnprach/Ashwesker-CVE-2026-21962",
+            "html_url": "https://github.com/boroeurnprach/Ashwesker-CVE-2026-21962",
+            "stars": 4
+          },
+          {
+            "full_name": "George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-",
+            "html_url": "https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+          "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+          "date": "2026-08-25T06:12:35.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-25",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-15409",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
@@ -121,7 +191,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -144,7 +214,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 42,
+      "rising": 40,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -192,7 +262,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -251,7 +321,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-63030",
@@ -307,64 +377,6 @@
       "timeline": [
         {
           "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-21962",
-      "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
-      "vendor": "Oracle",
-      "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
-      "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.4323,
-      "epss_pct": 0.9862,
-      "cwe": "CWE-284",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-24",
-        "due_date": "2026-08-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 30,
-      "repos": {
-        "count": 8,
-        "stars": 15,
-        "top": [
-          {
-            "full_name": "samael0x4/CVE-2026-21962",
-            "html_url": "https://github.com/samael0x4/CVE-2026-21962",
-            "stars": 4
-          },
-          {
-            "full_name": "boroeurnprach/Ashwesker-CVE-2026-21962",
-            "html_url": "https://github.com/boroeurnprach/Ashwesker-CVE-2026-21962",
-            "stars": 4
-          },
-          {
-            "full_name": "George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-",
-            "html_url": "https://github.com/George0Papasotiriou/CVE-2026-21962-Oracle-HTTP-Server-WebLogic-Proxy-Plug-in-Critical-",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-24",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1422,7 +1434,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 43,
+      "hype": 42,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -2154,11 +2166,11 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
-      "rising": 30,
+      "hype": 21,
+      "rising": 29,
       "repos": {
-        "count": 6,
-        "stars": 29,
+        "count": 7,
+        "stars": 30,
         "top": [
           {
             "full_name": "kyos-public/keycloak-cve-2026-18963-hunt",
@@ -2173,7 +2185,7 @@
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 7
+            "stars": 8
           }
         ]
       },
@@ -2487,6 +2499,41 @@
       "rank": 48
     },
     {
+      "cve_id": "CVE-2026-78477",
+      "title": "The Jawn theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.2.",
+      "vendor": null,
+      "product": null,
+      "description": "The Jawn theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.2. This makes it possible for unauthenticated attackers to elevate their privileges to that of an administrator.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-266",
+      "published": "2026-08-25T06:19:01.147",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2532,7 +2579,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-41452",
@@ -2575,7 +2622,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2618,7 +2665,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-62541",
@@ -2653,7 +2700,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-62543",
@@ -2688,7 +2735,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-62544",
@@ -2723,7 +2770,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-62608",
@@ -2758,7 +2805,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-62609",
@@ -2793,7 +2840,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-62611",
@@ -2828,7 +2875,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-62614",
@@ -2863,7 +2910,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-62617",
@@ -2877,41 +2924,6 @@
       "epss_pct": 0.39655,
       "cwe": null,
       "published": "2026-08-18T21:17:14.370",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-62621",
-      "title": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Reports Developer product of Oracle Fusion Middleware (component: Security and Authentication).   The supported version that is affected is 12.2.1.19.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Reports Developer.  Successful attacks of this vulnerability can result in takeover of Oracle Reports Developer. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.39654,
-      "cwe": null,
-      "published": "2026-08-18T21:17:15.807",
       "kev": {
         "in_kev": false
       },
