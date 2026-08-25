@@ -1495,14 +1495,16 @@
           "name": "CVE-2026-0628-POC",
           "full_name": "fevar54/CVE-2026-0628-POC",
           "html_url": "https://github.com/fevar54/CVE-2026-0628-POC",
-          "description": "Prueba de concepto (PoC) para CVE-2026-0628, que demuestra la inyección de scripts en páginas privilegiadas mediante el uso de la etiqueta <webview> en Google Chrome. Esta vulnerabilidad, clasificada como CWE-862 (Missing Authorization), permite a una extensión maliciosa eludir políticas de seguridad en versiones anteriores a la 143.0.7499.192.",
+          "description": "PoC de CVE-2026-0628: inyeccion de scripts en paginas privilegiadas via webview en Chrome (CWE-862).",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": null,
-          "updated_at": "2026-01-07T19:35:37Z",
+          "updated_at": "2026-08-25T16:45:41Z",
           "pushed_at": "2026-01-07T19:35:33Z",
           "created_at": "2026-01-07T19:29:28Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -2245,14 +2247,16 @@
           "name": "CVE-2026-0848-Scanner---Herramienta-de-Detecci-n",
           "full_name": "fevar54/CVE-2026-0848-Scanner---Herramienta-de-Detecci-n",
           "html_url": "https://github.com/fevar54/CVE-2026-0848-Scanner---Herramienta-de-Detecci-n",
-          "description": "Herramienta de detección para CVE-2026-0848 que escanea sistemas locales y remotos en busca de instalaciones vulnerables de NLTK ≤ 3.9.2. Realiza escaneo por SSH, detección en red, genera reportes JSON/HTML/CSV y calcula nivel de riesgo basado en presencia de modelos StanfordSegmenter comprometidos.",
+          "description": "Scanner de CVE-2026-0848: detecta instalaciones de NLTK 3.9.2 o inferiores vulnerables. Reportes JSON/HTML/CSV.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-03-31T16:04:14Z",
+          "updated_at": "2026-08-25T16:45:56Z",
           "pushed_at": "2026-03-31T16:03:39Z",
           "created_at": "2026-03-31T15:12:27Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -2264,14 +2268,16 @@
           "name": "CVE-2026-0848-PoC-Improper-Input-Validation",
           "full_name": "fevar54/CVE-2026-0848-PoC-Improper-Input-Validation",
           "html_url": "https://github.com/fevar54/CVE-2026-0848-PoC-Improper-Input-Validation",
-          "description": "Este PoC compila código Java malicioso en un JAR con bloque estático, lo carga mediante StanfordSegmenter de NLTK, y al ser cargado por el JVM ejecuta automáticamente el payload, creando el archivo /tmp/pwned_cve_2026_0848 como prueba tangible de ejecución de código arbitrario.",
+          "description": "PoC de CVE-2026-0848: validacion de entrada indebida en NLTK que permite ejecucion de codigo via StanfordSegmenter.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-03-31T14:45:08Z",
+          "updated_at": "2026-08-25T16:45:33Z",
           "pushed_at": "2026-03-31T14:45:04Z",
           "created_at": "2026-03-31T14:34:02Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -5389,14 +5395,16 @@
           "name": "CVE-2026-3055-Scanner---Herramienta-de-Detecci-n",
           "full_name": "fevar54/CVE-2026-3055-Scanner---Herramienta-de-Detecci-n",
           "html_url": "https://github.com/fevar54/CVE-2026-3055-Scanner---Herramienta-de-Detecci-n",
-          "description": "Herramienta de detección para CVE-2026-3055 que identifica NetScaler ADC y Gateway vulnerables a memory overread. Realiza escaneo individual, por red o lista de hosts, detecta memory leak en /wsfed/passive?wctx, extrae session IDs, verifica versiones y genera reportes JSON, HTML o CSV con hosts vulnerables.",
+          "description": "Scanner de CVE-2026-3055: detecta NetScaler ADC/Gateway vulnerables a memory overread. Reportes JSON/HTML/CSV.",
           "stargazers_count": 1,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-06-05T15:08:22Z",
+          "updated_at": "2026-08-25T16:45:54Z",
           "pushed_at": "2026-03-31T16:27:58Z",
           "created_at": "2026-03-31T16:23:12Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -5408,14 +5416,16 @@
           "name": "CVE-2026-3055---Citrix-NetScaler-Memory-Overread-PoC",
           "full_name": "fevar54/CVE-2026-3055---Citrix-NetScaler-Memory-Overread-PoC",
           "html_url": "https://github.com/fevar54/CVE-2026-3055---Citrix-NetScaler-Memory-Overread-PoC",
-          "description": "Exploit funcional para CVE-2026-3055 en Citrix NetScaler ADC y Gateway. Aprovecha memory overread en endpoint /wsfed/passive?wctx para filtrar memoria del sistema, extrayendo session IDs administrativas, cookies y datos sensibles que permiten hijacking de sesiones y compromiso total del appliance vulnerable.",
+          "description": "PoC de CVE-2026-3055: memory overread en Citrix NetScaler ADC/Gateway para filtrar session IDs.",
           "stargazers_count": 1,
           "forks_count": 2,
           "language": "Python",
-          "updated_at": "2026-06-05T15:08:30Z",
+          "updated_at": "2026-08-25T16:45:31Z",
           "pushed_at": "2026-03-31T16:13:26Z",
           "created_at": "2026-03-31T16:07:38Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -6140,14 +6150,16 @@
           "name": "CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool",
           "full_name": "fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool",
           "html_url": "https://github.com/fevar54/CVE-2026-3502-Scanner---TrueConf-Vulnerability-Detection-Tool",
-          "description": "Herramienta de detección para CVE-2026-3502. Escanea servidores TrueConf sin verificación de actualizaciones, detecta clientes Windows vulnerables (≤8.5.3.884) y busca IOCs de TrueChaos: PowerISO, persistencia en registro y tareas programadas. Reportes JSON, HTML o CSV.",
+          "description": "Scanner de CVE-2026-3502: detecta clientes TrueConf vulnerables e IOCs de TrueChaos. Reportes JSON/HTML/CSV.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-04-04T22:55:09Z",
+          "updated_at": "2026-08-25T16:45:53Z",
           "pushed_at": "2026-04-04T22:55:06Z",
           "created_at": "2026-04-04T22:50:54Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -6159,14 +6171,16 @@
           "name": "CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC",
           "full_name": "fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC",
           "html_url": "https://github.com/fevar54/CVE-2026-3502---TrueConf-Client-Update-Hijacking-PoC",
-          "description": "Exploit para CVE-2026-3502 en TrueConf Client. Un atacante con control del servidor TrueConf local reemplaza la actualización legítima por un payload malicioso sin verificación de integridad, logrando ejecución remota de código y despliegue de malware Havoc en todos los clientes conectados (Operación TrueChaos).",
+          "description": "PoC de CVE-2026-3502: hijacking de actualizacion en TrueConf Client para RCE (Operacion TrueChaos).",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-04-04T22:45:53Z",
+          "updated_at": "2026-08-25T16:45:30Z",
           "pushed_at": "2026-04-04T22:45:49Z",
           "created_at": "2026-04-04T22:39:53Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -6894,14 +6908,16 @@
           "name": "CVE-2026-3888-POC-all-from-the-Qualys-platform.",
           "full_name": "fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.",
           "html_url": "https://github.com/fevar54/CVE-2026-3888-POC-all-from-the-Qualys-platform.",
-          "description": "This script demonstrates a race condition vulnerability in snapd that allows a local, unprivileged user to gain root privileges. The exploit works by recreating snap's private /tmp directory after it's cleaned up by systemd-tmpfiles, and tricking snap-confine into bind-mounting malicious files into the snap's sandbox.",
+          "description": "PoC de CVE-2026-3888: condicion de carrera en snapd para escalada a root.",
           "stargazers_count": 2,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-03-19T09:30:14Z",
+          "updated_at": "2026-08-25T16:45:35Z",
           "pushed_at": "2026-03-18T15:38:55Z",
           "created_at": "2026-03-18T15:33:57Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -11294,14 +11310,16 @@
           "name": "CVE-2026-7473---Arista-EOS-Tunnel-Decapsulation-Bypass",
           "full_name": "fevar54/CVE-2026-7473---Arista-EOS-Tunnel-Decapsulation-Bypass",
           "html_url": "https://github.com/fevar54/CVE-2026-7473---Arista-EOS-Tunnel-Decapsulation-Bypass",
-          "description": "Vulnerability: On affected Arista EOS platforms with tunnel decapsulation",
+          "description": "PoC de CVE-2026-7473: bypass de decapsulacion de tunel en Arista EOS.",
           "stargazers_count": 1,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-06-12T13:02:40Z",
+          "updated_at": "2026-08-25T16:45:11Z",
           "pushed_at": "2026-06-10T16:23:24Z",
           "created_at": "2026-06-10T16:21:10Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -14298,10 +14316,10 @@
           "full_name": "opaxial/CVE-2026-9830",
           "html_url": "https://github.com/opaxial/CVE-2026-9830",
           "description": "CVE-2026-9830 Proof of Concept",
-          "stargazers_count": 325,
+          "stargazers_count": 326,
           "forks_count": 3,
           "language": "Python",
-          "updated_at": "2026-08-25T15:43:06Z",
+          "updated_at": "2026-08-25T16:27:15Z",
           "pushed_at": "2026-08-20T21:56:15Z",
           "created_at": "2026-08-15T20:57:13Z",
           "topics": [
@@ -16147,14 +16165,16 @@
           "name": "CVE-2026-11645-Out-of-bounds-Read-Write",
           "full_name": "fevar54/CVE-2026-11645-Out-of-bounds-Read-Write",
           "html_url": "https://github.com/fevar54/CVE-2026-11645-Out-of-bounds-Read-Write",
-          "description": "# CVE-2026-11645 - Chrome V8 Out-of-Bounds Read/Write Exploit",
+          "description": "PoC de CVE-2026-11645: lectura/escritura fuera de limites en Chrome V8 (CVSS 8.8).",
           "stargazers_count": 3,
           "forks_count": 4,
           "language": null,
-          "updated_at": "2026-06-22T04:43:53Z",
+          "updated_at": "2026-08-25T16:45:14Z",
           "pushed_at": "2026-06-10T15:06:14Z",
           "created_at": "2026-06-10T15:02:56Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -18810,10 +18830,10 @@
           "full_name": "masasron/CopyEscape-CVE-2026-17106",
           "html_url": "https://github.com/masasron/CopyEscape-CVE-2026-17106",
           "description": "PoC repository for the blog post CopyEscape: Taking Over Docker Hosts with docker cp",
-          "stargazers_count": 18,
+          "stargazers_count": 19,
           "forks_count": 4,
           "language": "C",
-          "updated_at": "2026-08-25T09:44:03Z",
+          "updated_at": "2026-08-25T17:16:03Z",
           "pushed_at": "2026-08-09T21:04:41Z",
           "created_at": "2026-08-09T21:02:40Z",
           "topics": [],
@@ -19414,10 +19434,10 @@
           "full_name": "Snizi/CVE-2026-18963-Exploit",
           "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
           "description": "Exploit for KeyCloak CVE-2026-18963",
-          "stargazers_count": 13,
+          "stargazers_count": 14,
           "forks_count": 4,
           "language": "Python",
-          "updated_at": "2026-08-25T16:04:13Z",
+          "updated_at": "2026-08-25T16:26:37Z",
           "pushed_at": "2026-08-20T22:38:38Z",
           "created_at": "2026-08-20T22:01:11Z",
           "topics": [
@@ -19489,7 +19509,7 @@
           "html_url": "https://github.com/Red-Darkin/CVE-2026-18963-keycloak",
           "description": null,
           "stargazers_count": 10,
-          "forks_count": 1,
+          "forks_count": 2,
           "language": "Python",
           "updated_at": "2026-08-25T15:44:34Z",
           "pushed_at": "2026-08-24T23:44:49Z",
@@ -19519,6 +19539,25 @@
             "html_url": "https://github.com/T0w0T"
           },
           "clone_url": "https://github.com/T0w0T/POC-CVE-2026-18963.git"
+        },
+        {
+          "id": 1346390689,
+          "name": "CVE-2026-18963",
+          "full_name": "debugactiveprocess/CVE-2026-18963",
+          "html_url": "https://github.com/debugactiveprocess/CVE-2026-18963",
+          "description": "Nuclei template to discover Keycloak reset-credentials endpoints related to CVE-2026-18963 exposure validation.",
+          "stargazers_count": 0,
+          "forks_count": 0,
+          "language": null,
+          "updated_at": "2026-08-25T16:58:52Z",
+          "pushed_at": "2026-08-25T16:49:33Z",
+          "created_at": "2026-08-25T16:48:27Z",
+          "topics": [],
+          "owner": {
+            "login": "debugactiveprocess",
+            "html_url": "https://github.com/debugactiveprocess"
+          },
+          "clone_url": "https://github.com/debugactiveprocess/CVE-2026-18963.git"
         },
         {
           "id": 1346278353,
@@ -20594,14 +20633,16 @@
           "name": "CVE-2026-20224---XXE-Injection-en-Cisco-Catalyst-SD-WAN-Manager",
           "full_name": "fevar54/CVE-2026-20224---XXE-Injection-en-Cisco-Catalyst-SD-WAN-Manager",
           "html_url": "https://github.com/fevar54/CVE-2026-20224---XXE-Injection-en-Cisco-Catalyst-SD-WAN-Manager",
-          "description": "permite a un atacante remoto no autenticado leer archivos arbitrarios del sistema afectado mediante una inyección de XML External Entity (XXE) ",
+          "description": "PoC de CVE-2026-20224: inyeccion XXE para lectura de archivos en Cisco Catalyst SD-WAN Manager (no autenticado).",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-05-15T16:09:57Z",
+          "updated_at": "2026-08-25T16:45:24Z",
           "pushed_at": "2026-05-15T16:09:53Z",
           "created_at": "2026-05-15T15:56:37Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -20699,14 +20740,16 @@
           "name": "CVE-2026-20245---Cisco-SD-WAN-Privilege-Escalation-Exploit",
           "full_name": "fevar54/CVE-2026-20245---Cisco-SD-WAN-Privilege-Escalation-Exploit",
           "html_url": "https://github.com/fevar54/CVE-2026-20245---Cisco-SD-WAN-Privilege-Escalation-Exploit",
-          "description": "**Este código es SOLO para fines educativos y pruebas de seguridad autorizadas.**",
+          "description": "PoC de CVE-2026-20245: escalada de privilegios en Cisco SD-WAN. Solo fines educativos y pruebas autorizadas.",
           "stargazers_count": 0,
           "forks_count": 3,
           "language": "Python",
-          "updated_at": "2026-06-10T15:52:38Z",
+          "updated_at": "2026-08-25T16:45:13Z",
           "pushed_at": "2026-06-10T15:46:48Z",
           "created_at": "2026-06-10T15:42:52Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -20828,14 +20871,16 @@
           "name": "CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-",
           "full_name": "fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-",
           "html_url": "https://github.com/fevar54/CVE-2026-20253-Splunk-Enterprise-Pre-Auth-RCE-",
-          "description": null,
+          "description": "PoC de CVE-2026-20253: RCE pre-autenticacion en Splunk Enterprise.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-06-26T18:31:06Z",
+          "updated_at": "2026-08-25T16:45:06Z",
           "pushed_at": "2026-06-26T18:31:02Z",
           "created_at": "2026-06-26T18:13:31Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -20890,14 +20935,16 @@
           "name": "CVE-2026-20262-Cisco-Catalyst-SD-WAN-Manager-Arbitrary-File-Write-",
           "full_name": "fevar54/CVE-2026-20262-Cisco-Catalyst-SD-WAN-Manager-Arbitrary-File-Write-",
           "html_url": "https://github.com/fevar54/CVE-2026-20262-Cisco-Catalyst-SD-WAN-Manager-Arbitrary-File-Write-",
-          "description": "CVE-2026-20262 - Cisco Catalyst SD-WAN Manager Arbitrary File Write Path Traversal Vulnerability (CWE-22) - Authenticated Remote File Write",
+          "description": "PoC de CVE-2026-20262: escritura arbitraria de archivos por path traversal en Cisco Catalyst SD-WAN Manager (autenticado).",
           "stargazers_count": 1,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-06-18T02:33:08Z",
+          "updated_at": "2026-08-25T16:45:10Z",
           "pushed_at": "2026-06-17T16:40:13Z",
           "created_at": "2026-06-17T16:36:33Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -21242,14 +21289,16 @@
           "name": "CVE-2026-20805-POC",
           "full_name": "fevar54/CVE-2026-20805-POC",
           "html_url": "https://github.com/fevar54/CVE-2026-20805-POC",
-          "description": "# CVE-2026-20805 PoC  Prueba de concepto para la vulnerabilidad de divulgación de información en **Desktop Windows Manager (dwm.exe)** de Microsoft.  ## 📋 Resumen de la Vulnerabilidad  - **ID:** CVE-2026-20805 - **Producto:** Microsoft Windows",
+          "description": "PoC de CVE-2026-20805: divulgacion de informacion en Desktop Window Manager (dwm.exe) de Windows.",
           "stargazers_count": 7,
           "forks_count": 4,
           "language": null,
-          "updated_at": "2026-07-13T12:09:45Z",
+          "updated_at": "2026-08-25T16:45:39Z",
           "pushed_at": "2026-01-14T13:34:08Z",
           "created_at": "2026-01-14T13:26:26Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -23193,14 +23242,16 @@
           "name": "CVE-2026-21533_Scanner.py",
           "full_name": "fevar54/CVE-2026-21533_Scanner.py",
           "html_url": "https://github.com/fevar54/CVE-2026-21533_Scanner.py",
-          "description": "Este repositorio contiene una herramienta de **detección** para la vulnerabilidad CVE-2026-21533, una falla de gestión de privilegios en los Servicios de Escritorio Remoto (RDS) de Windows que podría permitir a un atacante local elevar sus privilegios a `SYSTEM`.",
+          "description": "Detector de CVE-2026-21533: escalada de privilegios a SYSTEM en Servicios de Escritorio Remoto (RDS) de Windows.",
           "stargazers_count": 2,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-06-15T01:45:52Z",
+          "updated_at": "2026-08-25T16:45:59Z",
           "pushed_at": "2026-03-09T21:10:53Z",
           "created_at": "2026-03-09T21:07:38Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -24022,10 +24073,10 @@
           "full_name": "samael0x4/CVE-2026-21962",
           "html_url": "https://github.com/samael0x4/CVE-2026-21962",
           "description": "Unauthenticated vulnerability that may allow remote attackers to compromise confidentiality and integrity, potentially leading to full system compromise.",
-          "stargazers_count": 4,
+          "stargazers_count": 5,
           "forks_count": 3,
           "language": "Python",
-          "updated_at": "2026-04-18T07:36:14Z",
+          "updated_at": "2026-08-25T17:17:57Z",
           "pushed_at": "2026-01-22T05:02:28Z",
           "created_at": "2026-01-22T03:59:25Z",
           "topics": [],
@@ -46396,14 +46447,16 @@
           "name": "CVE-2026-32635-Angular-XSS-Mitigation-",
           "full_name": "fevar54/CVE-2026-32635-Angular-XSS-Mitigation-",
           "html_url": "https://github.com/fevar54/CVE-2026-32635-Angular-XSS-Mitigation-",
-          "description": "Este repositorio contiene una demostración educativa de la mitigación y detección para **CVE-2026-32635**, una vulnerabilidad de **Cross-Site Scripting (XSS)** en Angular que afecta a los atributos internacionalizados (i18n).",
+          "description": "Demostracion educativa de mitigacion y deteccion de CVE-2026-32635: XSS en atributos i18n de Angular.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "YARA",
-          "updated_at": "2026-08-25T16:01:58Z",
+          "updated_at": "2026-08-25T16:45:46Z",
           "pushed_at": "2026-08-25T15:46:12Z",
           "created_at": "2026-08-25T15:38:43Z",
-          "topics": [],
+          "topics": [
+            "cve-mitigations"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -48297,14 +48350,16 @@
           "name": "CVE-2026-33634-Scanner",
           "full_name": "fevar54/CVE-2026-33634-Scanner",
           "html_url": "https://github.com/fevar54/CVE-2026-33634-Scanner",
-          "description": "**Scanner automatizado para la detección de indicadores de compromiso (IOCs) asociados al ataque a la cadena de suministro TeamPCP (CVE-2026-33634)**",
+          "description": "Scanner de IOCs del ataque de cadena de suministro TeamPCP (CVE-2026-33634).",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-03-30T15:52:51Z",
+          "updated_at": "2026-08-25T16:45:58Z",
           "pushed_at": "2026-03-30T15:52:47Z",
           "created_at": "2026-03-30T15:43:43Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -51478,18 +51533,41 @@
           "clone_url": "https://github.com/0xBlackash/CVE-2026-35616.git"
         },
         {
+          "id": 1202961230,
+          "name": "forticlient_ems_cve_2026_35616_poc.py",
+          "full_name": "fevar54/forticlient_ems_cve_2026_35616_poc.py",
+          "html_url": "https://github.com/fevar54/forticlient_ems_cve_2026_35616_poc.py",
+          "description": "PoC de CVE-2026-35616: control de acceso indebido en FortiClient EMS.",
+          "stargazers_count": 0,
+          "forks_count": 2,
+          "language": "Python",
+          "updated_at": "2026-08-25T16:45:28Z",
+          "pushed_at": "2026-04-06T15:31:55Z",
+          "created_at": "2026-04-06T15:24:37Z",
+          "topics": [
+            "cve-pocs"
+          ],
+          "owner": {
+            "login": "fevar54",
+            "html_url": "https://github.com/fevar54"
+          },
+          "clone_url": "https://github.com/fevar54/forticlient_ems_cve_2026_35616_poc.py.git"
+        },
+        {
           "id": 1202954732,
           "name": "CVE-2026-35616-detector.py",
           "full_name": "fevar54/CVE-2026-35616-detector.py",
           "html_url": "https://github.com/fevar54/CVE-2026-35616-detector.py",
-          "description": "This tool detects if a FortiClient EMS server is vulnerable to **CVE-2026-35616**, a critical improper access control vulnerability affecting versions **7.4.5 through 7.4.6**.",
+          "description": "Detector de CVE-2026-35616: identifica servidores FortiClient EMS vulnerables (7.4.5-7.4.6).",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-04-06T15:22:35Z",
+          "updated_at": "2026-08-25T16:45:52Z",
           "pushed_at": "2026-04-06T15:22:31Z",
           "created_at": "2026-04-06T15:16:53Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -54874,14 +54952,16 @@
           "name": "marimo_CVE-2026-39987_RCE_PoC",
           "full_name": "fevar54/marimo_CVE-2026-39987_RCE_PoC",
           "html_url": "https://github.com/fevar54/marimo_CVE-2026-39987_RCE_PoC",
-          "description": "CVE-2026-39987 - Marimo < 0.23.0 Pre-Auth RCE (WebSocket) PoC de explotación - Conecta a /terminal/ws sin autenticación Author: Fevar54 Date: 2026-04-13 Severity: CRITICAL CVSS: 9.3",
+          "description": "PoC de CVE-2026-39987: RCE pre-autenticacion via WebSocket en Marimo menor a 0.23.0 (CVSS 9.3).",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-08-10T01:48:59Z",
+          "updated_at": "2026-08-25T16:45:27Z",
           "pushed_at": "2026-04-13T18:14:16Z",
           "created_at": "2026-04-13T18:06:46Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -62753,10 +62833,10 @@
           "full_name": "Colorful-glassblock/duchamp-root",
           "html_url": "https://github.com/Colorful-glassblock/duchamp-root",
           "description": "Xiaomi K70e (duchamp) one-click root via CVE-2026-43499 (IonStack) + KernelSU integration",
-          "stargazers_count": 48,
+          "stargazers_count": 49,
           "forks_count": 16,
           "language": "C",
-          "updated_at": "2026-08-23T19:56:20Z",
+          "updated_at": "2026-08-25T16:47:08Z",
           "pushed_at": "2026-07-31T03:13:27Z",
           "created_at": "2026-07-15T03:59:56Z",
           "topics": [],
@@ -62772,10 +62852,10 @@
           "full_name": "sarabpal-dev/IonStack-S22U",
           "html_url": "https://github.com/sarabpal-dev/IonStack-S22U",
           "description": "CVE-2026-43499 full exploit chain for Samsung Galaxy S22 Ultra (Android 5.10 kernel)",
-          "stargazers_count": 46,
+          "stargazers_count": 48,
           "forks_count": 7,
           "language": "C",
-          "updated_at": "2026-08-25T16:00:28Z",
+          "updated_at": "2026-08-25T16:58:17Z",
           "pushed_at": "2026-08-25T15:41:38Z",
           "created_at": "2026-08-08T23:35:25Z",
           "topics": [],
@@ -63082,6 +63162,25 @@
           "clone_url": "https://github.com/snothin/ghostlock-s26.git"
         },
         {
+          "id": 1331880004,
+          "name": "iqoo-temp-root",
+          "full_name": "hybLOVE/iqoo-temp-root",
+          "html_url": "https://github.com/hybLOVE/iqoo-temp-root",
+          "description": "vivo/iQOO 临时 root 工具箱 (免解锁临时root, CVE-2026-43499) - 源码与脚本",
+          "stargazers_count": 10,
+          "forks_count": 1,
+          "language": "Shell",
+          "updated_at": "2026-08-25T16:50:45Z",
+          "pushed_at": "2026-08-12T10:05:44Z",
+          "created_at": "2026-08-12T10:05:38Z",
+          "topics": [],
+          "owner": {
+            "login": "hybLOVE",
+            "html_url": "https://github.com/hybLOVE"
+          },
+          "clone_url": "https://github.com/hybLOVE/iqoo-temp-root.git"
+        },
+        {
           "id": 1323343757,
           "name": "ghostlock-honor-aak",
           "full_name": "oopnv70-lab/ghostlock-honor-aak",
@@ -63137,25 +63236,6 @@
             "html_url": "https://github.com/mobilehackinglab"
           },
           "clone_url": "https://github.com/mobilehackinglab/ghostlock-a17.git"
-        },
-        {
-          "id": 1331880004,
-          "name": "iqoo-temp-root",
-          "full_name": "hybLOVE/iqoo-temp-root",
-          "html_url": "https://github.com/hybLOVE/iqoo-temp-root",
-          "description": "vivo/iQOO 临时 root 工具箱 (免解锁临时root, CVE-2026-43499) - 源码与脚本",
-          "stargazers_count": 9,
-          "forks_count": 1,
-          "language": "Shell",
-          "updated_at": "2026-08-24T01:08:21Z",
-          "pushed_at": "2026-08-12T10:05:44Z",
-          "created_at": "2026-08-12T10:05:38Z",
-          "topics": [],
-          "owner": {
-            "login": "hybLOVE",
-            "html_url": "https://github.com/hybLOVE"
-          },
-          "clone_url": "https://github.com/hybLOVE/iqoo-temp-root.git"
         },
         {
           "id": 1304727986,
@@ -63284,11 +63364,11 @@
           "name": "CVE-2026-43499-S26",
           "full_name": "1ndevelopment/CVE-2026-43499-S26",
           "html_url": "https://github.com/1ndevelopment/CVE-2026-43499-S26",
-          "description": "Root prototype for Galaxy S26 (SM-S942U) that is very much indev",
+          "description": "Root prototype for Galaxy S26 (SM-S942U) that is very much indev. If you're expecting this to work, it doesn't.",
           "stargazers_count": 7,
           "forks_count": 2,
           "language": "C",
-          "updated_at": "2026-08-19T22:39:58Z",
+          "updated_at": "2026-08-25T16:55:19Z",
           "pushed_at": "2026-08-19T22:39:34Z",
           "created_at": "2026-08-01T22:45:30Z",
           "topics": [
@@ -64258,6 +64338,25 @@
           "clone_url": "https://github.com/HORKimhab/CVE-2026-43499.git"
         },
         {
+          "id": 1345843523,
+          "name": "RootMyVivo",
+          "full_name": "zenyxx-xd/RootMyVivo",
+          "html_url": "https://github.com/zenyxx-xd/RootMyVivo",
+          "description": "One-click root for vivo/iQOO devices on locked bootloader | CVE-2026-43499 + KernelSU",
+          "stargazers_count": 0,
+          "forks_count": 0,
+          "language": "Kotlin",
+          "updated_at": "2026-08-25T17:24:23Z",
+          "pushed_at": "2026-08-25T17:12:57Z",
+          "created_at": "2026-08-25T07:52:11Z",
+          "topics": [],
+          "owner": {
+            "login": "zenyxx-xd",
+            "html_url": "https://github.com/zenyxx-xd"
+          },
+          "clone_url": "https://github.com/zenyxx-xd/RootMyVivo.git"
+        },
+        {
           "id": 1340644453,
           "name": "k50g-pocof4gt-cve-2026-43499-test",
           "full_name": "Cxyofficial/k50g-pocof4gt-cve-2026-43499-test",
@@ -64275,25 +64374,6 @@
             "html_url": "https://github.com/Cxyofficial"
           },
           "clone_url": "https://github.com/Cxyofficial/k50g-pocof4gt-cve-2026-43499-test.git"
-        },
-        {
-          "id": 1345843523,
-          "name": "RootMyVivo",
-          "full_name": "zenyxx-xd/RootMyVivo",
-          "html_url": "https://github.com/zenyxx-xd/RootMyVivo",
-          "description": "One-click root for vivo/iQOO devices on locked bootloader | CVE-2026-43499 + KernelSU",
-          "stargazers_count": 0,
-          "forks_count": 0,
-          "language": "Kotlin",
-          "updated_at": "2026-08-25T11:36:42Z",
-          "pushed_at": "2026-08-25T11:33:16Z",
-          "created_at": "2026-08-25T07:52:11Z",
-          "topics": [],
-          "owner": {
-            "login": "zenyxx-xd",
-            "html_url": "https://github.com/zenyxx-xd"
-          },
-          "clone_url": "https://github.com/zenyxx-xd/RootMyVivo.git"
         },
         {
           "id": 1344805429,
@@ -67191,14 +67271,16 @@
           "name": "PoC-Funcional---CVE-2026-45247-Mirasvit-Full-Page-Cache-Warmer-RCE-",
           "full_name": "fevar54/PoC-Funcional---CVE-2026-45247-Mirasvit-Full-Page-Cache-Warmer-RCE-",
           "html_url": "https://github.com/fevar54/PoC-Funcional---CVE-2026-45247-Mirasvit-Full-Page-Cache-Warmer-RCE-",
-          "description": "CVE-2026-45247 - Mirasvit Full Page Cache Warmer for Magento 2 Unauthenticated PHP Object Injection -> Remote Code Execution",
+          "description": "PoC funcional de CVE-2026-45247: PHP Object Injection a RCE no autenticado en Mirasvit Full Page Cache (Magento 2).",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "Python",
-          "updated_at": "2026-08-09T17:17:07Z",
+          "updated_at": "2026-08-25T16:45:17Z",
           "pushed_at": "2026-06-09T21:46:42Z",
           "created_at": "2026-06-09T21:39:33Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -68190,14 +68272,16 @@
           "name": "FULL-ANALYSIS---CVE-2026-45829-ChromaDB-",
           "full_name": "fevar54/FULL-ANALYSIS---CVE-2026-45829-ChromaDB-",
           "html_url": "https://github.com/fevar54/FULL-ANALYSIS---CVE-2026-45829-ChromaDB-",
-          "description": null,
+          "description": "Analisis completo y PoC de CVE-2026-45829 en ChromaDB.",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-05-20T15:55:41Z",
+          "updated_at": "2026-08-25T16:45:22Z",
           "pushed_at": "2026-05-20T15:54:41Z",
           "created_at": "2026-05-20T15:31:29Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -70680,14 +70764,16 @@
           "name": "CVE-2026-48172---LiteSpeed-cPanel-Plugin-Version-Auditor",
           "full_name": "fevar54/CVE-2026-48172---LiteSpeed-cPanel-Plugin-Version-Auditor",
           "html_url": "https://github.com/fevar54/CVE-2026-48172---LiteSpeed-cPanel-Plugin-Version-Auditor",
-          "description": "This script safely checks the local version of the LiteSpeed cPanel plugin to determine if the system is running a version vulnerable to CVE-2026-48172. It does not send exploits or interact with network endpoints maliciously.",
+          "description": "Auditor de version para CVE-2026-48172: verifica localmente si el plugin LiteSpeed de cPanel es vulnerable, sin explotar.",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-05-28T16:50:31Z",
+          "updated_at": "2026-08-25T16:45:50Z",
           "pushed_at": "2026-05-28T16:50:05Z",
           "created_at": "2026-05-28T16:47:33Z",
-          "topics": [],
+          "topics": [
+            "cve-detection-tools"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -73358,14 +73444,16 @@
           "name": "Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-",
           "full_name": "fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-",
           "html_url": "https://github.com/fevar54/Proof-of-Concept-POC---CVE-2026-49975-HTTP-2-Bomb-",
-          "description": "Este repositorio contiene un Proof of Concept (POC) para CVE-2026-49975, también conocida como HTTP/2 Bomb, una vulnerabilidad de denegación de servicio (DoS) remoto que afecta a la mayoría de los servidores web principales en su configuración HTTP/2 predeterminada, incluyendo:",
+          "description": "PoC de CVE-2026-49975 (HTTP/2 Bomb): DoS remoto contra servidores web con HTTP/2 por defecto.",
           "stargazers_count": 6,
           "forks_count": 2,
           "language": "Python",
-          "updated_at": "2026-06-23T17:58:57Z",
+          "updated_at": "2026-08-25T16:45:21Z",
           "pushed_at": "2026-06-03T20:34:52Z",
           "created_at": "2026-06-03T20:22:30Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -74224,14 +74312,16 @@
           "name": "CVE-2026-50751---Check-Point-IKEv1-Authentication-Bypass-Exploit",
           "full_name": "fevar54/CVE-2026-50751---Check-Point-IKEv1-Authentication-Bypass-Exploit",
           "html_url": "https://github.com/fevar54/CVE-2026-50751---Check-Point-IKEv1-Authentication-Bypass-Exploit",
-          "description": "Vulnerability: Logic flow weakness in Remote Access and Mobile Access ",
+          "description": "PoC de CVE-2026-50751: bypass de autenticacion IKEv1 en Check Point Remote/Mobile Access.",
           "stargazers_count": 1,
           "forks_count": 3,
           "language": "Python",
-          "updated_at": "2026-06-15T10:26:14Z",
+          "updated_at": "2026-08-25T16:45:16Z",
           "pushed_at": "2026-06-10T14:27:51Z",
           "created_at": "2026-06-10T14:16:22Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -76814,14 +76904,16 @@
           "name": "CVE-2026-54420-LiteSpeed-Symlink-Exploit",
           "full_name": "fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit",
           "html_url": "https://github.com/fevar54/CVE-2026-54420-LiteSpeed-Symlink-Exploit",
-          "description": "A vulnerability in LiteSpeed cPanel Plugin before 2.4.8 and WHM Plugin before 5.3.2.0 mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
+          "description": "PoC de CVE-2026-54420: explotacion via symlink en el plugin LiteSpeed de cPanel/WHM.",
           "stargazers_count": 0,
           "forks_count": 1,
           "language": "Python",
-          "updated_at": "2026-06-18T15:24:37Z",
+          "updated_at": "2026-08-25T16:45:08Z",
           "pushed_at": "2026-06-18T15:23:58Z",
           "created_at": "2026-06-18T15:18:55Z",
-          "topics": [],
+          "topics": [
+            "cve-pocs"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -87292,14 +87384,16 @@
           "name": "CVE-2026-68820-Mitigation-PoC-",
           "full_name": "fevar54/CVE-2026-68820-Mitigation-PoC-",
           "html_url": "https://github.com/fevar54/CVE-2026-68820-Mitigation-PoC-",
-          "description": "Este repositorio contiene una demostración educativa de la mitigación para **CVE-2026-68820**, una vulnerabilidad crítica de tipo **Use-After-Free (UAF)** en el driver `afd.sys` de Windows.",
+          "description": "Demostracion educativa de mitigacion de CVE-2026-68820: Use-After-Free en afd.sys de Windows.",
           "stargazers_count": 0,
           "forks_count": 0,
           "language": "YARA",
-          "updated_at": "2026-08-24T15:37:13Z",
+          "updated_at": "2026-08-25T16:45:48Z",
           "pushed_at": "2026-08-24T15:28:43Z",
           "created_at": "2026-08-24T14:57:50Z",
-          "topics": [],
+          "topics": [
+            "cve-mitigations"
+          ],
           "owner": {
             "login": "fevar54",
             "html_url": "https://github.com/fevar54"
@@ -90075,25 +90169,6 @@
             "html_url": "https://github.com/JEduardo-Chavez"
           },
           "clone_url": "https://github.com/JEduardo-Chavez/CVEChavez2026.git"
-        },
-        {
-          "id": 1202961230,
-          "name": "forticlient_ems_cve_2026_35616_poc.py",
-          "full_name": "fevar54/forticlient_ems_cve_2026_35616_poc.py",
-          "html_url": "https://github.com/fevar54/forticlient_ems_cve_2026_35616_poc.py",
-          "description": null,
-          "stargazers_count": 0,
-          "forks_count": 2,
-          "language": "Python",
-          "updated_at": "2026-04-06T15:31:59Z",
-          "pushed_at": "2026-04-06T15:31:55Z",
-          "created_at": "2026-04-06T15:24:37Z",
-          "topics": [],
-          "owner": {
-            "login": "fevar54",
-            "html_url": "https://github.com/fevar54"
-          },
-          "clone_url": "https://github.com/fevar54/forticlient_ems_cve_2026_35616_poc.py.git"
         },
         {
           "id": 1200120765,
