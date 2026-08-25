@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:59:41.014Z",
+  "generated_at": "2026-08-25T19:47:43.936Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "851 recent"
+      "detail": "839 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "823 scored"
+      "detail": "820 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4284 mapped"
+      "detail": "4285 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 78,
-      "rising": 92,
+      "rising": 91,
       "repos": {
         "count": 8,
         "stars": 18,
@@ -220,7 +220,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 30,
+      "rising": 29,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -763,7 +763,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 9,
         "stars": 23,
@@ -2236,7 +2236,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 71,
+      "rising": 70,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2286,7 +2286,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 23,
+      "rising": 22,
       "repos": {
         "count": 8,
         "stars": 49,
@@ -2347,7 +2347,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2565,7 +2565,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2635,7 +2635,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2670,7 +2670,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2705,7 +2705,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2828,6 +2828,41 @@
       "rank": 56
     },
     {
+      "cve_id": "CVE-2026-79787",
+      "title": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing una…",
+      "vendor": null,
+      "product": null,
+      "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from unsigned Authorization headers and impersonate any user, including service accounts, to read, write, and delete arbitrary data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-287",
+      "published": "2026-08-25T19:16:54.907",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2873,7 +2908,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2916,7 +2951,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-62608",
@@ -2948,41 +2983,6 @@
       "timeline": [
         {
           "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-66788",
-      "title": "A flaw was found in Lighthouse.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in Lighthouse. A remote attacker, by compromising a spoke cluster, can exploit a vulnerability where the destination namespace for resource injection is derived from an attacker-controlled label or annotation on the broker object. This allows the attacker to inject unauthorized EndpointSlices and ServiceImports into any namespace on peer clusters, including critical system namespaces like kube-system and openshift-*. This could lead to privilege escalation or other forms of system compromise within the cluster.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00293,
-      "epss_pct": 0.21285,
-      "cwe": "CWE-284",
-      "published": "2026-08-20T19:16:58.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
           "label": "Published to NVD"
         }
       ],
