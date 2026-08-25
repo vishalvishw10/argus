@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T20:48:29.306Z",
+  "generated_at": "2026-08-25T21:46:03.969Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "834 recent"
+      "detail": "839 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4285 mapped"
+      "detail": "4287 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 78,
-      "rising": 90,
+      "rising": 88,
       "repos": {
         "count": 8,
         "stars": 18,
@@ -220,7 +220,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 28,
+      "rising": 27,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -1564,15 +1564,22 @@
       "hype": 39,
       "rising": 0,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "html_url": "https://github.com/fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited"
+        "actively-exploited",
+        "poc-available"
       ],
       "timeline": [
         {
@@ -2236,7 +2243,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 69,
+      "rising": 68,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2286,10 +2293,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 8,
-        "stars": 49,
+        "stars": 50,
         "top": [
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
@@ -2425,7 +2432,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2670,7 +2677,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2705,7 +2712,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2740,7 +2747,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2793,6 +2800,41 @@
       "rank": 55
     },
     {
+      "cve_id": "CVE-2026-80104",
+      "title": "DB-GPT builds the destination path for an uploaded skill from the multipart filename without constraining it to the u…",
+      "vendor": null,
+      "product": null,
+      "description": "DB-GPT builds the destination path for an uploaded skill from the multipart filename without constraining it to the upload directory. skill_upload in packages/dbgpt-app/src/dbgpt_app/openapi/api_v1/agentic_data_api.py takes file.filename as given and writes the request body to upload_dir / filename. A path composed with that operator discards the left operand when the right one is absolute and follows parent references otherwise, so a filename such as ../../../tmp/x or /tmp/x resolves outside the intended directory; nothing canonicalises the result, checks that it remains under the upload root, or prevents a .py suffix. The route's only dependency is get_user_from_headers in dbgpt_serve/utils/auth.py, which returns a request carrying the admin role whether or not a user_id header is supplied, so the endpoint is reachable without credentials. A remote attacker holding no account can therefore write attacker-controlled bytes to any path the server process can write, place a new Python module inside the application package or replace one the application already imports, and obtain code execution in the server process when that module is next imported.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-08-25T21:18:24.163",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-17544",
       "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
       "vendor": null,
@@ -2838,7 +2880,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2881,7 +2923,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-62608",
@@ -2916,7 +2958,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-66788",
@@ -2930,41 +2972,6 @@
       "epss_pct": 0.21285,
       "cwe": "CWE-284",
       "published": "2026-08-20T19:16:58.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-17000",
-      "title": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to improper…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to improper authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00403,
-      "epss_pct": 0.33266,
-      "cwe": "CWE-287",
-      "published": "2026-08-20T22:17:10.813",
       "kev": {
         "in_kev": false
       },
