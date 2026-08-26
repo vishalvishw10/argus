@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T17:50:56.852Z",
+  "generated_at": "2026-08-26T19:21:12.368Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "727 recent"
+      "detail": "661 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "756 scored"
+      "detail": "696 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4300 mapped"
+      "detail": "4303 mapped"
     },
     {
       "name": "Reddit",
@@ -84,15 +84,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 73,
-      "rising": 93,
+      "rising": 91,
       "repos": {
         "count": 9,
-        "stars": 23,
+        "stars": 24,
         "top": [
           {
             "full_name": "imbas007/CVE-2026-60004-POC",
             "html_url": "https://github.com/imbas007/CVE-2026-60004-POC",
-            "stars": 15
+            "stars": 16
           },
           {
             "full_name": "HORKimhab/CVE-2026-60004",
@@ -160,7 +160,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 66,
-      "rising": 38,
+      "rising": 37,
       "repos": {
         "count": 8,
         "stars": 19,
@@ -290,7 +290,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 62,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 4,
         "stars": 7,
@@ -742,6 +742,65 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.79215,
+      "epss_pct": 0.99568,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 53,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 7,
+        "top": [
+          {
+            "full_name": "VuxNx/CVE-2026-72898",
+            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
+            "stars": 2
+          },
+          {
+            "full_name": "4minx/CVE-2026-72898",
+            "html_url": "https://github.com/4minx/CVE-2026-72898",
+            "stars": 2
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-72898",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
+    },
+    {
       "cve_id": "CVE-2026-33824",
       "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
       "vendor": "Microsoft",
@@ -790,65 +849,6 @@
       "timeline": [
         {
           "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.79215,
-      "epss_pct": 0.99568,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "VuxNx/CVE-2026-72898",
-            "html_url": "https://github.com/VuxNx/CVE-2026-72898",
-            "stars": 2
-          },
-          {
-            "full_name": "4minx/CVE-2026-72898",
-            "html_url": "https://github.com/4minx/CVE-2026-72898",
-            "stars": 2
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-72898",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1635,8 +1635,8 @@
       "vendor": "Red Hat",
       "product": "Libuser",
       "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
-      "cvss": 7.2,
-      "severity": "HIGH",
+      "cvss": 5.1,
+      "severity": "MEDIUM",
       "epss": 0.07092,
       "epss_pct": 0.93742,
       "cwe": "CWE-264",
@@ -1676,8 +1676,8 @@
       "vendor": "Red Hat",
       "product": "Automatic Bug Reporting Tool",
       "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 6.9,
-      "severity": "MEDIUM",
+      "cvss": 7.8,
+      "severity": "HIGH",
       "epss": 0.03412,
       "epss_pct": 0.87992,
       "cwe": "CWE-59",
@@ -2512,15 +2512,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 8,
-        "stars": 70,
+        "stars": 71,
         "top": [
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 27
+            "stars": 28
           },
           {
             "full_name": "Red-Darkin/CVE-2026-18963-keycloak",
@@ -2573,7 +2573,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 46,
+      "rising": 44,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2654,49 +2654,6 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2026-76071",
-      "title": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthentica…",
-      "vendor": null,
-      "product": null,
-      "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by supplying an oversized destHost parameter to the ipFilterList=mod action in netis.cgi. Attackers can exploit widthless sscanf conversions that copy user-supplied input into fixed-size stack buffers before authentication is verified, achieving remote code execution as root due to the Boa web server executing the CGI environment with root privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01061,
-      "epss_pct": 0.62084,
-      "cwe": "CWE-121",
-      "published": "2026-08-24T16:17:23.117",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 12,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "ozcanpng/CVE-2026-76071",
-            "html_url": "https://github.com/ozcanpng/CVE-2026-76071",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-24",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
       "cve_id": "CVE-2026-71921",
       "title": "Multiple DrayTek VigorSwitch models contain a pre-authentication command injection vulnerability in the setget.cgi in…",
       "vendor": null,
@@ -2729,7 +2686,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-78570",
@@ -2743,6 +2700,41 @@
       "epss_pct": 0.32906,
       "cwe": "CWE-269",
       "published": "2026-08-25T10:18:13.563",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-16286",
+      "title": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardw…",
+      "vendor": null,
+      "product": null,
+      "description": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload a Web Shell to a Web Server.\n\nThis issue affects Software Repository Management: before 2fb4acee.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00322,
+      "epss_pct": 0.24556,
+      "cwe": "CWE-434",
+      "published": "2026-08-25T15:16:30.180",
       "kev": {
         "in_kev": false
       },
@@ -2767,41 +2759,6 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-16286",
-      "title": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardw…",
-      "vendor": null,
-      "product": null,
-      "description": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload a Web Shell to a Web Server.\n\nThis issue affects Software Repository Management: before 2fb4acee.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00322,
-      "epss_pct": 0.24556,
-      "cwe": "CWE-434",
-      "published": "2026-08-25T15:16:30.180",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
       "cve_id": "CVE-2024-58378",
       "title": "Nokogiri before 1.15.6 and 1.16.x before 1.16.2 (CRuby, when using the packaged libxml2) is affected by a use-after-f…",
       "vendor": null,
@@ -2819,7 +2776,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2834,7 +2791,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-76193",
@@ -2869,7 +2826,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-76195",
@@ -2904,7 +2861,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-76197",
@@ -2939,7 +2896,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-79787",
@@ -2974,7 +2931,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-80104",
@@ -2994,7 +2951,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3009,7 +2966,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-79911",
@@ -3041,6 +2998,41 @@
       "timeline": [
         {
           "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-18431",
+      "title": "The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when t…",
+      "vendor": null,
+      "product": null,
+      "description": "The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when the Fusion Builder plugin is installed and active in versions up to, and including, 3.16. This is due to a chain of authorization and input validation weaknesses across the two components that makes it possible for unauthenticated attackers to write attacker-controlled files to the server. This can be used to create and execute arbitrary PHP files, resulting in remote code execution and complete site compromise. Successful exploitation requires both Avada and Fusion Builder to be installed and active, as well as certain administrator-authored content to be present.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00638,
+      "epss_pct": 0.47941,
+      "cwe": "CWE-862",
+      "published": "2026-08-26T07:16:45.500",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-26",
           "label": "Published to NVD"
         }
       ],
