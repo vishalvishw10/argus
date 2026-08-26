@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26T15:54:03.608Z",
+  "generated_at": "2026-08-26T17:50:56.852Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 39,
-    "kev_total": 1676,
+    "kev_count": 45,
+    "kev_total": 1682,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1676 entries"
+      "detail": "1682 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "824 recent"
+      "detail": "727 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "855 scored"
+      "detail": "756 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4296 mapped"
+      "detail": "4300 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 73,
-      "rising": 96,
+      "rising": 93,
       "repos": {
         "count": 9,
         "stars": 23,
@@ -159,8 +159,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 67,
-      "rising": 40,
+      "hype": 66,
+      "rising": 38,
       "repos": {
         "count": 8,
         "stars": 19,
@@ -290,7 +290,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 62,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 4,
         "stars": 7,
@@ -641,6 +641,48 @@
       "rank": 9
     },
     {
+      "cve_id": "CVE-2021-23758",
+      "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Ajax.NET Professional",
+      "product": "Ajax.NET Professional",
+      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.89096,
+      "epss_pct": 0.99768,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
       "cve_id": "CVE-2026-63077",
       "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
       "vendor": "JetBrains",
@@ -697,7 +739,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -751,7 +793,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -810,7 +852,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-8452",
+      "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler ADC and NetScaler Gateway",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01041,
+      "epss_pct": 0.6151,
+      "cwe": "CWE-119",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-08-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 34,
+      "repos": {
+        "count": 3,
+        "stars": 61,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452",
+            "stars": 58
+          },
+          {
+            "full_name": "derekpreston81/CVE_ADC_IOC_2026",
+            "html_url": "https://github.com/derekpreston81/CVE_ADC_IOC_2026",
+            "stars": 2
+          },
+          {
+            "full_name": "BishopFox/CVE-2026-8452-check",
+            "html_url": "https://github.com/BishopFox/CVE-2026-8452-check",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -869,7 +969,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -928,7 +1028,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -982,7 +1082,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1036,7 +1136,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2019-1068",
+      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SQL Server",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.44665,
+      "epss_pct": 0.98673,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-08-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1094,7 +1235,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1152,7 +1293,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1210,7 +1351,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1263,7 +1404,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1316,7 +1457,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -1374,7 +1515,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -1428,7 +1569,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1486,7 +1627,130 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 27
+    },
+    {
+      "cve_id": "CVE-2015-3246",
+      "title": "Red Hat Libuser Race Condition Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Libuser",
+      "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.07092,
+      "epss_pct": 0.93742,
+      "cwe": "CWE-264",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 6.9,
+      "severity": "MEDIUM",
+      "epss": 0.03412,
+      "epss_pct": 0.87992,
+      "cwe": "CWE-59",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.06344,
+      "epss_pct": 0.93111,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -1544,7 +1808,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -1592,7 +1856,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 32
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1633,7 +1897,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1691,7 +1955,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-58644",
@@ -1739,7 +2003,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 35
     },
     {
       "cve_id": "CVE-2008-4128",
@@ -1780,7 +2044,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -1821,7 +2085,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1862,7 +2126,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-46817",
@@ -1915,7 +2179,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1956,7 +2220,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 40
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -1997,7 +2261,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2038,7 +2302,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2079,7 +2343,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 43
     },
     {
       "cve_id": "CVE-2023-4346",
@@ -2120,7 +2384,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-56155",
@@ -2161,7 +2425,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2228,7 +2492,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 40
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-18963",
@@ -2248,15 +2512,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 8,
-        "stars": 68,
+        "stars": 70,
         "top": [
           {
             "full_name": "Snizi/CVE-2026-18963-Exploit",
             "html_url": "https://github.com/Snizi/CVE-2026-18963-Exploit",
-            "stars": 26
+            "stars": 27
           },
           {
             "full_name": "Red-Darkin/CVE-2026-18963-keycloak",
@@ -2289,7 +2553,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 41
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-61979",
@@ -2309,7 +2573,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 48,
+      "rising": 46,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2339,7 +2603,55 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 42
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-19632",
+      "title": "The TranslatePress – Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Sensitive…",
+      "vendor": null,
+      "product": null,
+      "description": "The TranslatePress – Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.1 via the 'trp_get_translations_regular' AJAX action. This makes it possible for unauthenticated attackers to extract the raw administrator password-reset URL — including the plaintext reset key and login parameters stored in the translation dictionary table — enabling full administrator account takeover. This vulnerability is only exploitable when automatic string saving is enabled (the default setting) and the target administrator's profile locale is set to a published secondary language, as these conditions cause the password-reset URL to be persisted as a translatable string in the secondary-language dictionary table.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00787,
+      "epss_pct": 0.53486,
+      "cwe": "CWE-640",
+      "published": "2026-08-26T05:18:06.810",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 18,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "YonLiud/CVE-2026-19632",
+            "html_url": "https://github.com/YonLiud/CVE-2026-19632",
+            "stars": 1
+          },
+          {
+            "full_name": "DeadExpl0it/CVE-2026-19632-POC",
+            "html_url": "https://github.com/DeadExpl0it/CVE-2026-19632-POC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-76071",
@@ -2382,55 +2694,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-19632",
-      "title": "The TranslatePress – Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Sensitive…",
-      "vendor": null,
-      "product": null,
-      "description": "The TranslatePress – Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.1 via the 'trp_get_translations_regular' AJAX action. This makes it possible for unauthenticated attackers to extract the raw administrator password-reset URL — including the plaintext reset key and login parameters stored in the translation dictionary table — enabling full administrator account takeover. This vulnerability is only exploitable when automatic string saving is enabled (the default setting) and the target administrator's profile locale is set to a published secondary language, as these conditions cause the password-reset URL to be persisted as a translatable string in the secondary-language dictionary table.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00787,
-      "epss_pct": 0.53486,
-      "cwe": "CWE-640",
-      "published": "2026-08-26T05:18:06.810",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 18,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "DeadExpl0it/CVE-2026-19632-POC",
-            "html_url": "https://github.com/DeadExpl0it/CVE-2026-19632-POC",
-            "stars": 0
-          },
-          {
-            "full_name": "YonLiud/CVE-2026-19632",
-            "html_url": "https://github.com/YonLiud/CVE-2026-19632",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-71921",
@@ -2465,42 +2729,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-78676",
-      "title": "GitPython before 3.1.59 fails to safely re-serialize multi-line git-config values during write operations, corrupting…",
-      "vendor": null,
-      "product": null,
-      "description": "GitPython before 3.1.59 fails to safely re-serialize multi-line git-config values during write operations, corrupting dormant quoted values into injected directives like core.hooksPath. Attackers can craft config files with embedded newlines that become live git directives after any unrelated GitPython config write, enabling arbitrary code execution via hook invocation.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00403,
-      "epss_pct": 0.33338,
-      "cwe": "CWE-88",
-      "published": "2026-08-25T02:16:52.030",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-78570",
@@ -2535,7 +2764,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-16286",
@@ -2570,42 +2799,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2022-51000",
-      "title": "Nokogiri before 1.13.2 (CRuby, when using packaged libraries) ships vendored libxml2 2.9.12 and libxslt 1.1.34, which…",
-      "vendor": null,
-      "product": null,
-      "description": "Nokogiri before 1.13.2 (CRuby, when using packaged libraries) ships vendored libxml2 2.9.12 and libxslt 1.1.34, which are affected by two upstream CVEs. Via CVE-2021-30560 in libxslt, an application transforming XML with untrusted XSL stylesheets is vulnerable to a denial-of-service attack. Via CVE-2022-23308 in libxml2, an application parsing an untrusted document with parse option DTDVALID set to true and NOENT set to false may be vulnerable to denial of service, memory disclosure, or code execution. Nokogiri 1.13.2 upgrades vendored libxml2 to 2.9.13 and libxslt to 1.1.35.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00441,
-      "epss_pct": 0.3669,
-      "cwe": "CWE-416",
-      "published": "2026-08-25T16:16:44.380",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
+      "rank": 53
     },
     {
       "cve_id": "CVE-2024-58378",
@@ -2640,7 +2834,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-76193",
@@ -2675,7 +2869,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-76195",
@@ -2710,7 +2904,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-76197",
@@ -2745,7 +2939,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-79787",
@@ -2765,7 +2959,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2780,7 +2974,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-80104",
@@ -2815,7 +3009,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-79911",
@@ -2847,167 +3041,6 @@
       "timeline": [
         {
           "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-18431",
-      "title": "The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when t…",
-      "vendor": null,
-      "product": null,
-      "description": "The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when the Fusion Builder plugin is installed and active in versions up to, and including, 3.16. This is due to a chain of authorization and input validation weaknesses across the two components that makes it possible for unauthenticated attackers to write attacker-controlled files to the server. This can be used to create and execute arbitrary PHP files, resulting in remote code execution and complete site compromise. Successful exploitation requires both Avada and Fusion Builder to be installed and active, as well as certain administrator-authored content to be present.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00638,
-      "epss_pct": 0.47941,
-      "cwe": "CWE-862",
-      "published": "2026-08-26T07:16:45.500",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-80203",
-      "title": "The getgrav/grav-plugin-api plugin before 1.0.18 does not enforce API-key scope in the requireNotSuperTarget() functi…",
-      "vendor": null,
-      "product": null,
-      "description": "The getgrav/grav-plugin-api plugin before 1.0.18 does not enforce API-key scope in the requireNotSuperTarget() function in UsersController.php across seven sensitive user-management endpoints. The check uses isSuperAdmin() on the acting account rather than verifying whether the specific API key carries super authority (via isSuperWithinScope()). As a result, an API key scoped below full super authority but belonging to a super-admin account can act against other super-admin accounts—disabling their 2FA, deleting their avatar, minting new API keys under their identity, or deleting their existing API keys.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-863",
-      "published": "2026-08-26T11:16:39.647",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-17544",
-      "title": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versi…",
-      "vendor": null,
-      "product": null,
-      "description": "Attacker-provided inputs to bccomp() could lead to an out-of-bounds write with stack and heap corruption in PHP versions from 8.4.* before 8.4.24 and from 8.5.* before 8.5.9.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00426,
-      "epss_pct": 0.35428,
-      "cwe": "CWE-787",
-      "published": "2026-07-30T12:17:27.347",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "Boreas37/CVE-2026-17544-PoC",
-            "html_url": "https://github.com/Boreas37/CVE-2026-17544-PoC",
-            "stars": 6
-          },
-          {
-            "full_name": "r2qa/CVE-2026-17544",
-            "html_url": "https://github.com/r2qa/CVE-2026-17544",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-74943",
-      "title": "Use-after-free in the Graphics: ImageLib component.",
-      "vendor": null,
-      "product": null,
-      "description": "Use-after-free in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0057,
-      "epss_pct": 0.44671,
-      "cwe": "CWE-416",
-      "published": "2026-08-18T13:17:30.817",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "defineid/Revenant",
-            "html_url": "https://github.com/defineid/Revenant",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
           "label": "Published to NVD"
         }
       ],
