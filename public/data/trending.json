@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T05:52:06.216Z",
+  "generated_at": "2026-08-26T07:10:50.069Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -83,8 +83,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 78,
-      "rising": 77,
+      "hype": 77,
+      "rising": 75,
       "repos": {
         "count": 8,
         "stars": 19,
@@ -138,6 +138,82 @@
         }
       ],
       "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-60004",
+      "title": "Gitea Code Injection Vulnerability",
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-25",
+        "due_date": "2026-08-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 74,
+      "rising": 100,
+      "repos": {
+        "count": 9,
+        "stars": 23,
+        "top": [
+          {
+            "full_name": "imbas007/CVE-2026-60004-POC",
+            "html_url": "https://github.com/imbas007/CVE-2026-60004-POC",
+            "stars": 15
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-60004",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-60004",
+            "stars": 4
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-60004-poc-gitea",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-60004-poc-gitea",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload",
+          "url": "https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html",
+          "date": "2026-08-26T06:27:07.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "CISA Warns of Exploited Gitea Vulnerability",
+          "url": "https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/",
+          "date": "2026-08-26T05:17:28.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-08-26",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-15409",
@@ -197,76 +273,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-60004",
-      "title": "Gitea Code Injection Vulnerability",
-      "vendor": "Gitea",
-      "product": "Gitea",
-      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-25",
-        "due_date": "2026-08-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 70,
-      "repos": {
-        "count": 9,
-        "stars": 23,
-        "top": [
-          {
-            "full_name": "imbas007/CVE-2026-60004-POC",
-            "html_url": "https://github.com/imbas007/CVE-2026-60004-POC",
-            "stars": 15
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-60004",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-60004",
-            "stars": 4
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-60004-poc-gitea",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-60004-poc-gitea",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "CISA Warns of Exploited Gitea Vulnerability",
-          "url": "https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/",
-          "date": "2026-08-26T05:17:28.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-26",
-          "label": "Covered by SecurityWeek"
-        }
-      ],
       "rank": 3
     },
     {
@@ -290,7 +296,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 4,
         "stars": 6,
@@ -872,76 +878,6 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-65400",
-      "title": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.10431,
-      "epss_pct": 0.95378,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "panchocosil/CVE-2026-65400-poc",
-            "html_url": "https://github.com/panchocosil/CVE-2026-65400-poc",
-            "stars": 3
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-65400",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
-            "stars": 3
-          },
-          {
-            "full_name": "acheong08/CVE-2026-65400",
-            "html_url": "https://github.com/acheong08/CVE-2026-65400",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation",
-          "url": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
-          "date": "2026-08-19T11:01:48.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-08-19",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 14
-    },
-    {
       "cve_id": "CVE-2026-0770",
       "title": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
       "vendor": "Langflow",
@@ -998,7 +934,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-25089",
@@ -1052,7 +988,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1106,7 +1042,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1164,7 +1100,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1217,7 +1153,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1275,7 +1211,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1328,7 +1264,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1381,7 +1317,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-56164",
@@ -1439,7 +1375,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-15410",
@@ -1490,6 +1426,64 @@
       "timeline": [
         {
           "date": "2026-07-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-65400",
+      "title": "Apple macOS Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.10431,
+      "epss_pct": 0.95378,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "panchocosil/CVE-2026-65400-poc",
+            "html_url": "https://github.com/panchocosil/CVE-2026-65400-poc",
+            "stars": 3
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-65400",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
+            "stars": 3
+          },
+          {
+            "full_name": "acheong08/CVE-2026-65400",
+            "html_url": "https://github.com/acheong08/CVE-2026-65400",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2255,7 +2249,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 8,
         "stars": 61,
@@ -2316,7 +2310,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 59,
+      "rising": 58,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2514,7 +2508,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2794,7 +2788,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
