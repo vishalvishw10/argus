@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T05:15:43.214Z",
+  "generated_at": "2026-09-01T10:11:11.487Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
     "kev_count": 40,
     "kev_total": 1687,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "589 recent"
+      "detail": "609 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "596 scored"
+      "detail": "598 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "14 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4369 mapped"
+      "detail": "4370 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,146 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00393,
+      "epss_pct": 0.32397,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 72,
+      "rising": 71,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          },
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "PaperCut Exploitation Escalates to Active Intrusions",
+          "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
+          "date": "2026-09-01T05:27:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-01",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00462,
+      "epss_pct": 0.38255,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 71,
+      "rising": 71,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          },
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "PaperCut Exploitation Escalates to Active Intrusions",
+          "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
+          "date": "2026-09-01T05:27:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-01",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 2
+    },
     {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
@@ -130,122 +270,6 @@
         {
           "date": "2026-08-26",
           "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00393,
-      "epss_pct": 0.32397,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 62,
-      "rising": 36,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          },
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00462,
-      "epss_pct": 0.38255,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 61,
-      "rising": 36,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          },
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 3
@@ -1719,64 +1743,6 @@
       "rank": 30
     },
     {
-      "cve_id": "CVE-2026-64849",
-      "title": "MLflow Server-Side Request Forgery Vulnerability",
-      "vendor": "MLflow",
-      "product": "MLflow",
-      "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "epss": 0.1641,
-      "epss_pct": 0.96749,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-19",
-        "due_date": "2026-09-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "zavisco/CVE-2026-64849.yaml",
-            "html_url": "https://github.com/zavisco/CVE-2026-64849.yaml",
-            "stars": 0
-          },
-          {
-            "full_name": "BiuTrap/CVE-2026-64849",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-64849",
-            "stars": 0
-          },
-          {
-            "full_name": "codeb0ssx/CVE-2026-64849-PoC",
-            "html_url": "https://github.com/codeb0ssx/CVE-2026-64849-PoC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-19",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
-    },
-    {
       "cve_id": "CVE-2026-68820",
       "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
       "vendor": "Microsoft",
@@ -1829,6 +1795,64 @@
       "timeline": [
         {
           "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-64849",
+      "title": "MLflow Server-Side Request Forgery Vulnerability",
+      "vendor": "MLflow",
+      "product": "MLflow",
+      "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.1641,
+      "epss_pct": 0.96749,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-19",
+        "due_date": "2026-09-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "zavisco/CVE-2026-64849.yaml",
+            "html_url": "https://github.com/zavisco/CVE-2026-64849.yaml",
+            "stars": 0
+          },
+          {
+            "full_name": "BiuTrap/CVE-2026-64849",
+            "html_url": "https://github.com/BiuTrap/CVE-2026-64849",
+            "stars": 0
+          },
+          {
+            "full_name": "codeb0ssx/CVE-2026-64849-PoC",
+            "html_url": "https://github.com/codeb0ssx/CVE-2026-64849-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-19",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2170,36 +2194,62 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-82456",
-      "title": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring calle…",
+      "cve_id": "CVE-2026-66066",
+      "title": "CVE-2026-66066",
       "vendor": null,
       "product": null,
-      "description": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring caller credentials when ARGOCD_API_TOKEN is configured. Attackers who can reach the listener can invoke the full tool surface using the operator's stored token to create applications, request syncs, and modify Argo CD resources.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00372,
-      "epss_pct": 0.30128,
-      "cwe": "CWE-1327",
-      "published": "2026-08-29T14:16:38.767",
+      "description": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated attacker may exploit this behavior to read arbitrary files accessible to the Rails process, including environment variables and application secrets. Exposure of credentials such as secret_key_base or external-service tokens may enable remote code execution or lateral movement. This issue has been fixed in versions 7.2.3.2, 8.0.5.1 and 8.1.3.1.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.27861,
+      "epss_pct": 0.97955,
+      "cwe": "CWE-1188",
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 10,
+      "hype": 26,
+      "rising": 38,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 7,
+        "stars": 55,
+        "top": [
+          {
+            "full_name": "rails/rails-forensics-CVE-2026-66066",
+            "html_url": "https://github.com/rails/rails-forensics-CVE-2026-66066",
+            "stars": 26
+          },
+          {
+            "full_name": "Zer0SumGam3/CVE-2026-66066-POC",
+            "html_url": "https://github.com/Zer0SumGam3/CVE-2026-66066-POC",
+            "stars": 23
+          },
+          {
+            "full_name": "0xsha/KindaRails2Shell",
+            "html_url": "https://github.com/0xsha/KindaRails2Shell",
+            "stars": 2
+          }
+        ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+          "date": "2026-09-01T07:22:30.000Z"
+        }
+      ],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-08-29",
-          "label": "Published to NVD"
+          "date": "2026-09-01",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 41
@@ -2222,7 +2272,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -2300,7 +2350,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2335,7 +2385,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2370,7 +2420,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2405,7 +2455,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2440,7 +2490,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2475,7 +2525,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2510,7 +2560,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2545,7 +2595,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2561,6 +2611,41 @@
         }
       ],
       "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-83772",
+      "title": "A vulnerability was detected in Cobham SATCOM VSAT7090 Maritime Satellite Router up to 20260704.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was detected in Cobham SATCOM VSAT7090 Maritime Satellite Router up to 20260704. This issue affects the function c_set_reports_decode of the file mail-report.sh of the component JSON Parsing. The manipulation of the argument sender/recipients results in command injection. It is possible to launch the attack remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-09-01T06:16:38.107",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-10053",
@@ -2603,7 +2688,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-75604",
@@ -2664,7 +2749,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2725,41 +2810,6 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-79787",
-      "title": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing una…",
-      "vendor": null,
-      "product": null,
-      "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from unsigned Authorization headers and impersonate any user, including service accounts, to read, write, and delete arbitrary data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00347,
-      "epss_pct": 0.27507,
-      "cwe": "CWE-287",
-      "published": "2026-08-25T19:16:54.907",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 55
     },
     {
@@ -2780,7 +2830,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2796,6 +2846,41 @@
         }
       ],
       "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-82456",
+      "title": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring calle…",
+      "vendor": null,
+      "product": null,
+      "description": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring caller credentials when ARGOCD_API_TOKEN is configured. Attackers who can reach the listener can invoke the full tool surface using the operator's stored token to create applications, request syncs, and modify Argo CD resources.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00372,
+      "epss_pct": 0.30128,
+      "cwe": "CWE-1327",
+      "published": "2026-08-29T14:16:38.767",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 9,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-29",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-82872",
@@ -2815,7 +2900,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2830,7 +2915,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-82688",
@@ -2850,7 +2935,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2865,7 +2950,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-82691",
@@ -2885,42 +2970,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-82882",
-      "title": "Devtron through 2.2.0 fails to enforce authorization checks on the GET /orchestrator/api-token/webhook endpoint, allo…",
-      "vendor": null,
-      "product": null,
-      "description": "Devtron through 2.2.0 fails to enforce authorization checks on the GET /orchestrator/api-token/webhook endpoint, allowing authenticated users to retrieve admin API tokens. Attackers with any authenticated account can query the endpoint with arbitrary project, environment, and application parameters to retrieve plaintext super-admin JWT tokens for full platform control.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-08-31T22:17:31.940",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
