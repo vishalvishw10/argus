@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T18:35:10.549Z",
+  "generated_at": "2026-09-01T21:49:22.562Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "608 recent"
+      "detail": "635 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "640 scored"
+      "detail": "665 scored"
     },
     {
       "name": "BleepingComputer",
@@ -39,12 +39,12 @@
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "4 mentions"
     },
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "4 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4381 mapped"
+      "detail": "4383 mapped"
     },
     {
       "name": "Reddit",
@@ -63,76 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00926,
-      "epss_pct": 0.58022,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 72,
-      "rising": 62,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "PaperCut Exploitation Escalates to Active Intrusions",
-          "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
-          "date": "2026-09-01T05:27:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-01",
-          "label": "Covered by SecurityWeek"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
@@ -153,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 72,
-      "rising": 62,
+      "hype": 62,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -171,20 +101,12 @@
           }
         ]
       },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "PaperCut Exploitation Escalates to Active Intrusions",
-          "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
-          "date": "2026-09-01T05:27:18.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
         "zero-day",
-        "in-the-news",
         "poc-available"
       ],
       "timeline": [
@@ -195,13 +117,9 @@
         {
           "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-01",
-          "label": "Covered by SecurityWeek"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -257,6 +175,64 @@
       "timeline": [
         {
           "date": "2026-08-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00926,
+      "epss_pct": 0.58022,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 28,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -345,7 +321,7 @@
       "rising": 0,
       "repos": {
         "count": 81,
-        "stars": 2108,
+        "stars": 2109,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -404,7 +380,7 @@
       "rising": 0,
       "repos": {
         "count": 53,
-        "stars": 2037,
+        "stars": 2038,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
@@ -1464,6 +1440,75 @@
       "rank": 24
     },
     {
+      "cve_id": "CVE-2026-0768",
+      "title": "CVE-2026-0768",
+      "vendor": null,
+      "product": null,
+      "description": "Langflow code Code Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Langflow. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the code parameter provided to the validate endpoint. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerability to execute code in the context of root.\n. Was ZDI-CAN-27322.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02338,
+      "epss_pct": 0.82417,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 42,
+      "rising": 100,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-0768",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-0768",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Critical Langflow Flaw Exploited as Attacks on AI Platform Rise",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise",
+          "date": "2026-09-01T20:48:52.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Critical Langflow flaw exploited to steal OpenAI and AWS keys",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/",
+          "date": "2026-09-01T17:54:22.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Hackers Start Exploiting Critical Langflow Vulnerability",
+          "url": "https://www.securityweek.com/hackers-start-exploiting-critical-langflow-vulnerability/",
+          "date": "2026-09-01T12:07:54.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+          "date": "2026-09-01T07:22:30.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading, SecurityWeek"
+        }
+      ],
+      "rank": 25
+    },
+    {
       "cve_id": "CVE-2026-18556",
       "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "N-able",
@@ -1509,7 +1554,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -1557,7 +1602,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -1605,7 +1650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -1646,7 +1691,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -1687,7 +1732,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -1728,7 +1773,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1786,7 +1831,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -1844,7 +1889,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1882,54 +1927,6 @@
       "timeline": [
         {
           "date": "2026-07-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-72530",
-      "title": "TrueConf Server Code Injection Vulnerability",
-      "vendor": "TrueConf",
-      "product": "Server",
-      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": 0.01827,
-      "epss_pct": 0.77316,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-20",
-        "due_date": "2026-09-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
-            "html_url": "https://github.com/fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1977,6 +1974,54 @@
       "rank": 35
     },
     {
+      "cve_id": "CVE-2026-72530",
+      "title": "TrueConf Server Code Injection Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+      "cvss": 9,
+      "severity": "CRITICAL",
+      "epss": 0.01827,
+      "epss_pct": 0.77316,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-20",
+        "due_date": "2026-09-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "html_url": "https://github.com/fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 36
+    },
+    {
       "cve_id": "CVE-2026-72529",
       "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
       "vendor": "TrueConf",
@@ -2015,7 +2060,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -2056,7 +2101,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -2097,7 +2142,76 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-82329",
+      "title": "CVE-2026-82329",
+      "vendor": null,
+      "product": null,
+      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00377,
+      "epss_pct": 0.30675,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 35,
+      "rising": 100,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
+            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-82329",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Attackers Pounce on Critical Artifactory Flaw Following Disclosure",
+          "url": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure",
+          "date": "2026-09-01T21:05:53.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+          "date": "2026-09-01T17:53:11.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Critical JFrog Artifactory Vulnerability Reportedly Exploited in the Wild",
+          "url": "https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/",
+          "date": "2026-09-01T09:59:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Covered by The Hacker News, Dark Reading, SecurityWeek"
+        }
+      ],
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2138,7 +2252,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2179,70 +2293,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
-    },
-    {
-      "cve_id": "CVE-2026-0768",
-      "title": "CVE-2026-0768",
-      "vendor": null,
-      "product": null,
-      "description": "Langflow code Code Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Langflow. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the code parameter provided to the validate endpoint. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerability to execute code in the context of root.\n. Was ZDI-CAN-27322.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02338,
-      "epss_pct": 0.82417,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 33,
-      "rising": 100,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-0768",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-0768",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Critical Langflow flaw exploited to steal OpenAI and AWS keys",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/",
-          "date": "2026-09-01T17:54:22.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "Hackers Start Exploiting Critical Langflow Vulnerability",
-          "url": "https://www.securityweek.com/hackers-start-exploiting-critical-langflow-vulnerability/",
-          "date": "2026-09-01T12:07:54.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
-          "date": "2026-09-01T07:22:30.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2262,7 +2313,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 34,
+      "rising": 32,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2303,178 +2354,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-82329",
-      "title": "CVE-2026-82329",
-      "vendor": null,
-      "product": null,
-      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00377,
-      "epss_pct": 0.30675,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 22,
-      "rising": 75,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-82329",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-          "date": "2026-09-01T17:53:11.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "Critical JFrog Artifactory Vulnerability Reportedly Exploited in the Wild",
-          "url": "https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/",
-          "date": "2026-09-01T09:59:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
       "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-82539",
-      "title": "A vulnerability was determined in TOTOLINK A720R 4.1.5cu.630_B20250509.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in TOTOLINK A720R 4.1.5cu.630_B20250509. This impacts the function setMacFilterRules of the file cstecgi.cgi of the component MAC Filtering. Executing a manipulation of the argument desc can lead to memory corruption. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00599,
-      "epss_pct": 0.46305,
-      "cwe": "CWE-119",
-      "published": "2026-08-30T11:17:35.067",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "Xernary/CVE-2026-82539",
-            "html_url": "https://github.com/Xernary/CVE-2026-82539",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-30",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 44
-    },
-    {
-      "cve_id": "CVE-2026-82616",
-      "title": "A vulnerability was found in TOTOLINK NR1800X 9.1.0u.6681_B20230703.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was found in TOTOLINK NR1800X 9.1.0u.6681_B20230703. Impacted is the function setUploadSetting of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been made public and could be used.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00613,
-      "epss_pct": 0.46945,
-      "cwe": "CWE-119",
-      "published": "2026-08-31T05:17:06.393",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-82856",
-      "title": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub …",
-      "vendor": null,
-      "product": null,
-      "description": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub OIDC trust policies. Attackers can use ForAnyValue:StringLike operators to hide wildcard GitHub Actions OIDC subject conditions from security guardrails.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00284,
-      "epss_pct": 0.20546,
-      "cwe": "CWE-284",
-      "published": "2026-08-31T09:17:05.780",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 46
     },
     {
       "cve_id": "CVE-2026-82954",
@@ -2494,7 +2374,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2509,42 +2389,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-82971",
-      "title": "A vulnerability was determined in QVidium Opera11 3.3.2a26-Ax4x-opera11.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in QVidium Opera11 3.3.2a26-Ax4x-opera11. This affects an unknown part of the file /cgi-bin/net_tr.cgi of the component CGI Script. This manipulation of the argument ipaddr causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor explains: \"QVidium has now closed its doors and no longer will be able to sell products or provide support.\" This vulnerability only affects products that are no longer supported by the maintainer.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01881,
-      "epss_pct": 0.77998,
-      "cwe": "CWE-74",
-      "published": "2026-08-31T23:16:35.460",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-18550",
@@ -2564,7 +2409,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2579,7 +2424,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-10053",
@@ -2622,68 +2467,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-75604",
-      "title": "CVE-2026-75604",
-      "vendor": null,
-      "product": null,
-      "description": "",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 83,
-        "top": [
-          {
-            "full_name": "rafabd1/CVE-2026-75604-poc",
-            "html_url": "https://github.com/rafabd1/CVE-2026-75604-poc",
-            "stars": 81
-          },
-          {
-            "full_name": "e4zyy/Project-CVE-2026-75604",
-            "html_url": "https://github.com/e4zyy/Project-CVE-2026-75604",
-            "stars": 1
-          },
-          {
-            "full_name": "HackSpeak/CVE-2026-75604",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-75604",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Next.js Patches Critical AVIF and Windows Flaws Enabling Unauthenticated RCE",
-          "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
-          "date": "2026-08-27T15:13:00.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-27",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 51
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2744,7 +2528,42 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 52
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-75871",
+      "title": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway fro…",
+      "vendor": null,
+      "product": null,
+      "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.10 to 19.0.12, 19.1 to 19.1.7, and 19.2 to 19.2.2 that could have allowed an authenticated user with Duo Agent Platform access to redirect outbound model requests to an externally-controlled endpoint via a crafted inline flow configuration that overrides the HTTP Host header, resulting in disclosure of Google Cloud Vertex cloud service credentials and private signing keys.",
+      "cvss": 9.6,
+      "severity": "CRITICAL",
+      "epss": 0.00191,
+      "epss_pct": 0.08802,
+      "cwe": "CWE-918",
+      "published": "2026-08-27T17:20:01.503",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-82456",
@@ -2779,27 +2598,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 49
     },
     {
-      "cve_id": "CVE-2026-82688",
-      "title": "A security vulnerability has been detected in D-Link DNS-340L and DNS-345 1.01B04/1.03B06/1.04.B02/1.05b04.",
+      "cve_id": "CVE-2026-82856",
+      "title": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub …",
       "vendor": null,
       "product": null,
-      "description": "A security vulnerability has been detected in D-Link DNS-340L and DNS-345 1.01B04/1.03B06/1.04.B02/1.05b04. This impacts an unknown function of the file /cgi-bin/virtual_vol.cgi of the component Virtual Volume Handler. The manipulation of the argument f_sharename/f_target/f_name leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.",
-      "cvss": 9.1,
+      "description": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub OIDC trust policies. Attackers can use ForAnyValue:StringLike operators to hide wildcard GitHub Actions OIDC subject conditions from security guardrails.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.02787,
-      "epss_pct": 0.85403,
-      "cwe": "CWE-77",
-      "published": "2026-08-31T11:16:40.353",
+      "epss": 0.00284,
+      "epss_pct": 0.20546,
+      "cwe": "CWE-284",
+      "published": "2026-08-31T09:17:05.780",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2814,7 +2633,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-82691",
@@ -2834,7 +2653,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2849,7 +2668,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-84200",
@@ -2863,41 +2682,6 @@
       "epss_pct": null,
       "cwe": "CWE-284",
       "published": "2026-09-01T12:17:49.540",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-19806",
-      "title": "The Support Genix – Helpdesk, AI Chatbot, Knowledge Base & Customer Support Ticketing System plugin for WordPress is …",
-      "vendor": null,
-      "product": null,
-      "description": "The Support Genix – Helpdesk, AI Chatbot, Knowledge Base & Customer Support Ticketing System plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 1.4.52 via the `guest_ticket_login()` function and its `p` parameter. This is due to the site-wide AES-256-CBC encryption key being derived from only three two-digit `wp_rand(10, 99)` values and a Unix timestamp via `md5()` — yielding approximately 19.5 bits of entropy — combined with a deterministic IV derived from the password, no authentication tag on the ciphertext, and no capability check, nonce, or session validation on the publicly reachable `/sgnix/?p=<token>` endpoint. This makes it possible for authenticated attackers, with subscriber-level access and above, who can obtain a single legitimate guest ticket token as a known-plaintext oracle and bound the plugin activation timestamp, to exhaust the ~729,000-candidate keyspace entirely offline, recover the site-wide encryption key, and forge a self-consistent `{ticket_id, ticket_user}` token targeting any administrator-owned ticket. Submitting the forged token to the unprotected endpoint causes `wp_set_auth_cookie()` to be called for that administrator, granting the attacker full administrative access to the WordPress site.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00396,
-      "epss_pct": 0.32654,
-      "cwe": "CWE-287",
-      "published": "2026-09-01T05:17:09.487",
       "kev": {
         "in_kev": false
       },
@@ -2919,20 +2703,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 52
     },
     {
-      "cve_id": "CVE-2026-84268",
-      "title": "A flaw was found in the SFTP backend in gvfs.",
+      "cve_id": "CVE-2026-71981",
+      "title": "Cypht before 2.12.2 contains a PHP object injection vulnerability that allows authenticated attackers to execute arbi…",
       "vendor": null,
       "product": null,
-      "description": "A flaw was found in the SFTP backend in gvfs. When mounting a share and reading a file, a malicious SFTP server can cause read_reply() to process a length that exceeds the size requested by the client. The function does not verify the server-provided length against the allocated buffer size, causing the operation to write past the intended boundaries. This issue allows a malicious server to corrupt adjacent heap memory in the gvfsd-sftp process, resulting in a denial of service as the process aborts upon detecting the heap corruption or potentially allowing arbitrary code execution.",
+      "description": "Cypht before 2.12.2 contains a PHP object injection vulnerability that allows authenticated attackers to execute arbitrary operating system commands by supplying a crafted PHP object graph in the back_query GET parameter of the logout handler. Attackers can pass a base64-encoded serialized payload through this parameter, which is decoded and passed directly to unserialize() without an allow-list, signature check, or type restriction, enabling gadget-chain exploitation to achieve remote code execution as the web server process.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-122",
-      "published": "2026-09-01T16:17:37.563",
+      "cwe": "CWE-502",
+      "published": "2026-09-01T21:18:36.310",
       "kev": {
         "in_kev": false
       },
@@ -2954,7 +2738,68 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-75604",
+      "title": "CVE-2026-75604",
+      "vendor": null,
+      "product": null,
+      "description": "",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 83,
+        "top": [
+          {
+            "full_name": "rafabd1/CVE-2026-75604-poc",
+            "html_url": "https://github.com/rafabd1/CVE-2026-75604-poc",
+            "stars": 81
+          },
+          {
+            "full_name": "e4zyy/Project-CVE-2026-75604",
+            "html_url": "https://github.com/e4zyy/Project-CVE-2026-75604",
+            "stars": 1
+          },
+          {
+            "full_name": "HackSpeak/CVE-2026-75604",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-75604",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Next.js Patches Critical AVIF and Windows Flaws Enabling Unauthenticated RCE",
+          "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+          "date": "2026-08-27T15:13:00.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-27",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-74936",
@@ -2997,7 +2842,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -3037,6 +2882,146 @@
       "timeline": [
         {
           "date": "2026-08-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-16286",
+      "title": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardw…",
+      "vendor": null,
+      "product": null,
+      "description": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload a Web Shell to a Web Server.\n\nThis issue affects Software Repository Management: before 2fb4acee.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00322,
+      "epss_pct": 0.2468,
+      "cwe": "CWE-434",
+      "published": "2026-08-25T15:16:30.180",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-79787",
+      "title": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing una…",
+      "vendor": null,
+      "product": null,
+      "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from unsigned Authorization headers and impersonate any user, including service accounts, to read, write, and delete arbitrary data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00347,
+      "epss_pct": 0.27532,
+      "cwe": "CWE-287",
+      "published": "2026-08-25T19:16:54.907",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-65081",
+      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its installation process, where an attacker could cause executi…",
+      "vendor": null,
+      "product": null,
+      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its installation process, where an attacker could cause execution of untrusted code. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, data tampering, information disclosure, and denial of service.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00254,
+      "epss_pct": 0.16728,
+      "cwe": "CWE-494",
+      "published": "2026-08-25T21:17:27.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-65084",
+      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper …",
+      "vendor": null,
+      "product": null,
+      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper certificate validation. A successful exploit of this vulnerability might lead to information disclosure, data tampering, code execution, and escalation of privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00315,
+      "epss_pct": 0.23867,
+      "cwe": "CWE-295",
+      "published": "2026-08-25T21:17:28.177",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
           "label": "Published to NVD"
         }
       ],
