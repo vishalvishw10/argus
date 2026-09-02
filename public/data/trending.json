@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-02T04:44:24.719Z",
+  "generated_at": "2026-09-02T09:41:18.292Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 12,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 40,
     "kev_total": 1687,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "654 recent"
+      "detail": "659 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "651 scored"
+      "detail": "649 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4383 mapped"
+      "detail": "4386 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -122,6 +122,64 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00926,
+      "epss_pct": 0.58022,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 22,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
       "vendor": "Gitea",
@@ -141,7 +199,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 61,
+      "hype": 60,
       "rising": 0,
       "repos": {
         "count": 9,
@@ -175,64 +233,6 @@
       "timeline": [
         {
           "date": "2026-08-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00926,
-      "epss_pct": 0.58022,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 24,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -321,17 +321,17 @@
       "rising": 0,
       "repos": {
         "count": 81,
-        "stars": 2109,
+        "stars": 2112,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 914
+            "stars": 915
           },
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 764
+            "stars": 765
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -380,17 +380,17 @@
       "rising": 0,
       "repos": {
         "count": 53,
-        "stars": 2038,
+        "stars": 2040,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 914
+            "stars": 915
           },
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 764
+            "stars": 765
           },
           {
             "full_name": "0xsha/wp2shell",
@@ -887,48 +887,6 @@
       "rank": 14
     },
     {
-      "cve_id": "CVE-2021-23758",
-      "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Ajax.NET Professional",
-      "product": "Ajax.NET Professional",
-      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.83633,
-      "epss_pct": 0.99667,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
       "cve_id": "CVE-2026-55040",
       "title": "Microsoft SharePoint Weak Authentication Vulnerability",
       "vendor": "Microsoft",
@@ -984,7 +942,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -1040,6 +998,48 @@
       "timeline": [
         {
           "date": "2026-07-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2021-23758",
+      "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Ajax.NET Professional",
+      "product": "Ajax.NET Professional",
+      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.83633,
+      "epss_pct": 0.99667,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1451,7 +1451,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 42,
+      "hype": 41,
       "rising": 100,
       "repos": {
         "count": 1,
@@ -1689,47 +1689,6 @@
       "rank": 29
     },
     {
-      "cve_id": "CVE-2015-5287",
-      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Automatic Bug Reporting Tool",
-      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.04962,
-      "epss_pct": 0.91575,
-      "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
-    },
-    {
       "cve_id": "CVE-2022-0995",
       "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
       "vendor": "Linux",
@@ -1768,7 +1727,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1823,6 +1782,47 @@
       "timeline": [
         {
           "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.04962,
+      "epss_pct": 0.91575,
+      "cwe": "CWE-59",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2140,75 +2140,6 @@
       "rank": 39
     },
     {
-      "cve_id": "CVE-2026-82329",
-      "title": "CVE-2026-82329",
-      "vendor": null,
-      "product": null,
-      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00377,
-      "epss_pct": 0.30675,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 35,
-      "rising": 99,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
-            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-82329",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Attackers Pounce on Critical Artifactory Flaw Following Disclosure",
-          "url": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure",
-          "date": "2026-09-01T21:05:53.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-          "date": "2026-09-01T17:53:11.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "Critical JFrog Artifactory Vulnerability Reportedly Exploited in the Wild",
-          "url": "https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/",
-          "date": "2026-09-01T09:59:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Covered by The Hacker News, Dark Reading, SecurityWeek"
-        }
-      ],
-      "rank": 40
-    },
-    {
       "cve_id": "CVE-2026-20349",
       "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
       "vendor": "Cisco",
@@ -2247,7 +2178,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2288,6 +2219,68 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-82329",
+      "title": "CVE-2026-82329",
+      "vendor": null,
+      "product": null,
+      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00377,
+      "epss_pct": 0.30675,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 25,
+      "rising": 64,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
+            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
+            "stars": 3
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-82329",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Attackers Pounce on Critical Artifactory Flaw Following Disclosure",
+          "url": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure",
+          "date": "2026-09-01T21:05:53.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+          "date": "2026-09-01T17:53:11.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
       "rank": 42
     },
     {
@@ -2307,8 +2300,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 26,
-      "rising": 28,
+      "hype": 25,
+      "rising": 25,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2369,7 +2362,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2404,7 +2397,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2439,7 +2432,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2474,7 +2467,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2490,6 +2483,76 @@
         }
       ],
       "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-9055",
+      "title": "The Booking for Appointments and Events Calendar – Amelia (Premium) plugin for WordPress is vulnerable to Privilege E…",
+      "vendor": null,
+      "product": null,
+      "description": "The Booking for Appointments and Events Calendar – Amelia (Premium) plugin for WordPress is vulnerable to Privilege Escalation in versions 8.0 - 9.6.2. This is due to insufficient validation of the attacker-controlled 'type' parameter in the customer update endpoint, which allows customers to set their role to 'manager' and trigger creation of a WordPress user with the wpamelia-manager role when the 'externalId' parameter is set to 0. This makes it possible for unauthenticated attackers to escalate their privileges to administrator by first elevating to the manager role, then creating a provider entity linked to an administrator user ID and overwriting that administrator's password.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-269",
+      "published": "2026-09-02T05:17:10.937",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-78657",
+      "title": "The SigmaForms Pro – AI Generated Forms plugin for WordPress is vulnerable to arbitrary file deletion due to insuffic…",
+      "vendor": null,
+      "product": null,
+      "description": "The SigmaForms Pro – AI Generated Forms plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_submission_files function in all versions up to, and including, 1.4.11. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The malicious path traversal URL is submitted via form upload field and stored in the database, with deletion triggered when an administrator deletes the submission record from the admin panel.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": "2026-09-02T06:17:18.260",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-10053",
@@ -2532,7 +2595,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-82456",
@@ -2552,7 +2615,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2567,7 +2630,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-82856",
@@ -2587,7 +2650,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2602,7 +2665,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-82691",
@@ -2622,7 +2685,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2637,7 +2700,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-84200",
@@ -2657,7 +2720,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2672,7 +2735,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-84479",
@@ -2692,7 +2755,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2707,7 +2770,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-84699",
@@ -2742,97 +2805,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-84482",
-      "title": "WWBN AVideo through commit 9c39d8c8 contains a cross-site request forgery vulnerability in the get_domain() and isSam…",
-      "vendor": null,
-      "product": null,
-      "description": "WWBN AVideo through commit 9c39d8c8 contains a cross-site request forgery vulnerability in the get_domain() and isSameDomain() functions that fail to properly validate referer origins. Attackers can forge requests from sibling subdomains or unparseable long-gTLD origins to perform administrative ObjectYPT writes including live server configuration changes.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-346",
-      "published": "2026-09-01T23:17:22.477",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-84694",
-      "title": "Coolify before 4.2.0 fails to properly escape environment variable key names in Docker commands executed over SSH on …",
-      "vendor": null,
-      "product": null,
-      "description": "Coolify before 4.2.0 fails to properly escape environment variable key names in Docker commands executed over SSH on managed servers. Authenticated attackers can inject shell metacharacters into environment variable keys to execute arbitrary commands on the server host outside containers.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-09-02T01:17:24.243",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-84715",
-      "title": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, al…",
+      "cve_id": "CVE-2026-14357",
+      "title": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0.",
       "vendor": null,
       "product": null,
-      "description": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, allowing authenticated subusers to modify their own permission records. A subuser with minimal permissions can send a crafted request to grant themselves full server control, enabling unauthorized access to sensitive data, backups, and server configuration.",
+      "description": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0. This is due to a missing capability check and missing nonce validation in the DPDEV_install_themes_func() function registered on the wp_ajax_DPDEV_install_themes action. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install arbitrary theme ZIP packages containing PHP files that are extracted into the web-accessible wp-content/themes/ directory, which may make remote code execution possible.",
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
       "cwe": "CWE-862",
-      "published": "2026-09-02T02:17:20.760",
+      "published": "2026-09-02T06:17:16.110",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2870,12 +2863,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 83,
+        "stars": 84,
         "top": [
           {
             "full_name": "rafabd1/CVE-2026-75604-poc",
             "html_url": "https://github.com/rafabd1/CVE-2026-75604-poc",
-            "stars": 81
+            "stars": 82
           },
           {
             "full_name": "e4zyy/Project-CVE-2026-75604",
@@ -2911,49 +2904,6 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-74943",
-      "title": "Use-after-free in the Graphics: ImageLib component.",
-      "vendor": null,
-      "product": null,
-      "description": "Use-after-free in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0057,
-      "epss_pct": 0.44864,
-      "cwe": "CWE-416",
-      "published": "2026-08-18T13:17:30.817",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "defineid/Revenant",
-            "html_url": "https://github.com/defineid/Revenant",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
       "cve_id": "CVE-2026-16286",
       "title": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardw…",
       "vendor": null,
@@ -2965,6 +2915,41 @@
       "epss_pct": 0.2468,
       "cwe": "CWE-434",
       "published": "2026-08-25T15:16:30.180",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-79787",
+      "title": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing una…",
+      "vendor": null,
+      "product": null,
+      "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from unsigned Authorization headers and impersonate any user, including service accounts, to read, write, and delete arbitrary data.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00347,
+      "epss_pct": 0.27532,
+      "cwe": "CWE-287",
+      "published": "2026-08-25T19:16:54.907",
       "kev": {
         "in_kev": false
       },
