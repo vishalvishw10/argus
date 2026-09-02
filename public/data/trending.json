@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T21:49:22.562Z",
+  "generated_at": "2026-09-02T00:17:48.441Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "635 recent"
+      "detail": "652 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "665 scored"
+      "detail": "671 scored"
     },
     {
       "name": "BleepingComputer",
@@ -63,64 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00771,
-      "epss_pct": 0.53134,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 62,
-      "rising": 28,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
@@ -178,7 +120,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -201,7 +143,65 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 28,
+      "rising": 27,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00771,
+      "epss_pct": 0.53134,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 27,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -439,12 +439,12 @@
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 27,
+        "stars": 28,
         "top": [
           {
             "full_name": "EQSTLab/CVE-2026-72898",
             "html_url": "https://github.com/EQSTLab/CVE-2026-72898",
-            "stars": 17
+            "stars": 18
           },
           {
             "full_name": "4minx/CVE-2026-72898",
@@ -758,65 +758,6 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-18577",
-      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.54068,
-      "epss_pct": 0.9893,
-      "cwe": "CWE-288",
-      "published": "2026-08-02T23:16:26.210",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-03",
-        "due_date": "2026-08-06",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 53,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
-            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-18577",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-18577",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-02",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-03",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-73570",
       "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
       "vendor": "Synacor",
@@ -884,7 +825,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -943,7 +884,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -985,7 +926,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1043,7 +984,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -1102,7 +1043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1156,7 +1097,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1210,7 +1151,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1268,7 +1209,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1323,6 +1264,60 @@
       "timeline": [
         {
           "date": "2026-08-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2026-18577",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.54068,
+      "epss_pct": 0.9893,
+      "cwe": "CWE-288",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-03",
+        "due_date": "2026-08-06",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "CreamyG31337/ncentral-compromise-ioc-triage",
+            "html_url": "https://github.com/CreamyG31337/ncentral-compromise-ioc-triage",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-18577",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-18577",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-03",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2313,7 +2308,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 26,
-      "rising": 32,
+      "rising": 31,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2427,6 +2422,76 @@
       "rank": 45
     },
     {
+      "cve_id": "CVE-2023-54391",
+      "title": "Proxmox Virtual Environment (VE) 7.0 through 8.0 contains an authentication bypass vulnerability in libpve-access-con…",
+      "vendor": null,
+      "product": null,
+      "description": "Proxmox Virtual Environment (VE) 7.0 through 8.0 contains an authentication bypass vulnerability in libpve-access-control before 8.0.4 that allows unauthenticated attackers to authenticate as any existing enabled user without a configured second factor by supplying an arbitrary tfa-challenge value in the API login endpoint. Attackers can send a POST request to the access ticket API endpoint with any value in the tfa-challenge parameter to completely skip password verification, gaining unauthorized access including to the root@pam account. All affected releases are end of life.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-304",
+      "published": "2026-09-01T22:17:10.283",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-84480",
+      "title": "WWBN AVideo fails to validate password recovery token expiration in userRecoverPassSave.json.php, allowing attackers …",
+      "vendor": null,
+      "product": null,
+      "description": "WWBN AVideo fails to validate password recovery token expiration in userRecoverPassSave.json.php, allowing attackers to use expired tokens to reset account passwords indefinitely. Attackers who obtain a recovery token can use it at any time to change the target account's password and gain full account access.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-613",
+      "published": "2026-09-01T23:17:22.220",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 47
+    },
+    {
       "cve_id": "CVE-2026-10053",
       "title": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.8 before 19.0.6, 19.1 before 19.1.4, an…",
       "vendor": null,
@@ -2467,7 +2532,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2490,7 +2555,7 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 25,
+        "stars": 26,
         "top": [
           {
             "full_name": "davkharrr/CVE-2026-19478-PoC",
@@ -2505,7 +2570,7 @@
           {
             "full_name": "EQSTLab/CVE-2026-19478",
             "html_url": "https://github.com/EQSTLab/CVE-2026-19478",
-            "stars": 3
+            "stars": 4
           }
         ]
       },
@@ -2528,42 +2593,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-75871",
-      "title": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway fro…",
-      "vendor": null,
-      "product": null,
-      "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.10 to 19.0.12, 19.1 to 19.1.7, and 19.2 to 19.2.2 that could have allowed an authenticated user with Duo Agent Platform access to redirect outbound model requests to an externally-controlled endpoint via a crafted inline flow configuration that overrides the HTTP Host header, resulting in disclosure of Google Cloud Vertex cloud service credentials and private signing keys.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": 0.00191,
-      "epss_pct": 0.08802,
-      "cwe": "CWE-918",
-      "published": "2026-08-27T17:20:01.503",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-82456",
@@ -2583,7 +2613,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2598,7 +2628,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-82856",
@@ -2618,7 +2648,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2633,7 +2663,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-82691",
@@ -2668,7 +2698,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-84200",
@@ -2703,7 +2733,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-84479",
+      "title": "WWBN AVideo (current e01e41ecc and earlier) makes three login-time security controls depend solely on the client-supp…",
+      "vendor": null,
+      "product": null,
+      "description": "WWBN AVideo (current e01e41ecc and earlier) makes three login-time security controls depend solely on the client-supplied User-Agent header. The isAVideoEncoder()/isAVideoMobileApp() checks match HTTP_USER_AGENT against a hardcoded literal (\"AVideoEncoder\"/\"AVideoMobileApp\") with no IP check or shared secret. An attacker who submits valid credentials and sets User-Agent: AVideoEncoder bypasses two-factor authentication, skips brute-force captcha escalation, and avoids being recorded in the login/device audit history. No patch is available at the time of publication.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-290",
+      "published": "2026-09-01T23:17:22.083",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-71981",
@@ -2738,19 +2803,54 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-84482",
+      "title": "WWBN AVideo through commit 9c39d8c8 contains a cross-site request forgery vulnerability in the get_domain() and isSam…",
+      "vendor": null,
+      "product": null,
+      "description": "WWBN AVideo through commit 9c39d8c8 contains a cross-site request forgery vulnerability in the get_domain() and isSameDomain() functions that fail to properly validate referer origins. Attackers can forge requests from sibling subdomains or unparseable long-gTLD origins to perform administrative ObjectYPT writes including live server configuration changes.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-346",
+      "published": "2026-09-01T23:17:22.477",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-75604",
       "title": "CVE-2026-75604",
       "vendor": null,
       "product": null,
-      "description": "",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "description": "Next.js is a React framework for building full-stack web applications. From 13.4.0 until 15.5.24 and 16.3.3, Next.js applications using Pages Router or App Router without Cache Components on Windows-hosted servers do not consistently escape backslashes in route segments before constructing incremental-cache paths. In packages/next/src/shared/lib/router/utils/escape-path-delimiters.ts and packages/next/src/server/lib/incremental-cache/file-system-cache.ts, a remote request can supply encoded Windows path separators that traverse outside the intended cache root and expose private build data, including the server-reference-manifest encryption key. Disclosure of that key can enable remote code execution in the affected application. This issue is fixed in versions 15.5.24 and 16.3.3.",
+      "cvss": 9,
+      "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": null,
+      "cwe": "CWE-22",
       "published": null,
       "kev": {
         "in_kev": false
@@ -2799,7 +2899,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 54
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-74936",
@@ -2842,7 +2942,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-74943",
@@ -2885,7 +2985,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-16286",
@@ -2899,111 +2999,6 @@
       "epss_pct": 0.2468,
       "cwe": "CWE-434",
       "published": "2026-08-25T15:16:30.180",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-79787",
-      "title": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing una…",
-      "vendor": null,
-      "product": null,
-      "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from unsigned Authorization headers and impersonate any user, including service accounts, to read, write, and delete arbitrary data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00347,
-      "epss_pct": 0.27532,
-      "cwe": "CWE-287",
-      "published": "2026-08-25T19:16:54.907",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-65081",
-      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its installation process, where an attacker could cause executi…",
-      "vendor": null,
-      "product": null,
-      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its installation process, where an attacker could cause execution of untrusted code. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, data tampering, information disclosure, and denial of service.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00254,
-      "epss_pct": 0.16728,
-      "cwe": "CWE-494",
-      "published": "2026-08-25T21:17:27.793",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 16,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-25",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-65084",
-      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper …",
-      "vendor": null,
-      "product": null,
-      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper certificate validation. A successful exploit of this vulnerability might lead to information disclosure, data tampering, code execution, and escalation of privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00315,
-      "epss_pct": 0.23867,
-      "cwe": "CWE-295",
-      "published": "2026-08-25T21:17:28.177",
       "kev": {
         "in_kev": false
       },
