@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-02T18:45:32.279Z",
+  "generated_at": "2026-09-02T21:51:47.302Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 14,
+    "media_mentions": 15,
     "reddit_upvotes": 0,
     "kev_count": 47,
     "kev_total": 1694,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "602 recent"
+      "detail": "598 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "641 scored"
+      "detail": "629 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4390 mapped"
+      "detail": "4407 mapped"
     },
     {
       "name": "Reddit",
@@ -141,6 +141,72 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-9586",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01088,
+      "epss_pct": 0.63028,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 100,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-9586",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Hackers exploit Sangoma Switchvox flaw to deploy reverse shells",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/",
+          "date": "2026-09-02T21:00:13.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+          "date": "2026-09-02T07:08:50.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-83548",
       "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
       "vendor": "SonicWall",
@@ -161,7 +227,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 100,
+      "rising": 97,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -198,7 +264,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -221,65 +287,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 18,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.00926,
-      "epss_pct": 0.58068,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -315,6 +323,64 @@
         }
       ],
       "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.00926,
+      "epss_pct": 0.58068,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 60,
+      "rising": 17,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -373,7 +439,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -432,7 +498,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-63030",
@@ -491,7 +557,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-60137",
@@ -550,7 +616,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -609,7 +675,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -668,7 +734,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -726,7 +792,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -785,66 +851,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-9586",
-      "title": "Sangoma Switchvox SQL Injection Vulnerability",
-      "vendor": "Sangoma",
-      "product": "Switchvox",
-      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.01088,
-      "epss_pct": 0.63028,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 53,
-      "rising": 67,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-9586",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
-          "date": "2026-09-02T07:08:50.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-02",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 13
     },
     {
@@ -868,7 +874,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 66,
+      "rising": 63,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -977,7 +983,7 @@
       "hype": 52,
       "rising": 0,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 11,
         "top": [
           {
@@ -1387,8 +1393,8 @@
             "stars": 1
           },
           {
-            "full_name": "K3ysTr0K3R/CVE-2026-9198",
-            "html_url": "https://github.com/K3ysTr0K3R/CVE-2026-9198",
+            "full_name": "rmhowe425/PoC-CVE-2026-9198",
+            "html_url": "https://github.com/rmhowe425/PoC-CVE-2026-9198",
             "stars": 1
           }
         ]
@@ -1429,7 +1435,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -1587,7 +1593,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1689,7 +1695,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2556,7 +2562,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 32,
-      "rising": 74,
+      "rising": 69,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2619,7 +2625,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2794,41 +2800,6 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-82456",
-      "title": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring calle…",
-      "vendor": null,
-      "product": null,
-      "description": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring caller credentials when ARGOCD_API_TOKEN is configured. Attackers who can reach the listener can invoke the full tool surface using the operator's stored token to create applications, request syncs, and modify Argo CD resources.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00372,
-      "epss_pct": 0.30201,
-      "cwe": "CWE-1327",
-      "published": "2026-08-29T14:16:38.767",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 3,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-29",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
       "cve_id": "CVE-2026-66786",
       "title": "A flaw was found in submariner.",
       "vendor": null,
@@ -2846,7 +2817,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2861,7 +2832,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-75604",
@@ -2922,7 +2893,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-16286",
@@ -2957,7 +2928,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-79787",
@@ -2992,7 +2963,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-65081",
@@ -3027,7 +2998,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-65084",
@@ -3062,7 +3033,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-65098",
@@ -3094,6 +3065,41 @@
       "timeline": [
         {
           "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-47875",
+      "title": "Applications that deserialize execution contexts with Jackson2ExecutionContextStringSerializer are vulnerable to a de…",
+      "vendor": null,
+      "product": null,
+      "description": "Applications that deserialize execution contexts with Jackson2ExecutionContextStringSerializer are vulnerable to a deserialization attack if they use an untrusted data source for the job repository. The JobParameterDeserializer does not properly enforce the trusted-types allowlist, allowing an attacker to craft malicious input that can lead to arbitrary code execution, including known Jackson RCE gadgets.\nSpring Batch 6.0.0 - 6.0.4\nSpring Batch 5.2.0 - 5.2.6",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00248,
+      "epss_pct": 0.15994,
+      "cwe": "CWE-502",
+      "published": "2026-08-27T06:17:17.250",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-27",
           "label": "Published to NVD"
         }
       ],
