@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-02T14:32:00.819Z",
+  "generated_at": "2026-09-02T18:45:32.279Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 14,
     "reddit_upvotes": 0,
-    "kev_count": 40,
-    "kev_total": 1687,
+    "kev_count": 47,
+    "kev_total": 1694,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,22 +14,22 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1687 entries"
+      "detail": "1694 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "645 recent"
+      "detail": "602 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "689 scored"
+      "detail": "641 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4388 mapped"
+      "detail": "4390 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,143 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-82329",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01242,
+      "epss_pct": 0.67157,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 78,
+      "rising": 100,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
+            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
+            "stars": 6
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-82329",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Hackers exploit critical JFrog Artifactory flaw to forge admin tokens",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/",
+          "date": "2026-09-02T15:47:08.000Z"
+        },
+        {
+          "source": "Dark Reading",
+          "title": "Attackers Pounce on Critical Artifactory Bug Following Disclosure",
+          "url": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure",
+          "date": "2026-09-01T21:05:53.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+          "date": "2026-09-01T17:53:11.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-83548",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00266,
+      "epss_pct": 0.18174,
+      "cwe": "CWE-441",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 100,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+          "date": "2026-09-02T10:53:49.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
+          "url": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
+          "date": "2026-09-02T05:04:52.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 2
+    },
     {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
@@ -84,7 +221,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -119,7 +256,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -142,7 +279,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 60,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -177,7 +314,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -236,7 +373,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -295,7 +432,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-63030",
@@ -321,22 +458,22 @@
       "rising": 0,
       "repos": {
         "count": 81,
-        "stars": 2112,
+        "stars": 2115,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 915
+            "stars": 916
           },
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 765
+            "stars": 766
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 105
+            "stars": 106
           }
         ]
       },
@@ -354,7 +491,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-60137",
@@ -380,22 +517,22 @@
       "rising": 0,
       "repos": {
         "count": 53,
-        "stars": 2040,
+        "stars": 2043,
         "top": [
           {
             "full_name": "sowarma/wp2shell-PoC",
             "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 915
+            "stars": 916
           },
           {
             "full_name": "Icex0/wp2shell-poc",
             "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 765
+            "stars": 766
           },
           {
             "full_name": "0xsha/wp2shell",
             "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 105
+            "stars": 106
           }
         ]
       },
@@ -413,7 +550,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -439,12 +576,12 @@
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 28,
+        "stars": 29,
         "top": [
           {
             "full_name": "EQSTLab/CVE-2026-72898",
             "html_url": "https://github.com/EQSTLab/CVE-2026-72898",
-            "stars": 18
+            "stars": 19
           },
           {
             "full_name": "4minx/CVE-2026-72898",
@@ -472,7 +609,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -531,7 +668,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -589,7 +726,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -648,7 +785,121 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-9586",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.01088,
+      "epss_pct": 0.63028,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 53,
+      "rising": 67,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-9586",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+          "date": "2026-09-02T07:08:50.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-83549",
+      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00917,
+      "epss_pct": 0.57798,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 66,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
+          "url": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
+          "date": "2026-09-02T05:04:52.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 14
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -701,7 +952,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -771,7 +1022,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 12
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-0770",
@@ -830,7 +1081,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -888,7 +1139,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -947,7 +1198,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 19
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -989,7 +1240,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1043,7 +1294,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1097,7 +1348,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1155,7 +1406,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-48710",
+      "title": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+      "vendor": "Kludex",
+      "product": "Starlette",
+      "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication depends on the reconstructed URL’s path. This vulnerability could be chaned with CVE-2026-42271.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.02099,
+      "epss_pct": 0.80418,
+      "cwe": "CWE-444",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 34,
+      "repos": {
+        "count": 5,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "eris-ths/supply-chain-guard",
+            "html_url": "https://github.com/eris-ths/supply-chain-guard",
+            "stars": 3
+          },
+          {
+            "full_name": "Bhanunamikaze/BadHost-CVE-2026-48710-Exploit",
+            "html_url": "https://github.com/Bhanunamikaze/BadHost-CVE-2026-48710-Exploit",
+            "stars": 1
+          },
+          {
+            "full_name": "xtremebeing/starlette-host-header-lab",
+            "html_url": "https://github.com/xtremebeing/starlette-host-header-lab",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1177,7 +1486,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 48,
+      "hype": 47,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -1213,7 +1522,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 25
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1255,7 +1564,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 26
+    },
+    {
+      "cve_id": "CVE-2026-49869",
+      "title": "Kestra OSS OS Command Injection Vulnerability",
+      "vendor": "Kestra",
+      "product": "Kestra OSS",
+      "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00991,
+      "epss_pct": 0.60153,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 34,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "Ap0dexMe0/CVE-2026-49869",
+            "html_url": "https://github.com/Ap0dexMe0/CVE-2026-49869",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1309,7 +1666,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2026-59822",
+      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "epss": 0.00516,
+      "epss_pct": 0.41918,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1362,7 +1760,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1420,7 +1818,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1468,7 +1866,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -1516,7 +1914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -1564,7 +1962,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 34
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -1605,7 +2003,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 35
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -1646,7 +2044,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1704,7 +2102,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 37
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -1745,7 +2143,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -1803,7 +2201,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1844,7 +2242,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 40
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1885,7 +2283,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -1933,7 +2331,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -1974,7 +2372,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 43
     },
     {
       "cve_id": "CVE-2021-27137",
@@ -2015,7 +2413,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2056,7 +2454,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2097,7 +2495,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2138,7 +2536,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-0768",
@@ -2158,7 +2556,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 32,
-      "rising": 81,
+      "rising": 74,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2201,122 +2599,7 @@
           "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-19478",
-      "title": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, …",
-      "vendor": null,
-      "product": null,
-      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.06001,
-      "epss_pct": 0.92821,
-      "cwe": "CWE-94",
-      "published": "2026-08-17T20:16:41.777",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 25,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 26,
-        "top": [
-          {
-            "full_name": "davkharrr/CVE-2026-19478-PoC",
-            "html_url": "https://github.com/davkharrr/CVE-2026-19478-PoC",
-            "stars": 11
-          },
-          {
-            "full_name": "dinosn/gitlab-cve-2026-19478-lab",
-            "html_url": "https://github.com/dinosn/gitlab-cve-2026-19478-lab",
-            "stars": 10
-          },
-          {
-            "full_name": "EQSTLab/CVE-2026-19478",
-            "html_url": "https://github.com/EQSTLab/CVE-2026-19478",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-82329",
-      "title": "CVE-2026-82329",
-      "vendor": null,
-      "product": null,
-      "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01242,
-      "epss_pct": 0.67157,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 25,
-      "rising": 59,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
-            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
-            "stars": 3
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-82329",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-82329",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Attackers Pounce on Critical Artifactory Bug Following Disclosure",
-          "url": "https://www.darkreading.com/application-security/attackers-pounce-critical-artifactory-flaw-disclosure",
-          "date": "2026-09-01T21:05:53.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-          "date": "2026-09-01T17:53:11.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 43
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2336,7 +2619,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 23,
+      "rising": 20,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2377,163 +2660,60 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 44
+      "rank": 49
     },
     {
-      "cve_id": "CVE-2026-83548",
-      "title": "CVE-2026-83548",
+      "cve_id": "CVE-2026-19478",
+      "title": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, …",
       "vendor": null,
       "product": null,
-      "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit this vulnerability to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
-      "cvss": 10,
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.00266,
-      "epss_pct": 0.18174,
-      "cwe": "CWE-441",
-      "published": null,
+      "epss": 0.06001,
+      "epss_pct": 0.92821,
+      "cwe": "CWE-94",
+      "published": "2026-08-17T20:16:41.777",
       "kev": {
         "in_kev": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": false,
-      "hype": 22,
-      "rising": 73,
+      "hype": 24,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 7,
+        "stars": 26,
+        "top": [
+          {
+            "full_name": "davkharrr/CVE-2026-19478-PoC",
+            "html_url": "https://github.com/davkharrr/CVE-2026-19478-PoC",
+            "stars": 11
+          },
+          {
+            "full_name": "dinosn/gitlab-cve-2026-19478-lab",
+            "html_url": "https://github.com/dinosn/gitlab-cve-2026-19478-lab",
+            "stars": 10
+          },
+          {
+            "full_name": "EQSTLab/CVE-2026-19478",
+            "html_url": "https://github.com/EQSTLab/CVE-2026-19478",
+            "stars": 4
+          }
+        ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
-          "date": "2026-09-02T10:53:49.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
-          "url": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
-          "date": "2026-09-02T05:04:52.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
-        "zero-day",
-        "in-the-news"
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-02",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-82954",
-      "title": "A vulnerability was detected in Dokploy up to 0.29.7.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was detected in Dokploy up to 0.29.7. This issue affects the function writeTraefikConfigInPath of the file packages/server/src/utils/traefik/application.ts of the component Settings. The manipulation of the argument path results in path traversal. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00618,
-      "epss_pct": 0.47272,
-      "cwe": "CWE-22",
-      "published": "2026-08-31T22:17:34.080",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
+          "date": "2026-08-17",
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-18550",
-      "title": "The Nokri - Job Board WordPress Theme for WordPress is vulnerable to Privilege Escalation via Account Takeover in all…",
-      "vendor": null,
-      "product": null,
-      "description": "The Nokri - Job Board WordPress Theme for WordPress is vulnerable to Privilege Escalation via Account Takeover in all versions up to, and including, 1.6.6. This is due to insufficient reset token validation in the `nokri_reset_password()` function, which allows empty attacker-supplied reset tokens to match empty or unset `sb_password_forget_token` user meta values. This makes it possible for unauthenticated attackers to reset the password of any user, including administrators, and gain access to their account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00326,
-      "epss_pct": 0.2518,
-      "cwe": "CWE-269",
-      "published": "2026-09-01T12:17:35.920",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-84480",
-      "title": "WWBN AVideo fails to validate password recovery token expiration in userRecoverPassSave.json.php, allowing attackers …",
-      "vendor": null,
-      "product": null,
-      "description": "WWBN AVideo fails to validate password recovery token expiration in userRecoverPassSave.json.php, allowing attackers to use expired tokens to reset account passwords indefinitely. Attackers who obtain a recovery token can use it at any time to change the target account's password and gain full account access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0029,
-      "epss_pct": 0.2116,
-      "cwe": "CWE-613",
-      "published": "2026-09-01T23:17:22.220",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-10053",
@@ -2576,7 +2756,42 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-47864",
+      "title": "SerializingHttpMessageConverter deserializes the body of incoming HTTP requests with a raw java.io.ObjectInputStream …",
+      "vendor": null,
+      "product": null,
+      "description": "SerializingHttpMessageConverter deserializes the body of incoming HTTP requests with a raw java.io.ObjectInputStream and no class filtering. Any request with Content-Type application/x-java-serialized-object whose body resolves to a Serializable type is read directly via readObject(). If an application using this converter on an inbound HTTP endpoint has any known Java deserialization \"gadget\" on its classpath, a remote, unauthenticated attacker can achieve arbitrary code execution.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5\nSpring Integration 6.5.0 - 6.5.10\nSpring Integration 6.4.0 - 6.4.12\nSpring Integration 5.5.21 and earlier",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.03441,
+      "epss_pct": 0.8816,
+      "cwe": "CWE-502",
+      "published": "2026-08-27T06:17:17.017",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-82456",
@@ -2596,7 +2811,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2611,132 +2826,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-82856",
-      "title": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub …",
-      "vendor": null,
-      "product": null,
-      "description": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub OIDC trust policies. Attackers can use ForAnyValue:StringLike operators to hide wildcard GitHub Actions OIDC subject conditions from security guardrails.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00284,
-      "epss_pct": 0.20565,
-      "cwe": "CWE-284",
-      "published": "2026-08-31T09:17:05.780",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-84200",
-      "title": "Kyverno versions v1.9.0 through v1.12.7 contain a policy exception handling flaw.",
-      "vendor": null,
-      "product": null,
-      "description": "Kyverno versions v1.9.0 through v1.12.7 contain a policy exception handling flaw. When a policy in enforce mode is combined with two PolicyExceptions, the less restrictive exception takes precedence, allowing an attacker to bypass the policy by crafting a resource name that matches the second exception's name pattern (e.g., '*ingress*'). This can be used to circumvent policies such as one blocking hostPath volumes. Fixed in v1.13.0.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": 0.00179,
-      "epss_pct": 0.07484,
-      "cwe": "CWE-284",
-      "published": "2026-09-01T12:17:49.540",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-84715",
-      "title": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, al…",
-      "vendor": null,
-      "product": null,
-      "description": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, allowing authenticated subusers to modify their own permission records. A subuser with minimal permissions can send a crafted request to grant themselves full server control, enabling unauthorized access to sensitive data, backups, and server configuration.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00319,
-      "epss_pct": 0.24365,
-      "cwe": "CWE-862",
-      "published": "2026-09-02T02:17:20.760",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-14357",
-      "title": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0.",
+      "cve_id": "CVE-2026-66786",
+      "title": "A flaw was found in submariner.",
       "vendor": null,
       "product": null,
-      "description": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0. This is due to a missing capability check and missing nonce validation in the DPDEV_install_themes_func() function registered on the wp_ajax_DPDEV_install_themes action. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install arbitrary theme ZIP packages containing PHP files that are extracted into the web-accessible wp-content/themes/ directory, which may make remote code execution possible.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00646,
-      "epss_pct": 0.48537,
-      "cwe": "CWE-862",
-      "published": "2026-09-02T06:17:16.110",
+      "description": "A flaw was found in submariner. In cert-auth mode, the connection configuration is built using free-form strings from the Custom Resource Definition (CRD) without proper validation. A malicious cluster can exploit this by publishing a CableName that includes newlines and ipsec.conf directives. This allows an attacker to inject arbitrary configuration parameters or execute commands through leftupdown hooks, leading to remote code execution as root on the gateway node.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": "2026-09-02T18:21:10.517",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 17,
-      "rising": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2752,76 +2862,6 @@
         }
       ],
       "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-84796",
-      "title": "Craft CMS versions before 5.10.11 contain a site scope bypass vulnerability in GraphQL entry mutation resolvers that …",
-      "vendor": null,
-      "product": null,
-      "description": "Craft CMS versions before 5.10.11 contain a site scope bypass vulnerability in GraphQL entry mutation resolvers that fail to validate siteId through ArgumentManager::prepareArguments(). Attackers with tokens scoped to one site can read, modify, or delete entries across unauthorized sites by passing siteId directly in mutation arguments.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-639",
-      "published": "2026-09-02T12:17:16.227",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-84801",
-      "title": "Craft CMS versions before 5.10.11 fail to validate admin status in the actionGetPasswordResetUrl endpoint, allowing n…",
-      "vendor": null,
-      "product": null,
-      "description": "Craft CMS versions before 5.10.11 fail to validate admin status in the actionGetPasswordResetUrl endpoint, allowing non-admin users with administrateUsers permission to mint password reset URLs for administrator accounts. Attackers can generate a valid reset URL for any admin user and set a new password via actionSetPassword, which validates only the verification code without checking the caller's session, enabling complete control-panel takeover.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-09-02T12:17:16.910",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 20,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
     },
     {
       "cve_id": "CVE-2026-75604",
@@ -2882,7 +2922,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-16286",
@@ -2917,7 +2957,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-79787",
@@ -2952,7 +2992,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-65081",
@@ -2966,6 +3006,76 @@
       "epss_pct": 0.21782,
       "cwe": "CWE-494",
       "published": "2026-08-25T21:17:27.793",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-65084",
+      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper …",
+      "vendor": null,
+      "product": null,
+      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its deployment process, where an attacker could cause improper certificate validation. A successful exploit of this vulnerability might lead to information disclosure, data tampering, code execution, and escalation of privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00367,
+      "epss_pct": 0.29669,
+      "cwe": "CWE-295",
+      "published": "2026-08-25T21:17:28.177",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 16,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-65098",
+      "title": "NVIDIA NemoClaw for Linux contains a vulnerability in its remote-access helper workflow, where an attacker could caus…",
+      "vendor": null,
+      "product": null,
+      "description": "NVIDIA NemoClaw for Linux contains a vulnerability in its remote-access helper workflow, where an attacker could cause weak authentication. A successful exploit of this vulnerability might lead to code execution, information disclosure, and data tampering.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00669,
+      "epss_pct": 0.49521,
+      "cwe": "CWE-1390",
+      "published": "2026-08-25T21:17:29.687",
       "kev": {
         "in_kev": false
       },
