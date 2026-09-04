@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-03T21:44:14.474Z",
+  "generated_at": "2026-09-04T00:08:22.639Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 13,
+    "media_mentions": 12,
     "reddit_upvotes": 0,
-    "kev_count": 47,
+    "kev_count": 43,
     "kev_total": 1694,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "651 recent"
+      "detail": "697 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "652 scored"
+      "detail": "648 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4419 mapped"
+      "detail": "4421 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 79,
-      "rising": 72,
+      "rising": 67,
       "repos": {
         "count": 5,
         "stars": 13,
@@ -165,8 +165,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 64,
-      "rising": 70,
+      "hype": 63,
+      "rising": 66,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -232,7 +232,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 62,
-      "rising": 76,
+      "rising": 73,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -299,7 +299,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 60,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -455,65 +455,6 @@
       "rank": 6
     },
     {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.97271,
-      "epss_pct": 0.99891,
-      "cwe": "CWE-436",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 0,
-      "repos": {
-        "count": 81,
-        "stars": 2118,
-        "top": [
-          {
-            "full_name": "sowarma/wp2shell-PoC",
-            "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 916
-          },
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 768
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 106
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
-    },
-    {
       "cve_id": "CVE-2026-82078",
       "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
@@ -534,7 +475,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -569,66 +510,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "cvss": 5.9,
-      "severity": "MEDIUM",
-      "epss": 0.78305,
-      "epss_pct": 0.99548,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 0,
-      "repos": {
-        "count": 53,
-        "stars": 2046,
-        "top": [
-          {
-            "full_name": "sowarma/wp2shell-PoC",
-            "html_url": "https://github.com/sowarma/wp2shell-PoC",
-            "stars": 916
-          },
-          {
-            "full_name": "Icex0/wp2shell-poc",
-            "html_url": "https://github.com/Icex0/wp2shell-poc",
-            "stars": 768
-          },
-          {
-            "full_name": "0xsha/wp2shell",
-            "html_url": "https://github.com/0xsha/wp2shell",
-            "stars": 106
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -687,7 +569,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-50522",
@@ -746,7 +628,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -805,7 +687,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -863,7 +745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -933,7 +815,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 14
+      "rank": 12
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -986,66 +868,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-0770",
-      "title": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "description": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.63417,
-      "epss_pct": 0.99151,
-      "cwe": "CWE-829",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "affix/CVE-2026-0770-PoC",
-            "html_url": "https://github.com/affix/CVE-2026-0770-PoC",
-            "stars": 6
-          },
-          {
-            "full_name": "0xgh057r3c0n/CVE-2026-0770",
-            "html_url": "https://github.com/0xgh057r3c0n/CVE-2026-0770",
-            "stars": 1
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-0770",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-0770",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1103,7 +926,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1162,7 +985,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -1221,7 +1044,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1244,7 +1067,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -1279,7 +1102,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 17
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1321,7 +1144,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1375,7 +1198,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1429,7 +1252,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1487,7 +1310,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1510,7 +1333,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1535,7 +1358,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 22
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1577,7 +1400,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1631,7 +1454,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -1654,7 +1477,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1679,7 +1502,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1732,7 +1555,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1790,7 +1613,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -1813,7 +1636,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1831,7 +1654,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1879,7 +1702,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1937,7 +1760,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -1985,7 +1808,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2033,7 +1856,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 32
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2074,7 +1897,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 33
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2115,7 +1938,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 34
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -2156,7 +1979,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2214,7 +2037,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 36
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -2255,7 +2078,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -2296,7 +2119,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -2344,7 +2167,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -2385,48 +2208,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2021-27137",
-      "title": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "DD-WRT",
-      "product": "DD-WRT",
-      "description": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.03995,
-      "epss_pct": 0.89812,
-      "cwe": "CWE-121",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-21",
-        "due_date": "2026-07-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 44
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2467,7 +2249,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2508,7 +2290,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2549,7 +2331,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2569,7 +2351,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 25,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 7,
         "stars": 56,
@@ -2610,7 +2392,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 48
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2663,7 +2445,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-0768",
@@ -2683,7 +2465,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 18,
+      "rising": 16,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -2725,7 +2507,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 50
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-85031",
@@ -2745,7 +2527,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2760,7 +2542,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-85154",
@@ -2780,7 +2562,147 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-85223",
+      "title": "A vulnerability was found in D-Link DNS-340L 1.01B04.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was found in D-Link DNS-340L 1.01B04. Affected by this issue is some unknown functionality of the file /cgi-bin/dropbox.cgi of the component CGI Handler. Performing a manipulation of the argument callback_url/sync_interval results in os command injection. The attack can be initiated remotely. The exploit has been made public and could be used.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-77",
+      "published": "2026-09-03T22:18:24.080",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 49
+    },
+    {
+      "cve_id": "CVE-2026-70352",
+      "title": "Missing authentication for critical function in Azure AI Language allows an unauthorized attacker to elevate privileg…",
+      "vendor": null,
+      "product": null,
+      "description": "Missing authentication for critical function in Azure AI Language allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-09-03T23:17:20.213",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-83711",
+      "title": "Authorization bypass through user-controlled key in Microsoft Azure Active Directory B2C allows an unauthorized attac…",
+      "vendor": null,
+      "product": null,
+      "description": "Authorization bypass through user-controlled key in Microsoft Azure Active Directory B2C allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-639",
+      "published": "2026-09-03T23:17:20.500",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-85424",
+      "title": "MOOS core-moos through 10.4.0 lacks authentication in the wire protocol, allowing unauthenticated clients to connect …",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS core-moos through 10.4.0 lacks authentication in the wire protocol, allowing unauthenticated clients to connect with full publish, subscribe, and database clear privileges. Attackers can bypass the compile-time protocol string check and connect with arbitrary client names to execute privileged operations including DB_CLEAR which resets all variables and clears client mail queues.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-09-03T23:17:21.170",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2796,6 +2718,251 @@
         }
       ],
       "rank": 52
+    },
+    {
+      "cve_id": "CVE-2026-85425",
+      "title": "MOOS-IvP iSay through 24.8.1 contains a remote code execution vulnerability in the SAY_MOOS variable handler that pas…",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS-IvP iSay through 24.8.1 contains a remote code execution vulnerability in the SAY_MOOS variable handler that passes unsanitized text to a shell command. Attackers can publish SAY_MOOS messages containing backticks or command substitution syntax to execute arbitrary commands as the iSay process user.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-09-03T23:17:21.337",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-85426",
+      "title": "MOOS-IvP uMemWatch through 24.8.1 constructs shell commands from attacker-chosen MOOS client names without sanitization.",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS-IvP uMemWatch through 24.8.1 constructs shell commands from attacker-chosen MOOS client names without sanitization. Attackers can inject shell metacharacters into client names to execute arbitrary commands as the uMemWatch process user through unquoted redirection targets in system calls.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-78",
+      "published": "2026-09-03T23:17:21.487",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-85428",
+      "title": "MOOS core-moos through 10.4.0 contains an authentication bypass vulnerability in the optional MOOSDB HTTP server that…",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS core-moos through 10.4.0 contains an authentication bypass vulnerability in the optional MOOSDB HTTP server that allows unauthenticated clients to write variables. Attackers can send HTTP requests with variable names and values to the MOOSDB HTTP server port to modify MOOS variables including actuator and override commands without authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
+      "published": "2026-09-03T23:17:21.770",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-85433",
+      "title": "MOOS essential-moos pShare through 10.0.1 fails to properly authorize PSHARE_CMD messages, allowing any publisher to …",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS essential-moos pShare through 10.0.1 fails to properly authorize PSHARE_CMD messages, allowing any publisher to reconfigure network routes and listeners at runtime. Attackers can send crafted PSHARE_CMD messages with cmd=output or cmd=input parameters to open new listeners on arbitrary addresses and redirect or duplicate bus traffic to attacker-controlled destinations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-862",
+      "published": "2026-09-03T23:17:22.500",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-85437",
+      "title": "MOOS-IvP through 24.8.1 contains multiple buffer overflow vulnerabilities in IvP function string decoders that trust …",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS-IvP through 24.8.1 contains multiple buffer overflow vulnerabilities in IvP function string decoders that trust attacker-controlled length fields without validation. Attackers can craft malicious encoded strings with mismatched declared and actual field lengths to overflow heap and stack buffers, potentially achieving remote code execution through MOOS variables or alog files.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-787",
+      "published": "2026-09-03T23:17:23.103",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-85438",
+      "title": "MOOS-IvP through 24.8.1 contains a buffer overflow vulnerability in StringToIvPFunction() where dimension, piece, and…",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS-IvP through 24.8.1 contains a buffer overflow vulnerability in StringToIvPFunction() where dimension, piece, and degree counts from encoded BHV_IPF payloads are used as allocation sizes and loop bounds without validation. Attackers can supply crafted payloads with mismatched dimension values to write attacker-controlled doubles past the end of the IvPBox weight array, causing memory corruption and potential code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-190",
+      "published": "2026-09-03T23:17:23.270",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-85440",
+      "title": "MOOS core-moos through 10.4.0 contains a pre-authentication heap overflow vulnerability in MOOSCommPkt packet handlin…",
+      "vendor": null,
+      "product": null,
+      "description": "MOOS core-moos through 10.4.0 contains a pre-authentication heap overflow vulnerability in MOOSCommPkt packet handling that allows remote attackers to write arbitrary data by declaring a negative packet length. Attackers can exploit the signed integer check in InflateTo() and negative size conversion in recv() to overflow a four-byte heap buffer during the HandShake phase before authentication.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-787",
+      "published": "2026-09-03T23:17:23.590",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-10053",
@@ -2835,277 +3002,6 @@
       "timeline": [
         {
           "date": "2026-08-23",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-32475",
-      "title": "CVE-2026-32475",
-      "vendor": null,
-      "product": null,
-      "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Elementor Elementor Pro allows Using Malicious Files.\n\nThis issue affects Elementor Pro: from n/a through 4.2.1.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": 0.02374,
-      "epss_pct": 0.82711,
-      "cwe": "CWE-434",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 36,
-      "repos": {
-        "count": 4,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "absholi7ly/Elementor-Pro-Unauthenticated-Arbitrary-File-Upload-to-RCE",
-            "html_url": "https://github.com/absholi7ly/Elementor-Pro-Unauthenticated-Arbitrary-File-Upload-to-RCE",
-            "stars": 8
-          },
-          {
-            "full_name": "Boreas37/CVE-2026-32475-PoC",
-            "html_url": "https://github.com/Boreas37/CVE-2026-32475-PoC",
-            "stars": 3
-          },
-          {
-            "full_name": "sahmsec/CVE-2026-32475",
-            "html_url": "https://github.com/sahmsec/CVE-2026-32475",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Critical Elementor Pro flaw exploited to take over WordPress sites",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-elementor-pro-flaw-exploited-to-take-over-wordpress-sites/",
-          "date": "2026-09-03T14:52:20.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-03",
-          "label": "Covered by BleepingComputer"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-47864",
-      "title": "SerializingHttpMessageConverter deserializes the body of incoming HTTP requests with a raw java.io.ObjectInputStream …",
-      "vendor": null,
-      "product": null,
-      "description": "SerializingHttpMessageConverter deserializes the body of incoming HTTP requests with a raw java.io.ObjectInputStream and no class filtering. Any request with Content-Type application/x-java-serialized-object whose body resolves to a Serializable type is read directly via readObject(). If an application using this converter on an inbound HTTP endpoint has any known Java deserialization \"gadget\" on its classpath, a remote, unauthenticated attacker can achieve arbitrary code execution.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5\nSpring Integration 6.5.0 - 6.5.10\nSpring Integration 6.4.0 - 6.4.12\nSpring Integration 5.5.21 and earlier",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.04075,
-      "epss_pct": 0.89994,
-      "cwe": "CWE-502",
-      "published": "2026-08-27T06:17:17.017",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-08-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-84135",
-      "title": "Other issue in Firefox Focus for Android.",
-      "vendor": null,
-      "product": null,
-      "description": "Other issue in Firefox Focus for Android. This vulnerability was fixed in Firefox 155.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00133,
-      "epss_pct": 0.0312,
-      "cwe": "CWE-20",
-      "published": "2026-09-01T13:20:07.573",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-84140",
-      "title": "Site isolation issue in the DOM: Navigation component.",
-      "vendor": null,
-      "product": null,
-      "description": "Site isolation issue in the DOM: Navigation component. This vulnerability was fixed in Firefox 155, Firefox ESR 153.2, Thunderbird 155, and Thunderbird 153.2.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00144,
-      "epss_pct": 0.03952,
-      "cwe": "CWE-346",
-      "published": "2026-09-01T13:20:08.127",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-84141",
-      "title": "Integer overflow in the Graphics: ImageLib component.",
-      "vendor": null,
-      "product": null,
-      "description": "Integer overflow in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 155, Firefox ESR 153.2, Thunderbird 155, and Thunderbird 153.2.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00144,
-      "epss_pct": 0.03951,
-      "cwe": "CWE-190",
-      "published": "2026-09-01T13:20:08.230",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-84142",
-      "title": "Internally found bugs present in Thunderbird 154.",
-      "vendor": null,
-      "product": null,
-      "description": "Internally found bugs present in Thunderbird 154. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 155 and Thunderbird 155.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00144,
-      "epss_pct": 0.03951,
-      "cwe": "CWE-119",
-      "published": "2026-09-01T13:20:08.337",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-84143",
-      "title": "Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14.",
-      "vendor": null,
-      "product": null,
-      "description": "Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 155, Firefox ESR 140.15, Firefox ESR 153.2, Thunderbird 155, Thunderbird 140.15, and Thunderbird 153.2.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00167,
-      "epss_pct": 0.06188,
-      "cwe": "CWE-119",
-      "published": "2026-09-01T13:20:08.457",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-01",
           "label": "Published to NVD"
         }
       ],
