@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T09:42:50.326Z",
+  "generated_at": "2026-09-04T14:23:49.266Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 12,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 43,
     "kev_total": 1694,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "700 recent"
+      "detail": "721 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "625 scored"
+      "detail": "620 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "3 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Hacker News",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4436 mapped"
+      "detail": "4443 mapped"
     },
     {
       "name": "Reddit",
@@ -83,10 +83,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 78,
-      "rising": 48,
+      "hype": 69,
+      "rising": 25,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 14,
         "top": [
           {
@@ -107,12 +107,6 @@
         ]
       },
       "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Hackers exploit critical JFrog Artifactory flaw to forge admin tokens",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/",
-          "date": "2026-09-02T15:47:08.000Z"
-        },
         {
           "source": "Dark Reading",
           "title": "Attackers Pounce on Critical Artifactory Bug Following Disclosure",
@@ -135,12 +129,12 @@
       ],
       "timeline": [
         {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-09-01",
+          "label": "Covered by The Hacker News, Dark Reading"
         },
         {
           "date": "2026-09-02",
-          "label": "Covered by BleepingComputer, The Hacker News, Dark Reading"
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 1
@@ -163,10 +157,10 @@
         "due_date": "2026-09-05",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 52,
+      "rising": 68,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -180,10 +174,10 @@
       },
       "media": [
         {
-          "source": "BleepingComputer",
-          "title": "Hackers exploit Sangoma Switchvox flaw to deploy reverse shells",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sangoma-switchvox-flaw-to-deploy-reverse-shells/",
-          "date": "2026-09-02T21:00:13.000Z"
+          "source": "SecurityWeek",
+          "title": "Sangoma Switchvox Vulnerabilities Exploited in the Wild",
+          "url": "https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/",
+          "date": "2026-09-04T13:23:12.000Z"
         },
         {
           "source": "The Hacker News",
@@ -196,6 +190,7 @@
       "tags": [
         "kev",
         "actively-exploited",
+        "zero-day",
         "in-the-news",
         "poc-available"
       ],
@@ -206,7 +201,7 @@
         },
         {
           "date": "2026-09-02",
-          "label": "Covered by BleepingComputer, The Hacker News"
+          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 2
@@ -231,8 +226,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 62,
-      "rising": 59,
+      "hype": 61,
+      "rising": 52,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -277,64 +272,6 @@
         }
       ],
       "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00771,
-      "epss_pct": 0.53202,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 5,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -393,7 +330,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -416,7 +353,65 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 5,
+      "rising": 3,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00771,
+      "epss_pct": 0.53202,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 3,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -770,7 +765,7 @@
       "hype": 53,
       "rising": 0,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 11,
         "top": [
           {
@@ -1175,7 +1170,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -1274,7 +1269,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -1375,7 +1370,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1588,7 +1583,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1636,7 +1631,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2465,7 +2460,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -2527,7 +2522,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2562,7 +2557,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2597,7 +2592,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2632,7 +2627,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2667,7 +2662,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2702,7 +2697,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2737,7 +2732,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2753,41 +2748,6 @@
         }
       ],
       "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-85426",
-      "title": "MOOS-IvP uMemWatch through 24.8.1 constructs shell commands from attacker-chosen MOOS client names without sanitization.",
-      "vendor": null,
-      "product": null,
-      "description": "MOOS-IvP uMemWatch through 24.8.1 constructs shell commands from attacker-chosen MOOS client names without sanitization. Attackers can inject shell metacharacters into client names to execute arbitrary commands as the uMemWatch process user through unquoted redirection targets in system calls.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-78",
-      "published": "2026-09-03T23:17:21.487",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-03",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
     },
     {
       "cve_id": "CVE-2026-85428",
@@ -2807,7 +2767,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2822,7 +2782,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-85433",
@@ -2842,7 +2802,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2857,7 +2817,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-85437",
@@ -2877,7 +2837,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2892,7 +2852,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-85438",
@@ -2912,7 +2872,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2927,7 +2887,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-85440",
@@ -2947,7 +2907,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2962,7 +2922,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-85146",
@@ -2982,7 +2942,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-85148",
+      "title": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability.",
+      "vendor": null,
+      "product": null,
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed password to remotely access user hosts.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-798",
+      "published": "2026-09-04T03:17:46.050",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
