@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-04T21:32:01.808Z",
+  "generated_at": "2026-09-05T00:08:54.478Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 13,
     "reddit_upvotes": 0,
-    "kev_count": 44,
+    "kev_count": 42,
     "kev_total": 1695,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "733 recent"
+      "detail": "740 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "683 scored"
+      "detail": "681 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4455 mapped"
+      "detail": "4460 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 68,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 6,
         "stars": 16,
@@ -160,7 +160,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 58,
+      "rising": 54,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -227,7 +227,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 42,
+      "rising": 38,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -338,17 +338,17 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75527,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
+      "epss": 0.01617,
+      "epss_pct": 0.74393,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -358,7 +358,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -394,64 +394,6 @@
         }
       ],
       "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01617,
-      "epss_pct": 0.74393,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 1,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 2
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -507,6 +449,64 @@
       "timeline": [
         {
           "date": "2026-08-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.01691,
+      "epss_pct": 0.75527,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 2
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -591,8 +591,8 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 55,
-      "rising": 65,
+      "hype": 54,
+      "rising": 63,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -636,65 +636,6 @@
         }
       ],
       "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-50522",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.84606,
-      "epss_pct": 0.99688,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 43,
-        "top": [
-          {
-            "full_name": "4minx/CVE-2026-50522",
-            "html_url": "https://github.com/4minx/CVE-2026-50522",
-            "stars": 41
-          },
-          {
-            "full_name": "WismanSec/sharepoint-2026-poc",
-            "html_url": "https://github.com/WismanSec/sharepoint-2026-poc",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-50522",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-50522",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 10
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -753,7 +694,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -811,7 +752,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -881,7 +822,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -903,8 +844,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 52,
-      "rising": 17,
+      "hype": 51,
+      "rising": 16,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -939,7 +880,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -997,7 +938,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1056,66 +997,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-16232",
-      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
-      "vendor": "Check Point",
-      "product": "SmartConsole",
-      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.72051,
-      "epss_pct": 0.99387,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 13,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-16232",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-16232",
-            "stars": 11
-          },
-          {
-            "full_name": "HackSpeak/CVE-2026-16232",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-16232",
-            "stars": 2
-          },
-          {
-            "full_name": "WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "html_url": "https://github.com/WadesWeaponShed/Check-Point-Trusted-Access-Review",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 17
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1169,7 +1051,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1223,7 +1105,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 17
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1265,7 +1147,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1323,7 +1205,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 19
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1365,7 +1247,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1388,7 +1270,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1413,7 +1295,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 21
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1454,7 +1336,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1508,7 +1390,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1561,7 +1443,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1619,7 +1501,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -1642,7 +1524,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1667,7 +1549,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -1690,7 +1572,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1708,7 +1590,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1756,7 +1638,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1814,7 +1696,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -1862,7 +1744,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -1910,7 +1792,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 31
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -1951,7 +1833,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 32
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -1992,7 +1874,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2050,7 +1932,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -2091,7 +1973,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 35
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2132,7 +2014,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 36
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -2173,7 +2055,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -2221,7 +2103,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -2262,7 +2144,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2303,7 +2185,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2344,7 +2226,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2385,7 +2267,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2438,7 +2320,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-66066",
@@ -2499,7 +2381,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-6471",
@@ -2519,7 +2401,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 71,
+      "rising": 68,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2556,7 +2438,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-0768",
@@ -2618,7 +2500,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-65643",
@@ -2666,7 +2548,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-85031",
@@ -2686,7 +2568,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2701,7 +2583,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-85154",
@@ -2721,7 +2603,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2736,7 +2618,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-85424",
@@ -2771,7 +2653,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-85428",
@@ -2806,7 +2688,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-85433",
@@ -2841,7 +2723,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-85438",
@@ -2876,7 +2758,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-11613",
@@ -2919,7 +2801,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-85661",
@@ -2954,7 +2836,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-85672",
@@ -2989,7 +2871,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-85688",
@@ -3024,7 +2906,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-85696",
@@ -3056,6 +2938,84 @@
       "timeline": [
         {
           "date": "2026-09-04",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-18658",
+      "title": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable t…",
+      "vendor": null,
+      "product": null,
+      "description": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable to SQL injection. An unauthenticated attacker can execute arbitrary SQL statements and leverage database functionality to write a web shell to the application web root, resulting in remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-09-04T16:17:21.133",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-10053",
+      "title": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.8 before 19.0.6, 19.1 before 19.1.4, an…",
+      "vendor": null,
+      "product": null,
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.8 before 19.0.6, 19.1 before 19.1.4, and 19.2 before 19.2.2 that under certain conditions could have allowed an authenticated user to achieve remote code execution due to a path traversal vulnerability in the package registry.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00773,
+      "epss_pct": 0.53316,
+      "cwe": "CWE-22",
+      "published": "2026-08-23T10:16:27.140",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "dinosn/CVE-2026-10053-lab",
+            "html_url": "https://github.com/dinosn/CVE-2026-10053-lab",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-23",
           "label": "Published to NVD"
         }
       ],
