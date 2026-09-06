@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T06:00:03.651Z",
+  "generated_at": "2026-09-06T11:02:26.515Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "779 recent"
+      "detail": "788 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "774 scored"
+      "detail": "773 scored"
     },
     {
       "name": "BleepingComputer",
@@ -64,17 +64,17 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75187,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
+      "epss": 0.01617,
+      "epss_pct": 0.74034,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 69,
-      "rising": 28,
+      "rising": 25,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -134,17 +134,17 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.01617,
-      "epss_pct": 0.74034,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
+      "epss": 0.01691,
+      "epss_pct": 0.75187,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -153,8 +153,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 69,
-      "rising": 28,
+      "hype": 68,
+      "rising": 25,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -224,7 +224,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 66,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 6,
         "stars": 16,
@@ -299,8 +299,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 61,
-      "rising": 23,
+      "hype": 60,
+      "rising": 19,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -426,7 +426,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -596,77 +596,6 @@
       "rank": 8
     },
     {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00885,
-      "epss_pct": 0.56435,
-      "cwe": "CWE-843",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 54,
-      "rising": 36,
-      "repos": {
-        "count": 3,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-85046",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
-            "stars": 1
-          },
-          {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 0
-          },
-          {
-            "full_name": "ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
-            "html_url": "https://github.com/ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
-          "date": "2026-09-04T07:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-04",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 9
-    },
-    {
       "cve_id": "CVE-2026-73570",
       "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
       "vendor": "Synacor",
@@ -734,7 +663,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -791,6 +720,77 @@
         {
           "date": "2026-08-05",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00885,
+      "epss_pct": 0.56435,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 53,
+      "rising": 32,
+      "repos": {
+        "count": 3,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-85046",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
+            "stars": 1
+          },
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 0
+          },
+          {
+            "full_name": "ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
+            "html_url": "https://github.com/ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+          "date": "2026-09-04T07:18:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-04",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 11
@@ -874,7 +874,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -1353,7 +1353,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1553,7 +1553,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1601,7 +1601,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2352,68 +2352,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2026-6471",
-      "title": "CVE-2026-6471",
-      "vendor": null,
-      "product": null,
-      "description": "Missing authorization in PostgreSQL logical decoding allows a non-superuser holding REPLICATION privilege to dlopen any file visible to the operating system account running the server, via the choice of logical decoding plugin.  This in turn runs arbitrary code as that account.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.00285,
-      "epss_pct": 0.20725,
-      "cwe": "CWE-862",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 23,
-      "rising": 35,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-6471",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-6471",
-            "stars": 1
-          },
-          {
-            "full_name": "goldendivider/cve-2026-6471-postgres-logical-decoding-dlopen",
-            "html_url": "https://github.com/goldendivider/cve-2026-6471-postgres-logical-decoding-dlopen",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
-          "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
-          "date": "2026-09-04T15:20:19.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
-          "url": "https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/",
-          "date": "2026-09-04T12:06:13.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-66066",
       "title": "CVE-2026-66066",
       "vendor": null,
@@ -2472,6 +2410,68 @@
           "label": "Covered by The Hacker News"
         }
       ],
+      "rank": 44
+    },
+    {
+      "cve_id": "CVE-2026-6471",
+      "title": "CVE-2026-6471",
+      "vendor": null,
+      "product": null,
+      "description": "Missing authorization in PostgreSQL logical decoding allows a non-superuser holding REPLICATION privilege to dlopen any file visible to the operating system account running the server, via the choice of logical decoding plugin.  This in turn runs arbitrary code as that account.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.00285,
+      "epss_pct": 0.20725,
+      "cwe": "CWE-862",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 22,
+      "rising": 30,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-6471",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-6471",
+            "stars": 1
+          },
+          {
+            "full_name": "goldendivider/cve-2026-6471-postgres-logical-decoding-dlopen",
+            "html_url": "https://github.com/goldendivider/cve-2026-6471-postgres-logical-decoding-dlopen",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
+          "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+          "date": "2026-09-04T15:20:19.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
+          "url": "https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/",
+          "date": "2026-09-04T12:06:13.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
       "rank": 45
     },
     {
@@ -2492,7 +2492,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 6,
         "stars": 18,
@@ -2601,7 +2601,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2644,7 +2644,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2679,7 +2679,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2695,41 +2695,6 @@
         }
       ],
       "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-18658",
-      "title": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable t…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable to SQL injection. An unauthenticated attacker can execute arbitrary SQL statements and leverage database functionality to write a web shell to the application web root, resulting in remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00432,
-      "epss_pct": 0.361,
-      "cwe": "CWE-89",
-      "published": "2026-09-04T16:17:21.133",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
     },
     {
       "cve_id": "CVE-2026-13447",
@@ -2749,7 +2714,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-83627",
+      "title": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Co…",
+      "vendor": null,
+      "product": null,
+      "description": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.21.0 via the log_msg() function in core/modules/class-page-cache.php. The page-cache debug log is written to wp-content/wphb-logs/page-caching-log.php, a directly web-accessible PHP file that is supposed to be protected by a leading '<?php die(); ?>' header. That header is guarded by class_exists( 'Filesystem' ), which can never match because class_exists() resolves string arguments in the global namespace while the class is Hummingbird\\Core\\Filesystem; when the log is created during a front-end request the header is therefore omitted entirely. get_cookies() then writes the raw name of any cookie matching the wphb_cache_ prefix into that file without sanitization. This makes it possible for unauthenticated attackers to write arbitrary PHP into the log file with a single anonymous request and execute it by requesting the file directly, resulting in full remote code execution. Exploitation requires the site administrator to have enabled Page Caching with the Debug Log option (non-default), and the log file to be created during a front-end request — a state reached by the plugin's own 'Clear logs' action, any cache flush, or unattended via the plugin's daily log-rotation cron, which can strip the protective header from an existing log file.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00824,
+      "epss_pct": 0.54589,
+      "cwe": "CWE-94",
+      "published": "2026-09-05T06:17:10.080",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2767,17 +2767,17 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-83627",
-      "title": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Co…",
+      "cve_id": "CVE-2024-11080",
+      "title": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection…",
       "vendor": null,
       "product": null,
-      "description": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.21.0 via the log_msg() function in core/modules/class-page-cache.php. The page-cache debug log is written to wp-content/wphb-logs/page-caching-log.php, a directly web-accessible PHP file that is supposed to be protected by a leading '<?php die(); ?>' header. That header is guarded by class_exists( 'Filesystem' ), which can never match because class_exists() resolves string arguments in the global namespace while the class is Hummingbird\\Core\\Filesystem; when the log is created during a front-end request the header is therefore omitted entirely. get_cookies() then writes the raw name of any cookie matching the wphb_cache_ prefix into that file without sanitization. This makes it possible for unauthenticated attackers to write arbitrary PHP into the log file with a single anonymous request and execute it by requesting the file directly, resulting in full remote code execution. Exploitation requires the site administrator to have enabled Page Caching with the Debug Log option (non-default), and the log file to be created during a front-end request — a state reached by the plugin's own 'Clear logs' action, any cache flush, or unattended via the plugin's daily log-rotation cron, which can strip the protective header from an existing log file.",
+      "description": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection in versions 2.2.32 to 2.3.1 via several functions in the ~/includes/blocks/form-wrap/function.php file. This makes it possible for unauthenticated attackers to execute actions with hooks in WordPress, granted no other security controls are present in the function.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00824,
-      "epss_pct": 0.54589,
+      "epss": 0.00441,
+      "epss_pct": 0.36839,
       "cwe": "CWE-94",
-      "published": "2026-09-05T06:17:10.080",
+      "published": "2026-09-05T09:16:48.880",
       "kev": {
         "in_kev": false
       },
@@ -2802,41 +2802,6 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2024-11080",
-      "title": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection…",
-      "vendor": null,
-      "product": null,
-      "description": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection in versions 2.2.32 to 2.3.1 via several functions in the ~/includes/blocks/form-wrap/function.php file. This makes it possible for unauthenticated attackers to execute actions with hooks in WordPress, granted no other security controls are present in the function.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00441,
-      "epss_pct": 0.36839,
-      "cwe": "CWE-94",
-      "published": "2026-09-05T09:16:48.880",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
       "cve_id": "CVE-2026-86121",
       "title": "Cua computer-server versions before 0.3.42 skip authentication when the CONTAINER_NAME environment variable is unset …",
       "vendor": null,
@@ -2854,7 +2819,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2869,7 +2834,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-86124",
@@ -2889,7 +2854,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2904,7 +2869,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-10196",
@@ -2924,7 +2889,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2939,7 +2904,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-86184",
@@ -2959,7 +2924,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2974,7 +2939,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-86189",
@@ -2994,7 +2959,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3009,7 +2974,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-86152",
@@ -3023,6 +2988,41 @@
       "epss_pct": null,
       "cwe": "CWE-77",
       "published": "2026-09-06T02:17:19.370",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-16310",
+      "title": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and incl…",
+      "vendor": null,
+      "product": null,
+      "description": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.8.5 via the 'id' parameter due to missing validation on a user controlled key. This makes it possible for unauthenticated attackers to change the password of any WordPress user, including administrators, by supplying an arbitrary user ID during registration, and take over their account without any notification sent to the victim.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-639",
+      "published": "2026-09-06T03:17:15.540",
       "kev": {
         "in_kev": false
       },
