@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T23:58:14.018Z",
+  "generated_at": "2026-09-07T04:48:37.902Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "811 recent"
+      "detail": "831 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4480 mapped"
+      "detail": "4482 mapped"
     },
     {
       "name": "Reddit",
@@ -64,17 +64,17 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75561,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
+      "epss": 0.01617,
+      "epss_pct": 0.7443,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 18,
+      "rising": 15,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -134,17 +134,17 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.01617,
-      "epss_pct": 0.7443,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
+      "epss": 0.01691,
+      "epss_pct": 0.75561,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -153,8 +153,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 68,
-      "rising": 18,
+      "hype": 67,
+      "rising": 15,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -223,7 +223,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 65,
+      "hype": 64,
       "rising": 0,
       "repos": {
         "count": 6,
@@ -359,7 +359,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 7,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -404,78 +404,6 @@
         }
       ],
       "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-83548",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0071,
-      "epss_pct": 0.51212,
-      "cwe": "CWE-441",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "xcoy0te/CVE-2026-83548-checker",
-            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
-            "stars": 0
-          },
-          {
-            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
-          "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
-          "date": "2026-09-03T05:19:04.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
-          "date": "2026-09-02T10:53:49.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-03",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 6
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -534,7 +462,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -593,47 +521,42 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01162,
-      "epss_pct": 0.65148,
-      "cwe": "CWE-843",
+      "cve_id": "CVE-2026-83548",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0071,
+      "epss_pct": 0.51212,
+      "cwe": "CWE-441",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
         "ransomware": false
       },
       "zero_day": true,
-      "no_patch": false,
-      "hype": 54,
-      "rising": 20,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
       "repos": {
-        "count": 3,
-        "stars": 2,
+        "count": 2,
+        "stars": 0,
         "top": [
           {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 1
+            "full_name": "xcoy0te/CVE-2026-83548-checker",
+            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
+            "stars": 0
           },
           {
-            "full_name": "HORKimhab/CVE-2026-85046",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
-            "stars": 1
-          },
-          {
-            "full_name": "ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
-            "html_url": "https://github.com/ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
+            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
+            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
             "stars": 0
           }
         ]
@@ -641,9 +564,15 @@
       "media": [
         {
           "source": "The Hacker News",
-          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
-          "date": "2026-09-04T07:18:47.000Z"
+          "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+          "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+          "date": "2026-09-03T05:19:04.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+          "date": "2026-09-02T10:53:49.000Z"
         }
       ],
       "reddit": null,
@@ -656,15 +585,15 @@
       ],
       "timeline": [
         {
-          "date": "2026-09-04",
+          "date": "2026-09-02",
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-09-04",
+          "date": "2026-09-03",
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -734,7 +663,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -791,6 +720,77 @@
         {
           "date": "2026-08-05",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01162,
+      "epss_pct": 0.65148,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 53,
+      "rising": 16,
+      "repos": {
+        "count": 3,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-85046",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
+            "stars": 1
+          },
+          {
+            "full_name": "ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
+            "html_url": "https://github.com/ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+          "date": "2026-09-04T07:18:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-04",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 11
@@ -1237,48 +1237,6 @@
       "rank": 19
     },
     {
-      "cve_id": "CVE-2019-1068",
-      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SQL Server",
-      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.52845,
-      "epss_pct": 0.98897,
-      "cwe": "CWE-20",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-08-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 43,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 20
-    },
-    {
       "cve_id": "CVE-2026-18577",
       "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "N-able",
@@ -1330,7 +1288,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1378,7 +1336,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1416,6 +1374,48 @@
       "timeline": [
         {
           "date": "2026-08-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "cve_id": "CVE-2019-1068",
+      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SQL Server",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.52845,
+      "epss_pct": 0.98897,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-08-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2429,8 +2429,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 22,
-      "rising": 15,
+      "hype": 21,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -2540,7 +2540,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 21,
+      "rising": 18,
       "repos": {
         "count": 6,
         "stars": 18,
@@ -2601,7 +2601,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2627,17 +2627,17 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-83627",
-      "title": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Co…",
+      "cve_id": "CVE-2026-10196",
+      "title": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable…",
       "vendor": null,
       "product": null,
-      "description": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.21.0 via the log_msg() function in core/modules/class-page-cache.php. The page-cache debug log is written to wp-content/wphb-logs/page-caching-log.php, a directly web-accessible PHP file that is supposed to be protected by a leading '<?php die(); ?>' header. That header is guarded by class_exists( 'Filesystem' ), which can never match because class_exists() resolves string arguments in the global namespace while the class is Hummingbird\\Core\\Filesystem; when the log is created during a front-end request the header is therefore omitted entirely. get_cookies() then writes the raw name of any cookie matching the wphb_cache_ prefix into that file without sanitization. This makes it possible for unauthenticated attackers to write arbitrary PHP into the log file with a single anonymous request and execute it by requesting the file directly, resulting in full remote code execution. Exploitation requires the site administrator to have enabled Page Caching with the Debug Log option (non-default), and the log file to be created during a front-end request — a state reached by the plugin's own 'Clear logs' action, any cache flush, or unattended via the plugin's daily log-rotation cron, which can strip the protective header from an existing log file.",
+      "description": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deserialization of untrusted input in the 'handle_form_submission' function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code on the server. The vulnerability was partially patched in version 1.23.1.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00824,
-      "epss_pct": 0.55007,
-      "cwe": "CWE-94",
-      "published": "2026-09-05T06:17:10.080",
+      "epss": 0.00628,
+      "epss_pct": 0.47859,
+      "cwe": "CWE-502",
+      "published": "2026-09-05T12:16:46.790",
       "kev": {
         "in_kev": false
       },
@@ -2662,111 +2662,6 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2026-86121",
-      "title": "Cua computer-server versions before 0.3.42 skip authentication when the CONTAINER_NAME environment variable is unset …",
-      "vendor": null,
-      "product": null,
-      "description": "Cua computer-server versions before 0.3.42 skip authentication when the CONTAINER_NAME environment variable is unset and bind to all interfaces by default, allowing unauthenticated attackers to execute arbitrary commands. Attackers can reach TCP port 8000 to run shell commands via the run_command endpoint, read and write arbitrary files through file operation endpoints, and access interactive PTY shells without authentication.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00592,
-      "epss_pct": 0.46144,
-      "cwe": "CWE-306",
-      "published": "2026-09-05T10:16:43.463",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-86124",
-      "title": "AutoAgent contains an unauthenticated remote code execution vulnerability in the TCP server that binds to all interfa…",
-      "vendor": null,
-      "product": null,
-      "description": "AutoAgent contains an unauthenticated remote code execution vulnerability in the TCP server that binds to all interfaces and executes attacker-supplied commands as root. Attackers can connect to the exposed communication port and execute arbitrary bash commands within the container, gaining access to bind-mounted host workspace directories.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00544,
-      "epss_pct": 0.43709,
-      "cwe": "CWE-306",
-      "published": "2026-09-05T10:16:43.900",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-10196",
-      "title": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable…",
-      "vendor": null,
-      "product": null,
-      "description": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deserialization of untrusted input in the 'handle_form_submission' function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code on the server. The vulnerability was partially patched in version 1.23.1.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00628,
-      "epss_pct": 0.47859,
-      "cwe": "CWE-502",
-      "published": "2026-09-05T12:16:46.790",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
-    },
-    {
       "cve_id": "CVE-2026-86184",
       "title": "Lara Dashboard before 1.3.0 contains an authentication bypass vulnerability in the screenshot-login route that allows…",
       "vendor": null,
@@ -2784,7 +2679,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2799,42 +2694,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-86189",
-      "title": "WWBN AVideo contains a path traversal vulnerability in notify.ffmpeg.json.php that allows unauthenticated attackers t…",
-      "vendor": null,
-      "product": null,
-      "description": "WWBN AVideo contains a path traversal vulnerability in notify.ffmpeg.json.php that allows unauthenticated attackers to write files to arbitrary locations by supplying a caller-chosen path in the avideoRelativePath parameter. Attackers can replay any previously issued ciphertext as a notifyCode token, which is decrypted but never validated, to bypass authentication and write files to the application root and subdirectories.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00406,
-      "epss_pct": 0.3393,
-      "cwe": "CWE-73",
-      "published": "2026-09-05T13:18:14.000",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-86152",
@@ -2869,7 +2729,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-16310",
@@ -2889,7 +2749,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2904,7 +2764,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-75816",
@@ -2924,7 +2784,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2939,7 +2799,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-86165",
@@ -2959,7 +2819,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2974,7 +2834,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-86167",
@@ -2994,7 +2854,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3009,7 +2869,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-84135",
@@ -3023,6 +2883,146 @@
       "epss_pct": 0.16729,
       "cwe": "CWE-20",
       "published": "2026-09-01T13:20:07.573",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-84140",
+      "title": "Site isolation issue in the DOM: Navigation component.",
+      "vendor": null,
+      "product": null,
+      "description": "Site isolation issue in the DOM: Navigation component. This vulnerability was fixed in Firefox 155, Firefox ESR 153.2, Thunderbird 155, and Thunderbird 153.2.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00182,
+      "epss_pct": 0.07882,
+      "cwe": "CWE-346",
+      "published": "2026-09-01T13:20:08.127",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-84141",
+      "title": "Integer overflow in the Graphics: ImageLib component.",
+      "vendor": null,
+      "product": null,
+      "description": "Integer overflow in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 155, Firefox ESR 153.2, Thunderbird 155, and Thunderbird 153.2.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00342,
+      "epss_pct": 0.27102,
+      "cwe": "CWE-190",
+      "published": "2026-09-01T13:20:08.230",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-84142",
+      "title": "Internally found bugs present in Thunderbird 154.",
+      "vendor": null,
+      "product": null,
+      "description": "Internally found bugs present in Thunderbird 154. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 155 and Thunderbird 155.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00304,
+      "epss_pct": 0.22773,
+      "cwe": "CWE-119",
+      "published": "2026-09-01T13:20:08.337",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-84143",
+      "title": "Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14.",
+      "vendor": null,
+      "product": null,
+      "description": "Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited. This vulnerability was fixed in Firefox 155, Firefox ESR 140.15, Firefox ESR 153.2, Thunderbird 155, Thunderbird 140.15, and Thunderbird 153.2.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00378,
+      "epss_pct": 0.30897,
+      "cwe": "CWE-119",
+      "published": "2026-09-01T13:20:08.457",
       "kev": {
         "in_kev": false
       },
