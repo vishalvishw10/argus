@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T04:48:37.902Z",
+  "generated_at": "2026-09-07T10:24:43.892Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "831 recent"
+      "detail": "854 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4482 mapped"
+      "detail": "4483 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 15,
+      "rising": 12,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -154,7 +154,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 67,
-      "rising": 15,
+      "rising": 12,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -227,12 +227,12 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 16,
+        "stars": 17,
         "top": [
           {
             "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
             "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
-            "stars": 10
+            "stars": 11
           },
           {
             "full_name": "ynsmroztas/CVE-2026-82329-JFrog-Artifactory-Auth-Bypass",
@@ -359,7 +359,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 59,
-      "rising": 5,
+      "rising": 2,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -596,6 +596,77 @@
       "rank": 8
     },
     {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01162,
+      "epss_pct": 0.65148,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 54,
+      "rising": 13,
+      "repos": {
+        "count": 4,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 2
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-85046",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
+            "stars": 1
+          },
+          {
+            "full_name": "Eliot-code/CVE-2026-85046",
+            "html_url": "https://github.com/Eliot-code/CVE-2026-85046",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+          "date": "2026-09-04T07:18:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-04",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 9
+    },
+    {
       "cve_id": "CVE-2026-73570",
       "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
       "vendor": "Synacor",
@@ -663,7 +734,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -720,77 +791,6 @@
         {
           "date": "2026-08-05",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 10
-    },
-    {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01162,
-      "epss_pct": 0.65148,
-      "cwe": "CWE-843",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 16,
-      "repos": {
-        "count": 3,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-85046",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
-            "stars": 1
-          },
-          {
-            "full_name": "ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
-            "html_url": "https://github.com/ubitquity/CVE-2026-85046-Patch-confusion-zero-day-vulnerability-in-Google-Chrome-s-V8-engine",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
-          "date": "2026-09-04T07:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-04",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 11
@@ -2430,7 +2430,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 10,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -2540,10 +2540,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 18,
+      "rising": 15,
       "repos": {
         "count": 6,
-        "stars": 18,
+        "stars": 19,
         "top": [
           {
             "full_name": "absholi7ly/Elementor-Pro-Unauthenticated-Arbitrary-File-Upload-to-RCE",
@@ -2553,7 +2553,7 @@
           {
             "full_name": "dinosn/cve-2026-32475-elementor-pro-lab",
             "html_url": "https://github.com/dinosn/cve-2026-32475-elementor-pro-lab",
-            "stars": 5
+            "stars": 6
           },
           {
             "full_name": "Boreas37/CVE-2026-32475-PoC",
@@ -2601,7 +2601,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2627,76 +2627,6 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-10196",
-      "title": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable…",
-      "vendor": null,
-      "product": null,
-      "description": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deserialization of untrusted input in the 'handle_form_submission' function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code on the server. The vulnerability was partially patched in version 1.23.1.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00628,
-      "epss_pct": 0.47859,
-      "cwe": "CWE-502",
-      "published": "2026-09-05T12:16:46.790",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
-    },
-    {
-      "cve_id": "CVE-2026-86184",
-      "title": "Lara Dashboard before 1.3.0 contains an authentication bypass vulnerability in the screenshot-login route that allows…",
-      "vendor": null,
-      "product": null,
-      "description": "Lara Dashboard before 1.3.0 contains an authentication bypass vulnerability in the screenshot-login route that allows unauthenticated attackers to authenticate as any user by email when APP_ENV is not production. Attackers can request the GET /screenshot-login/{email} endpoint with a registered email address to receive a fully authenticated session, enabling access to user administration, settings, database contents, and arbitrary code execution through the module installer.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00596,
-      "epss_pct": 0.46306,
-      "cwe": "CWE-306",
-      "published": "2026-09-05T12:16:49.090",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 13,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
       "cve_id": "CVE-2026-86152",
       "title": "A flaw has been found in Tenda CP3 27.5.57.101.",
       "vendor": null,
@@ -2714,7 +2644,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2729,7 +2659,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-16310",
@@ -2749,7 +2679,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2764,7 +2694,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-75816",
@@ -2784,7 +2714,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2799,7 +2729,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-86165",
@@ -2819,7 +2749,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2834,7 +2764,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-86167",
@@ -2854,7 +2784,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2866,6 +2796,76 @@
       "timeline": [
         {
           "date": "2026-09-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-79697",
+      "title": "A vulnerability was determined in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WIS…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was determined in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, WISE-6610P-DEA, WISE-6610P-DNA and WISE-6610P-DTA 1.2.1_20251110. This affects the function basicstation_apply of the component Basic Station Certificate-Deletion Handler. This manipulation of the argument act causes command injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 1.2.4_20260821 is able to mitigate this issue. Upgrading the affected component is advised. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-09-07T07:16:45.903",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-07",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-79698",
+      "title": "A vulnerability was identified in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WIS…",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was identified in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, WISE-6610P-DEA, WISE-6610P-DNA and WISE-6610P-DTA 1.2.1_20251110. This vulnerability affects the function nodered_lib_apply of the component Node-RED Library. Such manipulation of the argument act leads to command injection. The attack can be launched remotely. The exploit is publicly available and might be used. Upgrading to version 1.2.4_20260821 is able to resolve this issue. It is advisable to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-09-07T07:16:47.420",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 19,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-07",
           "label": "Published to NVD"
         }
       ],
