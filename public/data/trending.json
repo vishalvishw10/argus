@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T21:24:28.621Z",
+  "generated_at": "2026-09-06T23:58:14.018Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "808 recent"
+      "detail": "811 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4477 mapped"
+      "detail": "4480 mapped"
     },
     {
       "name": "Reddit",
@@ -64,17 +64,17 @@
   ],
   "cves": [
     {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.01617,
-      "epss_pct": 0.7443,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
+      "epss": 0.01691,
+      "epss_pct": 0.75561,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 69,
-      "rising": 19,
+      "hype": 68,
+      "rising": 18,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -134,17 +134,17 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75561,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
+      "epss": 0.01617,
+      "epss_pct": 0.7443,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -154,7 +154,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -224,7 +224,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 6,
         "stars": 16,
@@ -278,73 +278,6 @@
         }
       ],
       "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-9586",
-      "title": "Sangoma Switchvox SQL Injection Vulnerability",
-      "vendor": "Sangoma",
-      "product": "Switchvox",
-      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.11845,
-      "epss_pct": 0.95811,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 10,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-9586",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Sangoma Switchvox Vulnerabilities Exploited in the Wild",
-          "url": "https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/",
-          "date": "2026-09-04T13:23:12.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
-          "date": "2026-09-02T07:08:50.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-02",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 4
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -403,6 +336,73 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-9586",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.11845,
+      "epss_pct": 0.95811,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 7,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-9586",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Sangoma Switchvox Vulnerabilities Exploited in the Wild",
+          "url": "https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/",
+          "date": "2026-09-04T13:23:12.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+          "date": "2026-09-02T07:08:50.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
       "rank": 5
     },
     {
@@ -426,7 +426,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 58,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -616,7 +616,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 54,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 3,
         "stars": 2,
@@ -874,7 +874,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 5,
         "stars": 5,
@@ -1353,7 +1353,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1553,7 +1553,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1649,7 +1649,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1827,47 +1827,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2022-0995",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.09518,
-      "epss_pct": 0.95113,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2026-53362",
       "title": "Linux Kernel Unspecified Vulnerability",
       "vendor": "Linux",
@@ -1913,7 +1872,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -1961,7 +1920,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2002,7 +1961,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2015,6 +1974,47 @@
       "epss": 0.04962,
       "epss_pct": 0.91611,
       "cwe": "CWE-59",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.09518,
+      "epss_pct": 0.95113,
+      "cwe": "CWE-787",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2430,7 +2430,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 18,
+      "rising": 15,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -2540,7 +2540,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 22,
+      "rising": 21,
       "repos": {
         "count": 6,
         "stars": 18,
@@ -2627,76 +2627,6 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-85672",
-      "title": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file e…",
-      "vendor": null,
-      "product": null,
-      "description": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file extension derived from document URLs is interpolated unsanitized into shell commands executed by poppler utilities. Attackers can craft document URLs with malicious file extensions containing command substitution syntax to execute arbitrary OS commands before document processing occurs.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01469,
-      "epss_pct": 0.72024,
-      "cwe": "CWE-78",
-      "published": "2026-09-04T15:17:45.293",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
-    },
-    {
-      "cve_id": "CVE-2026-85696",
-      "title": "SadTalker contains an OS command injection vulnerability in the video muxing process where uploaded audio filenames a…",
-      "vendor": null,
-      "product": null,
-      "description": "SadTalker contains an OS command injection vulnerability in the video muxing process where uploaded audio filenames are interpolated into ffmpeg commands without proper escaping. Attackers can upload audio files with shell metacharacters in the filename to break out of quoted arguments and execute arbitrary system commands when video generation occurs.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01485,
-      "epss_pct": 0.72311,
-      "cwe": "CWE-78",
-      "published": "2026-09-04T15:17:48.523",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
       "cve_id": "CVE-2026-83627",
       "title": "The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Co…",
       "vendor": null,
@@ -2729,42 +2659,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 51
-    },
-    {
-      "cve_id": "CVE-2024-11080",
-      "title": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection…",
-      "vendor": null,
-      "product": null,
-      "description": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection in versions 2.2.32 to 2.3.1 via several functions in the ~/includes/blocks/form-wrap/function.php file. This makes it possible for unauthenticated attackers to execute actions with hooks in WordPress, granted no other security controls are present in the function.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00441,
-      "epss_pct": 0.36951,
-      "cwe": "CWE-94",
-      "published": "2026-09-05T09:16:48.880",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-86121",
@@ -2799,7 +2694,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-86124",
@@ -2834,7 +2729,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-10196",
@@ -2869,7 +2764,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-86184",
@@ -2904,7 +2799,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-86189",
@@ -2924,7 +2819,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2939,7 +2834,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-86152",
@@ -2959,7 +2854,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2974,7 +2869,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-16310",
@@ -3009,7 +2904,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-75816",
@@ -3041,6 +2936,111 @@
       "timeline": [
         {
           "date": "2026-09-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-86165",
+      "title": "A vulnerability was found in Tenda HG10 300001138.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was found in Tenda HG10 300001138. This vulnerability affects the function formURL of the file /boaform/admin/formURL. Performing a manipulation of the argument Keywd/urlFQDN results in buffer overflow. The attack may be initiated remotely. The exploit has been made public and could be used.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00642,
+      "epss_pct": 0.48486,
+      "cwe": "CWE-119",
+      "published": "2026-09-06T04:18:32.523",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-86167",
+      "title": "A vulnerability was identified in Tenda HG10 300001138.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid leads to os command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.0163,
+      "epss_pct": 0.74627,
+      "cwe": "CWE-77",
+      "published": "2026-09-06T05:16:50.477",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-06",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-84135",
+      "title": "Other issue in Firefox Focus for Android.",
+      "vendor": null,
+      "product": null,
+      "description": "Other issue in Firefox Focus for Android. This vulnerability was fixed in Firefox 155.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00253,
+      "epss_pct": 0.16729,
+      "cwe": "CWE-20",
+      "published": "2026-09-01T13:20:07.573",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-01",
           "label": "Published to NVD"
         }
       ],
