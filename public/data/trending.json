@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-08T14:36:10.607Z",
+  "generated_at": "2026-09-08T18:44:29.679Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
-    "kev_count": 42,
-    "kev_total": 1695,
+    "kev_count": 46,
+    "kev_total": 1699,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1695 entries"
+      "detail": "1699 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "870 recent"
+      "detail": "1584 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "896 scored"
+      "detail": "823 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4501 mapped"
+      "detail": "4506 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,89 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-75650",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00676,
+      "epss_pct": 0.49973,
+      "cwe": "CWE-1336",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 79,
+      "rising": 100,
+      "repos": {
+        "count": 3,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
+            "stars": 4
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
+            "stars": 1
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches-mageos",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches-mageos",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Adobe Patches Over 170 Vulnerabilities, Including Commerce Zero-Day",
+          "url": "https://www.securityweek.com/adobe-patches-over-170-vulnerabilities-including-commerce-zero-day/",
+          "date": "2026-09-08T18:37:17.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Adobe fixes critical Magento zero-day exploited to backdoor servers",
+          "url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
+          "date": "2026-09-08T13:34:47.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+          "date": "2026-09-08T09:13:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
@@ -131,7 +214,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -201,7 +284,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -260,7 +343,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -319,7 +402,99 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-81963",
+      "title": "Microsoft Windows Link Following Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Improper link resolution before file access ('link following') in Windows Update Stack allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-59",
+      "published": "2026-09-08T18:21:00.090",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 54,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Heap-based buffer overflow in Windows ALPC allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:21:14.087",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 54,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -378,7 +553,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -448,155 +623,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-83548",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0071,
-      "epss_pct": 0.5124,
-      "cwe": "CWE-441",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          },
-          {
-            "full_name": "xcoy0te/CVE-2026-83548-checker",
-            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
-            "stars": 0
-          },
-          {
-            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
-          "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
-          "date": "2026-09-03T05:19:04.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
-          "date": "2026-09-02T10:53:49.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-03",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01162,
-      "epss_pct": 0.65168,
-      "cwe": "CWE-843",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 54,
-      "rising": 3,
-      "repos": {
-        "count": 4,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 4
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-85046",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
-            "stars": 1
-          },
-          {
-            "full_name": "Eliot-code/CVE-2026-85046",
-            "html_url": "https://github.com/Eliot-code/CVE-2026-85046",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
-          "date": "2026-09-04T07:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-04",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -666,7 +693,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -725,7 +752,78 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01162,
+      "epss_pct": 0.65168,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 53,
+      "rising": 2,
+      "repos": {
+        "count": 4,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 4
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-85046",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-85046",
+            "stars": 1
+          },
+          {
+            "full_name": "Eliot-code/CVE-2026-85046",
+            "html_url": "https://github.com/Eliot-code/CVE-2026-85046",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+          "date": "2026-09-04T07:18:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-04",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -783,7 +881,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -841,7 +939,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -900,7 +998,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -958,7 +1056,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1012,7 +1110,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1066,7 +1164,77 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-83548",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0071,
+      "epss_pct": 0.5124,
+      "cwe": "CWE-441",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "stars": 0
+          },
+          {
+            "full_name": "xcoy0te/CVE-2026-83548-checker",
+            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
+            "stars": 0
+          },
+          {
+            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
+            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+          "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+          "date": "2026-09-03T05:19:04.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-03",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 19
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1108,7 +1276,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1166,7 +1334,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1220,7 +1388,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
+    },
+    {
+      "cve_id": "CVE-2026-86218",
+      "title": "N-able N-central Static Code Injection Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.00411,
+      "epss_pct": 0.34333,
+      "cwe": "CWE-96",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-86218",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-86218",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 23
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1262,7 +1478,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1315,7 +1531,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1373,7 +1589,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1421,7 +1637,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 27
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1462,7 +1678,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -1510,7 +1726,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1558,7 +1774,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -1606,7 +1822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -1654,7 +1870,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -1712,7 +1928,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -1770,7 +1986,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -1811,48 +2027,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
-    },
-    {
-      "cve_id": "CVE-2022-0995",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.09518,
-      "epss_pct": 0.95118,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
+      "rank": 35
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1893,7 +2068,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -1941,7 +2116,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -1989,7 +2164,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 38
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2030,7 +2205,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 39
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2071,7 +2246,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.09518,
+      "epss_pct": 0.95118,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -2119,7 +2335,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-20316",
@@ -2160,7 +2376,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2201,7 +2417,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2242,7 +2458,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-16812",
@@ -2283,75 +2499,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2026-75650",
-      "title": "CVE-2026-75650",
-      "vendor": null,
-      "product": null,
-      "description": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00676,
-      "epss_pct": 0.49973,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 26,
-      "rising": 76,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 3
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 0
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches-mageos",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches-mageos",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Adobe fixes critical Magento zero-day exploited to backdoor servers",
-          "url": "https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/",
-          "date": "2026-09-08T13:34:47.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
-          "date": "2026-09-08T09:13:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 43
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2404,7 +2552,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 44
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-65643",
@@ -2427,12 +2575,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 3,
+        "stars": 4,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-65643-PoC-Toolkit",
             "html_url": "https://github.com/tc4dy/CVE-2026-65643-PoC-Toolkit",
-            "stars": 3
+            "stars": 4
           },
           {
             "full_name": "HORKimhab/CVE-2026-65643",
@@ -2452,7 +2600,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 45
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-86152",
@@ -2472,7 +2620,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2487,42 +2635,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-86167",
-      "title": "A vulnerability was identified in Tenda HG10 300001138.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid leads to os command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.0163,
-      "epss_pct": 0.74649,
-      "cwe": "CWE-77",
-      "published": "2026-09-06T05:16:50.477",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 10,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-06",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 47
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-79698",
@@ -2542,7 +2655,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2557,42 +2670,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-86296",
-      "title": "A vulnerability was determined in D-Link DIR-822A A_101.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in D-Link DIR-822A A_101. This vulnerability affects the function strcpy of the file udhcpcd/serverpacket.c of the component udhcpcd. This manipulation causes stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01346,
-      "epss_pct": 0.69591,
-      "cwe": "CWE-119",
-      "published": "2026-09-07T11:17:39.550",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-86299",
@@ -2612,42 +2690,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-76578",
-      "title": "A flaw was found in FreeIPA.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw was found in FreeIPA. The self-managed OTP token ACI does not require authentication and does not restrict which attributes may be added alongside the token entry. An unauthenticated LDAP client can exploit this, combined with a related flaw in the underlying directory server's ACI evaluation (tracked separately), to create an arbitrary attacker-controlled Kerberos principal and have it added to the administrators group. This allows a remote, unauthenticated attacker to obtain genuine FreeIPA administrator-group membership and perform administrative operations against the directory and, on SID-enabled deployments, other IdM services.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00453,
-      "epss_pct": 0.37947,
-      "cwe": "CWE-306",
-      "published": "2026-09-07T13:20:36.850",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2700,24 +2743,24 @@
       "rank": 52
     },
     {
-      "cve_id": "CVE-2026-86510",
-      "title": "A vulnerability has been found in D-Link DIR-822A A_101.",
+      "cve_id": "CVE-2026-61516",
+      "title": "Netis NX10 firmware V4.0.1.5808 and V3.0.0.4142 contain an information disclosure vulnerability that allows unauthent…",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability has been found in D-Link DIR-822A A_101. Affected is the function tunnel_set_params of the component L2TP Control Message Parser. Such manipulation leads to out-of-bounds write. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-      "cvss": 9.9,
+      "description": "Netis NX10 firmware V4.0.1.5808 and V3.0.0.4142 contain an information disclosure vulnerability that allows unauthenticated attackers to retrieve the administrator password by sending a request to the sysinfo action in the web management interface without a valid session. Attackers can replay the exposed credential against the login handler to establish a fully authenticated administrator session on the device.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00463,
-      "epss_pct": 0.38565,
-      "cwe": "CWE-119",
-      "published": "2026-09-08T02:17:28.357",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-522",
+      "published": "2026-09-08T15:18:44.170",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2735,85 +2778,24 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-32475",
-      "title": "CVE-2026-32475",
+      "cve_id": "CVE-2026-65669",
+      "title": "Improper neutralization of special elements in output used by a downstream component ('injection') in SQL Server allo…",
       "vendor": null,
       "product": null,
-      "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Elementor Elementor Pro allows Using Malicious Files.\n\nThis issue affects Elementor Pro: from n/a through 4.2.1.",
-      "cvss": 9,
+      "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in SQL Server allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.02374,
-      "epss_pct": 0.8276,
-      "cwe": "CWE-434",
-      "published": null,
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-74",
+      "published": "2026-09-08T18:18:14.893",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 20,
-        "top": [
-          {
-            "full_name": "absholi7ly/Elementor-Pro-Unauthenticated-Arbitrary-File-Upload-to-RCE",
-            "html_url": "https://github.com/absholi7ly/Elementor-Pro-Unauthenticated-Arbitrary-File-Upload-to-RCE",
-            "stars": 8
-          },
-          {
-            "full_name": "dinosn/cve-2026-32475-elementor-pro-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-32475-elementor-pro-lab",
-            "stars": 6
-          },
-          {
-            "full_name": "Boreas37/CVE-2026-32475-PoC",
-            "html_url": "https://github.com/Boreas37/CVE-2026-32475-PoC",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites",
-          "url": "https://www.securityweek.com/elementor-pro-wordpress-plugin-vulnerability-exploited-to-hack-sites/",
-          "date": "2026-09-05T13:00:28.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Covered by SecurityWeek"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-85031",
-      "title": "A vulnerability was found in TOTOLINK CP450 4.1.0.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was found in TOTOLINK CP450 4.1.0. The impacted element is an unknown function of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument topicurl results in buffer overflow. Remote exploitation of the attack is possible.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00579,
-      "epss_pct": 0.4557,
-      "cwe": "CWE-119",
-      "published": "2026-09-03T13:06:19.767",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2824,31 +2806,66 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-03",
+          "date": "2026-09-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-68839",
+      "title": "Heap-based buffer overflow in Windows USB Mass Storage Class Driver allows an unauthorized attacker to execute code o…",
+      "vendor": null,
+      "product": null,
+      "description": "Heap-based buffer overflow in Windows USB Mass Storage Class Driver allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-20",
+      "published": "2026-09-08T18:18:31.623",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 20,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-85428",
-      "title": "MOOS core-moos through 10.4.0 contains an authentication bypass vulnerability in the optional MOOSDB HTTP server that…",
+      "cve_id": "CVE-2026-69276",
+      "title": "Integer underflow (wrap or wraparound) in Microsoft UxTheme Library (uxtheme.dll) allows an unauthorized attacker to …",
       "vendor": null,
       "product": null,
-      "description": "MOOS core-moos through 10.4.0 contains an authentication bypass vulnerability in the optional MOOSDB HTTP server that allows unauthenticated clients to write variables. Attackers can send HTTP requests with variable names and values to the MOOSDB HTTP server port to modify MOOS variables including actuator and override commands without authentication.",
+      "description": "Integer underflow (wrap or wraparound) in Microsoft UxTheme Library (uxtheme.dll) allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00549,
-      "epss_pct": 0.43996,
-      "cwe": "CWE-306",
-      "published": "2026-09-03T23:17:21.770",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:18:41.153",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 1,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2859,31 +2876,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-03",
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-85433",
-      "title": "MOOS essential-moos pShare through 10.0.1 fails to properly authorize PSHARE_CMD messages, allowing any publisher to …",
+      "cve_id": "CVE-2026-69408",
+      "title": "Integer overflow or wraparound in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code …",
       "vendor": null,
       "product": null,
-      "description": "MOOS essential-moos pShare through 10.0.1 fails to properly authorize PSHARE_CMD messages, allowing any publisher to reconfigure network routes and listeners at runtime. Attackers can send crafted PSHARE_CMD messages with cmd=output or cmd=input parameters to open new listeners on arbitrary addresses and redirect or duplicate bus traffic to attacker-controlled destinations.",
+      "description": "Integer overflow or wraparound in Microsoft Windows Media Foundation allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00336,
-      "epss_pct": 0.26455,
-      "cwe": "CWE-862",
-      "published": "2026-09-03T23:17:22.500",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:19:03.540",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 1,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2894,31 +2911,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-03",
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-85438",
-      "title": "MOOS-IvP through 24.8.1 contains a buffer overflow vulnerability in StringToIvPFunction() where dimension, piece, and…",
+      "cve_id": "CVE-2026-69431",
+      "title": "Heap-based buffer overflow in Telnet Client allows an unauthorized attacker to execute code over a network.",
       "vendor": null,
       "product": null,
-      "description": "MOOS-IvP through 24.8.1 contains a buffer overflow vulnerability in StringToIvPFunction() where dimension, piece, and degree counts from encoded BHV_IPF payloads are used as allocation sizes and loop bounds without validation. Attackers can supply crafted payloads with mismatched dimension values to write attacker-controlled doubles past the end of the IvPBox weight array, causing memory corruption and potential code execution.",
+      "description": "Heap-based buffer overflow in Telnet Client allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00486,
-      "epss_pct": 0.40145,
-      "cwe": "CWE-190",
-      "published": "2026-09-03T23:17:23.270",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:19:06.903",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 1,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2929,31 +2946,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-03",
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-85661",
-      "title": "excel-mcp-server 0.1.8 fails to enforce path confinement in stdio mode when EXCEL_FILES_PATH is unset, allowing attac…",
+      "cve_id": "CVE-2026-69463",
+      "title": "Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code over a network.",
       "vendor": null,
       "product": null,
-      "description": "excel-mcp-server 0.1.8 fails to enforce path confinement in stdio mode when EXCEL_FILES_PATH is unset, allowing attackers to read and write arbitrary files. Attackers can supply unchecked file paths to read and write tools to access any file accessible to the process.",
+      "description": "Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00441,
-      "epss_pct": 0.37014,
-      "cwe": "CWE-22",
-      "published": "2026-09-04T15:17:43.643",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:19:11.387",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 4,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2964,31 +2981,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-04",
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-85672",
-      "title": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file e…",
+      "cve_id": "CVE-2026-69491",
+      "title": "Heap-based buffer overflow in Windows Microsoft DirectMusic allows an unauthorized attacker to execute code over a ne…",
       "vendor": null,
       "product": null,
-      "description": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file extension derived from document URLs is interpolated unsanitized into shell commands executed by poppler utilities. Attackers can craft document URLs with malicious file extensions containing command substitution syntax to execute arbitrary OS commands before document processing occurs.",
+      "description": "Heap-based buffer overflow in Windows Microsoft DirectMusic allows an unauthorized attacker to execute code over a network.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01469,
-      "epss_pct": 0.72045,
-      "cwe": "CWE-78",
-      "published": "2026-09-04T15:17:45.293",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": "2026-09-08T18:19:15.357",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 4,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2999,7 +3016,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-04",
+          "date": "2026-09-08",
           "label": "Published to NVD"
         }
       ],
