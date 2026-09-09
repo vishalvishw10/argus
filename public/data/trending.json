@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-09T14:38:43.338Z",
+  "generated_at": "2026-09-09T18:40:05.152Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 46,
     "kev_total": 1699,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1282 recent"
+      "detail": "1174 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1263 scored"
+      "detail": "1168 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4530 mapped"
+      "detail": "4534 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 70,
-      "rising": 68,
+      "hype": 69,
+      "rising": 63,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -129,83 +129,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-75650",
-      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02148,
-      "epss_pct": 0.8102,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 68,
-      "rising": 80,
-      "repos": {
-        "count": 4,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 4
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 1
-          },
-          {
-            "full_name": "jithinkrishnanrs/stylesmuggler-ioc-toolkit",
-            "html_url": "https://github.com/jithinkrishnanrs/stylesmuggler-ioc-toolkit",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Adobe Patches Over 170 Vulnerabilities, Including Commerce Zero-Day",
-          "url": "https://www.securityweek.com/adobe-patches-over-170-vulnerabilities-including-commerce-zero-day/",
-          "date": "2026-09-08T18:37:17.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
-          "date": "2026-09-08T09:13:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-08",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
@@ -229,12 +152,82 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 5,
+        "stars": 6,
         "top": [
           {
             "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
             "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 3
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit PaperCut Flaws to Steal Credentials From Schools and Universities",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
+          "date": "2026-09-05T07:31:53.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-05",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.01691,
+      "epss_pct": 0.75701,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
           },
           {
             "full_name": "virologi-info/papercut-toolkit",
@@ -274,76 +267,6 @@
         }
       ],
       "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75701,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 64,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 3
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit PaperCut Flaws to Steal Credentials From Schools and Universities",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
-          "date": "2026-09-05T07:31:53.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-05",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 4
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -402,7 +325,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -459,6 +382,77 @@
         {
           "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-75650",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02148,
+      "epss_pct": 0.8102,
+      "cwe": "CWE-1336",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 57,
+      "rising": 47,
+      "repos": {
+        "count": 4,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
+            "stars": 4
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
+            "stars": 1
+          },
+          {
+            "full_name": "jithinkrishnanrs/stylesmuggler-ioc-toolkit",
+            "html_url": "https://github.com/jithinkrishnanrs/stylesmuggler-ioc-toolkit",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+          "date": "2026-09-08T09:13:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 6
@@ -1419,7 +1413,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1460,7 +1454,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2609,7 +2603,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2644,7 +2638,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2679,7 +2673,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2714,7 +2708,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2749,7 +2743,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2784,7 +2778,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2819,7 +2813,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2835,41 +2829,6 @@
         }
       ],
       "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-69586",
-      "title": "Integer overflow or wraparound in Microsoft Windows PDF allows an unauthorized attacker to execute code over a network.",
-      "vendor": null,
-      "product": null,
-      "description": "Integer overflow or wraparound in Microsoft Windows PDF allows an unauthorized attacker to execute code over a network.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00996,
-      "epss_pct": 0.60606,
-      "cwe": "CWE-122",
-      "published": "2026-09-08T18:19:28.670",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
     },
     {
       "cve_id": "CVE-2026-69715",
@@ -2889,7 +2848,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2904,7 +2863,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-69730",
@@ -2924,7 +2883,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2939,7 +2898,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-69768",
@@ -2959,7 +2918,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2974,7 +2933,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-69769",
@@ -2994,7 +2953,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-69819",
+      "title": "Out-of-bounds write in RPC Runtime allows an unauthorized attacker to execute code over a network.",
+      "vendor": null,
+      "product": null,
+      "description": "Out-of-bounds write in RPC Runtime allows an unauthorized attacker to execute code over a network.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00928,
+      "epss_pct": 0.58447,
+      "cwe": "CWE-787",
+      "published": "2026-09-08T18:19:53.570",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
