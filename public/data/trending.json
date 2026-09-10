@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T09:48:09.412Z",
+  "generated_at": "2026-09-10T14:29:09.656Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 48,
     "kev_total": 1703,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1126 recent"
+      "detail": "1168 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1088 scored"
+      "detail": "1166 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4537 mapped"
+      "detail": "4552 mapped"
     },
     {
       "name": "Reddit",
@@ -64,6 +64,148 @@
   ],
   "cves": [
     {
+      "cve_id": "CVE-2026-20079",
+      "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+      "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.74697,
+      "epss_pct": 0.9947,
+      "cwe": "CWE-288",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 88,
+      "rising": 100,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "CyberAuth/CVE-2026-20079",
+            "html_url": "https://github.com/CyberAuth/CVE-2026-20079",
+            "stars": 4
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-20079",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-20079",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+          "date": "2026-09-10T10:36:46.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Organizations Warned of Cisco Secure FMC Exploitation",
+          "url": "https://www.securityweek.com/organizations-warned-of-cisco-secure-fmc-exploitation/",
+          "date": "2026-09-10T10:06:20.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
+          "date": "2026-09-09T21:40:44.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-19490",
+      "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.06002,
+      "epss_pct": 0.92891,
+      "cwe": "CWE-288",
+      "published": "2026-08-19T13:17:45.000",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 71,
+      "rising": 66,
+      "repos": {
+        "count": 1,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "TarPeg007/CVE-2026-19490",
+            "html_url": "https://github.com/TarPeg007/CVE-2026-19490",
+            "stars": 12
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Critical NetScaler Vulnerability Exploited in Attacks",
+          "url": "https://www.securityweek.com/critical-netscaler-vulnerability-exploited-in-attacks/",
+          "date": "2026-09-10T12:20:21.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-19",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-86218",
       "title": "N-able N-central Static Code Injection Vulnerability",
       "vendor": "N-able",
@@ -72,7 +214,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00744,
-      "epss_pct": 0.52602,
+      "epss_pct": 0.52631,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -83,8 +225,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 69,
-      "rising": 47,
+      "hype": 68,
+      "rising": 42,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -126,7 +268,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -137,7 +279,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01617,
-      "epss_pct": 0.74576,
+      "epss_pct": 0.74595,
       "cwe": "CWE-305",
       "published": "2026-08-28T16:18:29.600",
       "kev": {
@@ -196,7 +338,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -207,7 +349,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.01691,
-      "epss_pct": 0.75701,
+      "epss_pct": 0.7572,
       "cwe": "CWE-470",
       "published": "2026-08-28T16:18:31.240",
       "kev": {
@@ -266,72 +408,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-20079",
-      "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
-      "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.35946,
-      "epss_pct": 0.98374,
-      "cwe": "CWE-288",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 61,
-      "rising": 62,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "CyberAuth/CVE-2026-20079",
-            "html_url": "https://github.com/CyberAuth/CVE-2026-20079",
-            "stars": 4
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-20079",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-20079",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Cisco confirms CVE-2026-20079 Secure FMC flaw exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/",
-          "date": "2026-09-09T21:40:44.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-09",
-          "label": "Covered by BleepingComputer"
-        }
-      ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-34486",
@@ -390,7 +467,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -449,7 +526,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -508,7 +585,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -519,7 +596,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02148,
-      "epss_pct": 0.8102,
+      "epss_pct": 0.81032,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -531,7 +608,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 56,
-      "rising": 34,
+      "rising": 30,
       "repos": {
         "count": 4,
         "stars": 5,
@@ -579,7 +656,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -590,7 +667,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.9422,
+      "epss_pct": 0.94225,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -649,7 +726,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -675,7 +752,7 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 19,
+        "stars": 20,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-63077",
@@ -683,13 +760,13 @@
             "stars": 19
           },
           {
-            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
-            "stars": 0
+            "full_name": "0xCyp1337/CVE-2026-63077",
+            "html_url": "https://github.com/0xCyp1337/CVE-2026-63077",
+            "stars": 1
           },
           {
-            "full_name": "BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
-            "html_url": "https://github.com/BoredHackerBlog/teamcity-CVE-2026-63077-pcap",
+            "full_name": "unveiledhistory49/teamcity-cve-2026-63077-remediation",
+            "html_url": "https://github.com/unveiledhistory49/teamcity-cve-2026-63077-remediation",
             "stars": 0
           }
         ]
@@ -708,77 +785,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
-    },
-    {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01427,
-      "epss_pct": 0.7137,
-      "cwe": "CWE-843",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 4
-          },
-          {
-            "full_name": "atiilla/CVE-2026-85046",
-            "html_url": "https://github.com/atiilla/CVE-2026-85046",
-            "stars": 1
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
-          "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
-          "date": "2026-09-04T07:18:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-04",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 11
     },
     {
@@ -789,8 +795,8 @@
       "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00759,
-      "epss_pct": 0.53107,
+      "epss": 0.01696,
+      "epss_pct": 0.75786,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -802,7 +808,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 67,
+      "rising": 63,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -835,60 +841,6 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00291,
-      "epss_pct": 0.21438,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 55,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-          "date": "2026-09-09T09:11:03.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-09",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-21962",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
       "vendor": "Oracle",
@@ -897,7 +849,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.4202,
-      "epss_pct": 0.98606,
+      "epss_pct": 0.98608,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -944,6 +896,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00764,
+      "epss_pct": 0.53302,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 51,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+          "date": "2026-09-09T09:11:03.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 14
     },
     {
@@ -955,7 +961,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.60597,
-      "epss_pct": 0.9909,
+      "epss_pct": 0.99091,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1014,7 +1020,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.39652,
-      "epss_pct": 0.98529,
+      "epss_pct": 0.9853,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -1072,7 +1078,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.72695,
-      "epss_pct": 0.99409,
+      "epss_pct": 0.9941,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -1180,7 +1186,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.36257,
-      "epss_pct": 0.98384,
+      "epss_pct": 0.98385,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1230,54 +1236,6 @@
       "rank": 19
     },
     {
-      "cve_id": "CVE-2026-19490",
-      "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.03372,
-      "epss_pct": 0.88028,
-      "cwe": "CWE-288",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 29,
-      "repos": {
-        "count": 1,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "TarPeg007/CVE-2026-19490",
-            "html_url": "https://github.com/TarPeg007/CVE-2026-19490",
-            "stars": 12
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 20
-    },
-    {
       "cve_id": "CVE-2026-73570",
       "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
       "vendor": "Synacor",
@@ -1286,7 +1244,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.32383,
-      "epss_pct": 0.98223,
+      "epss_pct": 0.98225,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1297,10 +1255,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 48,
       "rising": 0,
       "repos": {
-        "count": 7,
+        "count": 8,
         "stars": 11,
         "top": [
           {
@@ -1330,6 +1288,64 @@
       "timeline": [
         {
           "date": "2026-08-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.0126,
+      "epss_pct": 0.67851,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 4
+          },
+          {
+            "full_name": "atiilla/CVE-2026-85046",
+            "html_url": "https://github.com/atiilla/CVE-2026-85046",
+            "stars": 2
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1386,7 +1402,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01606,
-      "epss_pct": 0.74413,
+      "epss_pct": 0.74431,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1444,7 +1460,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.54068,
-      "epss_pct": 0.98939,
+      "epss_pct": 0.98938,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1498,7 +1514,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.45878,
-      "epss_pct": 0.98727,
+      "epss_pct": 0.98729,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1551,7 +1567,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.09905,
-      "epss_pct": 0.95285,
+      "epss_pct": 0.95289,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1609,7 +1625,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48159,
+      "epss_pct": 0.48188,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -1621,7 +1637,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1650,7 +1666,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00572,
-      "epss_pct": 0.45396,
+      "epss_pct": 0.45418,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1662,7 +1678,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1691,7 +1707,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.98902,
+      "epss_pct": 0.98903,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1733,7 +1749,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.78632,
+      "epss_pct": 0.78647,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1748,12 +1764,12 @@
       "rising": 0,
       "repos": {
         "count": 1,
-        "stars": 2,
+        "stars": 3,
         "top": [
           {
             "full_name": "Ap0dexMe0/CVE-2026-49869",
             "html_url": "https://github.com/Ap0dexMe0/CVE-2026-49869",
-            "stars": 2
+            "stars": 3
           }
         ]
       },
@@ -1780,8 +1796,8 @@
       "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.07447,
-      "epss_pct": 0.94081,
+      "epss": 0.04667,
+      "epss_pct": 0.91209,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -1831,54 +1847,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2026-83549",
-      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.13843,
-      "epss_pct": 0.96291,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2023-49105",
       "title": "ownCloud Improper Authentication Vulnerability",
       "vendor": "ownCloud",
@@ -1917,7 +1885,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1928,7 +1896,7 @@
       "cvss": 7.4,
       "severity": "HIGH",
       "epss": 0.40158,
-      "epss_pct": 0.98547,
+      "epss_pct": 0.98549,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1965,7 +1933,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -1976,7 +1944,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.95836,
+      "epss_pct": 0.9584,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2013,6 +1981,54 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-83549",
+      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.08505,
+      "epss_pct": 0.94706,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 35
     },
     {
@@ -2024,7 +2040,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.96783,
+      "epss_pct": 0.96785,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2082,7 +2098,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.93065,
+      "epss_pct": 0.93071,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2140,7 +2156,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0087,
-      "epss_pct": 0.56653,
+      "epss_pct": 0.56681,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2188,7 +2204,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.16888,
-      "epss_pct": 0.9686,
+      "epss_pct": 0.96862,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2221,6 +2237,47 @@
       "rank": 39
     },
     {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": 0.11153,
+      "epss_pct": 0.95678,
+      "cwe": "CWE-259",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 40
+    },
+    {
       "cve_id": "CVE-2026-53362",
       "title": "Linux Kernel Unspecified Vulnerability",
       "vendor": "Linux",
@@ -2229,7 +2286,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.41869,
+      "epss_pct": 0.41894,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2266,7 +2323,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2277,7 +2334,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.45736,
+      "epss_pct": 0.4576,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2314,7 +2371,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2325,49 +2382,8 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.94859,
+      "epss_pct": 0.94863,
       "cwe": "CWE-264",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
-    },
-    {
-      "cve_id": "CVE-2015-5287",
-      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Automatic Bug Reporting Tool",
-      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.04962,
-      "epss_pct": 0.9166,
-      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2399,16 +2415,16 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2022-0995",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.09518,
-      "epss_pct": 0.95142,
-      "cwe": "CWE-787",
+      "epss": 0.04962,
+      "epss_pct": 0.91667,
+      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2440,6 +2456,47 @@
       "rank": 44
     },
     {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.09518,
+      "epss_pct": 0.95147,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 45
+    },
+    {
       "cve_id": "CVE-2026-72530",
       "title": "TrueConf Server Code Injection Vulnerability",
       "vendor": "TrueConf",
@@ -2448,7 +2505,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01827,
-      "epss_pct": 0.77537,
+      "epss_pct": 0.77554,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2485,47 +2542,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-20316",
-      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "epss": 0.09816,
-      "epss_pct": 0.95255,
-      "cwe": "CWE-259",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-07-29",
-        "due_date": "2026-08-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 46
     },
     {
@@ -2537,7 +2553,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.7366,
+      "epss_pct": 0.73677,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2578,7 +2594,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.02213,
-      "epss_pct": 0.81571,
+      "epss_pct": 0.81584,
       "cwe": "CWE-244",
       "published": null,
       "kev": {
@@ -2619,7 +2635,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.05811,
-      "epss_pct": 0.9268,
+      "epss_pct": 0.92686,
       "cwe": "CWE-94",
       "published": "2026-08-17T20:16:41.777",
       "kev": {
@@ -2672,7 +2688,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00904,
-      "epss_pct": 0.57686,
+      "epss_pct": 0.57712,
       "cwe": "CWE-95",
       "published": "2026-09-01T03:16:50.807",
       "kev": {
@@ -2720,7 +2736,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.01977,
-      "epss_pct": 0.79293,
+      "epss_pct": 0.79305,
       "cwe": "CWE-77",
       "published": "2026-09-07T12:17:21.340",
       "kev": {
@@ -2755,7 +2771,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00795,
-      "epss_pct": 0.54242,
+      "epss_pct": 0.54271,
       "cwe": "CWE-20",
       "published": "2026-09-08T18:18:31.623",
       "kev": {
@@ -2790,7 +2806,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00929,
-      "epss_pct": 0.58477,
+      "epss_pct": 0.58497,
       "cwe": "CWE-122",
       "published": "2026-09-08T18:19:06.903",
       "kev": {
@@ -2825,7 +2841,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00997,
-      "epss_pct": 0.6064,
+      "epss_pct": 0.60663,
       "cwe": "CWE-122",
       "published": "2026-09-08T18:19:43.520",
       "kev": {
@@ -2860,7 +2876,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00928,
-      "epss_pct": 0.58447,
+      "epss_pct": 0.58466,
       "cwe": "CWE-122",
       "published": "2026-09-08T18:19:47.970",
       "kev": {
@@ -2895,7 +2911,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00996,
-      "epss_pct": 0.60607,
+      "epss_pct": 0.60631,
       "cwe": "CWE-122",
       "published": "2026-09-08T18:19:54.190",
       "kev": {
@@ -2930,7 +2946,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00954,
-      "epss_pct": 0.59271,
+      "epss_pct": 0.59293,
       "cwe": "CWE-20",
       "published": "2026-09-08T18:19:56.003",
       "kev": {
@@ -2957,17 +2973,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-83941",
-      "title": "Missing authorization in Entra ID allows an authorized attacker to elevate privileges over a network.",
+      "cve_id": "CVE-2026-82004",
+      "title": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS…",
       "vendor": null,
       "product": null,
-      "description": "Missing authorization in Entra ID allows an authorized attacker to elevate privileges over a network.",
-      "cvss": 9.9,
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00733,
-      "epss_pct": 0.52227,
-      "cwe": "CWE-862",
-      "published": "2026-09-08T18:21:04.853",
+      "epss": 0.01437,
+      "epss_pct": 0.71571,
+      "cwe": "CWE-78",
+      "published": "2026-09-08T19:19:59.743",
       "kev": {
         "in_kev": false
       },
@@ -2992,24 +3008,24 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-82004",
-      "title": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS…",
+      "cve_id": "CVE-2026-79941",
+      "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contai…",
       "vendor": null,
       "product": null,
-      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "cvss": 10,
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01437,
-      "epss_pct": 0.71551,
-      "cwe": "CWE-78",
-      "published": "2026-09-08T19:19:59.743",
+      "epss": 0.0191,
+      "epss_pct": 0.78571,
+      "cwe": "CWE-77",
+      "published": "2026-09-09T15:17:10.363",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3020,31 +3036,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-08",
+          "date": "2026-09-09",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-79941",
+      "cve_id": "CVE-2026-79689",
       "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contai…",
       "vendor": null,
       "product": null,
-      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-77",
-      "published": "2026-09-09T15:17:10.363",
+      "epss": 0.0191,
+      "epss_pct": 0.78572,
+      "cwe": "CWE-78",
+      "published": "2026-09-09T16:17:07.197",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
