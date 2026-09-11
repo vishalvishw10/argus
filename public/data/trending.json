@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T21:40:21.354Z",
+  "generated_at": "2026-09-11T00:13:15.692Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "918 recent"
+      "detail": "959 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "921 scored"
+      "detail": "920 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4555 mapped"
+      "detail": "4556 mapped"
     },
     {
       "name": "Reddit",
@@ -83,7 +83,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 88,
+      "hype": 87,
       "rising": 100,
       "repos": {
         "count": 2,
@@ -162,7 +162,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 71,
-      "rising": 60,
+      "rising": 57,
       "repos": {
         "count": 2,
         "stars": 12,
@@ -231,7 +231,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 35,
+      "rising": 32,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -613,7 +613,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 56,
-      "rising": 23,
+      "rising": 21,
       "repos": {
         "count": 4,
         "stars": 6,
@@ -793,6 +793,67 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00764,
+      "epss_pct": 0.53302,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 53,
+      "rising": 42,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+          "date": "2026-09-09T09:11:03.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 12
+    },
+    {
       "cve_id": "CVE-2026-21962",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
       "vendor": "Oracle",
@@ -846,60 +907,6 @@
         {
           "date": "2026-08-24",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00764,
-      "epss_pct": 0.53302,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 45,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-          "date": "2026-09-09T09:11:03.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-09",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 13
@@ -1265,11 +1272,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 46,
+      "hype": 47,
       "rising": 0,
       "repos": {
-        "count": 6,
-        "stars": 9,
+        "count": 7,
+        "stars": 10,
         "top": [
           {
             "full_name": "adriyansyah-mf/cve-2026-85046-poc",
@@ -1282,8 +1289,8 @@
             "stars": 3
           },
           {
-            "full_name": "SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-85046-who-put-the-silverback-guerilla-in-the-wasm",
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
             "stars": 1
           }
         ]
@@ -1520,7 +1527,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1546,47 +1553,6 @@
         }
       ],
       "rank": 25
-    },
-    {
-      "cve_id": "CVE-2026-67277",
-      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.00435,
-      "epss_pct": 0.36743,
-      "cwe": "CWE-306",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 26
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1639,7 +1605,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1697,6 +1663,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 27
+    },
+    {
+      "cve_id": "CVE-2026-67277",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.00435,
+      "epss_pct": 0.36743,
+      "cwe": "CWE-306",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 32,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 28
     },
     {
@@ -1720,7 +1727,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1803,7 +1810,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1844,7 +1851,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2828,7 +2835,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2968,7 +2975,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3056,24 +3063,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-65818",
-      "title": "Server-side request forgery (ssrf) in Power Automate allows an authorized attacker to elevate privileges over a network.",
+      "cve_id": "CVE-2026-78573",
+      "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.7 could allow a remote attacker to gain administrative access due to t…",
       "vendor": null,
       "product": null,
-      "description": "Server-side request forgery (ssrf) in Power Automate allows an authorized attacker to elevate privileges over a network.",
-      "cvss": 9.9,
+      "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.7 could allow a remote attacker to gain administrative access due to the use of default credentials.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00339,
-      "epss_pct": 0.26951,
-      "cwe": "CWE-918",
-      "published": "2026-09-03T23:17:19.817",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-1392",
+      "published": "2026-09-10T22:16:59.987",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 17,
-      "rising": 0,
+      "hype": 18,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3084,7 +3091,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-03",
+          "date": "2026-09-10",
           "label": "Published to NVD"
         }
       ],
