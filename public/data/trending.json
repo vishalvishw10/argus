@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-12T14:11:27.776Z",
+  "generated_at": "2026-09-12T17:14:05.601Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 12,
     "reddit_upvotes": 0,
     "kev_count": 53,
     "kev_total": 1709,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "808 recent"
+      "detail": "800 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "808 scored"
+      "detail": "827 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4581 mapped"
+      "detail": "4582 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.75752,
-      "epss_pct": 0.99491,
+      "epss_pct": 0.99492,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 75,
-      "rising": 45,
+      "rising": 41,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -143,8 +143,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.01148,
+      "epss_pct": 0.64977,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -156,15 +156,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 71,
-      "rising": 80,
+      "rising": 76,
       "repos": {
         "count": 6,
-        "stars": 23,
+        "stars": 31,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 14
+            "stars": 21
           },
           {
             "full_name": "ynsmroztas/GitLabSniper",
@@ -221,7 +221,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00744,
-      "epss_pct": 0.52667,
+      "epss_pct": 0.52735,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -233,7 +233,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 66,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -350,7 +350,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05597,
-      "epss_pct": 0.92445,
+      "epss_pct": 0.92458,
       "cwe": "CWE-288",
       "published": "2026-08-19T13:17:45.000",
       "kev": {
@@ -362,7 +362,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 59,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 12,
@@ -406,8 +406,8 @@
       "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00689,
-      "epss_pct": 0.50738,
+      "epss": 0.0102,
+      "epss_pct": 0.6144,
       "cwe": "CWE-88",
       "published": "2026-09-05T20:17:18.703",
       "kev": {
@@ -419,7 +419,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -518,7 +518,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.86777,
-      "epss_pct": 0.99731,
+      "epss_pct": 0.99732,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -576,8 +576,8 @@
       "description": "RouterOS accepts a \"related\" btest connection before the corresponding primary session has completed authentication. An unauthenticated client can use this state to start an IPv4 UDP test. With \"random-data=false\", the sender transmits an uninitialized tail from a kernel packet buffer. A separate unchecked, inverted packet-size interval causes unsigned integer underflow, anomalously large fragmented output, and can restart the RouterOS kernel.\n\n\n\nThis issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
       "cvss": 8.2,
       "severity": "HIGH",
-      "epss": 0.00748,
-      "epss_pct": 0.52789,
+      "epss": 0.00856,
+      "epss_pct": 0.56333,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -589,7 +589,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -622,7 +622,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02148,
-      "epss_pct": 0.81048,
+      "epss_pct": 0.81079,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -634,7 +634,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 55,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 4,
         "stars": 10,
@@ -752,7 +752,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.94229,
+      "epss_pct": 0.94239,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -814,17 +814,17 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01691,
-      "epss_pct": 0.75739,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
+      "epss": 0.01617,
+      "epss_pct": 0.74655,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -872,17 +872,17 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
       "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.01617,
-      "epss_pct": 0.74614,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
+      "epss": 0.01691,
+      "epss_pct": 0.75779,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
       "kev": {
         "in_kev": true,
         "date_added": "2026-08-31",
@@ -891,7 +891,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 54,
+      "hype": 53,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -938,7 +938,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.4202,
-      "epss_pct": 0.98609,
+      "epss_pct": 0.98611,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -996,7 +996,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00859,
-      "epss_pct": 0.56375,
+      "epss_pct": 0.56441,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1008,7 +1008,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -1057,7 +1057,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.50585,
-      "epss_pct": 0.98846,
+      "epss_pct": 0.98848,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -1116,7 +1116,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.60597,
-      "epss_pct": 0.99091,
+      "epss_pct": 0.99093,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1175,7 +1175,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.45878,
-      "epss_pct": 0.98729,
+      "epss_pct": 0.98731,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1229,7 +1229,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.72695,
-      "epss_pct": 0.9941,
+      "epss_pct": 0.99412,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -1337,7 +1337,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.32383,
-      "epss_pct": 0.98226,
+      "epss_pct": 0.98229,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1395,7 +1395,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.36257,
-      "epss_pct": 0.98386,
+      "epss_pct": 0.98389,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1453,7 +1453,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.0126,
-      "epss_pct": 0.67876,
+      "epss_pct": 0.6793,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -1511,7 +1511,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.83633,
-      "epss_pct": 0.99669,
+      "epss_pct": 0.9967,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1553,7 +1553,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01606,
-      "epss_pct": 0.7445,
+      "epss_pct": 0.74491,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1611,7 +1611,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.54068,
-      "epss_pct": 0.98939,
+      "epss_pct": 0.98941,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1665,7 +1665,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.09905,
-      "epss_pct": 0.95293,
+      "epss_pct": 0.95301,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1722,8 +1722,8 @@
       "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00382,
-      "epss_pct": 0.31639,
+      "epss": 0.00691,
+      "epss_pct": 0.50847,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -1735,7 +1735,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1763,8 +1763,8 @@
       "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00266,
-      "epss_pct": 0.184,
+      "epss": 0.00886,
+      "epss_pct": 0.57253,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -1776,7 +1776,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1804,8 +1804,8 @@
       "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.00349,
-      "epss_pct": 0.28044,
+      "epss": 0.0092,
+      "epss_pct": 0.58304,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1817,7 +1817,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1846,7 +1846,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.98904,
+      "epss_pct": 0.98906,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1888,7 +1888,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02403,
-      "epss_pct": 0.83086,
+      "epss_pct": 0.83114,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1900,7 +1900,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1929,7 +1929,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.43205,
-      "epss_pct": 0.98643,
+      "epss_pct": 0.98646,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1970,7 +1970,7 @@
       "cvss": 7.4,
       "severity": "HIGH",
       "epss": 0.40158,
-      "epss_pct": 0.9855,
+      "epss_pct": 0.98552,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -2018,7 +2018,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48222,
+      "epss_pct": 0.48297,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2030,7 +2030,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2059,7 +2059,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00572,
-      "epss_pct": 0.45457,
+      "epss_pct": 0.45535,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2071,7 +2071,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2100,7 +2100,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.78664,
+      "epss_pct": 0.78701,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2148,7 +2148,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.96788,
+      "epss_pct": 0.96793,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2206,7 +2206,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.93077,
+      "epss_pct": 0.93089,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2264,7 +2264,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.95843,
+      "epss_pct": 0.95851,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2312,7 +2312,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04667,
-      "epss_pct": 0.91217,
+      "epss_pct": 0.91232,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2370,7 +2370,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08505,
-      "epss_pct": 0.94711,
+      "epss_pct": 0.9472,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2418,7 +2418,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0087,
-      "epss_pct": 0.56716,
+      "epss_pct": 0.56783,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2466,7 +2466,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.16888,
-      "epss_pct": 0.96865,
+      "epss_pct": 0.9687,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2507,7 +2507,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.41926,
+      "epss_pct": 0.42013,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2555,7 +2555,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.45795,
+      "epss_pct": 0.45871,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2603,7 +2603,7 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.94868,
+      "epss_pct": 0.94877,
       "cwe": "CWE-264",
       "published": null,
       "kev": {
@@ -2644,7 +2644,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.04962,
-      "epss_pct": 0.91674,
+      "epss_pct": 0.91689,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2685,7 +2685,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.09518,
-      "epss_pct": 0.9515,
+      "epss_pct": 0.95159,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2726,7 +2726,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01827,
-      "epss_pct": 0.77571,
+      "epss_pct": 0.77609,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2774,7 +2774,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.73696,
+      "epss_pct": 0.73739,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2815,7 +2815,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.02213,
-      "epss_pct": 0.816,
+      "epss_pct": 0.81631,
       "cwe": "CWE-244",
       "published": null,
       "kev": {
@@ -2856,7 +2856,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.05811,
-      "epss_pct": 0.92693,
+      "epss_pct": 0.92706,
       "cwe": "CWE-94",
       "published": "2026-08-17T20:16:41.777",
       "kev": {
@@ -2864,7 +2864,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
+      "hype": 22,
       "rising": 0,
       "repos": {
         "count": 7,
@@ -2901,6 +2901,106 @@
       "rank": 54
     },
     {
+      "cve_id": "CVE-2026-85102",
+      "title": "CVE-2026-85102",
+      "vendor": null,
+      "product": null,
+      "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00329,
+      "epss_pct": 0.25905,
+      "cwe": "CWE-295",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 21,
+      "rising": 62,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+          "date": "2026-09-12T14:14:32.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Check Point Patches Critical VPN Vulnerabilities",
+          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
+          "date": "2026-09-11T11:10:02.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-12",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-85103",
+      "title": "CVE-2026-85103",
+      "vendor": null,
+      "product": null,
+      "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Gateway systems.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00361,
+      "epss_pct": 0.29494,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 21,
+      "rising": 62,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+          "date": "2026-09-12T14:14:32.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Check Point Patches Critical VPN Vulnerabilities",
+          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
+          "date": "2026-09-11T11:10:02.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-12",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-65643",
       "title": "Eval injection in cPanel 11.138.0.0 and earlier allows remote authenticated users to execute arbitrary code as root.",
       "vendor": null,
@@ -2909,7 +3009,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00904,
-      "epss_pct": 0.57742,
+      "epss_pct": 0.5781,
       "cwe": "CWE-95",
       "published": "2026-09-01T03:16:50.807",
       "kev": {
@@ -2946,7 +3046,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-73309",
@@ -2956,8 +3056,8 @@
       "description": "XenForo before 2.3.13 contains an authentication bypass vulnerability in the OAuth2 token endpoint that allows unauthenticated attackers to obtain valid token pairs by submitting empty values for client_secret and code_verifier parameters. Attackers can exploit PHP truthy evaluation logic, which treats empty strings as false and skips client secret validation and PKCE code verifier validation, to exchange a valid authorization code for a token pair without proving client identity or holding the PKCE commitment.",
       "cvss": 9.1,
       "severity": "CRITICAL",
-      "epss": 0.00469,
-      "epss_pct": 0.39213,
+      "epss": 0.00476,
+      "epss_pct": 0.39765,
       "cwe": "CWE-697",
       "published": "2026-09-08T14:17:24.913",
       "kev": {
@@ -2989,7 +3089,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-78006",
@@ -2999,8 +3099,8 @@
       "description": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 6.17.4 via the is_safe_widget_instance function. This is due to insufficient protection in is_safe_widget_instance, which can be bypassed because PHP fires magic methods during its pre-parse, combined with enable_rendering_widget_copied() forging a valid wp_hash integrity attribute before unserialize() is reached. This makes it possible for unauthenticated attackers to execute code on the server. This is exploitable without authentication or approval because the plugin's V2 single-event template runs do_blocks() over buffered comment HTML, and WordPress returns a moderation-hash URL that allows an unauthenticated commenter to immediately view their own pending comment, delivering the injected block markup to the vulnerable code path before any moderation occurs. This does require comments to be enabled and visible on events.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00778,
+      "epss_pct": 0.53841,
       "cwe": "CWE-502",
       "published": "2026-09-12T08:16:24.240",
       "kev": {
@@ -3011,20 +3111,28 @@
       "hype": 18,
       "rising": 19,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "DeadExpl0it/CVE-2026-78006-POC",
+            "html_url": "https://github.com/DeadExpl0it/CVE-2026-78006-POC",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
           "date": "2026-09-12",
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-78159",
@@ -3034,8 +3142,8 @@
       "description": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 6.17.3 via the parse_array function. This is due to insufficient validation of the widget 'classes' map, allowing a plain-array payload to bypass the is_safe_widget_instance() object check and reach the callable-invocation sink in Element_Classes::parse_array(). This makes it possible for unauthenticated attackers to execute code on the server. Exploitation requires that the targeted site has comments enabled on tribe_events posts and that at least one comment containing a crafted wp:legacy-widget block has been submitted, as the attack chain is triggered when do_blocks() processes the single-event HTML including the comment area.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00762,
+      "epss_pct": 0.53333,
       "cwe": "CWE-94",
       "published": "2026-09-12T08:16:24.377",
       "kev": {
@@ -3056,76 +3164,6 @@
       "timeline": [
         {
           "date": "2026-09-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-80129",
-      "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contai…",
-      "vendor": null,
-      "product": null,
-      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to remote execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00426,
-      "epss_pct": 0.35915,
-      "cwe": "CWE-22",
-      "published": "2026-09-07T14:16:54.697",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-80131",
-      "title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contai…",
-      "vendor": null,
-      "product": null,
-      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to remote execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00493,
-      "epss_pct": 0.40786,
-      "cwe": "CWE-22",
-      "published": "2026-09-07T14:16:54.933",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-07",
           "label": "Published to NVD"
         }
       ],
