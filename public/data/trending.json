@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T06:15:06.251Z",
+  "generated_at": "2026-09-13T11:58:03.967Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "771 recent"
+      "detail": "793 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4584 mapped"
+      "detail": "4586 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 74,
-      "rising": 22,
+      "rising": 14,
       "repos": {
         "count": 2,
         "stars": 6,
@@ -156,10 +156,10 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 71,
-      "rising": 57,
+      "rising": 49,
       "repos": {
         "count": 7,
-        "stars": 35,
+        "stars": 37,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
@@ -174,7 +174,7 @@
           {
             "full_name": "mhtsec/CVE-2026-85706",
             "html_url": "https://github.com/mhtsec/CVE-2026-85706",
-            "stars": 3
+            "stars": 4
           }
         ]
       },
@@ -362,7 +362,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 59,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 12,
@@ -478,7 +478,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 14,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -569,122 +569,6 @@
       "rank": 8
     },
     {
-      "cve_id": "CVE-2026-67277",
-      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS accepts a \"related\" btest connection before the corresponding primary session has completed authentication. An unauthenticated client can use this state to start an IPv4 UDP test. With \"random-data=false\", the sender transmits an uninitialized tail from a kernel packet buffer. A separate unchecked, inverted packet-size interval causes unsigned integer underflow, anomalously large fragmented output, and can restart the RouterOS kernel.\n\n\n\nThis issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.00856,
-      "epss_pct": 0.56333,
-      "cwe": "CWE-306",
-      "published": "2026-09-05T20:17:18.120",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-75650",
-      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02148,
-      "epss_pct": 0.81079,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 10,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 6
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 4
-          },
-          {
-            "full_name": "fortbridge/stylesmuggler",
-            "html_url": "https://github.com/fortbridge/stylesmuggler",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
-          "date": "2026-09-08T09:13:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-08",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 10
-    },
-    {
       "cve_id": "CVE-2026-63077",
       "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
       "vendor": "JetBrains",
@@ -739,6 +623,122 @@
         {
           "date": "2026-08-05",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-67277",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS accepts a \"related\" btest connection before the corresponding primary session has completed authentication. An unauthenticated client can use this state to start an IPv4 UDP test. With \"random-data=false\", the sender transmits an uninitialized tail from a kernel packet buffer. A separate unchecked, inverted packet-size interval causes unsigned integer underflow, anomalously large fragmented output, and can restart the RouterOS kernel.\n\n\n\nThis issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "epss": 0.00856,
+      "epss_pct": 0.56333,
+      "cwe": "CWE-306",
+      "published": "2026-09-05T20:17:18.120",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-75650",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02148,
+      "epss_pct": 0.81079,
+      "cwe": "CWE-1336",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 10,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
+            "stars": 6
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
+            "stars": 4
+          },
+          {
+            "full_name": "fortbridge/stylesmuggler",
+            "html_url": "https://github.com/fortbridge/stylesmuggler",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+          "date": "2026-09-08T09:13:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 11
@@ -930,72 +930,6 @@
       "rank": 14
     },
     {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00859,
-      "epss_pct": 0.56441,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 6,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 1
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-          "date": "2026-09-09T09:11:03.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-09",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 15
-    },
-    {
       "cve_id": "CVE-2026-21962",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
       "vendor": "Oracle",
@@ -1051,7 +985,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -1074,7 +1008,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 54,
+      "rising": 49,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1101,6 +1035,72 @@
         },
         {
           "date": "2026-09-12",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00859,
+      "epss_pct": 0.56441,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 4,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 1
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+          "date": "2026-09-09T09:11:03.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-09",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -1793,7 +1793,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1834,7 +1834,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1917,7 +1917,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2918,106 +2918,6 @@
       "rank": 54
     },
     {
-      "cve_id": "CVE-2026-85102",
-      "title": "CVE-2026-85102",
-      "vendor": null,
-      "product": null,
-      "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00329,
-      "epss_pct": 0.25905,
-      "cwe": "CWE-295",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 47,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
-          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
-          "date": "2026-09-12T14:14:32.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "Check Point Patches Critical VPN Vulnerabilities",
-          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
-          "date": "2026-09-11T11:10:02.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-12",
-          "label": "Covered by BleepingComputer, SecurityWeek"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-85103",
-      "title": "CVE-2026-85103",
-      "vendor": null,
-      "product": null,
-      "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Gateway systems.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00361,
-      "epss_pct": 0.29494,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 47,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
-          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
-          "date": "2026-09-12T14:14:32.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "Check Point Patches Critical VPN Vulnerabilities",
-          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
-          "date": "2026-09-11T11:10:02.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-12",
-          "label": "Covered by BleepingComputer, SecurityWeek"
-        }
-      ],
-      "rank": 56
-    },
-    {
       "cve_id": "CVE-2026-65643",
       "title": "Eval injection in cPanel 11.138.0.0 and earlier allows remote authenticated users to execute arbitrary code as root.",
       "vendor": null,
@@ -3063,6 +2963,106 @@
           "label": "Published to NVD"
         }
       ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-85102",
+      "title": "CVE-2026-85102",
+      "vendor": null,
+      "product": null,
+      "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00329,
+      "epss_pct": 0.25905,
+      "cwe": "CWE-295",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 41,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+          "date": "2026-09-12T14:14:32.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Check Point Patches Critical VPN Vulnerabilities",
+          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
+          "date": "2026-09-11T11:10:02.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-12",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-85103",
+      "title": "CVE-2026-85103",
+      "vendor": null,
+      "product": null,
+      "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Gateway systems.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00361,
+      "epss_pct": 0.29494,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 41,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+          "date": "2026-09-12T14:14:32.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Check Point Patches Critical VPN Vulnerabilities",
+          "url": "https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/",
+          "date": "2026-09-11T11:10:02.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-12",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
       "rank": 57
     },
     {
@@ -3083,7 +3083,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -3126,7 +3126,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3169,7 +3169,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
