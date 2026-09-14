@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T01:10:38.132Z",
+  "generated_at": "2026-09-14T06:22:32.444Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "812 recent"
+      "detail": "825 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 73,
-      "rising": 3,
+      "rising": 0,
       "repos": {
         "count": 3,
         "stars": 6,
@@ -160,16 +160,16 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 72,
-      "rising": 30,
+      "hype": 71,
+      "rising": 22,
       "repos": {
         "count": 10,
-        "stars": 41,
+        "stars": 42,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 25
+            "stars": 26
           },
           {
             "full_name": "ynsmroztas/GitLabSniper",
@@ -463,58 +463,6 @@
       "rank": 6
     },
     {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0102,
-      "epss_pct": 0.61439,
-      "cwe": "CWE-88",
-      "published": "2026-09-05T20:17:18.703",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 8,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "bahirul/cve-2026-86060",
-            "html_url": "https://github.com/bahirul/cve-2026-86060",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
-    },
-    {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
       "vendor": "Gitea",
@@ -568,6 +516,58 @@
       "timeline": [
         {
           "date": "2026-08-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0102,
+      "epss_pct": 0.61439,
+      "cwe": "CWE-88",
+      "published": "2026-09-05T20:17:18.703",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 56,
+      "rising": 6,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "bahirul/cve-2026-86060",
+            "html_url": "https://github.com/bahirul/cve-2026-86060",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -653,7 +653,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -993,59 +993,6 @@
       "rank": 15
     },
     {
-      "cve_id": "CVE-2026-42016",
-      "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00886,
-      "epss_pct": 0.57248,
-      "cwe": "CWE-863",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 37,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
-          "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-          "date": "2026-09-12T15:54:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-12",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 16
-    },
-    {
       "cve_id": "CVE-2026-87491",
       "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
       "vendor": "Google",
@@ -1109,7 +1056,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1168,7 +1115,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1225,6 +1172,59 @@
         {
           "date": "2026-08-04",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-42016",
+      "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00886,
+      "epss_pct": 0.57248,
+      "cwe": "CWE-863",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 33,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
+          "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
+          "date": "2026-09-12T15:54:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-12",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 19
@@ -1798,7 +1798,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1888,7 +1888,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2080,47 +2080,6 @@
       "rank": 36
     },
     {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00572,
-      "epss_pct": 0.45512,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 37
-    },
-    {
       "cve_id": "CVE-2026-64849",
       "title": "MLflow Server-Side Request Forgery Vulnerability",
       "vendor": "MLflow",
@@ -2176,7 +2135,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -2234,6 +2193,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00572,
+      "epss_pct": 0.45512,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 39
     },
     {
@@ -2285,64 +2285,6 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-83548",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.04667,
-      "epss_pct": 0.91233,
-      "cwe": "CWE-441",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          },
-          {
-            "full_name": "xcoy0te/CVE-2026-83548-checker",
-            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
-            "stars": 0
-          },
-          {
-            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 41
-    },
-    {
       "cve_id": "CVE-2026-9586",
       "title": "Sangoma Switchvox SQL Injection Vulnerability",
       "vendor": "Sangoma",
@@ -2371,6 +2313,64 @@
           {
             "full_name": "HORKimhab/CVE-2026-9586",
             "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-83548",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.04667,
+      "epss_pct": 0.91233,
+      "cwe": "CWE-441",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "stars": 0
+          },
+          {
+            "full_name": "xcoy0te/CVE-2026-83548-checker",
+            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
+            "stars": 0
+          },
+          {
+            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
+            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
             "stars": 0
           }
         ]
@@ -2947,7 +2947,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -3042,8 +3042,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
-      "rising": 26,
+      "hype": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3092,8 +3092,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
-      "rising": 26,
+      "hype": 19,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3169,24 +3169,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-78159",
-      "title": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and includ…",
+      "cve_id": "CVE-2026-90605",
+      "title": "A weakness has been identified in Totolink A3002MU Hh-B20211125.1046.",
       "vendor": null,
       "product": null,
-      "description": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 6.17.3 via the parse_array function. This is due to insufficient validation of the widget 'classes' map, allowing a plain-array payload to bypass the is_safe_widget_instance() object check and reach the callable-invocation sink in Element_Classes::parse_array(). This makes it possible for unauthenticated attackers to execute code on the server. Exploitation requires that the targeted site has comments enabled on tribe_events posts and that at least one comment containing a crafted wp:legacy-widget block has been submitted, as the attack chain is triggered when do_blocks() processes the single-event HTML including the comment area.",
-      "cvss": 9.8,
+      "description": "A weakness has been identified in Totolink A3002MU Hh-B20211125.1046. This vulnerability affects the function formFilter of the file /boafrm/formFilter of the component boa. Executing a manipulation of the argument ip6addr can lead to buffer overflow. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00762,
-      "epss_pct": 0.53331,
-      "cwe": "CWE-94",
-      "published": "2026-09-12T08:16:24.377",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": "2026-09-14T00:16:57.447",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3197,7 +3197,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-12",
+          "date": "2026-09-14",
           "label": "Published to NVD"
         }
       ],
