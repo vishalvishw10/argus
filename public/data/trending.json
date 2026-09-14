@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T19:25:39.783Z",
+  "generated_at": "2026-09-14T23:10:24.738Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "789 recent"
+      "detail": "813 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "781 scored"
+      "detail": "766 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,12 +34,12 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "8 mentions"
     },
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4597 mapped"
+      "detail": "4601 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,83 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-85706",
+      "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.11115,
+      "epss_pct": 0.95684,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 73,
+      "rising": 47,
+      "repos": {
+        "count": 12,
+        "stars": 50,
+        "top": [
+          {
+            "full_name": "guneykabel/cve-2026-85706",
+            "html_url": "https://github.com/guneykabel/cve-2026-85706",
+            "stars": 32
+          },
+          {
+            "full_name": "ynsmroztas/GitLabSniper",
+            "html_url": "https://github.com/ynsmroztas/GitLabSniper",
+            "stars": 7
+          },
+          {
+            "full_name": "mhtsec/CVE-2026-85706",
+            "html_url": "https://github.com/mhtsec/CVE-2026-85706",
+            "stars": 7
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Maximum Severity GitLab Flaw Puts Supply Chains at Risk",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
+          "date": "2026-09-14T20:19:22.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+          "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+          "date": "2026-09-11T16:30:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-11",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-20079",
       "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -131,77 +208,6 @@
       "timeline": [
         {
           "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-11",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-85706",
-      "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.11115,
-      "epss_pct": 0.95684,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 10,
-      "repos": {
-        "count": 12,
-        "stars": 48,
-        "top": [
-          {
-            "full_name": "guneykabel/cve-2026-85706",
-            "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 31
-          },
-          {
-            "full_name": "ynsmroztas/GitLabSniper",
-            "html_url": "https://github.com/ynsmroztas/GitLabSniper",
-            "stars": 7
-          },
-          {
-            "full_name": "mhtsec/CVE-2026-85706",
-            "html_url": "https://github.com/mhtsec/CVE-2026-85706",
-            "stars": 6
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
-          "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
-          "date": "2026-09-11T16:30:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
@@ -341,52 +347,6 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-76461",
-      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.\r\n\r\nThis vulnerability is due to insufficient validation in the email parsing logic. An attacker could exploit this vulnerability by sending a crafted email message that contains malicious SQL statements through an affected device. A successful exploit could allow the attacker to execute arbitrary SQL statements, leading to command execution with root privileges on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-89",
-      "published": "2026-09-14T17:17:51.113",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-14",
-        "due_date": "2026-09-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 53,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 5
-    },
-    {
       "cve_id": "CVE-2026-72898",
       "title": "Metabase SQL Injection Vulnerability",
       "vendor": "Metabase",
@@ -443,7 +403,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -500,7 +460,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -525,7 +485,7 @@
       "hype": 58,
       "rising": 0,
       "repos": {
-        "count": 9,
+        "count": 10,
         "stars": 30,
         "top": [
           {
@@ -559,7 +519,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -582,7 +542,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -611,7 +571,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -670,7 +630,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -693,7 +653,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -715,78 +675,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-75650",
-      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02148,
-      "epss_pct": 0.81091,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 10,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 6
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 4
-          },
-          {
-            "full_name": "fortbridge/stylesmuggler",
-            "html_url": "https://github.com/fortbridge/stylesmuggler",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
-          "date": "2026-09-08T09:13:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-08",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 12
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -844,7 +733,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -914,7 +803,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -972,7 +861,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -1030,7 +919,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1089,7 +978,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-9198",
@@ -1148,7 +1037,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -1171,7 +1060,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 21,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1201,7 +1090,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 19
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1267,7 +1156,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 20
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1321,7 +1210,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1375,7 +1264,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1429,7 +1318,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1487,7 +1376,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -1545,7 +1434,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1603,7 +1492,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1645,7 +1534,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-75650",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02148,
+      "epss_pct": 0.81091,
+      "cwe": "CWE-1336",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 10,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
+            "stars": 6
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
+            "stars": 4
+          },
+          {
+            "full_name": "fortbridge/stylesmuggler",
+            "html_url": "https://github.com/fortbridge/stylesmuggler",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1703,7 +1650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1757,7 +1704,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1815,55 +1762,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 29
     },
     {
-      "cve_id": "CVE-2026-42018",
-      "title": "JFrog Artifactory Improper Authentication Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.0092,
-      "epss_pct": 0.58322,
-      "cwe": "CWE-287",
+      "cve_id": "CVE-2026-76461",
+      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
+        "date_added": "2026-09-14",
+        "due_date": "2026-09-17",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 10,
+      "rising": 32,
       "repos": {
-        "count": 1,
+        "count": 0,
         "stars": 0,
-        "top": [
-          {
-            "full_name": "BL0odz/JFrog_CVE-2026-65615-ByGLM",
-            "html_url": "https://github.com/BL0odz/JFrog_CVE-2026-65615-ByGLM",
-            "stars": 0
-          }
-        ]
+        "top": []
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited",
-        "poc-available"
+        "actively-exploited"
       ],
       "timeline": [
         {
-          "date": "2026-09-11",
+          "date": "2026-09-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1905,7 +1845,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -1928,7 +1868,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 10,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1939,6 +1879,54 @@
       "tags": [
         "kev",
         "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-42018",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.0092,
+      "epss_pct": 0.58322,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 8,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BL0odz/JFrog_CVE-2026-65615-ByGLM",
+            "html_url": "https://github.com/BL0odz/JFrog_CVE-2026-65615-ByGLM",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
       ],
       "timeline": [
         {
@@ -2970,54 +2958,6 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-78006",
-      "title": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and includ…",
-      "vendor": null,
-      "product": null,
-      "description": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 6.17.4 via the is_safe_widget_instance function. This is due to insufficient protection in is_safe_widget_instance, which can be bypassed because PHP fires magic methods during its pre-parse, combined with enable_rendering_widget_copied() forging a valid wp_hash integrity attribute before unserialize() is reached. This makes it possible for unauthenticated attackers to execute code on the server. This is exploitable without authentication or approval because the plugin's V2 single-event template runs do_blocks() over buffered comment HTML, and WordPress returns a moderation-hash URL that allows an unauthenticated commenter to immediately view their own pending comment, delivering the injected block markup to the vulnerable code path before any moderation occurs. This does require comments to be enabled and visible on events.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00778,
-      "epss_pct": 0.53862,
-      "cwe": "CWE-502",
-      "published": "2026-09-12T08:16:24.240",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 10,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "DeadExpl0it/CVE-2026-78006-POC",
-            "html_url": "https://github.com/DeadExpl0it/CVE-2026-78006-POC",
-            "stars": 4
-          },
-          {
-            "full_name": "user445213/CVE-2026-78006",
-            "html_url": "https://github.com/user445213/CVE-2026-78006",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
       "cve_id": "CVE-2026-65643",
       "title": "Eval injection in cPanel 11.138.0.0 and earlier allows remote authenticated users to execute arbitrary code as root.",
       "vendor": null,
@@ -3063,7 +3003,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-73309",
@@ -3106,7 +3046,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-90605",
@@ -3126,7 +3066,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3141,7 +3081,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-90606",
@@ -3161,7 +3101,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-14",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-90608",
+      "title": "A flaw has been found in Totolink A3002MU Hh-B20211125.1046.",
+      "vendor": null,
+      "product": null,
+      "description": "A flaw has been found in Totolink A3002MU Hh-B20211125.1046. The affected element is the function formPortFw of the file /boafrm/formPortFw of the component boa. This manipulation of the argument service_type causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been published and may be used.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00796,
+      "epss_pct": 0.54429,
+      "cwe": "CWE-119",
+      "published": "2026-09-14T01:16:28.130",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
