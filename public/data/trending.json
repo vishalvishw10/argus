@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-14T14:09:08.809Z",
+  "generated_at": "2026-09-14T19:25:39.783Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
-    "kev_count": 53,
-    "kev_total": 1709,
+    "kev_count": 54,
+    "kev_total": 1710,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,22 +14,22 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1709 entries"
+      "detail": "1710 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "857 recent"
+      "detail": "789 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "776 scored"
+      "detail": "781 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "4 mentions"
+      "detail": "3 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4596 mapped"
+      "detail": "4597 mapped"
     },
     {
       "name": "Reddit",
@@ -148,8 +148,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.01164,
-      "epss_pct": 0.65458,
+      "epss": 0.11115,
+      "epss_pct": 0.95684,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -159,17 +159,17 @@
         "ransomware": false
       },
       "zero_day": true,
-      "no_patch": false,
-      "hype": 71,
-      "rising": 13,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 10,
       "repos": {
-        "count": 11,
-        "stars": 45,
+        "count": 12,
+        "stars": 48,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 28
+            "stars": 31
           },
           {
             "full_name": "ynsmroztas/GitLabSniper",
@@ -189,12 +189,6 @@
           "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
           "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
           "date": "2026-09-11T16:30:18.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "GitLab urges users to patch max severity path traversal flaw",
-          "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
-          "date": "2026-09-11T11:15:22.000Z"
         }
       ],
       "reddit": null,
@@ -212,7 +206,7 @@
         },
         {
           "date": "2026-09-11",
-          "label": "Covered by BleepingComputer, The Hacker News"
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 2
@@ -226,7 +220,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00744,
-      "epss_pct": 0.52733,
+      "epss_pct": 0.52758,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -237,7 +231,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 64,
+      "hype": 63,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -347,6 +341,111 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-76461",
+      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.\r\n\r\nThis vulnerability is due to insufficient validation in the email parsing logic. An attacker could exploit this vulnerability by sending a crafted email message that contains malicious SQL statements through an affected device. A successful exploit could allow the attacker to execute arbitrary SQL statements, leading to command execution with root privileges on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-89",
+      "published": "2026-09-14T17:17:51.113",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-14",
+        "due_date": "2026-09-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 53,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-72898",
+      "title": "Metabase SQL Injection Vulnerability",
+      "vendor": "Metabase",
+      "product": "Metabase",
+      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.94217,
+      "epss_pct": 0.99844,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 9,
+        "stars": 35,
+        "top": [
+          {
+            "full_name": "EQSTLab/CVE-2026-72898",
+            "html_url": "https://github.com/EQSTLab/CVE-2026-72898",
+            "stars": 22
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-72898",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
+            "stars": 6
+          },
+          {
+            "full_name": "4minx/CVE-2026-72898",
+            "html_url": "https://github.com/4minx/CVE-2026-72898",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
       "cve_id": "CVE-2026-19490",
       "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "Citrix",
@@ -355,7 +454,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05597,
-      "epss_pct": 0.92457,
+      "epss_pct": 0.92461,
       "cwe": "CWE-288",
       "published": "2026-08-19T13:17:45.000",
       "kev": {
@@ -401,7 +500,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -460,66 +559,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.94217,
-      "epss_pct": 0.99843,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 35,
-        "top": [
-          {
-            "full_name": "EQSTLab/CVE-2026-72898",
-            "html_url": "https://github.com/EQSTLab/CVE-2026-72898",
-            "stars": 22
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-72898",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-72898",
-            "stars": 6
-          },
-          {
-            "full_name": "4minx/CVE-2026-72898",
-            "html_url": "https://github.com/4minx/CVE-2026-72898",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -530,7 +570,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0102,
-      "epss_pct": 0.61439,
+      "epss_pct": 0.6146,
       "cwe": "CWE-88",
       "published": "2026-09-05T20:17:18.703",
       "kev": {
@@ -542,7 +582,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -571,7 +611,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -630,7 +670,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -641,7 +681,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00856,
-      "epss_pct": 0.56331,
+      "epss_pct": 0.56357,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -652,8 +692,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
-      "rising": 3,
+      "hype": 53,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -675,7 +715,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -686,7 +726,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02148,
-      "epss_pct": 0.8108,
+      "epss_pct": 0.81091,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -746,7 +786,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -757,7 +797,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01617,
-      "epss_pct": 0.74654,
+      "epss_pct": 0.74671,
       "cwe": "CWE-305",
       "published": "2026-08-28T16:18:29.600",
       "kev": {
@@ -804,7 +844,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -815,7 +855,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.94239,
+      "epss_pct": 0.94243,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -874,7 +914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -885,7 +925,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.01691,
-      "epss_pct": 0.75778,
+      "epss_pct": 0.75794,
       "cwe": "CWE-470",
       "published": "2026-08-28T16:18:31.240",
       "kev": {
@@ -932,7 +972,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -943,7 +983,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.4202,
-      "epss_pct": 0.98611,
+      "epss_pct": 0.98612,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -990,72 +1030,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00859,
-      "epss_pct": 0.56439,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 2
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-          "date": "2026-09-09T09:11:03.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-09",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 16
     },
     {
@@ -1067,7 +1041,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.50585,
-      "epss_pct": 0.98848,
+      "epss_pct": 0.98849,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -1126,7 +1100,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.60597,
-      "epss_pct": 0.99092,
+      "epss_pct": 0.99094,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1185,7 +1159,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00886,
-      "epss_pct": 0.57248,
+      "epss_pct": 0.57271,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -1197,7 +1171,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 26,
+      "rising": 21,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1230,6 +1204,72 @@
       "rank": 19
     },
     {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00859,
+      "epss_pct": 0.56464,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 2
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+          "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+          "date": "2026-09-09T09:11:03.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-09",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 20
+    },
+    {
       "cve_id": "CVE-2026-59310",
       "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
       "vendor": "Broadcom",
@@ -1238,7 +1278,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.45878,
-      "epss_pct": 0.98731,
+      "epss_pct": 0.98733,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1281,7 +1321,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1292,7 +1332,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.72695,
-      "epss_pct": 0.99412,
+      "epss_pct": 0.99413,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -1335,7 +1375,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1389,7 +1429,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1400,7 +1440,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.32383,
-      "epss_pct": 0.98229,
+      "epss_pct": 0.9823,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1447,7 +1487,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -1458,7 +1498,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.0126,
-      "epss_pct": 0.67929,
+      "epss_pct": 0.67947,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -1473,7 +1513,7 @@
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 14,
+        "stars": 15,
         "top": [
           {
             "full_name": "atiilla/CVE-2026-85046",
@@ -1483,7 +1523,7 @@
           {
             "full_name": "adriyansyah-mf/cve-2026-85046-poc",
             "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 4
+            "stars": 5
           },
           {
             "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
@@ -1505,7 +1545,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1516,7 +1556,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.36257,
-      "epss_pct": 0.98388,
+      "epss_pct": 0.9839,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1563,7 +1603,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1605,7 +1645,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1616,7 +1656,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01606,
-      "epss_pct": 0.7449,
+      "epss_pct": 0.74508,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1663,7 +1703,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-18577",
@@ -1674,7 +1714,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.54068,
-      "epss_pct": 0.98941,
+      "epss_pct": 0.98943,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1717,7 +1757,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1728,7 +1768,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.09905,
-      "epss_pct": 0.95301,
+      "epss_pct": 0.95304,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1775,7 +1815,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -1786,7 +1826,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.0092,
-      "epss_pct": 0.58299,
+      "epss_pct": 0.58322,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1798,7 +1838,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1823,7 +1863,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1834,7 +1874,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.98906,
+      "epss_pct": 0.98907,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1865,7 +1905,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -1876,7 +1916,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00691,
-      "epss_pct": 0.50841,
+      "epss_pct": 0.50868,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -1888,7 +1928,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1906,7 +1946,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1917,7 +1957,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.43205,
-      "epss_pct": 0.98646,
+      "epss_pct": 0.98647,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1947,7 +1987,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-18556",
@@ -1958,7 +1998,7 @@
       "cvss": 7.4,
       "severity": "HIGH",
       "epss": 0.40158,
-      "epss_pct": 0.98552,
+      "epss_pct": 0.98553,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1995,7 +2035,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2006,7 +2046,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02403,
-      "epss_pct": 0.83116,
+      "epss_pct": 0.83126,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2036,7 +2076,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2047,7 +2087,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.96792,
+      "epss_pct": 0.96794,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2094,7 +2134,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -2105,7 +2145,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.93087,
+      "epss_pct": 0.93091,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2152,7 +2192,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2163,49 +2203,8 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48283,
+      "epss_pct": 0.48309,
       "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00572,
-      "epss_pct": 0.45512,
-      "cwe": "CWE-122",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2237,6 +2236,47 @@
       "rank": 39
     },
     {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00572,
+      "epss_pct": 0.45536,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 40
+    },
+    {
       "cve_id": "CVE-2026-49869",
       "title": "Kestra OSS OS Command Injection Vulnerability",
       "vendor": "Kestra",
@@ -2245,7 +2285,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.787,
+      "epss_pct": 0.78711,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2282,7 +2322,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2293,7 +2333,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.9585,
+      "epss_pct": 0.95852,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2330,7 +2370,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2341,7 +2381,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04667,
-      "epss_pct": 0.91233,
+      "epss_pct": 0.91238,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2388,7 +2428,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2399,61 +2439,13 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08505,
-      "epss_pct": 0.9472,
+      "epss_pct": 0.94724,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
         "in_kev": true,
         "date_added": "2026-09-02",
         "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-59822",
-      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.0087,
-      "epss_pct": 0.5678,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-16",
         "ransomware": false
       },
       "zero_day": false,
@@ -2465,8 +2457,8 @@
         "stars": 0,
         "top": [
           {
-            "full_name": "HORKimhab/CVE-2026-59822",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59822",
+            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
             "stars": 0
           }
         ]
@@ -2495,7 +2487,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.16888,
-      "epss_pct": 0.9687,
+      "epss_pct": 0.96873,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2528,6 +2520,54 @@
       "rank": 45
     },
     {
+      "cve_id": "CVE-2026-59822",
+      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "epss": 0.0087,
+      "epss_pct": 0.56804,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-59822",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-59822",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 46
+    },
+    {
       "cve_id": "CVE-2026-53362",
       "title": "Linux Kernel Unspecified Vulnerability",
       "vendor": "Linux",
@@ -2536,7 +2576,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.41978,
+      "epss_pct": 0.42003,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2573,7 +2613,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2584,7 +2624,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.45843,
+      "epss_pct": 0.45865,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2621,7 +2661,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2632,49 +2672,8 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.94876,
+      "epss_pct": 0.94879,
       "cwe": "CWE-264",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2015-5287",
-      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Automatic Bug Reporting Tool",
-      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.04962,
-      "epss_pct": 0.91689,
-      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2706,16 +2705,16 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2022-0995",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.09518,
-      "epss_pct": 0.95159,
-      "cwe": "CWE-787",
+      "epss": 0.04962,
+      "epss_pct": 0.91693,
+      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2747,6 +2746,47 @@
       "rank": 50
     },
     {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.09518,
+      "epss_pct": 0.95161,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 51
+    },
+    {
       "cve_id": "CVE-2026-72530",
       "title": "TrueConf Server Code Injection Vulnerability",
       "vendor": "TrueConf",
@@ -2755,7 +2795,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01827,
-      "epss_pct": 0.77609,
+      "epss_pct": 0.77622,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2792,7 +2832,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2803,7 +2843,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.73738,
+      "epss_pct": 0.73754,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2833,7 +2873,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2844,7 +2884,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.02213,
-      "epss_pct": 0.81631,
+      "epss_pct": 0.8164,
       "cwe": "CWE-244",
       "published": null,
       "kev": {
@@ -2874,7 +2914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-19478",
@@ -2885,7 +2925,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.05811,
-      "epss_pct": 0.92705,
+      "epss_pct": 0.92708,
       "cwe": "CWE-94",
       "published": "2026-08-17T20:16:41.777",
       "kev": {
@@ -2927,7 +2967,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-78006",
@@ -2938,7 +2978,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00778,
-      "epss_pct": 0.53837,
+      "epss_pct": 0.53862,
       "cwe": "CWE-502",
       "published": "2026-09-12T08:16:24.240",
       "kev": {
@@ -2947,7 +2987,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 21,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -2975,7 +3015,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-65643",
@@ -2986,7 +3026,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00904,
-      "epss_pct": 0.57805,
+      "epss_pct": 0.5783,
       "cwe": "CWE-95",
       "published": "2026-09-01T03:16:50.807",
       "kev": {
@@ -3023,7 +3063,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-73309",
@@ -3034,7 +3074,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.00476,
-      "epss_pct": 0.39723,
+      "epss_pct": 0.3975,
       "cwe": "CWE-697",
       "published": "2026-09-08T14:17:24.913",
       "kev": {
@@ -3066,7 +3106,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-90605",
@@ -3076,8 +3116,8 @@
       "description": "A weakness has been identified in Totolink A3002MU Hh-B20211125.1046. This vulnerability affects the function formFilter of the file /boafrm/formFilter of the component boa. Executing a manipulation of the argument ip6addr can lead to buffer overflow. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00466,
+      "epss_pct": 0.39073,
       "cwe": "CWE-119",
       "published": "2026-09-14T00:16:57.447",
       "kev": {
@@ -3086,42 +3126,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-14",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-90606",
-      "title": "A security vulnerability has been detected in Totolink A3002MU Hh-B20211125.1046.",
-      "vendor": null,
-      "product": null,
-      "description": "A security vulnerability has been detected in Totolink A3002MU Hh-B20211125.1046. This issue affects the function formIpv6Setup of the file /boafrm/formIpv6Setup of the component boa. The manipulation of the argument static_ipv6 leads to buffer overflow. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-119",
-      "published": "2026-09-14T00:16:57.617",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3139,24 +3144,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-90607",
-      "title": "A vulnerability was detected in Totolink A3002MU Hh-B20211125.1046.",
+      "cve_id": "CVE-2026-90606",
+      "title": "A security vulnerability has been detected in Totolink A3002MU Hh-B20211125.1046.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was detected in Totolink A3002MU Hh-B20211125.1046. Impacted is the function formNewSchedule of the file /boafrm/formNewSchedule of the component boa. The manipulation of the argument submit-url results in buffer overflow. The attack may be performed from remote. The exploit is now public and may be used.",
+      "description": "A security vulnerability has been detected in Totolink A3002MU Hh-B20211125.1046. This issue affects the function formIpv6Setup of the file /boafrm/formIpv6Setup of the component boa. The manipulation of the argument static_ipv6 leads to buffer overflow. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00493,
+      "epss_pct": 0.40889,
       "cwe": "CWE-119",
-      "published": "2026-09-14T01:16:27.870",
+      "published": "2026-09-14T00:16:57.617",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
