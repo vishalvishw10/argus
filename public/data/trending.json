@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-18T16:28:43.461Z",
+  "generated_at": "2026-09-18T19:40:31.665Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
-    "kev_count": 55,
-    "kev_total": 1715,
+    "kev_count": 56,
+    "kev_total": 1716,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1715 entries"
+      "detail": "1716 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1191 recent"
+      "detail": "1045 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1012 scored"
+      "detail": "901 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4648 mapped"
+      "detail": "4655 mapped"
     },
     {
       "name": "Reddit",
@@ -87,12 +87,12 @@
       "rising": 0,
       "repos": {
         "count": 13,
-        "stars": 62,
+        "stars": 65,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 36
+            "stars": 38
           },
           {
             "full_name": "mhtsec/CVE-2026-85706",
@@ -331,7 +331,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 4,
         "stars": 2,
@@ -512,7 +512,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 40,
+      "rising": 37,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -935,7 +935,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 50,
-      "rising": 29,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -988,7 +988,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1247,11 +1247,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 48,
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 10,
+        "stars": 11,
         "top": [
           {
             "full_name": "gabrielunknown/CVE-2026-73570",
@@ -1328,54 +1328,49 @@
       "rank": 22
     },
     {
-      "cve_id": "CVE-2026-42016",
-      "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
-      "cvss": 8.8,
+      "cve_id": "CVE-2025-39682",
+      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 7.1,
       "severity": "HIGH",
-      "epss": 0.00886,
-      "epss_pct": 0.57488,
-      "cwe": "CWE-863",
+      "epss": 0.00505,
+      "epss_pct": 0.41914,
+      "cwe": "CWE-754",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
       "hype": 45,
-      "rising": 0,
+      "rising": 33,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "khoatran107/cve-2025-39682",
+            "html_url": "https://github.com/khoatran107/cve-2025-39682",
+            "stars": 5
+          }
+        ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
-          "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-          "date": "2026-09-12T15:54:45.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news"
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-11",
+          "date": "2026-09-18",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-12",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 23
@@ -1444,8 +1439,8 @@
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 3.3,
-      "severity": "LOW",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
       "epss": 0.00323,
       "epss_pct": 0.25393,
       "cwe": "CWE-362",
@@ -1459,7 +1454,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1734,7 +1729,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2106,6 +2101,47 @@
       "rank": 37
     },
     {
+      "cve_id": "CVE-2026-42016",
+      "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00886,
+      "epss_pct": 0.57488,
+      "cwe": "CWE-863",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 38
+    },
+    {
       "cve_id": "CVE-2026-42018",
       "title": "JFrog Artifactory Improper Authentication Vulnerability",
       "vendor": "JFrog",
@@ -2151,7 +2187,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2192,7 +2228,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2240,7 +2276,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2281,7 +2317,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -2322,7 +2358,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2370,7 +2406,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2428,7 +2464,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2476,7 +2512,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -2517,7 +2553,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2565,7 +2601,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -2613,7 +2649,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2661,7 +2697,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2702,7 +2738,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2743,7 +2779,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -2784,7 +2820,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -2832,7 +2868,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -2873,7 +2909,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-20349",
@@ -2914,7 +2950,50 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-87796",
+      "title": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up t…",
+      "vendor": null,
+      "product": null,
+      "description": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.1.9 via the move_file function. This is due to insufficient file type validation during chunked upload handling. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-09-17T05:17:02.123",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 14,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-87796",
+            "html_url": "https://github.com/abraxas/CVE-2026-87796",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-65643",
@@ -2962,7 +3041,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58138",
@@ -2982,7 +3061,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 36,
+      "rising": 34,
       "repos": {
         "count": 6,
         "stars": 5,
@@ -3023,7 +3102,7 @@
           "label": "Covered by SecurityWeek"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-92805",
@@ -3043,7 +3122,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3063,84 +3142,6 @@
       "timeline": [
         {
           "date": "2026-09-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-87796",
-      "title": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up t…",
-      "vendor": null,
-      "product": null,
-      "description": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.1.9 via the move_file function. This is due to insufficient file type validation during chunked upload handling. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-434",
-      "published": "2026-09-17T05:17:02.123",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "abraxas/CVE-2026-87796",
-            "html_url": "https://github.com/abraxas/CVE-2026-87796",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-92937",
-      "title": "vm2 3.11.6 is vulnerable to a sandbox escape leading to remote code execution in the host Node.js process.",
-      "vendor": null,
-      "product": null,
-      "description": "vm2 3.11.6 is vulnerable to a sandbox escape leading to remote code execution in the host Node.js process. The fix for GHSA-m283-3h24-438v is incomplete: the bridge gate at lib/bridge.js:1624 identity-checks only the direct call target when deciding whether to rebuild/sanitise a rejected host Promise value. Registering the rejection handler through Function.prototype.call or .apply indirection (e.g., p.then.call(p, undefined, cb)) makes the intercepted target host Function.prototype.call, so the sanitiser never runs and the raw host error reaches sandbox code with its own properties intact. If an embedder exposes a host-realm Promise to the sandbox (an async host function bridged via the sandbox option, or a NodeVM external module's async method) and that Promise rejects with an Error carrying a non-primitive own property referencing a host object (for example err.detail = process), untrusted code in the sandbox obtains a fully functional proxy to that host object and can execute arbitrary commands with the privileges of the host process (e.g., e.detail.mainModule.require('child_process').execSync(...)). The direct p.then(undefined, cb), bind, and Reflect.apply forms are correctly sanitised. Fixed in vm2 3.11.7.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-94",
-      "published": "2026-09-17T14:17:58.517",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 16,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-17",
           "label": "Published to NVD"
         }
       ],
