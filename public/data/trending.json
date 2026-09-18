@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T19:40:31.665Z",
+  "generated_at": "2026-09-18T22:37:18.151Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 56,
     "kev_total": 1716,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1045 recent"
+      "detail": "1043 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "901 scored"
+      "detail": "981 scored"
     },
     {
       "name": "BleepingComputer",
@@ -64,6 +64,73 @@
   ],
   "cves": [
     {
+      "cve_id": "CVE-2026-76460",
+      "title": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
+      "vendor": "Cisco",
+      "product": "Identity Services Engine",
+      "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00784,
+      "epss_pct": 0.54494,
+      "cwe": "CWE-648",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 72,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "S3v3n-JG/CVE-2026-76460",
+            "html_url": "https://github.com/S3v3n-JG/CVE-2026-76460",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
+          "date": "2026-09-18T19:26:47.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
+          "date": "2026-09-17T06:39:40.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-17",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 1
+    },
+    {
       "cve_id": "CVE-2026-85706",
       "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
       "vendor": "GitLab",
@@ -71,8 +138,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.11957,
-      "epss_pct": 0.95901,
+      "epss": 0.14563,
+      "epss_pct": 0.96482,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -131,7 +198,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-72898",
@@ -142,7 +209,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.94217,
-      "epss_pct": 0.99844,
+      "epss_pct": 0.99845,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -190,7 +257,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -201,7 +268,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.86777,
-      "epss_pct": 0.99733,
+      "epss_pct": 0.99734,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -249,7 +316,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-63077",
@@ -260,7 +327,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.86518,
-      "epss_pct": 0.99727,
+      "epss_pct": 0.99728,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -308,7 +375,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -319,7 +386,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02009,
-      "epss_pct": 0.79862,
+      "epss_pct": 0.79955,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -331,7 +398,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 4,
         "stars": 2,
@@ -379,7 +446,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -390,7 +457,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01057,
-      "epss_pct": 0.62773,
+      "epss_pct": 0.62941,
       "cwe": "CWE-88",
       "published": "2026-09-05T20:17:18.703",
       "kev": {
@@ -431,7 +498,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -442,7 +509,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0329,
-      "epss_pct": 0.87853,
+      "epss_pct": 0.87912,
       "cwe": "CWE-305",
       "published": "2026-08-28T16:18:29.600",
       "kev": {
@@ -489,67 +556,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-76460",
-      "title": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
-      "vendor": "Cisco",
-      "product": "Identity Services Engine",
-      "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-648",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 37,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "S3v3n-JG/CVE-2026-76460",
-            "html_url": "https://github.com/S3v3n-JG/CVE-2026-76460",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
-          "date": "2026-09-17T06:39:40.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-17",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 8
     },
     {
@@ -561,7 +567,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.75752,
-      "epss_pct": 0.99496,
+      "epss_pct": 0.99499,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -620,7 +626,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00744,
-      "epss_pct": 0.53005,
+      "epss_pct": 0.5321,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -678,7 +684,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.94276,
+      "epss_pct": 0.94304,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -748,7 +754,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.03574,
-      "epss_pct": 0.88784,
+      "epss_pct": 0.88838,
       "cwe": "CWE-470",
       "published": "2026-08-28T16:18:31.240",
       "kev": {
@@ -805,8 +811,8 @@
       "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.4202,
-      "epss_pct": 0.9862,
+      "epss": 0.42475,
+      "epss_pct": 0.98639,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -864,7 +870,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.50585,
-      "epss_pct": 0.98855,
+      "epss_pct": 0.98861,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -922,8 +928,8 @@
       "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00112,
-      "epss_pct": 0.01564,
+      "epss": 0.00207,
+      "epss_pct": 0.11192,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -935,7 +941,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 50,
-      "rising": 26,
+      "rising": 23,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -975,8 +981,8 @@
       "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00281,
+      "epss_pct": 0.20813,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -988,7 +994,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 26,
+      "rising": 23,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1029,7 +1035,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00869,
-      "epss_pct": 0.56984,
+      "epss_pct": 0.57177,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -1073,8 +1079,8 @@
       "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.45878,
-      "epss_pct": 0.98739,
+      "epss": 0.49675,
+      "epss_pct": 0.98838,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1128,7 +1134,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.72695,
-      "epss_pct": 0.99416,
+      "epss_pct": 0.99419,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -1236,7 +1242,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.32383,
-      "epss_pct": 0.98241,
+      "epss_pct": 0.9825,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1294,7 +1300,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.83633,
-      "epss_pct": 0.99672,
+      "epss_pct": 0.99673,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1336,7 +1342,7 @@
       "cvss": 7.1,
       "severity": "HIGH",
       "epss": 0.00505,
-      "epss_pct": 0.41914,
+      "epss_pct": 0.42129,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -1348,7 +1354,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 45,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -1384,7 +1390,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.36257,
-      "epss_pct": 0.98399,
+      "epss_pct": 0.98407,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1442,7 +1448,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.00323,
-      "epss_pct": 0.25393,
+      "epss_pct": 0.25599,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -1454,7 +1460,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 33,
+      "rising": 32,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1490,7 +1496,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02148,
-      "epss_pct": 0.81195,
+      "epss_pct": 0.81282,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1548,7 +1554,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01462,
-      "epss_pct": 0.72273,
+      "epss_pct": 0.72399,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -1606,7 +1612,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01606,
-      "epss_pct": 0.74643,
+      "epss_pct": 0.74761,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1664,7 +1670,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05597,
-      "epss_pct": 0.92504,
+      "epss_pct": 0.92539,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1709,100 +1715,6 @@
       "rank": 29
     },
     {
-      "cve_id": "CVE-2026-53266",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00121,
-      "epss_pct": 0.02189,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
-    },
-    {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00997,
-      "epss_pct": 0.60979,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
-    },
-    {
       "cve_id": "CVE-2026-65400",
       "title": "Apple macOS Improper Authentication Vulnerability",
       "vendor": "Apple",
@@ -1811,7 +1723,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.10461,
-      "epss_pct": 0.95505,
+      "epss_pct": 0.95527,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1858,6 +1770,100 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 30
+    },
+    {
+      "cve_id": "CVE-2026-53266",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00121,
+      "epss_pct": 0.02189,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 32,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00997,
+      "epss_pct": 0.61154,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 5
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 32
     },
     {
@@ -1869,7 +1875,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.98914,
+      "epss_pct": 0.9892,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1911,7 +1917,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.43205,
-      "epss_pct": 0.98655,
+      "epss_pct": 0.98662,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1952,7 +1958,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.96811,
+      "epss_pct": 0.96827,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2010,7 +2016,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.9313,
+      "epss_pct": 0.93164,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2068,7 +2074,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00691,
-      "epss_pct": 0.51113,
+      "epss_pct": 0.51324,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2109,7 +2115,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00886,
-      "epss_pct": 0.57488,
+      "epss_pct": 0.57678,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2150,7 +2156,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.0092,
-      "epss_pct": 0.5854,
+      "epss_pct": 0.58723,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2198,7 +2204,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02403,
-      "epss_pct": 0.83215,
+      "epss_pct": 0.83294,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2239,7 +2245,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.78827,
+      "epss_pct": 0.78927,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2287,7 +2293,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48558,
+      "epss_pct": 0.48769,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2328,7 +2334,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00572,
-      "epss_pct": 0.45802,
+      "epss_pct": 0.46013,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2369,7 +2375,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.95873,
+      "epss_pct": 0.95893,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2417,7 +2423,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04667,
-      "epss_pct": 0.9129,
+      "epss_pct": 0.91331,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2475,7 +2481,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08505,
-      "epss_pct": 0.94754,
+      "epss_pct": 0.9478,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2523,7 +2529,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.16888,
-      "epss_pct": 0.96891,
+      "epss_pct": 0.96906,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2564,7 +2570,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0087,
-      "epss_pct": 0.57029,
+      "epss_pct": 0.57224,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2612,7 +2618,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.42275,
+      "epss_pct": 0.4249,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2660,7 +2666,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.46127,
+      "epss_pct": 0.46339,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2708,7 +2714,7 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.94907,
+      "epss_pct": 0.94932,
       "cwe": "CWE-264",
       "published": null,
       "kev": {
@@ -2749,7 +2755,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.04962,
-      "epss_pct": 0.91742,
+      "epss_pct": 0.91782,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2790,7 +2796,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.09518,
-      "epss_pct": 0.95188,
+      "epss_pct": 0.95213,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2831,7 +2837,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01827,
-      "epss_pct": 0.77744,
+      "epss_pct": 0.77847,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2879,7 +2885,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.73896,
+      "epss_pct": 0.74016,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2920,7 +2926,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.02213,
-      "epss_pct": 0.81741,
+      "epss_pct": 0.81826,
       "cwe": "CWE-244",
       "published": null,
       "kev": {
@@ -2960,8 +2966,8 @@
       "description": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.1.9 via the move_file function. This is due to insufficient file type validation during chunked upload handling. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00611,
+      "epss_pct": 0.47819,
       "cwe": "CWE-434",
       "published": "2026-09-17T05:17:02.123",
       "kev": {
@@ -2970,7 +2976,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -3004,7 +3010,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00904,
-      "epss_pct": 0.58046,
+      "epss_pct": 0.58232,
       "cwe": "CWE-95",
       "published": "2026-09-01T03:16:50.807",
       "kev": {
@@ -3052,7 +3058,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.09257,
-      "epss_pct": 0.95094,
+      "epss_pct": 0.95118,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -3061,7 +3067,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 34,
+      "rising": 32,
       "repos": {
         "count": 6,
         "stars": 5,
@@ -3112,8 +3118,8 @@
       "description": "UVdesk Community Skeleton through 1.1.8 fails to authenticate or validate installation state on wizard endpoints in ConfigureHelpdesk controller actions. Unauthenticated attackers can repoint the database and create super administrator accounts by submitting crafted requests to wizard endpoints, gaining full control of the instance.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00347,
+      "epss_pct": 0.28351,
       "cwe": "CWE-306",
       "published": "2026-09-16T21:17:30.267",
       "kev": {
