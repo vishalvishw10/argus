@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:45:44.032Z",
+  "generated_at": "2026-09-19T23:10:44.434Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "899 recent"
+      "detail": "855 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "949 scored"
+      "detail": "904 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4666 mapped"
+      "detail": "4676 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 62,
-      "rising": 41,
+      "hype": 61,
+      "rising": 37,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -339,7 +339,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 55,
-      "rising": 57,
+      "rising": 55,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -923,51 +923,6 @@
       "rank": 14
     },
     {
-      "cve_id": "CVE-2026-67277",
-      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS accepts a \"related\" btest connection before the corresponding primary session has completed authentication. An unauthenticated client can use this state to start an IPv4 UDP test. With \"random-data=false\", the sender transmits an uninitialized tail from a kernel packet buffer. A separate unchecked, inverted packet-size interval causes unsigned integer underflow, anomalously large fragmented output, and can restart the RouterOS kernel.\n\n\n\nThis issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.00869,
-      "epss_pct": 0.5721,
-      "cwe": "CWE-306",
-      "published": "2026-09-05T20:17:18.120",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
       "cve_id": "CVE-2026-59310",
       "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
       "vendor": "Broadcom",
@@ -1019,7 +974,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -1042,7 +997,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 49,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1072,7 +1027,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -1095,7 +1050,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1123,6 +1078,51 @@
         {
           "date": "2026-09-16",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "cve_id": "CVE-2026-67277",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS accepts a \"related\" btest connection before the corresponding primary session has completed authentication. An unauthenticated client can use this state to start an IPv4 UDP test. With \"random-data=false\", the sender transmits an uninitialized tail from a kernel packet buffer. A separate unchecked, inverted packet-size interval causes unsigned integer underflow, anomalously large fragmented output, and can restart the RouterOS kernel.\n\n\n\nThis issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "epss": 0.00869,
+      "epss_pct": 0.5721,
+      "cwe": "CWE-306",
+      "published": "2026-09-05T20:17:18.120",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 18
@@ -1394,112 +1394,6 @@
       "rank": 23
     },
     {
-      "cve_id": "CVE-2025-39964",
-      "title": "Linux Kernel Race Condition Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.0079,
-      "epss_pct": 0.54721,
-      "cwe": "CWE-362",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 44,
-      "rising": 25,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
-            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-75650",
-      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02148,
-      "epss_pct": 0.81298,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 44,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 17,
-        "top": [
-          {
-            "full_name": "fortbridge/stylesmuggler",
-            "html_url": "https://github.com/fortbridge/stylesmuggler",
-            "stars": 7
-          },
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 6
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
       "cve_id": "CVE-2026-85046",
       "title": "Google Chromium V8 Type Confusion Vulnerability",
       "vendor": "Google",
@@ -1555,7 +1449,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1610,6 +1504,112 @@
       "timeline": [
         {
           "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2025-39964",
+      "title": "Linux Kernel Race Condition Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "epss": 0.0079,
+      "epss_pct": 0.54721,
+      "cwe": "CWE-362",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 24,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
+            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "cve_id": "CVE-2026-75650",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.02148,
+      "epss_pct": 0.81298,
+      "cwe": "CWE-1336",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 17,
+        "top": [
+          {
+            "full_name": "fortbridge/stylesmuggler",
+            "html_url": "https://github.com/fortbridge/stylesmuggler",
+            "stars": 7
+          },
+          {
+            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
+            "stars": 6
+          },
+          {
+            "full_name": "disrex-group/stylesmuggler-adobe-patches",
+            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1747,7 +1747,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2930,7 +2930,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 29,
-      "rising": 53,
+      "rising": 50,
       "repos": {
         "count": 6,
         "stars": 5,
@@ -3116,7 +3116,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
