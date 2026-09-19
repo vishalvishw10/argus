@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T05:57:52.905Z",
+  "generated_at": "2026-09-19T11:05:50.318Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 55,
     "kev_total": 1716,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1012 recent"
+      "detail": "1051 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "941 scored"
+      "detail": "940 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 63,
-      "rising": 62,
+      "hype": 62,
+      "rising": 54,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -319,53 +319,62 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01057,
-      "epss_pct": 0.62941,
-      "cwe": "CWE-88",
-      "published": "2026-09-05T20:17:18.703",
+      "cve_id": "CVE-2025-39682",
+      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "epss": 0.00505,
+      "epss_pct": 0.42129,
+      "cwe": "CWE-754",
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
-      "hype": 53,
-      "rising": 0,
+      "hype": 56,
+      "rising": 66,
       "repos": {
         "count": 1,
-        "stars": 0,
+        "stars": 5,
         "top": [
           {
-            "full_name": "bahirul/cve-2026-86060",
-            "html_url": "https://github.com/bahirul/cve-2026-86060",
-            "stars": 0
+            "full_name": "khoatran107/cve-2025-39682",
+            "html_url": "https://github.com/khoatran107/cve-2025-39682",
+            "stars": 5
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+          "date": "2026-09-19T06:24:10.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
+        "zero-day",
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-09-19",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 5
@@ -442,6 +451,58 @@
       "rank": 6
     },
     {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01057,
+      "epss_pct": 0.62941,
+      "cwe": "CWE-88",
+      "published": "2026-09-05T20:17:18.703",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "bahirul/cve-2026-86060",
+            "html_url": "https://github.com/bahirul/cve-2026-86060",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
+    },
+    {
       "cve_id": "CVE-2026-20079",
       "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "Cisco",
@@ -498,7 +559,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -556,7 +617,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -626,7 +687,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -684,7 +745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -742,7 +803,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -800,7 +861,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -859,113 +920,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-58704",
-      "title": "Google Pixel Improper Authorization Vulnerability",
-      "vendor": "Google",
-      "product": "Pixel",
-      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00207,
-      "epss_pct": 0.11192,
-      "cwe": "CWE-285",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 50,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
-          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
-          "date": "2026-09-16T11:15:58.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-16",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-87886",
-      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
-      "vendor": "Acronis",
-      "product": "Backup",
-      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00281,
-      "epss_pct": 0.20813,
-      "cwe": "CWE-276",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
-          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
-          "date": "2026-09-16T11:08:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-16",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 15
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1010,7 +965,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1064,7 +1019,113 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-58704",
+      "title": "Google Pixel Improper Authorization Vulnerability",
+      "vendor": "Google",
+      "product": "Pixel",
+      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00207,
+      "epss_pct": 0.11192,
+      "cwe": "CWE-285",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 49,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
+          "date": "2026-09-16T11:15:58.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 17
+    },
+    {
+      "cve_id": "CVE-2026-87886",
+      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+      "vendor": "Acronis",
+      "product": "Backup",
+      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00281,
+      "epss_pct": 0.20813,
+      "cwe": "CWE-276",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
+          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+          "date": "2026-09-16T11:08:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1118,7 +1179,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1172,7 +1233,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1230,7 +1291,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1269,54 +1330,6 @@
       "timeline": [
         {
           "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2025-39682",
-      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 7.1,
-      "severity": "HIGH",
-      "epss": 0.00505,
-      "epss_pct": 0.42129,
-      "cwe": "CWE-754",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 30,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "khoatran107/cve-2025-39682",
-            "html_url": "https://github.com/khoatran107/cve-2025-39682",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1401,7 +1414,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1622,7 +1635,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 43,
+      "hype": 42,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -1734,7 +1747,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2900,6 +2913,74 @@
       "rank": 55
     },
     {
+      "cve_id": "CVE-2026-58138",
+      "title": "CVE-2026-58138",
+      "vendor": null,
+      "product": null,
+      "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow definitions containing malicious JavaScript or Python expressions to the workflow API endpoint prior to authentication. Attackers can exploit unsandboxed GraalVM evaluators configured with HostAccess.ALL or allowAllAccess(true) through INLINE, LAMBDA, DO_WHILE, and SWITCH task types to invoke arbitrary system commands via Java reflection or direct subprocess calls.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.09257,
+      "epss_pct": 0.95118,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 29,
+      "rising": 64,
+      "repos": {
+        "count": 6,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-58138",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-58138",
+            "stars": 3
+          },
+          {
+            "full_name": "Ch4120N/CVE-2026-58138",
+            "html_url": "https://github.com/Ch4120N/CVE-2026-58138",
+            "stars": 2
+          },
+          {
+            "full_name": "BiiTts/CVE-2026-58138-Conductor-Unauth-RCE",
+            "html_url": "https://github.com/BiiTts/CVE-2026-58138-Conductor-Unauth-RCE",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+          "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+          "date": "2026-09-19T08:18:54.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
+          "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+          "date": "2026-09-18T08:42:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-19",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-65643",
       "title": "Eval injection in cPanel 11.138.0.0 and earlier allows remote authenticated users to execute arbitrary code as root.",
       "vendor": null,
@@ -2943,67 +3024,6 @@
         {
           "date": "2026-09-01",
           "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-58138",
-      "title": "CVE-2026-58138",
-      "vendor": null,
-      "product": null,
-      "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow definitions containing malicious JavaScript or Python expressions to the workflow API endpoint prior to authentication. Attackers can exploit unsandboxed GraalVM evaluators configured with HostAccess.ALL or allowAllAccess(true) through INLINE, LAMBDA, DO_WHILE, and SWITCH task types to invoke arbitrary system commands via Java reflection or direct subprocess calls.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.09257,
-      "epss_pct": 0.95118,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 28,
-      "repos": {
-        "count": 6,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-58138",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-58138",
-            "stars": 3
-          },
-          {
-            "full_name": "Ch4120N/CVE-2026-58138",
-            "html_url": "https://github.com/Ch4120N/CVE-2026-58138",
-            "stars": 2
-          },
-          {
-            "full_name": "BiiTts/CVE-2026-58138-Conductor-Unauth-RCE",
-            "html_url": "https://github.com/BiiTts/CVE-2026-58138-Conductor-Unauth-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
-          "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
-          "date": "2026-09-18T08:42:18.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Covered by SecurityWeek"
         }
       ],
       "rank": 57
@@ -3096,7 +3116,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
