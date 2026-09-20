@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:26:12.759Z",
+  "generated_at": "2026-09-20T16:50:58.223Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "864 recent"
+      "detail": "869 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "875 scored"
+      "detail": "905 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4678 mapped"
+      "detail": "4680 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00784,
-      "epss_pct": 0.54531,
+      "epss_pct": 0.54529,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 61,
-      "rising": 21,
+      "hype": 60,
+      "rising": 17,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -327,7 +327,7 @@
       "cvss": 7.1,
       "severity": "HIGH",
       "epss": 0.012,
-      "epss_pct": 0.66794,
+      "epss_pct": 0.66798,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -339,7 +339,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 55,
-      "rising": 43,
+      "rising": 39,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -378,58 +378,6 @@
         }
       ],
       "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01057,
-      "epss_pct": 0.62977,
-      "cwe": "CWE-88",
-      "published": "2026-09-05T20:17:18.703",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "bahirul/cve-2026-86060",
-            "html_url": "https://github.com/bahirul/cve-2026-86060",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -487,7 +435,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -498,7 +446,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.94308,
+      "epss_pct": 0.94309,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -557,7 +505,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -615,7 +563,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -673,7 +621,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -742,6 +690,58 @@
         {
           "date": "2026-09-15",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01057,
+      "epss_pct": 0.62974,
+      "cwe": "CWE-88",
+      "published": "2026-09-05T20:17:18.703",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "bahirul/cve-2026-86060",
+            "html_url": "https://github.com/bahirul/cve-2026-86060",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 11
@@ -930,8 +930,8 @@
       "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.49675,
-      "epss_pct": 0.98839,
+      "epss": 0.50377,
+      "epss_pct": 0.98858,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -966,6 +966,7 @@
         "kev",
         "actively-exploited",
         "ransomware",
+        "high-epss",
         "poc-available"
       ],
       "timeline": [
@@ -985,7 +986,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00869,
-      "epss_pct": 0.5721,
+      "epss_pct": 0.57207,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -1138,7 +1139,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00207,
-      "epss_pct": 0.11172,
+      "epss_pct": 0.11161,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -1150,7 +1151,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 48,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1191,7 +1192,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00254,
-      "epss_pct": 0.17351,
+      "epss_pct": 0.1733,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -1203,7 +1204,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1518,7 +1519,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.0079,
-      "epss_pct": 0.54721,
+      "epss_pct": 0.54718,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -1530,7 +1531,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 20,
+      "rising": 18,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1624,7 +1625,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05597,
-      "epss_pct": 0.92545,
+      "epss_pct": 0.92546,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1677,7 +1678,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.10461,
-      "epss_pct": 0.95531,
+      "epss_pct": 0.95532,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1735,7 +1736,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00276,
-      "epss_pct": 0.20232,
+      "epss_pct": 0.20224,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1747,7 +1748,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 20,
+      "rising": 18,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1775,59 +1776,6 @@
       "rank": 30
     },
     {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00997,
-      "epss_pct": 0.61191,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
-    },
-    {
       "cve_id": "CVE-2019-1068",
       "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -1836,7 +1784,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.9892,
+      "epss_pct": 0.98921,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1864,6 +1812,59 @@
       "timeline": [
         {
           "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00997,
+      "epss_pct": 0.61191,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 5
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1919,7 +1920,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.11038,
-      "epss_pct": 0.95706,
+      "epss_pct": 0.95707,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1967,7 +1968,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.9683,
+      "epss_pct": 0.96831,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2025,7 +2026,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.93169,
+      "epss_pct": 0.93171,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2124,7 +2125,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00691,
-      "epss_pct": 0.51367,
+      "epss_pct": 0.51363,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2165,7 +2166,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.78947,
+      "epss_pct": 0.78948,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2213,7 +2214,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02403,
-      "epss_pct": 0.83305,
+      "epss_pct": 0.83306,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2254,7 +2255,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.95898,
+      "epss_pct": 0.95899,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2302,7 +2303,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04667,
-      "epss_pct": 0.91338,
+      "epss_pct": 0.91339,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2360,7 +2361,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08505,
-      "epss_pct": 0.94784,
+      "epss_pct": 0.94785,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2449,7 +2450,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48806,
+      "epss_pct": 0.48805,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2490,7 +2491,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00572,
-      "epss_pct": 0.46041,
+      "epss_pct": 0.46036,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2531,7 +2532,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0087,
-      "epss_pct": 0.57257,
+      "epss_pct": 0.57254,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2579,7 +2580,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.42522,
+      "epss_pct": 0.42519,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2627,7 +2628,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.46365,
+      "epss_pct": 0.46362,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2846,7 +2847,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.74041,
+      "epss_pct": 0.7404,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2937,7 +2938,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 28,
-      "rising": 36,
+      "rising": 31,
       "repos": {
         "count": 6,
         "stars": 5,
@@ -2988,6 +2989,49 @@
       "rank": 56
     },
     {
+      "cve_id": "CVE-2026-93958",
+      "title": "A vulnerability was found in D-Link R95 BE9500_1.00.16.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was found in D-Link R95 BE9500_1.00.16. This vulnerability affects the function system of the file /bin/ssi of the component DHMAPI. The manipulation of the argument NTPServer results in os command injection. The attack can be executed remotely. The exploit has been made public and could be used.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.02175,
+      "epss_pct": 0.81518,
+      "cwe": "CWE-77",
+      "published": "2026-09-20T02:16:53.307",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 18,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "HackSpeak/CVE-2026-93958",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-93958",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
       "cve_id": "CVE-2026-93603",
       "title": "vm2 through 3.12.0 (fixed in 3.12.1) does not correctly handle a nullish `this` receiver in the apply trap of its bri…",
       "vendor": null,
@@ -2996,44 +3040,9 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00426,
-      "epss_pct": 0.36515,
+      "epss_pct": 0.36511,
       "cwe": "CWE-94",
       "published": "2026-09-18T14:19:12.003",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 12,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-93605",
-      "title": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits …",
-      "vendor": null,
-      "product": null,
-      "description": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits child_process despite blocking other host-spawning modules. Attackers can require child_process and execute arbitrary commands on the host system when NodeVM is configured with builtin:['*'] or explicit child_process allowance.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00383,
-      "epss_pct": 0.32174,
-      "cwe": "CWE-693",
-      "published": "2026-09-18T14:19:12.340",
       "kev": {
         "in_kev": false
       },
@@ -3058,24 +3067,24 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-81657",
-      "title": "IBM Guardium Data Protection 12.2 could allow a remote unauthenticated attacker to execute arbitrary code on the syst…",
+      "cve_id": "CVE-2026-93605",
+      "title": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits …",
       "vendor": null,
       "product": null,
-      "description": "IBM Guardium Data Protection 12.2 could allow a remote unauthenticated attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
-      "cvss": 9.8,
+      "description": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits child_process despite blocking other host-spawning modules. Attackers can require child_process and execute arbitrary commands on the host system when NodeVM is configured with builtin:['*'] or explicit child_process allowance.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00582,
-      "epss_pct": 0.46474,
-      "cwe": "CWE-502",
-      "published": "2026-09-18T20:17:23.997",
+      "epss": 0.00383,
+      "epss_pct": 0.32169,
+      "cwe": "CWE-693",
+      "published": "2026-09-18T14:19:12.340",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3093,17 +3102,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-93839",
-      "title": "LightLLM through 1.2.0 contains an authentication bypass vulnerability in the /pd_register WebSocket endpoint that al…",
+      "cve_id": "CVE-2026-93738",
+      "title": "A vulnerability was found in Totolink A3002MU Hh-B20211125.1046.",
       "vendor": null,
       "product": null,
-      "description": "LightLLM through 1.2.0 contains an authentication bypass vulnerability in the /pd_register WebSocket endpoint that allows unauthenticated attackers to register arbitrary nodes by supplying crafted JSON without peer address validation. Attackers can disclose full user prompts routed to their socket, trigger denial of service by replacing legitimate nodes, or make the PD Master issue requests to internal network addresses.",
-      "cvss": 9.8,
+      "description": "A vulnerability was found in Totolink A3002MU Hh-B20211125.1046. This affects the function formSchedule of the file /boafrm/formSchedule. Performing a manipulation of the argument webpage results in buffer overflow. The attack is possible to be carried out remotely. The exploit has been made public and could be used.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00605,
-      "epss_pct": 0.47611,
-      "cwe": "CWE-306",
-      "published": "2026-09-18T20:17:34.047",
+      "epss": 0.00503,
+      "epss_pct": 0.42057,
+      "cwe": "CWE-119",
+      "published": "2026-09-18T21:18:48.660",
       "kev": {
         "in_kev": false
       },
