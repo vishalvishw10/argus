@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T01:13:38.666Z",
+  "generated_at": "2026-09-20T06:21:38.201Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "861 recent"
+      "detail": "844 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "904 scored"
+      "detail": "878 scored"
     },
     {
       "name": "BleepingComputer",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 34,
+      "rising": 27,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -339,7 +339,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 55,
-      "rising": 53,
+      "rising": 49,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -631,64 +631,6 @@
       "rank": 9
     },
     {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.03574,
-      "epss_pct": 0.88849,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 10
-    },
-    {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
@@ -744,7 +686,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -802,7 +744,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -858,6 +800,64 @@
       "timeline": [
         {
           "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.03574,
+      "epss_pct": 0.88849,
+      "cwe": "CWE-470",
+      "published": "2026-08-28T16:18:31.240",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -977,112 +977,6 @@
       "rank": 15
     },
     {
-      "cve_id": "CVE-2026-58704",
-      "title": "Google Pixel Improper Authorization Vulnerability",
-      "vendor": "Google",
-      "product": "Pixel",
-      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00207,
-      "epss_pct": 0.11172,
-      "cwe": "CWE-285",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 49,
-      "rising": 8,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
-          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
-          "date": "2026-09-16T11:15:58.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-16",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-87886",
-      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
-      "vendor": "Acronis",
-      "product": "Backup",
-      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00254,
-      "epss_pct": 0.17351,
-      "cwe": "CWE-276",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 8,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
-          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
-          "date": "2026-09-16T11:08:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-16",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 17
-    },
-    {
       "cve_id": "CVE-2026-67277",
       "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
       "vendor": "MikroTik",
@@ -1125,7 +1019,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1179,7 +1073,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-8037",
@@ -1231,6 +1125,112 @@
         {
           "date": "2026-08-07",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-58704",
+      "title": "Google Pixel Improper Authorization Vulnerability",
+      "vendor": "Google",
+      "product": "Pixel",
+      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00207,
+      "epss_pct": 0.11172,
+      "cwe": "CWE-285",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 48,
+      "rising": 6,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+          "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
+          "date": "2026-09-16T11:15:58.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "cve_id": "CVE-2026-87886",
+      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+      "vendor": "Acronis",
+      "product": "Backup",
+      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00254,
+      "epss_pct": 0.17351,
+      "cwe": "CWE-276",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 6,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
+          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+          "date": "2026-09-16T11:08:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-16",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 20
@@ -1530,7 +1530,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -1747,7 +1747,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2929,8 +2929,8 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 29,
-      "rising": 48,
+      "hype": 28,
+      "rising": 42,
       "repos": {
         "count": 6,
         "stars": 5,
@@ -3046,7 +3046,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3081,7 +3081,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3116,7 +3116,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
