@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:31:41.407Z",
+  "generated_at": "2026-09-21T23:20:04.243Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "832 recent"
+      "detail": "760 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "872 scored"
+      "detail": "789 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4702 mapped"
+      "detail": "4712 mapped"
     },
     {
       "name": "Reddit",
@@ -272,12 +272,12 @@
       "rising": 0,
       "repos": {
         "count": 13,
-        "stars": 68,
+        "stars": 69,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 39
+            "stars": 40
           },
           {
             "full_name": "mhtsec/CVE-2026-85706",
@@ -339,7 +339,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 16,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -496,58 +496,6 @@
       "rank": 7
     },
     {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01057,
-      "epss_pct": 0.62505,
-      "cwe": "CWE-88",
-      "published": "2026-09-05T20:17:18.703",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "bahirul/cve-2026-86060",
-            "html_url": "https://github.com/bahirul/cve-2026-86060",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
       "cve_id": "CVE-2026-86218",
       "title": "N-able N-central Static Code Injection Vulnerability",
       "vendor": "N-able",
@@ -603,7 +551,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -661,7 +609,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -717,6 +665,58 @@
       "timeline": [
         {
           "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01057,
+      "epss_pct": 0.62505,
+      "cwe": "CWE-88",
+      "published": "2026-09-05T20:17:18.703",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "bahirul/cve-2026-86060",
+            "html_url": "https://github.com/bahirul/cve-2026-86060",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1013,7 +1013,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1066,7 +1066,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1432,6 +1432,54 @@
       "rank": 24
     },
     {
+      "cve_id": "CVE-2025-39964",
+      "title": "Linux Kernel Race Condition Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "epss": 0.0079,
+      "epss_pct": 0.54297,
+      "cwe": "CWE-362",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 8,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
+            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
+    },
+    {
       "cve_id": "CVE-2026-75650",
       "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
       "vendor": "Adobe",
@@ -1451,7 +1499,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 43,
+      "hype": 42,
       "rising": 0,
       "repos": {
         "count": 5,
@@ -1487,96 +1535,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
-    },
-    {
-      "cve_id": "CVE-2026-7273",
-      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00315,
-      "epss_pct": 0.24603,
-      "cwe": "CWE-121",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 26
-    },
-    {
-      "cve_id": "CVE-2025-39964",
-      "title": "Linux Kernel Race Condition Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.0079,
-      "epss_pct": 0.54297,
-      "cwe": "CWE-362",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 9,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
-            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 27
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1631,6 +1590,47 @@
       "timeline": [
         {
           "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 27
+    },
+    {
+      "cve_id": "CVE-2026-7273",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00315,
+      "epss_pct": 0.24603,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 32,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-21",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1752,7 +1752,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2883,49 +2883,6 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-94095",
-      "title": "A vulnerability has been found in Netcore NBR200V2 1.3.241127.071246.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability has been found in Netcore NBR200V2 1.3.241127.071246. Affected by this vulnerability is an unknown functionality of the file /usr/bin/network_tools of the component Traceroute Diagnostic Feature. The manipulation of the argument url leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.0167,
-      "epss_pct": 0.75396,
-      "cwe": "CWE-74",
-      "published": "2026-09-21T00:16:59.440",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 17,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "HackSpeak/CVE-2026-94095",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-94095",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
       "cve_id": "CVE-2026-93741",
       "title": "A security flaw has been discovered in Totolink A3002MU Hh-B20211125.1046.",
       "vendor": null,
@@ -2943,7 +2900,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2958,7 +2915,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-94003",
@@ -2978,7 +2935,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2993,7 +2950,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-94089",
@@ -3028,7 +2985,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-94097",
@@ -3048,7 +3005,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-09-21",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-94099",
+      "title": "A security flaw has been discovered in Netcore NBR200V2 1.3.241127.071246.",
+      "vendor": null,
+      "product": null,
+      "description": "A security flaw has been discovered in Netcore NBR200V2 1.3.241127.071246. This issue affects some unknown processing of the file restore.cgi of the component Backup Restore. Performing a manipulation of the argument QUERY_STRING results in command injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.01687,
+      "epss_pct": 0.75637,
+      "cwe": "CWE-74",
+      "published": "2026-09-21T01:16:29.983",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
