@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T13:26:48.900Z",
+  "generated_at": "2026-09-22T18:08:06.673Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "770 recent"
+      "detail": "709 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "786 scored"
+      "detail": "746 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "13 mentions"
+      "detail": "14 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4718 mapped"
+      "detail": "4722 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.94217,
-      "epss_pct": 0.99848,
+      "epss_pct": 0.99846,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -131,7 +131,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.86777,
-      "epss_pct": 0.9974,
+      "epss_pct": 0.99735,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -190,7 +190,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00784,
-      "epss_pct": 0.54107,
+      "epss_pct": 0.54554,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -256,8 +256,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.14563,
-      "epss_pct": 0.96545,
+      "epss": 0.09287,
+      "epss_pct": 0.95138,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -272,12 +272,12 @@
       "rising": 0,
       "repos": {
         "count": 12,
-        "stars": 69,
+        "stars": 70,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 40
+            "stars": 41
           },
           {
             "full_name": "mhtsec/CVE-2026-85706",
@@ -326,8 +326,8 @@
       "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
       "cvss": 8.8,
       "severity": "HIGH",
-      "epss": 0.00315,
-      "epss_pct": 0.24603,
+      "epss": 0.01987,
+      "epss_pct": 0.7972,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -339,7 +339,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 63,
+      "rising": 59,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -379,8 +379,8 @@
       "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.012,
-      "epss_pct": 0.66357,
+      "epss": 0.0203,
+      "epss_pct": 0.80179,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -392,7 +392,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -441,7 +441,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0329,
-      "epss_pct": 0.87941,
+      "epss_pct": 0.87936,
       "cwe": "CWE-305",
       "published": "2026-08-28T16:18:29.600",
       "kev": {
@@ -499,7 +499,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.42475,
-      "epss_pct": 0.98685,
+      "epss_pct": 0.98643,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -549,6 +549,61 @@
       "rank": 8
     },
     {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.50377,
+      "epss_pct": 0.98859,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "BiuTrap/CVE-2026-59310",
+            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
+            "stars": 2
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-59310",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
       "cve_id": "CVE-2026-86218",
       "title": "N-able N-central Static Code Injection Vulnerability",
       "vendor": "N-able",
@@ -557,7 +612,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07494,
-      "epss_pct": 0.94295,
+      "epss_pct": 0.94207,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -604,7 +659,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -615,7 +670,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.03574,
-      "epss_pct": 0.88875,
+      "epss_pct": 0.8886,
       "cwe": "CWE-470",
       "published": "2026-08-28T16:18:31.240",
       "kev": {
@@ -662,7 +717,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -673,7 +728,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.50585,
-      "epss_pct": 0.98896,
+      "epss_pct": 0.98864,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -721,7 +776,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -732,7 +787,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01057,
-      "epss_pct": 0.62505,
+      "epss_pct": 0.63002,
       "cwe": "CWE-88",
       "published": "2026-09-05T20:17:18.703",
       "kev": {
@@ -773,7 +828,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -784,7 +839,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.75752,
-      "epss_pct": 0.99511,
+      "epss_pct": 0.99499,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -832,61 +887,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.50377,
-      "epss_pct": 0.98892,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BiuTrap/CVE-2026-59310",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-59310",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 14
     },
     {
@@ -898,7 +898,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.72695,
-      "epss_pct": 0.99435,
+      "epss_pct": 0.9942,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -952,7 +952,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.32383,
-      "epss_pct": 0.98297,
+      "epss_pct": 0.98254,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1010,7 +1010,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00869,
-      "epss_pct": 0.56738,
+      "epss_pct": 0.57232,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -1055,7 +1055,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.83633,
-      "epss_pct": 0.99683,
+      "epss_pct": 0.99675,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -1097,7 +1097,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.36257,
-      "epss_pct": 0.98456,
+      "epss_pct": 0.98411,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1155,7 +1155,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07666,
-      "epss_pct": 0.94403,
+      "epss_pct": 0.94315,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1213,7 +1213,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01462,
-      "epss_pct": 0.72027,
+      "epss_pct": 0.72442,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -1271,7 +1271,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01606,
-      "epss_pct": 0.74396,
+      "epss_pct": 0.74808,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1329,7 +1329,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.0079,
-      "epss_pct": 0.54297,
+      "epss_pct": 0.54744,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -1341,15 +1341,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 1,
-        "stars": 2,
+        "stars": 3,
         "top": [
           {
             "full_name": "n1k0oowang/CVE-2025-39964_EXP",
             "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 2
+            "stars": 3
           }
         ]
       },
@@ -1377,7 +1377,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02009,
-      "epss_pct": 0.79731,
+      "epss_pct": 0.7999,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1435,7 +1435,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02148,
-      "epss_pct": 0.81057,
+      "epss_pct": 0.81313,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1493,7 +1493,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.10461,
-      "epss_pct": 0.95604,
+      "epss_pct": 0.95537,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1551,7 +1551,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00276,
-      "epss_pct": 0.20195,
+      "epss_pct": 0.20229,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1563,7 +1563,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1604,7 +1604,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.05597,
-      "epss_pct": 0.9261,
+      "epss_pct": 0.92552,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1657,7 +1657,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.52845,
-      "epss_pct": 0.9895,
+      "epss_pct": 0.98922,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1699,7 +1699,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.43205,
-      "epss_pct": 0.98705,
+      "epss_pct": 0.98664,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1740,7 +1740,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00997,
-      "epss_pct": 0.60708,
+      "epss_pct": 0.61216,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1793,7 +1793,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.1641,
-      "epss_pct": 0.96889,
+      "epss_pct": 0.96834,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1851,7 +1851,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.06184,
-      "epss_pct": 0.93259,
+      "epss_pct": 0.93176,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -1909,7 +1909,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00207,
-      "epss_pct": 0.11142,
+      "epss_pct": 0.11133,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -1950,7 +1950,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00254,
-      "epss_pct": 0.17289,
+      "epss_pct": 0.17308,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -1983,54 +1983,6 @@
       "rank": 35
     },
     {
-      "cve_id": "CVE-2026-42018",
-      "title": "JFrog Artifactory Improper Authentication Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.11038,
-      "epss_pct": 0.95772,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "BL0odz/JFrog_CVE-2026-65615-ByGLM",
-            "html_url": "https://github.com/BL0odz/JFrog_CVE-2026-65615-ByGLM",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 36
-    },
-    {
       "cve_id": "CVE-2026-42016",
       "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
       "vendor": "JFrog",
@@ -2039,7 +1991,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.09058,
-      "epss_pct": 0.95118,
+      "epss_pct": 0.95054,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2069,6 +2021,54 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 36
+    },
+    {
+      "cve_id": "CVE-2026-42018",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.11038,
+      "epss_pct": 0.95711,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "BL0odz/JFrog_CVE-2026-65615-ByGLM",
+            "html_url": "https://github.com/BL0odz/JFrog_CVE-2026-65615-ByGLM",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 37
     },
     {
@@ -2080,7 +2080,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01917,
-      "epss_pct": 0.78685,
+      "epss_pct": 0.78964,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2128,7 +2128,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.11845,
-      "epss_pct": 0.9596,
+      "epss_pct": 0.95902,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2176,7 +2176,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04667,
-      "epss_pct": 0.91357,
+      "epss_pct": 0.91346,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2234,7 +2234,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08505,
-      "epss_pct": 0.94859,
+      "epss_pct": 0.9479,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2282,7 +2282,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.16888,
-      "epss_pct": 0.96968,
+      "epss_pct": 0.96913,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2323,7 +2323,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00691,
-      "epss_pct": 0.50979,
+      "epss_pct": 0.51392,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2356,47 +2356,6 @@
       "rank": 43
     },
     {
-      "cve_id": "CVE-2025-25249",
-      "title": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
-      "vendor": "Fortinet",
-      "product": "Multiple Products",
-      "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02403,
-      "epss_pct": 0.83173,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 44
-    },
-    {
       "cve_id": "CVE-2026-59822",
       "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
       "vendor": "BerriAI",
@@ -2405,7 +2364,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0087,
-      "epss_pct": 0.56786,
+      "epss_pct": 0.5728,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2442,7 +2401,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -2453,7 +2412,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0051,
-      "epss_pct": 0.42387,
+      "epss_pct": 0.42539,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2490,7 +2449,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2501,7 +2460,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00579,
-      "epss_pct": 0.46122,
+      "epss_pct": 0.46377,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2538,7 +2497,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2549,8 +2508,49 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.95001,
+      "epss_pct": 0.94942,
       "cwe": "CWE-264",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.04962,
+      "epss_pct": 0.91794,
+      "cwe": "CWE-59",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2582,16 +2582,16 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2015-5287",
-      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-      "vendor": "Red Hat",
-      "product": "Automatic Bug Reporting Tool",
-      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.04962,
-      "epss_pct": 0.91832,
-      "cwe": "CWE-59",
+      "epss": 0.09441,
+      "epss_pct": 0.95194,
+      "cwe": "CWE-787",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2623,47 +2623,6 @@
       "rank": 49
     },
     {
-      "cve_id": "CVE-2022-0995",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.09441,
-      "epss_pct": 0.95256,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 50
-    },
-    {
       "cve_id": "CVE-2026-72530",
       "title": "TrueConf Server Code Injection Vulnerability",
       "vendor": "TrueConf",
@@ -2672,7 +2631,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01827,
-      "epss_pct": 0.77557,
+      "epss_pct": 0.77887,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2709,6 +2668,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 50
+    },
+    {
+      "cve_id": "CVE-2025-25249",
+      "title": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02403,
+      "epss_pct": 0.83321,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 51
     },
     {
@@ -2720,7 +2720,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00631,
-      "epss_pct": 0.48518,
+      "epss_pct": 0.48838,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2761,7 +2761,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00572,
-      "epss_pct": 0.45798,
+      "epss_pct": 0.46052,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2802,7 +2802,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01554,
-      "epss_pct": 0.73627,
+      "epss_pct": 0.74059,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2843,7 +2843,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.02213,
-      "epss_pct": 0.81639,
+      "epss_pct": 0.81858,
       "cwe": "CWE-244",
       "published": null,
       "kev": {
@@ -2883,8 +2883,8 @@
       "description": "HP has identified and remediated multiple externally reported vulnerabilities within HPLIP. The findings affect several software components that could potentially enable remote code execution, privilege escalation, denial of service, information disclosure, or unauthorized file modification under certain conditions.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00671,
-      "epss_pct": 0.50198,
+      "epss": 0.00964,
+      "epss_pct": 0.60171,
       "cwe": "CWE-787",
       "published": "2026-09-16T19:18:02.070",
       "kev": {
@@ -2892,16 +2892,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
+      "hype": 19,
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 0,
+        "stars": 1,
         "top": [
           {
             "full_name": "Nxploited/CVE-2026-91097-CVE-2026-91106",
             "html_url": "https://github.com/Nxploited/CVE-2026-91097-CVE-2026-91106",
-            "stars": 0
+            "stars": 1
           },
           {
             "full_name": "murrez/HP-HPLIP-Mass-CVE-checker-2026-09-",
@@ -2931,8 +2931,8 @@
       "description": "HP has identified and remediated multiple externally reported vulnerabilities within HPLIP. The findings affect several software components that could potentially enable remote code execution, privilege escalation, denial of service, information disclosure, or unauthorized file modification under certain conditions.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00671,
-      "epss_pct": 0.50198,
+      "epss": 0.00964,
+      "epss_pct": 0.60171,
       "cwe": "CWE-122",
       "published": "2026-09-16T19:18:03.587",
       "kev": {
@@ -2940,16 +2940,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
+      "hype": 19,
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 0,
+        "stars": 1,
         "top": [
           {
             "full_name": "Nxploited/CVE-2026-91097-CVE-2026-91106",
             "html_url": "https://github.com/Nxploited/CVE-2026-91097-CVE-2026-91106",
-            "stars": 0
+            "stars": 1
           },
           {
             "full_name": "murrez/HP-HPLIP-Mass-CVE-checker-2026-09-",
@@ -2980,7 +2980,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00606,
-      "epss_pct": 0.474,
+      "epss_pct": 0.47689,
       "cwe": "CWE-119",
       "published": "2026-09-20T12:17:05.403",
       "kev": {
@@ -2989,7 +2989,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3007,17 +3007,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-94089",
-      "title": "A vulnerability was determined in D-Link DIR-868L 2.01b05.",
+      "cve_id": "CVE-2026-94097",
+      "title": "A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was determined in D-Link DIR-868L 2.01b05. This issue affects the function strcpy of the file /webfa_authentication.cgi of the component Authentication Handler. Executing a manipulation of the argument id/password can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+      "description": "A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246. This affects an unknown part of the file /www/cgi-bin/network_tools of the component CGI Diagnostic Endpoint. This manipulation of the argument param/key/val causes command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.0098,
-      "epss_pct": 0.60208,
-      "cwe": "CWE-119",
-      "published": "2026-09-20T21:16:55.780",
+      "epss": 0.01989,
+      "epss_pct": 0.7974,
+      "cwe": "CWE-74",
+      "published": "2026-09-21T00:16:59.793",
       "kev": {
         "in_kev": false
       },
@@ -3035,31 +3035,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-20",
+          "date": "2026-09-21",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-94097",
-      "title": "A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246.",
+      "cve_id": "CVE-2026-94493",
+      "title": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640.",
       "vendor": null,
       "product": null,
-      "description": "A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246. This affects an unknown part of the file /www/cgi-bin/network_tools of the component CGI Diagnostic Endpoint. This manipulation of the argument param/key/val causes command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "description": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component WebSocket Service. The manipulation results in missing authentication. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.01989,
-      "epss_pct": 0.7951,
-      "cwe": "CWE-74",
-      "published": "2026-09-21T00:16:59.793",
+      "epss": 0.0073,
+      "epss_pct": 0.52799,
+      "cwe": "CWE-287",
+      "published": "2026-09-22T01:16:56.437",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3070,7 +3070,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-09-21",
+          "date": "2026-09-22",
           "label": "Published to NVD"
         }
       ],
