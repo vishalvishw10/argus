@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T17:08:23.056Z",
+  "generated_at": "2026-09-23T20:26:37.988Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 13,
     "reddit_upvotes": 0,
     "kev_count": 59,
     "kev_total": 1721,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "782 recent"
+      "detail": "772 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "823 scored"
+      "detail": "805 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4732 mapped"
+      "detail": "4734 mapped"
     },
     {
       "name": "Reddit",
@@ -84,11 +84,16 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 39,
+      "rising": 38,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
+          {
+            "full_name": "digiprosec/MicroTrick",
+            "html_url": "https://github.com/digiprosec/MicroTrick",
+            "stars": 0
+          },
           {
             "full_name": "bahirul/cve-2026-86060",
             "html_url": "https://github.com/bahirul/cve-2026-86060",
@@ -269,12 +274,12 @@
       "rising": 0,
       "repos": {
         "count": 12,
-        "stars": 69,
+        "stars": 70,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 41
+            "stars": 42
           },
           {
             "full_name": "mhtsec/CVE-2026-85706",
@@ -336,7 +341,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 55,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 8,
         "stars": 22,
@@ -387,77 +392,16 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-94127",
-      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-      "vendor": "F5",
-      "product": "BIG-IP APM",
-      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01391,
-      "epss_pct": 0.71171,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 61,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
-            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-          "date": "2026-09-23T08:29:48.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.02422,
       "epss_pct": 0.8348,
-      "cwe": "CWE-22",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -468,7 +412,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 54,
+      "rising": 51,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -511,7 +455,121 @@
           "label": "Covered by The Hacker News"
         }
       ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-94127",
+      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "vendor": "F5",
+      "product": "BIG-IP APM",
+      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01391,
+      "epss_pct": 0.71171,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 59,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
+            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+          "date": "2026-09-23T08:29:48.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-85102",
+      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0066,
+      "epss_pct": 0.50214,
+      "cwe": "CWE-295",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 65,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+          "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+          "date": "2026-09-23T19:53:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -569,7 +627,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -627,7 +685,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -682,7 +740,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -705,7 +763,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 50,
+      "rising": 47,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -735,7 +793,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -758,7 +816,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 39,
+      "rising": 36,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -788,7 +846,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -849,7 +907,70 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 13
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-86218",
+      "title": "N-able N-central Static Code Injection Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.07494,
+      "epss_pct": 0.94215,
+      "cwe": "CWE-96",
+      "published": "2026-09-06T03:17:17.373",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-11",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "super-meuw/CVE-2026-86218",
+            "html_url": "https://github.com/super-meuw/CVE-2026-86218",
+            "stars": 0
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-86218",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-86218",
+            "stars": 0
+          },
+          {
+            "full_name": "Udyz/CVE-2026-86218",
+            "html_url": "https://github.com/Udyz/CVE-2026-86218",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-06",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -907,7 +1028,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -966,7 +1087,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -989,7 +1110,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -1032,7 +1153,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 16
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -1091,65 +1212,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
-    },
-    {
-      "cve_id": "CVE-2026-86218",
-      "title": "N-able N-central Static Code Injection Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.07494,
-      "epss_pct": 0.94215,
-      "cwe": "CWE-96",
-      "published": "2026-09-06T03:17:17.373",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-86218",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-86218",
-            "stars": 0
-          },
-          {
-            "full_name": "Udyz/CVE-2026-86218",
-            "html_url": "https://github.com/Udyz/CVE-2026-86218",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-06",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -1203,7 +1266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1264,7 +1327,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1322,7 +1385,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1344,7 +1407,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1367,7 +1430,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1409,7 +1472,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -1432,7 +1495,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 45,
-      "rising": 35,
+      "rising": 33,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1463,7 +1526,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1521,7 +1584,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1579,7 +1642,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1637,7 +1700,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -1682,64 +1745,6 @@
       "timeline": [
         {
           "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 28
-    },
-    {
-      "cve_id": "CVE-2026-76461",
-      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02009,
-      "epss_pct": 0.80012,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-14",
-        "due_date": "2026-09-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-76461",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-76461",
-            "stars": 2
-          },
-          {
-            "full_name": "S3v3n-JG/CVE-2026-76461",
-            "html_url": "https://github.com/S3v3n-JG/CVE-2026-76461",
-            "stars": 1
-          },
-          {
-            "full_name": "fevar54/CVE-2026-76461-Detection-Kit-",
-            "html_url": "https://github.com/fevar54/CVE-2026-76461-Detection-Kit-",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1862,47 +1867,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2026-85102",
-      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0066,
-      "epss_pct": 0.50214,
-      "cwe": "CWE-295",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 26,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2026-53266",
       "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
       "vendor": "Linux",
@@ -1950,6 +1914,64 @@
       "timeline": [
         {
           "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-76461",
+      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02009,
+      "epss_pct": 0.80012,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-14",
+        "due_date": "2026-09-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-76461",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-76461",
+            "stars": 2
+          },
+          {
+            "full_name": "S3v3n-JG/CVE-2026-76461",
+            "html_url": "https://github.com/S3v3n-JG/CVE-2026-76461",
+            "stars": 1
+          },
+          {
+            "full_name": "fevar54/CVE-2026-76461-Detection-Kit-",
+            "html_url": "https://github.com/fevar54/CVE-2026-76461-Detection-Kit-",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -3142,49 +3164,62 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-91097",
-      "title": "HP has identified and remediated multiple externally reported vulnerabilities within HPLIP.",
+      "cve_id": "CVE-2026-87902",
+      "title": "CVE-2026-87902",
       "vendor": null,
       "product": null,
-      "description": "HP has identified and remediated multiple externally reported vulnerabilities within HPLIP. The findings affect several software components that could potentially enable remote code execution, privilege escalation, denial of service, information disclosure, or unauthorized file modification under certain conditions.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00964,
-      "epss_pct": 0.60203,
-      "cwe": "CWE-787",
-      "published": "2026-09-16T19:18:02.070",
+      "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.0042,
+      "epss_pct": 0.35945,
+      "cwe": "CWE-98",
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 19,
-      "rising": 0,
+      "hype": 23,
+      "rising": 39,
       "repos": {
-        "count": 2,
-        "stars": 1,
+        "count": 9,
+        "stars": 51,
         "top": [
           {
-            "full_name": "Nxploited/CVE-2026-91097-CVE-2026-91106",
-            "html_url": "https://github.com/Nxploited/CVE-2026-91097-CVE-2026-91106",
-            "stars": 1
+            "full_name": "abraxas/CVE-2026-87902",
+            "html_url": "https://github.com/abraxas/CVE-2026-87902",
+            "stars": 20
           },
           {
-            "full_name": "murrez/HP-HPLIP-Mass-CVE-checker-2026-09-",
-            "html_url": "https://github.com/murrez/HP-HPLIP-Mass-CVE-checker-2026-09-",
-            "stars": 0
+            "full_name": "ressl/cve-2026-87902-poc",
+            "html_url": "https://github.com/ressl/cve-2026-87902-poc",
+            "stars": 16
+          },
+          {
+            "full_name": "vulpecuna/CVE-2026-87902",
+            "html_url": "https://github.com/vulpecuna/CVE-2026-87902",
+            "stars": 6
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Hackers start exploiting critical WordPress flaw for code execution",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/",
+          "date": "2026-09-23T18:31:22.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-16",
-          "label": "Published to NVD"
+          "date": "2026-09-23",
+          "label": "Covered by BleepingComputer"
         }
       ],
       "rank": 60
