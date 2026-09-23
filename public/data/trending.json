@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T06:02:08.479Z",
+  "generated_at": "2026-09-23T11:44:29.196Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
     "kev_count": 59,
     "kev_total": 1721,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "815 recent"
+      "detail": "820 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "13 mentions"
+      "detail": "17 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4727 mapped"
+      "detail": "4729 mapped"
     },
     {
       "name": "Reddit",
@@ -252,6 +252,77 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-85046",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01462,
+      "epss_pct": 0.72442,
+      "cwe": "CWE-843",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-04",
+        "due_date": "2026-09-18",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 38,
+      "repos": {
+        "count": 8,
+        "stars": 22,
+        "top": [
+          {
+            "full_name": "atiilla/CVE-2026-85046",
+            "html_url": "https://github.com/atiilla/CVE-2026-85046",
+            "stars": 6
+          },
+          {
+            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
+            "stars": 6
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 5
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "date": "2026-09-23T08:29:24.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
@@ -272,11 +343,16 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 64,
+      "rising": 59,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
+          {
+            "full_name": "nebula031/CVE-2026-93616-PoC",
+            "html_url": "https://github.com/nebula031/CVE-2026-93616-PoC",
+            "stars": 0
+          },
           {
             "full_name": "WadesWeaponShed/CVE-2026-93616_Checks",
             "html_url": "https://github.com/WadesWeaponShed/CVE-2026-93616_Checks",
@@ -310,7 +386,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -333,7 +409,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 60,
+      "rising": 55,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -363,47 +439,41 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
-      "cve_id": "CVE-2025-39682",
-      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cve_id": "CVE-2026-94127",
+      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "vendor": "F5",
+      "product": "BIG-IP APM",
+      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0203,
-      "epss_pct": 0.80179,
-      "cwe": "CWE-754",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
         "ransomware": false
       },
       "zero_day": true,
-      "no_patch": true,
+      "no_patch": false,
       "hype": 52,
-      "rising": 0,
+      "rising": 66,
       "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "khoatran107/cve-2025-39682",
-            "html_url": "https://github.com/khoatran107/cve-2025-39682",
-            "stars": 5
-          }
-        ]
+        "count": 0,
+        "stars": 0,
+        "top": []
       },
       "media": [
         {
           "source": "The Hacker News",
-          "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
-          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
-          "date": "2026-09-19T06:24:10.000Z"
+          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+          "date": "2026-09-23T08:29:48.000Z"
         }
       ],
       "reddit": null,
@@ -411,20 +481,19 @@
         "kev",
         "actively-exploited",
         "zero-day",
-        "in-the-news",
-        "poc-available"
+        "in-the-news"
       ],
       "timeline": [
         {
-          "date": "2026-09-18",
+          "date": "2026-09-22",
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-09-19",
+          "date": "2026-09-23",
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -482,7 +551,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -540,7 +609,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -595,7 +664,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -618,7 +687,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 48,
+      "rising": 43,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -648,7 +717,68 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 10
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2025-39682",
+      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0203,
+      "epss_pct": 0.80179,
+      "cwe": "CWE-754",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "khoatran107/cve-2025-39682",
+            "html_url": "https://github.com/khoatran107/cve-2025-39682",
+            "stars": 5
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+          "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+          "date": "2026-09-19T06:24:10.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-19",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -706,7 +836,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -764,7 +894,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -823,7 +953,73 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00997,
+      "epss_pct": 0.61216,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 38,
+      "repos": {
+        "count": 2,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 5
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "date": "2026-09-23T08:29:24.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -882,7 +1078,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -934,7 +1130,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -988,7 +1184,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1049,7 +1245,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 17
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1107,7 +1303,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1152,7 +1348,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1194,7 +1390,61 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00572,
+      "epss_pct": 0.46052,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 38,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "date": "2026-09-23T08:29:24.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1252,7 +1502,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1310,65 +1560,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
-    },
-    {
-      "cve_id": "CVE-2026-85046",
-      "title": "Google Chromium V8 Type Confusion Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01462,
-      "epss_pct": 0.72442,
-      "cwe": "CWE-843",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 44,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 22,
-        "top": [
-          {
-            "full_name": "atiilla/CVE-2026-85046",
-            "html_url": "https://github.com/atiilla/CVE-2026-85046",
-            "stars": 6
-          },
-          {
-            "full_name": "adriyansyah-mf/cve-2026-85046-poc",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-85046-poc",
-            "stars": 6
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 23
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1426,7 +1618,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 27
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -1474,7 +1666,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1532,7 +1724,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1590,7 +1782,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -1648,48 +1840,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
-    },
-    {
-      "cve_id": "CVE-2026-94127",
-      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-      "vendor": "F5",
-      "product": "BIG-IP APM",
-      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 30,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1712,7 +1863,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1730,7 +1881,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -1783,7 +1934,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1825,7 +1976,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1878,7 +2029,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1919,60 +2070,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00997,
-      "epss_pct": 0.61216,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2030,7 +2128,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -2088,7 +2186,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2129,7 +2227,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2170,7 +2268,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2218,7 +2316,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2266,7 +2364,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2307,7 +2405,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2355,7 +2453,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2413,7 +2511,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2461,7 +2559,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -2502,7 +2600,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -2543,7 +2641,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2591,7 +2689,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -2639,7 +2737,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2687,7 +2785,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2728,7 +2826,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2769,7 +2867,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -2810,7 +2908,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -2858,7 +2956,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2899,7 +2997,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2912,47 +3010,6 @@
       "epss": 0.00631,
       "epss_pct": 0.48838,
       "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00572,
-      "epss_pct": 0.46052,
-      "cwe": "CWE-122",
       "published": null,
       "kev": {
         "in_kev": true,
