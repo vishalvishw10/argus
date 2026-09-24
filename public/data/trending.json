@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-24T19:14:03.239Z",
+  "generated_at": "2026-09-24T22:27:43.205Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 14,
+    "media_mentions": 11,
     "reddit_upvotes": 0,
-    "kev_count": 59,
-    "kev_total": 1721,
+    "kev_count": 60,
+    "kev_total": 1723,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1721 entries"
+      "detail": "1723 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "766 recent"
+      "detail": "777 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "810 scored"
+      "detail": "808 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "3 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4743 mapped"
+      "detail": "4745 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 25,
+      "rising": 23,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -153,7 +153,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 8,
         "stars": 23,
@@ -263,6 +263,72 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-94127",
+      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "vendor": "F5",
+      "product": "BIG-IP APM",
+      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01293,
+      "epss_pct": 0.69016,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 54,
+      "rising": 35,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
+            "stars": 2
+          },
+          {
+            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
+            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+          "date": "2026-09-23T08:29:48.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-85706",
       "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
       "vendor": "GitLab",
@@ -330,7 +396,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -353,7 +419,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -396,7 +462,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -455,7 +521,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -518,7 +584,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -576,67 +642,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-94127",
-      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-      "vendor": "F5",
-      "product": "BIG-IP APM",
-      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01293,
-      "epss_pct": 0.69016,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 38,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
-            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-          "date": "2026-09-23T08:29:48.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 9
     },
     {
@@ -660,7 +665,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 45,
+      "rising": 42,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -771,7 +776,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 27,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -804,59 +809,6 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-7273",
-      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01286,
-      "epss_pct": 0.68864,
-      "cwe": "CWE-121",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
-          "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-          "date": "2026-09-22T05:31:59.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-22",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-87491",
       "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
       "vendor": "Google",
@@ -877,7 +829,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -917,6 +869,59 @@
         },
         {
           "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-7273",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01286,
+      "epss_pct": 0.68864,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 12,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+          "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
+          "date": "2026-09-22T05:31:59.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-22",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -1158,6 +1163,54 @@
       "rank": 18
     },
     {
+      "cve_id": "CVE-2026-71362",
+      "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento ",
+      "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.02335,
+      "epss_pct": 0.82839,
+      "cwe": "CWE-863",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 33,
+      "repos": {
+        "count": 1,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-71362-magento-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-71362-magento-lab",
+            "stars": 5
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
+    },
+    {
       "cve_id": "CVE-2026-67277",
       "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
       "vendor": "MikroTik",
@@ -1200,7 +1253,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1258,7 +1311,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1300,7 +1353,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -1323,7 +1376,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 45,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1354,7 +1407,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1412,7 +1465,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1466,7 +1519,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1522,79 +1575,6 @@
         {
           "date": "2026-08-26",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
-      "cve_id": "CVE-2026-87902",
-      "title": "CVE-2026-87902",
-      "vendor": null,
-      "product": null,
-      "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.02877,
-      "epss_pct": 0.86257,
-      "cwe": "CWE-98",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 44,
-      "rising": 92,
-      "repos": {
-        "count": 13,
-        "stars": 79,
-        "top": [
-          {
-            "full_name": "ressl/cve-2026-87902-poc",
-            "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 29
-          },
-          {
-            "full_name": "abraxas/CVE-2026-87902",
-            "html_url": "https://github.com/abraxas/CVE-2026-87902",
-            "stars": 27
-          },
-          {
-            "full_name": "vulpecuna/CVE-2026-87902",
-            "html_url": "https://github.com/vulpecuna/CVE-2026-87902",
-            "stars": 9
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Critical WordPress Vulnerability Exploited Immediately After Disclosure",
-          "url": "https://www.securityweek.com/critical-wordpress-vulnerability-exploited-immediately-after-disclosure/",
-          "date": "2026-09-24T07:12:26.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
-          "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
-          "date": "2026-09-24T05:36:18.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "Hackers start exploiting critical WordPress flaw for code execution",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/",
-          "date": "2026-09-23T18:31:22.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-23",
-          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
         }
       ],
       "rank": 26
@@ -1658,6 +1638,54 @@
       "rank": 27
     },
     {
+      "cve_id": "CVE-2026-5430",
+      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "vendor": "WSO2",
+      "product": "Multiple Products",
+      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00374,
+      "epss_pct": 0.28583,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 33,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-5430",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
       "cve_id": "CVE-2025-39682",
       "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
       "vendor": "Linux",
@@ -1703,7 +1731,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1745,7 +1773,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -1793,7 +1821,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -1846,7 +1874,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1904,7 +1932,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1957,7 +1985,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2015,7 +2043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -2073,7 +2101,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -2114,7 +2142,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -2167,7 +2195,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2225,7 +2253,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -2266,7 +2294,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-68820",
@@ -2324,7 +2352,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2365,7 +2393,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2406,7 +2434,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2454,7 +2482,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2502,7 +2530,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2560,7 +2588,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2608,7 +2636,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2656,7 +2684,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2697,7 +2725,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2738,7 +2766,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2786,7 +2814,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -2834,7 +2862,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2882,7 +2910,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2923,7 +2951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2964,7 +2992,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -3005,7 +3033,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -3053,7 +3081,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -3094,7 +3122,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -3135,7 +3163,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-72529",
@@ -3173,47 +3201,6 @@
       "timeline": [
         {
           "date": "2026-08-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-20349",
-      "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
-      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.0101,
-      "epss_pct": 0.61567,
-      "cwe": "CWE-244",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-11",
-        "due_date": "2026-08-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
