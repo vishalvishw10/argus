@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:44:52.809Z",
+  "generated_at": "2026-09-24T04:57:59.220Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "789 recent"
+      "detail": "808 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "807 scored"
+      "detail": "806 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4735 mapped"
+      "detail": "4736 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 36,
+      "rising": 33,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -341,7 +341,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 55,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 8,
         "stars": 22,
@@ -392,6 +392,67 @@
       "rank": 5
     },
     {
+      "cve_id": "CVE-2026-94127",
+      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+      "vendor": "F5",
+      "product": "BIG-IP APM",
+      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01391,
+      "epss_pct": 0.71171,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 51,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
+            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+          "date": "2026-09-23T08:29:48.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 6
+    },
+    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
@@ -411,8 +472,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 53,
-      "rising": 48,
+      "hype": 52,
+      "rising": 43,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -455,67 +516,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-94127",
-      "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-      "vendor": "F5",
-      "product": "BIG-IP APM",
-      "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01391,
-      "epss_pct": 0.71171,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 52,
-      "rising": 56,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
-            "html_url": "https://github.com/FurkanKAYAPINAR/CVE-2026-94127",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-          "date": "2026-09-23T08:29:48.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 7
     },
     {
@@ -539,7 +539,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 62,
+      "rising": 57,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -570,64 +570,6 @@
         }
       ],
       "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0329,
-      "epss_pct": 0.87951,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -685,7 +627,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -740,7 +682,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -763,7 +705,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 44,
+      "rising": 40,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -793,60 +735,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-7273",
-      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.0241,
-      "epss_pct": 0.83386,
-      "cwe": "CWE-121",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
-          "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-          "date": "2026-09-22T05:31:59.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-21",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-22",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 13
+      "rank": 11
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -907,7 +796,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 14
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -970,7 +859,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -1028,7 +917,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0329,
+      "epss_pct": 0.87951,
+      "cwe": "CWE-305",
+      "published": "2026-08-28T16:18:29.600",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-28",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1087,6 +1034,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-7273",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.0241,
+      "epss_pct": 0.83386,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 28,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Zyxel and Veeam Flaws Under Active Exploitation With Command and SYSTEM Access",
+          "url": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
+          "date": "2026-09-22T05:31:59.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-22",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 17
     },
     {
@@ -1110,7 +1110,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -1495,7 +1495,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 45,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3181,10 +3181,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 37,
+      "rising": 34,
       "repos": {
         "count": 12,
-        "stars": 59,
+        "stars": 65,
         "top": [
           {
             "full_name": "abraxas/CVE-2026-87902",
@@ -3194,12 +3194,12 @@
           {
             "full_name": "ressl/cve-2026-87902-poc",
             "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 19
+            "stars": 24
           },
           {
             "full_name": "vulpecuna/CVE-2026-87902",
             "html_url": "https://github.com/vulpecuna/CVE-2026-87902",
-            "stars": 7
+            "stars": 8
           }
         ]
       },
