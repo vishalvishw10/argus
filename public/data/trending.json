@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-25T18:40:43.093Z",
+  "generated_at": "2026-09-25T22:25:26.933Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 14,
+    "media_mentions": 15,
     "reddit_upvotes": 0,
     "kev_count": 60,
-    "kev_total": 1725,
+    "kev_total": 1726,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1725 entries"
+      "detail": "1726 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "781 recent"
+      "detail": "805 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "824 scored"
+      "detail": "828 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4756 mapped"
+      "detail": "4759 mapped"
     },
     {
       "name": "Reddit",
@@ -135,6 +135,76 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-87902",
+      "title": "WordPress Core Remote File Inclusion Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.02877,
+      "epss_pct": 0.86275,
+      "cwe": "CWE-98",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 50,
+      "repos": {
+        "count": 16,
+        "stars": 86,
+        "top": [
+          {
+            "full_name": "ressl/cve-2026-87902-poc",
+            "html_url": "https://github.com/ressl/cve-2026-87902-poc",
+            "stars": 30
+          },
+          {
+            "full_name": "abraxas/CVE-2026-87902",
+            "html_url": "https://github.com/abraxas/CVE-2026-87902",
+            "stars": 29
+          },
+          {
+            "full_name": "dinosn/cve-2026-87902-wordpress-lfi-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-87902-wordpress-lfi-lab",
+            "stars": 10
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
+          "date": "2026-09-24T05:36:18.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-5430",
       "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
       "vendor": "WSO2",
@@ -155,7 +225,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 97,
+      "rising": 92,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -198,7 +268,7 @@
           "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -220,12 +290,18 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 61,
-      "rising": 46,
+      "hype": 62,
+      "rising": 42,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 0
+          }
+        ]
       },
       "media": [
         {
@@ -239,7 +315,8 @@
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news"
+        "in-the-news",
+        "poc-available"
       ],
       "timeline": [
         {
@@ -255,7 +332,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -278,15 +355,20 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 12,
+      "rising": 10,
       "repos": {
-        "count": 2,
+        "count": 3,
         "stars": 2,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
             "html_url": "https://github.com/digiprosec/MicroTrick",
             "stars": 2
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 0
           },
           {
             "full_name": "bahirul/cve-2026-86060",
@@ -324,7 +406,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -347,7 +429,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 8,
         "stars": 24,
@@ -395,7 +477,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -418,7 +500,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -444,7 +526,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -503,7 +585,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -526,15 +608,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 55,
-      "rising": 17,
+      "rising": 14,
       "repos": {
         "count": 2,
-        "stars": 7,
+        "stars": 10,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
-            "stars": 7
+            "stars": 10
           },
           {
             "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
@@ -569,7 +651,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -592,7 +674,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -630,7 +712,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -689,7 +771,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -712,7 +794,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 34,
+      "rising": 33,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -749,7 +831,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -812,7 +894,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -870,7 +952,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -928,7 +1010,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -951,7 +1033,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -981,7 +1063,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1004,7 +1086,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 49,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -1047,7 +1129,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -1105,7 +1187,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -1128,7 +1210,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1158,7 +1240,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1219,7 +1301,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1277,7 +1359,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1322,7 +1404,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1380,7 +1462,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1422,7 +1504,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02565,
+      "epss_pct": 0.84471,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "BiuTrap/CVE-2026-59310",
+            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
+            "stars": 2
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-59310",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
+            "stars": 0
+          },
+          {
+            "full_name": "ChinaRan0/CVE-2026-59310-POC",
+            "html_url": "https://github.com/ChinaRan0/CVE-2026-59310-POC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1480,61 +1621,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02565,
-      "epss_pct": 0.84471,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "BiuTrap/CVE-2026-59310",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-59310",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1592,7 +1679,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -1615,7 +1702,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 44,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1646,7 +1733,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1704,7 +1791,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1762,7 +1849,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1804,7 +1891,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1852,7 +1939,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1894,7 +1981,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -1942,7 +2029,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -1995,7 +2082,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -2048,7 +2135,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2106,7 +2193,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -2164,7 +2251,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2187,7 +2274,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2205,7 +2292,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -2246,7 +2333,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -2299,7 +2386,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2357,7 +2444,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2405,7 +2492,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2453,7 +2540,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2511,7 +2598,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2552,7 +2639,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2593,7 +2680,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2641,7 +2728,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2689,7 +2776,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2730,7 +2817,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2771,7 +2858,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2819,7 +2906,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -2867,7 +2954,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -2915,7 +3002,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -2956,7 +3043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -2997,7 +3084,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -3038,7 +3125,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-72530",
@@ -3086,7 +3173,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -3127,7 +3214,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -3165,47 +3252,6 @@
       "timeline": [
         {
           "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-72529",
-      "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "TrueConf",
-      "product": "Server",
-      "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01464,
-      "epss_pct": 0.72548,
-      "cwe": "CWE-306",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-20",
-        "due_date": "2026-08-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
