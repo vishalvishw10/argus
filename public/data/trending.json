@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T17:13:51.041Z",
+  "generated_at": "2026-09-26T19:54:21.391Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 16,
+    "media_mentions": 17,
     "reddit_upvotes": 0,
     "kev_count": 60,
     "kev_total": 1726,
@@ -19,22 +19,22 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "968 recent"
+      "detail": "962 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "907 scored"
+      "detail": "897 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "18 mentions"
+      "detail": "17 mentions"
     },
     {
       "name": "Dark Reading",
@@ -63,6 +63,83 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-35273",
+      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Oracle",
+      "product": " PeopleSoft Enterprise PeopleTools",
+      "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.09444,
+      "epss_pct": 0.95257,
+      "cwe": "CWE-306",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-06-12",
+        "due_date": "2026-06-15",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 71,
+      "rising": 75,
+      "repos": {
+        "count": 3,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "HORKimhab/CVE-2026-35273",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-35273",
+            "stars": 4
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-35273",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-35273",
+            "stars": 3
+          },
+          {
+            "full_name": "12hrformat/CVE-2026-35273-POC",
+            "html_url": "https://github.com/12hrformat/CVE-2026-35273-POC",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+          "date": "2026-09-26T19:03:34.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
+          "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+          "date": "2026-09-26T11:46:40.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-12",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-26",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-85706",
       "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
@@ -132,7 +209,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -155,7 +232,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 33,
+      "rising": 31,
       "repos": {
         "count": 19,
         "stars": 90,
@@ -202,7 +279,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -225,20 +302,20 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 2,
-        "stars": 3,
+        "stars": 4,
         "top": [
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 2
+          },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
             "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
             "stars": 2
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 1
           }
         ]
       },
@@ -271,7 +348,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -294,7 +371,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 62,
+      "rising": 59,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -343,7 +420,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -369,22 +446,22 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 5,
+        "stars": 8,
         "top": [
-          {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 2
-          },
           {
             "full_name": "digiprosec/MicroTrick",
             "html_url": "https://github.com/digiprosec/MicroTrick",
-            "stars": 2
+            "stars": 4
           },
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
             "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 1
+            "stars": 2
+          },
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 2
           }
         ]
       },
@@ -417,7 +494,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -440,7 +517,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 65,
+      "rising": 61,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -488,7 +565,7 @@
           "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -559,77 +636,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-35273",
-      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Oracle",
-      "product": " PeopleSoft Enterprise PeopleTools",
-      "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.09444,
-      "epss_pct": 0.95257,
-      "cwe": "CWE-306",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-06-12",
-        "due_date": "2026-06-15",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 37,
-      "repos": {
-        "count": 3,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-35273",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-35273",
-            "stars": 4
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-35273",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-35273",
-            "stars": 3
-          },
-          {
-            "full_name": "12hrformat/CVE-2026-35273-POC",
-            "html_url": "https://github.com/12hrformat/CVE-2026-35273-POC",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
-          "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
-          "date": "2026-09-26T11:46:40.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-12",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-26",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 8
     },
     {
@@ -653,7 +659,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -761,15 +767,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 54,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 2,
-        "stars": 11,
+        "stars": 12,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
-            "stars": 11
+            "stars": 12
           },
           {
             "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
@@ -886,7 +892,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1106,72 +1112,6 @@
       "rank": 16
     },
     {
-      "cve_id": "CVE-2026-87491",
-      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.03142,
-      "epss_pct": 0.87413,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
-          },
-          {
-            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
-          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
-          "date": "2026-09-23T08:29:24.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 17
-    },
-    {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
       "vendor": "Gitea",
@@ -1227,7 +1167,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -1250,7 +1190,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1277,6 +1217,72 @@
         },
         {
           "date": "2026-09-22",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-87491",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.03142,
+      "epss_pct": 0.87413,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
+            "stars": 5
+          },
+          {
+            "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "html_url": "https://github.com/SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "date": "2026-09-23T08:29:24.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -2355,7 +2361,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
