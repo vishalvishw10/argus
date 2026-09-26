@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T01:37:41.996Z",
+  "generated_at": "2026-09-26T07:47:13.845Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "793 recent"
+      "detail": "849 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "810 scored"
+      "detail": "800 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4763 mapped"
+      "detail": "4767 mapped"
     },
     {
       "name": "Reddit",
@@ -135,6 +135,75 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-67279",
+      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.0071,
+      "epss_pct": 0.51535,
+      "cwe": "CWE-841",
+      "published": "2026-09-05T20:17:18.390",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 34,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 1
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+          "date": "2026-09-23T16:06:41.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-87902",
       "title": "WordPress Core Remote File Inclusion Vulnerability",
       "vendor": "WordPress",
@@ -154,10 +223,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 64,
-      "rising": 47,
+      "hype": 63,
+      "rising": 42,
       "repos": {
-        "count": 17,
+        "count": 18,
         "stars": 90,
         "top": [
           {
@@ -202,7 +271,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -225,7 +294,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 87,
+      "rising": 78,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -273,70 +342,6 @@
           "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-67279",
-      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.0071,
-      "epss_pct": 0.51535,
-      "cwe": "CWE-841",
-      "published": "2026-09-05T20:17:18.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 61,
-      "rising": 40,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
-          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-          "date": "2026-09-23T16:06:41.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-09-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 4
     },
     {
@@ -359,11 +364,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 61,
-      "rising": 8,
+      "hype": 62,
+      "rising": 5,
       "repos": {
-        "count": 3,
-        "stars": 2,
+        "count": 4,
+        "stars": 3,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
@@ -371,13 +376,13 @@
             "stars": 2
           },
           {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 0
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 1
           },
           {
-            "full_name": "bahirul/cve-2026-86060",
-            "html_url": "https://github.com/bahirul/cve-2026-86060",
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
             "stars": 0
           }
         ]
@@ -434,7 +439,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 61,
-      "rising": 4,
+      "rising": 0,
       "repos": {
         "count": 8,
         "stars": 24,
@@ -505,7 +510,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 23,
+      "rising": 21,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -539,11 +544,11 @@
       "vendor": "Oracle",
       "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
       "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.",
-      "cvss": 10,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.70915,
       "epss_pct": 0.99382,
-      "cwe": "CWE-284",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -613,7 +618,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 55,
-      "rising": 11,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 11,
@@ -679,7 +684,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 31,
+      "rising": 29,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -729,11 +734,11 @@
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.19654,
       "epss_pct": 0.97303,
-      "cwe": "CWE-22",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -744,7 +749,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 52,
-      "rising": 7,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1023,59 +1028,6 @@
       "rank": 15
     },
     {
-      "cve_id": "CVE-2026-93952",
-      "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00895,
-      "epss_pct": 0.57824,
-      "cwe": "CWE-20",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 7,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
-          "url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
-          "date": "2026-09-22T12:29:00.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-22",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 16
-    },
-    {
       "cve_id": "CVE-2026-87491",
       "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
       "vendor": "Google",
@@ -1096,7 +1048,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 49,
-      "rising": 4,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -1139,7 +1091,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -1147,11 +1099,11 @@
       "vendor": "Gitea",
       "product": "Gitea",
       "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.23988,
       "epss_pct": 0.97761,
-      "cwe": "CWE-94",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1195,6 +1147,59 @@
         {
           "date": "2026-08-25",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "cve_id": "CVE-2026-93952",
+      "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00895,
+      "epss_pct": 0.57824,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 5,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+          "url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+          "date": "2026-09-22T12:29:00.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-22",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 18
@@ -1712,7 +1717,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 44,
-      "rising": 4,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1826,7 +1831,7 @@
       "hype": 43,
       "rising": 0,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 18,
         "top": [
           {
@@ -1904,54 +1909,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2025-39682",
-      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0288,
-      "epss_pct": 0.8629,
-      "cwe": "CWE-754",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "khoatran107/cve-2025-39682",
-            "html_url": "https://github.com/khoatran107/cve-2025-39682",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2019-1068",
       "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -1991,19 +1948,19 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
-      "cve_id": "CVE-2025-39964",
-      "title": "Linux Kernel Race Condition Vulnerability",
+      "cve_id": "CVE-2025-39682",
+      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
       "vendor": "Linux",
       "product": "Kernel",
-      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.00996,
-      "epss_pct": 0.61122,
-      "cwe": "CWE-362",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.0288,
+      "epss_pct": 0.8629,
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2017,12 +1974,12 @@
       "rising": 0,
       "repos": {
         "count": 1,
-        "stars": 3,
+        "stars": 5,
         "top": [
           {
-            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
-            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 3
+            "full_name": "khoatran107/cve-2025-39682",
+            "html_url": "https://github.com/khoatran107/cve-2025-39682",
+            "stars": 5
           }
         ]
       },
@@ -2039,60 +1996,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-53266",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00645,
-      "epss_pct": 0.48748,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
-            "html_url": "https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
-            "stars": 2
-          },
-          {
-            "full_name": "suominen/CVE-2026-53266",
-            "html_url": "https://github.com/suominen/CVE-2026-53266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 35
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -2145,7 +2049,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2203,7 +2107,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -2211,11 +2115,11 @@
       "vendor": "Apple",
       "product": "macOS",
       "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.01219,
       "epss_pct": 0.67384,
-      "cwe": "CWE-287",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2261,7 +2165,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2269,11 +2173,11 @@
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.00988,
       "epss_pct": 0.60904,
-      "cwe": "CWE-295",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2284,7 +2188,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 7,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2299,6 +2203,107 @@
       "timeline": [
         {
           "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 37
+    },
+    {
+      "cve_id": "CVE-2025-39964",
+      "title": "Linux Kernel Race Condition Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.00996,
+      "epss_pct": 0.61122,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
+            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-53266",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00645,
+      "epss_pct": 0.48748,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
+            "html_url": "https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
+            "stars": 2
+          },
+          {
+            "full_name": "suominen/CVE-2026-53266",
+            "html_url": "https://github.com/suominen/CVE-2026-53266",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
