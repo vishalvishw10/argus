@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T19:54:21.391Z",
+  "generated_at": "2026-09-26T22:55:42.908Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "962 recent"
+      "detail": "950 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "897 scored"
+      "detail": "884 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4773 mapped"
+      "detail": "4779 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 71,
-      "rising": 75,
+      "rising": 72,
       "repos": {
         "count": 3,
         "stars": 8,
@@ -232,7 +232,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 19,
         "stars": 90,
@@ -302,19 +302,19 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 2,
-        "stars": 4,
+        "stars": 5,
         "top": [
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 2
-          },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
             "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 3
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
             "stars": 2
           }
         ]
@@ -351,6 +351,80 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01849,
+      "epss_pct": 0.78236,
+      "cwe": "CWE-88",
+      "published": "2026-09-05T20:17:18.703",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "digiprosec/MicroTrick",
+            "html_url": "https://github.com/digiprosec/MicroTrick",
+            "stars": 7
+          },
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 3
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+          "date": "2026-09-23T16:06:41.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-65660",
       "title": "Microsoft SharePoint Code Injection Vulnerability",
       "vendor": "Microsoft",
@@ -371,7 +445,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 63,
-      "rising": 59,
+      "rising": 57,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -420,80 +494,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01849,
-      "epss_pct": 0.78236,
-      "cwe": "CWE-88",
-      "published": "2026-09-05T20:17:18.703",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "digiprosec/MicroTrick",
-            "html_url": "https://github.com/digiprosec/MicroTrick",
-            "stars": 4
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 2
-          },
-          {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
-          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-          "date": "2026-09-23T16:06:41.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 6
     },
     {
@@ -516,16 +516,16 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 62,
-      "rising": 61,
+      "hype": 63,
+      "rising": 57,
       "repos": {
         "count": 2,
-        "stars": 0,
+        "stars": 1,
         "top": [
           {
             "full_name": "abraxas/CVE-2026-5430",
             "html_url": "https://github.com/abraxas/CVE-2026-5430",
-            "stars": 0
+            "stars": 1
           },
           {
             "full_name": "HORKimhab/CVE-2026-5430",
@@ -659,7 +659,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -767,7 +767,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 54,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 2,
         "stars": 12,
@@ -892,7 +892,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1190,7 +1190,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1728,60 +1728,6 @@
       "rank": 27
     },
     {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.03616,
-      "epss_pct": 0.89095,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 44,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
-          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
-          "date": "2026-09-23T08:29:24.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 28
-    },
-    {
       "cve_id": "CVE-2026-8452",
       "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -1837,7 +1783,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1893,6 +1839,60 @@
         {
           "date": "2026-09-08",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.03616,
+      "epss_pct": 0.89095,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "url": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "date": "2026-09-23T08:29:24.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 30
@@ -2247,59 +2247,6 @@
       "rank": 37
     },
     {
-      "cve_id": "CVE-2026-53266",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00645,
-      "epss_pct": 0.48851,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
-            "html_url": "https://github.com/mc493/linux-kernel-zero-day-mitigation-zero-downtime-kernel-defense-",
-            "stars": 2
-          },
-          {
-            "full_name": "suominen/CVE-2026-53266",
-            "html_url": "https://github.com/suominen/CVE-2026-53266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 38
-    },
-    {
       "cve_id": "CVE-2023-49105",
       "title": "ownCloud Improper Authentication Vulnerability",
       "vendor": "ownCloud",
@@ -2338,7 +2285,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2361,7 +2308,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2379,7 +2326,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2420,7 +2367,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -2470,6 +2417,54 @@
       "timeline": [
         {
           "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2026-53266",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00645,
+      "epss_pct": 0.48851,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "suominen/CVE-2026-53266",
+            "html_url": "https://github.com/suominen/CVE-2026-53266",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
