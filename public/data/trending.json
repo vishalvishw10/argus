@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T14:03:00.371Z",
+  "generated_at": "2026-09-27T18:28:28.754Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "964 recent"
+      "detail": "960 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "863 scored"
+      "detail": "1002 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "4 mentions"
     },
     {
       "name": "The Hacker News",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4785 mapped"
+      "detail": "4786 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.80962,
+      "epss_pct": 0.80969,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 72,
-      "rising": 80,
+      "rising": 74,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -150,7 +150,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.09444,
-      "epss_pct": 0.95257,
+      "epss_pct": 0.95258,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -162,7 +162,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 55,
+      "rising": 50,
       "repos": {
         "count": 3,
         "stars": 8,
@@ -227,7 +227,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.91425,
-      "epss_pct": 0.9981,
+      "epss_pct": 0.99811,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -298,7 +298,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01849,
-      "epss_pct": 0.78236,
+      "epss_pct": 0.78245,
       "cwe": "CWE-88",
       "published": "2026-09-05T20:17:18.703",
       "kev": {
@@ -312,23 +312,23 @@
       "hype": 65,
       "rising": 0,
       "repos": {
-        "count": 4,
-        "stars": 27,
+        "count": 5,
+        "stars": 34,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
             "html_url": "https://github.com/digiprosec/MicroTrick",
-            "stars": 22
+            "stars": 27
           },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
             "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 3
+            "stars": 4
           },
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
             "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 2
+            "stars": 3
           }
         ]
       },
@@ -364,6 +364,80 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-67279",
+      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01027,
+      "epss_pct": 0.62194,
+      "cwe": "CWE-841",
+      "published": "2026-09-05T20:17:18.390",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 18,
+      "repos": {
+        "count": 3,
+        "stars": 7,
+        "top": [
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 4
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 3
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+          "date": "2026-09-23T16:06:41.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-87902",
       "title": "WordPress Core Remote File Inclusion Vulnerability",
       "vendor": "WordPress",
@@ -372,7 +446,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.18166,
-      "epss_pct": 0.97111,
+      "epss_pct": 0.97112,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -384,10 +458,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 19,
+      "rising": 18,
       "repos": {
-        "count": 19,
-        "stars": 92,
+        "count": 20,
+        "stars": 94,
         "top": [
           {
             "full_name": "abraxas/CVE-2026-87902",
@@ -431,75 +505,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-67279",
-      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01027,
-      "epss_pct": 0.62179,
-      "cwe": "CWE-841",
-      "published": "2026-09-05T20:17:18.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 19,
-      "repos": {
-        "count": 2,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 3
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
-          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-          "date": "2026-09-23T16:06:41.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-09-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 6
     },
     {
@@ -511,7 +516,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00588,
-      "epss_pct": 0.45955,
+      "epss_pct": 0.45981,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -523,7 +528,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 35,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -582,7 +587,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.48881,
-      "epss_pct": 0.9884,
+      "epss_pct": 0.98841,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -665,7 +670,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -702,7 +707,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.70915,
-      "epss_pct": 0.99384,
+      "epss_pct": 0.99385,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -761,7 +766,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.82028,
+      "epss_pct": 0.82035,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -886,7 +891,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.12928,
-      "epss_pct": 0.96181,
+      "epss_pct": 0.96183,
       "cwe": "CWE-96",
       "published": "2026-09-06T03:17:17.373",
       "kev": {
@@ -941,64 +946,6 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.04481,
-      "epss_pct": 0.91124,
-      "cwe": "CWE-305",
-      "published": "2026-08-28T16:18:29.600",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
-    },
-    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
@@ -1007,7 +954,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.19654,
-      "epss_pct": 0.97308,
+      "epss_pct": 0.97309,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1057,65 +1004,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.03843,
-      "epss_pct": 0.89756,
-      "cwe": "CWE-470",
-      "published": "2026-08-28T16:18:31.240",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-28",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -1126,7 +1015,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23988,
-      "epss_pct": 0.97765,
+      "epss_pct": 0.97766,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -1173,7 +1062,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1184,7 +1073,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87413,
+      "epss_pct": 0.87416,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1239,7 +1128,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -1249,8 +1138,8 @@
       "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00895,
-      "epss_pct": 0.579,
+      "epss": 0.01062,
+      "epss_pct": 0.63214,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1292,7 +1181,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 19
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1303,7 +1192,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96434,
+      "epss_pct": 0.96436,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -1353,7 +1242,66 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 20
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02565,
+      "epss_pct": 0.84506,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "BiuTrap/CVE-2026-59310",
+            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
+            "stars": 2
+          },
+          {
+            "full_name": "ChinaRan0/CVE-2026-59310-POC",
+            "html_url": "https://github.com/ChinaRan0/CVE-2026-59310-POC",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-59310",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1364,7 +1312,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.17535,
-      "epss_pct": 0.97039,
+      "epss_pct": 0.9704,
       "cwe": "CWE-1390",
       "published": null,
       "kev": {
@@ -1411,7 +1359,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1422,7 +1370,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.74226,
+      "epss_pct": 0.74237,
       "cwe": "CWE-306",
       "published": "2026-09-05T20:17:18.120",
       "kev": {
@@ -1456,7 +1404,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1467,7 +1415,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.14121,
-      "epss_pct": 0.9645,
+      "epss_pct": 0.96452,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1514,7 +1462,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1556,66 +1504,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02565,
-      "epss_pct": 0.84499,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "BiuTrap/CVE-2026-59310",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-59310",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59310",
-            "stars": 0
-          },
-          {
-            "full_name": "ChinaRan0/CVE-2026-59310-POC",
-            "html_url": "https://github.com/ChinaRan0/CVE-2026-59310-POC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1626,7 +1515,7 @@
       "cvss": 8.9,
       "severity": "HIGH",
       "epss": 0.11736,
-      "epss_pct": 0.95932,
+      "epss_pct": 0.95935,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1673,7 +1562,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1684,7 +1573,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01011,
-      "epss_pct": 0.61711,
+      "epss_pct": 0.61722,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1731,7 +1620,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1789,7 +1678,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1800,7 +1689,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.90045,
+      "epss_pct": 0.9005,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1847,7 +1736,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -1858,7 +1747,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.03616,
-      "epss_pct": 0.89095,
+      "epss_pct": 0.89097,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1901,7 +1790,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 30
+      "rank": 28
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1943,7 +1832,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 29
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1954,7 +1843,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.57906,
-      "epss_pct": 0.9906,
+      "epss_pct": 0.99061,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1985,7 +1874,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1996,7 +1885,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86313,
+      "epss_pct": 0.86316,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2033,7 +1922,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -2044,7 +1933,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0701,
-      "epss_pct": 0.93945,
+      "epss_pct": 0.93948,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -2086,7 +1975,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2097,7 +1986,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07056,
-      "epss_pct": 0.93984,
+      "epss_pct": 0.93986,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -2144,7 +2033,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -2155,7 +2044,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01219,
-      "epss_pct": 0.67438,
+      "epss_pct": 0.67448,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2202,7 +2091,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2213,7 +2102,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.00996,
-      "epss_pct": 0.61186,
+      "epss_pct": 0.61197,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2250,7 +2139,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 35
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -2261,7 +2150,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.42919,
-      "epss_pct": 0.98676,
+      "epss_pct": 0.98677,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2291,7 +2180,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2302,7 +2191,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00988,
-      "epss_pct": 0.60969,
+      "epss_pct": 0.60982,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -2332,24 +2221,24 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 37
     },
     {
-      "cve_id": "CVE-2026-7273",
-      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.02501,
-      "epss_pct": 0.84075,
-      "cwe": "CWE-121",
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.03843,
+      "epss_pct": 0.89761,
+      "cwe": "CWE-470",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
         "ransomware": false
       },
       "zero_day": false,
@@ -2357,23 +2246,88 @@
       "hype": 39,
       "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited"
+        "actively-exploited",
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-21",
+          "date": "2026-08-31",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.04481,
+      "epss_pct": 0.91127,
+      "cwe": "CWE-305",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -2384,7 +2338,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01619,
-      "epss_pct": 0.75091,
+      "epss_pct": 0.75102,
       "cwe": "CWE-415",
       "published": null,
       "kev": {
@@ -2426,6 +2380,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2026-7273",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.02501,
+      "epss_pct": 0.84081,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 41
     },
     {
@@ -2437,7 +2432,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.09839,
-      "epss_pct": 0.954,
+      "epss_pct": 0.95402,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2495,7 +2490,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00645,
-      "epss_pct": 0.48851,
+      "epss_pct": 0.48874,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2543,7 +2538,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02095,
-      "epss_pct": 0.80903,
+      "epss_pct": 0.80909,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2591,7 +2586,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18979,
-      "epss_pct": 0.97211,
+      "epss_pct": 0.97213,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2639,7 +2634,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.08757,
-      "epss_pct": 0.94988,
+      "epss_pct": 0.94991,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2697,7 +2692,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95389,
+      "epss_pct": 0.95391,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2745,7 +2740,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.1076,
-      "epss_pct": 0.95685,
+      "epss_pct": 0.95688,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2793,7 +2788,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.46094,
+      "epss_pct": 0.4612,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -2834,7 +2829,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.1277,
+      "epss_pct": 0.12771,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -2875,7 +2870,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.94932,
+      "epss_pct": 0.94935,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2916,7 +2911,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03859,
-      "epss_pct": 0.89797,
+      "epss_pct": 0.89802,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2957,7 +2952,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00836,
-      "epss_pct": 0.56012,
+      "epss_pct": 0.5603,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -3005,7 +3000,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00709,
-      "epss_pct": 0.51611,
+      "epss_pct": 0.5163,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -3053,7 +3048,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00665,
-      "epss_pct": 0.49761,
+      "epss_pct": 0.49784,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -3101,7 +3096,7 @@
       "cvss": 5.1,
       "severity": "MEDIUM",
       "epss": 0.08799,
-      "epss_pct": 0.95008,
+      "epss_pct": 0.9501,
       "cwe": "CWE-264",
       "published": null,
       "kev": {
@@ -3142,7 +3137,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.04962,
-      "epss_pct": 0.91881,
+      "epss_pct": 0.91884,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -3183,7 +3178,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08788,
-      "epss_pct": 0.95003,
+      "epss_pct": 0.95005,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -3224,7 +3219,7 @@
       "cvss": 9,
       "severity": "CRITICAL",
       "epss": 0.01686,
-      "epss_pct": 0.76088,
+      "epss_pct": 0.76098,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -3272,7 +3267,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00924,
-      "epss_pct": 0.58843,
+      "epss_pct": 0.58858,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
