@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-27T18:28:28.754Z",
+  "generated_at": "2026-09-27T22:15:59.815Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 18,
+    "media_mentions": 20,
     "reddit_upvotes": 0,
     "kev_count": 60,
-    "kev_total": 1726,
+    "kev_total": 1728,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,12 +14,12 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1726 entries"
+      "detail": "1728 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "960 recent"
+      "detail": "978 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4786 mapped"
+      "detail": "4788 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 72,
-      "rising": 74,
+      "rising": 69,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -161,8 +161,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 70,
-      "rising": 50,
+      "hype": 69,
+      "rising": 46,
       "repos": {
         "count": 3,
         "stars": 8,
@@ -313,12 +313,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 34,
+        "stars": 37,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
             "html_url": "https://github.com/digiprosec/MicroTrick",
-            "stars": 27
+            "stars": 30
           },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
@@ -384,7 +384,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 3,
         "stars": 7,
@@ -458,20 +458,20 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 64,
-      "rising": 18,
+      "rising": 17,
       "repos": {
-        "count": 20,
-        "stars": 94,
+        "count": 21,
+        "stars": 97,
         "top": [
+          {
+            "full_name": "ressl/cve-2026-87902-poc",
+            "html_url": "https://github.com/ressl/cve-2026-87902-poc",
+            "stars": 34
+          },
           {
             "full_name": "abraxas/CVE-2026-87902",
             "html_url": "https://github.com/abraxas/CVE-2026-87902",
             "stars": 32
-          },
-          {
-            "full_name": "ressl/cve-2026-87902-poc",
-            "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 31
           },
           {
             "full_name": "dinosn/cve-2026-87902-wordpress-lfi-lab",
@@ -527,8 +527,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 62,
-      "rising": 28,
+      "hype": 61,
+      "rising": 23,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -670,7 +670,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -824,6 +824,114 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-88772",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-119",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 69,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+          "date": "2026-09-27T16:02:37.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-27",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-88771",
+      "title": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 69,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+          "date": "2026-09-27T16:02:37.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-27",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-20079",
       "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "Cisco",
@@ -880,7 +988,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -943,7 +1051,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1004,7 +1112,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-60004",
@@ -1062,7 +1170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1128,7 +1236,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 16
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -1181,7 +1289,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1242,7 +1350,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 18
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-59310",
@@ -1301,7 +1409,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-55040",
@@ -1359,7 +1467,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1404,7 +1512,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1462,7 +1570,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 24
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1504,7 +1612,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -1562,7 +1670,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1588,12 +1696,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 66,
+        "stars": 67,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452",
-            "stars": 63
+            "stars": 64
           },
           {
             "full_name": "derekpreston81/CVE_ADC_IOC_2026",
@@ -1620,7 +1728,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1678,7 +1786,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1736,7 +1844,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -1790,7 +1898,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2025-62593",
@@ -1832,7 +1940,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1874,55 +1982,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
-    },
-    {
-      "cve_id": "CVE-2025-39682",
-      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0288,
-      "epss_pct": 0.86316,
-      "cwe": "CWE-754",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "khoatran107/cve-2025-39682",
-            "html_url": "https://github.com/khoatran107/cve-2025-39682",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1948,12 +2008,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 16,
+        "stars": 17,
         "top": [
           {
             "full_name": "TarPeg007/CVE-2026-19490",
             "html_url": "https://github.com/TarPeg007/CVE-2026-19490",
-            "stars": 15
+            "stars": 16
           },
           {
             "full_name": "BishopFox/CVE-2026-19490-check",
@@ -1975,7 +2035,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2033,7 +2093,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-65400",
@@ -2091,19 +2151,19 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
-      "cve_id": "CVE-2025-39964",
-      "title": "Linux Kernel Race Condition Vulnerability",
+      "cve_id": "CVE-2025-39682",
+      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
       "vendor": "Linux",
       "product": "Kernel",
-      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.00996,
-      "epss_pct": 0.61197,
-      "cwe": "CWE-362",
+      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0288,
+      "epss_pct": 0.86316,
+      "cwe": "CWE-754",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2117,12 +2177,12 @@
       "rising": 0,
       "repos": {
         "count": 1,
-        "stars": 3,
+        "stars": 5,
         "top": [
           {
-            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
-            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 3
+            "full_name": "khoatran107/cve-2025-39682",
+            "html_url": "https://github.com/khoatran107/cve-2025-39682",
+            "stars": 5
           }
         ]
       },
@@ -2139,7 +2199,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -2180,7 +2240,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2221,7 +2281,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2025-39964",
+      "title": "Linux Kernel Race Condition Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "epss": 0.00996,
+      "epss_pct": 0.61197,
+      "cwe": "CWE-362",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
+            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -2274,7 +2382,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -2327,7 +2435,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-33824",
@@ -2380,7 +2488,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2421,7 +2529,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2479,7 +2587,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2527,7 +2635,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2575,7 +2683,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2623,7 +2731,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2681,7 +2789,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2729,7 +2837,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2777,7 +2885,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2818,7 +2926,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2859,7 +2967,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2900,7 +3008,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2941,7 +3049,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2989,7 +3097,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -3037,7 +3145,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -3085,7 +3193,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -3126,7 +3234,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -3167,7 +3275,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -3205,95 +3313,6 @@
       "timeline": [
         {
           "date": "2026-08-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-72530",
-      "title": "TrueConf Server Code Injection Vulnerability",
-      "vendor": "TrueConf",
-      "product": "Server",
-      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
-      "cvss": 9,
-      "severity": "CRITICAL",
-      "epss": 0.01686,
-      "epss_pct": 0.76098,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-20",
-        "due_date": "2026-09-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
-            "html_url": "https://github.com/fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-84869",
-      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00924,
-      "epss_pct": 0.58858,
-      "cwe": "CWE-269",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
