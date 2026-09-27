@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T01:31:20.423Z",
+  "generated_at": "2026-09-27T08:16:27.890Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "916 recent"
+      "detail": "960 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4779 mapped"
+      "detail": "4781 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 69,
+      "rising": 61,
       "repos": {
         "count": 3,
         "stars": 8,
@@ -212,6 +212,75 @@
       "rank": 2
     },
     {
+      "cve_id": "CVE-2026-67279",
+      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01027,
+      "epss_pct": 0.62179,
+      "cwe": "CWE-841",
+      "published": "2026-09-05T20:17:18.390",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 64,
+      "rising": 21,
+      "repos": {
+        "count": 2,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 3
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+          "date": "2026-09-23T16:06:41.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 3
+    },
+    {
       "cve_id": "CVE-2026-87902",
       "title": "WordPress Core Remote File Inclusion Vulnerability",
       "vendor": "WordPress",
@@ -231,8 +300,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 65,
-      "rising": 26,
+      "hype": 64,
+      "rising": 21,
       "repos": {
         "count": 19,
         "stars": 90,
@@ -279,75 +348,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-67279",
-      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01027,
-      "epss_pct": 0.62179,
-      "cwe": "CWE-841",
-      "published": "2026-09-05T20:17:18.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 64,
-      "rising": 23,
-      "repos": {
-        "count": 2,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 3
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
-          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-          "date": "2026-09-23T16:06:41.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-23",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-09-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 4
     },
     {
@@ -374,12 +374,12 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 15,
+        "stars": 20,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
             "html_url": "https://github.com/digiprosec/MicroTrick",
-            "stars": 10
+            "stars": 15
           },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
@@ -425,77 +425,6 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-5430",
-      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
-      "vendor": "WSO2",
-      "product": "Multiple Products",
-      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00588,
-      "epss_pct": 0.45955,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 63,
-      "rising": 53,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "abraxas/CVE-2026-5430",
-            "html_url": "https://github.com/abraxas/CVE-2026-5430",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-5430",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
-          "date": "2026-09-25T17:24:20.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
-          "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
-          "date": "2026-09-25T04:46:34.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-25",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-65660",
       "title": "Microsoft SharePoint Code Injection Vulnerability",
       "vendor": "Microsoft",
@@ -516,7 +445,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 62,
-      "rising": 54,
+      "rising": 48,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -563,6 +492,77 @@
         {
           "date": "2026-09-26",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-5430",
+      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "vendor": "WSO2",
+      "product": "Multiple Products",
+      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00588,
+      "epss_pct": 0.45955,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 62,
+      "rising": 43,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-5430",
+            "html_url": "https://github.com/abraxas/CVE-2026-5430",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-5430",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
+          "date": "2026-09-25T17:24:20.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+          "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+          "date": "2026-09-25T04:46:34.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-25",
+          "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
       "rank": 7
@@ -659,7 +659,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 15,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 5,
@@ -1170,59 +1170,6 @@
       "rank": 17
     },
     {
-      "cve_id": "CVE-2026-93952",
-      "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00895,
-      "epss_pct": 0.579,
-      "cwe": "CWE-20",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
-          "url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
-          "date": "2026-09-22T12:29:00.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-22",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 18
-    },
-    {
       "cve_id": "CVE-2026-87491",
       "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
       "vendor": "Google",
@@ -1283,6 +1230,59 @@
         },
         {
           "date": "2026-09-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-93952",
+      "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00895,
+      "epss_pct": 0.579,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+          "url": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+          "date": "2026-09-22T12:29:00.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-22",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -2053,17 +2053,17 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 13,
+        "stars": 16,
         "top": [
           {
             "full_name": "TarPeg007/CVE-2026-19490",
             "html_url": "https://github.com/TarPeg007/CVE-2026-19490",
-            "stars": 13
+            "stars": 15
           },
           {
             "full_name": "BishopFox/CVE-2026-19490-check",
             "html_url": "https://github.com/BishopFox/CVE-2026-19490-check",
-            "stars": 0
+            "stars": 1
           }
         ]
       },
@@ -2423,54 +2423,6 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-53266",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00645,
-      "epss_pct": 0.48851,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "suominen/CVE-2026-53266",
-            "html_url": "https://github.com/suominen/CVE-2026-53266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
-    },
-    {
       "cve_id": "CVE-2026-64849",
       "title": "MLflow Server-Side Request Forgery Vulnerability",
       "vendor": "MLflow",
@@ -2523,6 +2475,54 @@
       "timeline": [
         {
           "date": "2026-08-19",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-53266",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00645,
+      "epss_pct": 0.48851,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "suominen/CVE-2026-53266",
+            "html_url": "https://github.com/suominen/CVE-2026-53266",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
