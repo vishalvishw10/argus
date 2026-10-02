@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T23:55:43.435Z",
+  "generated_at": "2026-10-02T05:46:00.321Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "867 recent"
+      "detail": "874 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "873 scored"
+      "detail": "869 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4874 mapped"
+      "detail": "4876 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 76,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 9,
         "stars": 23,
@@ -159,20 +159,20 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 74,
-      "rising": 58,
+      "rising": 50,
       "repos": {
         "count": 2,
-        "stars": 3,
+        "stars": 5,
         "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 3
+          },
           {
             "full_name": "DeAurity/CVE-2026-86950-POC",
             "html_url": "https://github.com/DeAurity/CVE-2026-86950-POC",
             "stars": 2
-          },
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 1
           }
         ]
       },
@@ -217,79 +217,6 @@
       "rank": 2
     },
     {
-      "cve_id": "CVE-2026-76504",
-      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01096,
-      "epss_pct": 0.64334,
-      "cwe": "CWE-177",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-30",
-        "due_date": "2026-10-03",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 73,
-      "rising": 100,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-          "date": "2026-10-01T10:33:16.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-          "date": "2026-09-30T15:24:54.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "Cisco warns of new SD-WAN zero-day exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
-          "date": "2026-09-30T14:46:40.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-30",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 3
-    },
-    {
       "cve_id": "CVE-2026-88772",
       "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -310,7 +237,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 73,
-      "rising": 19,
+      "rising": 15,
       "repos": {
         "count": 6,
         "stars": 21,
@@ -362,6 +289,79 @@
           "label": "Covered by The Hacker News"
         }
       ],
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-76504",
+      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01096,
+      "epss_pct": 0.64334,
+      "cwe": "CWE-177",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-30",
+        "due_date": "2026-10-03",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 72,
+      "rising": 88,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+          "date": "2026-10-01T10:33:16.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+          "date": "2026-09-30T15:24:54.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Cisco warns of new SD-WAN zero-day exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
+          "date": "2026-09-30T14:46:40.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-30",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
       "rank": 4
     },
     {
@@ -384,8 +384,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 67,
-      "rising": 57,
+      "hype": 66,
+      "rising": 50,
       "repos": {
         "count": 9,
         "stars": 13,
@@ -693,63 +693,62 @@
       "rank": 9
     },
     {
-      "cve_id": "CVE-2026-67279",
-      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01027,
-      "epss_pct": 0.62316,
-      "cwe": "CWE-841",
-      "published": "2026-09-05T20:17:18.390",
+      "cve_id": "CVE-2026-104286",
+      "title": "Fortinet FortiMail Path Traversal Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiMail",
+      "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-22",
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
+        "date_added": "2026-10-01",
+        "due_date": "2026-10-04",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
       "hype": 53,
-      "rising": 0,
+      "rising": 66,
       "repos": {
-        "count": 3,
-        "stars": 10,
+        "count": 1,
+        "stars": 0,
         "top": [
           {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
-            "stars": 5
-          },
-          {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 3
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
-            "stars": 2
+            "full_name": "ShadowForge-Cyber/CVE-2026-104286-POC",
+            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-104286-POC",
+            "stars": 0
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+          "date": "2026-10-01T22:42:49.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
+        "zero-day",
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-05",
-          "label": "Published to NVD"
+          "date": "2026-10-01",
+          "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-09-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-10-01",
+          "label": "Covered by BleepingComputer"
         }
       ],
       "rank": 10
@@ -862,55 +861,63 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-104286",
-      "title": "Fortinet FortiMail Path Traversal Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiMail",
-      "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-22",
-      "published": null,
+      "cve_id": "CVE-2026-67279",
+      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01027,
+      "epss_pct": 0.62316,
+      "cwe": "CWE-841",
+      "published": "2026-09-05T20:17:18.390",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-01",
-        "due_date": "2026-10-04",
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
         "ransomware": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 71,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 3,
+        "stars": 10,
+        "top": [
+          {
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 5
+          },
+          {
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "stars": 3
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
+            "stars": 2
+          }
+        ]
       },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-          "date": "2026-10-01T22:42:49.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "zero-day",
-        "in-the-news"
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-01",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-09-05",
+          "label": "Published to NVD"
         },
         {
-          "date": "2026-10-01",
-          "label": "Covered by BleepingComputer"
+          "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 13
@@ -1274,65 +1281,6 @@
       "rank": 19
     },
     {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02565,
-      "epss_pct": 0.84567,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "BiuTrap/CVE-2026-59310",
-            "html_url": "https://github.com/BiuTrap/CVE-2026-59310",
-            "stars": 2
-          },
-          {
-            "full_name": "ChinaRan0/CVE-2026-59310-POC",
-            "html_url": "https://github.com/ChinaRan0/CVE-2026-59310-POC",
-            "stars": 2
-          },
-          {
-            "full_name": "chu0119/vc-strike",
-            "html_url": "https://github.com/chu0119/vc-strike",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 20
-    },
-    {
       "cve_id": "CVE-2026-82078",
       "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
@@ -1384,65 +1332,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2026-55040",
-      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.17535,
-      "epss_pct": 0.97051,
-      "cwe": "CWE-1390",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 61,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-55040",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-55040",
-            "stars": 58
-          },
-          {
-            "full_name": "l0ggg/CVE-2026-55040",
-            "html_url": "https://github.com/l0ggg/CVE-2026-55040",
-            "stars": 3
-          },
-          {
-            "full_name": "virologi-info/mssharepoint-scanner",
-            "html_url": "https://github.com/virologi-info/mssharepoint-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 22
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1500,7 +1390,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 21
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1542,7 +1432,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1603,7 +1493,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 25
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1648,7 +1538,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1706,7 +1596,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1764,7 +1654,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1822,7 +1712,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1875,7 +1765,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 28
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1917,7 +1807,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1970,7 +1860,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -2028,65 +1918,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-65400",
-      "title": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01723,
-      "epss_pct": 0.76682,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "acheong08/CVE-2026-65400",
-            "html_url": "https://github.com/acheong08/CVE-2026-65400",
-            "stars": 8
-          },
-          {
-            "full_name": "panchocosil/CVE-2026-65400-poc",
-            "html_url": "https://github.com/panchocosil/CVE-2026-65400-poc",
-            "stars": 7
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-65400",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-65400",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2139,7 +1971,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -2192,7 +2024,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -2245,7 +2077,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 34
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -2286,7 +2118,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2339,60 +2171,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-33824",
-      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Internet Key Exchange (IKE) Service Extensions",
-      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01619,
-      "epss_pct": 0.7519,
-      "cwe": "CWE-415",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "EpSiLoNPoInTOrI/IKEV2-POC",
-            "html_url": "https://github.com/EpSiLoNPoInTOrI/IKEV2-POC",
-            "stars": 6
-          },
-          {
-            "full_name": "kaleth4/CVE-2026-33824",
-            "html_url": "https://github.com/kaleth4/CVE-2026-33824",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 40
+      "rank": 36
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2440,7 +2219,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-64849",
@@ -2498,7 +2277,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2539,7 +2318,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2587,7 +2366,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2635,7 +2414,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2693,7 +2472,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2734,7 +2513,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2775,7 +2554,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2823,7 +2602,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2871,7 +2650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2919,7 +2698,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2960,7 +2739,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 48
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -3001,7 +2780,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -3042,7 +2821,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -3090,7 +2869,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-53362",
@@ -3138,7 +2917,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-66384",
@@ -3186,7 +2965,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 53
     },
     {
       "cve_id": "CVE-2015-3246",
@@ -3227,7 +3006,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 54
     },
     {
       "cve_id": "CVE-2015-5287",
@@ -3268,7 +3047,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2022-0995",
@@ -3306,6 +3085,177 @@
       "timeline": [
         {
           "date": "2026-08-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-72530",
+      "title": "TrueConf Server Code Injection Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+      "cvss": 9,
+      "severity": "CRITICAL",
+      "epss": 0.01686,
+      "epss_pct": 0.76181,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-20",
+        "due_date": "2026-09-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "html_url": "https://github.com/fevar54/CVE-2026-72530-TrueConf-Sandbox-Escape-",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-58704",
+      "title": "Google Pixel Improper Authorization Vulnerability",
+      "vendor": "Google",
+      "product": "Pixel",
+      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00591,
+      "epss_pct": 0.46292,
+      "cwe": "CWE-285",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-87886",
+      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+      "vendor": "Acronis",
+      "product": "Backup",
+      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00233,
+      "epss_pct": 0.12841,
+      "cwe": "CWE-276",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-84869",
+      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "vendor": "ConnectWise",
+      "product": "ScreenConnect",
+      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00924,
+      "epss_pct": 0.58992,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
