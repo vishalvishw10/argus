@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-04T17:37:47.555Z",
+  "generated_at": "2026-10-04T21:33:22.910Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 10,
     "reddit_upvotes": 0,
     "kev_count": 60,
-    "kev_total": 1733,
+    "kev_total": 1734,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1733 entries"
+      "detail": "1734 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "819 recent"
+      "detail": "813 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "852 scored"
+      "detail": "843 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4914 mapped"
+      "detail": "4916 mapped"
     },
     {
       "name": "Reddit",
@@ -159,7 +159,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 70,
-      "rising": 28,
+      "rising": 20,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -240,12 +240,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 7,
+        "stars": 8,
         "top": [
           {
             "full_name": "msuiche/hotcell",
             "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 4
+            "stars": 5
           },
           {
             "full_name": "DeAurity/CVE-2026-86950-POC",
@@ -383,7 +383,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -488,17 +488,17 @@
       "rank": 6
     },
     {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
       "vendor": "Zammad GmbH",
       "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
+      "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01396,
-      "epss_pct": 0.71465,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
+      "epss": 0.00629,
+      "epss_pct": 0.48333,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
       "kev": {
         "in_kev": true,
         "date_added": "2026-10-02",
@@ -507,8 +507,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
-      "rising": 22,
+      "hype": 57,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -534,17 +534,17 @@
       "rank": 7
     },
     {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
       "vendor": "Zammad GmbH",
       "product": "Zammad",
-      "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00629,
-      "epss_pct": 0.48333,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
+      "epss": 0.01396,
+      "epss_pct": 0.71465,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
       "kev": {
         "in_kev": true,
         "date_added": "2026-10-02",
@@ -554,7 +554,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 57,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1232,6 +1232,59 @@
       "rank": 19
     },
     {
+      "cve_id": "CVE-2026-88779",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.00276,
+      "epss_pct": 0.18203,
+      "cwe": "CWE-119",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-04",
+        "due_date": "2026-10-07",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 33,
+      "repos": {
+        "count": 2,
+        "stars": 13,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 13
+          },
+          {
+            "full_name": "orjanj/netscaler_threat_hunt_helper",
+            "html_url": "https://github.com/orjanj/netscaler_threat_hunt_helper",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 20
+    },
+    {
       "cve_id": "CVE-2026-82078",
       "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
       "vendor": "PaperCut",
@@ -1283,7 +1336,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1341,7 +1394,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1383,7 +1436,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -1428,7 +1481,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1481,7 +1534,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1539,7 +1592,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1597,7 +1650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1655,7 +1708,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1697,7 +1750,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1750,7 +1803,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1808,7 +1861,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1861,7 +1914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2023-49105",
@@ -1902,7 +1955,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -1955,7 +2008,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -2008,7 +2061,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -2061,7 +2114,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2114,7 +2167,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2162,7 +2215,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -2210,7 +2263,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2258,7 +2311,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -2306,7 +2359,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2364,7 +2417,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2405,7 +2458,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2453,7 +2506,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2501,7 +2554,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2539,47 +2592,6 @@
       "timeline": [
         {
           "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 45
-    },
-    {
-      "cve_id": "CVE-2026-7273",
-      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "Zyxel",
-      "product": "GS1900 Series Switches",
-      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.02501,
-      "epss_pct": 0.84168,
-      "cwe": "CWE-121",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-21",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -3024,6 +3036,47 @@
       "rank": 56
     },
     {
+      "cve_id": "CVE-2026-7273",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "vendor": "Zyxel",
+      "product": "GS1900 Series Switches",
+      "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.02501,
+      "epss_pct": 0.84168,
+      "cwe": "CWE-121",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-21",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 57
+    },
+    {
       "cve_id": "CVE-2026-58704",
       "title": "Google Pixel Improper Authorization Vulnerability",
       "vendor": "Google",
@@ -3062,7 +3115,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -3103,7 +3156,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -3141,47 +3194,6 @@
       "timeline": [
         {
           "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-81963",
-      "title": "Microsoft Windows Link Following Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00393,
-      "epss_pct": 0.31177,
-      "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
