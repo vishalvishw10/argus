@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T01:36:21.785Z",
+  "generated_at": "2026-10-07T08:45:38.620Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 60,
     "kev_total": 1734,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "801 recent"
+      "detail": "806 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "10 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4935 mapped"
+      "detail": "4939 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 71,
-      "rising": 40,
+      "hype": 70,
+      "rising": 33,
       "repos": {
         "count": 2,
         "stars": 16,
@@ -134,81 +134,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-88772",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.01301,
-      "epss_pct": 0.69527,
-      "cwe": "CWE-119",
-      "published": "2026-09-27T17:16:56.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-27",
-        "due_date": "2026-09-30",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 68,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 37,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 16
-          },
-          {
-            "full_name": "murrez/CVE-2026-88772",
-            "html_url": "https://github.com/murrez/CVE-2026-88772",
-            "stars": 13
-          },
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "stars": 7
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
-          "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-          "date": "2026-09-30T05:30:30.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-30",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "cve_id": "CVE-2026-88771",
       "title": "Citrix NetScaler Improper Input Validation Vulnerability",
       "vendor": "Citrix",
@@ -248,6 +173,69 @@
             "full_name": "technion/netscaler_scanner",
             "html_url": "https://github.com/technion/netscaler_scanner",
             "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-88772",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.01301,
+      "epss_pct": 0.69527,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.390",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 61,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 38,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 16
+          },
+          {
+            "full_name": "murrez/CVE-2026-88772",
+            "html_url": "https://github.com/murrez/CVE-2026-88772",
+            "stars": 13
+          },
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "stars": 8
           }
         ]
       },
@@ -366,12 +354,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 13,
+        "stars": 14,
         "top": [
           {
             "full_name": "msuiche/hotcell",
             "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 7
+            "stars": 8
           },
           {
             "full_name": "decalage2/detect_CVE-2026-86950",
@@ -443,7 +431,7 @@
       "rising": 0,
       "repos": {
         "count": 14,
-        "stars": 96,
+        "stars": 98,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
@@ -477,52 +465,6 @@
         }
       ],
       "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00629,
-      "epss_pct": 0.48437,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -568,73 +510,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-76504",
-      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01819,
-      "epss_pct": 0.78034,
-      "cwe": "CWE-177",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-30",
-        "due_date": "2026-10-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-          "date": "2026-10-01T10:33:16.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-          "date": "2026-09-30T15:24:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 9
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-21962",
@@ -693,6 +569,118 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00629,
+      "epss_pct": 0.48437,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-76504",
+      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01819,
+      "epss_pct": 0.78034,
+      "cwe": "CWE-177",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-30",
+        "due_date": "2026-10-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+          "date": "2026-10-01T10:33:16.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+          "date": "2026-09-30T15:24:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-01",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 10
     },
     {
@@ -715,10 +703,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
+      "hype": 53,
       "rising": 0,
       "repos": {
-        "count": 25,
+        "count": 26,
         "stars": 126,
         "top": [
           {
@@ -2362,6 +2350,54 @@
       "rank": 41
     },
     {
+      "cve_id": "CVE-2026-85102",
+      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.07546,
+      "epss_pct": 0.9435,
+      "cwe": "CWE-295",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "aduli198/CVE-2026-85102",
+            "html_url": "https://github.com/aduli198/CVE-2026-85102",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 42
+    },
+    {
       "cve_id": "CVE-2026-42018",
       "title": "JFrog Artifactory Improper Authentication Vulnerability",
       "vendor": "JFrog",
@@ -2407,7 +2443,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2452,47 +2488,6 @@
       "timeline": [
         {
           "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-85102",
-      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.07546,
-      "epss_pct": 0.9435,
-      "cwe": "CWE-295",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
