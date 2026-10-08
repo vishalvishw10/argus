@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T09:04:03.317Z",
+  "generated_at": "2026-10-08T16:33:19.850Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 59,
     "kev_total": 1734,
@@ -19,22 +19,22 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "799 recent"
+      "detail": "831 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "815 scored"
+      "detail": "841 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "8 mentions"
+      "detail": "7 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4950 mapped"
+      "detail": "4951 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.46593,
+      "epss_pct": 0.46624,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 69,
-      "rising": 8,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 18,
@@ -142,7 +142,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01083,
-      "epss_pct": 0.64156,
+      "epss_pct": 0.64178,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -205,7 +205,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.01301,
-      "epss_pct": 0.69576,
+      "epss_pct": 0.69594,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -260,6 +260,64 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01255,
+      "epss_pct": 0.68609,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 4
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-85706",
       "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
       "vendor": "GitLab",
@@ -283,12 +341,12 @@
       "rising": 0,
       "repos": {
         "count": 14,
-        "stars": 98,
+        "stars": 97,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 43
+            "stars": 42
           },
           {
             "full_name": "EQSTLab/CVE-2026-85706",
@@ -316,64 +374,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01396,
-      "epss_pct": 0.71567,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 3
-          },
-          {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 5
     },
     {
@@ -384,8 +384,8 @@
       "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00629,
-      "epss_pct": 0.48517,
+      "epss": 0.00579,
+      "epss_pct": 0.45908,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -396,7 +396,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 55,
+      "hype": 54,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -430,8 +430,8 @@
       "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.46117,
-      "epss_pct": 0.98781,
+      "epss": 0.39979,
+      "epss_pct": 0.98597,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -442,7 +442,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
+      "hype": 52,
       "rising": 0,
       "repos": {
         "count": 26,
@@ -479,77 +479,6 @@
         }
       ],
       "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01242,
-      "epss_pct": 0.68268,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-02",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 14,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 8
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 4
-          },
-          {
-            "full_name": "DeAurity/CVE-2026-86950-POC",
-            "html_url": "https://github.com/DeAurity/CVE-2026-86950-POC",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-          "date": "2026-09-29T21:31:29.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-29",
-          "label": "Covered by Dark Reading"
-        }
-      ],
-      "rank": 8
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -606,6 +535,77 @@
         {
           "date": "2026-09-09",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01242,
+      "epss_pct": 0.68289,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-02",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 14,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 8
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 4
+          },
+          {
+            "full_name": "DeAurity/CVE-2026-86950-POC",
+            "html_url": "https://github.com/DeAurity/CVE-2026-86950-POC",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+          "date": "2026-09-29T21:31:29.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-09-29",
+          "label": "Covered by Dark Reading"
         }
       ],
       "rank": 9
@@ -669,6 +669,139 @@
       "rank": 10
     },
     {
+      "cve_id": "CVE-2026-81578",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.85581,
+      "epss_pct": 0.9972,
+      "cwe": "CWE-305",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "CVE-2026-21589",
+      "vendor": null,
+      "product": null,
+      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.01773,
+      "epss_pct": 0.77502,
+      "cwe": "CWE-552",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 95,
+      "repos": {
+        "count": 9,
+        "stars": 34,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 10
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 9
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 8
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Attackers Target Critical Atlassian Vulnerability Within Hours of PoC Publication",
+          "url": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
+          "date": "2026-10-08T14:04:44.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Hackers exploit critical Atlassian flaw after public PoC release",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/",
+          "date": "2026-10-07T12:49:01.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Atlassian Data Center Flaw Draws Exploitation Attempts Within Two Hours of Public Details",
+          "url": "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
+          "date": "2026-10-07T11:49:26.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
+          "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
+          "date": "2026-10-06T06:58:56.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-07",
+          "label": "Covered by BleepingComputer, The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 12
+    },
+    {
       "cve_id": "CVE-2026-71362",
       "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
       "vendor": "Adobe",
@@ -715,139 +848,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-81578",
-      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.84594,
-      "epss_pct": 0.997,
-      "cwe": "CWE-305",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "CVE-2026-21589",
-      "vendor": null,
-      "product": null,
-      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.01755,
-      "epss_pct": 0.77225,
-      "cwe": "CWE-552",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 50,
-      "rising": 87,
-      "repos": {
-        "count": 8,
-        "stars": 29,
-        "top": [
-          {
-            "full_name": "MarcusProgram/CVE-2026-21589",
-            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
-            "stars": 8
-          },
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "stars": 8
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
-            "stars": 7
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "Hackers exploit critical Atlassian flaw after public PoC release",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/",
-          "date": "2026-10-07T12:49:01.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Atlassian Data Center Flaw Draws Exploitation Attempts Within Two Hours of Public Details",
-          "url": "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
-          "date": "2026-10-07T11:49:26.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "Atlassian warns of critical file-access flaw in Jira, Confluence",
-          "url": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
-          "date": "2026-10-06T17:34:59.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
-          "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
-          "date": "2026-10-06T06:58:56.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-07",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
       "rank": 13
     },
     {
@@ -859,7 +859,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23988,
-      "epss_pct": 0.97787,
+      "epss_pct": 0.97789,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -909,6 +909,60 @@
       "rank": 14
     },
     {
+      "cve_id": "CVE-2026-82078",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "vendor": "PaperCut",
+      "product": "NG/MF",
+      "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.63532,
+      "epss_pct": 0.99195,
+      "cwe": "CWE-470",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
+            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
+            "stars": 4
+          },
+          {
+            "full_name": "virologi-info/papercut-toolkit",
+            "html_url": "https://github.com/virologi-info/papercut-toolkit",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-31",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
+    },
+    {
       "cve_id": "CVE-2026-104286",
       "title": "Fortinet FortiMail Path Traversal Vulnerability",
       "vendor": "Fortinet",
@@ -917,7 +971,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.81977,
+      "epss_pct": 0.81975,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -928,7 +982,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -972,121 +1026,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-76504",
-      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01819,
-      "epss_pct": 0.78072,
-      "cwe": "CWE-177",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-30",
-        "due_date": "2026-10-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-          "date": "2026-10-01T10:33:16.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-01",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-82078",
-      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-      "vendor": "PaperCut",
-      "product": "NG/MF",
-      "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.61394,
-      "epss_pct": 0.99145,
-      "cwe": "CWE-470",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "yora1928/PaperCut-CVE-2026-81578-82078",
-            "html_url": "https://github.com/yora1928/PaperCut-CVE-2026-81578-82078",
-            "stars": 4
-          },
-          {
-            "full_name": "virologi-info/papercut-toolkit",
-            "html_url": "https://github.com/virologi-info/papercut-toolkit",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-08-31",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 17
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1097,7 +1037,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.14121,
-      "epss_pct": 0.96486,
+      "epss_pct": 0.96489,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1144,7 +1084,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2021-23758",
@@ -1186,7 +1126,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1197,7 +1137,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.9349,
+      "epss_pct": 0.93495,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1225,8 +1165,8 @@
             "stars": 4
           },
           {
-            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
             "stars": 3
           }
         ]
@@ -1244,7 +1184,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1255,7 +1195,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97717,
+      "epss_pct": 0.97719,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1297,7 +1237,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-8452",
@@ -1308,7 +1248,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01011,
-      "epss_pct": 0.62045,
+      "epss_pct": 0.62068,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1355,7 +1295,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1366,7 +1306,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.28269,
-      "epss_pct": 0.98076,
+      "epss_pct": 0.98077,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1413,7 +1353,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1424,7 +1364,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.90133,
+      "epss_pct": 0.9014,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1471,7 +1411,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2019-1068",
@@ -1482,7 +1422,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.57273,
-      "epss_pct": 0.99054,
+      "epss_pct": 0.99055,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -1513,7 +1453,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1524,7 +1464,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07056,
-      "epss_pct": 0.9404,
+      "epss_pct": 0.94045,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1571,6 +1511,54 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-76504",
+      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "vendor": "Cisco",
+      "product": "Catalyst SD-WAN Manager",
+      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01819,
+      "epss_pct": 0.78084,
+      "cwe": "CWE-177",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-30",
+        "due_date": "2026-10-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 26
     },
     {
@@ -1582,7 +1570,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01027,
-      "epss_pct": 0.6251,
+      "epss_pct": 0.62534,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1605,13 +1593,13 @@
             "stars": 4
           },
           {
-            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
+            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
+            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
             "stars": 3
           },
           {
-            "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
-            "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
+            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
             "stars": 3
           }
         ]
@@ -1640,7 +1628,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.82188,
+      "epss_pct": 0.82185,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1655,12 +1643,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 13,
+        "stars": 14,
         "top": [
           {
             "full_name": "watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-f5-bigip-PreAuth-RCE-CVE-2026-94127",
-            "stars": 13
+            "stars": 14
           },
           {
             "full_name": "FurkanKAYAPINAR/CVE-2026-94127",
@@ -1693,7 +1681,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87521,
+      "epss_pct": 0.8753,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1746,7 +1734,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.42919,
-      "epss_pct": 0.98688,
+      "epss_pct": 0.98689,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1787,7 +1775,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02095,
-      "epss_pct": 0.81071,
+      "epss_pct": 0.81083,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1832,6 +1820,64 @@
       "rank": 31
     },
     {
+      "cve_id": "CVE-2026-5430",
+      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "vendor": "WSO2",
+      "product": "Multiple Products",
+      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00588,
+      "epss_pct": 0.46464,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 38,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-5430",
+            "html_url": "https://github.com/abraxas/CVE-2026-5430",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-5430",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
+            "stars": 0
+          },
+          {
+            "full_name": "getdrive/wso2_cve-2026-5430_lab",
+            "html_url": "https://github.com/getdrive/wso2_cve-2026-5430_lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
+    },
+    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
@@ -1840,7 +1886,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.19654,
-      "epss_pct": 0.97331,
+      "epss_pct": 0.97333,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1882,7 +1928,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1893,7 +1939,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86432,
+      "epss_pct": 0.86441,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -1930,7 +1976,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1941,7 +1987,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.9647,
+      "epss_pct": 0.96473,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -1978,7 +2024,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -1989,7 +2035,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.12928,
-      "epss_pct": 0.96219,
+      "epss_pct": 0.96221,
       "cwe": "CWE-96",
       "published": null,
       "kev": {
@@ -2036,7 +2082,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2047,7 +2093,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81132,
+      "epss_pct": 0.81143,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2089,64 +2135,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-5430",
-      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
-      "vendor": "WSO2",
-      "product": "Multiple Products",
-      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00588,
-      "epss_pct": 0.46431,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "abraxas/CVE-2026-5430",
-            "html_url": "https://github.com/abraxas/CVE-2026-5430",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-5430",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
-            "stars": 0
-          },
-          {
-            "full_name": "davidvrns/CVE-2026-5430-WSO2",
-            "html_url": "https://github.com/davidvrns/CVE-2026-5430-WSO2",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 37
     },
     {
@@ -2158,7 +2146,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01276,
-      "epss_pct": 0.69051,
+      "epss_pct": 0.69069,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2206,7 +2194,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18979,
-      "epss_pct": 0.97237,
+      "epss_pct": 0.97238,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2254,7 +2242,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.08757,
-      "epss_pct": 0.95039,
+      "epss_pct": 0.95042,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2312,7 +2300,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07546,
-      "epss_pct": 0.9436,
+      "epss_pct": 0.94364,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -2360,7 +2348,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95434,
+      "epss_pct": 0.95437,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2408,7 +2396,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.1076,
-      "epss_pct": 0.95728,
+      "epss_pct": 0.95731,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2456,7 +2444,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.56133,
+      "epss_pct": 0.5616,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2504,7 +2492,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.94984,
+      "epss_pct": 0.94988,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2545,7 +2533,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03859,
-      "epss_pct": 0.89885,
+      "epss_pct": 0.89893,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2586,7 +2574,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.03616,
-      "epss_pct": 0.8919,
+      "epss_pct": 0.89199,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2627,7 +2615,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00836,
-      "epss_pct": 0.56399,
+      "epss_pct": 0.56424,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2675,7 +2663,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00709,
-      "epss_pct": 0.52043,
+      "epss_pct": 0.52072,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2723,7 +2711,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00665,
-      "epss_pct": 0.50215,
+      "epss_pct": 0.50242,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2771,7 +2759,7 @@
       "cvss": 7.4,
       "severity": "HIGH",
       "epss": 0.08434,
-      "epss_pct": 0.94866,
+      "epss_pct": 0.9487,
       "cwe": "CWE-264",
       "published": null,
       "kev": {
@@ -2812,7 +2800,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.04962,
-      "epss_pct": 0.91957,
+      "epss_pct": 0.91964,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2853,7 +2841,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.08788,
-      "epss_pct": 0.95053,
+      "epss_pct": 0.95056,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2894,7 +2882,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.63536,
+      "epss_pct": 0.63559,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2935,7 +2923,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84223,
+      "epss_pct": 0.84232,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2976,7 +2964,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.46569,
+      "epss_pct": 0.466,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -3017,7 +3005,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.13011,
+      "epss_pct": 0.13023,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -3058,7 +3046,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00924,
-      "epss_pct": 0.59198,
+      "epss_pct": 0.59222,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -3099,7 +3087,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.74472,
+      "epss_pct": 0.74484,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -3140,7 +3128,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00393,
-      "epss_pct": 0.31373,
+      "epss_pct": 0.31393,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
