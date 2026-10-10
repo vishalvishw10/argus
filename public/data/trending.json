@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T13:47:18.001Z",
+  "generated_at": "2026-10-10T18:40:21.235Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "784 recent"
+      "detail": "787 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "720 scored"
+      "detail": "821 scored"
     },
     {
       "name": "BleepingComputer",
@@ -71,8 +71,8 @@
       "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.98033,
-      "epss_pct": 0.9991,
+      "epss": 0.99497,
+      "epss_pct": 0.99945,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 65,
-      "rising": 45,
+      "rising": 41,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -126,7 +126,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01083,
-      "epss_pct": 0.6421,
+      "epss_pct": 0.64241,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -137,7 +137,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 62,
+      "hype": 61,
       "rising": 0,
       "repos": {
         "count": 12,
@@ -248,7 +248,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.46673,
+      "epss_pct": 0.4671,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -298,6 +298,69 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-88772",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.01301,
+      "epss_pct": 0.69647,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.390",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 44,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          },
+          {
+            "full_name": "murrez/CVE-2026-88772",
+            "html_url": "https://github.com/murrez/CVE-2026-88772",
+            "stars": 13
+          },
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "stars": 12
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-09-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-102489",
       "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
       "vendor": "Zammad GmbH",
@@ -306,7 +369,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01255,
-      "epss_pct": 0.68639,
+      "epss_pct": 0.68665,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -317,7 +380,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
+      "hype": 57,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -353,82 +416,19 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-88772",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.01301,
-      "epss_pct": 0.69623,
-      "cwe": "CWE-119",
-      "published": "2026-09-27T17:16:56.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-27",
-        "due_date": "2026-09-30",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 58,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 43,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          },
-          {
-            "full_name": "murrez/CVE-2026-88772",
-            "html_url": "https://github.com/murrez/CVE-2026-88772",
-            "stars": 13
-          },
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "stars": 11
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 6
     },
     {
-      "cve_id": "CVE-2016-3081",
-      "title": "Apache Struts Command Injection Vulnerability",
-      "vendor": "Apache",
-      "product": "Struts",
-      "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
-      "cvss": 8.1,
+      "cve_id": "CVE-2015-5477",
+      "title": " ISC BIND Data Processing Errors Vulnerability",
+      "vendor": "ISC",
+      "product": "BIND",
+      "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+      "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.94506,
-      "epss_pct": 0.99853,
-      "cwe": "CWE-77",
+      "epss": 0.99409,
+      "epss_pct": 0.99941,
+      "cwe": "CWE-19",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -439,7 +439,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -461,16 +461,16 @@
       "rank": 7
     },
     {
-      "cve_id": "CVE-2015-5477",
-      "title": " ISC BIND Data Processing Errors Vulnerability",
-      "vendor": "ISC",
-      "product": "BIND",
-      "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
-      "cvss": 7.5,
+      "cve_id": "CVE-2016-3081",
+      "title": "Apache Struts Command Injection Vulnerability",
+      "vendor": "Apache",
+      "product": "Struts",
+      "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+      "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.91807,
-      "epss_pct": 0.99816,
-      "cwe": "CWE-19",
+      "epss": 0.96052,
+      "epss_pct": 0.99877,
+      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -480,8 +480,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
-      "rising": 19,
+      "hype": 54,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -511,7 +511,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.39979,
-      "epss_pct": 0.98598,
+      "epss_pct": 0.98599,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -569,7 +569,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.8818,
-      "epss_pct": 0.99766,
+      "epss_pct": 0.99767,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -620,52 +620,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.0055,
-      "epss_pct": 0.44311,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-85046",
       "title": "Google Chromium V8 Type Confusion Vulnerability",
       "vendor": "Google",
@@ -674,7 +628,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.48881,
-      "epss_pct": 0.98852,
+      "epss_pct": 0.98853,
       "cwe": "CWE-843",
       "published": null,
       "kev": {
@@ -721,7 +675,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -775,6 +729,52 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.0055,
+      "epss_pct": 0.44351,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 13
     },
     {
@@ -786,7 +786,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01242,
-      "epss_pct": 0.68317,
+      "epss_pct": 0.68344,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -906,7 +906,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.63532,
-      "epss_pct": 0.99196,
+      "epss_pct": 0.99197,
       "cwe": "CWE-470",
       "published": null,
       "kev": {
@@ -960,7 +960,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.14121,
-      "epss_pct": 0.96492,
+      "epss_pct": 0.96495,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1018,7 +1018,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.93502,
+      "epss_pct": 0.93507,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1076,7 +1076,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97721,
+      "epss_pct": 0.97723,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1128,8 +1128,8 @@
       "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.14548,
-      "epss_pct": 0.96569,
+      "epss": 0.19352,
+      "epss_pct": 0.97295,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1141,7 +1141,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 43,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1170,7 +1170,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.28269,
-      "epss_pct": 0.98079,
+      "epss_pct": 0.9808,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1228,7 +1228,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.9015,
+      "epss_pct": 0.90159,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1285,8 +1285,8 @@
       "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
       "cvss": 4.9,
       "severity": "MEDIUM",
-      "epss": 0.03432,
-      "epss_pct": 0.88629,
+      "epss": 0.03609,
+      "epss_pct": 0.89198,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -1298,7 +1298,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1327,7 +1327,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01027,
-      "epss_pct": 0.62565,
+      "epss_pct": 0.62595,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1385,7 +1385,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.07056,
-      "epss_pct": 0.94052,
+      "epss_pct": 0.94056,
       "cwe": "CWE-444",
       "published": null,
       "kev": {
@@ -1443,7 +1443,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.82204,
+      "epss_pct": 0.8222,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1496,7 +1496,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87544,
+      "epss_pct": 0.87557,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1590,7 +1590,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.81995,
+      "epss_pct": 0.82011,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1648,7 +1648,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01819,
-      "epss_pct": 0.78109,
+      "epss_pct": 0.7813,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -1696,7 +1696,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02095,
-      "epss_pct": 0.81103,
+      "epss_pct": 0.8112,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1749,7 +1749,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00588,
-      "epss_pct": 0.46513,
+      "epss_pct": 0.46552,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1807,7 +1807,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.19654,
-      "epss_pct": 0.97335,
+      "epss_pct": 0.97337,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1860,7 +1860,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86456,
+      "epss_pct": 0.86469,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -1908,7 +1908,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96475,
+      "epss_pct": 0.96478,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -1956,7 +1956,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.14509,
-      "epss_pct": 0.9656,
+      "epss_pct": 0.96563,
       "cwe": "CWE-96",
       "published": null,
       "kev": {
@@ -2014,7 +2014,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81163,
+      "epss_pct": 0.8118,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2067,7 +2067,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01276,
-      "epss_pct": 0.69099,
+      "epss_pct": 0.69123,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2115,7 +2115,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.18979,
-      "epss_pct": 0.9724,
+      "epss_pct": 0.97242,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2162,8 +2162,8 @@
       "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.08757,
-      "epss_pct": 0.95047,
+      "epss": 0.08043,
+      "epss_pct": 0.94665,
       "cwe": "CWE-441",
       "published": null,
       "kev": {
@@ -2221,7 +2221,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.07546,
-      "epss_pct": 0.94372,
+      "epss_pct": 0.94376,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -2269,7 +2269,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95442,
+      "epss_pct": 0.95446,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2316,8 +2316,8 @@
       "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.1076,
-      "epss_pct": 0.95735,
+      "epss": 0.09889,
+      "epss_pct": 0.95474,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2365,7 +2365,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.56202,
+      "epss_pct": 0.56235,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2413,7 +2413,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.94993,
+      "epss_pct": 0.94998,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2454,7 +2454,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03802,
-      "epss_pct": 0.89746,
+      "epss_pct": 0.89756,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2495,7 +2495,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.03616,
-      "epss_pct": 0.8921,
+      "epss_pct": 0.89221,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2536,7 +2536,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.00836,
-      "epss_pct": 0.56465,
+      "epss_pct": 0.565,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2584,7 +2584,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00709,
-      "epss_pct": 0.52119,
+      "epss_pct": 0.52152,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2632,7 +2632,7 @@
       "cvss": 5.3,
       "severity": "MEDIUM",
       "epss": 0.00665,
-      "epss_pct": 0.50291,
+      "epss_pct": 0.50329,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2680,7 +2680,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.63591,
+      "epss_pct": 0.63623,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2721,7 +2721,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84248,
+      "epss_pct": 0.84264,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2762,7 +2762,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.46649,
+      "epss_pct": 0.46687,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -2803,7 +2803,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.13041,
+      "epss_pct": 0.13064,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -2844,7 +2844,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00924,
-      "epss_pct": 0.59258,
+      "epss_pct": 0.5929,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2885,7 +2885,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.74512,
+      "epss_pct": 0.74534,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2926,7 +2926,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00393,
-      "epss_pct": 0.31439,
+      "epss_pct": 0.31483,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2967,7 +2967,7 @@
       "cvss": null,
       "severity": "UNKNOWN",
       "epss": 0.01773,
-      "epss_pct": 0.77527,
+      "epss_pct": 0.77548,
       "cwe": "CWE-552",
       "published": null,
       "kev": {
@@ -3033,8 +3033,8 @@
       "description": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n \n\n  *  For the following versions: Applicable only when configured as a SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, inclusive\n  *  NetScaler ADC and NetScaler Gateway between 13.1-64.23 and 13.1-64.28, inclusive\n  *  NetScaler ADC 13.1-FIPS between 13.1-NDcPP 13.1-37.279 and 13.1- 37.282, inclusive\n\n\n\n\n \n\n\n\nFor the following versions: Applicable only when configured as a SAML SP or SAML IdP:\n\n  *  NetScaler ADC and NetScaler Gateway before 14.1-73.37 \n  *  NetScaler ADC 14.1-FIPS before 14.1-73.37 FIPS \n  *  NetScaler ADC and NetScaler Gateway before 13.1-64.23\n  *  NetScaler ADC 13.1-FIPS before13.1-NDcPP 13.1-37.279",
       "cvss": null,
       "severity": "UNKNOWN",
-      "epss": 0.00414,
-      "epss_pct": 0.33719,
+      "epss": 0.00471,
+      "epss_pct": 0.38873,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -3042,8 +3042,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 28,
-      "rising": 46,
+      "hype": 27,
+      "rising": 41,
       "repos": {
         "count": 3,
         "stars": 18,
@@ -3101,7 +3101,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00361,
-      "epss_pct": 0.27897,
+      "epss_pct": 0.27936,
       "cwe": "CWE-444",
       "published": "2026-09-27T17:16:56.507",
       "kev": {
