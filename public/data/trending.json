@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:21:11.379Z",
+  "generated_at": "2026-10-12T00:36:20.784Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "872 recent"
+      "detail": "876 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "821 scored"
+      "detail": "817 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4969 mapped"
+      "detail": "4970 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 18,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -140,7 +140,7 @@
       "hype": 61,
       "rising": 0,
       "repos": {
-        "count": 12,
+        "count": 11,
         "stars": 43,
         "top": [
           {
@@ -383,13 +383,18 @@
       "hype": 57,
       "rising": 0,
       "repos": {
-        "count": 2,
+        "count": 3,
         "stars": 6,
         "top": [
           {
             "full_name": "horizon3ai/CVE-2026-102489",
             "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
             "stars": 6
+          },
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 0
           },
           {
             "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
@@ -439,7 +444,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -481,7 +486,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -732,52 +737,6 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.0055,
-      "epss_pct": 0.44384,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-86950",
       "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "vendor": "Apple",
@@ -846,7 +805,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -892,6 +851,52 @@
       "timeline": [
         {
           "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.0055,
+      "epss_pct": 0.44384,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1121,47 +1126,6 @@
       "rank": 19
     },
     {
-      "cve_id": "CVE-2021-3199",
-      "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
-      "vendor": "ONLYOFFICE",
-      "product": "Docs",
-      "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.19352,
-      "epss_pct": 0.97296,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 43,
-      "rising": 9,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 20
-    },
-    {
       "cve_id": "CVE-2026-76461",
       "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
       "vendor": "Cisco",
@@ -1217,7 +1181,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1272,6 +1236,47 @@
       "timeline": [
         {
           "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2021-3199",
+      "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+      "vendor": "ONLYOFFICE",
+      "product": "Docs",
+      "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.19352,
+      "epss_pct": 0.97296,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1414,7 +1419,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1616,9 +1621,14 @@
       "hype": 38,
       "rising": 0,
       "repos": {
-        "count": 3,
+        "count": 4,
         "stars": 0,
         "top": [
+          {
+            "full_name": "0xREBYTE/CVE-2026-104286-PoC",
+            "html_url": "https://github.com/0xREBYTE/CVE-2026-104286-PoC",
+            "stars": 0
+          },
           {
             "full_name": "kh20134/fortimail-cve-2026-104286-response",
             "html_url": "https://github.com/kh20134/fortimail-cve-2026-104286-response",
@@ -1627,11 +1637,6 @@
           {
             "full_name": "techupdate24/fortimail-zero-day-cve-2026-104286",
             "html_url": "https://github.com/techupdate24/fortimail-zero-day-cve-2026-104286",
-            "stars": 0
-          },
-          {
-            "full_name": "ShadowForge-Cyber/CVE-2026-104286-POC",
-            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-104286-POC",
             "stars": 0
           }
         ]
@@ -2838,7 +2843,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 29,
+      "hype": 28,
       "rising": 0,
       "repos": {
         "count": 12,
@@ -2905,8 +2910,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 27,
-      "rising": 12,
+      "hype": 26,
+      "rising": 8,
       "repos": {
         "count": 4,
         "stars": 18,
