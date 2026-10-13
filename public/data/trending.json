@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T17:59:34.251Z",
+  "generated_at": "2026-10-13T00:46:32.688Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1101 recent"
+      "detail": "1292 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "963 scored"
+      "detail": "954 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4980 mapped"
+      "detail": "4987 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 62,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -303,6 +303,69 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01255,
+      "epss_pct": 0.687,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 10,
+        "top": [
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 4
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-88779",
       "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -322,7 +385,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 57,
+      "hype": 56,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -358,69 +421,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01255,
-      "epss_pct": 0.687,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 9,
-        "top": [
-          {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 6
-          },
-          {
-            "full_name": "1xPwn/CVE-2026-102489",
-            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
-            "stars": 3
-          },
-          {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 6
     },
     {
@@ -444,7 +444,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -486,7 +486,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -531,7 +531,7 @@
       "rising": 0,
       "repos": {
         "count": 26,
-        "stars": 129,
+        "stars": 130,
         "top": [
           {
             "full_name": "ressl/cve-2026-87902-poc",
@@ -1262,7 +1262,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1419,7 +1419,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1599,6 +1599,59 @@
       "rank": 28
     },
     {
+      "cve_id": "CVE-2026-9586",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.18979,
+      "epss_pct": 0.97244,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "fromABUV/CVE-2026-9586_POC_EXPLOIT",
+            "html_url": "https://github.com/fromABUV/CVE-2026-9586_POC_EXPLOIT",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-9586",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
+    },
+    {
       "cve_id": "CVE-2026-104286",
       "title": "Fortinet FortiMail Path Traversal Vulnerability",
       "vendor": "Fortinet",
@@ -1654,7 +1707,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -1712,7 +1765,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1765,7 +1818,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1813,7 +1866,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1861,7 +1914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -1916,59 +1969,6 @@
       "timeline": [
         {
           "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-9586",
-      "title": "Sangoma Switchvox SQL Injection Vulnerability",
-      "vendor": "Sangoma",
-      "product": "Switchvox",
-      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.18979,
-      "epss_pct": 0.97244,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-9586",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
-            "stars": 0
-          },
-          {
-            "full_name": "fromABUV/CVE-2026-9586_POC_EXPLOIT",
-            "html_url": "https://github.com/fromABUV/CVE-2026-9586_POC_EXPLOIT",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2848,7 +2848,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 28,
+      "hype": 27,
       "rising": 0,
       "repos": {
         "count": 12,
@@ -2915,21 +2915,21 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 24,
-      "rising": 72,
+      "hype": 25,
+      "rising": 65,
       "repos": {
         "count": 2,
-        "stars": 1,
+        "stars": 2,
         "top": [
+          {
+            "full_name": "tc4dy/CVE-2026-85097-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-85097-Toolkit",
+            "stars": 1
+          },
           {
             "full_name": "Wayang1337/CVE-2026-85097",
             "html_url": "https://github.com/Wayang1337/CVE-2026-85097",
             "stars": 1
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-85097-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-85097-Toolkit",
-            "stars": 0
           }
         ]
       },
@@ -2978,12 +2978,17 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 22,
-      "rising": 71,
+      "hype": 23,
+      "rising": 63,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
+          {
+            "full_name": "techupdate24/sonicwall-sma-1000-cve-2026-102255",
+            "html_url": "https://github.com/techupdate24/sonicwall-sma-1000-cve-2026-102255",
+            "stars": 0
+          },
           {
             "full_name": "HORKimhab/CVE-2026-102255",
             "html_url": "https://github.com/HORKimhab/CVE-2026-102255",
@@ -3067,49 +3072,6 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-88775",
-      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00384,
-      "epss_pct": 0.30473,
-      "cwe": "CWE-120",
-      "published": "2026-09-27T17:16:56.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
       "cve_id": "CVE-2026-88776",
       "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
       "vendor": null,
@@ -3141,6 +3103,49 @@
             "full_name": "Scyrix-LLC/CVE-2026-88776",
             "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88776",
             "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-88775",
+      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00384,
+      "epss_pct": 0.30473,
+      "cwe": "CWE-120",
+      "published": "2026-09-27T17:16:56.750",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 18,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
           }
         ]
       },
