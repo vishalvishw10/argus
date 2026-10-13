@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:46:32.688Z",
+  "generated_at": "2026-10-13T07:46:46.453Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1292 recent"
+      "detail": "1325 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "954 scored"
+      "detail": "951 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4987 mapped"
+      "detail": "4988 mapped"
     },
     {
       "name": "Reddit",
@@ -485,7 +485,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
+      "hype": 52,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -786,52 +786,6 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.0055,
-      "epss_pct": 0.44407,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
-    },
-    {
       "cve_id": "CVE-2026-86950",
       "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "vendor": "Apple",
@@ -898,6 +852,52 @@
         {
           "date": "2026-09-29",
           "label": "Covered by Dark Reading"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.0055,
+      "epss_pct": 0.44407,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 15
@@ -1399,47 +1399,6 @@
       "rank": 24
     },
     {
-      "cve_id": "CVE-2023-22894",
-      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-      "vendor": "Strapi",
-      "product": "Strapi",
-      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
-      "cvss": 4.9,
-      "severity": "MEDIUM",
-      "epss": 0.03609,
-      "epss_pct": 0.89211,
-      "cwe": "CWE-312",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
       "cve_id": "CVE-2026-94127",
       "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
       "vendor": "F5",
@@ -1490,7 +1449,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1540,6 +1499,47 @@
       "timeline": [
         {
           "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "cve_id": "CVE-2023-22894",
+      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "epss": 0.03609,
+      "epss_pct": 0.89211,
+      "cwe": "CWE-312",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2916,15 +2916,15 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 25,
-      "rising": 65,
+      "rising": 57,
       "repos": {
         "count": 2,
-        "stars": 2,
+        "stars": 3,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-85097-Toolkit",
             "html_url": "https://github.com/tc4dy/CVE-2026-85097-Toolkit",
-            "stars": 1
+            "stars": 2
           },
           {
             "full_name": "Wayang1337/CVE-2026-85097",
@@ -2978,8 +2978,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
-      "rising": 63,
+      "hype": 22,
+      "rising": 55,
       "repos": {
         "count": 2,
         "stars": 0,
