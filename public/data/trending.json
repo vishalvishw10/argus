@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-13T16:03:52.393Z",
+  "generated_at": "2026-10-13T21:18:40.975Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 4,
+    "media_mentions": 3,
     "reddit_upvotes": 0,
-    "kev_count": 55,
-    "kev_total": 1740,
+    "kev_count": 56,
+    "kev_total": 1741,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1740 entries"
+      "detail": "1741 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1305 recent"
+      "detail": "1580 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1266 scored"
+      "detail": "912 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "6 mentions"
+      "detail": "5 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "4995 mapped"
+      "detail": "5005 mapped"
     },
     {
       "name": "Reddit",
@@ -240,6 +240,69 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01255,
+      "epss_pct": 0.68745,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 57,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-88772",
       "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -259,7 +322,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
+      "hype": 57,
       "rising": 0,
       "repos": {
         "count": 7,
@@ -297,69 +360,6 @@
         },
         {
           "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01255,
-      "epss_pct": 0.68745,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 11,
-        "top": [
-          {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 6
-          },
-          {
-            "full_name": "1xPwn/CVE-2026-102489",
-            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
-            "stars": 5
-          },
-          {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -466,6 +466,60 @@
       "rank": 7
     },
     {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 71,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN",
+          "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+          "date": "2026-10-13T18:43:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-13",
+          "label": "Covered by SecurityWeek"
+        }
+      ],
+      "rank": 8
+    },
+    {
       "cve_id": "CVE-2016-3081",
       "title": "Apache Struts Command Injection Vulnerability",
       "vendor": "Apache",
@@ -505,7 +559,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -563,7 +617,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -622,7 +676,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -680,7 +734,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-81578",
@@ -734,7 +788,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -783,7 +837,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -854,7 +908,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -900,7 +954,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -954,7 +1008,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1012,7 +1066,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1070,7 +1124,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1123,7 +1177,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1181,7 +1235,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1239,19 +1293,19 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cve_id": "CVE-2026-96951",
+      "title": "Microsoft Windows Command Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 8.8,
+      "severity": "HIGH",
       "epss": null,
       "epss_pct": null,
-      "cwe": null,
+      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1261,8 +1315,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 35,
+      "hype": 41,
+      "rising": 33,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1280,7 +1334,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -1321,7 +1375,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1379,7 +1433,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1437,7 +1491,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1490,7 +1544,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1543,7 +1597,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -1584,7 +1638,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1637,7 +1691,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -1690,7 +1744,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -1748,7 +1802,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1801,7 +1855,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1849,7 +1903,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1897,7 +1951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -1955,7 +2009,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2013,7 +2067,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2061,7 +2115,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2114,7 +2168,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2162,7 +2216,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2220,7 +2274,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2268,7 +2322,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2316,7 +2370,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2364,7 +2418,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2412,7 +2466,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2453,7 +2507,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2494,7 +2548,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -2535,7 +2589,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2583,7 +2637,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2624,7 +2678,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2665,7 +2719,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2706,7 +2760,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2747,7 +2801,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -2788,7 +2842,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -2829,7 +2883,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2868,74 +2922,6 @@
         {
           "date": "2026-09-08",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-85097",
-      "title": "CVE-2026-85097",
-      "vendor": null,
-      "product": null,
-      "description": "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and including, 3.1.8.9. This is due to insufficient validation of the attacker-controlled URL field in the 'temporaryFileUploads' parameter during form submission. An unauthenticated attacker can first obtain a valid nonce via the bricksforge_regenerate_nonce AJAX endpoint, then upload a GIF/PHP polyglot file to the temporary upload directory where MIME type validation is correctly performed. Subsequently, the attacker can submit a form with a crafted 'temporaryFileUploads' parameter where the server-side file path points to the validated GIF file, but the attacker-controlled url field ends with a .php extension. This makes it possible for unauthenticated attackers to upload and execute arbitrary PHP code on the server.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00312,
-      "epss_pct": 0.22299,
-      "cwe": "CWE-434",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 26,
-      "rising": 48,
-      "repos": {
-        "count": 3,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "tc4dy/CVE-2026-85097-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-85097-Toolkit",
-            "stars": 4
-          },
-          {
-            "full_name": "Masriyan/CVE-2026-85097",
-            "html_url": "https://github.com/Masriyan/CVE-2026-85097",
-            "stars": 1
-          },
-          {
-            "full_name": "Wayang1337/CVE-2026-85097",
-            "html_url": "https://github.com/Wayang1337/CVE-2026-85097",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Bricksforge WordPress Plugin Vulnerability Exploited in the Wild",
-          "url": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-          "date": "2026-10-12T13:14:37.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-          "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-          "date": "2026-10-12T09:02:14.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-12",
-          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 56
