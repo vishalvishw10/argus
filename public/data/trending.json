@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-15T15:05:18.913Z",
+  "generated_at": "2026-10-15T19:12:30.171Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 7,
     "reddit_upvotes": 0,
-    "kev_count": 58,
-    "kev_total": 1745,
+    "kev_count": 59,
+    "kev_total": 1746,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1745 entries"
+      "detail": "1746 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "723 recent"
+      "detail": "1035 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "781 scored"
+      "detail": "1088 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5041 mapped"
+      "detail": "5040 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,77 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-0322",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.01076,
+      "epss_pct": 0.64349,
+      "cwe": "CWE-94",
+      "published": "2026-10-14T18:17:07.743",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 77,
+      "rising": 100,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Ife-ella/CVE-vulnerability",
+            "html_url": "https://github.com/Ife-ella/CVE-vulnerability",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+          "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+          "date": "2026-10-15T11:46:49.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+          "date": "2026-10-14T22:56:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-104935",
       "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
@@ -84,7 +155,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 66,
-      "rising": 74,
+      "rising": 68,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -131,72 +202,6 @@
         {
           "date": "2026-10-14",
           "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-0322",
-      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.01076,
-      "epss_pct": 0.64349,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 63,
-      "rising": 96,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Ife-ella/CVE-vulnerability",
-            "html_url": "https://github.com/Ife-ella/CVE-vulnerability",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
-          "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
-          "date": "2026-10-15T11:46:49.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
-          "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
-          "date": "2026-10-14T22:56:47.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
       "rank": 2
@@ -324,45 +329,45 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01255,
-      "epss_pct": 0.68963,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
+      "cve_id": "CVE-2026-88772",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.01301,
+      "epss_pct": 0.69936,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.390",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
         "ransomware": false
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 56,
+      "hype": 57,
       "rising": 0,
       "repos": {
-        "count": 3,
-        "stars": 13,
+        "count": 7,
+        "stars": 44,
         "top": [
           {
-            "full_name": "1xPwn/CVE-2026-102489",
-            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
-            "stars": 7
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
           },
           {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 6
+            "full_name": "murrez/CVE-2026-88772",
+            "html_url": "https://github.com/murrez/CVE-2026-88772",
+            "stars": 13
           },
           {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "stars": 12
           }
         ]
       },
@@ -376,11 +381,11 @@
       ],
       "timeline": [
         {
-          "date": "2026-09-30",
+          "date": "2026-09-27",
           "label": "Published to NVD"
         },
         {
-          "date": "2026-10-02",
+          "date": "2026-09-27",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -407,7 +412,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 55,
-      "rising": 62,
+      "rising": 59,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -452,6 +457,127 @@
       "rank": 6
     },
     {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01255,
+      "epss_pct": 0.68963,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 13,
+        "top": [
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 7
+          },
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.02777,
+      "epss_pct": 0.86118,
+      "cwe": "CWE-552",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 34,
+      "repos": {
+        "count": 12,
+        "stars": 44,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 14
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 10
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 10
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 8
+    },
+    {
       "cve_id": "CVE-2026-105133",
       "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
       "vendor": "Ahsay",
@@ -472,7 +598,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 54,
-      "rising": 62,
+      "rising": 59,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -509,91 +635,65 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 7
+      "rank": 9
     },
     {
-      "cve_id": "CVE-2015-5477",
-      "title": " ISC BIND Data Processing Errors Vulnerability",
-      "vendor": "ISC",
-      "product": "BIND",
-      "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+      "cve_id": "CVE-2026-88779",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 FIPS, and before 13.1-37.282; Gateway: before 14.1-73.41 and before 13.1-64.28.",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.99409,
-      "epss_pct": 0.99942,
-      "cwe": "CWE-19",
-      "published": null,
+      "epss": 0.00592,
+      "epss_pct": 0.47107,
+      "cwe": "CWE-119",
+      "published": "2026-10-04T04:16:43.680",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
+        "date_added": "2026-10-04",
+        "due_date": "2026-10-07",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
-      "hype": 52,
+      "hype": 54,
       "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 2,
+        "stars": 18,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          },
+          {
+            "full_name": "orjanj/netscaler_threat_hunt_helper",
+            "html_url": "https://github.com/orjanj/netscaler_threat_hunt_helper",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss"
+        "zero-day",
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2015-3306",
-      "title": "ProFTPD Improper Access Control Vulnerability",
-      "vendor": "ProFTPD",
-      "product": "ProFTPD",
-      "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.99497,
-      "epss_pct": 0.99945,
-      "cwe": "CWE-284",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss"
-      ],
-      "timeline": [
+          "date": "2026-10-04",
+          "label": "Published to NVD"
+        },
         {
-          "date": "2026-10-08",
+          "date": "2026-10-04",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -651,7 +751,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -710,7 +810,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-85046",
@@ -768,7 +868,49 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2015-5477",
+      "title": " ISC BIND Data Processing Errors Vulnerability",
+      "vendor": "ISC",
+      "product": "BIND",
+      "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.99409,
+      "epss_pct": 0.99942,
+      "cwe": "CWE-19",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 14
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -810,7 +952,49 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2015-3306",
+      "title": "ProFTPD Improper Access Control Vulnerability",
+      "vendor": "ProFTPD",
+      "product": "ProFTPD",
+      "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.99497,
+      "epss_pct": 0.99945,
+      "cwe": "CWE-284",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -859,7 +1043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -930,7 +1114,53 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 15
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.0055,
+      "epss_pct": 0.44748,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -984,7 +1214,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1042,65 +1272,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
-    },
-    {
-      "cve_id": "CVE-2026-88772",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.01301,
-      "epss_pct": 0.69936,
-      "cwe": "CWE-119",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-27",
-        "due_date": "2026-09-30",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 44,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          },
-          {
-            "full_name": "murrez/CVE-2026-88772",
-            "html_url": "https://github.com/murrez/CVE-2026-88772",
-            "stars": 13
-          },
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "stars": 12
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 18
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1158,7 +1330,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1211,7 +1383,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1269,7 +1441,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1327,7 +1499,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -1350,7 +1522,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1375,60 +1547,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
-    },
-    {
-      "cve_id": "CVE-2026-88779",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.00592,
-      "epss_pct": 0.47107,
-      "cwe": "CWE-119",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-04",
-        "due_date": "2026-10-07",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          },
-          {
-            "full_name": "orjanj/netscaler_threat_hunt_helper",
-            "html_url": "https://github.com/orjanj/netscaler_threat_hunt_helper",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1477,7 +1596,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -1500,7 +1619,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1518,7 +1637,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1576,7 +1695,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-48710",
@@ -1634,7 +1753,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -1675,7 +1794,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1728,7 +1847,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1781,7 +1900,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-49869",
@@ -1834,7 +1953,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-9586",
@@ -1887,7 +2006,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -1928,7 +2047,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -1986,7 +2105,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2034,7 +2153,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -2082,7 +2201,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -2090,11 +2209,11 @@
       "vendor": "N-able",
       "product": "N-central",
       "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.13349,
       "epss_pct": 0.96368,
-      "cwe": null,
+      "cwe": "CWE-96",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2140,7 +2259,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2198,7 +2317,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2246,7 +2365,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2299,7 +2418,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2347,7 +2466,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-83548",
@@ -2405,7 +2524,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2453,7 +2572,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-83549",
@@ -2501,7 +2620,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2549,7 +2668,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2590,7 +2709,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 49
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2631,7 +2750,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -2672,7 +2791,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-59822",
@@ -2720,48 +2839,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.0055,
-      "epss_pct": 0.44748,
-      "cwe": "CWE-269",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2802,7 +2880,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2843,7 +2921,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2884,7 +2962,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2925,7 +3003,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -2966,7 +3044,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -3007,7 +3085,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -3048,7 +3126,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-88773",
@@ -3082,54 +3160,6 @@
             "full_name": "Scyrix-LLC/CVE-2026-88773",
             "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
             "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-88776",
-      "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00384,
-      "epss_pct": 0.30806,
-      "cwe": "CWE-119",
-      "published": "2026-09-27T17:16:56.870",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 21,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 20,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          },
-          {
-            "full_name": "Scyrix-LLC/CVE-2026-88776",
-            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88776",
-            "stars": 2
           }
         ]
       },
