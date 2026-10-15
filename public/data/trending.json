@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-14T20:45:06.369Z",
+  "generated_at": "2026-10-14T23:57:16.004Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 5,
+    "media_mentions": 7,
     "reddit_upvotes": 0,
     "kev_count": 60,
     "kev_total": 1745,
@@ -19,17 +19,17 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1306 recent"
+      "detail": "1213 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1141 scored"
+      "detail": "1106 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
@@ -39,7 +39,7 @@
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5030 mapped"
+      "detail": "5035 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,73 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.25982,
+      "epss_pct": 0.97961,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 67,
+      "rising": 96,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "date": "2026-10-14T21:20:13.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+          "date": "2026-10-14T12:30:42.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2015-3306",
       "title": "ProFTPD Improper Access Control Vulnerability",
@@ -115,7 +182,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-88771",
@@ -178,7 +245,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -237,7 +304,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -298,66 +365,6 @@
         {
           "date": "2026-09-27",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.25982,
-      "epss_pct": 0.97961,
-      "cwe": "CWE-290",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 56,
-      "rising": 61,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
-          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
-          "date": "2026-10-14T12:30:42.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 5
@@ -484,6 +491,59 @@
       "rank": 7
     },
     {
+      "cve_id": "CVE-2026-0322",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-94",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 71,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+          "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+          "date": "2026-10-14T22:56:47.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
+      "rank": 8
+    },
+    {
       "cve_id": "CVE-2026-96951",
       "title": "Microsoft Windows Command Injection Vulnerability",
       "vendor": "Microsoft",
@@ -504,7 +564,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 52,
-      "rising": 58,
+      "rising": 55,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -535,7 +595,7 @@
           "label": "Covered by SecurityWeek"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -548,48 +608,6 @@
       "epss": 0.99409,
       "epss_pct": 0.99942,
       "cwe": "CWE-19",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 52,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2016-3081",
-      "title": "Apache Struts Command Injection Vulnerability",
-      "vendor": "Apache",
-      "product": "Struts",
-      "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.96052,
-      "epss_pct": 0.99878,
-      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -797,6 +815,108 @@
       "rank": 13
     },
     {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "cvss": 7.3,
+      "severity": "HIGH",
+      "epss": 0.00383,
+      "epss_pct": 0.30672,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 32,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
+          "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
+          "date": "2026-10-09T12:47:26.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-09",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2016-3081",
+      "title": "Apache Struts Command Injection Vulnerability",
+      "vendor": "Apache",
+      "product": "Struts",
+      "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.96052,
+      "epss_pct": 0.99878,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
+    },
+    {
       "cve_id": "CVE-2026-81578",
       "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
       "vendor": "PaperCut",
@@ -848,67 +968,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "cvss": 7.3,
-      "severity": "HIGH",
-      "epss": 0.00383,
-      "epss_pct": 0.30672,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 33,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
-          "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
-          "date": "2026-10-09T12:47:26.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-09",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -957,7 +1017,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1028,7 +1088,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1074,7 +1134,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-82078",
@@ -1128,7 +1188,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1186,7 +1246,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1244,7 +1304,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
+    },
+    {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.01843,
+      "epss_pct": 0.78594,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 32,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 1
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1297,60 +1410,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01843,
-      "epss_pct": 0.78594,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 43,
-      "rising": 33,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 0
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1408,7 +1468,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1466,7 +1526,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -1489,58 +1549,24 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 33,
+      "rising": 32,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "Mickysalivan/CVE-2026-76519-POC",
+            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-POC",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 26
-    },
-    {
-      "cve_id": "CVE-2026-0322",
-      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-94",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
+        "actively-exploited",
+        "poc-available"
       ],
       "timeline": [
         {
