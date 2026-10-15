@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T19:12:30.171Z",
+  "generated_at": "2026-10-15T22:23:48.936Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 59,
     "kev_total": 1746,
@@ -19,27 +19,27 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1035 recent"
+      "detail": "1144 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1088 scored"
+      "detail": "1073 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "8 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "SecurityWeek",
@@ -135,6 +135,68 @@
       "rank": 1
     },
     {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.02777,
+      "epss_pct": 0.86118,
+      "cwe": "CWE-552",
+      "published": "2026-10-05T22:16:58.423",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 67,
+      "rising": 33,
+      "repos": {
+        "count": 12,
+        "stars": 44,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 14
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 10
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 10
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
+    },
+    {
       "cve_id": "CVE-2026-104935",
       "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
       "vendor": "Ivanti",
@@ -155,7 +217,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 66,
-      "rising": 68,
+      "rising": 64,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -204,7 +266,7 @@
           "label": "Covered by The Hacker News, Dark Reading"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-88771",
@@ -267,7 +329,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -326,7 +388,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -389,7 +451,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -412,15 +474,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 55,
-      "rising": 59,
+      "rising": 56,
       "repos": {
         "count": 2,
-        "stars": 1,
+        "stars": 2,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 1
+            "stars": 2
           },
           {
             "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
@@ -454,7 +516,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -517,64 +579,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.02777,
-      "epss_pct": 0.86118,
-      "cwe": "CWE-552",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-15",
-        "due_date": "2026-10-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 54,
-      "rising": 34,
-      "repos": {
-        "count": 12,
-        "stars": 44,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "stars": 14
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
-            "stars": 10
-          },
-          {
-            "full_name": "MarcusProgram/CVE-2026-21589",
-            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
-            "stars": 10
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 8
     },
     {
@@ -598,15 +602,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 54,
-      "rising": 59,
+      "rising": 56,
       "repos": {
         "count": 1,
-        "stars": 1,
+        "stars": 2,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 1
+            "stars": 2
           }
         ]
       },
@@ -1046,77 +1050,6 @@
       "rank": 17
     },
     {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01242,
-      "epss_pct": 0.68651,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 14,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 9
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 5
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-86950",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-86950",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
-          "url": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-          "date": "2026-09-29T21:31:29.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-09-29",
-          "label": "Covered by Dark Reading"
-        }
-      ],
-      "rank": 18
-    },
-    {
       "cve_id": "CVE-2026-102490",
       "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
       "vendor": "Zammad GmbH",
@@ -1136,7 +1069,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -1160,7 +1093,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1214,7 +1147,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-82329",
@@ -1272,7 +1205,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1330,7 +1263,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1383,7 +1316,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1441,7 +1374,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1499,7 +1432,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -1522,7 +1455,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 26,
+      "rising": 25,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1544,6 +1477,64 @@
       "timeline": [
         {
           "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01242,
+      "epss_pct": 0.68651,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 14,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 9
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 5
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-86950",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-86950",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1619,7 +1610,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
