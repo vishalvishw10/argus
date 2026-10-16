@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T07:15:25.603Z",
+  "generated_at": "2026-10-16T12:28:58.282Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 59,
     "kev_total": 1746,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1181 recent"
+      "detail": "1212 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1056 scored"
+      "detail": "1048 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5042 mapped"
+      "detail": "5046 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 77,
-      "rising": 87,
+      "hype": 76,
+      "rising": 78,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -154,8 +154,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 67,
-      "rising": 30,
+      "hype": 66,
+      "rising": 28,
       "repos": {
         "count": 12,
         "stars": 44,
@@ -217,7 +217,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 65,
-      "rising": 51,
+      "rising": 43,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -454,71 +454,6 @@
       "rank": 6
     },
     {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03237,
-      "epss_pct": 0.88063,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 55,
-      "rising": 48,
-      "repos": {
-        "count": 2,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 2
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-          "date": "2026-10-15T06:43:08.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 7
-    },
-    {
       "cve_id": "CVE-2026-102489",
       "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
       "vendor": "Zammad GmbH",
@@ -579,19 +514,19 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
       "vendor": "Ahsay",
       "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "cvss": 7.3,
-      "severity": "HIGH",
-      "epss": 0.00666,
-      "epss_pct": 0.50776,
-      "cwe": "CWE-287",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.03237,
+      "epss_pct": 0.88063,
+      "cwe": "CWE-77",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -602,15 +537,20 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 54,
-      "rising": 48,
+      "rising": 43,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 2,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "stars": 2
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
           }
         ]
       },
@@ -639,7 +579,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -697,6 +637,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 9
+    },
+    {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "cvss": 7.3,
+      "severity": "HIGH",
+      "epss": 0.00666,
+      "epss_pct": 0.50776,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 53,
+      "rising": 43,
+      "repos": {
+        "count": 1,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+          "date": "2026-10-15T06:43:08.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 10
     },
     {
@@ -723,7 +723,7 @@
       "rising": 0,
       "repos": {
         "count": 26,
-        "stars": 131,
+        "stars": 132,
         "top": [
           {
             "full_name": "ressl/cve-2026-87902-poc",
@@ -738,7 +738,7 @@
           {
             "full_name": "tc4dy/CVE-2026-87902-Toolkit",
             "html_url": "https://github.com/tc4dy/CVE-2026-87902-Toolkit",
-            "stars": 13
+            "stars": 14
           }
         ]
       },
@@ -1435,54 +1435,6 @@
       "rank": 24
     },
     {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01743,
-      "epss_pct": 0.77354,
-      "cwe": "CWE-23",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 22,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
       "cve_id": "CVE-2026-86950",
       "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "vendor": "Apple",
@@ -1538,7 +1490,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1584,6 +1536,54 @@
       "timeline": [
         {
           "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01743,
+      "epss_pct": 0.77354,
+      "cwe": "CWE-23",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 20,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1726,7 +1726,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 14,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3120,49 +3120,52 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-88773",
-      "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
+      "cve_id": "CVE-2026-102764",
+      "title": "CVE-2026-102764",
       "vendor": null,
       "product": null,
-      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00361,
-      "epss_pct": 0.28306,
-      "cwe": "CWE-444",
-      "published": "2026-09-27T17:16:56.507",
+      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-290",
+      "published": null,
       "kev": {
         "in_kev": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": false,
-      "hype": 21,
-      "rising": 0,
+      "hype": 22,
+      "rising": 76,
       "repos": {
-        "count": 2,
-        "stars": 19,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 18
-          },
-          {
-            "full_name": "Scyrix-LLC/CVE-2026-88773",
-            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
-            "stars": 1
-          }
-        ]
+        "count": 0,
+        "stars": 0,
+        "top": []
       },
-      "media": [],
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
+          "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
+          "date": "2026-10-16T10:53:22.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+          "date": "2026-10-16T06:55:55.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
-        "poc-available"
+        "zero-day",
+        "in-the-news"
       ],
       "timeline": [
         {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
+          "date": "2026-10-16",
+          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 60
