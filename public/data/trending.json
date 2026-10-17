@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-16T23:39:20.189Z",
+  "generated_at": "2026-10-17T04:34:57.600Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 8,
     "reddit_upvotes": 0,
-    "kev_count": 60,
+    "kev_count": 54,
     "kev_total": 1748,
     "sources_live": 9,
     "window_days": 30
@@ -24,7 +24,7 @@
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1012 scored"
+      "detail": "985 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5071 mapped"
+      "detail": "5077 mapped"
     },
     {
       "name": "Reddit",
@@ -155,7 +155,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 65,
-      "rising": 47,
+      "rising": 42,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -220,7 +220,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 64,
-      "rising": 27,
+      "rising": 20,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -477,7 +477,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 24,
+      "rising": 22,
       "repos": {
         "count": 12,
         "stars": 44,
@@ -513,71 +513,6 @@
         }
       ],
       "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.04782,
-      "epss_pct": 0.91809,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 55,
-      "rising": 33,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 3
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-          "date": "2026-10-15T06:43:08.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 8
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -640,6 +575,71 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.04782,
+      "epss_pct": 0.91809,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 54,
+      "rising": 29,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 3
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+          "date": "2026-10-15T06:43:08.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 9
     },
     {
@@ -663,7 +663,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 53,
-      "rising": 33,
+      "rising": 29,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -781,7 +781,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 62,
+      "rising": 57,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1264,64 +1264,6 @@
       "rank": 21
     },
     {
-      "cve_id": "CVE-2026-82329",
-      "title": "JFrog Artifactory Improper Authentication Vulnerability",
-      "vendor": "JFrog",
-      "product": "Artifactory",
-      "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.14121,
-      "epss_pct": 0.96536,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 25,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-82329-jfrog-artifactory",
-            "html_url": "https://github.com/dinosn/cve-2026-82329-jfrog-artifactory",
-            "stars": 12
-          },
-          {
-            "full_name": "ynsmroztas/CVE-2026-82329-JFrog-Artifactory-Auth-Bypass",
-            "html_url": "https://github.com/ynsmroztas/CVE-2026-82329-JFrog-Artifactory-Auth-Bypass",
-            "stars": 6
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-82329-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-82329-PoC-Exploit",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 22
-    },
-    {
       "cve_id": "CVE-2026-86060",
       "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
       "vendor": "MikroTik",
@@ -1377,7 +1319,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1430,7 +1372,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1488,7 +1430,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1546,7 +1488,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1604,7 +1546,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1653,7 +1595,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -1676,7 +1618,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1701,7 +1643,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1759,65 +1701,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
-    },
-    {
-      "cve_id": "CVE-2026-48710",
-      "title": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
-      "vendor": "Kludex",
-      "product": "Starlette",
-      "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication depends on the reconstructed URL’s path. This vulnerability could be chaned with CVE-2026-42271.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.07056,
-      "epss_pct": 0.94127,
-      "cwe": "CWE-444",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "eris-ths/supply-chain-guard",
-            "html_url": "https://github.com/eris-ths/supply-chain-guard",
-            "stars": 3
-          },
-          {
-            "full_name": "Bhanunamikaze/BadHost-CVE-2026-48710-Exploit",
-            "html_url": "https://github.com/Bhanunamikaze/BadHost-CVE-2026-48710-Exploit",
-            "stars": 1
-          },
-          {
-            "full_name": "xtremebeing/starlette-host-header-lab",
-            "html_url": "https://github.com/xtremebeing/starlette-host-header-lab",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -1840,7 +1724,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1858,48 +1742,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
-    },
-    {
-      "cve_id": "CVE-2021-3199",
-      "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
-      "vendor": "ONLYOFFICE",
-      "product": "Docs",
-      "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.19352,
-      "epss_pct": 0.97323,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1952,7 +1795,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -2005,77 +1848,24 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 32
     },
     {
-      "cve_id": "CVE-2026-49869",
-      "title": "Kestra OSS OS Command Injection Vulnerability",
-      "vendor": "Kestra",
-      "product": "Kestra OSS",
-      "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.02095,
-      "epss_pct": 0.8133,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 39,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 7,
-        "top": [
-          {
-            "full_name": "EQSTLab/CVE-2026-49869",
-            "html_url": "https://github.com/EQSTLab/CVE-2026-49869",
-            "stars": 4
-          },
-          {
-            "full_name": "Ap0dexMe0/CVE-2026-49869",
-            "html_url": "https://github.com/Ap0dexMe0/CVE-2026-49869",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-9586",
-      "title": "Sangoma Switchvox SQL Injection Vulnerability",
-      "vendor": "Sangoma",
-      "product": "Switchvox",
-      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "cve_id": "CVE-2021-3199",
+      "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+      "vendor": "ONLYOFFICE",
+      "product": "Docs",
+      "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.18979,
-      "epss_pct": 0.97272,
-      "cwe": "CWE-89",
+      "epss": 0.19352,
+      "epss_pct": 0.97323,
+      "cwe": "CWE-22",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
         "ransomware": false
       },
       "zero_day": false,
@@ -2083,35 +1873,23 @@
       "hype": 39,
       "rising": 0,
       "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "fromABUV/CVE-2026-9586_POC_EXPLOIT",
-            "html_url": "https://github.com/fromABUV/CVE-2026-9586_POC_EXPLOIT",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-9586",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-9586",
-            "stars": 0
-          }
-        ]
+        "count": 0,
+        "stars": 0,
+        "top": []
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited",
-        "poc-available"
+        "actively-exploited"
       ],
       "timeline": [
         {
-          "date": "2026-09-02",
+          "date": "2026-10-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2169,7 +1947,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2217,7 +1995,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -2265,7 +2043,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -2323,7 +2101,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 37
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2364,7 +2142,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2422,7 +2200,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2470,7 +2248,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2523,7 +2301,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 41
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2571,65 +2349,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-83548",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.08043,
-      "epss_pct": 0.94729,
-      "cwe": "CWE-441",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "xcoy0te/CVE-2026-83548-checker",
-            "html_url": "https://github.com/xcoy0te/CVE-2026-83548-checker",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          },
-          {
-            "full_name": "xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "html_url": "https://github.com/xoessie/CVE-2026-83548-SonicWall-SMA1000-Analysis",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 47
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2677,55 +2397,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
-    },
-    {
-      "cve_id": "CVE-2026-83549",
-      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.09889,
-      "epss_pct": 0.95528,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-83548-CVE-2026-83549",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 49
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2773,7 +2445,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2814,7 +2486,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 45
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2855,7 +2527,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -2896,55 +2568,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-59822",
-      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.00836,
-      "epss_pct": 0.56917,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "HORKimhab/CVE-2026-59822",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-59822",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 54
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2985,7 +2609,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -3026,7 +2650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -3067,7 +2691,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -3108,7 +2732,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -3149,7 +2773,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 59
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -3188,6 +2812,312 @@
         {
           "date": "2026-09-10",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 53
+    },
+    {
+      "cve_id": "CVE-2026-81963",
+      "title": "Microsoft Windows Link Following Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00393,
+      "epss_pct": 0.3193,
+      "cwe": "CWE-59",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-88773",
+      "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
+      "vendor": null,
+      "product": null,
+      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00361,
+      "epss_pct": 0.28359,
+      "cwe": "CWE-444",
+      "published": "2026-09-27T17:16:56.507",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 21,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 19,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          },
+          {
+            "full_name": "Scyrix-LLC/CVE-2026-88773",
+            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-88775",
+      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00384,
+      "epss_pct": 0.30864,
+      "cwe": "CWE-120",
+      "published": "2026-09-27T17:16:56.750",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 18,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-88776",
+      "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00384,
+      "epss_pct": 0.30865,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.870",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 20,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          },
+          {
+            "full_name": "Scyrix-LLC/CVE-2026-88776",
+            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88776",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-88777",
+      "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00384,
+      "epss_pct": 0.30864,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.990",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 18,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 18
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-102428",
+      "title": "Joomla Extension - ordasoft.com - Unauthenticated SQL injection in OrdaSoft Joomla CCK < 8.3.16 - The order column fo…",
+      "vendor": null,
+      "product": null,
+      "description": "Joomla Extension - ordasoft.com - Unauthenticated SQL injection in OrdaSoft Joomla CCK < 8.3.16 - The order column for records was user provided and not properly validated, leading to a SQL injection vector.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00321,
+      "epss_pct": 0.23538,
+      "cwe": "CWE-89",
+      "published": "2026-10-05T16:17:04.177",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "MRdark-ops/sqli-cve-2026-102428",
+            "html_url": "https://github.com/MRdark-ops/sqli-cve-2026-102428",
+            "stars": 1
+          },
+          {
+            "full_name": "murrez/CVE-2026-102428",
+            "html_url": "https://github.com/murrez/CVE-2026-102428",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-05",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2020-37282",
+      "title": "office-converter through 1.0.2 contains an OS command injection vulnerability that allows attackers to execute comman…",
+      "vendor": null,
+      "product": null,
+      "description": "office-converter through 1.0.2 contains an OS command injection vulnerability that allows attackers to execute commands by supplying a crafted fileName to generatePdf() or generateHtml(). Attackers can embed $(...), backticks, or a closing quote with shell metacharacters in the file name, which is concatenated into an unoconv command run via child_process.exec(), executing commands with Node.js process privileges.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.03037,
+      "epss_pct": 0.87288,
+      "cwe": "CWE-78",
+      "published": "2026-10-14T15:16:59.520",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 10,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Published to NVD"
         }
       ],
       "rank": 60
