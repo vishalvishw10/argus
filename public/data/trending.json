@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T04:34:57.600Z",
+  "generated_at": "2026-10-17T09:26:28.111Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -24,7 +24,7 @@
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "985 scored"
+      "detail": "981 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5077 mapped"
+      "detail": "5075 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 81,
-      "rising": 100,
+      "hype": 80,
+      "rising": 96,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -155,7 +155,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 65,
-      "rising": 42,
+      "rising": 37,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -219,8 +219,8 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 64,
-      "rising": 20,
+      "hype": 63,
+      "rising": 13,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -357,8 +357,8 @@
       "hype": 59,
       "rising": 0,
       "repos": {
-        "count": 14,
-        "stars": 102,
+        "count": 13,
+        "stars": 89,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
@@ -371,9 +371,9 @@
             "stars": 27
           },
           {
-            "full_name": "mhtsec/CVE-2026-85706",
-            "html_url": "https://github.com/mhtsec/CVE-2026-85706",
-            "stars": 13
+            "full_name": "ynsmroztas/GitLabSniper",
+            "html_url": "https://github.com/ynsmroztas/GitLabSniper",
+            "stars": 9
           }
         ]
       },
@@ -457,6 +457,134 @@
       "rank": 6
     },
     {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.04782,
+      "epss_pct": 0.91809,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 55,
+      "rising": 25,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 4
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+          "date": "2026-10-15T06:43:08.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01255,
+      "epss_pct": 0.69001,
+      "cwe": "CWE-384",
+      "published": "2026-09-30T17:16:40.550",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 14,
+        "top": [
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 7
+          },
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 7
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 8
+    },
+    {
       "cve_id": "CVE-2026-21589",
       "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
       "vendor": "Atlassian",
@@ -476,8 +604,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 55,
-      "rising": 22,
+      "hype": 54,
+      "rising": 21,
       "repos": {
         "count": 12,
         "stars": 44,
@@ -512,134 +640,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01255,
-      "epss_pct": 0.69001,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 13,
-        "top": [
-          {
-            "full_name": "1xPwn/CVE-2026-102489",
-            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
-            "stars": 7
-          },
-          {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 6
-          },
-          {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.04782,
-      "epss_pct": 0.91809,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 54,
-      "rising": 29,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 3
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-          "date": "2026-10-15T06:43:08.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 9
     },
     {
@@ -663,15 +663,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 53,
-      "rising": 29,
+      "rising": 25,
       "repos": {
         "count": 1,
-        "stars": 3,
+        "stars": 4,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 3
+            "stars": 4
           }
         ]
       },
@@ -781,7 +781,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 57,
+      "rising": 53,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1618,7 +1618,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1724,7 +1724,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3105,7 +3105,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
