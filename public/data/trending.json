@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T01:07:37.260Z",
+  "generated_at": "2026-10-18T05:58:54.166Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1050 recent"
+      "detail": "1056 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5080 mapped"
+      "detail": "5081 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 81,
-      "rising": 70,
+      "hype": 80,
+      "rising": 62,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -155,7 +155,7 @@
       "zero_day": true,
       "no_patch": false,
       "hype": 64,
-      "rising": 20,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -540,7 +540,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 12,
         "stars": 45,
@@ -598,7 +598,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 54,
-      "rising": 11,
+      "rising": 6,
       "repos": {
         "count": 2,
         "stars": 4,
@@ -641,66 +641,6 @@
         }
       ],
       "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "cvss": 7.3,
-      "severity": "HIGH",
-      "epss": 0.00854,
-      "epss_pct": 0.57542,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 11,
-      "repos": {
-        "count": 1,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-          "date": "2026-10-15T06:43:08.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 10
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -756,6 +696,66 @@
         {
           "date": "2026-10-04",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "cvss": 7.3,
+      "severity": "HIGH",
+      "epss": 0.00854,
+      "epss_pct": 0.57542,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 6,
+      "repos": {
+        "count": 1,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+          "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+          "date": "2026-10-15T06:43:08.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 11
@@ -956,7 +956,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 39,
+      "rising": 35,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1598,54 +1598,6 @@
       "rank": 27
     },
     {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01573,
-      "epss_pct": 0.74982,
-      "cwe": "CWE-23",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 8,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 28
-    },
-    {
       "cve_id": "CVE-2026-67279",
       "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
       "vendor": "MikroTik",
@@ -1698,6 +1650,54 @@
       "timeline": [
         {
           "date": "2026-09-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01573,
+      "epss_pct": 0.74982,
+      "cwe": "CWE-23",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 6,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -3088,24 +3088,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2020-37282",
-      "title": "office-converter through 1.0.2 contains an OS command injection vulnerability that allows attackers to execute comman…",
+      "cve_id": "CVE-2026-110957",
+      "title": "A vulnerability has been found in Wavlink WL-WN530BE2-A up to M30BE2_V250604.",
       "vendor": null,
       "product": null,
-      "description": "office-converter through 1.0.2 contains an OS command injection vulnerability that allows attackers to execute commands by supplying a crafted fileName to generatePdf() or generateHtml(). Attackers can embed $(...), backticks, or a closing quote with shell metacharacters in the file name, which is concatenated into an unoconv command run via child_process.exec(), executing commands with Node.js process privileges.",
-      "cvss": 9.8,
+      "description": "A vulnerability has been found in Wavlink WL-WN530BE2-A up to M30BE2_V250604. The affected element is the function sub_12580 of the file api.cgi of the component Login Processing. The manipulation of the argument REMOTE_ADDR leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2026-09-24-841a51c6d5_tclinux.bin is sufficient to fix this issue. You should upgrade the affected component. The vendor confirms: \"We confirm the finding, and it has already been addressed. In the current firmware the api=info&client=app handler no longer builds a shell command: the login script is now invoked through an argument vector (execvp) instead of system(), and the client address is length-limited and null-checked.\"",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.03037,
-      "epss_pct": 0.87288,
-      "cwe": "CWE-78",
-      "published": "2026-10-14T15:16:59.520",
+      "epss": 0.03456,
+      "epss_pct": 0.88856,
+      "cwe": "CWE-77",
+      "published": "2026-10-15T15:17:30.640",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 6,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3116,7 +3116,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "label": "Published to NVD"
         }
       ],
