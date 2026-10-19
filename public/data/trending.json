@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T15:40:43.131Z",
+  "generated_at": "2026-10-19T21:06:59.953Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 53,
     "kev_total": 1748,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "988 recent"
+      "detail": "941 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "985 scored"
+      "detail": "932 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5101 mapped"
+      "detail": "5120 mapped"
     },
     {
       "name": "Reddit",
@@ -84,15 +84,15 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 69,
-      "rising": 16,
+      "rising": 13,
       "repos": {
         "count": 1,
-        "stars": 2,
+        "stars": 3,
         "top": [
           {
             "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
             "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 2
+            "stars": 3
           }
         ]
       },
@@ -127,6 +127,68 @@
         }
       ],
       "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-552",
+      "published": "2026-10-05T22:16:58.423",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 63,
+      "rising": 1,
+      "repos": {
+        "count": 12,
+        "stars": 45,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 15
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 10
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 10
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -191,7 +253,79 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.25982,
+      "epss_pct": 0.9797,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 60,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "stars": 1
+          },
+          {
+            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
+            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "date": "2026-10-14T21:20:13.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+          "date": "2026-10-14T12:30:42.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by The Hacker News, Dark Reading"
+        }
+      ],
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-88771",
@@ -213,7 +347,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 60,
+      "hype": 59,
       "rising": 0,
       "repos": {
         "count": 11,
@@ -254,79 +388,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.25982,
-      "epss_pct": 0.9797,
-      "cwe": "CWE-290",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
-            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
-            "stars": 0
-          },
-          {
-            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-          "date": "2026-10-14T21:20:13.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
-          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
-          "date": "2026-10-14T12:30:42.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -385,7 +447,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -448,7 +510,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -511,7 +573,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -576,7 +638,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -634,7 +696,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -692,7 +754,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -748,64 +810,6 @@
       "timeline": [
         {
           "date": "2026-09-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-15",
-        "due_date": "2026-10-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 3,
-      "repos": {
-        "count": 12,
-        "stars": 45,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "stars": 15
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
-            "stars": 10
-          },
-          {
-            "full_name": "MarcusProgram/CVE-2026-21589",
-            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
-            "stars": 10
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -941,7 +945,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 11,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1223,7 +1227,7 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 66,
+        "stars": 67,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
@@ -1231,14 +1235,14 @@
             "stars": 55
           },
           {
-            "full_name": "HackSpeak/CVE-2026-67279",
-            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
             "stars": 4
           },
           {
-            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
-            "stars": 3
+            "full_name": "HackSpeak/CVE-2026-67279",
+            "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
+            "stars": 4
           }
         ]
       },
@@ -1557,17 +1561,17 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 10,
+        "stars": 11,
         "top": [
+          {
+            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
+            "stars": 4
+          },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
             "html_url": "https://github.com/HackSpeak/CVE-2026-67279",
             "stars": 4
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
-            "stars": 3
           },
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
@@ -1590,54 +1594,6 @@
         }
       ],
       "rank": 27
-    },
-    {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01573,
-      "epss_pct": 0.75044,
-      "cwe": "CWE-23",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 28
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1690,7 +1646,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1740,6 +1696,54 @@
       "timeline": [
         {
           "date": "2026-09-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 29
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01573,
+      "epss_pct": 0.75044,
+      "cwe": "CWE-23",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1851,12 +1855,12 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 1,
+        "stars": 2,
         "top": [
           {
             "full_name": "abraxas/CVE-2026-5430",
             "html_url": "https://github.com/abraxas/CVE-2026-5430",
-            "stars": 1
+            "stars": 2
           },
           {
             "full_name": "HORKimhab/CVE-2026-5430",
@@ -2890,6 +2894,67 @@
       "rank": 55
     },
     {
+      "cve_id": "CVE-2026-99999",
+      "title": "CVE-2026-99999",
+      "vendor": null,
+      "product": null,
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: validate checksum_start before completing checksum\n\nIf a packet with bad checksum metadata gets into the ipv4 stack,\nskb_checksum_help can corrupt the network header and cause a bunch of\nmischief.\n\nThis was discovered and reported by Paulos, and has been reporoduced\nby others independently since.\n\nWe really shouldn't allow such packets in, but as a defence\nin depth measure, let's also check before we complete the checksum.\n\nA more complete validation at input is forthcoming, but needs more work.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.00211,
+      "epss_pct": 0.10748,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 20,
+      "rising": 0,
+      "repos": {
+        "count": 10,
+        "stars": 18,
+        "top": [
+          {
+            "full_name": "PeronGH/CVE-2026-99999",
+            "html_url": "https://github.com/PeronGH/CVE-2026-99999",
+            "stars": 10
+          },
+          {
+            "full_name": "gandli/CVE-2026-99999-pwnescape",
+            "html_url": "https://github.com/gandli/CVE-2026-99999-pwnescape",
+            "stars": 3
+          },
+          {
+            "full_name": "01luyicheng/CVE-2026-99999",
+            "html_url": "https://github.com/01luyicheng/CVE-2026-99999",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+          "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+          "date": "2026-10-15T20:24:36.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 56
+    },
+    {
       "cve_id": "CVE-2026-88775",
       "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
       "vendor": null,
@@ -2930,7 +2995,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-88777",
@@ -2973,7 +3038,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-110957",
@@ -2993,7 +3058,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3008,62 +3073,27 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-111998",
-      "title": "Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers t…",
-      "vendor": null,
-      "product": null,
-      "description": "Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers to gain cluster-admin access by using the hardcoded admin token. Attackers can send the fixed Bearer token to the gateway gRPC proxy port to manage namespaces, eventbuses, users, tokens, and role bindings, and read or publish events.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00533,
-      "epss_pct": 0.43834,
-      "cwe": "CWE-1392",
-      "published": "2026-10-18T12:17:11.730",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-18",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-112292",
-      "title": "CheckCle through 1.6.0 contains a missing authorization vulnerability that allows unauthenticated attackers to read, …",
+      "cve_id": "CVE-2026-111862",
+      "title": "Rank Math SEO PRO for WordPress is affected by a supply-chain compromise in a subset of version 3.0.123 packages down…",
       "vendor": null,
       "product": null,
-      "description": "CheckCle through 1.6.0 contains a missing authorization vulnerability that allows unauthenticated attackers to read, modify and delete records because shipped PocketBase collections use empty API rules. Attackers can query /api/collections/<name>/records endpoints to steal server_token values and alert_configurations secrets, disable alerting, alter status pages, or delete monitoring data.",
+      "description": "Rank Math SEO PRO for WordPress is affected by a supply-chain compromise in a subset of version 3.0.123 packages downloaded or updated between October 15, 2026 at 20:02 UTC and October 16, 2026 at 07:12 UTC. Rank Math states that the affected plugin files contained malware that could compromise a website if the plugin was activated and directs sites that activated an affected package to treat the website as compromised. The malware may establish persistent access, communicate with rank1cdn[.]com, recreate hidden backdoors on page visits, and expose WordPress credentials, database credentials, API keys, and other secrets accessible to the web server. Rank Math identifies three malicious wp_options keys, hidden PHP backdoors, unauthorized administrator accounts, a fake WordPress core file, PHP-executable .cache files, and a system cron marker as incident indicators. Only packages obtained during the vendor-confirmed window are claimed as affected; version 3.0.123 alone is not sufficient to establish compromise. Rank Math removed the affected files and released version 3.0.124 as the clean replacement.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
-      "cwe": "CWE-862",
-      "published": "2026-10-19T14:17:07.903",
+      "cwe": "CWE-506",
+      "published": "2026-10-19T17:17:04.507",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
