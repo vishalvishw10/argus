@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T06:05:42.477Z",
+  "generated_at": "2026-10-20T11:45:26.095Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "926 recent"
+      "detail": "952 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -29,12 +29,12 @@
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "10 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5126 mapped"
+      "detail": "5131 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -275,7 +275,7 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 60,
+      "hype": 59,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -532,7 +532,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 55,
+      "hype": 54,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -1029,7 +1029,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1104,52 +1104,6 @@
       "rank": 18
     },
     {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.0055,
-      "epss_pct": 0.44888,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 19
-    },
-    {
       "cve_id": "CVE-2026-93616",
       "title": "Check Point Multiple Products Path Traversal Vulnerability",
       "vendor": "Check Point",
@@ -1201,6 +1155,52 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 19
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.0055,
+      "epss_pct": 0.44888,
+      "cwe": "CWE-269",
+      "published": "2026-09-30T17:16:40.707",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 20
     },
     {
@@ -1227,7 +1227,7 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 69,
+        "stars": 70,
         "top": [
           {
             "full_name": "digiprosec/MicroTrick",
@@ -1237,7 +1237,7 @@
           {
             "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
             "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
-            "stars": 4
+            "stars": 5
           },
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
@@ -1512,12 +1512,12 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 12,
+        "stars": 13,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
             "html_url": "https://github.com/tc4dy/CVE-2026-67279-86060-Toolkit",
-            "stars": 4
+            "stars": 5
           },
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
@@ -2251,47 +2251,6 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2023-22894",
-      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-      "vendor": "Strapi",
-      "product": "Strapi",
-      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
-      "cvss": 4.9,
-      "severity": "MEDIUM",
-      "epss": 0.03609,
-      "epss_pct": 0.89348,
-      "cwe": "CWE-312",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 41
-    },
-    {
       "cve_id": "CVE-2026-42018",
       "title": "JFrog Artifactory Improper Authentication Vulnerability",
       "vendor": "JFrog",
@@ -2334,6 +2293,47 @@
       "timeline": [
         {
           "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 41
+    },
+    {
+      "cve_id": "CVE-2023-22894",
+      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "epss": 0.03609,
+      "epss_pct": 0.89348,
+      "cwe": "CWE-312",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2927,7 +2927,7 @@
       "hype": 20,
       "rising": 0,
       "repos": {
-        "count": 10,
+        "count": 13,
         "stars": 22,
         "top": [
           {
@@ -3072,7 +3072,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3107,7 +3107,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
