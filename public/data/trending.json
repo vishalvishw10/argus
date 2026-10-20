@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T11:45:26.095Z",
+  "generated_at": "2026-10-20T17:14:40.296Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 8,
     "reddit_upvotes": 0,
-    "kev_count": 53,
+    "kev_count": 54,
     "kev_total": 1748,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "952 recent"
+      "detail": "959 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "885 scored"
+      "detail": "961 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5131 mapped"
+      "detail": "5137 mapped"
     },
     {
       "name": "Reddit",
@@ -64,6 +64,78 @@
   ],
   "cves": [
     {
+      "cve_id": "CVE-2026-0257",
+      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.96895,
+      "epss_pct": 0.9989,
+      "cwe": "CWE-565",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-05-29",
+        "due_date": "2026-06-01",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 78,
+      "rising": 39,
+      "repos": {
+        "count": 8,
+        "stars": 41,
+        "top": [
+          {
+            "full_name": "sfewer-r7/CVE-2026-0257",
+            "html_url": "https://github.com/sfewer-r7/CVE-2026-0257",
+            "stars": 30
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-0257",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-0257",
+            "stars": 3
+          },
+          {
+            "full_name": "tushargurav28/CVE-2026-0257",
+            "html_url": "https://github.com/tushargurav28/CVE-2026-0257",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+          "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+          "date": "2026-10-20T15:32:27.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-20",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
+    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -72,7 +144,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0118,
-      "epss_pct": 0.6721,
+      "epss_pct": 0.67244,
       "cwe": "CWE-290",
       "published": "2026-10-15T21:17:00.117",
       "kev": {
@@ -84,7 +156,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 68,
-      "rising": 6,
+      "rising": 3,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -126,7 +198,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -136,8 +208,8 @@
       "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.12711,
+      "epss_pct": 0.96238,
       "cwe": "CWE-552",
       "published": "2026-10-05T22:16:58.423",
       "kev": {
@@ -148,7 +220,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 63,
+      "hype": 65,
       "rising": 0,
       "repos": {
         "count": 12,
@@ -188,7 +260,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -199,7 +271,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01215,
-      "epss_pct": 0.68127,
+      "epss_pct": 0.68157,
       "cwe": "CWE-94",
       "published": "2026-10-14T18:17:07.743",
       "kev": {
@@ -210,7 +282,7 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 61,
+      "hype": 60,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -253,78 +325,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.25982,
-      "epss_pct": 0.9797,
-      "cwe": "CWE-290",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "stars": 1
-          },
-          {
-            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
-            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-          "date": "2026-10-14T21:20:13.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
-          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
-          "date": "2026-10-14T12:30:42.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by The Hacker News, Dark Reading"
-        }
-      ],
       "rank": 4
     },
     {
@@ -336,7 +336,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01083,
-      "epss_pct": 0.64682,
+      "epss_pct": 0.64716,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -458,7 +458,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.01301,
-      "epss_pct": 0.70033,
+      "epss_pct": 0.70063,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -521,7 +521,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01255,
-      "epss_pct": 0.69067,
+      "epss_pct": 0.69098,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -584,7 +584,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.47262,
+      "epss_pct": 0.47314,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -642,7 +642,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.39979,
-      "epss_pct": 0.98618,
+      "epss_pct": 0.9862,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -700,7 +700,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.8818,
-      "epss_pct": 0.99769,
+      "epss_pct": 0.9977,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -759,7 +759,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04782,
-      "epss_pct": 0.91829,
+      "epss_pct": 0.91839,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -816,6 +816,72 @@
       "rank": 12
     },
     {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.25982,
+      "epss_pct": 0.97972,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "stars": 1
+          },
+          {
+            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
+            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "date": "2026-10-14T21:20:13.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by Dark Reading"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-105133",
       "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
       "vendor": "Ahsay",
@@ -824,7 +890,7 @@
       "cvss": 7.3,
       "severity": "HIGH",
       "epss": 0.00854,
-      "epss_pct": 0.57628,
+      "epss_pct": 0.57658,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -873,7 +939,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -922,7 +988,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -964,7 +1030,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1006,7 +1072,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -1017,7 +1083,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01081,
-      "epss_pct": 0.64604,
+      "epss_pct": 0.64637,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1029,7 +1095,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 4,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1059,7 +1125,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1101,7 +1167,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1155,7 +1221,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1166,7 +1232,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0055,
-      "epss_pct": 0.44888,
+      "epss_pct": 0.44937,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -1201,7 +1267,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1212,7 +1278,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.93602,
+      "epss_pct": 0.93611,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1259,7 +1325,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1270,7 +1336,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97751,
+      "epss_pct": 0.97753,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1312,7 +1378,56 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-85102",
+      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.504,
+      "epss_pct": 0.98905,
+      "cwe": "CWE-295",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "aduli198/CVE-2026-85102",
+            "html_url": "https://github.com/aduli198/CVE-2026-85102",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-22",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1323,7 +1438,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.29543,
-      "epss_pct": 0.98178,
+      "epss_pct": 0.98179,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1370,7 +1485,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1381,7 +1496,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.90296,
+      "epss_pct": 0.90308,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1428,7 +1543,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1439,7 +1554,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01242,
-      "epss_pct": 0.68756,
+      "epss_pct": 0.68786,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1486,7 +1601,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1497,7 +1612,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01027,
-      "epss_pct": 0.63056,
+      "epss_pct": 0.6309,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1544,56 +1659,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
-    },
-    {
-      "cve_id": "CVE-2026-85102",
-      "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.504,
-      "epss_pct": 0.98904,
-      "cwe": "CWE-295",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "aduli198/CVE-2026-85102",
-            "html_url": "https://github.com/aduli198/CVE-2026-85102",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-22",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1604,7 +1670,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.8246,
+      "epss_pct": 0.8248,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1646,7 +1712,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1657,7 +1723,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87732,
+      "epss_pct": 0.87745,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1699,7 +1765,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -1710,7 +1776,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01573,
-      "epss_pct": 0.75044,
+      "epss_pct": 0.75068,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -1747,7 +1813,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -1758,7 +1824,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01512,
-      "epss_pct": 0.74088,
+      "epss_pct": 0.74115,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -1788,7 +1854,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -1799,7 +1865,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.20136,
-      "epss_pct": 0.97433,
+      "epss_pct": 0.97436,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1829,7 +1895,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -1840,7 +1906,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00588,
-      "epss_pct": 0.47111,
+      "epss_pct": 0.47162,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1887,7 +1953,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -1898,7 +1964,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86652,
+      "epss_pct": 0.86667,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -1935,7 +2001,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1946,7 +2012,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96527,
+      "epss_pct": 0.96531,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -1983,7 +2049,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -1994,7 +2060,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.13349,
-      "epss_pct": 0.96381,
+      "epss_pct": 0.96385,
       "cwe": "CWE-96",
       "published": null,
       "kev": {
@@ -2041,7 +2107,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2052,7 +2118,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.82252,
+      "epss_pct": 0.82271,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2099,7 +2165,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2110,7 +2176,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01819,
-      "epss_pct": 0.78422,
+      "epss_pct": 0.78444,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -2147,7 +2213,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2158,7 +2224,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81433,
+      "epss_pct": 0.81453,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2200,7 +2266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2211,7 +2277,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01362,
-      "epss_pct": 0.71354,
+      "epss_pct": 0.71384,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2248,7 +2314,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2259,7 +2325,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95511,
+      "epss_pct": 0.95516,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2296,7 +2362,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2307,7 +2373,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.03609,
-      "epss_pct": 0.89348,
+      "epss_pct": 0.89361,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2337,7 +2403,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2348,7 +2414,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.56735,
+      "epss_pct": 0.56774,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2385,7 +2451,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2396,7 +2462,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.95068,
+      "epss_pct": 0.95074,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2426,7 +2492,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2437,7 +2503,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03802,
-      "epss_pct": 0.89894,
+      "epss_pct": 0.89905,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2467,7 +2533,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2478,56 +2544,8 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00393,
-      "epss_pct": 0.3204,
+      "epss_pct": 0.32082,
       "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "rsah35404-star/stunning-octo-doodle",
-            "html_url": "https://github.com/rsah35404-star/stunning-octo-doodle",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 46
-    },
-    {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.03616,
-      "epss_pct": 0.89371,
-      "cwe": "CWE-122",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2566,6 +2584,54 @@
       "rank": 47
     },
     {
+      "cve_id": "CVE-2026-85880",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.03616,
+      "epss_pct": 0.89383,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-08",
+        "due_date": "2026-09-22",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "rsah35404-star/stunning-octo-doodle",
+            "html_url": "https://github.com/rsah35404-star/stunning-octo-doodle",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 48
+    },
+    {
       "cve_id": "CVE-2026-93952",
       "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
       "vendor": "Arista",
@@ -2574,7 +2640,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.64064,
+      "epss_pct": 0.64099,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2604,7 +2670,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2615,7 +2681,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84475,
+      "epss_pct": 0.84492,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2645,7 +2711,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2656,49 +2722,8 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.47236,
+      "epss_pct": 0.47288,
       "cwe": "CWE-285",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-87886",
-      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
-      "vendor": "Acronis",
-      "product": "Backup",
-      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00233,
-      "epss_pct": 0.1328,
-      "cwe": "CWE-276",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2730,6 +2755,47 @@
       "rank": 51
     },
     {
+      "cve_id": "CVE-2026-87886",
+      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+      "vendor": "Acronis",
+      "product": "Backup",
+      "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00233,
+      "epss_pct": 0.133,
+      "cwe": "CWE-276",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 52
+    },
+    {
       "cve_id": "CVE-2026-84869",
       "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
       "vendor": "ConnectWise",
@@ -2738,7 +2804,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00924,
-      "epss_pct": 0.59782,
+      "epss_pct": 0.59822,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2768,7 +2834,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-67277",
@@ -2779,7 +2845,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.7487,
+      "epss_pct": 0.74893,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -2809,7 +2875,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-88773",
@@ -2820,7 +2886,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00361,
-      "epss_pct": 0.28462,
+      "epss_pct": 0.28497,
       "cwe": "CWE-444",
       "published": "2026-09-27T17:16:56.507",
       "kev": {
@@ -2857,7 +2923,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-88776",
@@ -2868,7 +2934,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00384,
-      "epss_pct": 0.30972,
+      "epss_pct": 0.31014,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.870",
       "kev": {
@@ -2905,7 +2971,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-99999",
@@ -2916,7 +2982,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.00211,
-      "epss_pct": 0.10748,
+      "epss_pct": 0.10762,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2928,12 +2994,12 @@
       "rising": 0,
       "repos": {
         "count": 13,
-        "stars": 22,
+        "stars": 23,
         "top": [
           {
             "full_name": "PeronGH/CVE-2026-99999",
             "html_url": "https://github.com/PeronGH/CVE-2026-99999",
-            "stars": 12
+            "stars": 13
           },
           {
             "full_name": "01luyicheng/CVE-2026-99999",
@@ -2966,7 +3032,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-88775",
@@ -2977,52 +3043,9 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00384,
-      "epss_pct": 0.30972,
+      "epss_pct": 0.31014,
       "cwe": "CWE-120",
       "published": "2026-09-27T17:16:56.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 19,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 19
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-88777",
-      "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00384,
-      "epss_pct": 0.30972,
-      "cwe": "CWE-119",
-      "published": "2026-09-27T17:16:56.990",
       "kev": {
         "in_kev": false
       },
@@ -3055,35 +3078,43 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-111862",
-      "title": "Rank Math SEO PRO for WordPress is affected by a supply-chain compromise in a subset of version 3.0.123 packages down…",
+      "cve_id": "CVE-2026-88777",
+      "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
       "vendor": null,
       "product": null,
-      "description": "Rank Math SEO PRO for WordPress is affected by a supply-chain compromise in a subset of version 3.0.123 packages downloaded or updated between October 15, 2026 at 20:02 UTC and October 16, 2026 at 07:12 UTC. Rank Math states that the affected plugin files contained malware that could compromise a website if the plugin was activated and directs sites that activated an affected package to treat the website as compromised. The malware may establish persistent access, communicate with rank1cdn[.]com, recreate hidden backdoors on page visits, and expose WordPress credentials, database credentials, API keys, and other secrets accessible to the web server. Rank Math identifies three malicious wp_options keys, hidden PHP backdoors, unauthorized administrator accounts, a fake WordPress core file, PHP-executable .cache files, and a system cron marker as incident indicators. Only packages obtained during the vendor-confirmed window are claimed as affected; version 3.0.123 alone is not sufficient to establish compromise. Rank Math removed the affected files and released version 3.0.124 as the clean replacement.",
+      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-506",
-      "published": "2026-10-19T17:17:04.507",
+      "epss": 0.00384,
+      "epss_pct": 0.31015,
+      "cwe": "CWE-119",
+      "published": "2026-09-27T17:16:56.990",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 17,
+      "hype": 19,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 1,
+        "stars": 19,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 19
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-10-19",
+          "date": "2026-09-27",
           "label": "Published to NVD"
         }
       ],
@@ -3097,8 +3128,8 @@
       "description": "Cognition before 0.13.0 contains an unauthenticated remote code execution vulnerability due to defaulting its agent sandbox backend to local execution and shipping no authentication on its REST/SSE API. Attackers can create a session via POST /sessions and post a message via POST /sessions/{id}/messages without credentials, causing the Deep Agents ReAct loop to run attacker-directed shell commands through the local shell backend, resulting in remote code execution as the server process.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00608,
+      "epss_pct": 0.4816,
       "cwe": "CWE-306",
       "published": "2026-10-19T19:17:19.807",
       "kev": {
@@ -3107,7 +3138,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
