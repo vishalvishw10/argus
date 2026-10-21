@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T10:14:53.427Z",
+  "generated_at": "2026-10-21T15:18:51.419Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 7,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 60,
     "kev_total": 1754,
@@ -19,22 +19,22 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1601 recent"
+      "detail": "1575 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "951 scored"
+      "detail": "1616 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "8 mentions"
+      "detail": "7 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5150 mapped"
+      "detail": "5157 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 77,
-      "rising": 30,
+      "rising": 27,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -144,7 +144,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0118,
-      "epss_pct": 0.67244,
+      "epss_pct": 0.67396,
       "cwe": "CWE-290",
       "published": "2026-10-15T21:17:00.117",
       "kev": {
@@ -158,13 +158,18 @@
       "hype": 67,
       "rising": 0,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 3,
         "top": [
           {
             "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
             "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
             "stars": 3
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
           }
         ]
       },
@@ -209,7 +214,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.12711,
-      "epss_pct": 0.96238,
+      "epss_pct": 0.96255,
       "cwe": "CWE-552",
       "published": "2026-10-05T22:16:58.423",
       "kev": {
@@ -270,8 +275,8 @@
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.00222,
-      "epss_pct": 0.11974,
+      "epss": 0.00423,
+      "epss_pct": 0.35486,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -283,15 +288,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 61,
-      "rising": 67,
+      "rising": 63,
       "repos": {
         "count": 3,
-        "stars": 63,
+        "stars": 75,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 63
+            "stars": 75
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
@@ -333,71 +338,6 @@
       "rank": 4
     },
     {
-      "cve_id": "CVE-2026-0322",
-      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.01215,
-      "epss_pct": 0.68157,
-      "cwe": "CWE-94",
-      "published": "2026-10-14T18:17:07.743",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Ife-ella/CVE-vulnerability",
-            "html_url": "https://github.com/Ife-ella/CVE-vulnerability",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
-          "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
-          "date": "2026-10-15T11:46:49.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 5
-    },
-    {
       "cve_id": "CVE-2026-88771",
       "title": "Citrix NetScaler Improper Input Validation Vulnerability",
       "vendor": "Citrix",
@@ -406,7 +346,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01083,
-      "epss_pct": 0.64716,
+      "epss_pct": 0.64881,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -458,7 +398,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -468,8 +408,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.92956,
-      "epss_pct": 0.99833,
+      "epss": 0.91951,
+      "epss_pct": 0.99821,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -517,7 +457,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -528,7 +468,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.01301,
-      "epss_pct": 0.70063,
+      "epss_pct": 0.70203,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -580,7 +520,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -591,7 +531,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01255,
-      "epss_pct": 0.69098,
+      "epss_pct": 0.69243,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -643,60 +583,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
-      "cve_id": "CVE-2026-110936",
-      "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "vendor": "Siemens",
-      "product": "Software Center",
-      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-      "cvss": 6.7,
-      "severity": "MEDIUM",
-      "epss": 0.00135,
-      "epss_pct": 0.02673,
-      "cwe": "CWE-427",
-      "published": null,
+      "cve_id": "CVE-2026-0322",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.01215,
+      "epss_pct": 0.68305,
+      "cwe": "CWE-94",
+      "published": "2026-10-14T18:17:07.743",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
         "ransomware": false
       },
-      "zero_day": false,
-      "no_patch": false,
+      "zero_day": true,
+      "no_patch": true,
       "hype": 52,
-      "rising": 54,
+      "rising": 0,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "Ife-ella/CVE-vulnerability",
+            "html_url": "https://github.com/Ife-ella/CVE-vulnerability",
+            "stars": 0
+          }
+        ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-          "date": "2026-10-20T07:11:45.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news"
+        "zero-day",
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-10-14",
+          "label": "Published to NVD"
         },
         {
-          "date": "2026-10-20",
-          "label": "Covered by The Hacker News"
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -707,7 +647,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.47314,
+      "epss_pct": 0.4754,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -754,7 +694,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -765,7 +705,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.39979,
-      "epss_pct": 0.9862,
+      "epss_pct": 0.98626,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -812,7 +752,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-20079",
@@ -822,8 +762,8 @@
       "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.8818,
-      "epss_pct": 0.9977,
+      "epss": 0.88472,
+      "epss_pct": 0.99774,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -871,6 +811,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-110936",
+      "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "vendor": "Siemens",
+      "product": "Software Center",
+      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
+      "epss": 0.00262,
+      "epss_pct": 0.17062,
+      "cwe": "CWE-427",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 49,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "date": "2026-10-20T07:11:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-20",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 13
     },
     {
@@ -881,8 +874,8 @@
       "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
       "cvss": 7.2,
       "severity": "HIGH",
-      "epss": 0.00396,
-      "epss_pct": 0.32349,
+      "epss": 0.00758,
+      "epss_pct": 0.54661,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -894,15 +887,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 27,
       "repos": {
         "count": 3,
-        "stars": 63,
+        "stars": 75,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 63
+            "stars": 75
           },
           {
             "full_name": "a3igner/plex-codec-cache-implant",
@@ -939,8 +932,8 @@
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.00222,
-      "epss_pct": 0.11974,
+      "epss": 0.00423,
+      "epss_pct": 0.35486,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -952,15 +945,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 27,
       "repos": {
         "count": 2,
-        "stars": 63,
+        "stars": 75,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 63
+            "stars": 75
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -992,8 +985,8 @@
       "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
       "cvss": 6.5,
       "severity": "MEDIUM",
-      "epss": 0.00227,
-      "epss_pct": 0.12576,
+      "epss": 0.00432,
+      "epss_pct": 0.36449,
       "cwe": "CWE-84",
       "published": null,
       "kev": {
@@ -1005,15 +998,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 29,
+      "rising": 27,
       "repos": {
         "count": 2,
-        "stars": 63,
+        "stars": 75,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 63
+            "stars": 75
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1046,7 +1039,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.25982,
-      "epss_pct": 0.97972,
+      "epss_pct": 0.97981,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -1112,7 +1105,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.87507,
-      "epss_pct": 0.99759,
+      "epss_pct": 0.9976,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -1203,7 +1196,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.96052,
-      "epss_pct": 0.99878,
+      "epss_pct": 0.99879,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -1287,7 +1280,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01081,
-      "epss_pct": 0.64637,
+      "epss_pct": 0.64802,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1340,7 +1333,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.75872,
-      "epss_pct": 0.99525,
+      "epss_pct": 0.99528,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1394,7 +1387,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0055,
-      "epss_pct": 0.44937,
+      "epss_pct": 0.45177,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -1440,7 +1433,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.93611,
+      "epss_pct": 0.93642,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1498,7 +1491,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97753,
+      "epss_pct": 0.97763,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1551,7 +1544,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01242,
-      "epss_pct": 0.68786,
+      "epss_pct": 0.68932,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1609,7 +1602,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.504,
-      "epss_pct": 0.98905,
+      "epss_pct": 0.9891,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -1658,7 +1651,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.29543,
-      "epss_pct": 0.98179,
+      "epss_pct": 0.98187,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1716,7 +1709,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.90308,
+      "epss_pct": 0.90354,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1774,7 +1767,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.04782,
-      "epss_pct": 0.91839,
+      "epss_pct": 0.91879,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -1827,7 +1820,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01027,
-      "epss_pct": 0.6309,
+      "epss_pct": 0.63263,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1884,8 +1877,8 @@
       "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.00662,
-      "epss_pct": 0.50774,
+      "epss": 0.01367,
+      "epss_pct": 0.71599,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1897,7 +1890,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 29,
+      "rising": 27,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1926,7 +1919,7 @@
       "cvss": 7.3,
       "severity": "HIGH",
       "epss": 0.00854,
-      "epss_pct": 0.57658,
+      "epss_pct": 0.57856,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1974,7 +1967,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.8248,
+      "epss_pct": 0.82565,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2027,7 +2020,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87745,
+      "epss_pct": 0.87806,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2080,7 +2073,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01573,
-      "epss_pct": 0.75068,
+      "epss_pct": 0.75185,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2091,7 +2084,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 39,
+      "hype": 38,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -2128,7 +2121,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00588,
-      "epss_pct": 0.47162,
+      "epss_pct": 0.47389,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -2186,7 +2179,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86667,
+      "epss_pct": 0.86733,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2234,7 +2227,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96531,
+      "epss_pct": 0.96547,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -2282,7 +2275,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.13349,
-      "epss_pct": 0.96385,
+      "epss_pct": 0.96402,
       "cwe": "CWE-96",
       "published": null,
       "kev": {
@@ -2340,7 +2333,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01512,
-      "epss_pct": 0.74115,
+      "epss_pct": 0.74238,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2381,7 +2374,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.20136,
-      "epss_pct": 0.97436,
+      "epss_pct": 0.97448,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2422,7 +2415,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.82271,
+      "epss_pct": 0.82357,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2480,7 +2473,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01819,
-      "epss_pct": 0.78444,
+      "epss_pct": 0.78547,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -2528,7 +2521,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81453,
+      "epss_pct": 0.81543,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2581,7 +2574,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01362,
-      "epss_pct": 0.71384,
+      "epss_pct": 0.71519,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2629,7 +2622,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95516,
+      "epss_pct": 0.95537,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2677,7 +2670,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.03609,
-      "epss_pct": 0.89361,
+      "epss_pct": 0.89414,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2718,7 +2711,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.56774,
+      "epss_pct": 0.56975,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2766,7 +2759,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.95074,
+      "epss_pct": 0.95098,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2807,7 +2800,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03802,
-      "epss_pct": 0.89905,
+      "epss_pct": 0.89954,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2848,7 +2841,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00393,
-      "epss_pct": 0.32082,
+      "epss_pct": 0.32304,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -2896,7 +2889,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.03616,
-      "epss_pct": 0.89383,
+      "epss_pct": 0.89436,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2944,7 +2937,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.64099,
+      "epss_pct": 0.64269,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2985,7 +2978,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84492,
+      "epss_pct": 0.84565,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -3026,7 +3019,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.47288,
+      "epss_pct": 0.47514,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -3067,7 +3060,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.133,
+      "epss_pct": 0.13369,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -3108,7 +3101,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00924,
-      "epss_pct": 0.59822,
+      "epss_pct": 0.60005,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -3149,7 +3142,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.74893,
+      "epss_pct": 0.75012,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
