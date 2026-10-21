@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-21T15:18:51.419Z",
+  "generated_at": "2026-10-21T19:22:00.912Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 60,
+    "kev_count": 58,
     "kev_total": 1754,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1575 recent"
+      "detail": "1573 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1616 scored"
+      "detail": "1583 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5157 mapped"
+      "detail": "5164 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 77,
-      "rising": 27,
+      "rising": 25,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -287,25 +287,25 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 61,
-      "rising": 63,
+      "hype": 62,
+      "rising": 59,
       "repos": {
-        "count": 3,
-        "stars": 75,
+        "count": 4,
+        "stars": 81,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 75
+            "stars": 81
+          },
+          {
+            "full_name": "w116tjb/plex2shell-windows-hunt",
+            "html_url": "https://github.com/w116tjb/plex2shell-windows-hunt",
+            "stars": 0
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
             "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
-            "stars": 0
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
             "stars": 0
           }
         ]
@@ -720,12 +720,12 @@
       "rising": 0,
       "repos": {
         "count": 25,
-        "stars": 133,
+        "stars": 134,
         "top": [
           {
             "full_name": "ressl/cve-2026-87902-poc",
             "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 38
+            "stars": 39
           },
           {
             "full_name": "abraxas/CVE-2026-87902",
@@ -814,6 +814,206 @@
       "rank": 12
     },
     {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 95,
+      "repos": {
+        "count": 149,
+        "stars": 1552,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 719
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 404
+          },
+          {
+            "full_name": "junaire/CVE-2026-109618-exploit",
+            "html_url": "https://github.com/junaire/CVE-2026-109618-exploit",
+            "stars": 53
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
+          "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+          "date": "2026-10-21T16:50:40.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 95,
+      "repos": {
+        "count": 110,
+        "stars": 656,
+        "top": [
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 404
+          },
+          {
+            "full_name": "syhunt/php2shell-protection",
+            "html_url": "https://github.com/syhunt/php2shell-protection",
+            "stars": 47
+          },
+          {
+            "full_name": "HOSTED-POWER/php_uploadprogress_guard",
+            "html_url": "https://github.com/HOSTED-POWER/php_uploadprogress_guard",
+            "stars": 41
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
+          "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+          "date": "2026-10-21T16:50:40.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer, SecurityWeek"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-96656",
+      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.00758,
+      "epss_pct": 0.54661,
+      "cwe": "CWE-73",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 26,
+      "repos": {
+        "count": 3,
+        "stars": 81,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 81
+          },
+          {
+            "full_name": "a3igner/plex-codec-cache-implant",
+            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
+            "stars": 0
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
+    },
+    {
       "cve_id": "CVE-2026-110936",
       "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
       "vendor": "Siemens",
@@ -834,7 +1034,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 51,
-      "rising": 49,
+      "rising": 45,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -864,65 +1064,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-96656",
-      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.00758,
-      "epss_pct": 0.54661,
-      "cwe": "CWE-73",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 27,
-      "repos": {
-        "count": 3,
-        "stars": 75,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 75
-          },
-          {
-            "full_name": "a3igner/plex-codec-cache-implant",
-            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
-            "stars": 0
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -945,15 +1087,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 2,
-        "stars": 75,
+        "stars": 81,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 75
+            "stars": 81
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -975,7 +1117,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -998,15 +1140,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 2,
-        "stars": 75,
+        "stars": 81,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 75
+            "stars": 81
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1028,7 +1170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -1094,7 +1236,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 17
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -1143,7 +1285,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1185,7 +1327,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 21
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1227,7 +1369,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 22
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1269,7 +1411,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -1322,7 +1464,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 22
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1376,7 +1518,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1422,7 +1564,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1480,7 +1622,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1533,7 +1675,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1591,7 +1733,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1640,7 +1782,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1698,7 +1840,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1756,7 +1898,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1809,7 +1951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1867,7 +2009,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -1890,7 +2032,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 27,
+      "rising": 26,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1908,7 +2050,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1956,7 +2098,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -2009,7 +2151,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -2062,7 +2204,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2110,7 +2252,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2168,7 +2310,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 40
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2216,7 +2358,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -2264,7 +2406,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-86218",
@@ -2322,7 +2464,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2363,7 +2505,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 44
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2404,7 +2546,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2462,7 +2604,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2510,7 +2652,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2563,7 +2705,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 48
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2611,7 +2753,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2659,7 +2801,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2700,7 +2842,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2748,7 +2890,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2789,7 +2931,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2830,7 +2972,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-81963",
@@ -2878,7 +3020,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-85880",
@@ -2926,7 +3068,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2967,7 +3109,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -3008,7 +3150,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -3049,7 +3191,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -3087,88 +3229,6 @@
       "timeline": [
         {
           "date": "2026-09-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-84869",
-      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00924,
-      "epss_pct": 0.60005,
-      "cwe": "CWE-269",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-67277",
-      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
-      "cvss": 8.2,
-      "severity": "HIGH",
-      "epss": 0.0156,
-      "epss_pct": 0.75012,
-      "cwe": "CWE-306",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 34,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
