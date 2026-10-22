@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T10:15:50.675Z",
+  "generated_at": "2026-10-22T15:20:19.179Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 6,
     "reddit_upvotes": 0,
     "kev_count": 58,
     "kev_total": 1754,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1571 recent"
+      "detail": "1563 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1551 scored"
+      "detail": "1590 scored"
     },
     {
       "name": "BleepingComputer",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5173 mapped"
+      "detail": "5176 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 77,
-      "rising": 16,
+      "rising": 13,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -144,7 +144,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.12711,
-      "epss_pct": 0.96255,
+      "epss_pct": 0.96261,
       "cwe": "CWE-552",
       "published": "2026-10-05T22:16:58.423",
       "kev": {
@@ -205,8 +205,8 @@
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.00423,
-      "epss_pct": 0.35486,
+      "epss": 0.00455,
+      "epss_pct": 0.38528,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -217,25 +217,25 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 61,
-      "rising": 46,
+      "hype": 62,
+      "rising": 41,
       "repos": {
-        "count": 4,
-        "stars": 95,
+        "count": 5,
+        "stars": 96,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 95
+            "stars": 96
+          },
+          {
+            "full_name": "basesixtythree/B63-POC-CVE-2026-96652",
+            "html_url": "https://github.com/basesixtythree/B63-POC-CVE-2026-96652",
+            "stars": 0
           },
           {
             "full_name": "w116tjb/plex2shell-windows-hunt",
             "html_url": "https://github.com/w116tjb/plex2shell-windows-hunt",
-            "stars": 0
-          },
-          {
-            "full_name": "ChrisLPJones/plex2shell-check",
-            "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
             "stars": 0
           }
         ]
@@ -268,64 +268,6 @@
       "rank": 3
     },
     {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0118,
-      "epss_pct": 0.67396,
-      "cwe": "CWE-290",
-      "published": "2026-10-15T21:17:00.117",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
-            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 3
-          },
-          {
-            "full_name": "maxprog-svg/CVE-2026-102764",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
-    },
-    {
       "cve_id": "CVE-2026-88771",
       "title": "Citrix NetScaler Improper Input Validation Vulnerability",
       "vendor": "Citrix",
@@ -334,7 +276,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01083,
-      "epss_pct": 0.64881,
+      "epss_pct": 0.64921,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -386,7 +328,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -412,12 +354,12 @@
       "rising": 0,
       "repos": {
         "count": 13,
-        "stars": 88,
+        "stars": 90,
         "top": [
           {
             "full_name": "guneykabel/cve-2026-85706",
             "html_url": "https://github.com/guneykabel/cve-2026-85706",
-            "stars": 43
+            "stars": 44
           },
           {
             "full_name": "EQSTLab/CVE-2026-85706",
@@ -445,6 +387,64 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0118,
+      "epss_pct": 0.67433,
+      "cwe": "CWE-290",
+      "published": "2026-10-15T21:17:00.117",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-16",
+        "due_date": "2026-10-19",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
+            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
+            "stars": 3
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 6
     },
     {
@@ -456,7 +456,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.01301,
-      "epss_pct": 0.70203,
+      "epss_pct": 0.70229,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -519,7 +519,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01255,
-      "epss_pct": 0.69243,
+      "epss_pct": 0.69277,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -582,7 +582,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.4754,
+      "epss_pct": 0.4759,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -640,7 +640,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.39979,
-      "epss_pct": 0.98626,
+      "epss_pct": 0.98628,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -660,7 +660,7 @@
           {
             "full_name": "ressl/cve-2026-87902-poc",
             "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 41
+            "stars": 42
           },
           {
             "full_name": "abraxas/CVE-2026-87902",
@@ -756,8 +756,8 @@
       "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
       "cvss": 6.7,
       "severity": "MEDIUM",
-      "epss": 0.00262,
-      "epss_pct": 0.17062,
+      "epss": 0.00238,
+      "epss_pct": 0.13997,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -769,7 +769,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 51,
-      "rising": 32,
+      "rising": 28,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -817,7 +817,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01215,
-      "epss_pct": 0.68305,
+      "epss_pct": 0.68339,
       "cwe": "CWE-94",
       "published": "2026-10-14T18:17:07.743",
       "kev": {
@@ -862,312 +862,6 @@
       "rank": 13
     },
     {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 76,
-      "repos": {
-        "count": 315,
-        "stars": 3086,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1246
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 724
-          },
-          {
-            "full_name": "junaire/CVE-2026-109618-exploit",
-            "html_url": "https://github.com/junaire/CVE-2026-109618-exploit",
-            "stars": 105
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
-          "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
-          "date": "2026-10-21T16:50:40.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer, SecurityWeek"
-        }
-      ],
-      "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP has various global state that temporarily points into request memory.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 76,
-      "repos": {
-        "count": 239,
-        "stars": 2719,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1246
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 724
-          },
-          {
-            "full_name": "JoasASantos/php2shell-scanner",
-            "html_url": "https://github.com/JoasASantos/php2shell-scanner",
-            "stars": 76
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
-          "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
-          "date": "2026-10-21T16:50:40.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer, SecurityWeek"
-        }
-      ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-96656",
-      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.00758,
-      "epss_pct": 0.54661,
-      "cwe": "CWE-73",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 21,
-      "repos": {
-        "count": 3,
-        "stars": 95,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 95
-          },
-          {
-            "full_name": "a3igner/plex-codec-cache-implant",
-            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
-            "stars": 0
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.00423,
-      "epss_pct": 0.35486,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 21,
-      "repos": {
-        "count": 2,
-        "stars": 95,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 95
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 17
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00432,
-      "epss_pct": 0.36449,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 21,
-      "repos": {
-        "count": 2,
-        "stars": 95,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 95
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 18
-    },
-    {
       "cve_id": "CVE-2026-104935",
       "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
       "vendor": "Ivanti",
@@ -1176,7 +870,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.25982,
-      "epss_pct": 0.97981,
+      "epss_pct": 0.97982,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -1187,10 +881,10 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 50,
+      "hype": 51,
       "rising": 0,
       "repos": {
-        "count": 3,
+        "count": 4,
         "stars": 1,
         "top": [
           {
@@ -1199,13 +893,13 @@
             "stars": 1
           },
           {
-            "full_name": "maxprog-svg/CVE-2026-104935",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-104935",
+            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
             "stars": 0
           },
           {
-            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
-            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "full_name": "maxprog-svg/CVE-2026-104935",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-104935",
             "stars": 0
           }
         ]
@@ -1236,7 +930,171 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 19
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-96656",
+      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.00816,
+      "epss_pct": 0.56645,
+      "cwe": "CWE-73",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 19,
+      "repos": {
+        "count": 3,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "a3igner/plex-codec-cache-implant",
+            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
+            "stars": 0
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-96655",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.00455,
+      "epss_pct": 0.38527,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 19,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00465,
+      "epss_pct": 0.3929,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 19,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -1285,7 +1143,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 18
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1327,7 +1185,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 19
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1369,7 +1227,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 20
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1411,7 +1269,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.3831,
+      "epss_pct": 0.98566,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 4
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1422,7 +1333,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.75872,
-      "epss_pct": 0.99528,
+      "epss_pct": 0.99529,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1465,7 +1376,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1476,7 +1387,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0055,
-      "epss_pct": 0.45177,
+      "epss_pct": 0.45231,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -1511,7 +1422,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1522,7 +1433,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.93642,
+      "epss_pct": 0.93651,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1569,7 +1480,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1580,7 +1491,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97763,
+      "epss_pct": 0.97766,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1622,7 +1533,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1633,7 +1544,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01242,
-      "epss_pct": 0.68932,
+      "epss_pct": 0.68965,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1680,7 +1591,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1690,8 +1601,8 @@
       "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.504,
-      "epss_pct": 0.9891,
+      "epss": 0.5423,
+      "epss_pct": 0.99009,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -1729,7 +1640,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1740,7 +1651,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.29543,
-      "epss_pct": 0.98187,
+      "epss_pct": 0.98189,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1787,7 +1698,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-75650",
@@ -1798,7 +1709,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03949,
-      "epss_pct": 0.90354,
+      "epss_pct": 0.90368,
       "cwe": "CWE-1336",
       "published": null,
       "kev": {
@@ -1845,60 +1756,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.04782,
-      "epss_pct": 0.91879,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 4
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1908,8 +1766,8 @@
       "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060.",
       "cvss": 6.5,
       "severity": "MEDIUM",
-      "epss": 0.01027,
-      "epss_pct": 0.63263,
+      "epss": 0.01046,
+      "epss_pct": 0.63869,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1956,7 +1814,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -1966,8 +1824,8 @@
       "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.01367,
-      "epss_pct": 0.71599,
+      "epss": 0.0117,
+      "epss_pct": 0.67149,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1979,7 +1837,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 21,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1997,7 +1855,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -2007,8 +1865,8 @@
       "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
       "cvss": 7.3,
       "severity": "HIGH",
-      "epss": 0.00854,
-      "epss_pct": 0.57856,
+      "epss": 0.05794,
+      "epss_pct": 0.93092,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2045,6 +1903,136 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 33
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.05307,
+      "epss_pct": 0.92563,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 41,
+      "rising": 42,
+      "repos": {
+        "count": 393,
+        "stars": 3666,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1397
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 813
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 155
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.05757,
+      "epss_pct": 0.93049,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 41,
+      "rising": 42,
+      "repos": {
+        "count": 301,
+        "stars": 3291,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1397
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 813
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 155
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer"
+        }
+      ],
       "rank": 35
     },
     {
@@ -2056,7 +2044,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.82565,
+      "epss_pct": 0.82587,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2109,7 +2097,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87806,
+      "epss_pct": 0.87824,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2124,12 +2112,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 10,
+        "stars": 11,
         "top": [
           {
             "full_name": "SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
             "html_url": "https://github.com/SneakyNachos/CVE-2026-87575-CVE-2026-87606-CVE-2026-87491-and-CVE-2026-85046.-Escape-the-v8-carcass.",
-            "stars": 5
+            "stars": 6
           },
           {
             "full_name": "SneakyNachos/CVE-2026-87491-and-CVE-2026-85046-the-bagel-fell-off-the-counter",
@@ -2162,7 +2150,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01081,
-      "epss_pct": 0.64802,
+      "epss_pct": 0.64845,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2203,7 +2191,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01573,
-      "epss_pct": 0.75185,
+      "epss_pct": 0.75213,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2251,7 +2239,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00588,
-      "epss_pct": 0.47389,
+      "epss_pct": 0.47413,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -2309,7 +2297,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.86733,
+      "epss_pct": 0.8675,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2357,7 +2345,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96547,
+      "epss_pct": 0.96552,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -2405,7 +2393,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.13349,
-      "epss_pct": 0.96402,
+      "epss_pct": 0.96407,
       "cwe": "CWE-96",
       "published": null,
       "kev": {
@@ -2463,7 +2451,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01512,
-      "epss_pct": 0.74238,
+      "epss_pct": 0.74269,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2504,7 +2492,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.20136,
-      "epss_pct": 0.97448,
+      "epss_pct": 0.97451,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2545,7 +2533,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01819,
-      "epss_pct": 0.78547,
+      "epss_pct": 0.78574,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -2593,7 +2581,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81543,
+      "epss_pct": 0.81567,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2646,7 +2634,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01362,
-      "epss_pct": 0.71519,
+      "epss_pct": 0.7155,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2694,7 +2682,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.82357,
+      "epss_pct": 0.82379,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2752,7 +2740,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95537,
+      "epss_pct": 0.95542,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2800,7 +2788,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.03609,
-      "epss_pct": 0.89414,
+      "epss_pct": 0.89428,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2841,7 +2829,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.56975,
+      "epss_pct": 0.57023,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2889,7 +2877,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.95098,
+      "epss_pct": 0.95105,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2930,7 +2918,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03802,
-      "epss_pct": 0.89954,
+      "epss_pct": 0.89963,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2971,7 +2959,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00393,
-      "epss_pct": 0.32304,
+      "epss_pct": 0.32343,
       "cwe": "CWE-59",
       "published": null,
       "kev": {
@@ -3019,7 +3007,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.03616,
-      "epss_pct": 0.89436,
+      "epss_pct": 0.8945,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -3067,7 +3055,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.64269,
+      "epss_pct": 0.64308,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -3108,7 +3096,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84565,
+      "epss_pct": 0.84582,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -3149,7 +3137,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.47514,
+      "epss_pct": 0.47537,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -3190,7 +3178,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.13369,
+      "epss_pct": 0.13382,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
