@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T23:25:57.397Z",
+  "generated_at": "2026-10-23T04:58:24.518Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 6,
     "reddit_upvotes": 0,
-    "kev_count": 58,
+    "kev_count": 56,
     "kev_total": 1754,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1678 recent"
+      "detail": "1661 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1679 scored"
+      "detail": "1656 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5182 mapped"
+      "detail": "5187 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 77,
-      "rising": 9,
+      "hype": 76,
+      "rising": 6,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 61,
-      "rising": 34,
+      "rising": 29,
       "repos": {
         "count": 5,
         "stars": 96,
@@ -749,6 +749,124 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-96656",
+      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.00816,
+      "epss_pct": 0.56645,
+      "cwe": "CWE-73",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 14,
+      "repos": {
+        "count": 3,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          },
+          {
+            "full_name": "a3igner/plex-codec-cache-implant",
+            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-110936",
+      "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "vendor": "Siemens",
+      "product": "Software Center",
+      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+      "cvss": 6.7,
+      "severity": "MEDIUM",
+      "epss": 0.00238,
+      "epss_pct": 0.13997,
+      "cwe": "CWE-427",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 50,
+      "rising": 16,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "DAS-Bodhi/CVE-2026-110936-Siemens-Attack",
+            "html_url": "https://github.com/DAS-Bodhi/CVE-2026-110936-Siemens-Attack",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "date": "2026-10-20T07:11:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-20",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-0322",
       "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
       "vendor": "Palo Alto Networks",
@@ -768,7 +886,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 51,
+      "hype": 50,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -799,7 +917,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -821,7 +939,7 @@
       },
       "zero_day": true,
       "no_patch": false,
-      "hype": 51,
+      "hype": 50,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -870,231 +988,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-96656",
-      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.00816,
-      "epss_pct": 0.56645,
-      "cwe": "CWE-73",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 16,
-      "repos": {
-        "count": 3,
-        "stars": 96,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 96
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          },
-          {
-            "full_name": "a3igner/plex-codec-cache-implant",
-            "html_url": "https://github.com/a3igner/plex-codec-cache-implant",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.00455,
-      "epss_pct": 0.38527,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 16,
-      "repos": {
-        "count": 2,
-        "stars": 96,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 96
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00465,
-      "epss_pct": 0.3929,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 16,
-      "repos": {
-        "count": 2,
-        "stars": 96,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 96
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
-    },
-    {
-      "cve_id": "CVE-2026-110936",
-      "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "vendor": "Siemens",
-      "product": "Software Center",
-      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-      "cvss": 6.7,
-      "severity": "MEDIUM",
-      "epss": 0.00238,
-      "epss_pct": 0.13997,
-      "cwe": "CWE-427",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 50,
-      "rising": 21,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "DAS-Bodhi/CVE-2026-110936-Siemens-Attack",
-            "html_url": "https://github.com/DAS-Bodhi/CVE-2026-110936-Siemens-Attack",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-          "date": "2026-10-20T07:11:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-20",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 17
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -1140,6 +1034,112 @@
       "timeline": [
         {
           "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-96655",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.00455,
+      "epss_pct": 0.38527,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 14,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00465,
+      "epss_pct": 0.3929,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 14,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1701,64 +1701,6 @@
       "rank": 29
     },
     {
-      "cve_id": "CVE-2026-75650",
-      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03949,
-      "epss_pct": 0.90368,
-      "cwe": "CWE-1336",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 43,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "fortbridge/stylesmuggler",
-            "html_url": "https://github.com/fortbridge/stylesmuggler",
-            "stars": 7
-          },
-          {
-            "full_name": "dinosn/cve-2026-75650-magento-validation-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-75650-magento-validation-lab",
-            "stars": 6
-          },
-          {
-            "full_name": "disrex-group/stylesmuggler-adobe-patches",
-            "html_url": "https://github.com/disrex-group/stylesmuggler-adobe-patches",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
-    },
-    {
       "cve_id": "CVE-2026-67279",
       "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
       "vendor": "MikroTik",
@@ -1814,7 +1756,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1862,7 +1804,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -1885,7 +1827,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1903,7 +1845,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1956,7 +1898,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -2009,7 +1951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-109618",
@@ -2029,25 +1971,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 40,
-      "rising": 36,
+      "rising": 32,
       "repos": {
-        "count": 476,
-        "stars": 4232,
+        "count": 491,
+        "stars": 4378,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1501
+            "stars": 1527
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 876
+            "stars": 891
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 268
+            "stars": 294
           }
         ]
       },
@@ -2074,7 +2016,7 @@
           "label": "Covered by BleepingComputer"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2115,7 +2057,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2163,7 +2105,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2221,7 +2163,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2269,7 +2211,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -2317,65 +2259,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-86218",
-      "title": "N-able N-central Static Code Injection Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.13349,
-      "epss_pct": 0.96407,
-      "cwe": "CWE-96",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "super-meuw/CVE-2026-86218",
-            "html_url": "https://github.com/super-meuw/CVE-2026-86218",
-            "stars": 0
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-86218",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-86218",
-            "stars": 0
-          },
-          {
-            "full_name": "Udyz/CVE-2026-86218",
-            "html_url": "https://github.com/Udyz/CVE-2026-86218",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-109619",
@@ -2395,25 +2279,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 38,
-      "rising": 36,
+      "rising": 32,
       "repos": {
-        "count": 363,
-        "stars": 3799,
+        "count": 375,
+        "stars": 3906,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1501
+            "stars": 1527
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 876
+            "stars": 891
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 268
+            "stars": 294
           }
         ]
       },
@@ -2440,48 +2324,7 @@
           "label": "Covered by BleepingComputer"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-96951",
-      "title": "Microsoft Windows Command Injection Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.01512,
-      "epss_pct": 0.74269,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 44
+      "rank": 41
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2522,7 +2365,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2570,7 +2413,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2623,7 +2466,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 44
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2671,7 +2514,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-96951",
+      "title": "Microsoft Windows Command Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.01512,
+      "epss_pct": 0.74269,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2729,7 +2613,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2777,7 +2661,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 48
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2818,7 +2702,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2866,7 +2750,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2907,7 +2791,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 51
     },
     {
       "cve_id": "CVE-2025-25249",
@@ -2948,103 +2832,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-81963",
-      "title": "Microsoft Windows Link Following Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00393,
-      "epss_pct": 0.32343,
-      "cwe": "CWE-59",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "rsah35404-star/stunning-octo-doodle",
-            "html_url": "https://github.com/rsah35404-star/stunning-octo-doodle",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-85880",
-      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.03616,
-      "epss_pct": 0.8945,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "rsah35404-star/stunning-octo-doodle",
-            "html_url": "https://github.com/rsah35404-star/stunning-octo-doodle",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-08",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 56
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -3085,7 +2873,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 57
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -3126,7 +2914,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 58
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -3167,7 +2955,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -3206,6 +2994,179 @@
         {
           "date": "2026-09-16",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-84869",
+      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "vendor": "ConnectWise",
+      "product": "ScreenConnect",
+      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00924,
+      "epss_pct": 0.60052,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-67277",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "epss": 0.0156,
+      "epss_pct": 0.75039,
+      "cwe": "CWE-306",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-88773",
+      "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
+      "vendor": null,
+      "product": null,
+      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00361,
+      "epss_pct": 0.28729,
+      "cwe": "CWE-444",
+      "published": "2026-09-27T17:16:56.507",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 20,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 19
+          },
+          {
+            "full_name": "Scyrix-LLC/CVE-2026-88773",
+            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-88775",
+      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
+      "vendor": null,
+      "product": null,
+      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00384,
+      "epss_pct": 0.31249,
+      "cwe": "CWE-120",
+      "published": "2026-09-27T17:16:56.750",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 19,
+        "top": [
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 19
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Published to NVD"
         }
       ],
       "rank": 60
