@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T04:58:24.518Z",
+  "generated_at": "2026-10-23T10:09:14.746Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
     "kev_count": 56,
     "kev_total": 1754,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1661 recent"
+      "detail": "1660 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1656 scored"
+      "detail": "1653 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "4 mentions"
+      "detail": "7 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5187 mapped"
+      "detail": "5191 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 76,
-      "rising": 6,
+      "rising": 3,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -155,7 +155,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 63,
+      "hype": 62,
       "rising": 0,
       "repos": {
         "count": 12,
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 61,
-      "rising": 29,
+      "rising": 24,
       "repos": {
         "count": 5,
         "stars": 96,
@@ -749,6 +749,131 @@
       "rank": 11
     },
     {
+      "cve_id": "CVE-2026-71362",
+      "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento ",
+      "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "epss": 0.87507,
+      "epss_pct": 0.9976,
+      "cwe": "CWE-863",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-71362-magento-lab",
+            "html_url": "https://github.com/dinosn/cve-2026-71362-magento-lab",
+            "stars": 5
+          },
+          {
+            "full_name": "mahumadad/cve-2026-71362-magento-ato",
+            "html_url": "https://github.com/mahumadad/cve-2026-71362-magento-ato",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.05307,
+      "epss_pct": 0.92563,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 67,
+      "repos": {
+        "count": 522,
+        "stars": 4678,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1585
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 911
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 348
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "cve_id": "CVE-2026-96656",
       "title": "Plex Media Server External Control of File Name or Path Vulnerability",
       "vendor": "Plex",
@@ -769,7 +894,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 3,
         "stars": 96,
@@ -804,7 +929,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -827,7 +952,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 50,
-      "rising": 16,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -864,7 +989,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -917,7 +1042,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -988,56 +1113,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-71362",
-      "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento ",
-      "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.87507,
-      "epss_pct": 0.9976,
-      "cwe": "CWE-863",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-71362-magento-lab",
-            "html_url": "https://github.com/dinosn/cve-2026-71362-magento-lab",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1060,60 +1136,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 14,
-      "repos": {
-        "count": 2,
-        "stars": 96,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 96
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 17
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00465,
-      "epss_pct": 0.3929,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 2,
         "stars": 96,
@@ -1144,6 +1167,130 @@
         }
       ],
       "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00465,
+      "epss_pct": 0.3929,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 13,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.05757,
+      "epss_pct": 0.93049,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 49,
+      "rising": 67,
+      "repos": {
+        "count": 394,
+        "stars": 4153,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1585
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 911
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 348
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        },
+        {
+          "source": "BleepingComputer",
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "date": "2026-10-21T14:07:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by BleepingComputer, The Hacker News"
+        }
+      ],
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1185,7 +1332,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 21
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1227,7 +1374,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 22
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1269,7 +1416,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1322,7 +1469,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1376,7 +1523,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1422,7 +1569,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1480,7 +1627,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1533,7 +1680,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1591,7 +1738,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1640,7 +1787,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1698,7 +1845,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1756,7 +1903,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1804,7 +1951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -1827,7 +1974,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1845,7 +1992,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1898,7 +2045,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -1951,72 +2098,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.05307,
-      "epss_pct": 0.92563,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 40,
-      "rising": 32,
-      "repos": {
-        "count": 491,
-        "stars": 4378,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1527
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 891
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 294
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer"
-        }
-      ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2054,54 +2136,6 @@
       "timeline": [
         {
           "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01573,
-      "epss_pct": 0.75213,
-      "cwe": "CWE-23",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2262,66 +2296,49 @@
       "rank": 40
     },
     {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP has various global state that temporarily points into request memory.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.05757,
-      "epss_pct": 0.93049,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01573,
+      "epss_pct": 0.75213,
+      "cwe": "CWE-23",
+      "published": null,
       "kev": {
-        "in_kev": false
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
       },
       "zero_day": false,
-      "no_patch": false,
-      "hype": 38,
-      "rising": 32,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
       "repos": {
-        "count": 375,
-        "stars": 3906,
+        "count": 1,
+        "stars": 0,
         "top": [
           {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1527
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 891
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 294
+            "full_name": "Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "html_url": "https://github.com/Mickysalivan/CVE-2026-76519-Proof-of-concept",
+            "stars": 0
           }
         ]
       },
-      "media": [
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
-        "in-the-news",
+        "kev",
+        "actively-exploited",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer"
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 41
@@ -2390,13 +2407,18 @@
       "hype": 37,
       "rising": 0,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 2,
         "top": [
           {
             "full_name": "ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
             "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-76504-Proof-of-concept",
             "stars": 2
+          },
+          {
+            "full_name": "pastelghost3/cve-2026-76504-nuclei",
+            "html_url": "https://github.com/pastelghost3/cve-2026-76504-nuclei",
+            "stars": 0
           }
         ]
       },
@@ -3081,6 +3103,67 @@
       "rank": 58
     },
     {
+      "cve_id": "CVE-2026-111497",
+      "title": "CVE-2026-111497",
+      "vendor": null,
+      "product": null,
+      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-252",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 23,
+      "rising": 39,
+      "repos": {
+        "count": 12,
+        "stars": 23,
+        "top": [
+          {
+            "full_name": "CaterMaoZi/CVE-2026-111497-POC",
+            "html_url": "https://github.com/CaterMaoZi/CVE-2026-111497-POC",
+            "stars": 10
+          },
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 8
+          },
+          {
+            "full_name": "ikow/brotli2crash",
+            "html_url": "https://github.com/ikow/brotli2crash",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+          "date": "2026-10-23T08:40:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 59
+    },
+    {
       "cve_id": "CVE-2026-88773",
       "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
       "vendor": null,
@@ -3112,49 +3195,6 @@
             "full_name": "Scyrix-LLC/CVE-2026-88773",
             "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
             "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-88775",
-      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00384,
-      "epss_pct": 0.31249,
-      "cwe": "CWE-120",
-      "published": "2026-09-27T17:16:56.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 19,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 19
           }
         ]
       },
