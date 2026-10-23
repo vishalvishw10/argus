@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T10:09:14.746Z",
+  "generated_at": "2026-10-23T15:09:06.374Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 56,
     "kev_total": 1754,
@@ -19,22 +19,22 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1660 recent"
+      "detail": "1659 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1653 scored"
+      "detail": "1706 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "7 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5191 mapped"
+      "detail": "5196 mapped"
     },
     {
       "name": "Reddit",
@@ -84,7 +84,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 76,
-      "rising": 3,
+      "rising": 0,
       "repos": {
         "count": 8,
         "stars": 41,
@@ -144,7 +144,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.12711,
-      "epss_pct": 0.96261,
+      "epss_pct": 0.96263,
       "cwe": "CWE-552",
       "published": "2026-10-05T22:16:58.423",
       "kev": {
@@ -206,7 +206,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.00455,
-      "epss_pct": 0.38528,
+      "epss_pct": 0.38559,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 61,
-      "rising": 24,
+      "rising": 20,
       "repos": {
         "count": 5,
         "stars": 96,
@@ -275,8 +275,8 @@
       "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01083,
-      "epss_pct": 0.64921,
+      "epss": 0.04722,
+      "epss_pct": 0.91805,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -398,7 +398,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0118,
-      "epss_pct": 0.67433,
+      "epss_pct": 0.67457,
       "cwe": "CWE-290",
       "published": "2026-10-15T21:17:00.117",
       "kev": {
@@ -455,8 +455,8 @@
       "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.01301,
-      "epss_pct": 0.70229,
+      "epss": 0.05305,
+      "epss_pct": 0.92568,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -519,7 +519,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01255,
-      "epss_pct": 0.69277,
+      "epss_pct": 0.69301,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -582,7 +582,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00592,
-      "epss_pct": 0.4759,
+      "epss_pct": 0.47623,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -640,7 +640,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.39979,
-      "epss_pct": 0.98628,
+      "epss_pct": 0.98629,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -803,77 +803,6 @@
       "rank": 12
     },
     {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.05307,
-      "epss_pct": 0.92563,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 67,
-      "repos": {
-        "count": 522,
-        "stars": 4678,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1585
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 911
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 348
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-96656",
       "title": "Plex Media Server External Control of File Name or Path Vulnerability",
       "vendor": "Plex",
@@ -882,7 +811,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.00816,
-      "epss_pct": 0.56645,
+      "epss_pct": 0.56677,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -894,7 +823,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 13,
+      "rising": 11,
       "repos": {
         "count": 3,
         "stars": 96,
@@ -929,7 +858,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -940,7 +869,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.00238,
-      "epss_pct": 0.13997,
+      "epss_pct": 0.14021,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -952,7 +881,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 50,
-      "rising": 13,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -989,7 +918,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1000,7 +929,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01215,
-      "epss_pct": 0.68339,
+      "epss_pct": 0.68361,
       "cwe": "CWE-94",
       "published": "2026-10-14T18:17:07.743",
       "kev": {
@@ -1042,7 +971,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -1053,7 +982,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.25982,
-      "epss_pct": 0.97982,
+      "epss_pct": 0.97984,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -1113,7 +1042,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1124,7 +1053,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.00455,
-      "epss_pct": 0.38527,
+      "epss_pct": 0.3856,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1136,7 +1065,60 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 13,
+      "rising": 11,
+      "repos": {
+        "count": 2,
+        "stars": 96,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 96
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00465,
+      "epss_pct": 0.39325,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 11,
       "repos": {
         "count": 2,
         "stars": 96,
@@ -1167,130 +1149,6 @@
         }
       ],
       "rank": 18
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00465,
-      "epss_pct": 0.3929,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 13,
-      "repos": {
-        "count": 2,
-        "stars": 96,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 96
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 19
-    },
-    {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP has various global state that temporarily points into request memory.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.05757,
-      "epss_pct": 0.93049,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 49,
-      "rising": 67,
-      "repos": {
-        "count": 394,
-        "stars": 4153,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1585
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 911
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 348
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        },
-        {
-          "source": "BleepingComputer",
-          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "date": "2026-10-21T14:07:05.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by BleepingComputer, The Hacker News"
-        }
-      ],
-      "rank": 20
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1332,7 +1190,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 19
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1374,7 +1232,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 20
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1416,7 +1274,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1427,7 +1285,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.3831,
-      "epss_pct": 0.98566,
+      "epss_pct": 0.98568,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -1469,7 +1327,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1523,7 +1381,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1534,7 +1392,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0055,
-      "epss_pct": 0.45231,
+      "epss_pct": 0.45264,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -1569,7 +1427,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -1580,7 +1438,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06392,
-      "epss_pct": 0.93651,
+      "epss_pct": 0.93656,
       "cwe": "CWE-88",
       "published": null,
       "kev": {
@@ -1627,7 +1485,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-19490",
@@ -1638,7 +1496,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.23158,
-      "epss_pct": 0.97766,
+      "epss_pct": 0.97767,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -1680,7 +1538,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1691,7 +1549,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01242,
-      "epss_pct": 0.68965,
+      "epss_pct": 0.68988,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1738,7 +1596,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1749,7 +1607,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.5423,
-      "epss_pct": 0.99009,
+      "epss_pct": 0.9901,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -1787,7 +1645,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1798,7 +1656,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.29543,
-      "epss_pct": 0.98189,
+      "epss_pct": 0.98191,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1845,7 +1703,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1856,7 +1714,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01046,
-      "epss_pct": 0.63869,
+      "epss_pct": 0.63892,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1903,7 +1761,72 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 30
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.1162,
+      "epss_pct": 0.96047,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 42,
+      "rising": 48,
+      "repos": {
+        "count": 550,
+        "stars": 4982,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1626
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 931
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 391
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1914,7 +1837,7 @@
       "cvss": 7.3,
       "severity": "HIGH",
       "epss": 0.05794,
-      "epss_pct": 0.93092,
+      "epss_pct": 0.93098,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1951,7 +1874,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -1962,7 +1885,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.0117,
-      "epss_pct": 0.67149,
+      "epss_pct": 0.67173,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -1974,7 +1897,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 13,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1992,7 +1915,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -2003,7 +1926,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02226,
-      "epss_pct": 0.82587,
+      "epss_pct": 0.82601,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2045,7 +1968,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-87491",
@@ -2056,7 +1979,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.03142,
-      "epss_pct": 0.87824,
+      "epss_pct": 0.87834,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2098,7 +2021,130 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 35
+    },
+    {
+      "cve_id": "CVE-2026-5430",
+      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "vendor": "WSO2",
+      "product": "Multiple Products",
+      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00588,
+      "epss_pct": 0.47448,
+      "cwe": "CWE-347",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-5430",
+            "html_url": "https://github.com/abraxas/CVE-2026-5430",
+            "stars": 2
+          },
+          {
+            "full_name": "davidvrns/CVE-2026-5430-WSO2",
+            "html_url": "https://github.com/davidvrns/CVE-2026-5430-WSO2",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-2026-5430",
+            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 36
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.05991,
+      "epss_pct": 0.933,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 39,
+      "rising": 48,
+      "repos": {
+        "count": 412,
+        "stars": 4381,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1626
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 931
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 391
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2109,7 +2155,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01081,
-      "epss_pct": 0.64845,
+      "epss_pct": 0.64866,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2139,64 +2185,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
-    },
-    {
-      "cve_id": "CVE-2026-5430",
-      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
-      "vendor": "WSO2",
-      "product": "Multiple Products",
-      "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00588,
-      "epss_pct": 0.47413,
-      "cwe": "CWE-347",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "abraxas/CVE-2026-5430",
-            "html_url": "https://github.com/abraxas/CVE-2026-5430",
-            "stars": 2
-          },
-          {
-            "full_name": "HORKimhab/CVE-2026-5430",
-            "html_url": "https://github.com/HORKimhab/CVE-2026-5430",
-            "stars": 0
-          },
-          {
-            "full_name": "getdrive/wso2_cve-2026-5430_lab",
-            "html_url": "https://github.com/getdrive/wso2_cve-2026-5430_lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 38
     },
     {
@@ -2208,7 +2196,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0288,
-      "epss_pct": 0.8675,
+      "epss_pct": 0.86761,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2256,7 +2244,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.14026,
-      "epss_pct": 0.96552,
+      "epss_pct": 0.96555,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -2304,7 +2292,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01573,
-      "epss_pct": 0.75213,
+      "epss_pct": 0.75231,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2352,7 +2340,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.20136,
-      "epss_pct": 0.97451,
+      "epss_pct": 0.97454,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2393,7 +2381,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01819,
-      "epss_pct": 0.78574,
+      "epss_pct": 0.78591,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -2446,7 +2434,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02101,
-      "epss_pct": 0.81567,
+      "epss_pct": 0.81581,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2499,7 +2487,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01362,
-      "epss_pct": 0.7155,
+      "epss_pct": 0.71568,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2547,7 +2535,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.01512,
-      "epss_pct": 0.74269,
+      "epss_pct": 0.74285,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2588,7 +2576,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02201,
-      "epss_pct": 0.82379,
+      "epss_pct": 0.82394,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2646,7 +2634,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.09805,
-      "epss_pct": 0.95542,
+      "epss_pct": 0.95546,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2694,7 +2682,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.03609,
-      "epss_pct": 0.89428,
+      "epss_pct": 0.89437,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2735,7 +2723,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00827,
-      "epss_pct": 0.57023,
+      "epss_pct": 0.57056,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2783,7 +2771,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08643,
-      "epss_pct": 0.95105,
+      "epss_pct": 0.9511,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2824,7 +2812,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03802,
-      "epss_pct": 0.89963,
+      "epss_pct": 0.8997,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2865,7 +2853,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01062,
-      "epss_pct": 0.64308,
+      "epss_pct": 0.64332,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2906,7 +2894,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02501,
-      "epss_pct": 0.84582,
+      "epss_pct": 0.84595,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2947,7 +2935,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00591,
-      "epss_pct": 0.47537,
+      "epss_pct": 0.4757,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -2988,7 +2976,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.13382,
+      "epss_pct": 0.134,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -3026,11 +3014,11 @@
       "vendor": "ConnectWise",
       "product": "ScreenConnect",
       "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.00924,
-      "epss_pct": 0.60052,
-      "cwe": "CWE-269",
+      "epss_pct": 0.6008,
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -3070,7 +3058,7 @@
       "cvss": 8.2,
       "severity": "HIGH",
       "epss": 0.0156,
-      "epss_pct": 0.75039,
+      "epss_pct": 0.75058,
       "cwe": "CWE-306",
       "published": null,
       "kev": {
@@ -3110,8 +3098,8 @@
       "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
       "cvss": null,
       "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0048,
+      "epss_pct": 0.40511,
       "cwe": "CWE-252",
       "published": null,
       "kev": {
@@ -3120,25 +3108,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 39,
+      "rising": 36,
       "repos": {
-        "count": 12,
-        "stars": 23,
+        "count": 15,
+        "stars": 33,
         "top": [
-          {
-            "full_name": "CaterMaoZi/CVE-2026-111497-POC",
-            "html_url": "https://github.com/CaterMaoZi/CVE-2026-111497-POC",
-            "stars": 10
-          },
           {
             "full_name": "dimasma0305/CVE-2026-111497-POC",
             "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 8
+            "stars": 12
           },
           {
-            "full_name": "ikow/brotli2crash",
-            "html_url": "https://github.com/ikow/brotli2crash",
-            "stars": 2
+            "full_name": "CaterMaoZi/CVE-2026-111497-POC",
+            "html_url": "https://github.com/CaterMaoZi/CVE-2026-111497-POC",
+            "stars": 11
+          },
+          {
+            "full_name": "hypnguyen1209/CVE-2026-111497",
+            "html_url": "https://github.com/hypnguyen1209/CVE-2026-111497",
+            "stars": 3
           }
         ]
       },
@@ -3164,49 +3152,52 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-88773",
-      "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
+      "cve_id": "CVE-2026-115560",
+      "title": "CVE-2026-115560",
       "vendor": null,
       "product": null,
-      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00361,
-      "epss_pct": 0.28729,
-      "cwe": "CWE-444",
-      "published": "2026-09-27T17:16:56.507",
+      "description": "",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 0,
+      "no_patch": true,
+      "hype": 20,
+      "rising": 38,
       "repos": {
-        "count": 2,
-        "stars": 20,
+        "count": 1,
+        "stars": 99,
         "top": [
           {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 19
-          },
-          {
-            "full_name": "Scyrix-LLC/CVE-2026-88773",
-            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
-            "stars": 1
+            "full_name": "syhunt/php2shell-protection",
+            "html_url": "https://github.com/syhunt/php2shell-protection",
+            "stars": 99
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+          "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+          "date": "2026-10-23T11:25:43.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 60
