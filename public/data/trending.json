@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:31:41.648Z",
+  "generated_at": "2026-10-24T22:31:50.647Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,7 +19,7 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1560 recent"
+      "detail": "1559 recent"
     },
     {
       "name": "FIRST EPSS",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5238 mapped"
+      "detail": "5239 mapped"
     },
     {
       "name": "Reddit",
@@ -218,7 +218,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 60,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 6,
         "stars": 99,
@@ -536,7 +536,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 58,
+      "rising": 56,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -890,11 +890,11 @@
       "vendor": "Plex",
       "product": "Media Server",
       "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.2,
+      "severity": "HIGH",
       "epss": 0.00816,
       "epss_pct": 0.56712,
-      "cwe": null,
+      "cwe": "CWE-73",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -905,7 +905,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 49,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 3,
         "stars": 99,
@@ -941,112 +941,6 @@
         }
       ],
       "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.00455,
-      "epss_pct": 0.3859,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 1,
-      "repos": {
-        "count": 2,
-        "stars": 99,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00465,
-      "epss_pct": 0.39358,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 1,
-      "repos": {
-        "count": 2,
-        "stars": 99,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1096,6 +990,112 @@
         },
         {
           "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-96655",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.00455,
+      "epss_pct": 0.3859,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 99,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 99
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00465,
+      "epss_pct": 0.39358,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 99,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 99
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1731,7 +1731,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 25,
+      "rising": 24,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1769,25 +1769,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 41,
-      "rising": 27,
+      "rising": 25,
       "repos": {
-        "count": 627,
-        "stars": 5799,
+        "count": 629,
+        "stars": 5862,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1748
+            "stars": 1752
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 982
+            "stars": 983
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 661
+            "stars": 705
           }
         ]
       },
@@ -1837,7 +1837,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1986,7 +1986,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2188,25 +2188,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 38,
-      "rising": 27,
+      "rising": 25,
       "repos": {
-        "count": 472,
-        "stars": 5115,
+        "count": 474,
+        "stars": 5175,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1748
+            "stars": 1752
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 982
+            "stars": 983
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 661
+            "stars": 705
           }
         ]
       },
@@ -3007,25 +3007,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 33,
-      "rising": 56,
+      "rising": 53,
       "repos": {
-        "count": 34,
-        "stars": 96,
+        "count": 35,
+        "stars": 104,
         "top": [
           {
             "full_name": "dimasma0305/CVE-2026-111497-POC",
             "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 35
+            "stars": 38
           },
           {
             "full_name": "trailofbits/brotli-checker",
             "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 22
+            "stars": 26
           },
           {
             "full_name": "CaterMaoZi/CVE-2026-111497-POC",
             "html_url": "https://github.com/CaterMaoZi/CVE-2026-111497-POC",
-            "stars": 12
+            "stars": 13
           }
         ]
       },
@@ -3074,10 +3074,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 22,
-      "rising": 22,
+      "rising": 20,
       "repos": {
         "count": 14,
-        "stars": 197,
+        "stars": 199,
         "top": [
           {
             "full_name": "syhunt/php2shell-protection",
