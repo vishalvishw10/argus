@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T19:42:13.013Z",
+  "generated_at": "2026-10-25T22:36:34.096Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1552 recent"
+      "detail": "1548 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1536 scored"
+      "detail": "1531 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5254 mapped"
+      "detail": "5257 mapped"
     },
     {
       "name": "Reddit",
@@ -272,15 +272,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 63,
-      "rising": 48,
+      "rising": 45,
       "repos": {
-        "count": 658,
-        "stars": 6222,
+        "count": 661,
+        "stars": 6232,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1784
+            "stars": 1785
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -290,7 +290,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 895
+            "stars": 896
           }
         ]
       },
@@ -344,15 +344,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 61,
-      "rising": 48,
+      "rising": 45,
       "repos": {
-        "count": 490,
-        "stars": 5502,
+        "count": 491,
+        "stars": 5509,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1784
+            "stars": 1785
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -362,7 +362,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 895
+            "stars": 896
           }
         ]
       },
@@ -481,12 +481,12 @@
       "rising": 0,
       "repos": {
         "count": 6,
-        "stars": 100,
+        "stars": 101,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
+            "stars": 100
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
@@ -742,7 +742,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 37,
+      "rising": 34,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1088,12 +1088,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 99,
+        "stars": 100,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
+            "stars": 100
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1123,6 +1123,112 @@
       "rank": 17
     },
     {
+      "cve_id": "CVE-2026-96655",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.01637,
+      "epss_pct": 0.76162,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 100,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 100
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01949,
+      "epss_pct": 0.80085,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 100,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 100
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 19
+    },
+    {
       "cve_id": "CVE-2026-0322",
       "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
       "vendor": "Palo Alto Networks",
@@ -1142,7 +1248,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 49,
+      "hype": 48,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -1170,112 +1276,6 @@
         },
         {
           "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 18
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.01637,
-      "epss_pct": 0.76162,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 99,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 19
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01949,
-      "epss_pct": 0.80085,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 99,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 99
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1968,8 +1968,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 41,
-      "rising": 17,
+      "hype": 40,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2522,25 +2522,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 36,
-      "rising": 29,
+      "rising": 26,
       "repos": {
-        "count": 45,
-        "stars": 168,
+        "count": 46,
+        "stars": 182,
         "top": [
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 44
+          },
           {
             "full_name": "dimasma0305/CVE-2026-111497-POC",
             "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 42
+            "stars": 43
           },
           {
             "full_name": "trailofbits/brotli-checker",
             "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 40
-          },
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 38
+            "stars": 43
           }
         ]
       },
@@ -2924,9 +2924,9 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 22,
-      "rising": 9,
+      "rising": 7,
       "repos": {
-        "count": 17,
+        "count": 18,
         "stars": 207,
         "top": [
           {
@@ -3086,7 +3086,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3104,24 +3104,24 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-83938",
-      "title": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacke…",
+      "cve_id": "CVE-2026-115995",
+      "title": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4.",
       "vendor": null,
       "product": null,
-      "description": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 10,
+      "description": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads to os command injection. The attack can be launched remotely. Upgrading to version 1.1.11.5 is sufficient to resolve this issue. You should upgrade the affected component. The vendor confirmed early: \"Submission 990502 corresponds to our internal ticket #474 (Go2 chat_go set_volume OS command injection, CWE-78).\"",
+      "cvss": 9.6,
       "severity": "CRITICAL",
-      "epss": 0.00707,
-      "epss_pct": 0.53123,
-      "cwe": "CWE-306",
-      "published": "2026-10-22T22:19:18.540",
+      "epss": 0.01377,
+      "epss_pct": 0.71867,
+      "cwe": "CWE-77",
+      "published": "2026-10-24T23:16:58.323",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 8,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3132,31 +3132,31 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-10-22",
+          "date": "2026-10-24",
           "label": "Published to NVD"
         }
       ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-97785",
-      "title": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
+      "cve_id": "CVE-2026-12665",
+      "title": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS cer…",
       "vendor": null,
       "product": null,
-      "description": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 10,
+      "description": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS certificates with malformed distinguished names during channel connection establishment.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00646,
-      "epss_pct": 0.50655,
-      "cwe": "CWE-287",
-      "published": "2026-10-22T22:20:13.483",
+      "epss": 0.00315,
+      "epss_pct": 0.24227,
+      "cwe": "CWE-121",
+      "published": "2026-10-19T17:17:18.773",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 8,
+      "hype": 17,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3167,7 +3167,7 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-10-22",
+          "date": "2026-10-19",
           "label": "Published to NVD"
         }
       ],
