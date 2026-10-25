@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-25T16:28:55.359Z",
+  "generated_at": "2026-10-25T19:42:13.013Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 9,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 52,
+    "kev_count": 51,
     "kev_total": 1756,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1574 recent"
+      "detail": "1552 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1570 scored"
+      "detail": "1536 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5251 mapped"
+      "detail": "5254 mapped"
     },
     {
       "name": "Reddit",
@@ -63,78 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-0257",
-      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
-      "cvss": 9.1,
-      "severity": "CRITICAL",
-      "epss": 0.95012,
-      "epss_pct": 0.99861,
-      "cwe": "CWE-565",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-05-29",
-        "due_date": "2026-06-01",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 75,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 41,
-        "top": [
-          {
-            "full_name": "sfewer-r7/CVE-2026-0257",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-0257",
-            "stars": 30
-          },
-          {
-            "full_name": "0xBlackash/CVE-2026-0257",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-0257",
-            "stars": 3
-          },
-          {
-            "full_name": "tushargurav28/CVE-2026-0257",
-            "html_url": "https://github.com/tushargurav28/CVE-2026-0257",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-          "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-          "date": "2026-10-20T15:32:27.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-05-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-20",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-21589",
       "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
@@ -196,7 +124,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
       "cve_id": "CVE-2026-88771",
@@ -260,7 +188,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -324,7 +252,151 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 3
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.99981,
+      "epss_pct": 0.99981,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 63,
+      "rising": 48,
+      "repos": {
+        "count": 658,
+        "stars": 6222,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1784
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1002
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 895
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+          "date": "2026-10-25T17:19:46.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-25",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.99997,
+      "epss_pct": 0.99989,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 61,
+      "rising": 48,
+      "repos": {
+        "count": 490,
+        "stars": 5502,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1784
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1002
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 895
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+          "date": "2026-10-25T17:19:46.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-25",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-85706",
@@ -383,7 +455,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -453,7 +525,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-102764",
@@ -516,7 +588,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -588,7 +660,7 @@
           "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -647,7 +719,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -669,8 +741,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
-      "rising": 40,
+      "hype": 53,
+      "rising": 37,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -712,7 +784,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -770,7 +842,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -831,72 +903,6 @@
         {
           "date": "2026-10-02",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99981,
-      "epss_pct": 0.99981,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 53,
-      "rising": 12,
-      "repos": {
-        "count": 654,
-        "stars": 6201,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1784
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1000
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 893
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-23",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 13
@@ -1010,72 +1016,6 @@
       "rank": 15
     },
     {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP has various global state that temporarily points into request memory.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.99997,
-      "epss_pct": 0.99989,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 12,
-      "repos": {
-        "count": 489,
-        "stars": 5491,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1784
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1000
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 893
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-23",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 16
-    },
-    {
       "cve_id": "CVE-2026-105133",
       "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
       "vendor": "Ahsay",
@@ -1122,7 +1062,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1180,7 +1120,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1233,7 +1173,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1286,7 +1226,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -1339,7 +1279,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1381,7 +1321,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1423,7 +1363,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1465,7 +1405,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1519,7 +1459,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-86950",
@@ -1544,7 +1484,7 @@
       "hype": 47,
       "rising": 0,
       "repos": {
-        "count": 6,
+        "count": 7,
         "stars": 20,
         "top": [
           {
@@ -1577,7 +1517,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1626,7 +1566,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1672,7 +1612,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1725,7 +1665,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -1783,7 +1723,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1832,7 +1772,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1890,7 +1830,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1948,7 +1888,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2006,7 +1946,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -2029,7 +1969,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2047,7 +1987,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2088,7 +2028,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2136,7 +2076,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2177,7 +2117,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2230,7 +2170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2278,7 +2218,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2319,7 +2259,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2377,7 +2317,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2425,74 +2365,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "CVE-2026-111497",
-      "vendor": null,
-      "product": null,
-      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.32782,
-      "epss_pct": 0.98336,
-      "cwe": "CWE-252",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 37,
-      "rising": 33,
-      "repos": {
-        "count": 42,
-        "stars": 157,
-        "top": [
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 41
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 37
-          },
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 31
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-          "date": "2026-10-24T11:09:29.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-          "date": "2026-10-23T08:40:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-24",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 44
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2540,7 +2413,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2581,7 +2454,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-42018",
@@ -2629,7 +2502,74 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "CVE-2026-111497",
+      "vendor": null,
+      "product": null,
+      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.32782,
+      "epss_pct": 0.98336,
+      "cwe": "CWE-252",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 36,
+      "rising": 29,
+      "repos": {
+        "count": 45,
+        "stars": 168,
+        "top": [
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 42
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 40
+          },
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 38
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+          "date": "2026-10-24T11:09:29.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+          "date": "2026-10-23T08:40:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-24",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 46
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2670,7 +2610,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2718,7 +2658,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-42016",
@@ -2759,7 +2699,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2800,7 +2740,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2841,7 +2781,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2882,7 +2822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2923,7 +2863,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -2964,7 +2904,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-115560",
@@ -2984,10 +2924,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 22,
-      "rising": 11,
+      "rising": 9,
       "repos": {
-        "count": 16,
-        "stars": 206,
+        "count": 17,
+        "stars": 207,
         "top": [
           {
             "full_name": "syhunt/php2shell-protection",
@@ -2997,7 +2937,7 @@
           {
             "full_name": "murrez/php2shell",
             "html_url": "https://github.com/murrez/php2shell",
-            "stars": 74
+            "stars": 75
           },
           {
             "full_name": "PasqualePillitteri/php2shell-hardening",
@@ -3025,7 +2965,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-88773",
@@ -3078,7 +3018,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-88775",
@@ -3126,7 +3066,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-114575",
@@ -3161,7 +3101,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-83938",
@@ -3181,7 +3121,42 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-22",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-97785",
+      "title": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
+      "vendor": null,
+      "product": null,
+      "description": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.00646,
+      "epss_pct": 0.50655,
+      "cwe": "CWE-287",
+      "published": "2026-10-22T22:20:13.483",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
