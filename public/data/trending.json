@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T01:15:16.549Z",
+  "generated_at": "2026-10-26T06:19:55.341Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 47,
     "kev_total": 1756,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1553 recent"
+      "detail": "1568 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1527 scored"
+      "detail": "1526 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "11 mentions"
+      "detail": "9 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5261 mapped"
+      "detail": "5262 mapped"
     },
     {
       "name": "Reddit",
@@ -83,7 +83,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 73,
+      "hype": 72,
       "rising": 0,
       "repos": {
         "count": 13,
@@ -255,220 +255,6 @@
       "rank": 3
     },
     {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99981,
-      "epss_pct": 0.99981,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 63,
-      "rising": 41,
-      "repos": {
-        "count": 665,
-        "stars": 6269,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1790
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1002
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 902
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-          "date": "2026-10-25T17:19:46.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-25",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP has various global state that temporarily points into request memory.",
-      "vendor": null,
-      "product": null,
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.99997,
-      "epss_pct": 0.99989,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 61,
-      "rising": 41,
-      "repos": {
-        "count": 494,
-        "stars": 5538,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1790
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1002
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 902
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-          "date": "2026-10-25T17:19:46.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "date": "2026-10-23T07:40:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-25",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-96652",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.01821,
-      "epss_pct": 0.78608,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 6,
-        "stars": 101,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 100
-          },
-          {
-            "full_name": "ChrisLPJones/plex2shell-check",
-            "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
-            "stars": 1
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-          "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-          "date": "2026-10-21T07:26:49.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-21",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -529,79 +315,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.86766,
-      "epss_pct": 0.9974,
-      "cwe": "CWE-290",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "stars": 1
-          },
-          {
-            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
-            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
-            "stars": 1
-          },
-          {
-            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-          "date": "2026-10-14T21:20:13.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by Dark Reading"
-        }
-      ],
-      "rank": 8
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -660,7 +374,149 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-96652",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.01821,
+      "epss_pct": 0.78608,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 6,
+        "stars": 101,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 100
+          },
+          {
+            "full_name": "ChrisLPJones/plex2shell-check",
+            "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
+            "stars": 1
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+          "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+          "date": "2026-10-21T07:26:49.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-21",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.86766,
+      "epss_pct": 0.9974,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "stars": 1
+          },
+          {
+            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
+            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "stars": 1
+          },
+          {
+            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "date": "2026-10-14T21:20:13.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by Dark Reading"
+        }
+      ],
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -683,7 +539,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 32,
+      "rising": 27,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -725,7 +581,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 10
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -783,7 +639,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -846,7 +702,73 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.99981,
+      "epss_pct": 0.99981,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 52,
+      "rising": 2,
+      "repos": {
+        "count": 673,
+        "stars": 6320,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1800
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1010
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 908
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -900,7 +822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -954,6 +876,72 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP has various global state that temporarily points into request memory.",
+      "vendor": null,
+      "product": null,
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.99997,
+      "epss_pct": 0.99989,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 50,
+      "rising": 2,
+      "repos": {
+        "count": 501,
+        "stars": 5583,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1800
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1010
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 908
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "date": "2026-10-23T07:40:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 14
     },
     {
@@ -976,7 +964,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 50,
+      "hype": 49,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -1025,7 +1013,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 49,
+      "hype": 48,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -1910,7 +1898,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2415,25 +2403,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 36,
-      "rising": 23,
+      "rising": 17,
       "repos": {
-        "count": 46,
-        "stars": 190,
+        "count": 48,
+        "stars": 209,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
             "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 49
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 45
+            "stars": 57
           },
           {
             "full_name": "dimasma0305/CVE-2026-111497-POC",
             "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 44
+            "stars": 46
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 46
           }
         ]
       },
@@ -2734,11 +2722,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 22,
-      "rising": 6,
+      "hype": 21,
+      "rising": 3,
       "repos": {
-        "count": 19,
-        "stars": 211,
+        "count": 20,
+        "stars": 212,
         "top": [
           {
             "full_name": "syhunt/php2shell-protection",
@@ -2748,7 +2736,7 @@
           {
             "full_name": "murrez/php2shell",
             "html_url": "https://github.com/murrez/php2shell",
-            "stars": 78
+            "stars": 79
           },
           {
             "full_name": "PasqualePillitteri/php2shell-hardening",
@@ -2880,76 +2868,6 @@
       "rank": 53
     },
     {
-      "cve_id": "CVE-2026-114575",
-      "title": "A flaw has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function UploadCustomModule of the file lib/cste_modules/product.so. Executing a manipulation of the argument FileMd5 can lead to command injection. The attack can be launched remotely. The exploit has been published and may be used.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.0221,
-      "epss_pct": 0.82472,
-      "cwe": "CWE-74",
-      "published": "2026-10-22T01:16:58.533",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 4,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-22",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-12665",
-      "title": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS cer…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS certificates with malformed distinguished names during channel connection establishment.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00315,
-      "epss_pct": 0.24227,
-      "cwe": "CWE-121",
-      "published": "2026-10-19T17:17:18.773",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 17,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-19",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
       "cve_id": "CVE-2026-109444",
       "title": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_…",
       "vendor": null,
@@ -2982,7 +2900,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-77930",
@@ -3017,7 +2935,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-101446",
@@ -3052,7 +2970,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-101501",
@@ -3087,7 +3005,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-101503",
@@ -3101,6 +3019,76 @@
       "epss_pct": 0.41071,
       "cwe": null,
       "published": "2026-10-20T22:17:59.557",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-101528",
+      "title": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: D…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Oracle Database.  While the vulnerability is in Oracle Enterprise Manager for Oracle Database, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Oracle Database. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00479,
+      "epss_pct": 0.4107,
+      "cwe": null,
+      "published": "2026-10-20T22:18:02.180",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 17,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-101529",
+      "title": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: D…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Enterprise Manager for Oracle Database.  While the vulnerability is in Oracle Enterprise Manager for Oracle Database, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Enterprise Manager for Oracle Database. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00479,
+      "epss_pct": 0.4107,
+      "cwe": null,
+      "published": "2026-10-20T22:18:02.293",
       "kev": {
         "in_kev": false
       },
