@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T10:38:57.147Z",
+  "generated_at": "2026-10-27T16:42:32.577Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,22 +19,22 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1485 recent"
+      "detail": "1483 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1404 scored"
+      "detail": "1455 scored"
     },
     {
       "name": "BleepingComputer",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -71,8 +71,8 @@
       "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.99981,
-      "epss_pct": 0.99981,
+      "epss": 0.99999,
+      "epss_pct": 0.99998,
       "cwe": "CWE-416",
       "published": "2026-10-21T14:17:09.357",
       "kev": {
@@ -81,10 +81,10 @@
         "due_date": "2026-10-29",
         "ransomware": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": true,
       "hype": 100,
-      "rising": 91,
+      "rising": 60,
       "repos": {
         "count": 694,
         "stars": 6523,
@@ -114,12 +114,6 @@
           "date": "2026-10-27T04:37:59.000Z"
         },
         {
-          "source": "BleepingComputer",
-          "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-          "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-          "date": "2026-10-26T09:19:57.000Z"
-        },
-        {
           "source": "The Hacker News",
           "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
           "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
@@ -130,7 +124,6 @@
       "tags": [
         "kev",
         "actively-exploited",
-        "zero-day",
         "in-the-news",
         "high-epss",
         "poc-available"
@@ -145,8 +138,8 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-10-26",
-          "label": "Covered by BleepingComputer, The Hacker News"
+          "date": "2026-10-27",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 1
@@ -159,8 +152,8 @@
       "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.99997,
-      "epss_pct": 0.99989,
+      "epss": 0.99999,
+      "epss_pct": 0.99999,
       "cwe": "CWE-416",
       "published": "2026-10-21T14:17:09.823",
       "kev": {
@@ -169,10 +162,10 @@
         "due_date": "2026-10-29",
         "ransomware": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": true,
-      "hype": 100,
-      "rising": 54,
+      "hype": 90,
+      "rising": 26,
       "repos": {
         "count": 514,
         "stars": 5783,
@@ -196,12 +189,6 @@
       },
       "media": [
         {
-          "source": "BleepingComputer",
-          "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-          "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-          "date": "2026-10-26T09:19:57.000Z"
-        },
-        {
           "source": "The Hacker News",
           "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
           "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
@@ -212,7 +199,6 @@
       "tags": [
         "kev",
         "actively-exploited",
-        "zero-day",
         "in-the-news",
         "high-epss",
         "poc-available"
@@ -223,12 +209,12 @@
           "label": "Published to NVD"
         },
         {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
         },
         {
           "date": "2026-10-26",
-          "label": "Covered by BleepingComputer, The Hacker News"
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 2
@@ -253,7 +239,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 72,
+      "hype": 71,
       "rising": 0,
       "repos": {
         "count": 13,
@@ -305,7 +291,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.8216,
-      "epss_pct": 0.99652,
+      "epss_pct": 0.99653,
       "cwe": "CWE-20",
       "published": "2026-09-27T17:16:56.260",
       "kev": {
@@ -368,8 +354,8 @@
       "description": "Collabora Online Built-in CODE Server before 26.4.303 (richdocumentscode), a Nextcloud app, allows remote code execution, as exploited in the wild in September and October 2026, a different vulnerability than CVE-2025-66208. This is an OS command injection in proxy.php when the CODE server isn't running (e.g., the product was recently restarted). The vulnerability is not present in standalone Collabora Online servers; only this deployment with CODE Server is affected.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.12328,
-      "epss_pct": 0.96165,
+      "epss": 0.11634,
+      "epss_pct": 0.96027,
       "cwe": "CWE-78",
       "published": "2026-10-14T03:17:20.683",
       "kev": {
@@ -380,8 +366,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 67,
-      "rising": 4,
+      "hype": 66,
+      "rising": 2,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -438,7 +424,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.78162,
-      "epss_pct": 0.99575,
+      "epss_pct": 0.99576,
       "cwe": "CWE-119",
       "published": "2026-09-27T17:16:56.390",
       "kev": {
@@ -560,8 +546,8 @@
       "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.20341,
-      "epss_pct": 0.97462,
+      "epss": 0.1895,
+      "epss_pct": 0.97286,
       "cwe": "CWE-290",
       "published": "2026-10-15T21:17:00.117",
       "kev": {
@@ -624,7 +610,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.86766,
-      "epss_pct": 0.9974,
+      "epss_pct": 0.99741,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -688,6 +674,76 @@
       "rank": 9
     },
     {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.26166,
+      "epss_pct": 0.97984,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 57,
+      "rising": 38,
+      "repos": {
+        "count": 6,
+        "stars": 19,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 10
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 6
+          },
+          {
+            "full_name": "java99999/CVE-2026-86950-POC",
+            "html_url": "https://github.com/java99999/CVE-2026-86950-POC",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+          "date": "2026-10-27T13:59:09.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 10
+    },
+    {
       "cve_id": "CVE-2026-102489",
       "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
       "vendor": "Zammad GmbH",
@@ -696,7 +752,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.01955,
-      "epss_pct": 0.80128,
+      "epss_pct": 0.80161,
       "cwe": "CWE-384",
       "published": "2026-09-30T17:16:40.550",
       "kev": {
@@ -748,7 +804,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -759,7 +815,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.11388,
-      "epss_pct": 0.95965,
+      "epss_pct": 0.95971,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -806,7 +862,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -817,7 +873,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.90491,
-      "epss_pct": 0.99799,
+      "epss_pct": 0.998,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -860,7 +916,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -870,8 +926,8 @@
       "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.86266,
-      "epss_pct": 0.99731,
+      "epss": 0.81763,
+      "epss_pct": 0.99643,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -914,7 +970,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -925,7 +981,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.01821,
-      "epss_pct": 0.78606,
+      "epss_pct": 0.78641,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -972,7 +1028,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -982,8 +1038,8 @@
       "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
       "cvss": 7.3,
       "severity": "HIGH",
-      "epss": 0.79236,
-      "epss_pct": 0.99596,
+      "epss": 0.7947,
+      "epss_pct": 0.99601,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1021,7 +1077,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1032,7 +1088,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01785,
-      "epss_pct": 0.78151,
+      "epss_pct": 0.78187,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1079,7 +1135,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1121,7 +1177,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1163,7 +1219,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1174,7 +1230,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.99497,
-      "epss_pct": 0.99944,
+      "epss_pct": 0.99945,
       "cwe": "CWE-284",
       "published": null,
       "kev": {
@@ -1205,7 +1261,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1259,7 +1315,81 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "CVE-2026-111497",
+      "vendor": null,
+      "product": null,
+      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.55483,
+      "epss_pct": 0.9903,
+      "cwe": "CWE-252",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 48,
+      "rising": 27,
+      "repos": {
+        "count": 58,
+        "stars": 279,
+        "top": [
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 70
+          },
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 59
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 55
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+          "date": "2026-10-26T17:45:57.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+          "date": "2026-10-24T11:09:29.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+          "date": "2026-10-23T08:40:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1270,7 +1400,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.01637,
-      "epss_pct": 0.76169,
+      "epss_pct": 0.76211,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1312,7 +1442,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -1323,7 +1453,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01949,
-      "epss_pct": 0.80079,
+      "epss_pct": 0.80113,
       "cwe": "CWE-84",
       "published": null,
       "kev": {
@@ -1365,53 +1495,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
-    },
-    {
-      "cve_id": "CVE-2026-0322",
-      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.0174,
-      "epss_pct": 0.77566,
-      "cwe": "CWE-94",
-      "published": "2026-10-14T18:17:07.743",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1460,135 +1544,50 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
+      "cve_id": "CVE-2026-0322",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss": 7.2,
       "severity": "HIGH",
-      "epss": 0.26166,
-      "epss_pct": 0.9798,
-      "cwe": "CWE-787",
-      "published": null,
+      "epss": 0.0174,
+      "epss_pct": 0.77605,
+      "cwe": "CWE-94",
+      "published": "2026-10-14T18:17:07.743",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
       "hype": 46,
       "rising": 0,
       "repos": {
-        "count": 6,
-        "stars": 19,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 10
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 6
-          },
-          {
-            "full_name": "java99999/CVE-2026-86950-POC",
-            "html_url": "https://github.com/java99999/CVE-2026-86950-POC",
-            "stars": 1
-          }
-        ]
+        "count": 0,
+        "stars": 0,
+        "top": []
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "poc-available"
+        "zero-day"
       ],
       "timeline": [
         {
-          "date": "2026-09-29",
+          "date": "2026-10-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-14",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "CVE-2026-111497",
-      "vendor": null,
-      "product": null,
-      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.36027,
-      "epss_pct": 0.98463,
-      "cwe": "CWE-252",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 46,
-      "rising": 31,
-      "repos": {
-        "count": 58,
-        "stars": 279,
-        "top": [
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 70
-          },
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 59
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 55
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-          "date": "2026-10-26T17:45:57.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-          "date": "2026-10-24T11:09:29.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-          "date": "2026-10-23T08:40:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 26
@@ -1602,7 +1601,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00857,
-      "epss_pct": 0.58166,
+      "epss_pct": 0.58237,
       "cwe": "CWE-269",
       "published": "2026-09-30T17:16:40.707",
       "kev": {
@@ -1648,7 +1647,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.24938,
-      "epss_pct": 0.97899,
+      "epss_pct": 0.97903,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1701,7 +1700,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.38928,
-      "epss_pct": 0.98579,
+      "epss_pct": 0.98582,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -1759,7 +1758,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.5414,
-      "epss_pct": 0.99,
+      "epss_pct": 0.99001,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -1808,7 +1807,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.29543,
-      "epss_pct": 0.98175,
+      "epss_pct": 0.98178,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1866,7 +1865,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.02277,
-      "epss_pct": 0.82992,
+      "epss_pct": 0.83022,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1924,7 +1923,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.2239,
-      "epss_pct": 0.97678,
+      "epss_pct": 0.97681,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -1982,7 +1981,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.01025,
-      "epss_pct": 0.63335,
+      "epss_pct": 0.63396,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -1993,8 +1992,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 40,
-      "rising": 4,
+      "hype": 39,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2023,7 +2022,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02528,
-      "epss_pct": 0.84783,
+      "epss_pct": 0.84811,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2064,7 +2063,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.00967,
-      "epss_pct": 0.615,
+      "epss_pct": 0.61562,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -2112,7 +2111,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.30244,
-      "epss_pct": 0.98209,
+      "epss_pct": 0.98212,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2153,7 +2152,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08189,
-      "epss_pct": 0.94832,
+      "epss_pct": 0.94841,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2206,7 +2205,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03252,
-      "epss_pct": 0.88253,
+      "epss_pct": 0.88274,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2254,7 +2253,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.0157,
-      "epss_pct": 0.75199,
+      "epss_pct": 0.7524,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2302,7 +2301,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01343,
-      "epss_pct": 0.71162,
+      "epss_pct": 0.71211,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2343,7 +2342,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.04573,
-      "epss_pct": 0.91556,
+      "epss_pct": 0.91572,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2401,7 +2400,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02152,
-      "epss_pct": 0.82022,
+      "epss_pct": 0.82051,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2449,7 +2448,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.09813,
-      "epss_pct": 0.95516,
+      "epss_pct": 0.95524,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2490,7 +2489,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.04114,
-      "epss_pct": 0.90709,
+      "epss_pct": 0.90725,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2531,7 +2530,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00934,
-      "epss_pct": 0.60507,
+      "epss_pct": 0.60575,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2579,7 +2578,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01384,
-      "epss_pct": 0.72007,
+      "epss_pct": 0.72055,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2620,7 +2619,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02778,
-      "epss_pct": 0.86274,
+      "epss_pct": 0.86298,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2661,7 +2660,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00625,
-      "epss_pct": 0.49674,
+      "epss_pct": 0.4975,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -2702,7 +2701,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.14064,
+      "epss_pct": 0.14117,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -2733,6 +2732,71 @@
         }
       ],
       "rank": 50
+    },
+    {
+      "cve_id": "CVE-2026-112900",
+      "title": "Pillow is a Python imaging library.",
+      "vendor": null,
+      "product": null,
+      "description": "Pillow is a Python imaging library. From 2.6.0 until 13.0.0, Pillow is vulnerable to argument injection when invoking Ghostscript for EPS input. EpsImagePlugin.Ghostscript passes a caller-controlled input filename after -f without converting it to a safe absolute path, so a name beginning with a hyphen can be interpreted as a Ghostscript option. An attacker who controls the filename can inject Ghostscript arguments. Arbitrary command execution specifically requires a leading @ argument-file filename and control of the referenced text file containing additional Ghostscript arguments; the reported chain reproduces with the default -dSAFER invocation. This issue is fixed in version 13.0.0.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01064,
+      "epss_pct": 0.64489,
+      "cwe": "CWE-78",
+      "published": "2026-10-19T22:17:10.160",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 27,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "techupdate24/python-pillow-rce-cve-2026-112900",
+            "html_url": "https://github.com/techupdate24/python-pillow-rce-cve-2026-112900",
+            "stars": 0
+          },
+          {
+            "full_name": "kavin-jindal/CVE-2026-112900-PoC",
+            "html_url": "https://github.com/kavin-jindal/CVE-2026-112900-PoC",
+            "stars": 0
+          },
+          {
+            "full_name": "moprius/CVE-2026-112900-Pillow-PoC",
+            "html_url": "https://github.com/moprius/CVE-2026-112900-Pillow-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+          "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+          "date": "2026-10-23T09:36:00.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-115560",
@@ -2793,7 +2857,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-88773",
@@ -2804,7 +2868,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03359,
-      "epss_pct": 0.88635,
+      "epss_pct": 0.88655,
       "cwe": "CWE-444",
       "published": "2026-09-27T17:16:56.507",
       "kev": {
@@ -2846,7 +2910,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-88775",
@@ -2857,7 +2921,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00719,
-      "epss_pct": 0.5361,
+      "epss_pct": 0.53679,
       "cwe": "CWE-120",
       "published": "2026-09-27T17:16:56.750",
       "kev": {
@@ -2894,7 +2958,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-116231",
@@ -2905,9 +2969,44 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00436,
-      "epss_pct": 0.37632,
+      "epss_pct": 0.37701,
       "cwe": "CWE-74",
       "published": "2026-10-26T08:17:17.620",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 15,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-116485",
+      "title": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modi…",
+      "vendor": null,
+      "product": null,
+      "description": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00668,
+      "epss_pct": 0.51694,
+      "cwe": "CWE-306",
+      "published": "2026-10-26T14:16:37.040",
       "kev": {
         "in_kev": false
       },
@@ -2929,42 +3028,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-116485",
-      "title": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modi…",
-      "vendor": null,
-      "product": null,
-      "description": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-306",
-      "published": "2026-10-26T14:16:37.040",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-112346",
@@ -2974,8 +3038,8 @@
       "description": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSocket requests to execute arbitrary shell commands as root in the sandbox, access the mounted workspace, and read plaintext secrets from the secrets store.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.01014,
+      "epss_pct": 0.63074,
       "cwe": "CWE-1327",
       "published": "2026-10-26T16:17:14.110",
       "kev": {
@@ -2984,42 +3048,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
-    },
-    {
-      "cve_id": "CVE-2026-116504",
-      "title": "A vulnerability has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. This affects the function setCloudUpgradeFW of the file lib/cste_modules/upgrade.so of the component Cloud Upgrade. The manipulation of the argument FileName leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-74",
-      "published": "2026-10-26T21:18:12.420",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 18,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3044,8 +3073,8 @@
       "description": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected is the function apmib_set of the file firewall.so. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.0188,
+      "epss_pct": 0.79336,
       "cwe": "CWE-74",
       "published": "2026-10-26T21:18:13.047",
       "kev": {
@@ -3054,7 +3083,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3079,8 +3108,8 @@
       "description": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Performing a manipulation of the argument CONTENT_LENGTH results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00609,
+      "epss_pct": 0.48926,
       "cwe": "CWE-119",
       "published": "2026-10-26T22:16:54.373",
       "kev": {
@@ -3089,7 +3118,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3107,24 +3136,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-92885",
-      "title": "The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all ve…",
+      "cve_id": "CVE-2026-117532",
+      "title": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin …",
       "vendor": null,
       "product": null,
-      "description": "The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.0.6.2 via the qode_membership_check_facebook_user AJAX action. This is due to a typographic error in the Facebook OAuth token verification guard within the qode_membership_login_user_from_social_network function — the guard condition tests an undefined variable ($check_social_useqoder instead of $check_social_user), causing empty() to always return true and rendering the Graph API token verification branch dead code, leaving wp_set_auth_cookie() reachable with no credential or token validation whatsoever. This makes it possible for unauthenticated attackers to log in as any existing WordPress account — including Administrator-level accounts — by supplying a known or enumerated administrator login name (rather than an email address) in the response[email] parameter, which the fallback path in get_user_by('login', $email) resolves to the matching account. Exploitation does require harvesting a valid qode_validate_facebook_login nonce, but this nonce is rendered on any public front-end page containing the [qode_user_login] or [qode_user_register] shortcode and is therefore obtainable without any prior authentication.",
+      "description": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens. Attackers can force the session-tied secret into a predictable state and forge tokens for accounts like admin, gaining backend access and code execution outside live mode.",
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": null,
       "epss_pct": null,
       "cwe": "CWE-287",
-      "published": "2026-10-27T09:16:34.630",
+      "published": "2026-10-27T11:17:33.597",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 20,
+      "rising": 19,
       "repos": {
         "count": 0,
         "stars": 0,
