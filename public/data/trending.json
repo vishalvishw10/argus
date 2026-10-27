@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T16:42:32.577Z",
+  "generated_at": "2026-10-27T21:21:47.026Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 11,
     "reddit_upvotes": 0,
-    "kev_count": 49,
-    "kev_total": 1758,
+    "kev_count": 51,
+    "kev_total": 1760,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1758 entries"
+      "detail": "1760 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1483 recent"
+      "detail": "1490 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1455 scored"
+      "detail": "1436 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5224 mapped"
+      "detail": "5303 mapped"
     },
     {
       "name": "Reddit",
@@ -84,25 +84,25 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 100,
-      "rising": 60,
+      "rising": 56,
       "repos": {
-        "count": 694,
-        "stars": 6523,
+        "count": 709,
+        "stars": 6592,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1847
+            "stars": 1866
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1025
+            "stars": 1028
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 934
+            "stars": 943
           }
         ]
       },
@@ -165,25 +165,25 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 90,
-      "rising": 26,
+      "rising": 25,
       "repos": {
-        "count": 514,
-        "stars": 5783,
+        "count": 524,
+        "stars": 5847,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1847
+            "stars": 1866
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1025
+            "stars": 1028
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 934
+            "stars": 943
           }
         ]
       },
@@ -218,6 +218,89 @@
         }
       ],
       "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.55483,
+      "epss_pct": 0.9903,
+      "cwe": "CWE-252",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 89,
+      "rising": 58,
+      "repos": {
+        "count": 62,
+        "stars": 300,
+        "top": [
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 74
+          },
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 61
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 56
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+          "date": "2026-10-26T17:45:57.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+          "date": "2026-10-24T11:09:29.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+          "date": "2026-10-23T08:40:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Covered by The Hacker News"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -280,70 +363,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-88771",
-      "title": "Citrix NetScaler Improper Input Validation Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.8216,
-      "epss_pct": 0.99653,
-      "cwe": "CWE-20",
-      "published": "2026-09-27T17:16:56.260",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-27",
-        "due_date": "2026-09-30",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 69,
-      "rising": 0,
-      "repos": {
-        "count": 12,
-        "stars": 45,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
-            "stars": 22
-          },
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 20
-          },
-          {
-            "full_name": "technion/netscaler_scanner",
-            "html_url": "https://github.com/technion/netscaler_scanner",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 4
     },
     {
@@ -367,7 +386,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 66,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -414,70 +433,6 @@
         }
       ],
       "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-88772",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.78162,
-      "epss_pct": 0.99576,
-      "cwe": "CWE-119",
-      "published": "2026-09-27T17:16:56.390",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-27",
-        "due_date": "2026-09-30",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 66,
-      "rising": 0,
-      "repos": {
-        "count": 8,
-        "stars": 44,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 20
-          },
-          {
-            "full_name": "murrez/CVE-2026-88772",
-            "html_url": "https://github.com/murrez/CVE-2026-88772",
-            "stars": 12
-          },
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
-            "stars": 11
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-09-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -536,7 +491,208 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.86766,
+      "epss_pct": 0.99741,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
+            "stars": 1
+          },
+          {
+            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
+            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "stars": 1
+          },
+          {
+            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "Dark Reading",
+          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "date": "2026-10-14T21:20:13.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Covered by Dark Reading"
+        }
+      ],
       "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.26166,
+      "epss_pct": 0.97984,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 58,
+      "rising": 36,
+      "repos": {
+        "count": 7,
+        "stars": 20,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 10
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 6
+          },
+          {
+            "full_name": "34zY/CVE-2026-86950",
+            "html_url": "https://github.com/34zY/CVE-2026-86950",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+          "date": "2026-10-27T13:59:09.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "cve_id": "CVE-2026-88771",
+      "title": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.8216,
+      "epss_pct": 0.99653,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 0,
+      "repos": {
+        "count": 12,
+        "stars": 46,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
+            "stars": 22
+          },
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 21
+          },
+          {
+            "full_name": "technion/netscaler_scanner",
+            "html_url": "https://github.com/technion/netscaler_scanner",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-102764",
@@ -558,7 +714,7 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
+      "hype": 57,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -599,149 +755,66 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 10
     },
     {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
+      "cve_id": "CVE-2026-88772",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
+      "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.86766,
-      "epss_pct": 0.99741,
-      "cwe": "CWE-290",
+      "epss": 0.78162,
+      "epss_pct": 0.99576,
+      "cwe": "CWE-119",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
         "ransomware": false
       },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 57,
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 56,
       "rising": 0,
       "repos": {
-        "count": 4,
-        "stars": 1,
+        "count": 8,
+        "stars": 45,
         "top": [
           {
-            "full_name": "ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "html_url": "https://github.com/ApexBreach/CVE-2026-104935-Proof-of-concept",
-            "stars": 1
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "stars": 21
           },
           {
-            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "stars": 0
+            "full_name": "murrez/CVE-2026-88772",
+            "html_url": "https://github.com/murrez/CVE-2026-88772",
+            "stars": 12
           },
           {
-            "full_name": "maxprog-svg/CVE-2026-104935",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-104935",
-            "stars": 0
+            "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88772",
+            "stars": 11
           }
         ]
       },
-      "media": [
-        {
-          "source": "Dark Reading",
-          "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-          "date": "2026-10-14T21:20:13.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "zero-day",
-        "in-the-news",
         "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-13",
+          "date": "2026-09-27",
           "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-14",
-          "label": "Covered by Dark Reading"
         }
       ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.26166,
-      "epss_pct": 0.97984,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 57,
-      "rising": 38,
-      "repos": {
-        "count": 6,
-        "stars": 19,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 10
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 6
-          },
-          {
-            "full_name": "java99999/CVE-2026-86950-POC",
-            "html_url": "https://github.com/java99999/CVE-2026-86950-POC",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-          "date": "2026-10-27T13:59:09.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 10
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -804,7 +877,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -830,12 +903,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 20,
+        "stars": 21,
         "top": [
           {
             "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
             "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 20
+            "stars": 21
           },
           {
             "full_name": "orjanj/netscaler_threat_hunt_helper",
@@ -862,7 +935,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -916,7 +989,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-96652",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.01821,
+      "epss_pct": 0.78641,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 103,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 102
+          },
+          {
+            "full_name": "ChrisLPJones/plex2shell-check",
+            "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
+            "stars": 1
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -970,65 +1101,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
-    },
-    {
-      "cve_id": "CVE-2026-96652",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.01821,
-      "epss_pct": 0.78641,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 49,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 102,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 101
-          },
-          {
-            "full_name": "ChrisLPJones/plex2shell-check",
-            "html_url": "https://github.com/ChrisLPJones/plex2shell-check",
-            "stars": 1
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1077,7 +1150,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1103,12 +1176,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 101,
+        "stars": 102,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 101
+            "stars": 102
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1135,7 +1208,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1177,7 +1250,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1219,7 +1292,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1261,7 +1334,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1315,80 +1388,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "CVE-2026-111497",
-      "vendor": null,
-      "product": null,
-      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": 0.55483,
-      "epss_pct": 0.9903,
-      "cwe": "CWE-252",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 48,
-      "rising": 27,
-      "repos": {
-        "count": 58,
-        "stars": 279,
-        "top": [
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 70
-          },
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 59
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 55
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-          "date": "2026-10-26T17:45:57.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-          "date": "2026-10-24T11:09:29.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-          "date": "2026-10-23T08:40:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 22
     },
     {
@@ -1415,12 +1414,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 101,
+        "stars": 102,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 101
+            "stars": 102
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1468,12 +1467,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 101,
+        "stars": 102,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 101
+            "stars": 102
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1496,6 +1495,59 @@
         }
       ],
       "rank": 24
+    },
+    {
+      "cve_id": "CVE-2026-0322",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.0174,
+      "epss_pct": 0.77605,
+      "cwe": "CWE-94",
+      "published": "2026-10-14T18:17:07.743",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Ife-ella/CVE-vulnerability",
+            "html_url": "https://github.com/Ife-ella/CVE-vulnerability",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1544,53 +1596,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
-      "cve_id": "CVE-2026-0322",
-      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.0174,
-      "epss_pct": 0.77605,
-      "cwe": "CWE-94",
-      "published": "2026-10-14T18:17:07.743",
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.30582,
+      "epss_pct": 0.98231,
+      "cwe": "CWE-434",
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
         "ransomware": false
       },
-      "zero_day": true,
+      "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 0,
+      "rising": 33,
       "repos": {
-        "count": 0,
+        "count": 1,
         "stars": 0,
-        "top": []
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-48356",
+            "html_url": "https://github.com/abraxas/CVE-2026-48356",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "zero-day"
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-14",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-14",
+          "date": "2026-10-27",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -1636,7 +1690,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1689,7 +1743,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -1747,7 +1801,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -1796,7 +1850,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-76461",
@@ -1854,7 +1908,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -1912,7 +1966,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -1970,7 +2024,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -1993,7 +2047,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2011,7 +2065,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2052,7 +2106,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2100,7 +2154,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2141,7 +2195,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2194,7 +2248,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2242,7 +2296,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
+    },
+    {
+      "cve_id": "CVE-2026-104286",
+      "title": "Fortinet FortiMail Path Traversal Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiMail",
+      "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.04573,
+      "epss_pct": 0.91572,
+      "cwe": "CWE-22",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-01",
+        "due_date": "2026-10-04",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "ShadowForge-Cyber/CVE-2026-104286-POC",
+            "html_url": "https://github.com/ShadowForge-Cyber/CVE-2026-104286-POC",
+            "stars": 0
+          },
+          {
+            "full_name": "techupdate24/fortimail-zero-day-cve-2026-104286",
+            "html_url": "https://github.com/techupdate24/fortimail-zero-day-cve-2026-104286",
+            "stars": 0
+          },
+          {
+            "full_name": "kh20134/fortimail-cve-2026-104286-response",
+            "html_url": "https://github.com/kh20134/fortimail-cve-2026-104286-response",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-01",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 41
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2290,7 +2402,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 42
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2312,7 +2424,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 36,
+      "hype": 35,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -2331,65 +2443,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-104286",
-      "title": "Fortinet FortiMail Path Traversal Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiMail",
-      "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.04573,
-      "epss_pct": 0.91572,
-      "cwe": "CWE-22",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-01",
-        "due_date": "2026-10-04",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "techupdate24/fortimail-zero-day-cve-2026-104286",
-            "html_url": "https://github.com/techupdate24/fortimail-zero-day-cve-2026-104286",
-            "stars": 0
-          },
-          {
-            "full_name": "kh20134/fortimail-cve-2026-104286-response",
-            "html_url": "https://github.com/kh20134/fortimail-cve-2026-104286-response",
-            "stars": 0
-          },
-          {
-            "full_name": "CompleTetech-Security/fortimail-cve-2026-104286-check",
-            "html_url": "https://github.com/CompleTetech-Security/fortimail-cve-2026-104286-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-01",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2437,7 +2491,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2478,7 +2532,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2519,7 +2573,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2567,7 +2621,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2608,7 +2662,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2649,7 +2703,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -2690,7 +2744,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -2731,7 +2785,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-112900",
@@ -2796,7 +2850,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-115560",
@@ -2815,11 +2869,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 21,
+      "hype": 20,
       "rising": 0,
       "repos": {
         "count": 20,
-        "stars": 222,
+        "stars": 225,
         "top": [
           {
             "full_name": "syhunt/php2shell-protection",
@@ -2829,7 +2883,7 @@
           {
             "full_name": "murrez/php2shell",
             "html_url": "https://github.com/murrez/php2shell",
-            "stars": 85
+            "stars": 88
           },
           {
             "full_name": "PasqualePillitteri/php2shell-hardening",
@@ -2857,108 +2911,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-88773",
-      "title": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler AD…",
-      "vendor": null,
-      "product": null,
-      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.03359,
-      "epss_pct": 0.88655,
-      "cwe": "CWE-444",
-      "published": "2026-09-27T17:16:56.507",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 21,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 20
-          },
-          {
-            "full_name": "Scyrix-LLC/CVE-2026-88773",
-            "html_url": "https://github.com/Scyrix-LLC/CVE-2026-88773",
-            "stars": 1
-          },
-          {
-            "full_name": "CompleTetech-Security/netscaler-cve-2026-88773-check",
-            "html_url": "https://github.com/CompleTetech-Security/netscaler-cve-2026-88773-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-88775",
-      "title": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.",
-      "vendor": null,
-      "product": null,
-      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00719,
-      "epss_pct": 0.53679,
-      "cwe": "CWE-120",
-      "published": "2026-09-27T17:16:56.750",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 20,
-        "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 20
-          },
-          {
-            "full_name": "CompleTetech-Security/netscaler-cve-2026-88775-check",
-            "html_url": "https://github.com/CompleTetech-Security/netscaler-cve-2026-88775-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-27",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
     },
     {
       "cve_id": "CVE-2026-116231",
@@ -2972,6 +2925,41 @@
       "epss_pct": 0.37701,
       "cwe": "CWE-74",
       "published": "2026-10-26T08:17:17.620",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-116485",
+      "title": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modi…",
+      "vendor": null,
+      "product": null,
+      "description": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00668,
+      "epss_pct": 0.51694,
+      "cwe": "CWE-306",
+      "published": "2026-10-26T14:16:37.040",
       "kev": {
         "in_kev": false
       },
@@ -2996,24 +2984,24 @@
       "rank": 55
     },
     {
-      "cve_id": "CVE-2026-116485",
-      "title": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modi…",
+      "cve_id": "CVE-2026-112346",
+      "title": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the …",
       "vendor": null,
       "product": null,
-      "description": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
+      "description": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSocket requests to execute arbitrary shell commands as root in the sandbox, access the mounted workspace, and read plaintext secrets from the secrets store.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00668,
-      "epss_pct": 0.51694,
-      "cwe": "CWE-306",
-      "published": "2026-10-26T14:16:37.040",
+      "epss": 0.01014,
+      "epss_pct": 0.63074,
+      "cwe": "CWE-1327",
+      "published": "2026-10-26T16:17:14.110",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3031,17 +3019,17 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-112346",
-      "title": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the …",
+      "cve_id": "CVE-2026-116506",
+      "title": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
       "vendor": null,
       "product": null,
-      "description": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSocket requests to execute arbitrary shell commands as root in the sandbox, access the mounted workspace, and read plaintext secrets from the secrets store.",
-      "cvss": 9.8,
+      "description": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected is the function apmib_set of the file firewall.so. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.01014,
-      "epss_pct": 0.63074,
-      "cwe": "CWE-1327",
-      "published": "2026-10-26T16:17:14.110",
+      "epss": 0.0188,
+      "epss_pct": 0.79336,
+      "cwe": "CWE-74",
+      "published": "2026-10-26T21:18:13.047",
       "kev": {
         "in_kev": false
       },
@@ -3066,41 +3054,6 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-116506",
-      "title": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected is the function apmib_set of the file firewall.so. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.0188,
-      "epss_pct": 0.79336,
-      "cwe": "CWE-74",
-      "published": "2026-10-26T21:18:13.047",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 17,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
       "cve_id": "CVE-2026-116508",
       "title": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104.",
       "vendor": null,
@@ -3118,7 +3071,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3133,7 +3086,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-117532",
@@ -3147,6 +3100,49 @@
       "epss_pct": null,
       "cwe": "CWE-287",
       "published": "2026-10-27T11:17:33.597",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 18,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "asvorg/CVE-2026-117532-poc",
+            "html_url": "https://github.com/asvorg/CVE-2026-117532-poc",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-117564",
+      "title": "nest-admin before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to forg…",
+      "vendor": null,
+      "product": null,
+      "description": "nest-admin before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to forge administrator tokens by using a hardcoded JWT_SECRET committed in .env.production. Attackers can sign tokens with the known secret that JwtStrategy and RbacGuard trust, impersonating any user ID or claiming the admin role for full administrative access.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-321",
+      "published": "2026-10-27T14:16:38.720",
       "kev": {
         "in_kev": false
       },
