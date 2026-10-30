@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T07:13:30.613Z",
+  "generated_at": "2026-10-30T14:15:49.918Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 10,
+    "media_mentions": 12,
     "reddit_upvotes": 0,
     "kev_count": 56,
     "kev_total": 1764,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1108 recent"
+      "detail": "1170 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1099 scored"
+      "detail": "1097 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "14 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "2 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5346 mapped"
+      "detail": "5351 mapped"
     },
     {
       "name": "Reddit",
@@ -83,11 +83,11 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 99,
-      "rising": 26,
+      "hype": 98,
+      "rising": 20,
       "repos": {
-        "count": 77,
-        "stars": 365,
+        "count": 79,
+        "stars": 368,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -102,7 +102,7 @@
           {
             "full_name": "trailofbits/brotli-checker",
             "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 64
+            "stars": 65
           }
         ]
       },
@@ -164,26 +164,26 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 91,
-      "rising": 6,
+      "hype": 90,
+      "rising": 3,
       "repos": {
-        "count": 731,
-        "stars": 6755,
+        "count": 736,
+        "stars": 6777,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1899
+            "stars": 1908
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1043
+            "stars": 1046
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 965
+            "stars": 966
           }
         ]
       },
@@ -220,6 +220,88 @@
       "rank": 2
     },
     {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.18427,
+      "epss_pct": 0.97229,
+      "cwe": "CWE-190",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 87,
+      "rising": 100,
+      "repos": {
+        "count": 6,
+        "stars": 65,
+        "top": [
+          {
+            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
+            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
+            "stars": 63
+          },
+          {
+            "full_name": "gandli/cve-2026-97229-lab",
+            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
+            "stars": 1
+          },
+          {
+            "full_name": "murat-levi/gitlab-rce-toolkit",
+            "html_url": "https://github.com/murat-levi/gitlab-rce-toolkit",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+          "url": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+          "date": "2026-10-30T09:32:27.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+          "date": "2026-10-30T07:27:05.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+          "date": "2026-10-29T09:05:39.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-30",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 3
+    },
+    {
       "cve_id": "CVE-2026-109619",
       "title": "PHP Stale Internal Request-State Vulnerability",
       "vendor": "PHP Group",
@@ -239,26 +321,26 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 80,
-      "rising": 6,
+      "hype": 79,
+      "rising": 3,
       "repos": {
-        "count": 539,
-        "stars": 6003,
+        "count": 542,
+        "stars": 6029,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1899
+            "stars": 1908
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1043
+            "stars": 1046
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 965
+            "stars": 966
           }
         ]
       },
@@ -280,7 +362,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -302,8 +384,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 72,
-      "rising": 13,
+      "hype": 71,
+      "rising": 9,
       "repos": {
         "count": 4,
         "stars": 8,
@@ -353,7 +435,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -416,7 +498,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-20127",
@@ -439,7 +521,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 33,
+      "rising": 29,
       "repos": {
         "count": 9,
         "stars": 62,
@@ -487,7 +569,7 @@
           "label": "Covered by BleepingComputer"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -550,76 +632,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.18427,
-      "epss_pct": 0.97229,
-      "cwe": "CWE-190",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 65,
-      "rising": 57,
-      "repos": {
-        "count": 5,
-        "stars": 64,
-        "top": [
-          {
-            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
-            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
-            "stars": 63
-          },
-          {
-            "full_name": "gandli/cve-2026-97229-lab",
-            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
-            "stars": 1
-          },
-          {
-            "full_name": "AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE",
-            "html_url": "https://github.com/AmpedWasTaken/CVE-2026-97229-GitLab-CI-CD-Regex-Compiler-RCE",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-          "date": "2026-10-29T09:05:39.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-29",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 8
     },
     {
@@ -646,12 +658,12 @@
       "rising": 0,
       "repos": {
         "count": 25,
-        "stars": 138,
+        "stars": 139,
         "top": [
           {
             "full_name": "ressl/cve-2026-87902-poc",
             "html_url": "https://github.com/ressl/cve-2026-87902-poc",
-            "stars": 43
+            "stars": 44
           },
           {
             "full_name": "abraxas/CVE-2026-87902",
@@ -741,76 +753,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.26166,
-      "epss_pct": 0.9799,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 57,
-      "rising": 4,
-      "repos": {
-        "count": 7,
-        "stars": 20,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 10
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 6
-          },
-          {
-            "full_name": "34zY/CVE-2026-86950",
-            "html_url": "https://github.com/34zY/CVE-2026-86950",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-          "date": "2026-10-27T13:59:09.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -869,6 +811,76 @@
         {
           "date": "2026-10-16",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.26166,
+      "epss_pct": 0.9799,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 56,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 20,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 10
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 6
+          },
+          {
+            "full_name": "34zY/CVE-2026-86950",
+            "html_url": "https://github.com/34zY/CVE-2026-86950",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+          "date": "2026-10-27T13:59:09.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 12
@@ -953,9 +965,9 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 22,
+      "rising": 19,
       "repos": {
-        "count": 17,
+        "count": 18,
         "stars": 31,
         "top": [
           {
@@ -1074,7 +1086,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 52,
-      "rising": 58,
+      "rising": 52,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1185,7 +1197,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 48,
+      "rising": 42,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1458,12 +1470,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 103,
+        "stars": 104,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 102
+            "stars": 103
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
@@ -1693,7 +1705,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 47,
-      "rising": 14,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1793,12 +1805,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 102,
+        "stars": 103,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 102
+            "stars": 103
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1826,112 +1838,6 @@
         }
       ],
       "rank": 30
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.01637,
-      "epss_pct": 0.76275,
-      "cwe": "CWE-918",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 102,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 102
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
-    },
-    {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01949,
-      "epss_pct": 0.80166,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 102,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 102
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1981,6 +1887,112 @@
         },
         {
           "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-96655",
+      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.01637,
+      "epss_pct": 0.76275,
+      "cwe": "CWE-918",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 103,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 103
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01949,
+      "epss_pct": 0.80166,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 103,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 103
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2167,7 +2179,7 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 19,
+        "stars": 20,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-67279-86060-Toolkit",
@@ -2177,7 +2189,7 @@
           {
             "full_name": "gagaltotal/CVE-2026-mikrotik-poc",
             "html_url": "https://github.com/gagaltotal/CVE-2026-mikrotik-poc",
-            "stars": 6
+            "stars": 7
           },
           {
             "full_name": "HackSpeak/CVE-2026-67279",
@@ -2328,7 +2340,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 39,
+      "hype": 38,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -3094,7 +3106,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 25,
+      "rising": 20,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3142,7 +3154,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 6,
+      "rising": 5,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -3238,7 +3250,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 1,
         "stars": 0,
