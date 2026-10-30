@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-30T14:15:49.918Z",
+  "generated_at": "2026-10-30T19:27:12.154Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 12,
     "reddit_upvotes": 0,
-    "kev_count": 56,
-    "kev_total": 1764,
+    "kev_count": 58,
+    "kev_total": 1766,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1764 entries"
+      "detail": "1766 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1170 recent"
+      "detail": "1161 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1097 scored"
+      "detail": "1122 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "14 mentions"
+      "detail": "13 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5351 mapped"
+      "detail": "5357 mapped"
     },
     {
       "name": "Reddit",
@@ -63,87 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "Google Brotli Unchecked Return Value Vulnerability",
-      "vendor": "Google",
-      "product": "Brotli",
-      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.82641,
-      "epss_pct": 0.99665,
-      "cwe": "CWE-252",
-      "published": "2026-10-22T14:17:37.190",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 98,
-      "rising": 20,
-      "repos": {
-        "count": 79,
-        "stars": 368,
-        "top": [
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 85
-          },
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 71
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 65
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-          "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-          "date": "2026-10-28T05:42:26.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-          "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-          "date": "2026-10-26T17:45:57.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-22",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-28",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-109618",
       "title": "PHP Memory Corruption Vulnerability",
@@ -165,25 +84,25 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 90,
-      "rising": 3,
+      "rising": 2,
       "repos": {
-        "count": 736,
-        "stars": 6777,
+        "count": 737,
+        "stars": 6795,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1908
+            "stars": 1910
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1046
+            "stars": 1050
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 966
+            "stars": 968
           }
         ]
       },
@@ -217,6 +136,81 @@
           "label": "Covered by The Hacker News"
         }
       ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.82641,
+      "epss_pct": 0.99666,
+      "cwe": "CWE-252",
+      "published": "2026-10-22T14:17:37.190",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 89,
+      "rising": 15,
+      "repos": {
+        "count": 81,
+        "stars": 373,
+        "top": [
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 85
+          },
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 72
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 65
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+          "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+          "date": "2026-10-28T05:42:26.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-22",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-28",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 2
     },
     {
@@ -227,8 +221,8 @@
       "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
       "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.18427,
-      "epss_pct": 0.97229,
+      "epss": 0.26569,
+      "epss_pct": 0.98015,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -243,12 +237,12 @@
       "rising": 100,
       "repos": {
         "count": 6,
-        "stars": 65,
+        "stars": 66,
         "top": [
           {
             "full_name": "jburgess-r7/CVE-2026-97229-PoC",
             "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
-            "stars": 63
+            "stars": 64
           },
           {
             "full_name": "gandli/cve-2026-97229-lab",
@@ -322,25 +316,25 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 79,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 542,
-        "stars": 6029,
+        "stars": 6046,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1908
+            "stars": 1910
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1046
+            "stars": 1050
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 966
+            "stars": 968
           }
         ]
       },
@@ -385,7 +379,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 71,
-      "rising": 9,
+      "rising": 6,
       "repos": {
         "count": 4,
         "stars": 8,
@@ -521,7 +515,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 29,
+      "rising": 26,
       "repos": {
         "count": 9,
         "stars": 62,
@@ -580,7 +574,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.73307,
-      "epss_pct": 0.99459,
+      "epss_pct": 0.9946,
       "cwe": "CWE-78",
       "published": "2026-10-14T03:17:20.683",
       "kev": {
@@ -591,10 +585,10 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 66,
+      "hype": 67,
       "rising": 0,
       "repos": {
-        "count": 3,
+        "count": 4,
         "stars": 2,
         "top": [
           {
@@ -608,8 +602,8 @@
             "stars": 0
           },
           {
-            "full_name": "sstrobl-osm/php2shell-tools",
-            "html_url": "https://github.com/sstrobl-osm/php2shell-tools",
+            "full_name": "Iceman2050/cve-2026-110447-checker",
+            "html_url": "https://github.com/Iceman2050/cve-2026-110447-checker",
             "stars": 0
           }
         ]
@@ -643,7 +637,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.95769,
-      "epss_pct": 0.99871,
+      "epss_pct": 0.99872,
       "cwe": "CWE-98",
       "published": null,
       "kev": {
@@ -702,7 +696,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.8216,
-      "epss_pct": 0.99654,
+      "epss_pct": 0.99655,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -761,7 +755,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.1895,
-      "epss_pct": 0.97293,
+      "epss_pct": 0.97297,
       "cwe": "CWE-290",
       "published": "2026-10-15T21:17:00.117",
       "kev": {
@@ -824,7 +818,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.26166,
-      "epss_pct": 0.9799,
+      "epss_pct": 0.97992,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -952,8 +946,8 @@
       "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.15719,
-      "epss_pct": 0.96854,
+      "epss": 0.1613,
+      "epss_pct": 0.96923,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -965,7 +959,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 55,
-      "rising": 19,
+      "rising": 18,
       "repos": {
         "count": 18,
         "stars": 31,
@@ -1003,122 +997,6 @@
       "rank": 14
     },
     {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.22478,
-      "epss_pct": 0.977,
-      "cwe": "CWE-384",
-      "published": "2026-09-30T17:16:40.550",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "horizon3ai/CVE-2026-102489",
-            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
-            "stars": 6
-          },
-          {
-            "full_name": "1xPwn/CVE-2026-102489",
-            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
-            "stars": 6
-          },
-          {
-            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.00574,
-      "epss_pct": 0.47308,
-      "cwe": "CWE-690",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 52,
-      "rising": 52,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-          "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-          "date": "2026-10-29T10:44:46.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-29",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 16
-    },
-    {
       "cve_id": "CVE-2026-88779",
       "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -1127,7 +1005,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.11388,
-      "epss_pct": 0.95983,
+      "epss_pct": 0.95988,
       "cwe": "CWE-119",
       "published": "2026-10-04T04:16:43.680",
       "kev": {
@@ -1174,7 +1052,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-76418",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.0091,
+      "epss_pct": 0.59949,
+      "cwe": "CWE-690",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 51,
+      "rising": 47,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+          "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+          "date": "2026-10-29T10:44:46.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-29",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -1184,8 +1115,8 @@
       "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
       "cvss": 2.7,
       "severity": "LOW",
-      "epss": 0.00764,
-      "epss_pct": 0.55307,
+      "epss": 0.00689,
+      "epss_pct": 0.52718,
       "cwe": "CWE-778",
       "published": null,
       "kev": {
@@ -1197,7 +1128,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 51,
-      "rising": 42,
+      "rising": 37,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1228,7 +1159,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -1287,7 +1218,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -1298,7 +1229,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.90491,
-      "epss_pct": 0.998,
+      "epss_pct": 0.99801,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -1341,7 +1272,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1395,7 +1326,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1444,7 +1375,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1455,7 +1386,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.01821,
-      "epss_pct": 0.78699,
+      "epss_pct": 0.78731,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1470,12 +1401,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 104,
+        "stars": 103,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 103
+            "stars": 102
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
@@ -1502,7 +1433,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1544,7 +1475,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1586,7 +1517,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1628,7 +1559,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1682,7 +1613,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -1693,7 +1624,7 @@
       "cvss": 9.3,
       "severity": "CRITICAL",
       "epss": 0.44579,
-      "epss_pct": 0.98765,
+      "epss_pct": 0.98767,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -1705,7 +1636,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 47,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1730,7 +1661,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-76460",
@@ -1741,7 +1672,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.75599,
-      "epss_pct": 0.99517,
+      "epss_pct": 0.99519,
       "cwe": "CWE-648",
       "published": null,
       "kev": {
@@ -1779,7 +1710,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1790,7 +1721,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01785,
-      "epss_pct": 0.78245,
+      "epss_pct": 0.78279,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1805,12 +1736,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 103,
+        "stars": 102,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 103
+            "stars": 102
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1837,7 +1768,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1848,7 +1779,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.0174,
-      "epss_pct": 0.77668,
+      "epss_pct": 0.77702,
       "cwe": "CWE-94",
       "published": "2026-10-14T18:17:07.743",
       "kev": {
@@ -1890,7 +1821,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1901,7 +1832,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.01637,
-      "epss_pct": 0.76275,
+      "epss_pct": 0.7631,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1916,12 +1847,65 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 103,
+        "stars": 102,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 103
+            "stars": 102
+          },
+          {
+            "full_name": "gmh5225/plex2shell",
+            "html_url": "https://github.com/gmh5225/plex2shell",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-96654",
+      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01949,
+      "epss_pct": 0.80195,
+      "cwe": "CWE-84",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 102,
+        "top": [
+          {
+            "full_name": "code-zm/plex2shell",
+            "html_url": "https://github.com/code-zm/plex2shell",
+            "stars": 102
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1946,105 +1930,6 @@
       "rank": 32
     },
     {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.01949,
-      "epss_pct": 0.80166,
-      "cwe": "CWE-84",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 103,
-        "top": [
-          {
-            "full_name": "code-zm/plex2shell",
-            "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 103
-          },
-          {
-            "full_name": "gmh5225/plex2shell",
-            "html_url": "https://github.com/gmh5225/plex2shell",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-102490",
-      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected — installations from source or the official container images were not. All released packaged versions were affected.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.10936,
-      "epss_pct": 0.95872,
-      "cwe": "CWE-269",
-      "published": "2026-09-30T17:16:40.707",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-30",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-02",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
-    },
-    {
       "cve_id": "CVE-2026-94127",
       "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
       "vendor": "F5",
@@ -2053,7 +1938,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.24938,
-      "epss_pct": 0.97909,
+      "epss_pct": 0.97912,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -2095,7 +1980,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 33
+    },
+    {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.22478,
+      "epss_pct": 0.97703,
+      "cwe": "CWE-384",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "horizon3ai/CVE-2026-102489",
+            "html_url": "https://github.com/horizon3ai/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "1xPwn/CVE-2026-102489",
+            "html_url": "https://github.com/1xPwn/CVE-2026-102489",
+            "stars": 6
+          },
+          {
+            "full_name": "Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "html_url": "https://github.com/Hunt-Benito/the-cookie-in-the-error-message-cve-2026-102489-zammad-session-hijack-to-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2106,7 +2049,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.38928,
-      "epss_pct": 0.98585,
+      "epss_pct": 0.98587,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -2153,7 +2096,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -2164,7 +2107,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.02277,
-      "epss_pct": 0.83069,
+      "epss_pct": 0.83093,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -2211,7 +2154,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2222,7 +2165,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.5414,
-      "epss_pct": 0.99004,
+      "epss_pct": 0.99006,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -2260,7 +2203,89 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 37
+    },
+    {
+      "cve_id": "CVE-2026-118527",
+      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.00316,
+      "epss_pct": 0.24569,
+      "cwe": "CWE-829",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 34,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2271,7 +2296,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.2239,
-      "epss_pct": 0.97688,
+      "epss_pct": 0.97691,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -2318,7 +2343,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -2329,7 +2354,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.01025,
-      "epss_pct": 0.63494,
+      "epss_pct": 0.63541,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2340,15 +2365,20 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 38,
+      "hype": 39,
       "rising": 0,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
           {
             "full_name": "mehmet-emir-eroglu/CVE-2026-114625",
             "html_url": "https://github.com/mehmet-emir-eroglu/CVE-2026-114625",
+            "stars": 0
+          },
+          {
+            "full_name": "definitiveref/CVE-2026-114625-Proof-Of-Concept",
+            "html_url": "https://github.com/definitiveref/CVE-2026-114625-Proof-Of-Concept",
             "stars": 0
           }
         ]
@@ -2366,7 +2396,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2377,7 +2407,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.30244,
-      "epss_pct": 0.98217,
+      "epss_pct": 0.98219,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2407,7 +2437,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -2418,7 +2448,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.04573,
-      "epss_pct": 0.91597,
+      "epss_pct": 0.91609,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2465,7 +2495,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-65660",
@@ -2476,7 +2506,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08189,
-      "epss_pct": 0.94854,
+      "epss_pct": 0.94862,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2518,7 +2548,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2025-39682",
@@ -2529,7 +2559,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.03252,
-      "epss_pct": 0.8831,
+      "epss_pct": 0.88326,
       "cwe": "CWE-754",
       "published": null,
       "kev": {
@@ -2566,7 +2596,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2577,7 +2607,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.00967,
-      "epss_pct": 0.61662,
+      "epss_pct": 0.6171,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -2614,7 +2644,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-39964",
@@ -2625,7 +2655,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.0157,
-      "epss_pct": 0.75309,
+      "epss_pct": 0.75345,
       "cwe": "CWE-362",
       "published": null,
       "kev": {
@@ -2662,7 +2692,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2673,7 +2703,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02528,
-      "epss_pct": 0.84855,
+      "epss_pct": 0.84877,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2703,7 +2733,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
+    },
+    {
+      "cve_id": "CVE-2026-102490",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.10936,
+      "epss_pct": 0.95877,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-02",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2714,7 +2785,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02152,
-      "epss_pct": 0.82101,
+      "epss_pct": 0.82127,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2751,7 +2822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2762,7 +2833,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.09813,
-      "epss_pct": 0.95536,
+      "epss_pct": 0.95543,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2792,7 +2863,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 51
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2803,7 +2874,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.04114,
-      "epss_pct": 0.90753,
+      "epss_pct": 0.90767,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2833,7 +2904,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-53266",
@@ -2844,7 +2915,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00934,
-      "epss_pct": 0.6068,
+      "epss_pct": 0.60731,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -2881,7 +2952,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2892,7 +2963,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01343,
-      "epss_pct": 0.7129,
+      "epss_pct": 0.71332,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2922,7 +2993,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2933,7 +3004,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01384,
-      "epss_pct": 0.7213,
+      "epss_pct": 0.72172,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2963,7 +3034,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2974,7 +3045,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02778,
-      "epss_pct": 0.86337,
+      "epss_pct": 0.86351,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -3004,7 +3075,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-58704",
@@ -3015,7 +3086,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00625,
-      "epss_pct": 0.4987,
+      "epss_pct": 0.49932,
       "cwe": "CWE-285",
       "published": null,
       "kev": {
@@ -3045,7 +3116,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-87886",
@@ -3056,7 +3127,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.00233,
-      "epss_pct": 0.14227,
+      "epss_pct": 0.14253,
       "cwe": "CWE-276",
       "published": null,
       "kev": {
@@ -3086,7 +3157,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-104351",
@@ -3097,7 +3168,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00573,
-      "epss_pct": 0.47274,
+      "epss_pct": 0.47334,
       "cwe": "CWE-94",
       "published": "2026-10-27T17:16:55.593",
       "kev": {
@@ -3106,7 +3177,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 20,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3134,143 +3205,65 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-116370",
-      "title": "A security flaw has been discovered in 2K Games Sid Meier's Civilization VI 1.0.12.68.",
-      "vendor": null,
-      "product": null,
-      "description": "A security flaw has been discovered in 2K Games Sid Meier's Civilization VI 1.0.12.68. The affected element is the function loadstring of the component Lua sandbox. Performing a manipulation results in type confusion. The attack may be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure.",
-      "cvss": 9.6,
-      "severity": "CRITICAL",
-      "epss": 0.00398,
-      "epss_pct": 0.33951,
-      "cwe": "CWE-843",
-      "published": "2026-10-26T17:17:25.930",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 5,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "drbloop2000/Sid-Meier-s-Civilization-VI-RCE",
-            "html_url": "https://github.com/drbloop2000/Sid-Meier-s-Civilization-VI-RCE",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
-      "cve_id": "CVE-2026-112900",
-      "title": "Pillow is a Python imaging library.",
-      "vendor": null,
-      "product": null,
-      "description": "Pillow is a Python imaging library. From 2.6.0 until 13.0.0, Pillow is vulnerable to argument injection when invoking Ghostscript for EPS input. EpsImagePlugin.Ghostscript passes a caller-controlled input filename after -f without converting it to a safe absolute path, so a name beginning with a hyphen can be interpreted as a Ghostscript option. An attacker who controls the filename can inject Ghostscript arguments. Arbitrary command execution specifically requires a leading @ argument-file filename and control of the referenced text file containing additional Ghostscript arguments; the reported chain reproduces with the default -dSAFER invocation. This issue is fixed in version 13.0.0.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01303,
-      "epss_pct": 0.7043,
-      "cwe": "CWE-78",
-      "published": "2026-10-19T22:17:10.160",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "techupdate24/python-pillow-rce-cve-2026-112900",
-            "html_url": "https://github.com/techupdate24/python-pillow-rce-cve-2026-112900",
-            "stars": 0
-          },
-          {
-            "full_name": "kavin-jindal/CVE-2026-112900-PoC",
-            "html_url": "https://github.com/kavin-jindal/CVE-2026-112900-PoC",
-            "stars": 0
-          },
-          {
-            "full_name": "moprius/CVE-2026-112900-Pillow-PoC",
-            "html_url": "https://github.com/moprius/CVE-2026-112900-Pillow-PoC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-19",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-117532",
-      "title": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin …",
+      "cve_id": "CVE-2026-98432",
+      "title": "CVE-2026-98432",
       "vendor": null,
       "product": null,
-      "description": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens. Attackers can force the session-tied secret into a predictable state and forge tokens for accounts like admin, gaining backend access and code execution outside live mode.",
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() and\nip_options_build() then read opt->optlen twice.\n\nNote that the SYNACK timer itself is not an issue: it holds a\nreference on its request socket, and inet_csk_reqsk_queue_drop()\ncalls timer_delete_sync() before the child can be freed.\n\nSince commit 079096f103fa (\"tcp/dccp: install syn_recv requests\ninto ehash table\"), request sockets are processed without holding\nthe listener lock, so nothing prevents the child socket from being\nfreed while the SYNACK is still being built. TCP child sockets do\nnot have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt\nwith a plain kfree(), leading to a use-after-free in\nip_options_build().\n\nA similar issue exists with request socket migration\n(net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE\nprogram). reqsk_timer_handler() clones the request socket with\ninet_reqsk_clone(), so that the old request socket and its clone\nshare the same ireq_opt, then reqsk_migrate_reset() clears the\npointer in the old one. Another cpu holding a reference on the old\nrequest socket can still be using these options (sending a SYNACK,\nor creating a child in tcp_v4_syn_recv_sock()) when the clone is\nfreed, and tcp_v4_reqsk_destructor() also uses a plain kfree().\n\nReaders already use RCU, and other paths replacing inet_opt\n(do_ip_setsockopt(), cipso_v4_sock_setattr()...) already use\nkfree_rcu(). Use kfree_rcu() in inet_sock_destruct() and\ntcp_v4_reqsk_destructor() as well.\n\nIPv6 is not affected by the first issue, because tcp_v6_syn_recv_sock()\nduplicates the options. tcp_v6_reqsk_destructor() has the same\nmigration issue with ipv6_opt, which is only set by CALIPSO. This\nwill be addressed in a separate patch.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00679,
-      "epss_pct": 0.52288,
-      "cwe": "CWE-287",
-      "published": "2026-10-27T11:17:33.597",
+      "epss": 0.00445,
+      "epss_pct": 0.38738,
+      "cwe": null,
+      "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 18,
-      "rising": 8,
+      "hype": 22,
+      "rising": 25,
       "repos": {
-        "count": 1,
-        "stars": 0,
+        "count": 19,
+        "stars": 15,
         "top": [
           {
-            "full_name": "asvorg/CVE-2026-117532-poc",
-            "html_url": "https://github.com/asvorg/CVE-2026-117532-poc",
-            "stars": 0
+            "full_name": "H1z3-br0/CVE-2026-98432",
+            "html_url": "https://github.com/H1z3-br0/CVE-2026-98432",
+            "stars": 5
+          },
+          {
+            "full_name": "typhoon1217/cve-2026-98432-mitigation",
+            "html_url": "https://github.com/typhoon1217/cve-2026-98432-mitigation",
+            "stars": 3
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-98432-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-98432-PoC-Exploit",
+            "stars": 3
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+          "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+          "date": "2026-10-29T15:57:05.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-27",
-          "label": "Published to NVD"
+          "date": "2026-10-29",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 60
