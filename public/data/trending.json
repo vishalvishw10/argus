@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T05:51:48.420Z",
+  "generated_at": "2026-10-31T12:41:06.795Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1092 recent"
+      "detail": "1161 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1058 scored"
+      "detail": "1054 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5369 mapped"
+      "detail": "5372 mapped"
     },
     {
       "name": "Reddit",
@@ -63,81 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99999,
-      "epss_pct": 0.99998,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 90,
-      "rising": 0,
-      "repos": {
-        "count": 740,
-        "stars": 6812,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1912
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1052
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 969
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-          "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
-          "date": "2026-10-27T04:37:59.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-111497",
       "title": "Google Brotli Unchecked Return Value Vulnerability",
@@ -159,9 +84,9 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 88,
-      "rising": 6,
+      "rising": 4,
       "repos": {
-        "count": 81,
+        "count": 82,
         "stars": 376,
         "top": [
           {
@@ -211,7 +136,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 1
     },
     {
       "cve_id": "CVE-2026-97229",
@@ -234,7 +159,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 86,
-      "rising": 93,
+      "rising": 80,
       "repos": {
         "count": 6,
         "stars": 66,
@@ -293,6 +218,69 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
+      "rank": 2
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.99999,
+      "epss_pct": 0.99998,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 81,
+      "rising": 0,
+      "repos": {
+        "count": 742,
+        "stars": 6828,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1912
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1052
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 969
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 3
     },
     {
@@ -318,8 +306,8 @@
       "hype": 79,
       "rising": 0,
       "repos": {
-        "count": 544,
-        "stars": 6063,
+        "count": 545,
+        "stars": 6077,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -390,8 +378,8 @@
             "stars": 4
           },
           {
-            "full_name": "0xredash/CVE-2026-35273",
-            "html_url": "https://github.com/0xredash/CVE-2026-35273",
+            "full_name": "0xBlackash/CVE-2026-35273",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-35273",
             "stars": 3
           },
           {
@@ -515,7 +503,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 69,
-      "rising": 20,
+      "rising": 17,
       "repos": {
         "count": 9,
         "stars": 62,
@@ -747,69 +735,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.1895,
-      "epss_pct": 0.97297,
-      "cwe": "CWE-290",
-      "published": "2026-10-15T21:17:00.117",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
-            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 3
-          },
-          {
-            "full_name": "maxprog-svg/CVE-2026-102764",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
-            "stars": 0
-          },
-          {
-            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-86950",
       "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "vendor": "Apple",
@@ -877,7 +802,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -936,6 +861,69 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.1895,
+      "epss_pct": 0.97297,
+      "cwe": "CWE-290",
+      "published": "2026-10-15T21:17:00.117",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-16",
+        "due_date": "2026-10-19",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
+            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
+            "stars": 3
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
+          },
+          {
+            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 13
     },
     {
@@ -959,14 +947,14 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 14,
+      "rising": 12,
       "repos": {
-        "count": 18,
+        "count": 19,
         "stars": 31,
         "top": [
           {
-            "full_name": "0xredash/CVE-2026-46300",
-            "html_url": "https://github.com/0xredash/CVE-2026-46300",
+            "full_name": "0xBlackash/CVE-2026-46300",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-46300",
             "stars": 16
           },
           {
@@ -995,6 +983,59 @@
         }
       ],
       "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.00316,
+      "epss_pct": 0.24569,
+      "cwe": "CWE-829",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 65,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+          "date": "2026-10-31T08:27:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-31",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -1050,59 +1091,6 @@
         {
           "date": "2026-10-04",
           "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.0091,
-      "epss_pct": 0.59949,
-      "cwe": "CWE-690",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 38,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-          "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-          "date": "2026-10-29T10:44:46.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-29",
-          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 16
@@ -1221,6 +1209,59 @@
       "rank": 18
     },
     {
+      "cve_id": "CVE-2026-76418",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.0091,
+      "epss_pct": 0.59949,
+      "cwe": "CWE-690",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 50,
+      "rising": 32,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+          "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+          "date": "2026-10-29T10:44:46.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-29",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 19
+    },
+    {
       "cve_id": "CVE-2026-41709",
       "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
       "vendor": "Broadcom",
@@ -1241,7 +1282,7 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 50,
-      "rising": 28,
+      "rising": 22,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1272,7 +1313,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1326,7 +1367,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1375,7 +1416,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1433,7 +1474,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1475,7 +1516,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1517,7 +1558,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1559,7 +1600,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1613,7 +1654,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-48356",
@@ -1636,7 +1677,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 6,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1661,7 +1702,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1719,7 +1760,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -1772,7 +1813,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1825,7 +1866,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -1878,7 +1919,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-94127",
@@ -1931,7 +1972,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-102489",
@@ -1989,7 +2030,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -2047,7 +2088,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-67279",
@@ -2105,7 +2146,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-85102",
@@ -2154,7 +2195,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-5430",
@@ -2212,7 +2253,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-118527",
@@ -2235,48 +2276,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 30,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "cvss": 7,
-      "severity": "HIGH",
-      "epss": 0.00316,
-      "epss_pct": 0.24569,
-      "cwe": "CWE-829",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2316,7 +2316,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 39,
+      "hype": 38,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -3045,8 +3045,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 27,
-      "rising": 9,
+      "hype": 26,
+      "rising": 5,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3094,10 +3094,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 19,
+      "rising": 15,
       "repos": {
-        "count": 23,
-        "stars": 23,
+        "count": 26,
+        "stars": 25,
         "top": [
           {
             "full_name": "H1z3-br0/CVE-2026-98432",
@@ -3155,7 +3155,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 2,
+      "rising": 1,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -3198,7 +3198,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 5,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3241,7 +3241,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 1,
         "stars": 0,
