@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-01T23:39:34.952Z",
+  "generated_at": "2026-11-02T06:16:56.975Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 11,
+    "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 54,
+    "kev_count": 51,
     "kev_total": 1766,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1138 recent"
+      "detail": "1166 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1167 scored"
+      "detail": "1162 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "12 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -87,7 +87,7 @@
       "rising": 0,
       "repos": {
         "count": 85,
-        "stars": 383,
+        "stars": 384,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -159,7 +159,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 82,
-      "rising": 18,
+      "rising": 8,
       "repos": {
         "count": 6,
         "stars": 68,
@@ -244,7 +244,7 @@
       "rising": 0,
       "repos": {
         "count": 755,
-        "stars": 6945,
+        "stars": 6948,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -307,7 +307,7 @@
       "rising": 0,
       "repos": {
         "count": 554,
-        "stars": 6186,
+        "stars": 6189,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -345,69 +345,6 @@
         }
       ],
       "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.99477,
-      "epss_pct": 0.99943,
-      "cwe": "CWE-552",
-      "published": "2026-10-05T22:16:58.423",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-15",
-        "due_date": "2026-10-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 70,
-      "rising": 0,
-      "repos": {
-        "count": 13,
-        "stars": 44,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "stars": 15
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
-            "stars": 11
-          },
-          {
-            "full_name": "MarcusProgram/CVE-2026-21589",
-            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
-            "stars": 9
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-05",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-15",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 5
     },
     {
       "cve_id": "CVE-2026-35273",
@@ -478,6 +415,69 @@
         {
           "date": "2026-10-28",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.99477,
+      "epss_pct": 0.99943,
+      "cwe": "CWE-552",
+      "published": "2026-10-05T22:16:58.423",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 69,
+      "rising": 0,
+      "repos": {
+        "count": 13,
+        "stars": 44,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 15
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 11
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 9
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-05",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
       "rank": 6
@@ -786,76 +786,6 @@
       "rank": 11
     },
     {
-      "cve_id": "CVE-2026-86950",
-      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.26166,
-      "epss_pct": 0.97995,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 20,
-        "top": [
-          {
-            "full_name": "msuiche/hotcell",
-            "html_url": "https://github.com/msuiche/hotcell",
-            "stars": 10
-          },
-          {
-            "full_name": "decalage2/detect_CVE-2026-86950",
-            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
-            "stars": 6
-          },
-          {
-            "full_name": "34zY/CVE-2026-86950",
-            "html_url": "https://github.com/34zY/CVE-2026-86950",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
-          "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-          "date": "2026-10-27T13:59:09.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-27",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 12
-    },
-    {
       "cve_id": "CVE-2026-46300",
       "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
       "vendor": "Linux",
@@ -911,7 +841,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -970,7 +900,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -1028,7 +958,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -1082,7 +1012,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-111357",
@@ -1105,7 +1035,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 34,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1135,7 +1065,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-76418",
@@ -1158,7 +1088,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 49,
-      "rising": 8,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1188,7 +1118,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1242,7 +1172,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1291,7 +1221,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -1345,7 +1275,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1387,7 +1317,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1429,7 +1359,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1471,7 +1401,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1525,7 +1455,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1580,6 +1510,64 @@
       "timeline": [
         {
           "date": "2026-10-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "cve_id": "CVE-2026-86950",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.26166,
+      "epss_pct": 0.97995,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 20,
+        "top": [
+          {
+            "full_name": "msuiche/hotcell",
+            "html_url": "https://github.com/msuiche/hotcell",
+            "stars": 10
+          },
+          {
+            "full_name": "decalage2/detect_CVE-2026-86950",
+            "html_url": "https://github.com/decalage2/detect_CVE-2026-86950",
+            "stars": 6
+          },
+          {
+            "full_name": "34zY/CVE-2026-86950",
+            "html_url": "https://github.com/34zY/CVE-2026-86950",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-29",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2205,7 +2193,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2378,54 +2366,6 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2025-39682",
-      "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.03252,
-      "epss_pct": 0.88342,
-      "cwe": "CWE-754",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "khoatran107/cve-2025-39682",
-            "html_url": "https://github.com/khoatran107/cve-2025-39682",
-            "stars": 6
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
-    },
-    {
       "cve_id": "CVE-2026-114625",
       "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
       "vendor": "Arista",
@@ -2471,55 +2411,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
-    },
-    {
-      "cve_id": "CVE-2025-39964",
-      "title": "Linux Kernel Race Condition Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.0157,
-      "epss_pct": 0.75375,
-      "cwe": "CWE-362",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "n1k0oowang/CVE-2025-39964_EXP",
-            "html_url": "https://github.com/n1k0oowang/CVE-2025-39964_EXP",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 44
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -2560,7 +2452,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2601,7 +2493,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2649,7 +2541,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2697,7 +2589,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2738,7 +2630,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 47
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2779,55 +2671,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-53266",
-      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00934,
-      "epss_pct": 0.60773,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "suominen/CVE-2026-53266",
-            "html_url": "https://github.com/suominen/CVE-2026-53266",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 51
+      "rank": 48
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2868,7 +2712,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-93952",
@@ -2909,7 +2753,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-7273",
@@ -2950,7 +2794,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-104351",
@@ -2998,7 +2842,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 55
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-98432",
@@ -3020,9 +2864,14 @@
       "hype": 21,
       "rising": 0,
       "repos": {
-        "count": 39,
-        "stars": 64,
+        "count": 42,
+        "stars": 68,
         "top": [
+          {
+            "full_name": "tc4dy/CVE-2026-98432-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-98432-PoC-Exploit",
+            "stars": 10
+          },
           {
             "full_name": "Alucard0x1/cve-2026-98432",
             "html_url": "https://github.com/Alucard0x1/cve-2026-98432",
@@ -3031,11 +2880,6 @@
           {
             "full_name": "H1z3-br0/CVE-2026-98432",
             "html_url": "https://github.com/H1z3-br0/CVE-2026-98432",
-            "stars": 9
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-98432-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-98432-PoC-Exploit",
             "stars": 9
           }
         ]
@@ -3059,7 +2903,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 56
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-116370",
@@ -3102,7 +2946,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-103409",
@@ -3122,7 +2966,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 3,
+      "rising": 2,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3145,7 +2989,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-116512",
@@ -3165,7 +3009,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3188,20 +3032,20 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 56
     },
     {
-      "cve_id": "CVE-2026-118235",
-      "title": "The SimpleForm – Form Maker to Chat Apps with Quiz, Poll and Multi Lead Notifications plugin for WordPress is vulnera…",
+      "cve_id": "CVE-2026-120201",
+      "title": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to …",
       "vendor": null,
       "product": null,
-      "description": "The SimpleForm – Form Maker to Chat Apps with Quiz, Poll and Multi Lead Notifications plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.10.2 via the handle_upload function. This is due to missing server-side file key allowlist and pre-sanitization extension derivation that allows a trailing-dot filename to bypass all extension and MIME validation in handle_upload. This makes it possible for unauthenticated attackers to upload files that may be executable, which makes remote code execution possible. The only access control is a nonce that is printed into every public form's data-nonce attribute, making it trivially obtainable by any unauthenticated visitor on a page embedding the form shortcode.",
+      "description": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TOKEN header. Attackers can send a value like 'is not null', which Hutool's Condition parser treats as an operator, then execute commands through Jpom's script features.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.0074,
-      "epss_pct": 0.54612,
-      "cwe": "CWE-434",
-      "published": "2026-10-31T09:16:33.620",
+      "epss": 0.00603,
+      "epss_pct": 0.48861,
+      "cwe": "CWE-943",
+      "published": "2026-10-31T18:17:07.890",
       "kev": {
         "in_kev": false
       },
@@ -3220,6 +3064,111 @@
       "timeline": [
         {
           "date": "2026-10-31",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-120209",
+      "title": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Toke…",
+      "vendor": null,
+      "product": null,
+      "description": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the testTransform endpoint, which passes scripts to GroovyClassLoader for unauthenticated remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00544,
+      "epss_pct": 0.4567,
+      "cwe": "CWE-321",
+      "published": "2026-10-31T18:17:09.263",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-10-31",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-120189",
+      "title": "A vulnerability was identified in D-Link DIR-505 1.10B02.",
+      "vendor": null,
+      "product": null,
+      "description": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.01346,
+      "epss_pct": 0.71439,
+      "cwe": "CWE-119",
+      "published": "2026-11-01T01:17:16.877",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 15,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-01",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-120195",
+      "title": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4.",
+      "vendor": null,
+      "product": null,
+      "description": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument wlan_ssid leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.0207,
+      "epss_pct": 0.8143,
+      "cwe": "CWE-77",
+      "published": "2026-11-01T04:18:46.687",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-01",
           "label": "Published to NVD"
         }
       ],
