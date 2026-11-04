@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T09:23:00.413Z",
+  "generated_at": "2026-11-04T18:01:33.458Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 5,
+    "media_mentions": 4,
     "reddit_upvotes": 0,
     "kev_count": 51,
     "kev_total": 1767,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1181 recent"
+      "detail": "1207 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "1137 scored"
+      "detail": "1214 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5365 mapped"
+      "detail": "5366 mapped"
     },
     {
       "name": "Reddit",
@@ -72,7 +72,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.99999,
-      "epss_pct": 0.99998,
+      "epss_pct": 0.99999,
       "cwe": "CWE-416",
       "published": "2026-10-21T14:17:09.357",
       "kev": {
@@ -83,11 +83,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 78,
+      "hype": 77,
       "rising": 0,
       "repos": {
-        "count": 761,
-        "stars": 7009,
+        "count": 763,
+        "stars": 7020,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -97,7 +97,7 @@
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1060
+            "stars": 1062
           },
           {
             "full_name": "assetnote/php2shell-scanner",
@@ -135,7 +135,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.82641,
-      "epss_pct": 0.99667,
+      "epss_pct": 0.99668,
       "cwe": "CWE-252",
       "published": "2026-10-22T14:17:37.190",
       "kev": {
@@ -150,7 +150,7 @@
       "rising": 0,
       "repos": {
         "count": 88,
-        "stars": 393,
+        "stars": 397,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -165,7 +165,7 @@
           {
             "full_name": "trailofbits/brotli-checker",
             "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 67
+            "stars": 68
           }
         ]
       },
@@ -209,11 +209,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 76,
+      "hype": 75,
       "rising": 0,
       "repos": {
         "count": 560,
-        "stars": 6249,
+        "stars": 6260,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -223,7 +223,7 @@
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1060
+            "stars": 1062
           },
           {
             "full_name": "assetnote/php2shell-scanner",
@@ -260,8 +260,8 @@
       "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate or list directory contents. In some configurations, there may be some sensitive files that make this highly severe. This vulnerability allows an unauthenticated remote attacker to access specific files within the web application root directory in affected versions. The vulnerability must be addressed for affected versions of: -- Bitbucket Data Center, introduced in version >= 4.6.0, fix versions: 9.4.26, 10.2.8, 10.5.1 -- Confluence Data Center, introduced in version >= 5.10.0, fix versions 9.2.26, 10.2.19 -- Crowd Data Center, introduced in version >= 2.11.0, fix versions 6.3.7, 7.0.3, 7.1.7, 7.2.4 -- Jira Software Data Center, introduced in version >= 7.1.0, fix versions 9.12.40, 10.3.26, 11.3.12 -- Jira Service Management Data Center, introduced in version >= 3.1.0, fix versions 5.12.40, 10.3.26, 11.3.12 -- Bamboo Data Center >= 7.0.1, fix versions 10.2.24, 12.1.12 -- Crucible, fix versions 4.9.15 -- Fisheye, fix version 4.9.15 -- Exploitation requires prior knowledge of the target file's exact name and path. The vulnerability does not include the capability to enumerate or list directory contents.",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.99477,
-      "epss_pct": 0.99943,
+      "epss": 0.99664,
+      "epss_pct": 0.99949,
       "cwe": "CWE-552",
       "published": "2026-10-05T22:16:58.423",
       "kev": {
@@ -316,6 +316,77 @@
       "rank": 4
     },
     {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.6522,
+      "epss_pct": 0.99256,
+      "cwe": "CWE-190",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 67,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 72,
+        "top": [
+          {
+            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
+            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
+            "stars": 65
+          },
+          {
+            "full_name": "murat-levi/gitlab-rce-toolkit",
+            "html_url": "https://github.com/murat-levi/gitlab-rce-toolkit",
+            "stars": 4
+          },
+          {
+            "full_name": "gandli/cve-2026-97229-lab",
+            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+          "date": "2026-10-30T07:27:05.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-30",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 5
+    },
+    {
       "cve_id": "CVE-2026-110447",
       "title": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
       "vendor": "Collabora",
@@ -324,7 +395,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.73307,
-      "epss_pct": 0.99462,
+      "epss_pct": 0.99463,
       "cwe": "CWE-78",
       "published": "2026-10-14T03:17:20.683",
       "kev": {
@@ -335,7 +406,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 64,
+      "hype": 63,
       "rising": 0,
       "repos": {
         "count": 5,
@@ -376,77 +447,71 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "cvss": 10,
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.27692,
-      "epss_pct": 0.98089,
-      "cwe": "CWE-190",
-      "published": null,
+      "epss": 0.77994,
+      "epss_pct": 0.99574,
+      "cwe": "CWE-290",
+      "published": "2026-10-15T21:17:00.117",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
+        "date_added": "2026-10-16",
+        "due_date": "2026-10-19",
         "ransomware": false
       },
-      "zero_day": false,
+      "zero_day": true,
       "no_patch": true,
-      "hype": 62,
+      "hype": 63,
       "rising": 0,
       "repos": {
-        "count": 7,
-        "stars": 72,
+        "count": 3,
+        "stars": 3,
         "top": [
           {
-            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
-            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
-            "stars": 65
+            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
+            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
+            "stars": 3
           },
           {
-            "full_name": "murat-levi/gitlab-rce-toolkit",
-            "html_url": "https://github.com/murat-levi/gitlab-rce-toolkit",
-            "stars": 4
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
           },
           {
-            "full_name": "gandli/cve-2026-97229-lab",
-            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
-            "stars": 2
+            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "stars": 0
           }
         ]
       },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-          "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-          "date": "2026-10-30T07:27:05.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news",
+        "zero-day",
+        "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-10-15",
+          "label": "Published to NVD"
         },
         {
-          "date": "2026-10-30",
-          "label": "Covered by The Hacker News"
+          "date": "2026-10-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-87902",
@@ -505,7 +570,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 7
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-88771",
@@ -515,8 +580,8 @@
       "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.8216,
-      "epss_pct": 0.99656,
+      "epss": 0.83203,
+      "epss_pct": 0.99679,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -564,7 +629,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-88772",
@@ -623,69 +688,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.1895,
-      "epss_pct": 0.97304,
-      "cwe": "CWE-290",
-      "published": "2026-10-15T21:17:00.117",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 3,
-        "top": [
-          {
-            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
-            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 3
-          },
-          {
-            "full_name": "maxprog-svg/CVE-2026-102764",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
-            "stars": 0
-          },
-          {
-            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 10
     },
     {
@@ -696,8 +698,8 @@
       "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.006,
-      "epss_pct": 0.48751,
+      "epss": 0.0102,
+      "epss_pct": 0.63514,
       "cwe": "CWE-367",
       "published": null,
       "kev": {
@@ -708,15 +710,20 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
-      "rising": 67,
+      "hype": 54,
+      "rising": 59,
       "repos": {
-        "count": 1,
-        "stars": 0,
+        "count": 2,
+        "stars": 1,
         "top": [
           {
-            "full_name": "evenomn/CVE-2026-119977",
-            "html_url": "https://github.com/evenomn/CVE-2026-119977",
+            "full_name": "lysophavin18/CVE-2026-119977",
+            "html_url": "https://github.com/lysophavin18/CVE-2026-119977",
+            "stars": 1
+          },
+          {
+            "full_name": "foxcornlab/wordpress-core-scanner",
+            "html_url": "https://github.com/foxcornlab/wordpress-core-scanner",
             "stars": 0
           }
         ]
@@ -757,7 +764,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.1613,
-      "epss_pct": 0.96932,
+      "epss_pct": 0.96937,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -815,7 +822,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.88936,
-      "epss_pct": 0.99778,
+      "epss_pct": 0.99779,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -874,7 +881,7 @@
       "cvss": 9.1,
       "severity": "CRITICAL",
       "epss": 0.90491,
-      "epss_pct": 0.99801,
+      "epss_pct": 0.99802,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -982,7 +989,7 @@
       "cvss": 7.3,
       "severity": "HIGH",
       "epss": 0.7947,
-      "epss_pct": 0.99603,
+      "epss_pct": 0.99604,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -1023,59 +1030,6 @@
       "rank": 16
     },
     {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "cvss": 7,
-      "severity": "HIGH",
-      "epss": 0.00533,
-      "epss_pct": 0.45064,
-      "cwe": "CWE-829",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-          "date": "2026-10-31T08:27:43.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-10-31",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 17
-    },
-    {
       "cve_id": "CVE-2026-96652",
       "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
       "vendor": "Plex",
@@ -1084,7 +1038,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.11886,
-      "epss_pct": 0.96107,
+      "epss_pct": 0.96114,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1131,7 +1085,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1142,7 +1096,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.99584,
-      "epss_pct": 0.99947,
+      "epss_pct": 0.99946,
       "cwe": "CWE-19",
       "published": null,
       "kev": {
@@ -1173,7 +1127,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1215,7 +1169,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1257,7 +1211,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-93616",
@@ -1268,7 +1222,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.91605,
-      "epss_pct": 0.99813,
+      "epss_pct": 0.99814,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1311,6 +1265,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.00533,
+      "epss_pct": 0.45139,
+      "cwe": "CWE-829",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+          "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+          "date": "2026-10-31T08:27:43.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-10-31",
+          "label": "Covered by The Hacker News"
+        }
+      ],
       "rank": 22
     },
     {
@@ -1322,7 +1329,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.26166,
-      "epss_pct": 0.97997,
+      "epss_pct": 0.98001,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1380,7 +1387,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.0174,
-      "epss_pct": 0.77754,
+      "epss_pct": 0.77794,
       "cwe": "CWE-94",
       "published": "2026-10-14T18:17:07.743",
       "kev": {
@@ -1432,8 +1439,8 @@
       "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
       "cvss": 9.3,
       "severity": "CRITICAL",
-      "epss": 0.44579,
-      "epss_pct": 0.9877,
+      "epss": 0.47472,
+      "epss_pct": 0.98846,
       "cwe": "CWE-434",
       "published": null,
       "kev": {
@@ -1481,7 +1488,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.01785,
-      "epss_pct": 0.78328,
+      "epss_pct": 0.78368,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1539,7 +1546,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01949,
-      "epss_pct": 0.80242,
+      "epss_pct": 0.80278,
       "cwe": "CWE-84",
       "published": null,
       "kev": {
@@ -1592,7 +1599,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.2655,
-      "epss_pct": 0.98018,
+      "epss_pct": 0.98021,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1645,7 +1652,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.01637,
-      "epss_pct": 0.76365,
+      "epss_pct": 0.76407,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1698,7 +1705,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.22478,
-      "epss_pct": 0.9771,
+      "epss_pct": 0.97715,
       "cwe": "CWE-384",
       "published": null,
       "kev": {
@@ -1751,7 +1758,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.38928,
-      "epss_pct": 0.98592,
+      "epss_pct": 0.98594,
       "cwe": "CWE-177",
       "published": null,
       "kev": {
@@ -1809,7 +1816,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.02277,
-      "epss_pct": 0.83134,
+      "epss_pct": 0.83166,
       "cwe": "CWE-841",
       "published": null,
       "kev": {
@@ -1867,7 +1874,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.5414,
-      "epss_pct": 0.99009,
+      "epss_pct": 0.99011,
       "cwe": "CWE-295",
       "published": null,
       "kev": {
@@ -1916,7 +1923,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.11388,
-      "epss_pct": 0.96,
+      "epss_pct": 0.96008,
       "cwe": "CWE-119",
       "published": null,
       "kev": {
@@ -1969,7 +1976,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.2239,
-      "epss_pct": 0.97699,
+      "epss_pct": 0.97703,
       "cwe": "CWE-347",
       "published": null,
       "kev": {
@@ -2026,8 +2033,8 @@
       "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00822,
+      "epss_pct": 0.57429,
       "cwe": "CWE-340",
       "published": null,
       "kev": {
@@ -2068,7 +2075,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.00821,
-      "epss_pct": 0.57342,
+      "epss_pct": 0.57407,
       "cwe": "CWE-690",
       "published": null,
       "kev": {
@@ -2109,7 +2116,7 @@
       "cvss": 2.7,
       "severity": "LOW",
       "epss": 0.00689,
-      "epss_pct": 0.52783,
+      "epss_pct": 0.52851,
       "cwe": "CWE-778",
       "published": null,
       "kev": {
@@ -2150,7 +2157,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.30244,
-      "epss_pct": 0.98224,
+      "epss_pct": 0.98228,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2191,7 +2198,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.04573,
-      "epss_pct": 0.91631,
+      "epss_pct": 0.91647,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2249,7 +2256,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.08189,
-      "epss_pct": 0.94877,
+      "epss_pct": 0.94885,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2294,54 +2301,6 @@
       "rank": 41
     },
     {
-      "cve_id": "CVE-2026-114625",
-      "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.01025,
-      "epss_pct": 0.63614,
-      "cwe": "CWE-89",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-23",
-        "due_date": "2026-10-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "definitiveref/CVE-2026-114625-Proof-Of-Concept",
-            "html_url": "https://github.com/definitiveref/CVE-2026-114625-Proof-Of-Concept",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-23",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 42
-    },
-    {
       "cve_id": "CVE-2026-102490",
       "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
       "vendor": "Zammad GmbH",
@@ -2350,7 +2309,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.10936,
-      "epss_pct": 0.9589,
+      "epss_pct": 0.95898,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2380,6 +2339,54 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 42
+    },
+    {
+      "cve_id": "CVE-2026-114625",
+      "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.01025,
+      "epss_pct": 0.63673,
+      "cwe": "CWE-89",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-23",
+        "due_date": "2026-10-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "definitiveref/CVE-2026-114625-Proof-Of-Concept",
+            "html_url": "https://github.com/definitiveref/CVE-2026-114625-Proof-Of-Concept",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 43
     },
     {
@@ -2391,7 +2398,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.00967,
-      "epss_pct": 0.61786,
+      "epss_pct": 0.61843,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -2439,7 +2446,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.02152,
-      "epss_pct": 0.82169,
+      "epss_pct": 0.82201,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2487,7 +2494,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.09813,
-      "epss_pct": 0.95557,
+      "epss_pct": 0.95565,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2528,7 +2535,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.04114,
-      "epss_pct": 0.90793,
+      "epss_pct": 0.9081,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2569,7 +2576,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02528,
-      "epss_pct": 0.84917,
+      "epss_pct": 0.84945,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2610,7 +2617,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01343,
-      "epss_pct": 0.71393,
+      "epss_pct": 0.7144,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2651,7 +2658,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.01384,
-      "epss_pct": 0.72232,
+      "epss_pct": 0.72275,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -2692,7 +2699,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.02778,
-      "epss_pct": 0.86386,
+      "epss_pct": 0.86408,
       "cwe": "CWE-121",
       "published": null,
       "kev": {
@@ -2733,7 +2740,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0076,
-      "epss_pct": 0.55326,
+      "epss_pct": 0.55396,
       "cwe": null,
       "published": null,
       "kev": {
@@ -2741,26 +2748,26 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 30,
-      "rising": 28,
+      "hype": 22,
+      "rising": 23,
       "repos": {
-        "count": 65,
-        "stars": 113,
+        "count": 67,
+        "stars": 121,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-98432-PoC-Exploit",
             "html_url": "https://github.com/tc4dy/CVE-2026-98432-PoC-Exploit",
-            "stars": 22
+            "stars": 24
           },
           {
             "full_name": "Alucard0x1/cve-2026-98432",
             "html_url": "https://github.com/Alucard0x1/cve-2026-98432",
-            "stars": 17
+            "stars": 18
           },
           {
             "full_name": "H1z3-br0/CVE-2026-98432",
             "html_url": "https://github.com/H1z3-br0/CVE-2026-98432",
-            "stars": 15
+            "stars": 17
           }
         ]
       },
@@ -2770,12 +2777,6 @@
           "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
           "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
           "date": "2026-11-03T11:23:53.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
-          "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
-          "date": "2026-10-29T15:57:05.000Z"
         }
       ],
       "reddit": null,
@@ -2792,6 +2793,49 @@
       "rank": 52
     },
     {
+      "cve_id": "CVE-2026-86596",
+      "title": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260…",
+      "vendor": null,
+      "product": null,
+      "description": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal '<?' sequences, combined with a post-interpolation placeholder cleanup that reassembles a valid '<?php' opener after the attacker-controlled value has already been embedded in the email template. This makes it possible for authenticated attackers, with custom-level access and above, to execute code on the server.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01487,
+      "epss_pct": 0.74119,
+      "cwe": "CWE-94",
+      "published": "2026-11-02T22:17:23.490",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 13,
+      "repos": {
+        "count": 1,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "thiscitze/cve-2026-86596-poc",
+            "html_url": "https://github.com/thiscitze/cve-2026-86596-poc",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 53
+    },
+    {
       "cve_id": "CVE-2026-112705",
       "title": "An out-of-bounds write issue was addressed with improved bounds checking.",
       "vendor": null,
@@ -2799,8 +2843,8 @@
       "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, tvOS 27.2. An app may be able to cause unexpected system termination.",
       "cvss": 5.5,
       "severity": "MEDIUM",
-      "epss": 0.00237,
-      "epss_pct": 0.14831,
+      "epss": 0.00172,
+      "epss_pct": 0.06665,
       "cwe": "CWE-787",
       "published": "2026-10-26T21:18:05.347",
       "kev": {
@@ -2837,7 +2881,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-116370",
@@ -2848,7 +2892,7 @@
       "cvss": 9.6,
       "severity": "CRITICAL",
       "epss": 0.00392,
-      "epss_pct": 0.33428,
+      "epss_pct": 0.33542,
       "cwe": "CWE-843",
       "published": "2026-10-26T17:17:25.930",
       "kev": {
@@ -2880,41 +2924,6 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-120189",
-      "title": "A vulnerability was identified in D-Link DIR-505 1.10B02.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01346,
-      "epss_pct": 0.71463,
-      "cwe": "CWE-119",
-      "published": "2026-11-01T01:17:16.877",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 7,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-01",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 55
     },
     {
@@ -2926,7 +2935,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.0207,
-      "epss_pct": 0.8145,
+      "epss_pct": 0.81484,
       "cwe": "CWE-77",
       "published": "2026-11-01T04:18:46.687",
       "kev": {
@@ -2935,7 +2944,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2961,7 +2970,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.02211,
-      "epss_pct": 0.82624,
+      "epss_pct": 0.82656,
       "cwe": "CWE-77",
       "published": "2026-11-01T15:17:22.830",
       "kev": {
@@ -2970,7 +2979,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2996,7 +3005,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.01687,
-      "epss_pct": 0.77054,
+      "epss_pct": 0.77096,
       "cwe": "CWE-77",
       "published": "2026-11-01T18:17:13.720",
       "kev": {
@@ -3005,7 +3014,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3031,7 +3040,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.03211,
-      "epss_pct": 0.88194,
+      "epss_pct": 0.88215,
       "cwe": "CWE-77",
       "published": "2026-11-02T00:18:09.897",
       "kev": {
@@ -3040,7 +3049,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3066,7 +3075,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.02451,
-      "epss_pct": 0.84405,
+      "epss_pct": 0.84432,
       "cwe": "CWE-77",
       "published": "2026-11-02T00:18:10.810",
       "kev": {
@@ -3075,7 +3084,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
