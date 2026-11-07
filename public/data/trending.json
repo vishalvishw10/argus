@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T23:13:49.901Z",
+  "generated_at": "2026-11-07T02:52:05.551Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "886 recent"
+      "detail": "877 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "892 scored"
+      "detail": "882 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5408 mapped"
+      "detail": "5409 mapped"
     },
     {
       "name": "Reddit",
@@ -209,7 +209,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 74,
+      "hype": 73,
       "rising": 0,
       "repos": {
         "count": 565,
@@ -577,7 +577,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 57,
-      "rising": 12,
+      "rising": 9,
       "repos": {
         "count": 5,
         "stars": 13,
@@ -745,117 +745,6 @@
       "rank": 11
     },
     {
-      "cve_id": "CVE-2024-27834",
-      "title": "Apple Multiple Products Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
-      "cvss": 5.5,
-      "severity": "MEDIUM",
-      "epss": 0.01502,
-      "epss_pct": 0.74415,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-04",
-        "due_date": "2026-11-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 51,
-      "rising": 33,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-          "date": "2026-11-05T05:17:04.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-04",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-05",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-46300",
-      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.1613,
-      "epss_pct": 0.96942,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-28",
-        "due_date": "2026-10-31",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 19,
-        "stars": 31,
-        "top": [
-          {
-            "full_name": "0xBlackash/CVE-2026-46300",
-            "html_url": "https://github.com/0xBlackash/CVE-2026-46300",
-            "stars": 16
-          },
-          {
-            "full_name": "infiniroot/ansible-mitigate-copyfail-dirtyfrag",
-            "html_url": "https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag",
-            "stars": 6
-          },
-          {
-            "full_name": "MadExploits/CVE-2026-46300",
-            "html_url": "https://github.com/MadExploits/CVE-2026-46300",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-28",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 13
-    },
-    {
       "cve_id": "CVE-2026-104935",
       "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
       "vendor": "Ivanti",
@@ -912,7 +801,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-71362",
@@ -963,6 +852,117 @@
       "timeline": [
         {
           "date": "2026-09-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2024-27834",
+      "title": "Apple Multiple Products Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "epss": 0.01502,
+      "epss_pct": 0.74415,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-04",
+        "due_date": "2026-11-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 50,
+      "rising": 30,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+          "date": "2026-11-05T05:17:04.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-04",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-05",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-46300",
+      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.1613,
+      "epss_pct": 0.96942,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-28",
+        "due_date": "2026-10-31",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 19,
+        "stars": 31,
+        "top": [
+          {
+            "full_name": "0xBlackash/CVE-2026-46300",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-46300",
+            "stars": 16
+          },
+          {
+            "full_name": "infiniroot/ansible-mitigate-copyfail-dirtyfrag",
+            "html_url": "https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag",
+            "stars": 6
+          },
+          {
+            "full_name": "MadExploits/CVE-2026-46300",
+            "html_url": "https://github.com/MadExploits/CVE-2026-46300",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1884,7 +1884,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 32,
+      "rising": 31,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1903,88 +1903,6 @@
         }
       ],
       "rank": 33
-    },
-    {
-      "cve_id": "CVE-2026-118527",
-      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.00822,
-      "epss_pct": 0.57487,
-      "cwe": "CWE-340",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "cvss": 7,
-      "severity": "HIGH",
-      "epss": 0.00533,
-      "epss_pct": 0.45192,
-      "cwe": "CWE-829",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-30",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 35
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -2022,6 +1940,88 @@
       "timeline": [
         {
           "date": "2026-10-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-118527",
+      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.00822,
+      "epss_pct": 0.57487,
+      "cwe": "CWE-340",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 35
+    },
+    {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "cvss": 7,
+      "severity": "HIGH",
+      "epss": 0.00533,
+      "epss_pct": 0.45192,
+      "cwe": "CWE-829",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-30",
+        "due_date": "2026-11-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2575,9 +2575,9 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 36,
+      "rising": 34,
       "repos": {
-        "count": 20,
+        "count": 21,
         "stars": 11,
         "top": [
           {
@@ -2636,7 +2636,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 4,
+      "rising": 3,
       "repos": {
         "count": 2,
         "stars": 8,
@@ -2684,7 +2684,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 22,
-      "rising": 30,
+      "rising": 28,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -2946,7 +2946,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2981,7 +2981,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3051,7 +3051,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3086,7 +3086,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 0,
         "stars": 0,
