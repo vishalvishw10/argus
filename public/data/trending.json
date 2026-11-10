@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-09T17:35:26.472Z",
+  "generated_at": "2026-11-10T01:36:01.099Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
     "media_mentions": 10,
     "reddit_upvotes": 0,
-    "kev_count": 46,
-    "kev_total": 1772,
+    "kev_count": 47,
+    "kev_total": 1773,
     "sources_live": 9,
     "window_days": 30
   },
@@ -14,17 +14,17 @@
     {
       "name": "CISA KEV",
       "status": "ok",
-      "detail": "1772 entries"
+      "detail": "1773 entries"
     },
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "911 recent"
+      "detail": "986 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "935 scored"
+      "detail": "852 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5441 mapped"
+      "detail": "5481 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,69 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.99999,
+      "epss_pct": 0.99999,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.357",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 74,
+      "rising": 0,
+      "repos": {
+        "count": 780,
+        "stars": 7165,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1959
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1080
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 997
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-123158",
       "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
@@ -83,11 +146,11 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 74,
-      "rising": 73,
+      "hype": 73,
+      "rising": 66,
       "repos": {
-        "count": 25,
-        "stars": 18,
+        "count": 28,
+        "stars": 19,
         "top": [
           {
             "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
@@ -137,69 +200,6 @@
           "label": "Covered by BleepingComputer, The Hacker News"
         }
       ],
-      "rank": 1
-    },
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99999,
-      "epss_pct": 0.99999,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.357",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 74,
-      "rising": 0,
-      "repos": {
-        "count": 780,
-        "stars": 7148,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1956
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1077
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 993
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 2
     },
     {
@@ -225,8 +225,8 @@
       "hype": 72,
       "rising": 0,
       "repos": {
-        "count": 93,
-        "stars": 409,
+        "count": 92,
+        "stars": 410,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -236,7 +236,7 @@
           {
             "full_name": "dimasma0305/CVE-2026-111497-POC",
             "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 78
+            "stars": 79
           },
           {
             "full_name": "trailofbits/brotli-checker",
@@ -289,22 +289,22 @@
       "rising": 0,
       "repos": {
         "count": 568,
-        "stars": 6386,
+        "stars": 6405,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1956
+            "stars": 1959
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1077
+            "stars": 1080
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 993
+            "stars": 997
           }
         ]
       },
@@ -327,77 +327,6 @@
         }
       ],
       "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-19868",
-      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.00621,
-      "epss_pct": 0.50063,
-      "cwe": "CWE-308",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-06",
-        "due_date": "2026-11-20",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 62,
-      "rising": 53,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
-            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
-            "stars": 0
-          },
-          {
-            "full_name": "EXEcution-py/CVE-2026-19868",
-            "html_url": "https://github.com/EXEcution-py/CVE-2026-19868",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-          "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-          "date": "2026-11-09T06:05:24.000Z"
-        },
-        {
-          "source": "SecurityWeek",
-          "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-          "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-          "date": "2026-11-07T10:16:23.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-06",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-09",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 5
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -460,7 +389,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-102764",
@@ -522,6 +451,77 @@
         {
           "date": "2026-10-16",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-19868",
+      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00621,
+      "epss_pct": 0.50063,
+      "cwe": "CWE-308",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-06",
+        "due_date": "2026-11-20",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 61,
+      "rising": 41,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
+            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
+            "stars": 0
+          },
+          {
+            "full_name": "EXEcution-py/CVE-2026-19868",
+            "html_url": "https://github.com/EXEcution-py/CVE-2026-19868",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+          "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+          "date": "2026-11-09T06:05:24.000Z"
+        },
+        {
+          "source": "SecurityWeek",
+          "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+          "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+          "date": "2026-11-07T10:16:23.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-06",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-09",
+          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 7
@@ -609,16 +609,16 @@
       "rising": 0,
       "repos": {
         "count": 12,
-        "stars": 47,
+        "stars": 48,
         "top": [
-          {
-            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
-            "stars": 22
-          },
           {
             "full_name": "watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
             "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771",
+            "stars": 23
+          },
+          {
+            "full_name": "ThomasPoppelgaard/netscaler-ctx697096-checker",
+            "html_url": "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
             "stars": 22
           },
           {
@@ -915,12 +915,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 6,
+        "stars": 7,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 6
+            "stars": 7
           },
           {
             "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
@@ -969,12 +969,12 @@
       "rising": 0,
       "repos": {
         "count": 1,
-        "stars": 6,
+        "stars": 7,
         "top": [
           {
             "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
             "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 6
+            "stars": 7
           }
         ]
       },
@@ -1076,12 +1076,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 106,
+        "stars": 107,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 105
+            "stars": 106
           },
           {
             "full_name": "ChrisLPJones/plex2shell-check",
@@ -1421,7 +1421,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 45,
-      "rising": 34,
+      "rising": 31,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -1477,12 +1477,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 105,
+        "stars": 106,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 105
+            "stars": 106
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1530,12 +1530,12 @@
       "rising": 0,
       "repos": {
         "count": 3,
-        "stars": 105,
+        "stars": 106,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 105
+            "stars": 106
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1588,12 +1588,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 105,
+        "stars": 106,
         "top": [
           {
             "full_name": "code-zm/plex2shell",
             "html_url": "https://github.com/code-zm/plex2shell",
-            "stars": 105
+            "stars": 106
           },
           {
             "full_name": "gmh5225/plex2shell",
@@ -1690,7 +1690,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 43,
+      "hype": 42,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -1727,47 +1727,6 @@
         }
       ],
       "rank": 29
-    },
-    {
-      "cve_id": "CVE-2026-102895",
-      "title": "GPUStack Improper Authentication Vulnerability",
-      "vendor": "GPUStack",
-      "product": "GPUStack",
-      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00331,
-      "epss_pct": 0.2646,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 34,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
     },
     {
       "cve_id": "CVE-2026-88779",
@@ -1820,7 +1779,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-76504",
@@ -1873,7 +1832,89 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-102895",
+      "title": "GPUStack Improper Authentication Vulnerability",
+      "vendor": "GPUStack",
+      "product": "GPUStack",
+      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00331,
+      "epss_pct": 0.2646,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 31,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-123218",
+      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+      "vendor": "IBM",
+      "product": "Aspera Faspex",
+      "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.00396,
+      "epss_pct": 0.34123,
+      "cwe": "CWE-863",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 31,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 33
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -1914,7 +1955,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-104286",
@@ -1972,7 +2013,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-118527",
@@ -2013,7 +2054,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-111357",
@@ -2054,7 +2095,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -2102,7 +2143,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-102490",
@@ -2143,7 +2184,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-76418",
@@ -2184,7 +2225,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -2225,7 +2266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2273,7 +2314,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2314,7 +2355,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2355,7 +2396,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2396,7 +2437,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2437,7 +2478,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2478,7 +2519,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-83844",
@@ -2497,10 +2538,10 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 24,
+      "hype": 25,
       "rising": 0,
       "repos": {
-        "count": 6,
+        "count": 7,
         "stars": 3,
         "top": [
           {
@@ -2514,8 +2555,8 @@
             "stars": 0
           },
           {
-            "full_name": "LACHHAB-Anas/CVE-2026-83844",
-            "html_url": "https://github.com/LACHHAB-Anas/CVE-2026-83844",
+            "full_name": "HackingLZ/CVE-2026-83844-public",
+            "html_url": "https://github.com/HackingLZ/CVE-2026-83844-public",
             "stars": 0
           }
         ]
@@ -2543,59 +2584,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 47
-    },
-    {
-      "cve_id": "CVE-2026-123488",
-      "title": "Craft CMS 4.0.0 before 4.18.9 and 5.0.0 before 5.11.2 contains an unauthenticated SQL injection vulnerability in the …",
-      "vendor": null,
-      "product": null,
-      "description": "Craft CMS 4.0.0 before 4.18.9 and 5.0.0 before 5.11.2 contains an unauthenticated SQL injection vulnerability in the element search endpoint because the attribute parameter is concatenated into the query unsanitized and emulated PDO prepares allow stacked statements. Remote attackers can read and write the database, setting the admin flag or overwriting password hashes in the users table to gain administrator access.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00476,
-      "epss_pct": 0.4138,
-      "cwe": "CWE-89",
-      "published": "2026-11-06T15:17:18.133",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 8,
-      "repos": {
-        "count": 3,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "dinosn/CVE-2026-123488-CraftCMS-Lab",
-            "html_url": "https://github.com/dinosn/CVE-2026-123488-CraftCMS-Lab",
-            "stars": 1
-          },
-          {
-            "full_name": "foxcornlab/craft-cms-scanner",
-            "html_url": "https://github.com/foxcornlab/craft-cms-scanner",
-            "stars": 0
-          },
-          {
-            "full_name": "fixedbyreboot/CVE-2026-123488-POC",
-            "html_url": "https://github.com/fixedbyreboot/CVE-2026-123488-POC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-06",
-          "label": "Published to NVD"
-        }
-      ],
       "rank": 48
     },
     {
@@ -2615,7 +2603,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
+      "hype": 19,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -2672,26 +2660,26 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 20,
+      "hype": 19,
       "rising": 0,
       "repos": {
-        "count": 81,
-        "stars": 152,
+        "count": 83,
+        "stars": 161,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-98432-PoC-Exploit",
             "html_url": "https://github.com/tc4dy/CVE-2026-98432-PoC-Exploit",
-            "stars": 40
+            "stars": 41
           },
           {
             "full_name": "Alucard0x1/cve-2026-98432",
             "html_url": "https://github.com/Alucard0x1/cve-2026-98432",
-            "stars": 18
+            "stars": 24
           },
           {
-            "full_name": "H1z3-br0/CVE-2026-98432",
-            "html_url": "https://github.com/H1z3-br0/CVE-2026-98432",
-            "stars": 17
+            "full_name": "xen0bit/netprobe-cve-2026-98432",
+            "html_url": "https://github.com/xen0bit/netprobe-cve-2026-98432",
+            "stars": 18
           }
         ]
       },
@@ -2717,35 +2705,53 @@
       "rank": 50
     },
     {
-      "cve_id": "CVE-2026-109469",
-      "title": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elev…",
+      "cve_id": "CVE-2026-112900",
+      "title": "Pillow is a Python imaging library.",
       "vendor": null,
       "product": null,
-      "description": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elevate privileges over a network.",
-      "cvss": 10,
+      "description": "Pillow is a Python imaging library. From 2.6.0 until 13.0.0, Pillow is vulnerable to argument injection when invoking Ghostscript for EPS input. EpsImagePlugin.Ghostscript passes a caller-controlled input filename after -f without converting it to a safe absolute path, so a name beginning with a hyphen can be interpreted as a Ghostscript option. An attacker who controls the filename can inject Ghostscript arguments. Arbitrary command execution specifically requires a leading @ argument-file filename and control of the referenced text file containing additional Ghostscript arguments; the reported chain reproduces with the default -dSAFER invocation. This issue is fixed in version 13.0.0.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00668,
-      "epss_pct": 0.52195,
-      "cwe": "CWE-639",
-      "published": "2026-11-06T23:17:20.557",
+      "epss": 0.01303,
+      "epss_pct": 0.70709,
+      "cwe": "CWE-78",
+      "published": "2026-10-19T22:17:10.160",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 9,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 4,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "kavin-jindal/CVE-2026-112900-PoC",
+            "html_url": "https://github.com/kavin-jindal/CVE-2026-112900-PoC",
+            "stars": 2
+          },
+          {
+            "full_name": "techupdate24/python-pillow-rce-cve-2026-112900",
+            "html_url": "https://github.com/techupdate24/python-pillow-rce-cve-2026-112900",
+            "stars": 0
+          },
+          {
+            "full_name": "moprius/CVE-2026-112900-Pillow-PoC",
+            "html_url": "https://github.com/moprius/CVE-2026-112900-Pillow-PoC",
+            "stars": 0
+          }
+        ]
       },
       "media": [],
       "reddit": null,
-      "tags": [],
+      "tags": [
+        "poc-available"
+      ],
       "timeline": [
         {
-          "date": "2026-11-06",
+          "date": "2026-10-19",
           "label": "Published to NVD"
         }
       ],
@@ -2769,7 +2775,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 10,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2785,76 +2791,6 @@
         }
       ],
       "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-123960",
-      "title": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884.",
-      "vendor": null,
-      "product": null,
-      "description": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. This affects the function setWanConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument pppoeUser/priDns/secDns can lead to buffer overflow. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00796,
-      "epss_pct": 0.56721,
-      "cwe": "CWE-119",
-      "published": "2026-11-07T10:17:12.357",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-123966",
-      "title": "A vulnerability was determined in Tenda AC19 16.03.10.07.",
-      "vendor": null,
-      "product": null,
-      "description": "A vulnerability was determined in Tenda AC19 16.03.10.07. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. This manipulation of the argument deviceId causes heap-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.01021,
-      "epss_pct": 0.63672,
-      "cwe": "CWE-119",
-      "published": "2026-11-07T14:17:01.800",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 11,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-07",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
     },
     {
       "cve_id": "CVE-2026-123551",
@@ -2874,7 +2810,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2889,7 +2825,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-124427",
@@ -2909,7 +2845,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2924,7 +2860,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-124445",
@@ -2944,7 +2880,85 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-124450",
+      "title": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeD…",
+      "vendor": null,
+      "product": null,
+      "description": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials and write arbitrary files as the web user, enabling remote code execution.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00488,
+      "epss_pct": 0.42314,
+      "cwe": "CWE-73",
+      "published": "2026-11-08T14:18:12.260",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 14,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "Nxploited/CVE-2026-124450",
+            "html_url": "https://github.com/Nxploited/CVE-2026-124450",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-08",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-124469",
+      "title": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService…",
+      "vendor": null,
+      "product": null,
+      "description": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService::sellDrug) that interpolates the prod[N][warehouse] POST field into an ORDER BY clause. Low-privileged authenticated users can submit Fee Sheet product lines with constant subqueries to run a time-based blind oracle, extracting patient data and users_secure bcrypt hashes.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00312,
+      "epss_pct": 0.243,
+      "cwe": "CWE-89",
+      "published": "2026-11-08T14:18:15.130",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2962,17 +2976,17 @@
       "rank": 57
     },
     {
-      "cve_id": "CVE-2026-124450",
-      "title": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeD…",
+      "cve_id": "CVE-2026-107331",
+      "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive informati…",
       "vendor": null,
       "product": null,
-      "description": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials and write arbitrary files as the web user, enabling remote code execution.",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00488,
-      "epss_pct": 0.42314,
-      "cwe": "CWE-73",
-      "published": "2026-11-08T14:18:12.260",
+      "epss": 0.00498,
+      "epss_pct": 0.42973,
+      "cwe": "CWE-36",
+      "published": "2026-11-08T17:16:35.550",
       "kev": {
         "in_kev": false
       },
@@ -2997,52 +3011,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-124469",
-      "title": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService…",
+      "cve_id": "CVE-2026-124560",
+      "title": "A vulnerability was found in D-Link DIR-878 1.20B05.",
       "vendor": null,
       "product": null,
-      "description": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService::sellDrug) that interpolates the prod[N][warehouse] POST field into an ORDER BY clause. Low-privileged authenticated users can submit Fee Sheet product lines with constant subqueries to run a time-based blind oracle, extracting patient data and users_secure bcrypt hashes.",
-      "cvss": 9.9,
+      "description": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow. The attack can be initiated remotely. The exploit has been made public and could be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00312,
-      "epss_pct": 0.243,
-      "cwe": "CWE-89",
-      "published": "2026-11-08T14:18:15.130",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-08",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-107331",
-      "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive informati…",
-      "vendor": null,
-      "product": null,
-      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00498,
-      "epss_pct": 0.42973,
-      "cwe": "CWE-36",
-      "published": "2026-11-08T17:16:35.550",
+      "epss": 0.00721,
+      "epss_pct": 0.54228,
+      "cwe": "CWE-119",
+      "published": "2026-11-09T03:16:38.117",
       "kev": {
         "in_kev": false
       },
@@ -3060,7 +3039,42 @@
       "tags": [],
       "timeline": [
         {
-          "date": "2026-11-08",
+          "date": "2026-11-09",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-124577",
+      "title": "A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72.",
+      "vendor": null,
+      "product": null,
+      "description": "A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72. The affected element is an unknown function of the file /EXCU_SHELL of the component Web Management Interface. Executing a manipulation can lead to improper authentication. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 1.00.74 is sufficient to fix this issue. Upgrading the affected component is advised.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02067,
+      "epss_pct": 0.81535,
+      "cwe": "CWE-287",
+      "published": "2026-11-09T08:17:02.350",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-09",
           "label": "Published to NVD"
         }
       ],
