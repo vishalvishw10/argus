@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T15:18:36.997Z",
+  "generated_at": "2026-11-11T22:02:53.300Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "969 recent"
+      "detail": "997 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "819 scored"
+      "detail": "806 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "11 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5513 mapped"
+      "detail": "5520 mapped"
     },
     {
       "name": "Reddit",
@@ -83,16 +83,16 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 74,
+      "hype": 73,
       "rising": 0,
       "repos": {
-        "count": 783,
-        "stars": 7187,
+        "count": 784,
+        "stars": 7195,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1961
+            "stars": 1962
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -102,7 +102,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1000
+            "stars": 1001
           }
         ]
       },
@@ -127,69 +127,6 @@
       "rank": 1
     },
     {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP Stale Internal Request-State Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.99999,
-      "epss_pct": 0.99999,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 72,
-      "rising": 0,
-      "repos": {
-        "count": 569,
-        "stars": 6423,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1961
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1079
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1000
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-21",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "cve_id": "CVE-2026-111497",
       "title": "Google Brotli Unchecked Return Value Vulnerability",
       "vendor": "Google",
@@ -212,8 +149,8 @@
       "hype": 71,
       "rising": 0,
       "repos": {
-        "count": 92,
-        "stars": 414,
+        "count": 93,
+        "stars": 418,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -250,66 +187,70 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
-      "cve_id": "CVE-2026-20320",
-      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "cvss": 7.5,
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP Stale Internal Request-State Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.00385,
-      "epss_pct": 0.32917,
-      "cwe": "CWE-611",
-      "published": null,
+      "epss": 0.99999,
+      "epss_pct": 0.99999,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
         "ransomware": false
       },
       "zero_day": false,
-      "no_patch": false,
-      "hype": 63,
-      "rising": 98,
+      "no_patch": true,
+      "hype": 71,
+      "rising": 0,
       "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
+        "count": 570,
+        "stars": 6431,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1962
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1079
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1001
+          }
+        ]
       },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-          "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-          "date": "2026-11-11T09:01:07.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-          "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-          "date": "2026-11-11T06:04:02.000Z"
-        }
-      ],
+      "media": [],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "in-the-news"
+        "high-epss",
+        "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-10-21",
+          "label": "Published to NVD"
         },
         {
-          "date": "2026-11-11",
-          "label": "Covered by The Hacker News, SecurityWeek"
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-123158",
@@ -332,7 +273,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 63,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 31,
         "stars": 21,
@@ -377,6 +318,65 @@
         {
           "date": "2026-11-09",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-20320",
+      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00385,
+      "epss_pct": 0.32917,
+      "cwe": "CWE-611",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 62,
+      "rising": 89,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+          "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+          "date": "2026-11-11T09:01:07.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+          "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+          "date": "2026-11-11T06:04:02.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-11",
+          "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
       "rank": 5
@@ -529,7 +529,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 61,
-      "rising": 27,
+      "rising": 23,
       "repos": {
         "count": 2,
         "stars": 7,
@@ -654,7 +654,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 60,
-      "rising": 27,
+      "rising": 23,
       "repos": {
         "count": 1,
         "stars": 7,
@@ -693,6 +693,77 @@
         }
       ],
       "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-125350",
+      "title": "Google Chromium Use-After-Free Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium",
+      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": false,
+      "hype": 55,
+      "rising": 43,
+      "repos": {
+        "count": 3,
+        "stars": 3,
+        "top": [
+          {
+            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
+            "stars": 2
+          },
+          {
+            "full_name": "ashrafzaryouh/CVE-2026-125350",
+            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-125350",
+            "stars": 1
+          },
+          {
+            "full_name": "TJT001/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+          "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+          "date": "2026-11-10T06:52:54.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-10",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-97229",
@@ -751,7 +822,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-116606",
@@ -773,8 +844,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
-      "rising": 27,
+      "hype": 53,
+      "rising": 25,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -816,77 +887,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
-    },
-    {
-      "cve_id": "CVE-2026-125350",
-      "title": "Google Chromium Use-After-Free Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium",
-      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": false,
-      "hype": 54,
-      "rising": 49,
-      "repos": {
-        "count": 3,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "ashrafzaryouh/CVE-2026-125350",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-125350",
-            "stars": 1
-          },
-          {
-            "full_name": "TJT001/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
-            "stars": 0
-          },
-          {
-            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-          "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-          "date": "2026-11-10T06:52:54.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-10",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 13
     },
     {
@@ -910,7 +910,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 63,
+      "rising": 57,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -963,7 +963,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 51,
-      "rising": 41,
+      "rising": 35,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -1081,8 +1081,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 50,
-      "rising": 8,
+      "hype": 49,
+      "rising": 4,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -1557,8 +1557,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 46,
-      "rising": 27,
+      "hype": 45,
+      "rising": 25,
       "repos": {
         "count": 2,
         "stars": 5,
@@ -1664,7 +1664,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 2,
         "stars": 3,
@@ -1881,11 +1881,16 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 27,
+      "rising": 25,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
+          {
+            "full_name": "Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
+            "html_url": "https://github.com/Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
+            "stars": 0
+          },
           {
             "full_name": "AmesianX/CVE-2026-124194-poc",
             "html_url": "https://github.com/AmesianX/CVE-2026-124194-poc",
@@ -2092,8 +2097,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 41,
-      "rising": 19,
+      "hype": 40,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2895,7 +2900,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 8,
+      "rising": 7,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2938,7 +2943,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2973,7 +2978,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3008,7 +3013,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 10,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3043,7 +3048,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 12,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3069,17 +3074,17 @@
       "rank": 58
     },
     {
-      "cve_id": "CVE-2026-125370",
-      "title": "Kubero 3.0.0 through 3.1.1 contains an authentication bypass vulnerability that allows unauthenticated remote attacke…",
+      "cve_id": "CVE-2026-125086",
+      "title": "A vulnerability has been found in D-Link M60 1.12.B01.",
       "vendor": null,
       "product": null,
-      "description": "Kubero 3.0.0 through 3.1.1 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to forge administrative JWTs by using a hardcoded fallback signing secret when JWT_SECRET is unset. Attackers can sign tokens with arbitrary role, userGroups and permissions claims, which JwtStrategy.validate() trusts without a database lookup, to take control of pipelines, applications, users and API tokens.",
-      "cvss": 9.8,
+      "description": "A vulnerability has been found in D-Link M60 1.12.B01. Impacted is the function system of the file /etc/emDaemon/mosquitto.conf of the component emDaemon MQTT Broker. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.",
+      "cvss": 10,
       "severity": "CRITICAL",
-      "epss": 0.00683,
-      "epss_pct": 0.52832,
-      "cwe": "CWE-321",
-      "published": "2026-11-10T00:17:09.237",
+      "epss": 0.00606,
+      "epss_pct": 0.49338,
+      "cwe": "CWE-259",
+      "published": "2026-11-10T01:17:19.640",
       "kev": {
         "in_kev": false
       },
@@ -3104,24 +3109,24 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-125383",
-      "title": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass…",
+      "cve_id": "CVE-2026-120002",
+      "title": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a net…",
       "vendor": null,
       "product": null,
-      "description": "INDOTALENT WHMS (Asp.Net-Core-Inventory-Order-Management-System) before 10.20261109 contains an authentication bypass vulnerability caused by a hard-coded JWT signing key, issuer and audience in appsettings.json. Unauthenticated remote attackers can forge tokens for any user ID and role that the Tokens/DI.cs validator trusts, gaining administrator access to the entire API.",
-      "cvss": 9.8,
+      "description": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
+      "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.00834,
-      "epss_pct": 0.57966,
-      "cwe": "CWE-321",
-      "published": "2026-11-10T00:17:11.510",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-863",
+      "published": "2026-11-10T19:20:26.080",
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
