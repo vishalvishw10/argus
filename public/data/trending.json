@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:11:54.613Z",
+  "generated_at": "2026-11-14T22:30:14.748Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "855 recent"
+      "detail": "842 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "881 scored"
+      "detail": "868 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5606 mapped"
+      "detail": "5613 mapped"
     },
     {
       "name": "Reddit",
@@ -86,7 +86,7 @@
       "hype": 73,
       "rising": 0,
       "repos": {
-        "count": 784,
+        "count": 785,
         "stars": 7220,
         "top": [
           {
@@ -212,7 +212,7 @@
       "hype": 71,
       "rising": 0,
       "repos": {
-        "count": 573,
+        "count": 574,
         "stars": 6453,
         "top": [
           {
@@ -253,132 +253,16 @@
       "rank": 3
     },
     {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.79485,
-      "epss_pct": 0.9961,
-      "cwe": "CWE-290",
-      "published": "2026-10-15T21:17:00.117",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 62,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
-            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 4
-          },
-          {
-            "full_name": "maxprog-svg/CVE-2026-102764",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
-            "stars": 0
-          },
-          {
-            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-116606",
-      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Barracuda Email Security Gateway (ESG)",
-      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.10947,
-      "epss_pct": 0.95956,
-      "cwe": "CWE-288",
-      "published": "2026-11-02T13:17:37.017",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 2,
-      "repos": {
-        "count": 1,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-02",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 5
-    },
-    {
       "cve_id": "CVE-2026-21589",
       "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
       "vendor": "Atlassian",
       "product": "Multiple Products",
       "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.99664,
       "epss_pct": 0.9995,
-      "cwe": null,
+      "cwe": "CWE-552",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -425,7 +309,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 6
+      "rank": 4
+    },
+    {
+      "cve_id": "CVE-2026-116606",
+      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.10947,
+      "epss_pct": 0.95956,
+      "cwe": "CWE-288",
+      "published": "2026-11-02T13:17:37.017",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -491,7 +427,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -552,7 +488,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "cve_id": "CVE-2026-111560",
@@ -575,7 +511,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 1,
         "stars": 4,
@@ -604,7 +540,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-97229",
@@ -663,7 +599,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-114713",
@@ -686,7 +622,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 54,
-      "rising": 63,
+      "rising": 59,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -733,7 +669,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-123158",
@@ -791,7 +727,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -850,6 +786,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 12
+    },
+    {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.79485,
+      "epss_pct": 0.9961,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-16",
+        "due_date": "2026-10-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
+            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
+            "stars": 4
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
+          },
+          {
+            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 13
     },
     {
@@ -858,11 +853,11 @@
       "vendor": "Collabora",
       "product": "Collabora Online – Built-in CODE Server",
       "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.73307,
       "epss_pct": 0.99469,
-      "cwe": "CWE-78",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -932,7 +927,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 48,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1212,11 +1207,11 @@
       "vendor": "Plex",
       "product": "Media Server",
       "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": 7.2,
-      "severity": "HIGH",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.19767,
       "epss_pct": 0.9745,
-      "cwe": "CWE-73",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1338,7 +1333,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 3,
         "stars": 15,
@@ -1376,6 +1371,64 @@
       "rank": 23
     },
     {
+      "cve_id": "CVE-2026-125350",
+      "title": "Google Chromium Use-After-Free Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium",
+      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00962,
+      "epss_pct": 0.62184,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
+            "stars": 4
+          },
+          {
+            "full_name": "al4n4n/CVE-2026-125350",
+            "html_url": "https://github.com/al4n4n/CVE-2026-125350",
+            "stars": 0
+          },
+          {
+            "full_name": "TJT001/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
+    },
+    {
       "cve_id": "CVE-2026-119977",
       "title": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
       "vendor": "WordPress",
@@ -1395,7 +1448,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 46,
+      "hype": 45,
       "rising": 0,
       "repos": {
         "count": 8,
@@ -1431,64 +1484,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-125350",
-      "title": "Google Chromium Use-After-Free Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium",
-      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.00962,
-      "epss_pct": 0.62184,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 2,
-      "repos": {
-        "count": 4,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
-            "stars": 4
-          },
-          {
-            "full_name": "al4n4n/CVE-2026-125350",
-            "html_url": "https://github.com/al4n4n/CVE-2026-125350",
-            "stars": 0
-          },
-          {
-            "full_name": "TJT001/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 25
     },
     {
@@ -1497,11 +1492,11 @@
       "vendor": "Plex",
       "product": "Media Server",
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
       "epss": 0.10724,
       "epss_pct": 0.95892,
-      "cwe": null,
+      "cwe": "CWE-918",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1550,11 +1545,11 @@
       "vendor": "Plex",
       "product": "Media Server",
       "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
       "epss": 0.12689,
       "epss_pct": 0.96324,
-      "cwe": null,
+      "cwe": "CWE-84",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1603,11 +1598,11 @@
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.02191,
       "epss_pct": 0.82739,
-      "cwe": "CWE-732",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -1618,7 +1613,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 26,
+      "rising": 24,
       "repos": {
         "count": 1,
         "stars": 3,
@@ -1666,7 +1661,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 11,
+      "rising": 8,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1721,7 +1716,7 @@
       "hype": 43,
       "rising": 0,
       "repos": {
-        "count": 2,
+        "count": 3,
         "stars": 3,
         "top": [
           {
@@ -1733,6 +1728,11 @@
             "full_name": "majidrahimi5020-lgtm/Poc-exploit-for-CVE-2026-116779-FreeSWITCH-",
             "html_url": "https://github.com/majidrahimi5020-lgtm/Poc-exploit-for-CVE-2026-116779-FreeSWITCH-",
             "stars": 1
+          },
+          {
+            "full_name": "al4n4n/CVE-2026-116779",
+            "html_url": "https://github.com/al4n4n/CVE-2026-116779",
+            "stars": 0
           }
         ]
       },
@@ -1883,7 +1883,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 39,
-      "rising": 2,
+      "rising": 0,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -1909,11 +1909,11 @@
       "vendor": "GPUStack",
       "product": "GPUStack",
       "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.00517,
       "epss_pct": 0.44564,
-      "cwe": "CWE-287",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2005,11 +2005,11 @@
       "vendor": "SonicWall",
       "product": "SonicOS SSLVPN",
       "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.00532,
       "epss_pct": 0.45539,
-      "cwe": null,
+      "cwe": "CWE-308",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2058,11 +2058,11 @@
       "vendor": "ONLYOFFICE",
       "product": "Docs",
       "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
       "epss": 0.30244,
       "epss_pct": 0.98251,
-      "cwe": null,
+      "cwe": "CWE-22",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2670,11 +2670,11 @@
       "vendor": "EG Secure Solutions",
       "product": "SiteGuard Server Edition",
       "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-      "cvss": 7.8,
-      "severity": "HIGH",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.02528,
       "epss_pct": 0.85157,
-      "cwe": "CWE-78",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2764,7 +2764,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 29,
-      "rising": 13,
+      "rising": 10,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -2818,21 +2818,21 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 21,
-      "rising": 6,
+      "hype": 22,
+      "rising": 4,
       "repos": {
-        "count": 12,
-        "stars": 9,
+        "count": 13,
+        "stars": 11,
         "top": [
           {
             "full_name": "googlesky/CVE-2026-119618",
             "html_url": "https://github.com/googlesky/CVE-2026-119618",
-            "stars": 9
+            "stars": 10
           },
           {
             "full_name": "d4ytox/CVE-2026-119618",
             "html_url": "https://github.com/d4ytox/CVE-2026-119618",
-            "stars": 0
+            "stars": 1
           },
           {
             "full_name": "blkph0x/CVE-2026-119618-mod_http2-lab",
@@ -2863,6 +2863,49 @@
       "rank": 54
     },
     {
+      "cve_id": "CVE-2026-119987",
+      "title": "Untrusted search path in Microsoft Windows App Store allows an authorized attacker to elevate privileges locally.",
+      "vendor": null,
+      "product": null,
+      "description": "Untrusted search path in Microsoft Windows App Store allows an authorized attacker to elevate privileges locally.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00282,
+      "epss_pct": 0.20992,
+      "cwe": "CWE-426",
+      "published": "2026-11-10T19:20:23.767",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 19,
+      "rising": 3,
+      "repos": {
+        "count": 1,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "karollooool/CVE-2026-119987-writeup",
+            "html_url": "https://github.com/karollooool/CVE-2026-119987-writeup",
+            "stars": 6
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 55
+    },
+    {
       "cve_id": "CVE-2026-76954",
       "title": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskS…",
       "vendor": null,
@@ -2879,8 +2922,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 19,
-      "rising": 10,
+      "hype": 18,
+      "rising": 9,
       "repos": {
         "count": 2,
         "stars": 0,
@@ -2905,49 +2948,6 @@
       "timeline": [
         {
           "date": "2026-11-12",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-119987",
-      "title": "Untrusted search path in Microsoft Windows App Store allows an authorized attacker to elevate privileges locally.",
-      "vendor": null,
-      "product": null,
-      "description": "Untrusted search path in Microsoft Windows App Store allows an authorized attacker to elevate privileges locally.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00282,
-      "epss_pct": 0.20992,
-      "cwe": "CWE-426",
-      "published": "2026-11-10T19:20:23.767",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 19,
-      "rising": 4,
-      "repos": {
-        "count": 1,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "karollooool/CVE-2026-119987-writeup",
-            "html_url": "https://github.com/karollooool/CVE-2026-119987-writeup",
-            "stars": 6
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
           "label": "Published to NVD"
         }
       ],
@@ -3006,7 +3006,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 15,
+      "rising": 14,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3049,7 +3049,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3084,7 +3084,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 1,
         "stars": 0,
