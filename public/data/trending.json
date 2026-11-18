@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-18T04:28:38.134Z",
+  "generated_at": "2026-11-18T14:07:29.523Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 6,
+    "media_mentions": 8,
     "reddit_upvotes": 0,
     "kev_count": 49,
     "kev_total": 1782,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1183 recent"
+      "detail": "1297 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "706 scored"
+      "detail": "688 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "9 mentions"
+      "detail": "10 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5659 mapped"
+      "detail": "5669 mapped"
     },
     {
       "name": "Reddit",
@@ -63,6 +63,76 @@
     }
   ],
   "cves": [
+    {
+      "cve_id": "CVE-2026-115731",
+      "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Perforce",
+      "product": "Puppet Enterprise",
+      "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00366,
+      "epss_pct": 0.30882,
+      "cwe": "CWE-94",
+      "published": "2026-11-03T21:17:01.867",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-17",
+        "due_date": "2026-12-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 78,
+      "rising": 100,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "foxcornlab/puppet-enterprise-scanner",
+            "html_url": "https://github.com/foxcornlab/puppet-enterprise-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Critical Perforce Puppet RCE Exploited in Attacks",
+          "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+          "date": "2026-11-18T10:37:08.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+          "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+          "date": "2026-11-18T08:24:31.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-03",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-17",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-18",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        }
+      ],
+      "rank": 1
+    },
     {
       "cve_id": "CVE-2026-109618",
       "title": "PHP Memory Corruption Vulnerability",
@@ -87,12 +157,12 @@
       "rising": 0,
       "repos": {
         "count": 793,
-        "stars": 7265,
+        "stars": 7271,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1981
+            "stars": 1983
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -102,7 +172,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1011
+            "stars": 1010
           }
         ]
       },
@@ -124,7 +194,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "cve_id": "CVE-2026-111497",
@@ -187,7 +257,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-109619",
@@ -213,12 +283,12 @@
       "rising": 0,
       "repos": {
         "count": 578,
-        "stars": 6496,
+        "stars": 6501,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1981
+            "stars": 1983
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -228,7 +298,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1011
+            "stars": 1010
           }
         ]
       },
@@ -250,7 +320,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 3
+      "rank": 4
     },
     {
       "cve_id": "CVE-2026-114713",
@@ -272,7 +342,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 65,
+      "hype": 64,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -324,7 +394,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -383,7 +453,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
+      "rank": 6
     },
     {
       "cve_id": "CVE-2026-116606",
@@ -432,51 +502,6 @@
         },
         {
           "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-115731",
-      "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Perforce",
-      "product": "Puppet Enterprise",
-      "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00366,
-      "epss_pct": 0.30882,
-      "cwe": "CWE-94",
-      "published": "2026-11-03T21:17:01.867",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-17",
-        "due_date": "2026-12-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 31,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-03",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-17",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -561,7 +586,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
+      "hype": 53,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -594,65 +619,6 @@
       "rank": 9
     },
     {
-      "cve_id": "CVE-2026-84869",
-      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.01173,
-      "epss_pct": 0.68014,
-      "cwe": "CWE-269",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 53,
-      "rising": 32,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
-          "url": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
-          "date": "2026-11-17T13:24:43.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-          "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-          "date": "2026-11-12T13:08:28.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-12",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 10
-    },
-    {
       "cve_id": "CVE-2026-123158",
       "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
       "vendor": "OpenBSD",
@@ -676,12 +642,12 @@
       "rising": 0,
       "repos": {
         "count": 41,
-        "stars": 30,
+        "stars": 31,
         "top": [
           {
             "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
             "html_url": "https://github.com/gabrielunknown/CVE-2026-123158_SSHole",
-            "stars": 9
+            "stars": 10
           },
           {
             "full_name": "Maalfer/CVE-2026-123158",
@@ -708,7 +674,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-102764",
@@ -767,7 +733,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -821,7 +787,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -870,7 +836,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -929,7 +895,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -988,7 +954,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-116779",
@@ -1014,12 +980,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 52,
+        "stars": 54,
         "top": [
           {
             "full_name": "DeathShotXD/SIP2Shell",
             "html_url": "https://github.com/DeathShotXD/SIP2Shell",
-            "stars": 47
+            "stars": 49
           },
           {
             "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
@@ -1046,7 +1012,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-46300",
@@ -1104,7 +1070,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1162,7 +1128,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 18
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1204,7 +1170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 19
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1246,7 +1212,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 20
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1288,7 +1254,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1346,7 +1312,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-124194",
@@ -1404,7 +1370,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1457,7 +1423,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -1510,7 +1476,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-119977",
@@ -1566,6 +1532,79 @@
         {
           "date": "2026-11-03",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "cve_id": "CVE-2026-114938",
+      "title": "CVE-2026-114938",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-122",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 44,
+      "rising": 100,
+      "repos": {
+        "count": 39,
+        "stars": 151,
+        "top": [
+          {
+            "full_name": "ikow/java4shell-poc",
+            "html_url": "https://github.com/ikow/java4shell-poc",
+            "stars": 112
+          },
+          {
+            "full_name": "theori-io/java4shell-runtime-patch-CVE-2026-114938",
+            "html_url": "https://github.com/theori-io/java4shell-runtime-patch-CVE-2026-114938",
+            "stars": 17
+          },
+          {
+            "full_name": "ashrafzaryouh/CVE-2026-114938",
+            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-114938",
+            "stars": 6
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+          "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+          "date": "2026-11-18T11:55:49.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+          "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+          "date": "2026-11-18T08:24:23.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+          "date": "2026-11-17T15:17:36.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 27
@@ -1647,7 +1686,7 @@
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 5,
+        "stars": 6,
         "top": [
           {
             "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
@@ -1655,13 +1694,13 @@
             "stars": 5
           },
           {
-            "full_name": "al4n4n/CVE-2026-125350",
-            "html_url": "https://github.com/al4n4n/CVE-2026-125350",
-            "stars": 0
-          },
-          {
             "full_name": "TJT001/CVE-2026-125350-PoC",
             "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
+            "stars": 1
+          },
+          {
+            "full_name": "al4n4n/CVE-2026-125350",
+            "html_url": "https://github.com/al4n4n/CVE-2026-125350",
             "stars": 0
           }
         ]
@@ -1740,6 +1779,59 @@
       "rank": 30
     },
     {
+      "cve_id": "CVE-2026-84869",
+      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "vendor": "ConnectWise",
+      "product": "ScreenConnect",
+      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.01173,
+      "epss_pct": 0.68014,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+          "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+          "date": "2026-11-12T13:08:28.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-12",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 31
+    },
+    {
       "cve_id": "CVE-2021-3199",
       "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
       "vendor": "ONLYOFFICE",
@@ -1778,7 +1870,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-111793",
@@ -1819,7 +1911,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-20320",
@@ -1860,7 +1952,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-102895",
@@ -1908,7 +2000,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-123218",
@@ -1953,54 +2045,6 @@
       "timeline": [
         {
           "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 35
-    },
-    {
-      "cve_id": "CVE-2026-19868",
-      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.00532,
-      "epss_pct": 0.45557,
-      "cwe": "CWE-308",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-06",
-        "due_date": "2026-11-20",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
-            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-06",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2055,6 +2099,54 @@
       "rank": 37
     },
     {
+      "cve_id": "CVE-2026-19868",
+      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00532,
+      "epss_pct": 0.45557,
+      "cwe": "CWE-308",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-06",
+        "due_date": "2026-11-20",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
+            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-06",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 38
+    },
+    {
       "cve_id": "CVE-2026-110936",
       "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
       "vendor": "Siemens",
@@ -2100,7 +2192,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2141,7 +2233,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -2189,7 +2281,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2230,7 +2322,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 42
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2271,7 +2363,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 43
     },
     {
       "cve_id": "CVE-2024-27834",
@@ -2312,7 +2404,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-118527",
@@ -2353,7 +2445,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 45
     },
     {
       "cve_id": "CVE-2026-111357",
@@ -2394,7 +2486,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 46
     },
     {
       "cve_id": "CVE-2026-76418",
@@ -2402,11 +2494,11 @@
       "vendor": "Cisco",
       "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
       "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
+      "cvss": null,
+      "severity": "UNKNOWN",
       "epss": 0.00821,
       "epss_pct": 0.57895,
-      "cwe": "CWE-690",
+      "cwe": null,
       "published": null,
       "kev": {
         "in_kev": true,
@@ -2435,7 +2527,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -2476,7 +2568,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2517,7 +2609,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2558,7 +2650,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-118383",
@@ -2613,129 +2705,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-114938",
-      "title": "CVE-2026-114938",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-122",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 23,
-      "rising": 33,
-      "repos": {
-        "count": 15,
-        "stars": 59,
-        "top": [
-          {
-            "full_name": "ikow/java4shell-poc",
-            "html_url": "https://github.com/ikow/java4shell-poc",
-            "stars": 39
-          },
-          {
-            "full_name": "theori-io/java4shell-runtime-patch-CVE-2026-114938",
-            "html_url": "https://github.com/theori-io/java4shell-runtime-patch-CVE-2026-114938",
-            "stars": 11
-          },
-          {
-            "full_name": "ashrafzaryouh/CVE-2026-114938",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-114938",
-            "stars": 6
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-          "date": "2026-11-17T15:17:36.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-17",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 51
-    },
-    {
-      "cve_id": "CVE-2026-119618",
-      "title": "CVE-2026-119618",
-      "vendor": null,
-      "product": null,
-      "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.01583,
-      "epss_pct": 0.75985,
-      "cwe": "CWE-362",
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 20,
-      "rising": 0,
-      "repos": {
-        "count": 16,
-        "stars": 18,
-        "top": [
-          {
-            "full_name": "googlesky/CVE-2026-119618",
-            "html_url": "https://github.com/googlesky/CVE-2026-119618",
-            "stars": 13
-          },
-          {
-            "full_name": "studiogangster/CVE-2026-119618",
-            "html_url": "https://github.com/studiogangster/CVE-2026-119618",
-            "stars": 4
-          },
-          {
-            "full_name": "d4ytox/CVE-2026-119618",
-            "html_url": "https://github.com/d4ytox/CVE-2026-119618",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-          "date": "2026-11-12T05:12:26.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-12",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 52
     },
     {
       "cve_id": "CVE-2026-129351",
@@ -2755,7 +2725,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 7,
+      "rising": 6,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2778,120 +2748,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 53
-    },
-    {
-      "cve_id": "CVE-2026-129354",
-      "title": "A flaw has been found in D-Link DIR-600L 2.17b02.",
-      "vendor": null,
-      "product": null,
-      "description": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00869,
-      "epss_pct": 0.59385,
-      "cwe": "CWE-119",
-      "published": "2026-11-15T01:18:03.043",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 7,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "googlesky/CVE-2026-129354",
-            "html_url": "https://github.com/googlesky/CVE-2026-129354",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-15",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-129955",
-      "title": "NodePress through 8.5.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain…",
-      "vendor": null,
-      "product": null,
-      "description": "NodePress through 8.5.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain administrator access by using the hardcoded default password 'root'. Attackers can send base64-encoded 'root' to POST /admin/login when NP_ADMIN_DEFAULT_PASSWORD is unset to obtain admin tokens and fully control the site.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00443,
-      "epss_pct": 0.39039,
-      "cwe": "CWE-1392",
-      "published": "2026-11-16T15:17:31.030",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 55
-    },
-    {
-      "cve_id": "CVE-2026-130071",
-      "title": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing…",
-      "vendor": null,
-      "product": null,
-      "description": "TridotsTech go1cms master branch through commit 7f68d05 and version-3 branch before commit ead8da3 contains a missing authentication vulnerability in the guest-whitelisted update_doc method that allows unauthenticated attackers to modify any document. Attackers can supply a doctype, name and arbitrary fields that are saved with ignore_permissions=True, altering User records to escalate privileges, take over accounts or tamper with business data.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00408,
-      "epss_pct": 0.35645,
-      "cwe": "CWE-306",
-      "published": "2026-11-16T22:18:22.373",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-16",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 56
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-130840",
@@ -2911,7 +2768,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2926,7 +2783,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 57
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-130849",
@@ -2946,7 +2803,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2961,7 +2818,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-130856",
@@ -2981,7 +2838,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2996,7 +2853,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-114784",
@@ -3016,7 +2873,147 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 19,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-114819",
+      "title": "Vulnerability in the Oracle Text component of Oracle Database Server.",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Text component of Oracle Database Server.  Supported versions that are affected are 19.3-19.32, 21.3-21.24 and  23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise Oracle Text.  While the vulnerability is in Oracle Text, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Text. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": "2026-11-17T22:18:09.980",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 57
+    },
+    {
+      "cve_id": "CVE-2026-114822",
+      "title": "Vulnerability in the RDBMS component of Oracle Database Server.",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the RDBMS component of Oracle Database Server.  Supported versions that are affected are 23.4.0-23.26.4. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to compromise RDBMS.  While the vulnerability is in RDBMS, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of RDBMS. CVSS 3.1 Base Score 9.9 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": "2026-11-17T22:18:10.103",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2026-114824",
+      "title": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Th…",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Platform Security for Java.  While the vulnerability is in Oracle Platform Security for Java, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Platform Security for Java. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": "2026-11-17T22:18:10.373",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-17",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2026-114835",
+      "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console).",
+      "vendor": null,
+      "product": null,
+      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": "2026-11-17T22:18:11.710",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 17,
       "repos": {
         "count": 0,
         "stars": 0,
