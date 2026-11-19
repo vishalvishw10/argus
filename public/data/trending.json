@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T03:35:11.881Z",
+  "generated_at": "2026-11-19T13:19:53.774Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 8,
+    "media_mentions": 9,
     "reddit_upvotes": 0,
-    "kev_count": 53,
+    "kev_count": 52,
     "kev_total": 1786,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1008 recent"
+      "detail": "1009 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "903 scored"
+      "detail": "879 scored"
     },
     {
       "name": "BleepingComputer",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5689 mapped"
+      "detail": "5706 mapped"
     },
     {
       "name": "Reddit",
@@ -63,76 +63,6 @@
     }
   ],
   "cves": [
-    {
-      "cve_id": "CVE-2026-115731",
-      "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Perforce",
-      "product": "Puppet Enterprise",
-      "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.00691,
-      "epss_pct": 0.53546,
-      "cwe": "CWE-94",
-      "published": "2026-11-03T21:17:01.867",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-17",
-        "due_date": "2026-12-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 79,
-      "rising": 83,
-      "repos": {
-        "count": 1,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "foxcornlab/puppet-enterprise-scanner",
-            "html_url": "https://github.com/foxcornlab/puppet-enterprise-scanner",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "Critical Perforce Puppet RCE Exploited in Attacks",
-          "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-          "date": "2026-11-18T10:37:08.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-          "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-          "date": "2026-11-18T08:24:31.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-03",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-17",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-18",
-          "label": "Covered by The Hacker News, SecurityWeek"
-        }
-      ],
-      "rank": 1
-    },
     {
       "cve_id": "CVE-2026-109618",
       "title": "PHP Memory Corruption Vulnerability",
@@ -153,34 +83,42 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 72,
-      "rising": 0,
+      "hype": 83,
+      "rising": 39,
       "repos": {
-        "count": 796,
-        "stars": 7295,
+        "count": 798,
+        "stars": 7300,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1990
+            "stars": 1991
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
             "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1086
+            "stars": 1087
           },
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1013
+            "stars": 1016
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Everything Is a Web Application, Including Your Firewall",
+          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+          "date": "2026-11-19T11:52:23.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
+        "in-the-news",
         "high-epss",
         "poc-available"
       ],
@@ -192,6 +130,85 @@
         {
           "date": "2026-10-26",
           "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-19",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP Stale Internal Request-State Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.99999,
+      "epss_pct": 0.99999,
+      "cwe": "CWE-416",
+      "published": "2026-10-21T14:17:09.823",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 81,
+      "rising": 39,
+      "repos": {
+        "count": 581,
+        "stars": 6521,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1991
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1087
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1016
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Everything Is a Web Application, Including Your Firewall",
+          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+          "date": "2026-11-19T11:52:23.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-19",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 2
@@ -220,7 +237,7 @@
       "rising": 0,
       "repos": {
         "count": 99,
-        "stars": 468,
+        "stars": 469,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -260,64 +277,65 @@
       "rank": 3
     },
     {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP Stale Internal Request-State Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.99999,
-      "epss_pct": 0.99999,
-      "cwe": "CWE-416",
-      "published": "2026-10-21T14:17:09.823",
+      "cve_id": "CVE-2026-115731",
+      "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Perforce",
+      "product": "Puppet Enterprise",
+      "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.00691,
+      "epss_pct": 0.53546,
+      "cwe": "CWE-94",
+      "published": "2026-11-03T21:17:01.867",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
+        "date_added": "2026-11-17",
+        "due_date": "2026-12-01",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 70,
-      "rising": 0,
+      "hype": 67,
+      "rising": 43,
       "repos": {
-        "count": 581,
-        "stars": 6524,
+        "count": 1,
+        "stars": 1,
         "top": [
           {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1990
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1086
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1013
+            "full_name": "foxcornlab/puppet-enterprise-scanner",
+            "html_url": "https://github.com/foxcornlab/puppet-enterprise-scanner",
+            "stars": 1
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+          "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+          "date": "2026-11-18T08:24:31.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss",
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-21",
+          "date": "2026-11-03",
           "label": "Published to NVD"
         },
         {
-          "date": "2026-10-26",
+          "date": "2026-11-17",
           "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-18",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 4
@@ -342,7 +360,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 64,
+      "hype": 63,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -586,7 +604,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
+      "hype": 52,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -976,7 +994,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 48,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 6,
         "stars": 4,
@@ -1334,7 +1352,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -1387,9 +1405,9 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 31,
+      "rising": 28,
       "repos": {
-        "count": 3,
+        "count": 4,
         "stars": 4,
         "top": [
           {
@@ -1403,8 +1421,8 @@
             "stars": 2
           },
           {
-            "full_name": "foxcornlab/confluence-axis-scanner",
-            "html_url": "https://github.com/foxcornlab/confluence-axis-scanner",
+            "full_name": "evenomn/CVE-2026-90436",
+            "html_url": "https://github.com/evenomn/CVE-2026-90436",
             "stars": 0
           }
         ]
@@ -1935,15 +1953,15 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 43,
-      "rising": 80,
+      "rising": 64,
       "repos": {
-        "count": 59,
-        "stars": 206,
+        "count": 66,
+        "stars": 231,
         "top": [
           {
             "full_name": "ikow/java4shell-poc",
             "html_url": "https://github.com/ikow/java4shell-poc",
-            "stars": 150
+            "stars": 165
           },
           {
             "full_name": "theori-io/java4shell-runtime-patch-CVE-2026-114938",
@@ -1951,9 +1969,9 @@
             "stars": 18
           },
           {
-            "full_name": "Ghost-Bx1/java-exploits",
-            "html_url": "https://github.com/Ghost-Bx1/java-exploits",
-            "stars": 6
+            "full_name": "Dungsocool/CVE-2026-114938",
+            "html_url": "https://github.com/Dungsocool/CVE-2026-114938",
+            "stars": 7
           }
         ]
       },
@@ -2010,8 +2028,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 31,
+      "hype": 41,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2030,107 +2048,6 @@
         }
       ],
       "rank": 35
-    },
-    {
-      "cve_id": "CVE-2026-84869",
-      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-      "vendor": "ConnectWise",
-      "product": "ScreenConnect",
-      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
-      "cvss": 9.9,
-      "severity": "CRITICAL",
-      "epss": 0.01173,
-      "epss_pct": 0.68102,
-      "cwe": "CWE-269",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-          "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-          "date": "2026-11-12T13:08:28.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news"
-      ],
-      "timeline": [
-        {
-          "date": "2026-09-11",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-12",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-102895",
-      "title": "GPUStack Improper Authentication Vulnerability",
-      "vendor": "GPUStack",
-      "product": "GPUStack",
-      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0573,
-      "epss_pct": 0.93197,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 38,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "fixedbyreboot/CVE-2026-102895-POC",
-            "html_url": "https://github.com/fixedbyreboot/CVE-2026-102895-POC",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 37
     },
     {
       "cve_id": "CVE-2026-111793",
@@ -2171,7 +2088,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-20320",
@@ -2212,7 +2129,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 37
+    },
+    {
+      "cve_id": "CVE-2026-102895",
+      "title": "GPUStack Improper Authentication Vulnerability",
+      "vendor": "GPUStack",
+      "product": "GPUStack",
+      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0573,
+      "epss_pct": 0.93197,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "fixedbyreboot/CVE-2026-102895-POC",
+            "html_url": "https://github.com/fixedbyreboot/CVE-2026-102895-POC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-123218",
@@ -2260,7 +2225,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 39
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -2308,7 +2273,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-19868",
@@ -2356,7 +2321,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2404,7 +2369,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2445,7 +2410,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -2493,7 +2458,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2534,7 +2499,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "cve_id": "CVE-2023-22894",
@@ -2575,7 +2540,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2024-27834",
@@ -2616,7 +2581,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "cve_id": "CVE-2026-118527",
@@ -2657,7 +2622,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-111357",
@@ -2698,7 +2663,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-76418",
@@ -2739,7 +2704,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -2780,7 +2745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2821,7 +2786,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2862,7 +2827,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-123007",
@@ -2882,25 +2847,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 35,
+      "rising": 30,
       "repos": {
-        "count": 10,
-        "stars": 142,
+        "count": 22,
+        "stars": 224,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-123007",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 139
+            "stars": 201
           },
           {
             "full_name": "Ghost-Bx1/nginx-exploits",
             "html_url": "https://github.com/Ghost-Bx1/nginx-exploits",
-            "stars": 1
+            "stars": 8
           },
           {
-            "full_name": "LLCForge/CVE-2026-123007",
-            "html_url": "https://github.com/LLCForge/CVE-2026-123007",
-            "stars": 1
+            "full_name": "arkrwn/NGINX2Root-CVE-2026-123007",
+            "html_url": "https://github.com/arkrwn/NGINX2Root-CVE-2026-123007",
+            "stars": 3
           }
         ]
       },
@@ -2921,6 +2886,67 @@
         {
           "date": "2026-11-18",
           "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 54
+    },
+    {
+      "cve_id": "CVE-2026-115560",
+      "title": "CVE-2026-115560",
+      "vendor": null,
+      "product": null,
+      "description": "",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 23,
+      "rising": 37,
+      "repos": {
+        "count": 27,
+        "stars": 264,
+        "top": [
+          {
+            "full_name": "syhunt/php2shell-protection",
+            "html_url": "https://github.com/syhunt/php2shell-protection",
+            "stars": 120
+          },
+          {
+            "full_name": "murrez/php2shell",
+            "html_url": "https://github.com/murrez/php2shell",
+            "stars": 107
+          },
+          {
+            "full_name": "PasqualePillitteri/php2shell-hardening",
+            "html_url": "https://github.com/PasqualePillitteri/php2shell-hardening",
+            "stars": 9
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
+          "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
+          "date": "2026-11-19T07:45:17.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-19",
+          "label": "Covered by SecurityWeek"
         }
       ],
       "rank": 55
@@ -2969,76 +2995,6 @@
       "rank": 56
     },
     {
-      "cve_id": "CVE-2026-130849",
-      "title": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability in NetHandler::tcpReceive() that allows r…",
-      "vendor": null,
-      "product": null,
-      "description": "BZFlag bzfs before 2.4.32 contains a heap out-of-bounds write vulnerability in NetHandler::tcpReceive() that allows remote unauthenticated attackers to corrupt heap memory by sending a TCP message with a body length of exactly 1024. Attackers can overwrite the tcplen receive offset with a negative value to write controlled bytes before the buffer, crashing the server or executing commands as the bzfs user.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00845,
-      "epss_pct": 0.58708,
-      "cwe": "CWE-122",
-      "published": "2026-11-17T20:17:50.113",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 57
-    },
-    {
-      "cve_id": "CVE-2026-91510",
-      "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).",
-      "vendor": null,
-      "product": null,
-      "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Access Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L).",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.00456,
-      "epss_pct": 0.40246,
-      "cwe": null,
-      "published": "2026-11-17T22:19:22.823",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
-      "timeline": [
-        {
-          "date": "2026-11-17",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 58
-    },
-    {
       "cve_id": "CVE-2026-130675",
       "title": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransf…",
       "vendor": null,
@@ -3056,7 +3012,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3071,7 +3027,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 59
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-130733",
@@ -3091,7 +3047,77 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 17,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 58
+    },
+    {
+      "cve_id": "CVE-2012-20007",
+      "title": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsi…",
+      "vendor": null,
+      "product": null,
+      "description": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsing, which uses preg_replace with the /e modifier and a double-quoted replacement. Unauthenticated attackers can send crafted requests to index.php with a malicious 's' parameter containing PHP expressions to execute arbitrary code on the server. Exploitation evidence was first observed by the Shadowserver Foundation on 2023-10-14.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-95",
+      "published": "2026-11-18T16:17:47.560",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Published to NVD"
+        }
+      ],
+      "rank": 59
+    },
+    {
+      "cve_id": "CVE-2018-25443",
+      "title": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /u…",
+      "vendor": null,
+      "product": null,
+      "description": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write an executable .aspx file for remote code execution. Exploitation evidence was first observed by the Shadowserver Foundation on 2023-10-17.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-434",
+      "published": "2026-11-18T16:17:48.500",
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 18,
+      "rising": 16,
       "repos": {
         "count": 0,
         "stars": 0,
