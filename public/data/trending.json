@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T13:19:53.774Z",
+  "generated_at": "2026-11-19T21:40:25.856Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "1009 recent"
+      "detail": "880 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "879 scored"
+      "detail": "786 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "10 mentions"
+      "detail": "12 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "1 mentions"
+      "detail": "0 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5706 mapped"
+      "detail": "5722 mapped"
     },
     {
       "name": "Reddit",
@@ -84,15 +84,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 83,
-      "rising": 39,
+      "rising": 35,
       "repos": {
         "count": 798,
-        "stars": 7300,
+        "stars": 7307,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1991
+            "stars": 1990
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -102,7 +102,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1016
+            "stars": 1020
           }
         ]
       },
@@ -159,15 +159,15 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 81,
-      "rising": 39,
+      "rising": 35,
       "repos": {
         "count": 581,
-        "stars": 6521,
+        "stars": 6529,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
             "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1991
+            "stars": 1990
           },
           {
             "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
@@ -177,7 +177,7 @@
           {
             "full_name": "assetnote/php2shell-scanner",
             "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1016
+            "stars": 1020
           }
         ]
       },
@@ -221,8 +221,8 @@
       "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.82641,
-      "epss_pct": 0.99674,
+      "epss": 0.8237,
+      "epss_pct": 0.9967,
       "cwe": "CWE-252",
       "published": "2026-10-22T14:17:37.190",
       "kev": {
@@ -285,7 +285,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.00691,
-      "epss_pct": 0.53546,
+      "epss_pct": 0.53604,
       "cwe": "CWE-94",
       "published": "2026-11-03T21:17:01.867",
       "kev": {
@@ -297,7 +297,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 67,
-      "rising": 43,
+      "rising": 36,
       "repos": {
         "count": 1,
         "stars": 1,
@@ -349,7 +349,7 @@
       "cvss": 7.7,
       "severity": "HIGH",
       "epss": 0.00467,
-      "epss_pct": 0.41114,
+      "epss_pct": 0.412,
       "cwe": "CWE-140",
       "published": "2026-11-08T03:16:33.410",
       "kev": {
@@ -482,7 +482,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.10947,
-      "epss_pct": 0.95972,
+      "epss_pct": 0.95978,
       "cwe": "CWE-288",
       "published": "2026-11-02T13:17:37.017",
       "kev": {
@@ -534,7 +534,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.69289,
-      "epss_pct": 0.9937,
+      "epss_pct": 0.99371,
       "cwe": "CWE-190",
       "published": null,
       "kev": {
@@ -585,6 +585,60 @@
       "rank": 8
     },
     {
+      "cve_id": "CVE-2026-40217",
+      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.61911,
+      "epss_pct": 0.99193,
+      "cwe": "CWE-420",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-12-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 25,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "learner202649/CVE-2026-40217-PoC",
+            "html_url": "https://github.com/learner202649/CVE-2026-40217-PoC",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-LiteLLM",
+            "html_url": "https://github.com/HORKimhab/CVE-LiteLLM",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 9
+    },
+    {
       "cve_id": "CVE-2026-111560",
       "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
       "vendor": "Barracuda Networks",
@@ -593,7 +647,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.09082,
-      "epss_pct": 0.95394,
+      "epss_pct": 0.95401,
       "cwe": "CWE-78",
       "published": "2026-11-02T13:17:35.190",
       "kev": {
@@ -634,7 +688,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-90817",
+      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "vendor": "Vanderbilt University",
+      "product": "Research Electronic Data Capture (REDCap)",
+      "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.25187,
+      "epss_pct": 0.97974,
+      "cwe": "CWE-73",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 25,
+      "repos": {
+        "count": 6,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "murrez/CVE-2026-90817",
+            "html_url": "https://github.com/murrez/CVE-2026-90817",
+            "stars": 2
+          },
+          {
+            "full_name": "yulisec/CVE-2026-90817",
+            "html_url": "https://github.com/yulisec/CVE-2026-90817",
+            "stars": 1
+          },
+          {
+            "full_name": "securifera/CVE-2026-90817",
+            "html_url": "https://github.com/securifera/CVE-2026-90817",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-123158",
@@ -645,7 +757,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.189,
-      "epss_pct": 0.97351,
+      "epss_pct": 0.97354,
       "cwe": "CWE-394",
       "published": null,
       "kev": {
@@ -656,7 +768,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 51,
+      "hype": 50,
       "rising": 0,
       "repos": {
         "count": 44,
@@ -692,7 +804,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 10
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-116779",
@@ -703,7 +815,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.22081,
-      "epss_pct": 0.97713,
+      "epss_pct": 0.97715,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -750,7 +862,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 13
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -804,7 +916,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 12
+      "rank": 14
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -853,7 +965,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -912,7 +1024,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 14
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -971,65 +1083,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-90817",
-      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-      "vendor": "Vanderbilt University",
-      "product": "Research Electronic Data Capture (REDCap)",
-      "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.03749,
-      "epss_pct": 0.90092,
-      "cwe": "CWE-73",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-11-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 28,
-      "repos": {
-        "count": 6,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "murrez/CVE-2026-90817",
-            "html_url": "https://github.com/murrez/CVE-2026-90817",
-            "stars": 2
-          },
-          {
-            "full_name": "yulisec/CVE-2026-90817",
-            "html_url": "https://github.com/yulisec/CVE-2026-90817",
-            "stars": 1
-          },
-          {
-            "full_name": "securifera/CVE-2026-90817",
-            "html_url": "https://github.com/securifera/CVE-2026-90817",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-46300",
@@ -1040,7 +1094,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.1613,
-      "epss_pct": 0.96989,
+      "epss_pct": 0.96993,
       "cwe": "CWE-787",
       "published": null,
       "kev": {
@@ -1087,7 +1141,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1098,7 +1152,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.11886,
-      "epss_pct": 0.96183,
+      "epss_pct": 0.96189,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1145,7 +1199,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2015-5477",
@@ -1187,7 +1241,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2016-3081",
@@ -1229,7 +1283,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2015-3306",
@@ -1271,7 +1325,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1282,7 +1336,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.19767,
-      "epss_pct": 0.9746,
+      "epss_pct": 0.97463,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1329,59 +1383,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
-    },
-    {
-      "cve_id": "CVE-2026-40217",
-      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.1702,
-      "epss_pct": 0.97134,
-      "cwe": "CWE-420",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-12-02",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 28,
-      "repos": {
-        "count": 2,
-        "stars": 1,
-        "top": [
-          {
-            "full_name": "learner202649/CVE-2026-40217-PoC",
-            "html_url": "https://github.com/learner202649/CVE-2026-40217-PoC",
-            "stars": 1
-          },
-          {
-            "full_name": "HORKimhab/CVE-LiteLLM",
-            "html_url": "https://github.com/HORKimhab/CVE-LiteLLM",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 23
     },
     {
@@ -1392,8 +1393,8 @@
       "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01128,
-      "epss_pct": 0.67007,
+      "epss": 0.01773,
+      "epss_pct": 0.7866,
       "cwe": "CWE-470",
       "published": null,
       "kev": {
@@ -1405,7 +1406,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 28,
+      "rising": 25,
       "repos": {
         "count": 4,
         "stars": 4,
@@ -1451,7 +1452,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.50694,
-      "epss_pct": 0.98943,
+      "epss_pct": 0.98944,
       "cwe": "CWE-290",
       "published": null,
       "kev": {
@@ -1510,7 +1511,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.88139,
-      "epss_pct": 0.99771,
+      "epss_pct": 0.9977,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -1552,7 +1553,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.0162,
-      "epss_pct": 0.76562,
+      "epss_pct": 0.76594,
       "cwe": "CWE-356",
       "published": null,
       "kev": {
@@ -1566,7 +1567,7 @@
       "hype": 45,
       "rising": 0,
       "repos": {
-        "count": 4,
+        "count": 5,
         "stars": 24,
         "top": [
           {
@@ -1580,8 +1581,8 @@
             "stars": 2
           },
           {
-            "full_name": "LLCForge/CVE-2026-124194",
-            "html_url": "https://github.com/LLCForge/CVE-2026-124194",
+            "full_name": "raktabhdutta/NTLM-HashLeak-Attack-Detection-or-Outlook-NTLM-HashLeak-CVE-2026-124194",
+            "html_url": "https://github.com/raktabhdutta/NTLM-HashLeak-Attack-Detection-or-Outlook-NTLM-HashLeak-CVE-2026-124194",
             "stars": 0
           }
         ]
@@ -1669,7 +1670,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.10724,
-      "epss_pct": 0.95913,
+      "epss_pct": 0.95918,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1722,7 +1723,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.12689,
-      "epss_pct": 0.96337,
+      "epss_pct": 0.96343,
       "cwe": "CWE-84",
       "published": null,
       "kev": {
@@ -1775,7 +1776,7 @@
       "cvss": 8.1,
       "severity": "HIGH",
       "epss": 0.01586,
-      "epss_pct": 0.76089,
+      "epss_pct": 0.76122,
       "cwe": "CWE-367",
       "published": null,
       "kev": {
@@ -1790,7 +1791,7 @@
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 20,
+        "stars": 17,
         "top": [
           {
             "full_name": "tc4dy/CVE-2026-119977-Toolkit",
@@ -1798,14 +1799,14 @@
             "stars": 7
           },
           {
-            "full_name": "Worthes/CVE-2026-119977-WordPress-Upgrade-RCE-Bypasses-7.1.4",
-            "html_url": "https://github.com/Worthes/CVE-2026-119977-WordPress-Upgrade-RCE-Bypasses-7.1.4",
-            "stars": 5
-          },
-          {
             "full_name": "lysophavin18/CVE-2026-119977",
             "html_url": "https://github.com/lysophavin18/CVE-2026-119977",
             "stars": 5
+          },
+          {
+            "full_name": "BugStealers/CVE-2026-119977",
+            "html_url": "https://github.com/BugStealers/CVE-2026-119977",
+            "stars": 2
           }
         ]
       },
@@ -1825,59 +1826,6 @@
       "rank": 31
     },
     {
-      "cve_id": "CVE-2026-123039",
-      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.01938,
-      "epss_pct": 0.8054,
-      "cwe": "CWE-732",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-13",
-        "due_date": "2026-11-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 43,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "googlesky/CVE-2026-123039",
-            "html_url": "https://github.com/googlesky/CVE-2026-123039",
-            "stars": 4
-          },
-          {
-            "full_name": "foxcornlab/checkpoint-gaia-scanner",
-            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 32
-    },
-    {
       "cve_id": "CVE-2026-125350",
       "title": "Google Chromium Use-After-Free Vulnerability",
       "vendor": "Google",
@@ -1886,7 +1834,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.00962,
-      "epss_pct": 0.62314,
+      "epss_pct": 0.62364,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -1933,6 +1881,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-123039",
+      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.01938,
+      "epss_pct": 0.80567,
+      "cwe": "CWE-732",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-13",
+        "due_date": "2026-11-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "googlesky/CVE-2026-123039",
+            "html_url": "https://github.com/googlesky/CVE-2026-123039",
+            "stars": 4
+          },
+          {
+            "full_name": "foxcornlab/checkpoint-gaia-scanner",
+            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 33
     },
     {
@@ -1943,8 +1944,8 @@
       "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in takeover of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service. CVSS 3.1 Base Score 8.1 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.00734,
-      "epss_pct": 0.55119,
+      "epss": 0.00753,
+      "epss_pct": 0.55858,
       "cwe": "CWE-122",
       "published": null,
       "kev": {
@@ -1952,26 +1953,26 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 43,
-      "rising": 64,
+      "hype": 42,
+      "rising": 50,
       "repos": {
-        "count": 66,
-        "stars": 231,
+        "count": 70,
+        "stars": 253,
         "top": [
           {
             "full_name": "ikow/java4shell-poc",
             "html_url": "https://github.com/ikow/java4shell-poc",
-            "stars": 165
+            "stars": 172
           },
           {
             "full_name": "theori-io/java4shell-runtime-patch-CVE-2026-114938",
             "html_url": "https://github.com/theori-io/java4shell-runtime-patch-CVE-2026-114938",
-            "stars": 18
+            "stars": 19
           },
           {
             "full_name": "Dungsocool/CVE-2026-114938",
             "html_url": "https://github.com/Dungsocool/CVE-2026-114938",
-            "stars": 7
+            "stars": 8
           }
         ]
       },
@@ -2016,8 +2017,8 @@
       "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01251,
-      "epss_pct": 0.70014,
+      "epss": 0.0215,
+      "epss_pct": 0.82512,
       "cwe": "CWE-116",
       "published": null,
       "kev": {
@@ -2029,7 +2030,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 28,
+      "rising": 25,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2050,88 +2051,6 @@
       "rank": 35
     },
     {
-      "cve_id": "CVE-2026-111793",
-      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "vendor": "Openwave Messaging Limited",
-      "product": "Webtop Media Transcoder",
-      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.00638,
-      "epss_pct": 0.51302,
-      "cwe": "CWE-669",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 36
-    },
-    {
-      "cve_id": "CVE-2026-20320",
-      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.00976,
-      "epss_pct": 0.62787,
-      "cwe": "CWE-611",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 37,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 37
-    },
-    {
       "cve_id": "CVE-2026-102895",
       "title": "GPUStack Improper Authentication Vulnerability",
       "vendor": "GPUStack",
@@ -2140,7 +2059,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.0573,
-      "epss_pct": 0.93197,
+      "epss_pct": 0.93208,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2177,6 +2096,88 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 36
+    },
+    {
+      "cve_id": "CVE-2026-111793",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "vendor": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.00638,
+      "epss_pct": 0.51364,
+      "cwe": "CWE-669",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 37
+    },
+    {
+      "cve_id": "CVE-2026-20320",
+      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.00976,
+      "epss_pct": 0.62836,
+      "cwe": "CWE-611",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 36,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 38
     },
     {
@@ -2188,7 +2189,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.00535,
-      "epss_pct": 0.45852,
+      "epss_pct": 0.45924,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2199,7 +2200,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 37,
+      "hype": 36,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -2236,7 +2237,7 @@
       "cvss": 9.9,
       "severity": "CRITICAL",
       "epss": 0.01025,
-      "epss_pct": 0.64217,
+      "epss_pct": 0.64265,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2284,7 +2285,7 @@
       "cvss": 7.5,
       "severity": "HIGH",
       "epss": 0.00532,
-      "epss_pct": 0.45663,
+      "epss_pct": 0.4573,
       "cwe": "CWE-308",
       "published": null,
       "kev": {
@@ -2332,7 +2333,7 @@
       "cvss": 6.7,
       "severity": "MEDIUM",
       "epss": 0.00967,
-      "epss_pct": 0.62415,
+      "epss_pct": 0.62466,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -2380,7 +2381,7 @@
       "cvss": 9.8,
       "severity": "CRITICAL",
       "epss": 0.06227,
-      "epss_pct": 0.93675,
+      "epss_pct": 0.93683,
       "cwe": "CWE-23",
       "published": null,
       "kev": {
@@ -2421,7 +2422,7 @@
       "cvss": 7.2,
       "severity": "HIGH",
       "epss": 0.02147,
-      "epss_pct": 0.82468,
+      "epss_pct": 0.82493,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2469,7 +2470,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.09813,
-      "epss_pct": 0.95643,
+      "epss_pct": 0.9565,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -2510,7 +2511,7 @@
       "cvss": 4.9,
       "severity": "MEDIUM",
       "epss": 0.04114,
-      "epss_pct": 0.90978,
+      "epss_pct": 0.90992,
       "cwe": "CWE-312",
       "published": null,
       "kev": {
@@ -2551,7 +2552,7 @@
       "cvss": 5.5,
       "severity": "MEDIUM",
       "epss": 0.01502,
-      "epss_pct": 0.74818,
+      "epss_pct": 0.74853,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2592,7 +2593,7 @@
       "cvss": 4.3,
       "severity": "MEDIUM",
       "epss": 0.00822,
-      "epss_pct": 0.58027,
+      "epss_pct": 0.58084,
       "cwe": "CWE-340",
       "published": null,
       "kev": {
@@ -2633,7 +2634,7 @@
       "cvss": 7,
       "severity": "HIGH",
       "epss": 0.00533,
-      "epss_pct": 0.45709,
+      "epss_pct": 0.45777,
       "cwe": "CWE-829",
       "published": null,
       "kev": {
@@ -2674,7 +2675,7 @@
       "cvss": 8.6,
       "severity": "HIGH",
       "epss": 0.00821,
-      "epss_pct": 0.58002,
+      "epss_pct": 0.58059,
       "cwe": "CWE-690",
       "published": null,
       "kev": {
@@ -2715,7 +2716,7 @@
       "cvss": 2.7,
       "severity": "LOW",
       "epss": 0.00689,
-      "epss_pct": 0.53464,
+      "epss_pct": 0.53521,
       "cwe": "CWE-778",
       "published": null,
       "kev": {
@@ -2756,7 +2757,7 @@
       "cvss": 7.8,
       "severity": "HIGH",
       "epss": 0.02528,
-      "epss_pct": 0.85213,
+      "epss_pct": 0.85236,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -2797,7 +2798,7 @@
       "cvss": 6.5,
       "severity": "MEDIUM",
       "epss": 0.01395,
-      "epss_pct": 0.72945,
+      "epss_pct": 0.72982,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -2830,6 +2831,67 @@
       "rank": 53
     },
     {
+      "cve_id": "CVE-2026-115560",
+      "title": "CVE-2026-115560",
+      "vendor": null,
+      "product": null,
+      "description": "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inject objects, which may lead to code execution when the reading application contains a suitable gadget chain, or to session corruption or denial of service.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-20",
+      "published": null,
+      "kev": {
+        "in_kev": false
+      },
+      "zero_day": false,
+      "no_patch": false,
+      "hype": 23,
+      "rising": 36,
+      "repos": {
+        "count": 27,
+        "stars": 265,
+        "top": [
+          {
+            "full_name": "syhunt/php2shell-protection",
+            "html_url": "https://github.com/syhunt/php2shell-protection",
+            "stars": 120
+          },
+          {
+            "full_name": "murrez/php2shell",
+            "html_url": "https://github.com/murrez/php2shell",
+            "stars": 108
+          },
+          {
+            "full_name": "PasqualePillitteri/php2shell-hardening",
+            "html_url": "https://github.com/PasqualePillitteri/php2shell-hardening",
+            "stars": 9
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+          "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+          "date": "2026-11-19T15:18:07.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-19",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 54
+    },
+    {
       "cve_id": "CVE-2026-123007",
       "title": "CVE-2026-123007",
       "vendor": null,
@@ -2837,8 +2899,8 @@
       "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.06358,
+      "epss_pct": 0.9379,
       "cwe": "CWE-191",
       "published": null,
       "kev": {
@@ -2847,25 +2909,25 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 23,
-      "rising": 30,
+      "rising": 25,
       "repos": {
-        "count": 22,
-        "stars": 224,
+        "count": 28,
+        "stars": 283,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-123007",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 201
+            "stars": 237
           },
           {
             "full_name": "Ghost-Bx1/nginx-exploits",
             "html_url": "https://github.com/Ghost-Bx1/nginx-exploits",
-            "stars": 8
+            "stars": 22
           },
           {
             "full_name": "arkrwn/NGINX2Root-CVE-2026-123007",
             "html_url": "https://github.com/arkrwn/NGINX2Root-CVE-2026-123007",
-            "stars": 3
+            "stars": 9
           }
         ]
       },
@@ -2888,67 +2950,6 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 54
-    },
-    {
-      "cve_id": "CVE-2026-115560",
-      "title": "CVE-2026-115560",
-      "vendor": null,
-      "product": null,
-      "description": "",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 23,
-      "rising": 37,
-      "repos": {
-        "count": 27,
-        "stars": 264,
-        "top": [
-          {
-            "full_name": "syhunt/php2shell-protection",
-            "html_url": "https://github.com/syhunt/php2shell-protection",
-            "stars": 120
-          },
-          {
-            "full_name": "murrez/php2shell",
-            "html_url": "https://github.com/murrez/php2shell",
-            "stars": 107
-          },
-          {
-            "full_name": "PasqualePillitteri/php2shell-hardening",
-            "html_url": "https://github.com/PasqualePillitteri/php2shell-hardening",
-            "stars": 9
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "SecurityWeek",
-          "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
-          "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
-          "date": "2026-11-19T07:45:17.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-19",
-          "label": "Covered by SecurityWeek"
-        }
-      ],
       "rank": 55
     },
     {
@@ -2960,7 +2961,7 @@
       "cvss": 10,
       "severity": "CRITICAL",
       "epss": 0.00737,
-      "epss_pct": 0.5524,
+      "epss_pct": 0.553,
       "cwe": "CWE-416",
       "published": "2026-11-10T21:18:58.980",
       "kev": {
@@ -3002,8 +3003,8 @@
       "description": "Craft CMS from 5.0.0 before 5.11.4 contains a remote code execution vulnerability in ImageTransforms::normalizeTransform() that allows attackers to instantiate arbitrary classes by supplying class:null with a __class key. Attackers can reach the method through Craft Commerce's payments/pay redirect template calling customer.photo.getUrl() with a crafted transform to instantiate classes like yii\\rbac\\PhpManager and execute PHP.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00545,
+      "epss_pct": 0.46496,
       "cwe": "CWE-697",
       "published": "2026-11-18T12:17:10.783",
       "kev": {
@@ -3012,7 +3013,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3037,8 +3038,8 @@
       "description": "Grav from 2.0.0 before 2.2.18 contains an authorization bypass vulnerability that allows publishers to overwrite pages their per-page permissions deny by abusing FolderStorage key delimiter collisions and PageStorage folder reconstruction. Attackers can rename a folder like locked*** or save from a page with an unusual prefix width through a front-end Flex pages form, replacing protected content and permissions to access the protected subtree.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00308,
+      "epss_pct": 0.24096,
       "cwe": "CWE-140",
       "published": "2026-11-18T12:17:19.627",
       "kev": {
@@ -3047,7 +3048,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 14,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3072,8 +3073,8 @@
       "description": "ThinkPHP 2.0 through 2.2 and 3.0 Lite mode contains an eval injection vulnerability in the Dispatcher PATH_INFO parsing, which uses preg_replace with the /e modifier and a double-quoted replacement. Unauthenticated attackers can send crafted requests to index.php with a malicious 's' parameter containing PHP expressions to execute arbitrary code on the server. Exploitation evidence was first observed by the Shadowserver Foundation on 2023-10-14.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
+      "epss": 0.00526,
+      "epss_pct": 0.45321,
       "cwe": "CWE-95",
       "published": "2026-11-18T16:17:47.560",
       "kev": {
@@ -3082,7 +3083,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3100,17 +3101,17 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2018-25443",
-      "title": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /u…",
+      "cve_id": "CVE-2026-130754",
+      "title": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser(), which links …",
       "vendor": null,
       "product": null,
-      "description": "Baidu UEditor 1.4.0 through 1.4.3.3 contains an unrestricted file upload vulnerability in the catchimage action of /ueditor/net/controller.ashx that only validates the Content-Type header. Unauthenticated attackers can supply a source[] URL like x.jpg?.aspx to retain a malicious extension and write an executable .aspx file for remote code execution. Exploitation evidence was first observed by the Shadowserver Foundation on 2023-10-17.",
+      "description": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser(), which links a social login to an existing account by email without checking that the OAuth provider verified that email. Unauthenticated attackers using an OAuth/OIDC provider that asserts a victim's email can log in as any user, including Superadmin, and keep persistent access through a linked social_accounts entry.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": "CWE-434",
-      "published": "2026-11-18T16:17:48.500",
+      "epss": 0.00442,
+      "epss_pct": 0.3916,
+      "cwe": "CWE-287",
+      "published": "2026-11-18T19:17:45.940",
       "kev": {
         "in_kev": false
       },
