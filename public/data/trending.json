@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21T02:23:28.146Z",
+  "generated_at": "2026-11-21T11:15:17.638Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 13,
+    "media_mentions": 14,
     "reddit_upvotes": 0,
     "kev_count": 56,
     "kev_total": 1790,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "642 recent"
+      "detail": "661 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "669 scored"
+      "detail": "627 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "14 mentions"
+      "detail": "15 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5775 mapped"
+      "detail": "5819 mapped"
     },
     {
       "name": "Reddit",
@@ -84,10 +84,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 19,
+      "rising": 14,
       "repos": {
-        "count": 802,
-        "stars": 7146,
+        "count": 803,
+        "stars": 7147,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -155,10 +155,10 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 70,
-      "rising": 19,
+      "rising": 14,
       "repos": {
         "count": 583,
-        "stars": 6366,
+        "stars": 6367,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -229,7 +229,7 @@
       "rising": 0,
       "repos": {
         "count": 98,
-        "stars": 470,
+        "stars": 469,
         "top": [
           {
             "full_name": "assetnote/node2shell-scanner",
@@ -269,6 +269,77 @@
       "rank": 3
     },
     {
+      "cve_id": "CVE-2026-129448",
+      "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Roller",
+      "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01191,
+      "epss_pct": 0.68723,
+      "cwe": "CWE-502",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 67,
+      "rising": 70,
+      "repos": {
+        "count": 2,
+        "stars": 12,
+        "top": [
+          {
+            "full_name": "Yanixos/APACHE-CVE-2026-129448",
+            "html_url": "https://github.com/Yanixos/APACHE-CVE-2026-129448",
+            "stars": 12
+          },
+          {
+            "full_name": "foxcornlab/apache-roller-scanner",
+            "html_url": "https://github.com/foxcornlab/apache-roller-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+          "date": "2026-11-21T08:49:13.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+          "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+          "date": "2026-11-18T17:10:45.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-21",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 4
+    },
+    {
       "cve_id": "CVE-2026-115731",
       "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
       "vendor": "Perforce",
@@ -289,7 +360,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 66,
-      "rising": 11,
+      "rising": 4,
       "repos": {
         "count": 1,
         "stars": 2,
@@ -330,7 +401,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -389,71 +460,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-129448",
-      "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Apache",
-      "product": "Roller",
-      "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01191,
-      "epss_pct": 0.68723,
-      "cwe": "CWE-502",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-20",
-        "due_date": "2026-11-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 39,
-      "repos": {
-        "count": 2,
-        "stars": 12,
-        "top": [
-          {
-            "full_name": "Yanixos/APACHE-CVE-2026-129448",
-            "html_url": "https://github.com/Yanixos/APACHE-CVE-2026-129448",
-            "stars": 12
-          },
-          {
-            "full_name": "foxcornlab/apache-roller-scanner",
-            "html_url": "https://github.com/foxcornlab/apache-roller-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-          "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-          "date": "2026-11-18T17:10:45.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-11-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 6
     },
     {
@@ -477,9 +483,9 @@
       "zero_day": true,
       "no_patch": true,
       "hype": 56,
-      "rising": 62,
+      "rising": 54,
       "repos": {
-        "count": 5,
+        "count": 6,
         "stars": 1,
         "top": [
           {
@@ -488,13 +494,13 @@
             "stars": 1
           },
           {
-            "full_name": "3tternp/vcenter-cve-2026-123890-check",
-            "html_url": "https://github.com/3tternp/vcenter-cve-2026-123890-check",
+            "full_name": "Cyber-BansalAI/vmware-vcenter-2026",
+            "html_url": "https://github.com/Cyber-BansalAI/vmware-vcenter-2026",
             "stars": 0
           },
           {
-            "full_name": "LLCForge/CVE-2026-123890",
-            "html_url": "https://github.com/LLCForge/CVE-2026-123890",
+            "full_name": "3tternp/vcenter-cve-2026-123890-check",
+            "html_url": "https://github.com/3tternp/vcenter-cve-2026-123890-check",
             "stars": 0
           }
         ]
@@ -548,7 +554,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 62,
+      "rising": 55,
       "repos": {
         "count": 1,
         "stars": 8,
@@ -647,58 +653,6 @@
       "rank": 9
     },
     {
-      "cve_id": "CVE-2026-116606",
-      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Barracuda Email Security Gateway (ESG)",
-      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.10947,
-      "epss_pct": 0.95991,
-      "cwe": "CWE-288",
-      "published": "2026-11-02T13:17:37.017",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 55,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-02",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 10
-    },
-    {
       "cve_id": "CVE-2026-114713",
       "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
       "vendor": "UnrealIRCd",
@@ -758,6 +712,58 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 10
+    },
+    {
+      "cve_id": "CVE-2026-116606",
+      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.10947,
+      "epss_pct": 0.95991,
+      "cwe": "CWE-288",
+      "published": "2026-11-02T13:17:37.017",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 54,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 11
     },
     {
@@ -781,7 +787,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 52,
-      "rising": 15,
+      "rising": 12,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -887,7 +893,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 15,
+      "rising": 12,
       "repos": {
         "count": 6,
         "stars": 4,
@@ -983,64 +989,6 @@
       "rank": 15
     },
     {
-      "cve_id": "CVE-2026-116779",
-      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "vendor": "SignalWire",
-      "product": "FreeSwitch",
-      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.22081,
-      "epss_pct": 0.97722,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 7,
-        "stars": 63,
-        "top": [
-          {
-            "full_name": "DeathShotXD/SIP2Shell",
-            "html_url": "https://github.com/DeathShotXD/SIP2Shell",
-            "stars": 58
-          },
-          {
-            "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
-            "html_url": "https://github.com/hackzuoji/freeswitch-cve-2026-116779-POC",
-            "stars": 2
-          },
-          {
-            "full_name": "ashrafzaryouh/CVE-2026-116779",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-116779",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
-    },
-    {
       "cve_id": "CVE-2026-105134",
       "title": "Ahsay AhsayCBS Command Injection Vulnerability",
       "vendor": "Ahsay",
@@ -1092,7 +1040,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 16
     },
     {
       "cve_id": "CVE-2026-105133",
@@ -1141,7 +1089,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -1197,6 +1145,64 @@
       "timeline": [
         {
           "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "cve_id": "CVE-2026-116779",
+      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "vendor": "SignalWire",
+      "product": "FreeSwitch",
+      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.22081,
+      "epss_pct": 0.97722,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 7,
+        "stars": 65,
+        "top": [
+          {
+            "full_name": "DeathShotXD/SIP2Shell",
+            "html_url": "https://github.com/DeathShotXD/SIP2Shell",
+            "stars": 60
+          },
+          {
+            "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
+            "html_url": "https://github.com/hackzuoji/freeswitch-cve-2026-116779-POC",
+            "stars": 2
+          },
+          {
+            "full_name": "majidrahimi5020-lgtm/Poc-exploit-for-CVE-2026-116779-FreeSWITCH-",
+            "html_url": "https://github.com/majidrahimi5020-lgtm/Poc-exploit-for-CVE-2026-116779-FreeSWITCH-",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1562,64 +1568,6 @@
       "rank": 26
     },
     {
-      "cve_id": "CVE-2026-90436",
-      "title": "Apache Axis Unsafe Reflection Vulnerability",
-      "vendor": "Apache",
-      "product": "Axis",
-      "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.01833,
-      "epss_pct": 0.79426,
-      "cwe": "CWE-470",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-11-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 15,
-      "repos": {
-        "count": 4,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "dinosn/axis-cve-2026-90436-lab-poc",
-            "html_url": "https://github.com/dinosn/axis-cve-2026-90436-lab-poc",
-            "stars": 2
-          },
-          {
-            "full_name": "fixedbyreboot/CVE-2026-90436-POC",
-            "html_url": "https://github.com/fixedbyreboot/CVE-2026-90436-POC",
-            "stars": 2
-          },
-          {
-            "full_name": "evenomn/CVE-2026-90436",
-            "html_url": "https://github.com/evenomn/CVE-2026-90436",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 27
-    },
-    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -1676,7 +1624,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 27
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -1715,6 +1663,64 @@
       "timeline": [
         {
           "date": "2026-10-08",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
+    },
+    {
+      "cve_id": "CVE-2026-90436",
+      "title": "Apache Axis Unsafe Reflection Vulnerability",
+      "vendor": "Apache",
+      "product": "Axis",
+      "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.01833,
+      "epss_pct": 0.79426,
+      "cwe": "CWE-470",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 12,
+      "repos": {
+        "count": 4,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "fixedbyreboot/CVE-2026-90436-POC",
+            "html_url": "https://github.com/fixedbyreboot/CVE-2026-90436-POC",
+            "stars": 2
+          },
+          {
+            "full_name": "dinosn/axis-cve-2026-90436-lab-poc",
+            "html_url": "https://github.com/dinosn/axis-cve-2026-90436-lab-poc",
+            "stars": 2
+          },
+          {
+            "full_name": "foxcornlab/confluence-axis-scanner",
+            "html_url": "https://github.com/foxcornlab/confluence-axis-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1922,8 +1928,8 @@
             "stars": 2
           },
           {
-            "full_name": "raktabhdutta/NTLM-HashLeak-Attack-Detection-or-Outlook-NTLM-HashLeak-CVE-2026-124194",
-            "html_url": "https://github.com/raktabhdutta/NTLM-HashLeak-Attack-Detection-or-Outlook-NTLM-HashLeak-CVE-2026-124194",
+            "full_name": "aminaljabre77-collab/outlook-ntlm-leak-investigation",
+            "html_url": "https://github.com/aminaljabre77-collab/outlook-ntlm-leak-investigation",
             "stars": 0
           }
         ]
@@ -1980,8 +1986,8 @@
             "stars": 5
           },
           {
-            "full_name": "BugStealers/CVE-2026-119977",
-            "html_url": "https://github.com/BugStealers/CVE-2026-119977",
+            "full_name": "Worthes/CVE-2026-119977-WordPress-Upgrade-RCE-Bypasses-7.1.4",
+            "html_url": "https://github.com/Worthes/CVE-2026-119977-WordPress-Upgrade-RCE-Bypasses-7.1.4",
             "stars": 2
           }
         ]
@@ -2000,59 +2006,6 @@
         }
       ],
       "rank": 34
-    },
-    {
-      "cve_id": "CVE-2026-123039",
-      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.01938,
-      "epss_pct": 0.80628,
-      "cwe": "CWE-732",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-13",
-        "due_date": "2026-11-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "googlesky/CVE-2026-123039",
-            "html_url": "https://github.com/googlesky/CVE-2026-123039",
-            "stars": 4
-          },
-          {
-            "full_name": "foxcornlab/checkpoint-gaia-scanner",
-            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 35
     },
     {
       "cve_id": "CVE-2026-125350",
@@ -2091,8 +2044,8 @@
             "stars": 1
           },
           {
-            "full_name": "LLCForge/CVE-2026-125350",
-            "html_url": "https://github.com/LLCForge/CVE-2026-125350",
+            "full_name": "ashrafzaryouh/CVE-2026-125350",
+            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-125350",
             "stars": 0
           }
         ]
@@ -2110,7 +2063,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "cve_id": "CVE-2025-42884",
@@ -2133,7 +2086,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 31,
+      "rising": 28,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2148,6 +2101,59 @@
       "timeline": [
         {
           "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 36
+    },
+    {
+      "cve_id": "CVE-2026-123039",
+      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.01938,
+      "epss_pct": 0.80628,
+      "cwe": "CWE-732",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-13",
+        "due_date": "2026-11-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "googlesky/CVE-2026-123039",
+            "html_url": "https://github.com/googlesky/CVE-2026-123039",
+            "stars": 4
+          },
+          {
+            "full_name": "foxcornlab/checkpoint-gaia-scanner",
+            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -2173,8 +2179,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 41,
-      "rising": 15,
+      "hype": 40,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2211,16 +2217,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 40,
-      "rising": 9,
+      "hype": 39,
+      "rising": 0,
       "repos": {
-        "count": 77,
-        "stars": 284,
+        "count": 76,
+        "stars": 285,
         "top": [
           {
             "full_name": "ikow/java4shell-poc",
             "html_url": "https://github.com/ikow/java4shell-poc",
-            "stars": 188
+            "stars": 189
           },
           {
             "full_name": "theori-io/java4shell-runtime-patch-CVE-2026-114938",
@@ -3065,7 +3071,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 30,
-      "rising": 21,
+      "rising": 16,
       "repos": {
         "count": 28,
         "stars": 269,
@@ -3126,16 +3132,16 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 23,
-      "rising": 9,
+      "hype": 22,
+      "rising": 4,
       "repos": {
         "count": 39,
-        "stars": 335,
+        "stars": 344,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-123007",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 272
+            "stars": 280
           },
           {
             "full_name": "Ghost-Bx1/nginx-exploits",
@@ -3187,8 +3193,8 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 22,
-      "rising": 70,
+      "hype": 21,
+      "rising": 60,
       "repos": {
         "count": 0,
         "stars": 0,
