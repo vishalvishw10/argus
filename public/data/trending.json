@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T15:24:48.130Z",
+  "generated_at": "2026-11-22T21:51:28.091Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5841 mapped"
+      "detail": "5867 mapped"
     },
     {
       "name": "Reddit",
@@ -86,7 +86,7 @@
       "hype": 69,
       "rising": 0,
       "repos": {
-        "count": 802,
+        "count": 801,
         "stars": 7153,
         "top": [
           {
@@ -158,7 +158,7 @@
       "rising": 0,
       "repos": {
         "count": 582,
-        "stars": 6371,
+        "stars": 6372,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -225,8 +225,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 67,
-      "rising": 42,
+      "hype": 66,
+      "rising": 36,
       "repos": {
         "count": 3,
         "stars": 14,
@@ -399,65 +399,6 @@
       "rank": 5
     },
     {
-      "cve_id": "CVE-2026-123158",
-      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH",
-      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.95538,
-      "epss_pct": 0.99871,
-      "cwe": "CWE-394",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 0,
-      "repos": {
-        "count": 48,
-        "stars": 33,
-        "top": [
-          {
-            "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
-            "html_url": "https://github.com/gabrielunknown/CVE-2026-123158_SSHole",
-            "stars": 10
-          },
-          {
-            "full_name": "Maalfer/CVE-2026-123158",
-            "html_url": "https://github.com/Maalfer/CVE-2026-123158",
-            "stars": 4
-          },
-          {
-            "full_name": "ersinkoc/sshole-check",
-            "html_url": "https://github.com/ersinkoc/sshole-check",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
       "cve_id": "CVE-2026-111497",
       "title": "Google Brotli Unchecked Return Value Vulnerability",
       "vendor": "Google",
@@ -511,6 +452,65 @@
       "timeline": [
         {
           "date": "2026-10-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "cve_id": "CVE-2026-123158",
+      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH",
+      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.95538,
+      "epss_pct": 0.99871,
+      "cwe": "CWE-394",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 59,
+      "rising": 0,
+      "repos": {
+        "count": 49,
+        "stars": 33,
+        "top": [
+          {
+            "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
+            "html_url": "https://github.com/gabrielunknown/CVE-2026-123158_SSHole",
+            "stars": 10
+          },
+          {
+            "full_name": "Maalfer/CVE-2026-123158",
+            "html_url": "https://github.com/Maalfer/CVE-2026-123158",
+            "stars": 4
+          },
+          {
+            "full_name": "ersinkoc/sshole-check",
+            "html_url": "https://github.com/ersinkoc/sshole-check",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -576,6 +576,77 @@
       "rank": 8
     },
     {
+      "cve_id": "CVE-2026-123890",
+      "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.03526,
+      "epss_pct": 0.8953,
+      "cwe": "CWE-288",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "ransomware": false
+      },
+      "zero_day": true,
+      "no_patch": true,
+      "hype": 58,
+      "rising": 23,
+      "repos": {
+        "count": 8,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "Sable-Research/CVE-2026-123890-Research",
+            "html_url": "https://github.com/Sable-Research/CVE-2026-123890-Research",
+            "stars": 2
+          },
+          {
+            "full_name": "LLCForge/CVE-2026-123890",
+            "html_url": "https://github.com/LLCForge/CVE-2026-123890",
+            "stars": 1
+          },
+          {
+            "full_name": "sanMuSec/vcenter-80u3m-patch-download",
+            "html_url": "https://github.com/sanMuSec/vcenter-80u3m-patch-download",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+          "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+          "date": "2026-11-20T09:38:15.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "zero-day",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-20",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 9
+    },
+    {
       "cve_id": "CVE-2026-111560",
       "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
       "vendor": "Barracuda Networks",
@@ -626,77 +697,6 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-123890",
-      "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.03526,
-      "epss_pct": 0.8953,
-      "cwe": "CWE-288",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-20",
-        "due_date": "2026-11-23",
-        "ransomware": false
-      },
-      "zero_day": true,
-      "no_patch": true,
-      "hype": 57,
-      "rising": 29,
-      "repos": {
-        "count": 7,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "sanMuSec/vcenter-80u3m-patch-download",
-            "html_url": "https://github.com/sanMuSec/vcenter-80u3m-patch-download",
-            "stars": 1
-          },
-          {
-            "full_name": "Sable-Research/CVE-2026-123890-Research",
-            "html_url": "https://github.com/Sable-Research/CVE-2026-123890-Research",
-            "stars": 1
-          },
-          {
-            "full_name": "Cyber-BansalAI/vmware-vcenter-2026",
-            "html_url": "https://github.com/Cyber-BansalAI/vmware-vcenter-2026",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-          "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-          "date": "2026-11-20T09:38:15.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "zero-day",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-20",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 10
     },
     {
@@ -720,7 +720,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 29,
+      "rising": 24,
       "repos": {
         "count": 3,
         "stars": 9,
@@ -849,7 +849,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 53,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 2,
         "stars": 1,
@@ -902,7 +902,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 53,
+      "hype": 52,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -968,12 +968,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 68,
+        "stars": 69,
         "top": [
           {
             "full_name": "DeathShotXD/SIP2Shell",
             "html_url": "https://github.com/DeathShotXD/SIP2Shell",
-            "stars": 63
+            "stars": 64
           },
           {
             "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
@@ -1001,64 +1001,6 @@
         }
       ],
       "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-90817",
-      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-      "vendor": "Vanderbilt University",
-      "product": "Research Electronic Data Capture (REDCap)",
-      "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.34335,
-      "epss_pct": 0.98448,
-      "cwe": "CWE-73",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-11-21",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 3,
-      "repos": {
-        "count": 6,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "murrez/CVE-2026-90817",
-            "html_url": "https://github.com/murrez/CVE-2026-90817",
-            "stars": 2
-          },
-          {
-            "full_name": "yulisec/CVE-2026-90817",
-            "html_url": "https://github.com/yulisec/CVE-2026-90817",
-            "stars": 1
-          },
-          {
-            "full_name": "securifera/CVE-2026-90817",
-            "html_url": "https://github.com/securifera/CVE-2026-90817",
-            "stars": 1
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 16
     },
     {
       "cve_id": "CVE-2026-104935",
@@ -1114,6 +1056,64 @@
       "timeline": [
         {
           "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-90817",
+      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "vendor": "Vanderbilt University",
+      "product": "Research Electronic Data Capture (REDCap)",
+      "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.34335,
+      "epss_pct": 0.98448,
+      "cwe": "CWE-73",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 50,
+      "rising": 1,
+      "repos": {
+        "count": 6,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "murrez/CVE-2026-90817",
+            "html_url": "https://github.com/murrez/CVE-2026-90817",
+            "stars": 2
+          },
+          {
+            "full_name": "yulisec/CVE-2026-90817",
+            "html_url": "https://github.com/yulisec/CVE-2026-90817",
+            "stars": 1
+          },
+          {
+            "full_name": "securifera/CVE-2026-90817",
+            "html_url": "https://github.com/securifera/CVE-2026-90817",
+            "stars": 1
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1594,7 +1594,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 45,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 4,
         "stars": 4,
@@ -1815,7 +1815,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 44,
+      "hype": 43,
       "rising": 0,
       "repos": {
         "count": 5,
@@ -1870,10 +1870,10 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 44,
+      "hype": 43,
       "rising": 0,
       "repos": {
-        "count": 78,
+        "count": 79,
         "stars": 288,
         "top": [
           {
@@ -1985,47 +1985,6 @@
       "rank": 32
     },
     {
-      "cve_id": "CVE-2025-42884",
-      "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-      "vendor": "SAP",
-      "product": "NetWeaver",
-      "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00714,
-      "epss_pct": 0.54603,
-      "cwe": "CWE-943",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-20",
-        "due_date": "2026-11-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 19,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
-    },
-    {
       "cve_id": "CVE-2026-123039",
       "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
       "vendor": "Check Point",
@@ -2076,6 +2035,47 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 33
+    },
+    {
+      "cve_id": "CVE-2025-42884",
+      "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "vendor": "SAP",
+      "product": "NetWeaver",
+      "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00714,
+      "epss_pct": 0.54603,
+      "cwe": "CWE-943",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 17,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 34
     },
     {
@@ -2099,7 +2099,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 40,
-      "rising": 3,
+      "rising": 1,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2875,7 +2875,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 32,
+      "hype": 31,
       "rising": 0,
       "repos": {
         "count": 28,
@@ -2941,12 +2941,12 @@
       "rising": 0,
       "repos": {
         "count": 41,
-        "stars": 353,
+        "stars": 356,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-123007",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 287
+            "stars": 290
           },
           {
             "full_name": "Ghost-Bx1/nginx-exploits",
@@ -2999,7 +2999,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 20,
-      "rising": 28,
+      "rising": 21,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3092,10 +3092,10 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 1,
+      "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 6,
+        "stars": 7,
         "top": [
           {
             "full_name": "alvm/php2shell-eol-backport",
@@ -3103,13 +3103,13 @@
             "stars": 4
           },
           {
-            "full_name": "bimajunestifa/phpAfterShell",
-            "html_url": "https://github.com/bimajunestifa/phpAfterShell",
-            "stars": 1
-          },
-          {
             "full_name": "tani2shell/phpaftershell-lab",
             "html_url": "https://github.com/tani2shell/phpaftershell-lab",
+            "stars": 2
+          },
+          {
+            "full_name": "bimajunestifa/phpAfterShell",
+            "html_url": "https://github.com/bimajunestifa/phpAfterShell",
             "stars": 1
           }
         ]
@@ -3153,7 +3153,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3188,7 +3188,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 14,
+      "rising": 13,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3231,7 +3231,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 16,
+      "rising": 15,
       "repos": {
         "count": 0,
         "stars": 0,
