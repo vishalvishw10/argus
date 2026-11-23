@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-23T02:51:37.680Z",
+  "generated_at": "2026-11-23T12:58:53.927Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 15,
+    "media_mentions": 16,
     "reddit_upvotes": 0,
-    "kev_count": 51,
+    "kev_count": 52,
     "kev_total": 1790,
     "sources_live": 9,
     "window_days": 30
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "993 recent"
+      "detail": "1023 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "965 scored"
+      "detail": "966 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "16 mentions"
+      "detail": "19 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "2 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "5877 mapped"
+      "detail": "5883 mapped"
     },
     {
       "name": "Reddit",
@@ -87,7 +87,7 @@
       "rising": 0,
       "repos": {
         "count": 802,
-        "stars": 7155,
+        "stars": 7158,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -158,7 +158,7 @@
       "rising": 0,
       "repos": {
         "count": 581,
-        "stars": 6312,
+        "stars": 6315,
         "top": [
           {
             "full_name": "ikow/php2shell-poc",
@@ -225,8 +225,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 66,
-      "rising": 32,
+      "hype": 65,
+      "rising": 23,
       "repos": {
         "count": 3,
         "stars": 14,
@@ -522,11 +522,11 @@
       "vendor": "Atlassian",
       "product": "Multiple Products",
       "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "cvss": null,
-      "severity": "UNKNOWN",
+      "cvss": 7.5,
+      "severity": "HIGH",
       "epss": 0.90952,
       "epss_pct": 0.9981,
-      "cwe": null,
+      "cwe": "CWE-552",
       "published": null,
       "kev": {
         "in_kev": true,
@@ -595,8 +595,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
-      "rising": 19,
+      "hype": 57,
+      "rising": 12,
       "repos": {
         "count": 8,
         "stars": 4,
@@ -700,76 +700,6 @@
       "rank": 10
     },
     {
-      "cve_id": "CVE-2026-76466",
-      "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
-      "vendor": "Cisco",
-      "product": "Expressway Series",
-      "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.02187,
-      "epss_pct": 0.82875,
-      "cwe": "CWE-798",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-20",
-        "due_date": "2026-11-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 19,
-      "repos": {
-        "count": 3,
-        "stars": 9,
-        "top": [
-          {
-            "full_name": "dinosn/cve-2026-76466",
-            "html_url": "https://github.com/dinosn/cve-2026-76466",
-            "stars": 9
-          },
-          {
-            "full_name": "wa6n3r/cve-2026-76466",
-            "html_url": "https://github.com/wa6n3r/cve-2026-76466",
-            "stars": 0
-          },
-          {
-            "full_name": "foxcornlab/cisco-expressway-scanner",
-            "html_url": "https://github.com/foxcornlab/cisco-expressway-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-          "date": "2026-11-20T10:32:50.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-20",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 11
-    },
-    {
       "cve_id": "CVE-2026-97229",
       "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
       "vendor": "GitLab",
@@ -824,6 +754,76 @@
         {
           "date": "2026-10-29",
           "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-76466",
+      "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "vendor": "Cisco",
+      "product": "Expressway Series",
+      "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02187,
+      "epss_pct": 0.82875,
+      "cwe": "CWE-798",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 55,
+      "rising": 12,
+      "repos": {
+        "count": 3,
+        "stars": 9,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-76466",
+            "html_url": "https://github.com/dinosn/cve-2026-76466",
+            "stars": 9
+          },
+          {
+            "full_name": "wa6n3r/cve-2026-76466",
+            "html_url": "https://github.com/wa6n3r/cve-2026-76466",
+            "stars": 0
+          },
+          {
+            "full_name": "foxcornlab/cisco-expressway-scanner",
+            "html_url": "https://github.com/foxcornlab/cisco-expressway-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+          "date": "2026-11-20T10:32:50.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-20",
+          "label": "Covered by The Hacker News"
         }
       ],
       "rank": 12
@@ -968,12 +968,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 69,
+        "stars": 71,
         "top": [
           {
             "full_name": "DeathShotXD/SIP2Shell",
             "html_url": "https://github.com/DeathShotXD/SIP2Shell",
-            "stars": 64
+            "stars": 66
           },
           {
             "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
@@ -1308,8 +1308,8 @@
         "stars": 31,
         "top": [
           {
-            "full_name": "ashrafzaryouh/CVE-2026-46300",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-46300",
+            "full_name": "0xBlackash/CVE-2026-46300",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-46300",
             "stars": 16
           },
           {
@@ -1796,6 +1796,59 @@
       "rank": 29
     },
     {
+      "cve_id": "CVE-2026-84869",
+      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "vendor": "ConnectWise",
+      "product": "ScreenConnect",
+      "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
+      "cvss": 9.9,
+      "severity": "CRITICAL",
+      "epss": 0.01173,
+      "epss_pct": 0.6827,
+      "cwe": "CWE-269",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 45,
+      "rising": 40,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+          "date": "2026-11-23T12:41:04.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-23",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 30
+    },
+    {
       "cve_id": "CVE-2026-124194",
       "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
       "vendor": "Microsoft",
@@ -1851,7 +1904,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-125350",
+      "title": "Google Chromium Use-After-Free Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium",
+      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.068,
+      "epss_pct": 0.94156,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 42,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
+            "stars": 5
+          },
+          {
+            "full_name": "TJT001/CVE-2026-125350-PoC",
+            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
+            "stars": 1
+          },
+          {
+            "full_name": "0xBlackash/CVE-2026-125350",
+            "html_url": "https://github.com/0xBlackash/CVE-2026-125350",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-114938",
@@ -1870,7 +1981,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 43,
+      "hype": 42,
       "rising": 0,
       "repos": {
         "count": 79,
@@ -1924,65 +2035,48 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
-      "cve_id": "CVE-2026-125350",
-      "title": "Google Chromium Use-After-Free Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium",
-      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.068,
-      "epss_pct": 0.94156,
-      "cwe": "CWE-416",
+      "cve_id": "CVE-2025-42884",
+      "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "vendor": "SAP",
+      "product": "NetWeaver",
+      "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.00714,
+      "epss_pct": 0.54603,
+      "cwe": "CWE-943",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 0,
+      "hype": 40,
+      "rising": 12,
       "repos": {
-        "count": 5,
-        "stars": 6,
-        "top": [
-          {
-            "full_name": "Frostmoon39206/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/Frostmoon39206/CVE-2026-125350-PoC",
-            "stars": 5
-          },
-          {
-            "full_name": "TJT001/CVE-2026-125350-PoC",
-            "html_url": "https://github.com/TJT001/CVE-2026-125350-PoC",
-            "stars": 1
-          },
-          {
-            "full_name": "ashrafzaryouh/CVE-2026-125350",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-125350",
-            "stars": 0
-          }
-        ]
+        "count": 0,
+        "stars": 0,
+        "top": []
       },
       "media": [],
       "reddit": null,
       "tags": [
         "kev",
-        "actively-exploited",
-        "poc-available"
+        "actively-exploited"
       ],
       "timeline": [
         {
-          "date": "2026-11-10",
+          "date": "2026-11-20",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-123039",
@@ -2004,7 +2098,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 41,
+      "hype": 40,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -2035,48 +2129,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 33
-    },
-    {
-      "cve_id": "CVE-2025-42884",
-      "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-      "vendor": "SAP",
-      "product": "NetWeaver",
-      "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.00714,
-      "epss_pct": 0.54603,
-      "cwe": "CWE-943",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-20",
-        "due_date": "2026-11-23",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 15,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-20",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 34
+      "rank": 35
     },
     {
       "cve_id": "CVE-2024-10441",
@@ -2098,7 +2151,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 40,
+      "hype": 39,
       "rising": 0,
       "repos": {
         "count": 0,
@@ -2117,7 +2170,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-102895",
@@ -2165,7 +2218,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-114625",
@@ -2213,7 +2266,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2026-19868",
@@ -2261,89 +2314,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
-    },
-    {
-      "cve_id": "CVE-2026-111793",
-      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "vendor": "Openwave Messaging Limited",
-      "product": "Webtop Media Transcoder",
-      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "cvss": 4.3,
-      "severity": "MEDIUM",
-      "epss": 0.01172,
-      "epss_pct": 0.68242,
-      "cwe": "CWE-669",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
       "rank": 39
-    },
-    {
-      "cve_id": "CVE-2026-20320",
-      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.01682,
-      "epss_pct": 0.7756,
-      "cwe": "CWE-611",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 40
     },
     {
       "cve_id": "CVE-2026-123218",
@@ -2391,7 +2362,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "cve_id": "CVE-2026-76418",
@@ -2432,7 +2403,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-110936",
@@ -2480,7 +2451,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "cve_id": "CVE-2026-76519",
@@ -2521,7 +2492,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -2569,7 +2540,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-96951",
@@ -2610,7 +2581,89 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-111793",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "vendor": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "epss": 0.01172,
+      "epss_pct": 0.68242,
+      "cwe": "CWE-669",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 46
+    },
+    {
+      "cve_id": "CVE-2026-20320",
+      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.01682,
+      "epss_pct": 0.7756,
+      "cwe": "CWE-611",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 47
     },
     {
       "cve_id": "CVE-2024-27834",
@@ -2651,7 +2704,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 48
     },
     {
       "cve_id": "CVE-2026-118527",
@@ -2692,7 +2745,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 48
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-111357",
@@ -2733,7 +2786,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 49
+      "rank": 50
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -2774,7 +2827,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
+      "rank": 51
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -2815,7 +2868,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 51
+      "rank": 52
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -2856,7 +2909,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-115560",
@@ -2918,7 +2971,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 53
+      "rank": 54
     },
     {
       "cve_id": "CVE-2026-123007",
@@ -2941,17 +2994,17 @@
       "rising": 0,
       "repos": {
         "count": 42,
-        "stars": 356,
+        "stars": 360,
         "top": [
           {
             "full_name": "sfewer-r7/CVE-2026-123007",
             "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 290
+            "stars": 293
           },
           {
             "full_name": "Ghost-Bx1/nginx-exploits",
             "html_url": "https://github.com/Ghost-Bx1/nginx-exploits",
-            "stars": 23
+            "stars": 24
           },
           {
             "full_name": "arkrwn/NGINX2Root-CVE-2026-123007",
@@ -2979,7 +3032,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 54
+      "rank": 55
     },
     {
       "cve_id": "CVE-2026-126714",
@@ -3040,7 +3093,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 55
+      "rank": 56
     },
     {
       "cve_id": "CVE-2026-118383",
@@ -3083,7 +3136,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 56
+      "rank": 57
     },
     {
       "cve_id": "CVE-2026-23871",
@@ -3103,7 +3156,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 19,
-      "rising": 16,
+      "rising": 4,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3133,7 +3186,7 @@
           "label": "Covered by The Hacker News, SecurityWeek"
         }
       ],
-      "rank": 57
+      "rank": 58
     },
     {
       "cve_id": "CVE-2026-133680",
@@ -3153,7 +3206,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 11,
+      "rising": 9,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -3168,7 +3221,7 @@
           "label": "Published to NVD"
         }
       ],
-      "rank": 58
+      "rank": 59
     },
     {
       "cve_id": "CVE-2026-120539",
@@ -3188,7 +3241,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 18,
-      "rising": 13,
+      "rising": 11,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -3205,41 +3258,6 @@
       "tags": [
         "poc-available"
       ],
-      "timeline": [
-        {
-          "date": "2026-11-21",
-          "label": "Published to NVD"
-        }
-      ],
-      "rank": 59
-    },
-    {
-      "cve_id": "CVE-2026-134292",
-      "title": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where th…",
-      "vendor": null,
-      "product": null,
-      "description": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks. Authenticated users denied access to built-in functions in SurrealQL can execute them by calling them through surrealdb.functions from embedded JavaScript.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.00703,
-      "epss_pct": 0.54194,
-      "cwe": "CWE-862",
-      "published": "2026-11-21T17:16:48.897",
-      "kev": {
-        "in_kev": false
-      },
-      "zero_day": false,
-      "no_patch": false,
-      "hype": 18,
-      "rising": 14,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [],
       "timeline": [
         {
           "date": "2026-11-21",
