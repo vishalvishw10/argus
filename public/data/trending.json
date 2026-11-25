@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T04:19:24.446Z",
+  "generated_at": "2026-11-25T14:38:04.301Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
-    "media_mentions": 13,
+    "media_mentions": 14,
     "reddit_upvotes": 0,
     "kev_count": 57,
     "kev_total": 1795,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "902 recent"
+      "detail": "886 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "733 scored"
+      "detail": "935 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "19 mentions"
+      "detail": "20 mentions"
     },
     {
       "name": "Dark Reading",
@@ -44,7 +44,7 @@
     {
       "name": "SecurityWeek",
       "status": "ok",
-      "detail": "0 mentions"
+      "detail": "1 mentions"
     },
     {
       "name": "The Record",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "6173 mapped"
+      "detail": "6196 mapped"
     },
     {
       "name": "Reddit",
@@ -64,6 +64,86 @@
   ],
   "cves": [
     {
+      "cve_id": "CVE-2026-131914",
+      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Idunno",
+      "product": "AntiCsrf",
+      "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.04292,
+      "epss_pct": 0.9189,
+      "cwe": "CWE-502",
+      "published": "2026-11-19T02:17:20.360",
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 85,
+      "rising": 74,
+      "repos": {
+        "count": 4,
+        "stars": 6,
+        "top": [
+          {
+            "full_name": "dinosn/cve-2026-131914-poc",
+            "html_url": "https://github.com/dinosn/cve-2026-131914-poc",
+            "stars": 6
+          },
+          {
+            "full_name": "Hakchandara/CVE-2026-131914",
+            "html_url": "https://github.com/Hakchandara/CVE-2026-131914",
+            "stars": 0
+          },
+          {
+            "full_name": "l0lsec/CVE-2026-131914",
+            "html_url": "https://github.com/l0lsec/CVE-2026-131914",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "SecurityWeek",
+          "title": "Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library",
+          "url": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+          "date": "2026-11-25T09:05:13.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+          "date": "2026-11-23T09:11:56.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-19",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-23",
+          "label": "Covered by The Hacker News, SecurityWeek"
+        },
+        {
+          "date": "2026-11-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 1
+    },
+    {
       "cve_id": "CVE-2026-134624",
       "title": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
       "vendor": "N-able",
@@ -71,8 +151,8 @@
       "description": "N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP synchronisation connection check performed when a relay is configured. An authenticated API user can cause the server to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
       "cvss": 8.7,
       "severity": "HIGH",
-      "epss": 0.00617,
-      "epss_pct": 0.50289,
+      "epss": 0.01793,
+      "epss_pct": 0.78889,
       "cwe": "CWE-918",
       "published": "2026-11-22T19:16:32.163",
       "kev": {
@@ -83,8 +163,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 78,
-      "rising": 79,
+      "hype": 77,
+      "rising": 62,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -132,57 +212,57 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
-      "cve_id": "CVE-2026-131914",
-      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Idunno",
-      "product": "AntiCsrf",
-      "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.00614,
-      "epss_pct": 0.50152,
-      "cwe": "CWE-502",
-      "published": "2026-11-19T02:17:20.360",
+      "epss": 0.45083,
+      "epss_pct": 0.99081,
+      "cwe": "CWE-416",
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-24",
-        "due_date": "2026-11-27",
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 73,
-      "rising": 47,
+      "hype": 60,
+      "rising": 0,
       "repos": {
-        "count": 4,
-        "stars": 5,
+        "count": 804,
+        "stars": 7155,
         "top": [
           {
-            "full_name": "dinosn/cve-2026-131914-poc",
-            "html_url": "https://github.com/dinosn/cve-2026-131914-poc",
-            "stars": 5
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1995
           },
           {
-            "full_name": "Hakchandara/CVE-2026-131914",
-            "html_url": "https://github.com/Hakchandara/CVE-2026-131914",
-            "stars": 0
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1088
           },
           {
-            "full_name": "l0lsec/CVE-2026-131914",
-            "html_url": "https://github.com/l0lsec/CVE-2026-131914",
-            "stars": 0
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1022
           }
         ]
       },
       "media": [
         {
           "source": "The Hacker News",
-          "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-          "date": "2026-11-23T09:11:56.000Z"
+          "title": "Everything Is a Web Application, Including Your Firewall",
+          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+          "date": "2026-11-19T11:52:23.000Z"
         }
       ],
       "reddit": null,
@@ -194,19 +274,15 @@
       ],
       "timeline": [
         {
-          "date": "2026-11-19",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-23",
-          "label": "Covered by The Hacker News"
-        },
-        {
-          "date": "2026-11-24",
+          "date": "2026-10-26",
           "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-19",
+          "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "cve_id": "CVE-2026-129448",
@@ -216,8 +292,8 @@
       "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.40069,
-      "epss_pct": 0.98654,
+      "epss": 0.24159,
+      "epss_pct": 0.98332,
       "cwe": "CWE-502",
       "published": null,
       "kev": {
@@ -228,7 +304,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 68,
+      "hype": 58,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -257,12 +333,6 @@
           "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
           "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
           "date": "2026-11-21T08:49:13.000Z"
-        },
-        {
-          "source": "The Hacker News",
-          "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-          "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-          "date": "2026-11-18T17:10:45.000Z"
         }
       ],
       "reddit": null,
@@ -282,384 +352,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 3
-    },
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99999,
-      "epss_pct": 0.99999,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 68,
-      "rising": 0,
-      "repos": {
-        "count": 803,
-        "stars": 7156,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1996
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1088
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1022
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Everything Is a Web Application, Including Your Firewall",
-          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-          "date": "2026-11-19T11:52:23.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-19",
-          "label": "Covered by The Hacker News"
-        }
-      ],
       "rank": 4
-    },
-    {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP Stale Internal Request-State Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.99999,
-      "epss_pct": 1,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 68,
-      "rising": 0,
-      "repos": {
-        "count": 580,
-        "stars": 6314,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1996
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1088
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1022
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Everything Is a Web Application, Including Your Firewall",
-          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-          "date": "2026-11-19T11:52:23.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-19",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 5
-    },
-    {
-      "cve_id": "CVE-2026-116606",
-      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Barracuda Email Security Gateway (ESG)",
-      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.7452,
-      "epss_pct": 0.99502,
-      "cwe": "CWE-288",
-      "published": "2026-11-02T13:17:37.017",
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-13",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 62,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "stars": 4
-          },
-          {
-            "full_name": "cveForge/CVE-2026-116606",
-            "html_url": "https://github.com/cveForge/CVE-2026-116606",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-02",
-          "label": "Published to NVD"
-        },
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 6
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "Google Brotli Unchecked Return Value Vulnerability",
-      "vendor": "Google",
-      "product": "Brotli",
-      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.99987,
-      "epss_pct": 0.99983,
-      "cwe": "CWE-252",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 60,
-      "rising": 0,
-      "repos": {
-        "count": 99,
-        "stars": 479,
-        "top": [
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 87
-          },
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 81
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 70
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "cve_id": "CVE-2026-123158",
-      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH",
-      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.95538,
-      "epss_pct": 0.99868,
-      "cwe": "CWE-394",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 50,
-        "stars": 39,
-        "top": [
-          {
-            "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
-            "html_url": "https://github.com/gabrielunknown/CVE-2026-123158_SSHole",
-            "stars": 11
-          },
-          {
-            "full_name": "Maalfer/CVE-2026-123158",
-            "html_url": "https://github.com/Maalfer/CVE-2026-123158",
-            "stars": 5
-          },
-          {
-            "full_name": "ersinkoc/sshole-check",
-            "html_url": "https://github.com/ersinkoc/sshole-check",
-            "stars": 3
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-09",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.90952,
-      "epss_pct": 0.99807,
-      "cwe": "CWE-552",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-15",
-        "due_date": "2026-10-18",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 59,
-      "rising": 0,
-      "repos": {
-        "count": 12,
-        "stars": 47,
-        "top": [
-          {
-            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
-            "stars": 16
-          },
-          {
-            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
-            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
-            "stars": 13
-          },
-          {
-            "full_name": "MarcusProgram/CVE-2026-21589",
-            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
-            "stars": 9
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-15",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 9
     },
     {
       "cve_id": "CVE-2026-123890",
@@ -669,8 +362,8 @@
       "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.03526,
-      "epss_pct": 0.89444,
+      "epss": 0.05009,
+      "epss_pct": 0.93012,
       "cwe": "CWE-288",
       "published": null,
       "kev": {
@@ -730,7 +423,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 10
+      "rank": 5
     },
     {
       "cve_id": "CVE-2026-132224",
@@ -740,8 +433,8 @@
       "description": "Optimizely Web Experimentation before 2026-11-17 mishandles the account signup flow, leading to presence of attacker-controlled code in the projectJS (aka Project JavaScript) field of certain cdn.optimizely.com assets.",
       "cvss": 8.7,
       "severity": "HIGH",
-      "epss": 0.00411,
-      "epss_pct": 0.35845,
+      "epss": 0.00784,
+      "epss_pct": 0.52543,
       "cwe": "CWE-642",
       "published": "2026-11-18T16:18:15.627",
       "kev": {
@@ -752,8 +445,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 57,
-      "rising": 31,
+      "hype": 56,
+      "rising": 27,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -775,65 +468,142 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 6
     },
     {
-      "cve_id": "CVE-2026-111560",
-      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Multiple Products",
-      "description": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
-      "cvss": 7.2,
-      "severity": "HIGH",
-      "epss": 0.63769,
-      "epss_pct": 0.99232,
-      "cwe": "CWE-78",
-      "published": "2026-11-02T13:17:35.190",
+      "cve_id": "CVE-2026-132165",
+      "title": "Drupal Core Remote Code Execution Vulnerability",
+      "vendor": "Drupal",
+      "product": "Core",
+      "description": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": null,
+      "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-13",
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 57,
-      "rising": 0,
+      "hype": 56,
+      "rising": 65,
       "repos": {
         "count": 2,
-        "stars": 4,
+        "stars": 5,
         "top": [
           {
-            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
-            "stars": 4
+            "full_name": "abraxas/drupal-install-takeover",
+            "html_url": "https://github.com/abraxas/drupal-install-takeover",
+            "stars": 5
           },
           {
-            "full_name": "cveForge/CVE-2026-111560",
-            "html_url": "https://github.com/cveForge/CVE-2026-111560",
+            "full_name": "foxcornlab/drupal-installer-scanner",
+            "html_url": "https://github.com/foxcornlab/drupal-installer-scanner",
             "stars": 0
           }
         ]
       },
-      "media": [],
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+          "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+          "date": "2026-11-25T11:23:26.000Z"
+        }
+      ],
       "reddit": null,
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss",
+        "in-the-news",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-11-02",
-          "label": "Published to NVD"
+          "date": "2026-11-24",
+          "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
+          "date": "2026-11-25",
+          "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
+      "rank": 7
+    },
+    {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP Stale Internal Request-State Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.20754,
+      "epss_pct": 0.98073,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 56,
+      "rising": 0,
+      "repos": {
+        "count": 581,
+        "stars": 6313,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1995
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1088
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1022
+          }
+        ]
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Everything Is a Web Application, Including Your Firewall",
+          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+          "date": "2026-11-19T11:52:23.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-19",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 8
     },
     {
       "cve_id": "CVE-2026-115731",
@@ -843,8 +613,8 @@
       "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.12839,
-      "epss_pct": 0.96365,
+      "epss": 0.12579,
+      "epss_pct": 0.96928,
       "cwe": "CWE-94",
       "published": "2026-11-03T21:17:01.867",
       "kev": {
@@ -855,7 +625,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 56,
+      "hype": 55,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -890,66 +660,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
-    },
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.74315,
-      "epss_pct": 0.99494,
-      "cwe": "CWE-190",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 10,
-        "stars": 73,
-        "top": [
-          {
-            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
-            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
-            "stars": 65
-          },
-          {
-            "full_name": "murat-levi/gitlab-rce-toolkit",
-            "html_url": "https://github.com/murat-levi/gitlab-rce-toolkit",
-            "stars": 4
-          },
-          {
-            "full_name": "gandli/cve-2026-97229-lab",
-            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
-            "stars": 2
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 14
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-76466",
@@ -959,8 +670,8 @@
       "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.02187,
-      "epss_pct": 0.82762,
+      "epss": 0.01116,
+      "epss_pct": 0.65685,
       "cwe": "CWE-798",
       "published": null,
       "kev": {
@@ -971,7 +682,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 54,
+      "hype": 53,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -1019,47 +730,42 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 15
+      "rank": 10
     },
     {
-      "cve_id": "CVE-2026-40217",
-      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-      "vendor": "BerriAI",
-      "product": "LiteLLM",
-      "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.82799,
-      "epss_pct": 0.99674,
-      "cwe": "CWE-420",
-      "published": null,
+      "cve_id": "CVE-2026-116606",
+      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.13801,
+      "epss_pct": 0.9718,
+      "cwe": "CWE-288",
+      "published": "2026-11-02T13:17:37.017",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-12-02",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 52,
+      "hype": 53,
       "rising": 0,
       "repos": {
-        "count": 3,
-        "stars": 1,
+        "count": 2,
+        "stars": 4,
         "top": [
           {
-            "full_name": "learner202649/CVE-2026-40217-PoC",
-            "html_url": "https://github.com/learner202649/CVE-2026-40217-PoC",
-            "stars": 1
+            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "stars": 4
           },
           {
-            "full_name": "HORKimhab/CVE-LiteLLM",
-            "html_url": "https://github.com/HORKimhab/CVE-LiteLLM",
-            "stars": 0
-          },
-          {
-            "full_name": "cveForge/CVE-2026-40217",
-            "html_url": "https://github.com/cveForge/CVE-2026-40217",
+            "full_name": "cveForge/CVE-2026-116606",
+            "html_url": "https://github.com/cveForge/CVE-2026-116606",
             "stars": 0
           }
         ]
@@ -1069,16 +775,19 @@
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-11-18",
+          "date": "2026-11-02",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 16
+      "rank": 11
     },
     {
       "cve_id": "CVE-2026-116779",
@@ -1088,8 +797,8 @@
       "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.44112,
-      "epss_pct": 0.98774,
+      "epss": 0.43693,
+      "epss_pct": 0.99051,
       "cwe": "CWE-77",
       "published": null,
       "kev": {
@@ -1136,7 +845,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 17
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-114713",
@@ -1147,7 +856,7 @@
       "cvss": 7.7,
       "severity": "HIGH",
       "epss": 0.01351,
-      "epss_pct": 0.72116,
+      "epss_pct": 0.71648,
       "cwe": "CWE-140",
       "published": "2026-11-08T03:16:33.410",
       "kev": {
@@ -1198,24 +907,24 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 13
     },
     {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.93096,
-      "epss_pct": 0.99835,
-      "cwe": "CWE-290",
+      "cve_id": "CVE-2026-111497",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.32976,
+      "epss_pct": 0.98749,
+      "cwe": "CWE-252",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
         "ransomware": false
       },
       "zero_day": false,
@@ -1223,23 +932,23 @@
       "hype": 51,
       "rising": 0,
       "repos": {
-        "count": 4,
-        "stars": 1,
+        "count": 99,
+        "stars": 486,
         "top": [
           {
-            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
-            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
-            "stars": 1
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 87
           },
           {
-            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
-            "stars": 0
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 81
           },
           {
-            "full_name": "maxprog-svg/CVE-2026-104935",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-104935",
-            "stars": 0
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 70
           }
         ]
       },
@@ -1248,56 +957,50 @@
       "tags": [
         "kev",
         "actively-exploited",
-        "high-epss",
         "poc-available"
       ],
       "timeline": [
         {
-          "date": "2026-10-13",
+          "date": "2026-10-27",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 14
     },
     {
-      "cve_id": "CVE-2026-133968",
-      "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
-      "vendor": "Project MONAI",
-      "product": "MONAI Label",
-      "description": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.49795,
-      "epss_pct": 0.98916,
-      "cwe": "CWE-24",
-      "published": null,
+      "cve_id": "CVE-2026-111560",
+      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Multiple Products",
+      "description": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
+      "cvss": 7.2,
+      "severity": "HIGH",
+      "epss": 0.10795,
+      "epss_pct": 0.96563,
+      "cwe": "CWE-78",
+      "published": "2026-11-02T13:17:35.190",
       "kev": {
         "in_kev": true,
-        "date_added": "2026-11-23",
-        "due_date": "2026-11-26",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
       "hype": 50,
-      "rising": 23,
+      "rising": 0,
       "repos": {
-        "count": 3,
-        "stars": 0,
+        "count": 2,
+        "stars": 4,
         "top": [
           {
-            "full_name": "cveForge/CVE-2026-133968",
-            "html_url": "https://github.com/cveForge/CVE-2026-133968",
-            "stars": 0
+            "full_name": "watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Barracuda-RCE-CVE-2026-116606-CVE-2026-111560",
+            "stars": 4
           },
           {
-            "full_name": "googlesky/CVE-2026-133968",
-            "html_url": "https://github.com/googlesky/CVE-2026-133968",
-            "stars": 0
-          },
-          {
-            "full_name": "foxcornlab/monai-label-scanner",
-            "html_url": "https://github.com/foxcornlab/monai-label-scanner",
+            "full_name": "cveForge/CVE-2026-111560",
+            "html_url": "https://github.com/cveForge/CVE-2026-111560",
             "stars": 0
           }
         ]
@@ -1311,11 +1014,131 @@
       ],
       "timeline": [
         {
-          "date": "2026-11-23",
+          "date": "2026-11-02",
+          "label": "Published to NVD"
+        },
+        {
+          "date": "2026-11-10",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 15
+    },
+    {
+      "cve_id": "CVE-2026-123158",
+      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH",
+      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.14205,
+      "epss_pct": 0.9724,
+      "cwe": "CWE-394",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 50,
+        "stars": 39,
+        "top": [
+          {
+            "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
+            "html_url": "https://github.com/gabrielunknown/CVE-2026-123158_SSHole",
+            "stars": 11
+          },
+          {
+            "full_name": "Maalfer/CVE-2026-123158",
+            "html_url": "https://github.com/Maalfer/CVE-2026-123158",
+            "stars": 5
+          },
+          {
+            "full_name": "ersinkoc/sshole-check",
+            "html_url": "https://github.com/ersinkoc/sshole-check",
+            "stars": 3
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.1184,
+      "epss_pct": 0.96789,
+      "cwe": "CWE-190",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 48,
+      "rising": 0,
+      "repos": {
+        "count": 10,
+        "stars": 73,
+        "top": [
+          {
+            "full_name": "jburgess-r7/CVE-2026-97229-PoC",
+            "html_url": "https://github.com/jburgess-r7/CVE-2026-97229-PoC",
+            "stars": 65
+          },
+          {
+            "full_name": "murat-levi/gitlab-rce-toolkit",
+            "html_url": "https://github.com/murat-levi/gitlab-rce-toolkit",
+            "stars": 4
+          },
+          {
+            "full_name": "gandli/cve-2026-97229-lab",
+            "html_url": "https://github.com/gandli/cve-2026-97229-lab",
+            "stars": 2
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 17
     },
     {
       "cve_id": "CVE-2026-90817",
@@ -1325,8 +1148,8 @@
       "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.34335,
-      "epss_pct": 0.98433,
+      "epss": 0.18881,
+      "epss_pct": 0.97862,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1337,7 +1160,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 50,
+      "hype": 47,
       "rising": 0,
       "repos": {
         "count": 7,
@@ -1373,286 +1196,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
-    },
-    {
-      "cve_id": "CVE-2026-110447",
-      "title": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-      "vendor": "Collabora",
-      "product": "Collabora Online – Built-in CODE Server",
-      "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.7615,
-      "epss_pct": 0.99539,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-23",
-        "due_date": "2026-10-26",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 2,
-        "top": [
-          {
-            "full_name": "CyRouteWolf/cve-2026-110447-poc",
-            "html_url": "https://github.com/CyRouteWolf/cve-2026-110447-poc",
-            "stars": 2
-          },
-          {
-            "full_name": "adriyansyah-mf/cve-2026-110447",
-            "html_url": "https://github.com/adriyansyah-mf/cve-2026-110447",
-            "stars": 0
-          },
-          {
-            "full_name": "Iceman2050/cve-2026-110447-checker",
-            "html_url": "https://github.com/Iceman2050/cve-2026-110447-checker",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-23",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 22
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "cvss": 10,
-      "severity": "CRITICAL",
-      "epss": 0.81763,
-      "epss_pct": 0.99651,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 8
-          },
-          {
-            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
-            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 23
-    },
-    {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "cvss": 7.3,
-      "severity": "HIGH",
-      "epss": 0.84478,
-      "epss_pct": 0.99705,
-      "cwe": "CWE-287",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 50,
-      "rising": 0,
-      "repos": {
-        "count": 1,
-        "stars": 8,
-        "top": [
-          {
-            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
-            "stars": 8
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 24
-    },
-    {
-      "cve_id": "CVE-2026-46300",
-      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.17203,
-      "epss_pct": 0.97151,
-      "cwe": "CWE-787",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-28",
-        "due_date": "2026-10-31",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 19,
-        "stars": 32,
-        "top": [
-          {
-            "full_name": "ashrafzaryouh/CVE-2026-46300",
-            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-46300",
-            "stars": 16
-          },
-          {
-            "full_name": "infiniroot/ansible-mitigate-copyfail-dirtyfrag",
-            "html_url": "https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag",
-            "stars": 6
-          },
-          {
-            "full_name": "MadExploits/CVE-2026-46300",
-            "html_url": "https://github.com/MadExploits/CVE-2026-46300",
-            "stars": 4
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-28",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 25
-    },
-    {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
-      "cvss": 9.3,
-      "severity": "CRITICAL",
-      "epss": 0.81624,
-      "epss_pct": 0.99648,
-      "cwe": "CWE-434",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 48,
-      "rising": 0,
-      "repos": {
-        "count": 4,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "abraxas/CVE-2026-48356",
-            "html_url": "https://github.com/abraxas/CVE-2026-48356",
-            "stars": 0
-          },
-          {
-            "full_name": "Cyber-BansalAI/polyshell-2026",
-            "html_url": "https://github.com/Cyber-BansalAI/polyshell-2026",
-            "stars": 0
-          },
-          {
-            "full_name": "Ghost-Bx1/cve-2026-48356-magento-file-upload-rce",
-            "html_url": "https://github.com/Ghost-Bx1/cve-2026-48356-magento-file-upload-rce",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-27",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 26
+      "rank": 18
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1662,8 +1206,8 @@
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.14899,
-      "epss_pct": 0.96763,
+      "epss": 0.05451,
+      "epss_pct": 0.93502,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -1674,7 +1218,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 48,
+      "hype": 47,
       "rising": 0,
       "repos": {
         "count": 8,
@@ -1710,7 +1254,277 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 19
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.04275,
+      "epss_pct": 0.9186,
+      "cwe": "CWE-552",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 12,
+        "stars": 47,
+        "top": [
+          {
+            "full_name": "watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "html_url": "https://github.com/watchtowrlabs/watchTowr-vs-Atlassian-CVE-2026-21589",
+            "stars": 16
+          },
+          {
+            "full_name": "tc4dy/CVE-2026-21589-PoC-Exploit",
+            "html_url": "https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit",
+            "stars": 13
+          },
+          {
+            "full_name": "MarcusProgram/CVE-2026-21589",
+            "html_url": "https://github.com/MarcusProgram/CVE-2026-21589",
+            "stars": 9
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "cvss": 10,
+      "severity": "CRITICAL",
+      "epss": 0.54967,
+      "epss_pct": 0.99269,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 47,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 8
+          },
+          {
+            "full_name": "RayanAlmulhim/CVE-2026-105134-lab",
+            "html_url": "https://github.com/RayanAlmulhim/CVE-2026-105134-lab",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "high-epss",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "cve_id": "CVE-2026-133968",
+      "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "vendor": "Project MONAI",
+      "product": "MONAI Label",
+      "description": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.27157,
+      "epss_pct": 0.98495,
+      "cwe": "CWE-24",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-23",
+        "due_date": "2026-11-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 19,
+      "repos": {
+        "count": 3,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "cveForge/CVE-2026-133968",
+            "html_url": "https://github.com/cveForge/CVE-2026-133968",
+            "stars": 0
+          },
+          {
+            "full_name": "googlesky/CVE-2026-133968",
+            "html_url": "https://github.com/googlesky/CVE-2026-133968",
+            "stars": 0
+          },
+          {
+            "full_name": "foxcornlab/monai-label-scanner",
+            "html_url": "https://github.com/foxcornlab/monai-label-scanner",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "cve_id": "CVE-2024-10441",
+      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "vendor": "Synology",
+      "product": "DiskStation Manager (DSM)",
+      "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0276,
+      "epss_pct": 0.86985,
+      "cwe": "CWE-116",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "ransomware": true
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "ransomware"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "cve_id": "CVE-2026-46300",
+      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.02959,
+      "epss_pct": 0.8793,
+      "cwe": "CWE-787",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-28",
+        "due_date": "2026-10-31",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 46,
+      "rising": 0,
+      "repos": {
+        "count": 19,
+        "stars": 32,
+        "top": [
+          {
+            "full_name": "ashrafzaryouh/CVE-2026-46300",
+            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-46300",
+            "stars": 16
+          },
+          {
+            "full_name": "infiniroot/ansible-mitigate-copyfail-dirtyfrag",
+            "html_url": "https://github.com/infiniroot/ansible-mitigate-copyfail-dirtyfrag",
+            "stars": 6
+          },
+          {
+            "full_name": "MadExploits/CVE-2026-46300",
+            "html_url": "https://github.com/MadExploits/CVE-2026-46300",
+            "stars": 4
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1720,8 +1534,8 @@
       "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
       "cvss": 7.2,
       "severity": "HIGH",
-      "epss": 0.19767,
-      "epss_pct": 0.97455,
+      "epss": 0.14893,
+      "epss_pct": 0.97342,
       "cwe": "CWE-73",
       "published": null,
       "kev": {
@@ -1732,7 +1546,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 47,
+      "hype": 46,
       "rising": 0,
       "repos": {
         "count": 3,
@@ -1768,166 +1582,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
-    },
-    {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.57903,
-      "epss_pct": 0.99099,
-      "cwe": "CWE-290",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 47,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 4,
-        "top": [
-          {
-            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
-            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
-            "stars": 4
-          },
-          {
-            "full_name": "maxprog-svg/CVE-2026-102764",
-            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
-            "stars": 0
-          },
-          {
-            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "high-epss",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-16",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 29
-    },
-    {
-      "cve_id": "CVE-2024-10441",
-      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
-      "vendor": "Synology",
-      "product": "DiskStation Manager (DSM)",
-      "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.03129,
-      "epss_pct": 0.88097,
-      "cwe": "CWE-116",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-18",
-        "due_date": "2026-11-21",
-        "ransomware": true
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "ransomware"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-18",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 30
-    },
-    {
-      "cve_id": "CVE-2026-124194",
-      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Office",
-      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-      "cvss": 6.5,
-      "severity": "MEDIUM",
-      "epss": 0.24894,
-      "epss_pct": 0.97943,
-      "cwe": "CWE-356",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 46,
-      "rising": 0,
-      "repos": {
-        "count": 5,
-        "stars": 24,
-        "top": [
-          {
-            "full_name": "AmesianX/CVE-2026-124194-poc",
-            "html_url": "https://github.com/AmesianX/CVE-2026-124194-poc",
-            "stars": 22
-          },
-          {
-            "full_name": "Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
-            "html_url": "https://github.com/Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
-            "stars": 2
-          },
-          {
-            "full_name": "aminaljabre77-collab/outlook-ntlm-leak-investigation",
-            "html_url": "https://github.com/aminaljabre77-collab/outlook-ntlm-leak-investigation",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-10",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 31
+      "rank": 25
     },
     {
       "cve_id": "CVE-2026-119977",
@@ -1937,8 +1592,8 @@
       "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.08054,
-      "epss_pct": 0.94871,
+      "epss": 0.02147,
+      "epss_pct": 0.8277,
       "cwe": "CWE-367",
       "published": null,
       "kev": {
@@ -1949,7 +1604,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 46,
+      "hype": 45,
       "rising": 0,
       "repos": {
         "count": 9,
@@ -1985,55 +1640,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
-    },
-    {
-      "cve_id": "CVE-2026-132165",
-      "title": "Drupal Core Remote Code Execution Vulnerability",
-      "vendor": "Drupal",
-      "product": "Core",
-      "description": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-24",
-        "due_date": "2026-11-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 45,
-      "rising": 31,
-      "repos": {
-        "count": 1,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "abraxas/drupal-install-takeover",
-            "html_url": "https://github.com/abraxas/drupal-install-takeover",
-            "stars": 5
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 33
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-90436",
@@ -2043,8 +1650,8 @@
       "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.05874,
-      "epss_pct": 0.93317,
+      "epss": 0.02695,
+      "epss_pct": 0.86635,
       "cwe": "CWE-470",
       "published": null,
       "kev": {
@@ -2055,7 +1662,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 45,
+      "hype": 44,
       "rising": 0,
       "repos": {
         "count": 5,
@@ -2091,7 +1698,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 27
+    },
+    {
+      "cve_id": "CVE-2026-110447",
+      "title": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "vendor": "Collabora",
+      "product": "Collabora Online – Built-in CODE Server",
+      "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.32872,
+      "epss_pct": 0.98745,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-23",
+        "due_date": "2026-10-26",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 2,
+        "top": [
+          {
+            "full_name": "CyRouteWolf/cve-2026-110447-poc",
+            "html_url": "https://github.com/CyRouteWolf/cve-2026-110447-poc",
+            "stars": 2
+          },
+          {
+            "full_name": "adriyansyah-mf/cve-2026-110447",
+            "html_url": "https://github.com/adriyansyah-mf/cve-2026-110447",
+            "stars": 0
+          },
+          {
+            "full_name": "Iceman2050/cve-2026-110447-checker",
+            "html_url": "https://github.com/Iceman2050/cve-2026-110447-checker",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-23",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -2101,8 +1766,8 @@
       "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.10724,
-      "epss_pct": 0.95899,
+      "epss": 0.05451,
+      "epss_pct": 0.93502,
       "cwe": "CWE-918",
       "published": null,
       "kev": {
@@ -2113,7 +1778,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 45,
+      "hype": 44,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -2144,7 +1809,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
+      "rank": 29
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -2154,8 +1819,8 @@
       "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
       "cvss": 6.5,
       "severity": "MEDIUM",
-      "epss": 0.12689,
-      "epss_pct": 0.96331,
+      "epss": 0.05729,
+      "epss_pct": 0.93809,
       "cwe": "CWE-84",
       "published": null,
       "kev": {
@@ -2166,7 +1831,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 45,
+      "hype": 44,
       "rising": 0,
       "repos": {
         "count": 2,
@@ -2197,7 +1862,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 36
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -2207,8 +1872,8 @@
       "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authorization or host confirmation.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.01173,
-      "epss_pct": 0.68117,
+      "epss": 0.00924,
+      "epss_pct": 0.58686,
       "cwe": "CWE-269",
       "published": null,
       "kev": {
@@ -2220,7 +1885,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 18,
+      "rising": 12,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2250,7 +1915,123 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 37
+      "rank": 31
+    },
+    {
+      "cve_id": "CVE-2026-40217",
+      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.20215,
+      "epss_pct": 0.98011,
+      "cwe": "CWE-420",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-18",
+        "due_date": "2026-12-02",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "learner202649/CVE-2026-40217-PoC",
+            "html_url": "https://github.com/learner202649/CVE-2026-40217-PoC",
+            "stars": 1
+          },
+          {
+            "full_name": "HORKimhab/CVE-LiteLLM",
+            "html_url": "https://github.com/HORKimhab/CVE-LiteLLM",
+            "stars": 0
+          },
+          {
+            "full_name": "cveForge/CVE-2026-40217",
+            "html_url": "https://github.com/cveForge/CVE-2026-40217",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-18",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 32
+    },
+    {
+      "cve_id": "CVE-2026-124194",
+      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "epss": 0.01042,
+      "epss_pct": 0.6332,
+      "cwe": "CWE-356",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 43,
+      "rising": 0,
+      "repos": {
+        "count": 5,
+        "stars": 24,
+        "top": [
+          {
+            "full_name": "AmesianX/CVE-2026-124194-poc",
+            "html_url": "https://github.com/AmesianX/CVE-2026-124194-poc",
+            "stars": 22
+          },
+          {
+            "full_name": "Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
+            "html_url": "https://github.com/Ghost-Bx1/cve-2026-124194-outlook-ntlm-hash-leak",
+            "stars": 2
+          },
+          {
+            "full_name": "aminaljabre77-collab/outlook-ntlm-leak-investigation",
+            "html_url": "https://github.com/aminaljabre77-collab/outlook-ntlm-leak-investigation",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-125350",
@@ -2261,7 +2042,7 @@
       "cvss": 8.8,
       "severity": "HIGH",
       "epss": 0.068,
-      "epss_pct": 0.94086,
+      "epss_pct": 0.9476,
       "cwe": "CWE-416",
       "published": null,
       "kev": {
@@ -2308,7 +2089,65 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 34
+    },
+    {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.24503,
+      "epss_pct": 0.98354,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 41,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "0x45dd/ivanti-cve-2026-104935-check",
+            "html_url": "https://github.com/0x45dd/ivanti-cve-2026-104935-check",
+            "stars": 1
+          },
+          {
+            "full_name": "Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "html_url": "https://github.com/Bluefire-Redteam-Cybersecurity/bluefire-ivanti-ics-guard",
+            "stars": 0
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-104935",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-104935",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-123039",
@@ -2318,8 +2157,8 @@
       "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.03269,
-      "epss_pct": 0.88621,
+      "epss": 0.00232,
+      "epss_pct": 0.08425,
       "cwe": "CWE-732",
       "published": null,
       "kev": {
@@ -2366,7 +2205,55 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 36
+    },
+    {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "cvss": 7.3,
+      "severity": "HIGH",
+      "epss": 0.09157,
+      "epss_pct": 0.96057,
+      "cwe": "CWE-287",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 40,
+      "rising": 0,
+      "repos": {
+        "count": 1,
+        "stars": 8,
+        "top": [
+          {
+            "full_name": "horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "html_url": "https://github.com/horizon3ai/AhsayCBS-Auth-Bypass-RCE",
+            "stars": 8
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 37
     },
     {
       "cve_id": "CVE-2025-42884",
@@ -2376,8 +2263,8 @@
       "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
       "cvss": 6.5,
       "severity": "MEDIUM",
-      "epss": 0.00902,
-      "epss_pct": 0.60474,
+      "epss": 0.01102,
+      "epss_pct": 0.65286,
       "cwe": "CWE-943",
       "published": null,
       "kev": {
@@ -2407,6 +2294,122 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 38
+    },
+    {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.03154,
+      "epss_pct": 0.88696,
+      "cwe": "CWE-290",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-16",
+        "due_date": "2026-10-19",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 4,
+        "top": [
+          {
+            "full_name": "Worthes/CVE-2026-102764-Proof-of-concept",
+            "html_url": "https://github.com/Worthes/CVE-2026-102764-Proof-of-concept",
+            "stars": 4
+          },
+          {
+            "full_name": "maxprog-svg/CVE-2026-102764",
+            "html_url": "https://github.com/maxprog-svg/CVE-2026-102764",
+            "stars": 0
+          },
+          {
+            "full_name": "CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "html_url": "https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-16",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 39
+    },
+    {
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "cvss": 9.3,
+      "severity": "CRITICAL",
+      "epss": 0.07854,
+      "epss_pct": 0.95447,
+      "cwe": "CWE-434",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 37,
+      "rising": 0,
+      "repos": {
+        "count": 4,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "abraxas/CVE-2026-48356",
+            "html_url": "https://github.com/abraxas/CVE-2026-48356",
+            "stars": 0
+          },
+          {
+            "full_name": "Cyber-BansalAI/polyshell-2026",
+            "html_url": "https://github.com/Cyber-BansalAI/polyshell-2026",
+            "stars": 0
+          },
+          {
+            "full_name": "Ghost-Bx1/cve-2026-48356-magento-file-upload-rce",
+            "html_url": "https://github.com/Ghost-Bx1/cve-2026-48356-magento-file-upload-rce",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 40
     },
     {
@@ -2417,8 +2420,8 @@
       "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.18787,
-      "epss_pct": 0.97334,
+      "epss": 0.08546,
+      "epss_pct": 0.95807,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -2429,7 +2432,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 37,
+      "hype": 36,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -2465,8 +2468,8 @@
       "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
       "cvss": 9.9,
       "severity": "CRITICAL",
-      "epss": 0.07666,
-      "epss_pct": 0.94668,
+      "epss": 0.00939,
+      "epss_pct": 0.59345,
       "cwe": "CWE-89",
       "published": null,
       "kev": {
@@ -2477,7 +2480,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 37,
+      "hype": 36,
       "rising": 0,
       "repos": {
         "count": 1,
@@ -2506,59 +2509,6 @@
       "rank": 42
     },
     {
-      "cve_id": "CVE-2026-19868",
-      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "cvss": 7.5,
-      "severity": "HIGH",
-      "epss": 0.0804,
-      "epss_pct": 0.94865,
-      "cwe": "CWE-308",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-06",
-        "due_date": "2026-11-20",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 36,
-      "rising": 0,
-      "repos": {
-        "count": 2,
-        "stars": 0,
-        "top": [
-          {
-            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
-            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
-            "stars": 0
-          },
-          {
-            "full_name": "cveForge/CVE-2026-19868",
-            "html_url": "https://github.com/cveForge/CVE-2026-19868",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-06",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 43
-    },
-    {
       "cve_id": "CVE-2026-111793",
       "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
       "vendor": "Openwave Messaging Limited",
@@ -2566,8 +2516,8 @@
       "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.01172,
-      "epss_pct": 0.68089,
+      "epss": 0.00985,
+      "epss_pct": 0.61156,
       "cwe": "CWE-669",
       "published": null,
       "kev": {
@@ -2604,7 +2554,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "cve_id": "CVE-2026-20320",
@@ -2614,8 +2564,8 @@
       "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
       "cvss": 7.5,
       "severity": "HIGH",
-      "epss": 0.01682,
-      "epss_pct": 0.77441,
+      "epss": 0.01301,
+      "epss_pct": 0.70508,
       "cwe": "CWE-611",
       "published": null,
       "kev": {
@@ -2652,7 +2602,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "cve_id": "CVE-2026-123218",
@@ -2662,8 +2612,8 @@
       "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
       "cvss": 9.8,
       "severity": "CRITICAL",
-      "epss": 0.01013,
-      "epss_pct": 0.63924,
+      "epss": 0.0078,
+      "epss_pct": 0.52399,
       "cwe": "CWE-863",
       "published": null,
       "kev": {
@@ -2700,6 +2650,59 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 45
+    },
+    {
+      "cve_id": "CVE-2026-19868",
+      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "epss": 0.0054,
+      "epss_pct": 0.3892,
+      "cwe": "CWE-308",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-06",
+        "due_date": "2026-11-20",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 35,
+      "rising": 0,
+      "repos": {
+        "count": 2,
+        "stars": 0,
+        "top": [
+          {
+            "full_name": "foxcornlab/sonicwall-sonicos-scanner",
+            "html_url": "https://github.com/foxcornlab/sonicwall-sonicos-scanner",
+            "stars": 0
+          },
+          {
+            "full_name": "cveForge/CVE-2026-19868",
+            "html_url": "https://github.com/cveForge/CVE-2026-19868",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-06",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 46
     },
     {
@@ -2710,8 +2713,8 @@
       "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
       "cvss": 4.3,
       "severity": "MEDIUM",
-      "epss": 0.00991,
-      "epss_pct": 0.63249,
+      "epss": 0.00835,
+      "epss_pct": 0.54943,
       "cwe": "CWE-340",
       "published": null,
       "kev": {
@@ -2758,8 +2761,8 @@
       "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
       "cvss": 7,
       "severity": "HIGH",
-      "epss": 0.00803,
-      "epss_pct": 0.57468,
+      "epss": 0.00559,
+      "epss_pct": 0.40218,
       "cwe": "CWE-829",
       "published": null,
       "kev": {
@@ -2799,47 +2802,6 @@
       "rank": 48
     },
     {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "cvss": 8.6,
-      "severity": "HIGH",
-      "epss": 0.08547,
-      "epss_pct": 0.9514,
-      "cwe": "CWE-690",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-29",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 49
-    },
-    {
       "cve_id": "CVE-2026-110936",
       "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
       "vendor": "Siemens",
@@ -2847,8 +2809,8 @@
       "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
       "cvss": 6.7,
       "severity": "MEDIUM",
-      "epss": 0.00968,
-      "epss_pct": 0.62531,
+      "epss": 0.00348,
+      "epss_pct": 0.20817,
       "cwe": "CWE-427",
       "published": null,
       "kev": {
@@ -2885,48 +2847,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 50
-    },
-    {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.05715,
-      "epss_pct": 0.9314,
-      "cwe": "CWE-23",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-14",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 51
+      "rank": 49
     },
     {
       "cve_id": "CVE-2026-0322",
@@ -2936,8 +2857,8 @@
       "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
       "cvss": 7.2,
       "severity": "HIGH",
-      "epss": 0.02147,
-      "epss_pct": 0.82452,
+      "epss": 0.01969,
+      "epss_pct": 0.81035,
       "cwe": "CWE-94",
       "published": null,
       "kev": {
@@ -2974,48 +2895,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 52
-    },
-    {
-      "cve_id": "CVE-2026-96951",
-      "title": "Microsoft Windows Command Injection Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-      "cvss": 8.8,
-      "severity": "HIGH",
-      "epss": 0.09813,
-      "epss_pct": 0.95623,
-      "cwe": "CWE-77",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 35,
-      "rising": 0,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 53
+      "rank": 50
     },
     {
       "cve_id": "CVE-2024-27834",
@@ -3025,8 +2905,8 @@
       "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
       "cvss": 5.5,
       "severity": "MEDIUM",
-      "epss": 0.01558,
-      "epss_pct": 0.75724,
+      "epss": 0.00789,
+      "epss_pct": 0.52767,
       "cwe": "CWE-287",
       "published": null,
       "kev": {
@@ -3056,7 +2936,48 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 54
+      "rank": 51
+    },
+    {
+      "cve_id": "CVE-2026-76418",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "cvss": 8.6,
+      "severity": "HIGH",
+      "epss": 0.00992,
+      "epss_pct": 0.61421,
+      "cwe": "CWE-690",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-29",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 52
     },
     {
       "cve_id": "CVE-2026-41709",
@@ -3066,8 +2987,8 @@
       "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
       "cvss": 2.7,
       "severity": "LOW",
-      "epss": 0.00901,
-      "epss_pct": 0.60419,
+      "epss": 0.00467,
+      "epss_pct": 0.32491,
       "cwe": "CWE-778",
       "published": null,
       "kev": {
@@ -3097,7 +3018,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 55
+      "rank": 53
     },
     {
       "cve_id": "CVE-2026-106931",
@@ -3107,8 +3028,8 @@
       "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
       "cvss": 7.8,
       "severity": "HIGH",
-      "epss": 0.02528,
-      "epss_pct": 0.8519,
+      "epss": 0.01612,
+      "epss_pct": 0.76317,
       "cwe": "CWE-78",
       "published": null,
       "kev": {
@@ -3138,7 +3059,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 56
+      "rank": 54
     },
     {
       "cve_id": "CVE-2025-61624",
@@ -3148,8 +3069,8 @@
       "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
       "cvss": 6.5,
       "severity": "MEDIUM",
-      "epss": 0.01395,
-      "epss_pct": 0.72959,
+      "epss": 0.00826,
+      "epss_pct": 0.54551,
       "cwe": "CWE-22",
       "published": null,
       "kev": {
@@ -3179,6 +3100,88 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 55
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.02724,
+      "epss_pct": 0.86777,
+      "cwe": "CWE-23",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 56
+    },
+    {
+      "cve_id": "CVE-2026-96951",
+      "title": "Microsoft Windows Command Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "epss": 0.00976,
+      "epss_pct": 0.60851,
+      "cwe": "CWE-77",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 34,
+      "rising": 0,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 57
     },
     {
@@ -3189,8 +3192,8 @@
       "description": "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inject objects, which may lead to code execution when the reading application contains a suitable gadget chain, or to session corruption or denial of service.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
       "cvss": null,
       "severity": "UNKNOWN",
-      "epss": 0.73107,
-      "epss_pct": 0.99462,
+      "epss": 0.86584,
+      "epss_pct": 0.99826,
       "cwe": "CWE-20",
       "published": null,
       "kev": {
@@ -3198,7 +3201,7 @@
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 30,
+      "hype": 32,
       "rising": 0,
       "repos": {
         "count": 29,
@@ -3251,8 +3254,8 @@
       "description": "binary-parser before 2.3.1 contains a code injection vulnerability that allows attackers controlling parser definitions to inject JavaScript through string-typed options passed unvalidated by Context.generateOption(). Attackers can supply crafted length, lengthInBytes, key, tag, offset, or namely() alias values to execute arbitrary JavaScript in the Node.js process when the parser is compiled.",
       "cvss": 8.1,
       "severity": "HIGH",
-      "epss": 0.00608,
-      "epss_pct": 0.49861,
+      "epss": 0.02126,
+      "epss_pct": 0.82574,
       "cwe": "CWE-94",
       "published": "2026-11-22T22:17:35.660",
       "kev": {
@@ -3261,7 +3264,7 @@
       "zero_day": false,
       "no_patch": false,
       "hype": 27,
-      "rising": 29,
+      "rising": 22,
       "repos": {
         "count": 3,
         "stars": 0,
@@ -3309,51 +3312,51 @@
       "rank": 59
     },
     {
-      "cve_id": "CVE-2026-123007",
-      "title": "CVE-2026-123007",
+      "cve_id": "CVE-2026-126714",
+      "title": "CVE-2026-126714",
       "vendor": null,
       "product": null,
-      "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.447,
-      "epss_pct": 0.98792,
-      "cwe": "CWE-191",
+      "description": "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.\n\nThis issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before 8.4.28 and 8.5.* before 8.5.13.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": 0.33772,
+      "epss_pct": 0.98774,
+      "cwe": "CWE-367",
       "published": null,
       "kev": {
         "in_kev": false
       },
       "zero_day": false,
       "no_patch": false,
-      "hype": 26,
+      "hype": 24,
       "rising": 0,
       "repos": {
-        "count": 42,
-        "stars": 370,
+        "count": 11,
+        "stars": 69,
         "top": [
           {
-            "full_name": "sfewer-r7/CVE-2026-123007",
-            "html_url": "https://github.com/sfewer-r7/CVE-2026-123007",
-            "stars": 301
+            "full_name": "vperetti/phpbackports",
+            "html_url": "https://github.com/vperetti/phpbackports",
+            "stars": 62
           },
           {
-            "full_name": "Ghost-Bx1/nginx-exploits",
-            "html_url": "https://github.com/Ghost-Bx1/nginx-exploits",
-            "stars": 26
+            "full_name": "alvm/php2shell-eol-backport",
+            "html_url": "https://github.com/alvm/php2shell-eol-backport",
+            "stars": 4
           },
           {
-            "full_name": "arkrwn/NGINX2Root-CVE-2026-123007",
-            "html_url": "https://github.com/arkrwn/NGINX2Root-CVE-2026-123007",
-            "stars": 11
+            "full_name": "tani2shell/phpaftershell-lab",
+            "html_url": "https://github.com/tani2shell/phpaftershell-lab",
+            "stars": 2
           }
         ]
       },
       "media": [
         {
           "source": "The Hacker News",
-          "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
-          "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-          "date": "2026-11-18T18:31:17.000Z"
+          "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+          "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+          "date": "2026-11-19T16:59:56.000Z"
         }
       ],
       "reddit": null,
@@ -3363,7 +3366,7 @@
       ],
       "timeline": [
         {
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "label": "Covered by The Hacker News"
         }
       ],
