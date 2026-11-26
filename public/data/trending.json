@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T23:39:57.754Z",
+  "generated_at": "2026-11-26T08:28:26.030Z",
   "window_days": 30,
   "stats": {
     "trending_count": 60,
@@ -19,12 +19,12 @@
     {
       "name": "NVD API 2.0",
       "status": "ok",
-      "detail": "782 recent"
+      "detail": "790 recent"
     },
     {
       "name": "FIRST EPSS",
       "status": "ok",
-      "detail": "761 scored"
+      "detail": "738 scored"
     },
     {
       "name": "BleepingComputer",
@@ -34,7 +34,7 @@
     {
       "name": "The Hacker News",
       "status": "ok",
-      "detail": "20 mentions"
+      "detail": "21 mentions"
     },
     {
       "name": "Dark Reading",
@@ -54,7 +54,7 @@
     {
       "name": "GitHub PoCs",
       "status": "ok",
-      "detail": "6217 mapped"
+      "detail": "6266 mapped"
     },
     {
       "name": "Reddit",
@@ -83,8 +83,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 84,
-      "rising": 61,
+      "hype": 83,
+      "rising": 49,
       "repos": {
         "count": 4,
         "stars": 7,
@@ -163,8 +163,8 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 77,
-      "rising": 47,
+      "hype": 76,
+      "rising": 33,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -215,54 +215,60 @@
       "rank": 2
     },
     {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.45083,
-      "epss_pct": 0.99081,
-      "cwe": "CWE-416",
+      "cve_id": "CVE-2026-132165",
+      "title": "Drupal Core Remote Code Execution Vulnerability",
+      "vendor": "Drupal",
+      "product": "Core",
+      "description": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
+      "cvss": null,
+      "severity": "UNKNOWN",
+      "epss": null,
+      "epss_pct": null,
+      "cwe": "CWE-306",
       "published": null,
       "kev": {
         "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
         "ransomware": false
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 60,
-      "rising": 0,
+      "hype": 69,
+      "rising": 89,
       "repos": {
-        "count": 805,
-        "stars": 7160,
+        "count": 5,
+        "stars": 11,
         "top": [
           {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1997
+            "full_name": "abraxas/drupal-install-takeover",
+            "html_url": "https://github.com/abraxas/drupal-install-takeover",
+            "stars": 9
           },
           {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1089
+            "full_name": "lxdwnpiper/CVE-2026-132165-Drupal",
+            "html_url": "https://github.com/lxdwnpiper/CVE-2026-132165-Drupal",
+            "stars": 2
           },
           {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1021
+            "full_name": "ashrafzaryouh/CVE-2026-132165",
+            "html_url": "https://github.com/ashrafzaryouh/CVE-2026-132165",
+            "stars": 0
           }
         ]
       },
       "media": [
         {
           "source": "The Hacker News",
-          "title": "Everything Is a Web Application, Including Your Firewall",
-          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-          "date": "2026-11-19T11:52:23.000Z"
+          "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+          "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+          "date": "2026-11-26T07:02:34.000Z"
+        },
+        {
+          "source": "The Hacker News",
+          "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+          "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+          "date": "2026-11-25T11:23:26.000Z"
         }
       ],
       "reddit": null,
@@ -274,11 +280,11 @@
       ],
       "timeline": [
         {
-          "date": "2026-10-26",
+          "date": "2026-11-24",
           "label": "Added to CISA KEV — confirmed exploitation"
         },
         {
-          "date": "2026-11-19",
+          "date": "2026-11-26",
           "label": "Covered by The Hacker News"
         }
       ],
@@ -305,14 +311,19 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 59,
-      "rising": 32,
+      "rising": 29,
       "repos": {
-        "count": 1,
+        "count": 2,
         "stars": 0,
         "top": [
           {
             "full_name": "cveForge/CVE-2026-133323",
             "html_url": "https://github.com/cveForge/CVE-2026-133323",
+            "stars": 0
+          },
+          {
+            "full_name": "foxcornlab/mitel-micollab-scanner",
+            "html_url": "https://github.com/foxcornlab/mitel-micollab-scanner",
             "stars": 0
           }
         ]
@@ -357,7 +368,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 58,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -401,16 +412,16 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 58,
+      "hype": 57,
       "rising": 0,
       "repos": {
         "count": 4,
-        "stars": 16,
+        "stars": 17,
         "top": [
           {
             "full_name": "Yanixos/APACHE-CVE-2026-129448",
             "html_url": "https://github.com/Yanixos/APACHE-CVE-2026-129448",
-            "stars": 16
+            "stars": 17
           },
           {
             "full_name": "foxcornlab/apache-roller-scanner",
@@ -471,16 +482,16 @@
       },
       "zero_day": true,
       "no_patch": true,
-      "hype": 58,
+      "hype": 57,
       "rising": 0,
       "repos": {
         "count": 8,
-        "stars": 25,
+        "stars": 27,
         "top": [
           {
             "full_name": "dinosn/CVE-2026-123890",
             "html_url": "https://github.com/dinosn/CVE-2026-123890",
-            "stars": 23
+            "stars": 25
           },
           {
             "full_name": "Sable-Research/CVE-2026-123890-Research",
@@ -543,7 +554,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 56,
-      "rising": 24,
+      "rising": 21,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -566,146 +577,6 @@
         }
       ],
       "rank": 8
-    },
-    {
-      "cve_id": "CVE-2026-132165",
-      "title": "Drupal Core Remote Code Execution Vulnerability",
-      "vendor": "Drupal",
-      "product": "Core",
-      "description": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.",
-      "cvss": null,
-      "severity": "UNKNOWN",
-      "epss": null,
-      "epss_pct": null,
-      "cwe": null,
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-24",
-        "due_date": "2026-11-27",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 57,
-      "repos": {
-        "count": 3,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "abraxas/drupal-install-takeover",
-            "html_url": "https://github.com/abraxas/drupal-install-takeover",
-            "stars": 5
-          },
-          {
-            "full_name": "malloryai/cve-2026-132165-drupal-installer-check",
-            "html_url": "https://github.com/malloryai/cve-2026-132165-drupal-installer-check",
-            "stars": 0
-          },
-          {
-            "full_name": "foxcornlab/drupal-installer-scanner",
-            "html_url": "https://github.com/foxcornlab/drupal-installer-scanner",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-          "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-          "date": "2026-11-25T11:23:26.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-24",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-25",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 9
-    },
-    {
-      "cve_id": "CVE-2026-109619",
-      "title": "PHP Stale Internal Request-State Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-      "cvss": 8.1,
-      "severity": "HIGH",
-      "epss": 0.20754,
-      "epss_pct": 0.98073,
-      "cwe": "CWE-416",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 56,
-      "rising": 0,
-      "repos": {
-        "count": 582,
-        "stars": 6319,
-        "top": [
-          {
-            "full_name": "ikow/php2shell-poc",
-            "html_url": "https://github.com/ikow/php2shell-poc",
-            "stars": 1997
-          },
-          {
-            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
-            "stars": 1089
-          },
-          {
-            "full_name": "assetnote/php2shell-scanner",
-            "html_url": "https://github.com/assetnote/php2shell-scanner",
-            "stars": 1021
-          }
-        ]
-      },
-      "media": [
-        {
-          "source": "The Hacker News",
-          "title": "Everything Is a Web Application, Including Your Firewall",
-          "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-          "date": "2026-11-19T11:52:23.000Z"
-        }
-      ],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "in-the-news",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-26",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        },
-        {
-          "date": "2026-11-19",
-          "label": "Covered by The Hacker News"
-        }
-      ],
-      "rank": 10
     },
     {
       "cve_id": "CVE-2026-115731",
@@ -731,12 +602,12 @@
       "rising": 0,
       "repos": {
         "count": 2,
-        "stars": 2,
+        "stars": 3,
         "top": [
           {
             "full_name": "foxcornlab/puppet-enterprise-scanner",
             "html_url": "https://github.com/foxcornlab/puppet-enterprise-scanner",
-            "stars": 2
+            "stars": 3
           },
           {
             "full_name": "cveForge/CVE-2026-115731",
@@ -762,7 +633,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 11
+      "rank": 9
     },
     {
       "cve_id": "CVE-2026-76466",
@@ -832,7 +703,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 12
+      "rank": 10
     },
     {
       "cve_id": "CVE-2026-116606",
@@ -889,7 +760,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 13
+      "rank": 11
+    },
+    {
+      "cve_id": "CVE-2026-133275",
+      "title": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "epss": 0.00315,
+      "epss_pct": 0.1686,
+      "cwe": "CWE-434",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-25",
+        "due_date": "2026-11-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 68,
+      "repos": {
+        "count": 0,
+        "stars": 0,
+        "top": []
+      },
+      "media": [
+        {
+          "source": "The Hacker News",
+          "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+          "date": "2026-11-26T06:44:46.000Z"
+        }
+      ],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "in-the-news"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        },
+        {
+          "date": "2026-11-26",
+          "label": "Covered by The Hacker News"
+        }
+      ],
+      "rank": 12
     },
     {
       "cve_id": "CVE-2026-116779",
@@ -915,12 +839,12 @@
       "rising": 0,
       "repos": {
         "count": 7,
-        "stars": 71,
+        "stars": 72,
         "top": [
           {
             "full_name": "DeathShotXD/SIP2Shell",
             "html_url": "https://github.com/DeathShotXD/SIP2Shell",
-            "stars": 66
+            "stars": 67
           },
           {
             "full_name": "hackzuoji/freeswitch-cve-2026-116779-POC",
@@ -947,7 +871,123 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
+      "rank": 13
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.45083,
+      "epss_pct": 0.99081,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 52,
+      "rising": 0,
+      "repos": {
+        "count": 807,
+        "stars": 7165,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1999
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1090
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1021
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
       "rank": 14
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.32976,
+      "epss_pct": 0.98749,
+      "cwe": "CWE-252",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-27",
+        "due_date": "2026-11-10",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 51,
+      "rising": 0,
+      "repos": {
+        "count": 99,
+        "stars": 494,
+        "top": [
+          {
+            "full_name": "assetnote/node2shell-scanner",
+            "html_url": "https://github.com/assetnote/node2shell-scanner",
+            "stars": 88
+          },
+          {
+            "full_name": "dimasma0305/CVE-2026-111497-POC",
+            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
+            "stars": 82
+          },
+          {
+            "full_name": "trailofbits/brotli-checker",
+            "html_url": "https://github.com/trailofbits/brotli-checker",
+            "stars": 70
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 15
     },
     {
       "cve_id": "CVE-2026-114713",
@@ -969,7 +1009,7 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 51,
+      "hype": 50,
       "rising": 0,
       "repos": {
         "count": 4,
@@ -1006,64 +1046,6 @@
         },
         {
           "date": "2026-11-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 15
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "Google Brotli Unchecked Return Value Vulnerability",
-      "vendor": "Google",
-      "product": "Brotli",
-      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.32976,
-      "epss_pct": 0.98749,
-      "cwe": "CWE-252",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 51,
-      "rising": 0,
-      "repos": {
-        "count": 99,
-        "stars": 490,
-        "top": [
-          {
-            "full_name": "assetnote/node2shell-scanner",
-            "html_url": "https://github.com/assetnote/node2shell-scanner",
-            "stars": 88
-          },
-          {
-            "full_name": "dimasma0305/CVE-2026-111497-POC",
-            "html_url": "https://github.com/dimasma0305/CVE-2026-111497-POC",
-            "stars": 82
-          },
-          {
-            "full_name": "trailofbits/brotli-checker",
-            "html_url": "https://github.com/trailofbits/brotli-checker",
-            "stars": 70
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-27",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
@@ -1127,6 +1109,64 @@
       "rank": 17
     },
     {
+      "cve_id": "CVE-2026-109619",
+      "title": "PHP Stale Internal Request-State Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "epss": 0.20754,
+      "epss_pct": 0.98073,
+      "cwe": "CWE-416",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 49,
+      "rising": 0,
+      "repos": {
+        "count": 585,
+        "stars": 6326,
+        "top": [
+          {
+            "full_name": "ikow/php2shell-poc",
+            "html_url": "https://github.com/ikow/php2shell-poc",
+            "stars": 1999
+          },
+          {
+            "full_name": "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "html_url": "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+            "stars": 1090
+          },
+          {
+            "full_name": "assetnote/php2shell-scanner",
+            "html_url": "https://github.com/assetnote/php2shell-scanner",
+            "stars": 1021
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 18
+    },
+    {
       "cve_id": "CVE-2026-123158",
       "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
       "vendor": "OpenBSD",
@@ -1149,8 +1189,8 @@
       "hype": 48,
       "rising": 0,
       "repos": {
-        "count": 50,
-        "stars": 39,
+        "count": 54,
+        "stars": 41,
         "top": [
           {
             "full_name": "gabrielunknown/CVE-2026-123158_SSHole",
@@ -1182,7 +1222,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "cve_id": "CVE-2026-97229",
@@ -1240,7 +1280,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "cve_id": "CVE-2026-90817",
@@ -1298,7 +1338,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "cve_id": "CVE-2026-96652",
@@ -1356,7 +1396,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "cve_id": "CVE-2026-21589",
@@ -1414,7 +1454,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "cve_id": "CVE-2026-105134",
@@ -1468,7 +1508,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "cve_id": "CVE-2026-133968",
@@ -1491,9 +1531,9 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 46,
-      "rising": 16,
+      "rising": 13,
       "repos": {
-        "count": 3,
+        "count": 4,
         "stars": 0,
         "top": [
           {
@@ -1526,7 +1566,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 24
+      "rank": 25
     },
     {
       "cve_id": "CVE-2024-10441",
@@ -1568,7 +1608,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "cve_id": "CVE-2026-46300",
@@ -1626,7 +1666,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "cve_id": "CVE-2026-96656",
@@ -1684,7 +1724,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 27
+      "rank": 28
     },
     {
       "cve_id": "CVE-2026-119977",
@@ -1742,7 +1782,60 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 28
+      "rank": 29
+    },
+    {
+      "cve_id": "CVE-2026-103406",
+      "title": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+      "vendor": "Hewlett Packard Enterprise (HPE)",
+      "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "epss": 0.0086,
+      "epss_pct": 0.56019,
+      "cwe": "CWE-78",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-25",
+        "due_date": "2026-11-28",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 44,
+      "rising": 29,
+      "repos": {
+        "count": 2,
+        "stars": 1,
+        "top": [
+          {
+            "full_name": "Sable-Research/CVE-2026-103406-Analysis",
+            "html_url": "https://github.com/Sable-Research/CVE-2026-103406-Analysis",
+            "stars": 1
+          },
+          {
+            "full_name": "Frostmoon39206/CVE-2026-103406-PoC",
+            "html_url": "https://github.com/Frostmoon39206/CVE-2026-103406-PoC",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-25",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 30
     },
     {
       "cve_id": "CVE-2026-90436",
@@ -1768,16 +1861,16 @@
       "rising": 0,
       "repos": {
         "count": 5,
-        "stars": 4,
+        "stars": 6,
         "top": [
-          {
-            "full_name": "fixedbyreboot/CVE-2026-90436-POC",
-            "html_url": "https://github.com/fixedbyreboot/CVE-2026-90436-POC",
-            "stars": 2
-          },
           {
             "full_name": "dinosn/axis-cve-2026-90436-lab-poc",
             "html_url": "https://github.com/dinosn/axis-cve-2026-90436-lab-poc",
+            "stars": 4
+          },
+          {
+            "full_name": "fixedbyreboot/CVE-2026-90436-POC",
+            "html_url": "https://github.com/fixedbyreboot/CVE-2026-90436-POC",
             "stars": 2
           },
           {
@@ -1800,7 +1893,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 29
+      "rank": 31
     },
     {
       "cve_id": "CVE-2026-110447",
@@ -1858,7 +1951,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 30
+      "rank": 32
     },
     {
       "cve_id": "CVE-2026-96655",
@@ -1911,7 +2004,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 31
+      "rank": 33
     },
     {
       "cve_id": "CVE-2026-96654",
@@ -1964,7 +2057,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 32
+      "rank": 34
     },
     {
       "cve_id": "CVE-2026-84869",
@@ -1987,7 +2080,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 44,
-      "rising": 7,
+      "rising": 2,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2017,7 +2110,7 @@
           "label": "Covered by The Hacker News"
         }
       ],
-      "rank": 33
+      "rank": 35
     },
     {
       "cve_id": "CVE-2026-40217",
@@ -2075,7 +2168,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 34
+      "rank": 36
     },
     {
       "cve_id": "CVE-2026-124194",
@@ -2133,48 +2226,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 35
-    },
-    {
-      "cve_id": "CVE-2026-103406",
-      "title": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
-      "vendor": "Hewlett Packard Enterprise (HPE)",
-      "product": "Juniper Session Smart Conductor and Session Smart Router",
-      "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "cvss": 9.8,
-      "severity": "CRITICAL",
-      "epss": 0.0086,
-      "epss_pct": 0.56019,
-      "cwe": "CWE-78",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-25",
-        "due_date": "2026-11-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 42,
-      "rising": 32,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 36
+      "rank": 37
     },
     {
       "cve_id": "CVE-2026-133469",
@@ -2197,7 +2249,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 42,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 1,
         "stars": 0,
@@ -2222,7 +2274,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "cve_id": "CVE-2025-41450",
@@ -2244,8 +2296,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 32,
+      "hype": 41,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2263,7 +2315,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "cve_id": "CVE-2023-25914",
@@ -2285,8 +2337,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 32,
+      "hype": 41,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2304,7 +2356,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "cve_id": "CVE-2023-25915",
@@ -2326,8 +2378,8 @@
       },
       "zero_day": false,
       "no_patch": true,
-      "hype": 42,
-      "rising": 32,
+      "hype": 41,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2345,7 +2397,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 40
+      "rank": 41
     },
     {
       "cve_id": "CVE-2026-133324",
@@ -2368,48 +2420,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 32,
-      "repos": {
-        "count": 0,
-        "stars": 0,
-        "top": []
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-25",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 41
-    },
-    {
-      "cve_id": "CVE-2026-133275",
-      "title": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Mitel",
-      "product": "MiCollab",
-      "description": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
-      "cvss": 5.3,
-      "severity": "MEDIUM",
-      "epss": 0.00315,
-      "epss_pct": 0.1686,
-      "cwe": "CWE-434",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-25",
-        "due_date": "2026-11-28",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 41,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2450,7 +2461,7 @@
       "zero_day": false,
       "no_patch": true,
       "hype": 41,
-      "rising": 32,
+      "rising": 29,
       "repos": {
         "count": 0,
         "stars": 0,
@@ -2587,64 +2598,6 @@
       "rank": 45
     },
     {
-      "cve_id": "CVE-2026-123039",
-      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
-      "cvss": 7.8,
-      "severity": "HIGH",
-      "epss": 0.00232,
-      "epss_pct": 0.08425,
-      "cwe": "CWE-732",
-      "published": null,
-      "kev": {
-        "in_kev": true,
-        "date_added": "2026-11-13",
-        "due_date": "2026-11-16",
-        "ransomware": false
-      },
-      "zero_day": false,
-      "no_patch": true,
-      "hype": 40,
-      "rising": 0,
-      "repos": {
-        "count": 3,
-        "stars": 5,
-        "top": [
-          {
-            "full_name": "googlesky/CVE-2026-123039",
-            "html_url": "https://github.com/googlesky/CVE-2026-123039",
-            "stars": 5
-          },
-          {
-            "full_name": "foxcornlab/checkpoint-gaia-scanner",
-            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
-            "stars": 0
-          },
-          {
-            "full_name": "cveForge/CVE-2026-123039",
-            "html_url": "https://github.com/cveForge/CVE-2026-123039",
-            "stars": 0
-          }
-        ]
-      },
-      "media": [],
-      "reddit": null,
-      "tags": [
-        "kev",
-        "actively-exploited",
-        "poc-available"
-      ],
-      "timeline": [
-        {
-          "date": "2026-11-13",
-          "label": "Added to CISA KEV — confirmed exploitation"
-        }
-      ],
-      "rank": 46
-    },
-    {
       "cve_id": "CVE-2026-105133",
       "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
       "vendor": "Ahsay",
@@ -2690,7 +2643,7 @@
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "cve_id": "CVE-2025-42884",
@@ -2728,6 +2681,64 @@
       "timeline": [
         {
           "date": "2026-11-20",
+          "label": "Added to CISA KEV — confirmed exploitation"
+        }
+      ],
+      "rank": 47
+    },
+    {
+      "cve_id": "CVE-2026-123039",
+      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "vendor": "Check Point",
+      "product": "Multiple Products",
+      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "epss": 0.00232,
+      "epss_pct": 0.08425,
+      "cwe": "CWE-732",
+      "published": null,
+      "kev": {
+        "in_kev": true,
+        "date_added": "2026-11-13",
+        "due_date": "2026-11-16",
+        "ransomware": false
+      },
+      "zero_day": false,
+      "no_patch": true,
+      "hype": 39,
+      "rising": 0,
+      "repos": {
+        "count": 3,
+        "stars": 5,
+        "top": [
+          {
+            "full_name": "googlesky/CVE-2026-123039",
+            "html_url": "https://github.com/googlesky/CVE-2026-123039",
+            "stars": 5
+          },
+          {
+            "full_name": "foxcornlab/checkpoint-gaia-scanner",
+            "html_url": "https://github.com/foxcornlab/checkpoint-gaia-scanner",
+            "stars": 0
+          },
+          {
+            "full_name": "cveForge/CVE-2026-123039",
+            "html_url": "https://github.com/cveForge/CVE-2026-123039",
+            "stars": 0
+          }
+        ]
+      },
+      "media": [],
+      "reddit": null,
+      "tags": [
+        "kev",
+        "actively-exploited",
+        "poc-available"
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
           "label": "Added to CISA KEV — confirmed exploitation"
         }
       ],
